@@ -25,7 +25,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact Lahore Bouquet | WhatsApp, Phone & Address",
     description: "Contact Lahore Bouquet on WhatsApp or phone, or visit us on MM Alam Road, Gulberg III, Lahore. Open 9 AM to 1 AM daily.",
-    url: "https://flowerbouquet.pk/contact",
+    url: "https://lahorebouquet.com/contact",
+  },
+  alternates: {
+    canonical: "https://lahorebouquet.com/contact",
   }
 };
 
@@ -34,7 +37,8 @@ export default function ContactPage() {
     "@context": "https://schema.org",
     "@type": "Florist",
     "name": "Lahore Bouquet",
-    "image": "https://flowerbouquet.pk/icon.png",
+    "url": "https://lahorebouquet.com/contact",
+    "image": "https://lahorebouquet.com/icon.png",
     "telephone": "+923001234567",
     "address": {
       "@type": "PostalAddress",

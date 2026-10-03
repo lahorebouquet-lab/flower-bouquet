@@ -47,12 +47,19 @@ export const metadata: Metadata = {
     "midnight flower delivery lahore",
     "fresh flowers shop lahore"
   ],
-  metadataBase: new URL("https://flowerbouquet.pk"),
+  metadataBase: new URL("https://lahorebouquet.com"),
   openGraph: {
     title: "Lahore Bouquet ✦ Fresh Floristry & Handcrafted Bouquets in Lahore",
     description: "Same-Day 2–5h Express Flower Delivery across Lahore. Fresh imported roses, sunflowers, money bouquets & wedding decor.",
+    url: "https://lahorebouquet.com",
+    siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lahore Bouquet ✦ Fresh Handcrafted Bouquets in Lahore",
+    description: "Same-day 2–5h express flower delivery across Lahore. Fresh imported roses, sunflowers & money bouquets.",
   },
   icons: {
     icon: [

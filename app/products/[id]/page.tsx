@@ -107,12 +107,16 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
     "@context": "https://schema.org/",
     "@type": "Product",
     "name": product.title,
-    "image": `https://flowerbouquet.pk${product.image}`,
+    "image": `https://lahorebouquet.com${product.image}`,
     "description": product.desc,
-    "sku": `FLORA-${product.id}`,
+    "sku": `LB-${product.id}`,
+    "brand": {
+      "@type": "Brand",
+      "name": "Lahore Bouquet"
+    },
     "offers": {
       "@type": "Offer",
-      "url": `https://flowerbouquet.pk/products/${product.slug}`,
+      "url": `https://lahorebouquet.com/products/${product.slug}`,
       "priceCurrency": "PKR",
       "price": product.price,
       "priceValidUntil": "2027-12-31",
@@ -126,12 +130,41 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
     }
   };
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://lahorebouquet.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": product.category,
+        "item": `https://lahorebouquet.com${getCategoryHref(product.category)}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": product.title,
+        "item": `https://lahorebouquet.com/products/${product.slug}`
+      }
+    ]
+  };
+
   return (
     <main className="min-h-screen bg-[#101012] text-white">
       {/* Schema.org Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
       {/* Breadcrumbs Navigation */}

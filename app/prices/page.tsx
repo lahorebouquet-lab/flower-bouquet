@@ -21,19 +21,19 @@ export const metadata: Metadata = {
     "lahore flower delivery prices",
   ],
   alternates: {
-    canonical: "https://lahoreblooms.com/prices/",
+    canonical: "https://lahorebouquet.com/prices",
   },
   openGraph: {
     title: "Flower Bouquet Price in Lahore | Free Delivery | Lahore Bouquet",
     description:
       "Bouquet prices in Lahore from PKR 1,180, gajray from PKR 450. Compare real starting prices for chocolate bouquets, wedding décor, car decoration & gifts. WhatsApp for exact quote.",
-    url: "https://lahoreblooms.com/prices/",
+    url: "https://lahorebouquet.com/prices",
     siteName: "Lahore Bouquet",
-    locale: "en_US",
+    locale: "en_PK",
     type: "website",
     images: [
       {
-        url: "/images/lahoreblooms/crimson_blush.webp",
+        url: "/images/product_1_eucalyptus_rose.jpg",
         width: 1200,
         height: 630,
         alt: "Flower Bouquet Price in Lahore - Lahore Bouquet",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Flower Bouquet Price in Lahore | Free Delivery | Lahore Bouquet",
     description:
       "Bouquet prices in Lahore from PKR 1,180, gajray from PKR 450. Compare real starting prices for chocolate bouquets, wedding décor, car decoration & gifts.",
-    images: ["/images/lahoreblooms/crimson_blush.webp"],
+    images: ["/images/product_1_eucalyptus_rose.jpg"],
   },
 };
 
@@ -59,13 +59,13 @@ export default function PricesPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahoreblooms.com/",
+        item: "https://lahorebouquet.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Prices",
-        item: "https://lahoreblooms.com/prices/",
+        item: "https://lahorebouquet.com/prices",
       },
     ],
   };
@@ -97,7 +97,7 @@ export default function PricesPage() {
       priceCurrency: "PKR",
       price: typeof item.startingPrice === "number" ? item.startingPrice : 1000,
       availability: "https://schema.org/InStock",
-      url: `https://lahoreblooms.com${item.href}`,
+      url: `https://lahorebouquet.com${item.href}`,
     })),
   };
 

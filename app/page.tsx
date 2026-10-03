@@ -8,6 +8,9 @@ export const metadata: Metadata = {
     absolute: "Fresh Flowers & Bouquets Delivery in Lahore | Lahore Bouquet",
   },
   description: "Order fresh rose, sunflower and money bouquets in Lahore. Bridal room and car décor too. Delivery in 2 to 5 hours with a photo on WhatsApp first.",
+  alternates: {
+    canonical: "https://lahorebouquet.com",
+  },
   keywords: [
     "flower delivery lahore",
     "fresh bouquets lahore",
@@ -21,6 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Fresh Flowers & Bouquets Delivery in Lahore | Lahore Bouquet",
     description: "Order fresh rose, sunflower and money bouquets in Lahore. Bridal room and car décor too. Delivery in 2 to 5 hours with a photo on WhatsApp first.",
+    url: "https://lahorebouquet.com",
     type: "website",
     locale: "en_PK",
   }
@@ -44,7 +48,7 @@ export default function HomePage() {
     "@context": "https://schema.org",
     "@type": "Florist",
     name: "Lahore Bouquet",
-    image: "https://flowerbouquet.pk/icon.png",
+    image: "https://lahorebouquet.com/icon.png",
     address: {
       "@type": "PostalAddress",
       streetAddress: "MM Alam Road, Gulberg III",
@@ -56,7 +60,7 @@ export default function HomePage() {
     telephone: "+92 300 1234567",
     priceRange: "Rs. 1,180 - Rs. 14,500",
     openingHours: "Mo-Su 09:00-01:00",
-    url: "https://flowerbouquet.pk",
+    url: "https://lahorebouquet.com",
   };
 
   return (
