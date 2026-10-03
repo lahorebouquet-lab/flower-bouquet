@@ -17,10 +17,10 @@ const NAV_ITEMS: NavItem[] = [
   { name: "BOUQUETS", href: "/collections/bouquets" },
   { name: "ROSES", href: "/collections/roses" },
   { name: "PRICES", href: "/prices" },
-  { name: "SUNFLOWERS", href: "/collections/sunflowers" },
   { name: "MONEY BOUQUETS", href: "/collections/money-bouquets" },
   { name: "WEDDING DÉCOR", href: "/collections/wedding-decor" },
-  { name: "GIFTS & CAKES", href: "/collections/gifts-cakes" },
+  { name: "DELIVERY AREAS", href: "/delivery-areas" },
+  { name: "BLOG", href: "/blog" },
   { name: "ABOUT", href: "/about" },
   { name: "CONTACT", href: "/contact" },
 ];

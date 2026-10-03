@@ -22,11 +22,11 @@ export const LAHORE_ZONES = [
   { name: "DHA Lahore (Phases 1 to 9)", time: "2 to 3 hours", slug: "/delivery-areas/dha", highlight: "Phases 1–9, Sector Y, Raya, Phase 5 Commercial" },
   { name: "Gulberg (I, II & III)", time: "30 to 90 mins", slug: "/delivery-areas/gulberg", highlight: "MM Alam Road, Main Boulevard, Mini Market, Liberty" },
   { name: "Bahria Town & Lake City", time: "2.5 to 4 hours", slug: "/delivery-areas/bahria-town", highlight: "Sectors A–F, Safari Villas, Lake City Ring Road" },
-  { name: "Model Town & Garden Town", time: "2 to 2.5 hours", slug: "/delivery-areas", highlight: "Blocks A to M, Model Town Link Road, Barkat Market" },
-  { name: "Johar Town & Faisal Town", time: "2 to 3 hours", slug: "/delivery-areas", highlight: "G1 Market, Shaukat Khanum, Emporium Mall, Kotha Pind" },
-  { name: "Cantt & Cavalry Ground", time: "2 to 2.5 hours", slug: "/delivery-areas", highlight: "Saddar, PAF Colony, Cavalry Commercial, CMH" },
-  { name: "Askari Housing (Askari 1 to 11)", time: "2 to 3 hours", slug: "/delivery-areas", highlight: "Askari 1, 5, 9, 10, 11 (Bedian Road)" },
-  { name: "Wapda Town & Township", time: "2.5 to 3.5 hours", slug: "/delivery-areas", highlight: "Chaudhary Chowk, College Road, Peco Road" },
+  { name: "Model Town & Garden Town", time: "1.5 to 2.5 hours", slug: "/delivery-areas/model-town", highlight: "Blocks A to M, Model Town Link Road, Barkat Market" },
+  { name: "Johar Town & Faisal Town", time: "2 to 3 hours", slug: "/delivery-areas/johar-town", highlight: "G1 Market, Shaukat Khanum, Emporium Mall, Kotha Pind" },
+  { name: "Cantt & Cavalry Ground", time: "2 to 2.5 hours", slug: "/delivery-areas/cantt", highlight: "Saddar, PAF Colony, Cavalry Commercial, CMH" },
+  { name: "Askari Housing (Askari 1 to 11)", time: "2 to 3 hours", slug: "/delivery-areas/askari", highlight: "Askari 1, 5, 9, 10, 11 (Bedian Road)" },
+  { name: "Wapda Town & Township", time: "2.5 to 3.5 hours", slug: "/delivery-areas/wapda-town", highlight: "Chaudhary Chowk, College Road, Peco Road" },
 ];
 
 export default function DeliveryAreasPage() {

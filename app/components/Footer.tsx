@@ -82,13 +82,13 @@ export default function Footer() {
           <div className="space-y-3">
             <h4 className="font-semibold text-white uppercase tracking-wider text-[11px]">Events & Décor</h4>
             <ul className="space-y-2 text-white/60">
-              <li><Link href="/price-guide" className="hover:text-[#E11D48] text-white/90 font-medium transition-colors">★ Lahore Price Guide 2026</Link></li>
+              <li><Link href="/prices" className="hover:text-[#E11D48] text-white/90 font-medium transition-colors">★ Lahore Price Guide 2026</Link></li>
               <li><Link href="/wedding-decor" className="hover:text-[#E11D48] transition-colors">Wedding Room & Car Décor</Link></li>
-              <li><Link href="/wedding-decor" className="hover:text-[#E11D48] transition-colors">Bridal Room Canopy Décor</Link></li>
-              <li><Link href="/wedding-decor" className="hover:text-[#E11D48] transition-colors">Wedding Car Decoration</Link></li>
-              <li><Link href="/wedding-decor" className="hover:text-[#E11D48] transition-colors">Mehndi Flower Jewellery</Link></li>
+              <li><Link href="/collections/fresh-flower-gajray" className="hover:text-[#E11D48] transition-colors">Fresh Motia & Rose Gajray</Link></li>
               <li><Link href="/money-bouquets" className="hover:text-[#E11D48] transition-colors">Custom Money Bouquets</Link></li>
               <li><Link href="/gifts-and-cakes" className="hover:text-[#E11D48] transition-colors">Gifts, Cakes & Chocolates</Link></li>
+              <li><Link href="/corporate" className="hover:text-[#E11D48] transition-colors">Corporate Office Flowers</Link></li>
+              <li><Link href="/blog" className="hover:text-[#E11D48] transition-colors">Floral Care Guides & Blog</Link></li>
             </ul>
           </div>
 
@@ -100,6 +100,7 @@ export default function Footer() {
               <li><Link href="/occasions/anniversary" className="hover:text-[#E11D48] transition-colors">Wedding Anniversaries</Link></li>
               <li><Link href="/occasions/love-and-romance" className="hover:text-[#E11D48] transition-colors">Love & Romance</Link></li>
               <li><Link href="/occasions/barat-and-walima" className="hover:text-[#E11D48] transition-colors">Barat & Walima</Link></li>
+              <li><Link href="/occasions/eid-gifts" className="hover:text-[#E11D48] transition-colors">Eid Mubarak Gifts</Link></li>
               <li><Link href="/occasions/congratulations" className="hover:text-[#E11D48] transition-colors">Congratulations & Graduations</Link></li>
               <li><Link href="/occasions/get-well-and-sorry" className="hover:text-[#E11D48] transition-colors">Get Well Soon & Apologies</Link></li>
             </ul>
@@ -110,12 +111,13 @@ export default function Footer() {
             <h4 className="font-semibold text-white uppercase tracking-wider text-[11px]">Lahore Delivery Zones</h4>
             <ul className="space-y-2 text-white/60">
               <li><Link href="/delivery-areas/dha" className="hover:text-[#E11D48] transition-colors">DHA Lahore (Phases 1–9)</Link></li>
-              <li><Link href="/delivery-areas" className="hover:text-[#E11D48] transition-colors">Gulberg I, II & III</Link></li>
-              <li><Link href="/delivery-areas" className="hover:text-[#E11D48] transition-colors">Bahria Town & Lake City</Link></li>
-              <li><Link href="/delivery-areas" className="hover:text-[#E11D48] transition-colors">Model Town & Garden Town</Link></li>
-              <li><Link href="/delivery-areas" className="hover:text-[#E11D48] transition-colors">Johar Town & Faisal Town</Link></li>
-              <li><Link href="/delivery-areas" className="hover:text-[#E11D48] transition-colors">Cantt, Cavalry & Askari</Link></li>
-              <li><Link href="/delivery-areas" className="text-[#E11D48] font-semibold hover:underline block pt-0.5">All Lahore Zones →</Link></li>
+              <li><Link href="/delivery-areas/gulberg" className="hover:text-[#E11D48] transition-colors">Gulberg I, II & III</Link></li>
+              <li><Link href="/delivery-areas/bahria-town" className="hover:text-[#E11D48] transition-colors">Bahria Town & Lake City</Link></li>
+              <li><Link href="/delivery-areas/model-town" className="hover:text-[#E11D48] transition-colors">Model Town & Garden Town</Link></li>
+              <li><Link href="/delivery-areas/johar-town" className="hover:text-[#E11D48] transition-colors">Johar Town & Faisal Town</Link></li>
+              <li><Link href="/delivery-areas/cantt" className="hover:text-[#E11D48] transition-colors">Cantt & Cavalry Ground</Link></li>
+              <li><Link href="/delivery-areas/askari" className="hover:text-[#E11D48] transition-colors">Askari Housing (1 to 11)</Link></li>
+              <li><Link href="/delivery-areas/wapda-town" className="hover:text-[#E11D48] transition-colors">Wapda Town & Township</Link></li>
             </ul>
           </div>
 
