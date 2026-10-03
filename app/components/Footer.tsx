@@ -75,6 +75,7 @@ export default function Footer() {
               <li><Link href="/sunflowers" className="hover:text-[#E11D48] transition-colors">Sunflowers & Lilies</Link></li>
               <li><Link href="/crochet-bouquets" className="hover:text-[#E11D48] transition-colors">Handmade Crochet Bouquets</Link></li>
               <li><Link href="/dried-flowers" className="hover:text-[#E11D48] transition-colors">Dried Everlasting Flora</Link></li>
+              <li><Link href="/collections/scents-and-perfumes" className="hover:text-[#E11D48] text-white/90 font-medium transition-colors">✦ Scents & Perfume Gifts</Link></li>
             </ul>
           </div>
 

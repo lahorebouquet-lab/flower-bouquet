@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/collections/wedding-decor`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/collections/fresh-flower-gajray`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${baseUrl}/collections/gifts-cakes`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
+    { url: `${baseUrl}/collections/scents-and-perfumes`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${baseUrl}/crochet-bouquets`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${baseUrl}/dried-flowers`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${baseUrl}/corporate`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
