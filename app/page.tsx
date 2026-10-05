@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: {
     absolute: "Flower Shop in Lahore | Fresh Bouquets & Same-Day Delivery | Lahore Bouquet",
   },
-  description: "Looking for a flower shop near you in Lahore? Lahore Bouquet makes fresh bouquets to order and delivers across the city. Order online or call 0309-4895080.",
+  description: "Looking for a flower shop near you in Lahore? Lahore Bouquet makes fresh bouquets to order and delivers across the city. Order online or call 0310-4225974.",
   alternates: {
     canonical: "https://lahorebouquet.com",
   },
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Flower Shop in Lahore | Fresh Bouquets & Same-Day Delivery | Lahore Bouquet",
-    description: "Looking for a flower shop near you in Lahore? Lahore Bouquet makes fresh bouquets to order and delivers across the city. Order online or call 0309-4895080.",
+    description: "Looking for a flower shop near you in Lahore? Lahore Bouquet makes fresh bouquets to order and delivers across the city. Order online or call 0310-4225974.",
     url: "https://lahorebouquet.com",
     type: "website",
     locale: "en_PK",
@@ -81,7 +81,7 @@ export default async function HomePage() {
       postalCode: "54000",
       addressCountry: "PK",
     },
-    telephone: "+923094895080",
+    telephone: "+923104225974",
     priceRange: "Rs. 1,180 - Rs. 14,500",
     openingHours: "Mo-Su 09:00-01:00",
     url: "https://lahorebouquet.com",

@@ -112,7 +112,7 @@ export default function PoliciesPage() {
         </div>
 
         <a
-          href="https://wa.me/923094895080"
+          href="https://wa.me/923104225974"
           target="_blank"
           rel="noopener noreferrer"
           className="px-5 py-3 rounded-xl bg-[#8B1E2D] hover:bg-[#C6A15B] text-white hover:text-[#0B0B0B] font-bold text-xs uppercase tracking-wider flex items-center gap-2 shadow-lg transition-all whitespace-nowrap"

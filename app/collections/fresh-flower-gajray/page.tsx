@@ -181,7 +181,7 @@ export default async function FreshFlowerGajrayPage() {
           <span className="flex items-center gap-1.5"><ShieldCheck className="w-4 h-4 text-[#C6A15B]" /> Moisture-Sealed Cold Packing</span>
           <span className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-[#25D366]" /> Live Photo on WhatsApp Before Dispatch</span>
           <a 
-            href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20gajray%20or%20wedding%20garlands%20mala."
+            href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20gajray%20or%20wedding%20garlands%20mala."
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-[#8B1E2D] font-semibold hover:text-[#C6A15B]"
@@ -228,13 +228,13 @@ export default async function FreshFlowerGajrayPage() {
           </p>
         </div>
         <a
-          href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20I%20need%20a%20quote%20for%20bulk%20mehndi%20gajray%20or%20bespoke%20bridal%20flower%20jewellery."
+          href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20need%20a%20quote%20for%20bulk%20mehndi%20gajray%20or%20bespoke%20bridal%20flower%20jewellery."
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#25D366] text-white text-sm font-bold shadow-md hover:bg-[#1EBE5D] transition-all whitespace-nowrap"
         >
           <MessageCircle className="w-5 h-5" />
-          Chat on WhatsApp: 0309 4895080
+          Chat on WhatsApp: 0310 4225974
         </a>
       </section>
 

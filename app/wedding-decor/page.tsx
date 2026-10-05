@@ -153,7 +153,7 @@ export default async function WeddingDecorPage() {
             <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4 text-[#C6A15B]" /> On-site setup at home or venue</span>
             <span className="flex items-center gap-1.5"><ShieldCheck className="w-4 h-4 text-[#C6A15B]" /> 100% Fresh Motia & Rose Garlands</span>
             <a 
-              href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20book%20wedding%20decor."
+              href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20book%20wedding%20decor."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-[#C6A15B] font-semibold hover:underline"
@@ -195,7 +195,7 @@ export default async function WeddingDecorPage() {
           </div>
           <div className="pt-4 border-t border-[#E5DED2]">
             <a
-              href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20send%20photos%20for%20a%20wedding%20booking."
+              href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20send%20photos%20for%20a%20wedding%20booking."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#8B1E2D] hover:text-[#C6A15B] transition-colors"
@@ -216,7 +216,7 @@ export default async function WeddingDecorPage() {
           candle arrangements and floral headboard styling — completed discreetly in 2–3 hours while the
           wedding events are underway. Packages start from <strong>Rs. 14,500</strong>, and every setup is
           customised to your room size, colour theme and budget. Share a photo of your room on WhatsApp
-          at +92 309 4895080 for an exact quote the same day.
+          at +92 310 4225974 for an exact quote the same day.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
           <div className="p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">

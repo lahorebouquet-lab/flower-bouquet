@@ -110,7 +110,7 @@ export default async function FlowerDeliveryLahorePage() {
     provider: {
       "@type": "Florist",
       name: "Lahore Bouquet",
-      telephone: "+923094895080",
+      telephone: "+923104225974",
       address: {
         "@type": "PostalAddress",
         streetAddress: "MM Alam Road, Gulberg III",
@@ -171,7 +171,7 @@ export default async function FlowerDeliveryLahorePage() {
 
           {/* AEO / GEO Direct Answer Paragraph */}
           <p className="text-[#F8F3EA]/90 text-sm sm:text-base leading-relaxed font-light">
-            We deliver fresh flowers across Lahore, usually within <strong>2 to 5 hours</strong> of confirming your order. If you order before <strong>4:00 PM</strong>, your flowers reach the destination on the same day. Every arrangement is hand-tied to order at our Gulberg atelier, and a live photo is sent on WhatsApp before dispatch. Order online or call <a href="tel:+923094895080" className="text-[#C6A15B] font-semibold hover:underline">0309-4895080</a>.
+            We deliver fresh flowers across Lahore, usually within <strong>2 to 5 hours</strong> of confirming your order. If you order before <strong>4:00 PM</strong>, your flowers reach the destination on the same day. Every arrangement is hand-tied to order at our Gulberg atelier, and a live photo is sent on WhatsApp before dispatch. Order online or call <a href="tel:+923104225974" className="text-[#C6A15B] font-semibold hover:underline">0310-4225974</a>.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-3 text-xs text-white/80">
@@ -188,13 +188,13 @@ export default async function FlowerDeliveryLahorePage() {
               Browse Bouquets
             </Link>
             <a 
-              href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20I%20want%20to%20order%20flowers%20for%20delivery%20in%20Lahore."
+              href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20want%20to%20order%20flowers%20for%20delivery%20in%20Lahore."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white text-xs sm:text-sm font-semibold transition-all shadow-md active:scale-95"
             >
               <MessageCircle className="w-4 h-4" />
-              Order on WhatsApp (0309-4895080)
+              Order on WhatsApp (0310-4225974)
             </a>
           </div>
         </div>

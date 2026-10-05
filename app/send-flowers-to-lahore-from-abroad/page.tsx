@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "How do I pay for flowers from abroad?",
-    a: "You can pay securely online with any international Visa or Mastercard debit/credit card. If you prefer, message us on WhatsApp at +92 309 4895080 and we will arrange a payment link that works from your country.",
+    a: "You can pay securely online with any international Visa or Mastercard debit/credit card. If you prefer, message us on WhatsApp at +92 310 4225974 and we will arrange a payment link that works from your country.",
   },
   {
     q: "How quickly will my flowers reach Lahore?",
@@ -139,7 +139,7 @@ export default function SendFromAbroadPage() {
             <h3 className="font-semibold text-[#0B0B0B]">2. Pay with your international card</h3>
             <p className="text-xs leading-relaxed">
               Secure checkout accepts international Visa and Mastercard. Prefer chatting first?
-              Message us on WhatsApp at +92 309 4895080 — we reply fast, whatever your time zone.
+              Message us on WhatsApp at +92 310 4225974 — we reply fast, whatever your time zone.
             </p>
           </div>
           <div className="p-6 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] shadow-sm space-y-2">

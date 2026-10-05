@@ -147,7 +147,7 @@ export default function PricesClient() {
             </Link>
 
             <a
-              href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20get%20an%20exact%20quote%20for%20a%20bouquet%20or%20event%20setup%20in%20Lahore."
+              href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20get%20an%20exact%20quote%20for%20a%20bouquet%20or%20event%20setup%20in%20Lahore."
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-3.5 rounded-xl bg-transparent border border-[#C6A15B] text-white hover:bg-[#C6A15B] hover:text-[#0B0B0B] font-bold text-xs uppercase tracking-wider flex items-center gap-2 shadow-md transition-all"
@@ -552,7 +552,7 @@ export default function PricesClient() {
               </div>
 
               <a
-                href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20I%20have%20a%20budget%20and%20reference%20photo%20to%20quote."
+                href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20have%20a%20budget%20and%20reference%20photo%20to%20quote."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-2.5 rounded-xl bg-[#8B1E2D] hover:bg-[#C6A15B] text-white hover:text-[#0B0B0B] font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-md transition-all"
@@ -655,7 +655,7 @@ export default function PricesClient() {
 
           <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
             <a
-              href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20I%20have%20a%20reference%20photo%20and%20budget%20to%20quote%20for%20delivery%20in%20Lahore."
+              href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20have%20a%20reference%20photo%20and%20budget%20to%20quote%20for%20delivery%20in%20Lahore."
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-[#8B1E2D] hover:bg-[#C6A15B] text-white hover:text-[#0B0B0B] font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg transition-all"

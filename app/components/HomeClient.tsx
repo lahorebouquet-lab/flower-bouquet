@@ -181,7 +181,7 @@ export default function HomeClient({
               </Link>
 
               <a
-                href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20flowers%20in%20Lahore."
+                href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20flowers%20in%20Lahore."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-full bg-[#25D366]/15 hover:bg-[#25D366] text-[#25D366] hover:text-white border border-[#25D366]/50 font-semibold text-xs uppercase tracking-wider flex items-center gap-2 transition-all duration-200 active:scale-95 shadow-md"
@@ -595,7 +595,7 @@ export default function HomeClient({
 
           <div className="pt-2">
             <a
-              href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20Can%20you%20deliver%20to%20my%20area%20in%20Lahore?"
+              href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20Can%20you%20deliver%20to%20my%20area%20in%20Lahore?"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-xs font-semibold text-[#8B1E2D] hover:text-[#101012] transition-colors"

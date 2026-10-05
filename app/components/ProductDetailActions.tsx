@@ -50,7 +50,7 @@ export default function ProductDetailActions({ product }: { product: Product }) 
     msg += `\nPlease confirm availability and payment details. Thank you!`;
 
     const encoded = encodeURIComponent(msg);
-    window.open(`https://wa.me/923094895080?text=${encoded}`, "_blank");
+    window.open(`https://wa.me/923104225974?text=${encoded}`, "_blank");
     showToast("Opening WhatsApp with your order details...");
     setTimeout(() => setIsOrdering(false), 1000);
   };
@@ -220,7 +220,7 @@ export default function ProductDetailActions({ product }: { product: Product }) 
         className="w-full py-3.5 px-4 rounded-full bg-[#0B0B0B] hover:bg-[#C6A15B] text-white hover:text-[#0B0B0B] border border-[#C6A15B]/50 font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-md transition-all cursor-pointer active:scale-95"
       >
         <MessageCircle className="w-4 h-4 text-[#25D366]" />
-        Order Instant Via WhatsApp (0309-4895080)
+        Order Instant Via WhatsApp (0310-4225974)
       </button>
 
       {/* Wishlist and Trust Strip */}

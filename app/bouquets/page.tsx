@@ -84,7 +84,7 @@ export default async function BouquetsPage() {
         name: "Can I customise a flower bouquet in Lahore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Tell us your preferred colours, flower types (roses, sunflowers, lilies), and target budget. Our florist will build a custom bouquet tailored to you. Message us on WhatsApp at 0309-4895080."
+          text: "Yes. Tell us your preferred colours, flower types (roses, sunflowers, lilies), and target budget. Our florist will build a custom bouquet tailored to you. Message us on WhatsApp at 0310-4225974."
         }
       },
       {
@@ -145,12 +145,12 @@ export default async function BouquetsPage() {
             <span className="flex items-center gap-1.5"><Truck className="w-4 h-4 text-[#C6A15B]" /> Delivery in 2 to 5 hours</span>
             <span className="flex items-center gap-1.5"><Camera className="w-4 h-4 text-[#25D366]" /> Photo on WhatsApp before dispatch</span>
             <a 
-              href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20a%20bouquet%20in%20Lahore."
+              href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20a%20bouquet%20in%20Lahore."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-[#C6A15B] hover:text-white font-semibold transition-colors"
             >
-              <MessageCircle className="w-4 h-4 text-[#25D366]" /> Order on WhatsApp (0309-4895080)
+              <MessageCircle className="w-4 h-4 text-[#25D366]" /> Order on WhatsApp (0310-4225974)
             </a>
           </div>
         </div>
@@ -327,7 +327,7 @@ export default async function BouquetsPage() {
           </div>
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Can I customise a bouquet?</h3>
-            <p>Yes. Share your colour preferences, flower types, and budget on WhatsApp (0309-4895080) and our florists will create a bespoke arrangement.</p>
+            <p>Yes. Share your colour preferences, flower types, and budget on WhatsApp (0310-4225974) and our florists will create a bespoke arrangement.</p>
           </div>
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Which flowers are best for a birthday?</h3>

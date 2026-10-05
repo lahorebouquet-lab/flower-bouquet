@@ -75,7 +75,7 @@ export default async function CorporatePage() {
           <span className="flex items-center gap-1.5"><FileText className="w-4 h-4 text-[#8B1E2D]" /> Official corporate invoicing & NTN receipts</span>
           <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#C6A15B]" /> Scheduled weekly Monday morning replenishment</span>
           <a 
-            href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20I%20am%20inquiring%20about%20corporate%20flower%20subscriptions%20and%20executive%20gifting."
+            href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20am%20inquiring%20about%20corporate%20flower%20subscriptions%20and%20executive%20gifting."
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-[#8B1E2D] font-semibold hover:text-[#C6A15B]"

@@ -146,7 +146,7 @@ export default async function SunflowerBouquetLahorePage() {
 
           {/* AEO / GEO Direct Answer Paragraph */}
           <p className="text-[#F8F3EA]/90 text-sm sm:text-base leading-relaxed font-light">
-            A sunflower bouquet is the happiest gift you can send. Big, vibrant yellow, and impossible to ignore, it works wonderfully for birthdays, graduations, thank-yous, and cheering someone up. Lahore Bouquet offers fresh sunflower bouquets starting from <strong>Rs. 1,590</strong>, hand-tied on the morning of dispatch and delivered anywhere in Lahore in <strong>2 to 5 hours</strong>. A photo of the actual bouquet is sent on WhatsApp before our rider departs. Order online or call <a href="tel:+923094895080" className="text-[#C6A15B] font-semibold hover:underline">0309-4895080</a>.
+            A sunflower bouquet is the happiest gift you can send. Big, vibrant yellow, and impossible to ignore, it works wonderfully for birthdays, graduations, thank-yous, and cheering someone up. Lahore Bouquet offers fresh sunflower bouquets starting from <strong>Rs. 1,590</strong>, hand-tied on the morning of dispatch and delivered anywhere in Lahore in <strong>2 to 5 hours</strong>. A photo of the actual bouquet is sent on WhatsApp before our rider departs. Order online or call <a href="tel:+923104225974" className="text-[#C6A15B] font-semibold hover:underline">0310-4225974</a>.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-3 text-xs text-white/80">
@@ -157,13 +157,13 @@ export default async function SunflowerBouquetLahorePage() {
 
           <div className="pt-2 flex flex-wrap gap-3">
             <a 
-              href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20I%20want%20to%20order%20a%20sunflower%20bouquet."
+              href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20want%20to%20order%20a%20sunflower%20bouquet."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white text-xs sm:text-sm font-semibold transition-all shadow-md active:scale-95"
             >
               <MessageCircle className="w-4 h-4" />
-              Order on WhatsApp (0309-4895080)
+              Order on WhatsApp (0310-4225974)
             </a>
           </div>
         </div>

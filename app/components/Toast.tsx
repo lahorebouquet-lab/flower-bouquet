@@ -42,7 +42,7 @@ export function StickyMobileBar() {
 
       <div className="flex items-center gap-2">
         <a
-          href={`https://wa.me/923094895080?text=${generateWhatsAppMessage()}`}
+          href={`https://wa.me/923104225974?text=${generateWhatsAppMessage()}`}
           target="_blank"
           rel="noopener noreferrer"
           className="p-2.5 rounded-full bg-[#25D366] text-white hover:opacity-90 font-bold cursor-pointer"

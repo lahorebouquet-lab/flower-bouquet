@@ -487,7 +487,7 @@ export default function CartDrawer() {
 
               {/* Send to WhatsApp Button */}
               <a
-                href={`https://wa.me/923094895080?text=${generateWhatsAppMessage()}`}
+                href={`https://wa.me/923104225974?text=${generateWhatsAppMessage()}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-3.5 rounded-full bg-[#8B1E2D] hover:bg-[#C6A15B] text-white hover:text-[#0B0B0B] font-bold text-xs flex items-center justify-center gap-2 shadow-md transition-all cursor-pointer"

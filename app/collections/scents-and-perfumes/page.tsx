@@ -138,7 +138,7 @@ export default async function ScentsAndPerfumesPage() {
           <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> Same-Day 2–5h & Midnight Delivery</span>
           <span className="flex items-center gap-1.5"><ShieldCheck className="w-4 h-4 text-[#C6A15B]" /> 100% Authentic Fragrance Guarantee</span>
           <a 
-            href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20a%20perfume%20and%20flower%20gift%20combo%20in%20Lahore."
+            href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20a%20perfume%20and%20flower%20gift%20combo%20in%20Lahore."
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-[#8B1E2D] font-semibold hover:text-[#C6A15B]"
@@ -163,7 +163,7 @@ export default async function ScentsAndPerfumesPage() {
             </div>
             <p className="text-xs text-[#2A2A2A] leading-relaxed">{item.desc}</p>
             <a 
-              href={`https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20I%20want%20to%20order:%20${encodeURIComponent(item.name)}`}
+              href={`https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20want%20to%20order:%20${encodeURIComponent(item.name)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-xs text-[#8B1E2D] hover:text-[#C6A15B] font-semibold pt-2 transition-colors"

@@ -270,7 +270,7 @@ export default function Header() {
             <div className="flex items-center gap-3 sm:gap-4">
               {/* Header Button: Order on WhatsApp */}
               <a
-                href="https://wa.me/923094895080?text=Hi%20Lahore%20Bouquet%2C%20I%20would%20like%20to%20order%20flowers%2C%20cakes%20or%20perfumes"
+                href="https://wa.me/923104225974?text=Hi%20Lahore%20Bouquet%2C%20I%20would%20like%20to%20order%20flowers%2C%20cakes%20or%20perfumes"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp Order"
@@ -413,12 +413,12 @@ export default function Header() {
               <span className="text-[#C6A15B] font-medium">● 2–5 Hours / Midnight</span>
             </div>
             <a
-              href="https://wa.me/923094895080?text=Hi%20Lahore%20Bouquet%2C%20I%20would%20like%20to%20order%20flowers"
+              href="https://wa.me/923104225974?text=Hi%20Lahore%20Bouquet%2C%20I%20would%20like%20to%20order%20flowers"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full h-11 rounded-full bg-[#8B1E2D] hover:bg-[#C6A15B] text-white hover:text-[#0B0B0B] font-bold text-xs tracking-wider uppercase flex items-center justify-center gap-2 transition-all shadow-md"
             >
-              Order via WhatsApp: +92 309 4895080
+              Order via WhatsApp: +92 310 4225974
             </a>
           </div>
         </div>

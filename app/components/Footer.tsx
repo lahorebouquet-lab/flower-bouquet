@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { MessageCircle, Phone, Clock, MapPin, Send } from "lucide-react";
+import { MessageCircle, Phone, Clock, MapPin, Send, Mail } from "lucide-react";
 import { useCart } from "../context/CartContext";
 import Logo from "./Logo";
 
@@ -133,18 +133,25 @@ export default function Footer() {
             <h3 className="font-semibold text-white tracking-wide text-sm">Florist Support</h3>
             <div className="space-y-2.5 text-[#BDBDBD]">
               <a 
-                href="https://wa.me/923094895080" 
+                href="https://wa.me/923104225974" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-[#C6A15B] hover:text-white transition-colors font-bold"
               >
                 <MessageCircle className="w-4 h-4 text-[#25D366]" />
-                <span>WhatsApp: 0309-4895080</span>
+                <span>WhatsApp: 0310-4225974</span>
               </a>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#C6A15B]" />
-                <span>Direct Helpline: +92 309 4895080</span>
+                <span>Direct Helpline: +92 310 4225974</span>
               </div>
+              <a
+                href="mailto:flowerbouquet@gmail.com"
+                className="flex items-center gap-2 hover:text-white transition-colors"
+              >
+                <Mail className="w-4 h-4 text-[#C6A15B]" />
+                <span>flowerbouquet@gmail.com</span>
+              </a>
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-[#C6A15B]" />
                 <span>Mon–Sun: 9:00 AM – 1:00 AM</span>

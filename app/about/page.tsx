@@ -35,7 +35,8 @@ const aboutSchema = {
       "@id": "https://lahorebouquet.com#florist",
       name: "Lahore Bouquet",
       url: "https://lahorebouquet.com",
-      telephone: "+923094895080",
+      telephone: "+923104225974",
+      email: "flowerbouquet@gmail.com",
       priceRange: "Rs. 1,180 - Rs. 14,500",
       address: {
         "@type": "PostalAddress",
@@ -169,7 +170,7 @@ export default function AboutPage() {
             Browse Bouquets
           </Link>
           <a
-            href="https://wa.me/923094895080"
+            href="https://wa.me/923104225974"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-full bg-white/10 hover:bg-[#C6A15B] text-white hover:text-[#0B0B0B] border border-[#C6A15B]/40 font-bold text-xs uppercase tracking-wider flex items-center gap-1.5 transition-all duration-200 active:scale-95"

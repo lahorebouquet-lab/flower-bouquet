@@ -122,7 +122,7 @@ export default function PriceGuidePage() {
           </div>
           <div className="pt-2 border-t border-[#E5DED2]">
             <a
-              href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20What%20would%20delivery%20cost%20to%20my%20area?"
+              href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20What%20would%20delivery%20cost%20to%20my%20area?"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#8B1E2D] hover:text-[#C6A15B] transition-colors"
@@ -142,7 +142,7 @@ export default function PriceGuidePage() {
         </div>
 
         <a
-          href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20I%20have%20a%20budget%20of%20Rs.%20"
+          href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20have%20a%20budget%20of%20Rs.%20"
           target="_blank"
           rel="noopener noreferrer"
           className="px-5 py-3 rounded-xl bg-[#8B1E2D] hover:bg-[#C6A15B] text-white hover:text-[#0B0B0B] font-bold text-xs uppercase tracking-wider flex items-center gap-2 shadow-lg transition-all whitespace-nowrap"

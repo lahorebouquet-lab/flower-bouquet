@@ -22,7 +22,7 @@ export const HOMEPAGE_FAQS: FAQItem[] = [
   },
   {
     q: "Can I see the bouquet before it is delivered?",
-    a: "Yes. Every bouquet is arranged fresh to order, and our florist shares a live photo on WhatsApp (0309-4895080) for your approval before dispatch."
+    a: "Yes. Every bouquet is arranged fresh to order, and our florist shares a live photo on WhatsApp (0310-4225974) for your approval before dispatch."
   },
   {
     q: "What payment methods do you accept?",

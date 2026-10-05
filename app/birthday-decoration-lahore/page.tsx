@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "How much does birthday decoration cost in Lahore?",
-    a: "Our birthday decoration packages start from Rs. 4,999 for a classic balloon + banner home setup. Premium packages with flower backdrops and helium balloon bunches range from Rs. 9,999 to Rs. 19,999 depending on the size of the setup. Share your budget on WhatsApp at +92 309 4895080 and we will customise a package for you.",
+    a: "Our birthday decoration packages start from Rs. 4,999 for a classic balloon + banner home setup. Premium packages with flower backdrops and helium balloon bunches range from Rs. 9,999 to Rs. 19,999 depending on the size of the setup. Share your budget on WhatsApp at +92 310 4225974 and we will customise a package for you.",
   },
   {
     q: "Do you provide helium balloons in Lahore?",
@@ -125,7 +125,7 @@ export default function BirthdayDecorationLahorePage() {
     provider: {
       "@type": "Florist",
       name: "Lahore Bouquet",
-      telephone: "+92 309 4895080",
+      telephone: "+92 310 4225974",
       address: {
         "@type": "PostalAddress",
         streetAddress: "MM Alam Road, Gulberg III",
@@ -202,7 +202,7 @@ export default function BirthdayDecorationLahorePage() {
                 ))}
               </ul>
               <a
-                href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20I%20want%20to%20book%20the%20birthday%20decoration%20package."
+                href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20want%20to%20book%20the%20birthday%20decoration%20package."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#8B1E2D] text-white text-xs font-semibold hover:bg-[#a32438] transition-colors"
@@ -296,7 +296,7 @@ export default function BirthdayDecorationLahorePage() {
         </p>
         <div className="flex flex-wrap justify-center gap-3">
           <a
-            href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20I%20want%20birthday%20decoration%20in%20Lahore."
+            href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20want%20birthday%20decoration%20in%20Lahore."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#25D366] text-white text-sm font-semibold hover:opacity-90 transition-opacity"

@@ -126,7 +126,7 @@ export default async function WhiteRosesPage() {
             <span className="flex items-center gap-1.5"><Truck className="w-4 h-4 text-[#C6A15B]" /> Delivery in 2 to 5 hours</span>
             <span className="flex items-center gap-1.5"><Camera className="w-4 h-4 text-[#C6A15B]" /> Photo on WhatsApp before it leaves</span>
             <a 
-              href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20white%20roses."
+              href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20white%20roses."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-[#C6A15B] font-semibold hover:underline"

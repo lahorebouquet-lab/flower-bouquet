@@ -119,7 +119,7 @@ export default function DeliveryAreasPage() {
         </p>
         <div className="pt-1">
           <a
-            href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20Can%20you%20deliver%20to%20my%20address%20in%20Lahore?"
+            href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20Can%20you%20deliver%20to%20my%20address%20in%20Lahore?"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#8B1E2D] hover:text-[#C6A15B] transition-colors"

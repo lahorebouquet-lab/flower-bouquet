@@ -39,7 +39,8 @@ export default function ContactPage() {
     "name": "Lahore Bouquet",
     "url": "https://lahorebouquet.com/contact",
     "image": "https://lahorebouquet.com/icon.png",
-    "telephone": "+923094895080",
+    "telephone": "+923104225974",
+    "email": "flowerbouquet@gmail.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "MM Alam Road, Gulberg III",
@@ -114,13 +115,13 @@ export default function ContactPage() {
               </p>
             </div>
             <a
-              href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20flowers."
+              href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20flowers."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#8B1E2D] hover:bg-[#C6A15B] text-white hover:text-[#0B0B0B] font-semibold text-xs shadow-md transition-all cursor-pointer active:scale-95"
             >
               <MessageCircle className="w-4 h-4 text-[#25D366]" />
-              WhatsApp: 0309-4895080
+              WhatsApp: 0310-4225974
             </a>
           </div>
 
@@ -138,16 +139,39 @@ export default function ContactPage() {
             </div>
             <div className="space-y-1">
               <a
-                href="tel:+923094895080"
+                href="tel:+923104225974"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#F8F3EA] hover:bg-[#0B0B0B] text-[#0B0B0B] hover:text-white border border-[#E5DED2] font-semibold text-xs transition-all cursor-pointer block"
               >
                 <Phone className="w-3.5 h-3.5 text-[#8B1E2D]" />
-                +92 309 4895080
+                +92 310 4225974
               </a>
             </div>
           </div>
 
-          {/* Card 3: Atelier Studio */}
+          {/* Card 3: Email */}
+          <div className="p-6 rounded-2xl bg-white border border-[#E5DED2] hover:border-[#C6A15B] transition-all shadow-xs space-y-4">
+            <div className="w-12 h-12 rounded-xl bg-[#F8F3EA] border border-[#E5DED2] flex items-center justify-center text-[#8B1E2D]">
+              <Mail className="w-6 h-6" />
+            </div>
+            <div>
+              <span className="text-xs uppercase font-bold tracking-wider text-[#8B1E2D]">Email Us</span>
+              <h2 className="font-playfair text-xl font-bold text-[#0B0B0B] mt-1">Send an Email</h2>
+              <p className="text-xs text-[#2A2A2A] mt-1 leading-relaxed">
+                For bulk orders, corporate inquiries, wedding quotes, and feedback — we reply within a few hours.
+              </p>
+            </div>
+            <div className="space-y-1">
+              <a
+                href="mailto:flowerbouquet@gmail.com"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#F8F3EA] hover:bg-[#0B0B0B] text-[#0B0B0B] hover:text-white border border-[#E5DED2] font-semibold text-xs transition-all cursor-pointer block break-all"
+              >
+                <Mail className="w-3.5 h-3.5 text-[#8B1E2D] shrink-0" />
+                flowerbouquet@gmail.com
+              </a>
+            </div>
+          </div>
+
+          {/* Card 4: Atelier Studio */}
           <div className="p-6 rounded-2xl bg-white border border-[#E5DED2] hover:border-[#C6A15B] transition-all shadow-xs space-y-4">
             <div className="w-12 h-12 rounded-xl bg-[#F8F3EA] border border-[#E5DED2] flex items-center justify-center text-[#8B1E2D]">
               <MapPin className="w-6 h-6" />

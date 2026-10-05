@@ -164,12 +164,12 @@ export default async function GiftsAndCakesPage() {
               <Clock className="w-4 h-4 text-[#C6A15B]" /> Midnight Surprise Slot (11:30 PM)
             </span>
             <a 
-              href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20a%20Layers%20cake%20and%20chocolates."
+              href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20a%20Layers%20cake%20and%20chocolates."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-[#C6A15B] font-semibold hover:underline"
             >
-              <MessageCircle className="w-4 h-4 text-[#25D366]" /> Order on WhatsApp (0309-4895080)
+              <MessageCircle className="w-4 h-4 text-[#25D366]" /> Order on WhatsApp (0310-4225974)
             </a>
           </div>
         </div>

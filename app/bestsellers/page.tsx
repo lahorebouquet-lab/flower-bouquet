@@ -60,7 +60,7 @@ export default async function BestsellersPage() {
           </div>
           <div className="flex items-center justify-center gap-2 text-xs sm:text-sm text-[#2A2A2A]">
             <MessageCircle className="w-4 h-4 text-[#8B1E2D]" />
-            <span>Order on WhatsApp: <strong>+92 309 4895080</strong></span>
+            <span>Order on WhatsApp: <strong>+92 310 4225974</strong></span>
           </div>
         </div>
       </section>

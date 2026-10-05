@@ -75,7 +75,7 @@ export default async function TulipBouquetLahorePage() {
         name: "Are fresh tulips available all year in Lahore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Tulips are cold-climate flowers and seasonal in Pakistan. They are most readily available from November through April via air-freighted Dutch imports. Please verify daily stock on WhatsApp (0309-4895080)."
+          text: "Tulips are cold-climate flowers and seasonal in Pakistan. They are most readily available from November through April via air-freighted Dutch imports. Please verify daily stock on WhatsApp (0310-4225974)."
         }
       },
       {
@@ -139,7 +139,7 @@ export default async function TulipBouquetLahorePage() {
 
           {/* AEO / GEO Direct Answer Paragraph */}
           <p className="text-[#F8F3EA]/90 text-sm sm:text-base leading-relaxed font-light">
-            Tulips are not an everyday flower in Pakistan, and that is part of their rare elegance. A tulip bouquet feels soft, modern, and extraordinarily special. Lahore Bouquet offers fresh imported seasonal Dutch tulips starting from <strong>Rs. 4,800</strong>, hand-tied in minimalist matte wrap and delivered across Lahore in <strong>2 to 5 hours</strong>. Due to seasonal imports, please confirm color availability on WhatsApp at <a href="tel:+923094895080" className="text-[#C6A15B] font-semibold hover:underline">0309-4895080</a> before booking.
+            Tulips are not an everyday flower in Pakistan, and that is part of their rare elegance. A tulip bouquet feels soft, modern, and extraordinarily special. Lahore Bouquet offers fresh imported seasonal Dutch tulips starting from <strong>Rs. 4,800</strong>, hand-tied in minimalist matte wrap and delivered across Lahore in <strong>2 to 5 hours</strong>. Due to seasonal imports, please confirm color availability on WhatsApp at <a href="tel:+923104225974" className="text-[#C6A15B] font-semibold hover:underline">0310-4225974</a> before booking.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-3 text-xs text-white/80">
@@ -150,13 +150,13 @@ export default async function TulipBouquetLahorePage() {
 
           <div className="pt-2 flex flex-wrap gap-3">
             <a 
-              href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20Are%20fresh%20tulips%20available%20today?"
+              href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20Are%20fresh%20tulips%20available%20today?"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white text-xs sm:text-sm font-semibold transition-all shadow-md active:scale-95"
             >
               <MessageCircle className="w-4 h-4" />
-              Check Tulip Stock on WhatsApp (0309-4895080)
+              Check Tulip Stock on WhatsApp (0310-4225974)
             </a>
           </div>
         </div>
