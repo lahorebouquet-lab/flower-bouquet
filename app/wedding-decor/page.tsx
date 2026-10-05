@@ -91,6 +91,22 @@ export default async function WeddingDecorPage() {
           "@type": "Answer",
           text: "Yes! We craft matching fresh flower jewellery (haath phool, matha patti, jhumkay) and fragrant motia gajray for Mehndi and Mayun celebrations across Lahore."
         }
+      },
+      {
+        "@type": "Question",
+        name: "How much does bridal room decoration cost in Lahore?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Bridal room decoration packages start from Rs. 14,500 for canopy drapes, rose petal bed styling and candles. Larger luxury setups with full floral headboards range up to Rs. 35,000 depending on room size and flower selection."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "How long does bridal room decoration take to set up?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A standard bridal room setup takes 2 to 3 hours. Our team works discreetly while wedding events are underway and finishes at least an hour before the couple arrives."
+        }
       }
     ]
   };
@@ -191,6 +207,33 @@ export default async function WeddingDecorPage() {
         </div>
       </section>
 
+      {/* Bridal Room Decoration — keyword-targeted section */}
+      <section className="bg-white p-6 sm:p-10 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-4">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Bridal Room Decoration in Lahore</h2>
+        <p className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed max-w-3xl">
+          Our <strong>bridal room decoration in Lahore</strong> turns the couple&apos;s first night into something
+          unforgettable. We create romantic canopy drapes over the bed, fresh rose petal trails, scented
+          candle arrangements and floral headboard styling — completed discreetly in 2–3 hours while the
+          wedding events are underway. Packages start from <strong>Rs. 14,500</strong>, and every setup is
+          customised to your room size, colour theme and budget. Share a photo of your room on WhatsApp
+          at +92 309 4895080 for an exact quote the same day.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+          <div className="p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <strong className="block text-sm text-[#8B1E2D] mb-1">Canopy & Drapes</strong>
+            Sheer fabric ceiling canopy with fairy lights and hanging rose buds.
+          </div>
+          <div className="p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <strong className="block text-sm text-[#8B1E2D] mb-1">Bed Styling</strong>
+            Fresh rose petal art, heart arrangements and scented candles.
+          </div>
+          <div className="p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <strong className="block text-sm text-[#8B1E2D] mb-1">Finishing Touches</strong>
+            Floral headboard, welcome signage and fragrance setup.
+          </div>
+        </div>
+      </section>
+
       {/* Product Grid */}
       <section className="space-y-4">
         <div className="flex items-center justify-between text-xs text-[#2A2A2A]">
@@ -220,6 +263,14 @@ export default async function WeddingDecorPage() {
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Do the flowers smell?</h3>
             <p>Fresh roses do, and that is the point. Tell us if anyone in the room has an allergy.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">How much does bridal room decoration cost in Lahore?</h3>
+            <p>Bridal room decoration packages start from Rs. 14,500 for canopy drapes, rose petal bed styling and candles. Larger luxury setups range up to Rs. 35,000 depending on room size and flower selection.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">How long does bridal room decoration take to set up?</h3>
+            <p>A standard bridal room setup takes 2 to 3 hours. Our team works discreetly while wedding events are underway and finishes at least an hour before the couple arrives.</p>
           </div>
         </div>
       </section>

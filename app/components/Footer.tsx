@@ -88,6 +88,8 @@ export default function Footer() {
               <li><Link href="/prices" className="hover:text-[#C6A15B] text-white font-medium transition-colors">★ Lahore Price Guide 2026</Link></li>
               <li><Link href="/flower-delivery-in-lahore" className="hover:text-[#C6A15B] transition-colors">Express Same-Day Delivery</Link></li>
               <li><Link href="/send-flowers-to-lahore-from-abroad" className="hover:text-[#C6A15B] transition-colors">Send from Abroad (UK, USA, UAE)</Link></li>
+              <li><Link href="/birthday-decoration-lahore" className="hover:text-[#C6A15B] transition-colors">Birthday Decoration at Home</Link></li>
+              <li><Link href="/lily-bouquet-lahore" className="hover:text-[#C6A15B] transition-colors">Fresh Lily Bouquets</Link></li>
               <li><Link href="/wedding-decor" className="hover:text-[#C6A15B] transition-colors">Wedding Room & Car Décor</Link></li>
               <li><Link href="/collections/fresh-flower-gajray" className="hover:text-[#C6A15B] transition-colors">Fresh Motia & Rose Gajray</Link></li>
               <li><Link href="/money-bouquets" className="hover:text-[#C6A15B] transition-colors">Custom Money Bouquets</Link></li>
