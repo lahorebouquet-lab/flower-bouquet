@@ -126,45 +126,45 @@ export default function HomeClient({
   return (
     <>
       {/* 1. HERO SECTION (Preserving 100% Real Size & Natural Uncropped Proportions) */}
-      <section className="relative min-h-[480px] sm:min-h-[520px] lg:min-h-[580px] xl:min-h-[640px] flex items-center overflow-hidden border-b border-white/10 bg-[#0B0B0B] py-10 sm:py-14 lg:py-16">
+      <section className="relative min-h-[480px] sm:min-h-[520px] lg:min-h-[580px] xl:min-h-[640px] flex items-center overflow-hidden border-b border-[#C6A15B]/30 bg-[#F6F1E7] py-10 sm:py-14 lg:py-16">
         {/* Full-Width Background Image Layer - Responsive & LCP Optimized */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <picture>
             <source
               media="(max-width: 640px)"
-              srcSet="/images/hero-luxury-banner-mobile.webp"
+              srcSet="/images/hero-blush-elegance-banner.webp"
               type="image/webp"
             />
             <img
-              src="/images/luxurious-crimson-rose-bouquet-banner.webp"
-              alt="Luxurious crimson rose bouquet with ivory blooms and falling petals for flower delivery in Lahore | Lahore Bouquet"
+              src="/images/hero-blush-elegance-banner.webp"
+              alt="Elegant blush pink rose and lily bouquet in a gold vase for flower delivery in Lahore | Lahore Bouquet"
               fetchPriority="high"
               decoding="async"
-              className="absolute inset-0 w-full h-full object-cover object-[75%_center] sm:object-contain sm:object-right"
+              className="absolute inset-0 w-full h-full object-cover object-[70%_center] sm:object-cover sm:object-center"
             />
           </picture>
 
-          {/* Subtle natural left fade to ensure pristine text readability */}
-          <div className="hidden lg:block absolute inset-y-0 left-0 w-2/5 bg-gradient-to-r from-[#0B0B0B] via-[#0B0B0B]/60 to-transparent pointer-events-none" />
-          <div className="block lg:hidden absolute inset-0 bg-gradient-to-t from-[#0B0B0B] via-[#0B0B0B]/75 to-transparent pointer-events-none" />
+          {/* Soft cream left fade to ensure pristine text readability */}
+          <div className="hidden lg:block absolute inset-y-0 left-0 w-2/5 bg-gradient-to-r from-[#F6F1E7] via-[#F6F1E7]/70 to-transparent pointer-events-none" />
+          <div className="block lg:hidden absolute inset-0 bg-gradient-to-t from-[#F6F1E7] via-[#F6F1E7]/80 to-transparent pointer-events-none" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
           {/* Natural clean text layout without any card or box border */}
           <div className="max-w-xl lg:max-w-2xl space-y-4 sm:space-y-6 text-center lg:text-left">
-            {/* Eyebrow: #C6A15B */}
-            <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-full bg-white/[0.08] backdrop-blur-xs border border-[#C6A15B]/50 text-[#C6A15B] text-[10px] sm:text-xs font-semibold uppercase tracking-wider shadow-sm">
+            {/* Eyebrow: burgundy on cream */}
+            <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-full bg-white/70 backdrop-blur-xs border border-[#C6A15B]/60 text-[#8B1E2D] text-[10px] sm:text-xs font-semibold uppercase tracking-wider shadow-sm">
               <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#C6A15B]" />
               Hand-Tied in Lahore • Same-Day Express Delivery
             </div>
 
-            {/* Main Heading: #FFFFFF with #C6A15B accent */}
-            <h1 className="font-playfair text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white leading-tight drop-shadow-lg">
-              Fresh Flower Bouquets in Lahore, <span className="text-[#C6A15B]">Delivered to Your Door</span>
+            {/* Main Heading: dark with burgundy accent */}
+            <h1 className="font-playfair text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-[#0B0B0B] leading-tight">
+              Fresh Flower Bouquets in Lahore, <span className="text-[#8B1E2D]">Delivered to Your Door</span>
             </h1>
 
-            {/* Description: #F8F3EA */}
-            <p className="text-[#F8F3EA] text-xs sm:text-sm lg:text-base max-w-xl mx-auto lg:mx-0 leading-relaxed drop-shadow">
+            {/* Description */}
+            <p className="text-[#2A2A2A] text-xs sm:text-sm lg:text-base max-w-xl mx-auto lg:mx-0 leading-relaxed">
               Lahore Bouquet is a premier flower shop in Lahore that makes fresh bouquets for birthdays, anniversaries, get-well wishes, and celebrations. Sourced daily and hand-tied to order in Gulberg, we deliver across Lahore in 2 to 5 hours—including DHA, Johar Town, Model Town, and Bahria Town—with a live photo sent on WhatsApp before dispatch.
             </p>
 
@@ -192,12 +192,12 @@ export default function HomeClient({
             </div>
 
             {/* Trust Micro-Badges (Accessible 12px text) */}
-            <div className="pt-1 sm:pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-y-2 gap-x-4 text-xs text-[#F8F3EA]">
+            <div className="pt-1 sm:pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-y-2 gap-x-4 text-xs text-[#2A2A2A]">
               <span className="flex items-center gap-1.5">
                 <Star className="w-3.5 h-3.5 fill-[#C6A15B] text-[#C6A15B]" />
-                <span><strong className="text-white">4.9/5 Rating</strong> (1,200+ Delivered)</span>
+                <span><strong className="text-[#0B0B0B]">4.9/5 Rating</strong> (1,200+ Delivered)</span>
               </span>
-              <span className="hidden sm:inline text-white/40">•</span>
+              <span className="hidden sm:inline text-[#0B0B0B]/30">•</span>
               <span>100% Fresh Stems Guarantee</span>
               <span className="hidden sm:inline text-white/40">•</span>
               <span>Gulberg Artisanal Studio</span>
