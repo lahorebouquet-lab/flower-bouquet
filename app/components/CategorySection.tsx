@@ -269,12 +269,14 @@ export const FEATURED_BOUQUETS = [
 ];
 
 import { SanityCategory } from "@/sanity/lib/fetch";
+import { Product } from "../data/products";
 
 interface CategorySectionProps {
   categories?: SanityCategory[];
+  products?: Product[];
 }
 
-export default function CategorySection({ categories }: CategorySectionProps) {
+export default function CategorySection({ categories, products }: CategorySectionProps) {
   const depts: DepartmentItem[] = (categories && categories.length > 0)
     ? categories.map((c) => ({
         id: c.id || c._id,
@@ -286,6 +288,29 @@ export default function CategorySection({ categories }: CategorySectionProps) {
         badge: c.badge || "",
       }))
     : ALL_DEPARTMENTS;
+
+  // Featured bouquets: use live Sanity products so links never go stale.
+  // Falls back to the static list only if no products were provided.
+  const liveFeatured = (products && products.length > 0
+    ? [
+        ...products.filter((p) => p.badgeType === "bestseller" || p.badgeType === "hot" || p.badge === "Bestseller"),
+        ...products.filter((p) => !(p.badgeType === "bestseller" || p.badgeType === "hot" || p.badge === "Bestseller")),
+      ]
+    : []
+  )
+    .slice(0, 8)
+    .map((p) => ({
+      id: String(p.id),
+      name: p.title,
+      tagline: (p.stems || p.desc || "").slice(0, 60),
+      price: p.price,
+      oldPrice: p.oldPrice,
+      image: p.image,
+      badge: p.badge || "Bestseller",
+      rating: p.rating || 4.9,
+      href: `/products/${p.slug || p.id}`,
+    }));
+  const featuredBouquets = liveFeatured.length > 0 ? liveFeatured : FEATURED_BOUQUETS;
 
   const [activeDeptTab, setActiveDeptTab] = useState<
     "all" | "bouquets" | "occasions" | "gifts" | "scents" | "decor" | "delivery"
@@ -313,7 +338,7 @@ export default function CategorySection({ categories }: CategorySectionProps) {
           setActiveBouquetIndex(0);
         } else {
           bouquetSliderRef.current.scrollBy({ left: 200, behavior: "smooth" });
-          setActiveBouquetIndex((prev) => (prev + 1) % FEATURED_BOUQUETS.length);
+          setActiveBouquetIndex((prev) => (prev + 1) % featuredBouquets.length);
         }
       }
     }, 4500);
@@ -327,7 +352,7 @@ export default function CategorySection({ categories }: CategorySectionProps) {
       setCanBouquetScrollLeft(scrollLeft > 10);
       const cardWidth = 185;
       const index = Math.round(scrollLeft / cardWidth);
-      setActiveBouquetIndex(Math.min(Math.max(0, index), FEATURED_BOUQUETS.length - 1));
+      setActiveBouquetIndex(Math.min(Math.max(0, index), featuredBouquets.length - 1));
     }
   };
 
@@ -451,7 +476,7 @@ export default function CategorySection({ categories }: CategorySectionProps) {
               onMouseUp={onBouquetMouseUpOrLeave}
               className="flex gap-2.5 sm:gap-3.5 overflow-x-auto scroll-smooth pb-2 pt-1 snap-x snap-mandatory no-scrollbar cursor-grab active:cursor-grabbing select-none"
             >
-              {FEATURED_BOUQUETS.map((bouquet) => (
+              {featuredBouquets.map((bouquet) => (
                 <Link
                   key={bouquet.id}
                   href={bouquet.href}
@@ -514,7 +539,7 @@ export default function CategorySection({ categories }: CategorySectionProps) {
 
             {/* Slider Position Indicator Dots (Accessible 28x28px touch target with slim visual indicator) */}
             <div className="flex items-center justify-center gap-0.5 pt-1.5">
-              {FEATURED_BOUQUETS.map((_, idx) => (
+              {featuredBouquets.map((_, idx) => (
                 <button
                   key={idx}
                   type="button"

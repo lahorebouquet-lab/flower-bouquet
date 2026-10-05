@@ -252,7 +252,7 @@ export default function HomeClient({
       </section>
 
       {/* 3. CATEGORY & FEATURED BOUQUETS SLIDER (Section 6: Warm Ivory #F8F3EA) */}
-      <CategorySection categories={initialCategories} />
+      <CategorySection categories={initialCategories} products={products} />
 
       {/* 4. FEATURED / BESTSELLER SECTION (Harmonized with Warm Ivory card palette) */}
       <section className="w-full py-16 px-4 sm:px-6 bg-[#F8F3EA] border-b border-[#E5DED2] text-[#101012]">
