@@ -36,11 +36,9 @@ export default async function TulipBouquetLahorePage() {
   const sanityProducts = await getSanityProducts();
   const allProducts = sanityProducts.length > 0 ? sanityProducts : ALL_PRODUCTS;
 
-  // Filter tulip and premium seasonal bouquets
-  const tulipProducts = allProducts.filter(p => 
-    p.title.toLowerCase().includes("tulip") || 
-    p.title.toLowerCase().includes("lily") ||
-    p.title.toLowerCase().includes("pastel")
+  // Filter tulip bouquets only (lilies have their own page)
+  const tulipProducts = allProducts.filter(p =>
+    p.title.toLowerCase().includes("tulip")
   );
 
   const breadcrumbSchema = {
