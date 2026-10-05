@@ -13,7 +13,7 @@ export default function QuickViewModal() {
 
   return (
     <div className="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm flex items-center justify-center p-4">
-      <div className="relative bg-white border border-[rgba(198,161,91,0.30)] rounded-2xl max-w-2xl w-full overflow-hidden shadow-2xl animate-fade-in text-[#2A2A2A]">
+      <div className="relative bg-white border border-[rgba(198,161,91,0.30)] rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl animate-fade-in text-[#2A2A2A]">
         
         <button 
           onClick={() => setQuickViewProduct(null)}
