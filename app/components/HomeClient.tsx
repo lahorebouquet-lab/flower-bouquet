@@ -271,7 +271,7 @@ export default function HomeClient({
             </div>
 
             <Link
-              href="/collections/bouquets"
+              href="/bestsellers"
               className="group inline-flex items-center gap-1.5 text-xs font-semibold tracking-wider uppercase text-[#0B0B0B] hover:text-[#8B1E2D] transition-colors"
             >
               <span>Explore All Bestsellers</span>
