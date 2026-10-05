@@ -1,0 +1,1655 @@
+[
+  {
+    "id": 8202721263747,
+    "title": "Layers Raffaello Cake",
+    "handle": "raffaello-cake",
+    "body_html": "<p>Super moist vanilla sponge with loads of raffaello &amp; white chocolate!</p>",
+    "published_at": "2024-04-23T13:27:33+05:00",
+    "created_at": "2024-04-23T13:27:33+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet Co",
+    "product_type": "",
+    "tags": [
+      "cake",
+      "layers cakes"
+    ],
+    "variants": [
+      {
+        "id": 44124004089987,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "3499.00",
+        "grams": 0,
+        "compare_at_price": null,
+        "position": 1,
+        "product_id": 8202721263747,
+        "created_at": "2024-04-23T13:27:33+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 40465584259203,
+        "created_at": "2024-04-23T13:27:33+05:00",
+        "position": 1,
+        "updated_at": "2024-04-23T13:27:33+05:00",
+        "product_id": 8202721263747,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/rafaelo-q0b9wbsor4rh60mbm77w8z0fdtxwv8vtqpcq67vqtk.jpg?v=1713860853",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8507135852675,
+    "title": "Layers Lotus three Milk Cake",
+    "handle": "layers-lotus-three-milk-cake",
+    "body_html": "<p>Welcome to our <strong>Layers Lotus Three Milk Cake</strong> collection! This is the perfect treat for anyone who loves desserts that are rich, creamy, and absolutely delicious. Our special cake is made with soft layers soaked in a mix of three different types of milk, giving it a wonderfully moist and smooth texture. On top, we add a generous layer of Lotus Biscoff biscuits for that sweet and crunchy caramel flavor everyone loves.</p>\n<p>This cake is perfect for all kinds of occasions—whether it’s a birthday, an anniversary, a party, or just a day when you want to treat yourself or someone special. The combination of creamy milk layers and crunchy Lotus Biscoff makes every bite a heavenly experience.</p>\n<p>🌟 <strong>What Makes Our Layers Lotus Three Milk Cake Special?</strong></p>\n<ul>\n<li>Made with high-quality, fresh ingredients</li>\n<li>A perfect balance of creaminess and crunch</li>\n<li>Great for all celebrations and events</li>\n<li>Available for quick and easy delivery</li>\n</ul>\n<p>If you’re looking for a dessert that’s as delightful to eat as it is to look at, this is the one for you. Whether you’re gifting it to someone or enjoying it yourself, our <strong>Layers Lotus Three Milk Cake</strong> will add sweetness to every moment.</p>\n<p>Order now and enjoy the magic of this delicious dessert!</p>",
+    "published_at": "2024-11-20T16:50:53+05:00",
+    "created_at": "2024-11-20T16:50:53+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet",
+    "product_type": "cakes",
+    "tags": [
+      "bestsellercakes",
+      "cake",
+      "cakes",
+      "layers cakes"
+    ],
+    "variants": [
+      {
+        "id": 44988710912131,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "3799.00",
+        "grams": 1134,
+        "compare_at_price": "3400.00",
+        "position": 2,
+        "product_id": 8507135852675,
+        "created_at": "2024-11-20T16:50:55+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 41916836282499,
+        "created_at": "2024-11-20T16:41:54+05:00",
+        "position": 1,
+        "updated_at": "2024-11-20T16:41:55+05:00",
+        "product_id": 8507135852675,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/Lotus-Three-Milk-Cake_73020f22-aebe-419e-9698-037791030b7e.jpg?v=1732102915",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8202718216323,
+    "title": "Layers Ferrero Classic Cake",
+    "handle": "ferrero-classic-cake",
+    "body_html": "<p>Made from 100% ferrero hazelnut chocolate &amp; roasted nuts!</p>",
+    "published_at": "2024-04-23T13:27:24+05:00",
+    "created_at": "2024-04-23T13:27:24+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet Co",
+    "product_type": "",
+    "tags": [
+      "bestsellercakes",
+      "cake",
+      "layers cakes"
+    ],
+    "variants": [
+      {
+        "id": 44124000944259,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "2999.00",
+        "grams": 0,
+        "compare_at_price": null,
+        "position": 1,
+        "product_id": 8202718216323,
+        "created_at": "2024-04-23T13:27:25+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 40465580392579,
+        "created_at": "2024-04-23T13:27:25+05:00",
+        "position": 1,
+        "updated_at": "2024-04-23T13:27:25+05:00",
+        "product_id": 8202718216323,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/Ferrero-Classic-pgtfyrzbln55w2y8b11utotx6i73raxrnm9fhhngjs.jpg?v=1713860845",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8202728833155,
+    "title": "Layers Milky Malt Cake",
+    "handle": "milky-malt-cake",
+    "body_html": "<p>mported malt blended with premium cocoa &amp; fresh cream!</p>",
+    "published_at": "2024-04-23T13:27:57+05:00",
+    "created_at": "2024-04-23T13:27:57+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet Co",
+    "product_type": "",
+    "tags": [
+      "bestsellercakes",
+      "cake",
+      "layers cakes"
+    ],
+    "variants": [
+      {
+        "id": 44124012642435,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "2399.00",
+        "grams": 0,
+        "compare_at_price": null,
+        "position": 1,
+        "product_id": 8202728833155,
+        "created_at": "2024-04-23T13:27:57+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 40465593499779,
+        "created_at": "2024-04-23T13:27:57+05:00",
+        "position": 1,
+        "updated_at": "2024-04-23T13:27:57+05:00",
+        "product_id": 8202728833155,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/Milky-Malt-pgtfz5529bn6emf466qmslidhwe8r2e0dfe87d3y4o.jpg?v=1713860877",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8202722934915,
+    "title": "Layers Chocolate Heaven Cake",
+    "handle": "chocolate-heaven-cake",
+    "body_html": "<p>Light chocolate icing &amp; double layer of soft chocolate sponge!</p>",
+    "published_at": "2024-04-23T13:27:38+05:00",
+    "created_at": "2024-04-23T13:27:38+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet Co",
+    "product_type": "",
+    "tags": [
+      "cake",
+      "layers cakes"
+    ],
+    "variants": [
+      {
+        "id": 44124006056067,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "2699.00",
+        "grams": 0,
+        "compare_at_price": null,
+        "position": 1,
+        "product_id": 8202722934915,
+        "created_at": "2024-04-23T13:27:38+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 40465586585731,
+        "created_at": "2024-04-23T13:27:38+05:00",
+        "position": 1,
+        "updated_at": "2024-04-23T13:27:38+05:00",
+        "product_id": 8202722934915,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/Chocolate-Heaven-pgtfyrzbln55w2y8b11utotx6i73raxrnm9fhhngjs.jpg?v=1713860858",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8202714841219,
+    "title": "Layers Lotus Cake",
+    "handle": "lotus-cake",
+    "body_html": "<p>Lotus biscoff spread with cream cheese on a fliffy vanilla sponge and crushed lotus biscuits on top</p>",
+    "published_at": "2024-04-23T13:27:15+05:00",
+    "created_at": "2024-04-23T13:27:15+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet Co",
+    "product_type": "",
+    "tags": [
+      "cake",
+      "layers cakes"
+    ],
+    "variants": [
+      {
+        "id": 44123996979331,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "3499.00",
+        "grams": 0,
+        "compare_at_price": null,
+        "position": 1,
+        "product_id": 8202714841219,
+        "created_at": "2024-04-23T13:27:15+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 40465576296579,
+        "created_at": "2024-04-23T13:27:15+05:00",
+        "position": 1,
+        "updated_at": "2024-04-23T13:27:15+05:00",
+        "product_id": 8202714841219,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/Lotus-pgtfyzi14bfggynb34avdmxlxl61gvrmcnhbbpcb60.jpg?v=1713860835",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8146076139651,
+    "title": "Ferrero Rocher Pack Gift",
+    "handle": "ferrero-rocher-16-pack-perfect-gift-for-birthdays-anniversaries-imported-luxury-chocolates",
+    "body_html": "<p>Surprise your loved ones with the ultimate expression of affection and celebration. Our Ferrero Rocher 3 , 6 and 16 Pack offers the perfect blend of luxury and taste, making it an ideal gift for birthdays, anniversaries, convocation or any special occasion.<br data-mce-fragment=\"1\"><br data-mce-fragment=\"1\">Imported and crafted with the finest ingredients, these exquisite chocolates promise to deliver unmatched quality and flavor. Pair with our stunning Flower Bouquet bouquets to create an unforgettable gift experience. <br data-mce-fragment=\"1\"><br data-mce-fragment=\"1\">Whether it's a gesture of love, a birthday surprise, or an anniversary celebration, these premium chocolates are sure to make any event memorable. Shop now to delight someone special with the gift of luxury.<br data-mce-fragment=\"1\"><br data-mce-fragment=\"1\">Flower Bouquets Premium Gift Selection: Perfect for Girlfriends, Family &amp; Loved Ones - Versatile Gifts for Every Occasion<br data-mce-fragment=\"1\"><br data-mce-fragment=\"1\">Each Flower Bouquet gift is chosen with care, ensuring a meaningful gesture that speaks volumes. Make every moment memorable with a gift that truly expresses how much you care. Shop now and find the perfect expression of your affection with Flower Bouquet.<br data-mce-fragment=\"1\"><br data-mce-fragment=\"1\">Ingredients: <br data-mce-fragment=\"1\"><br data-mce-fragment=\"1\">Milk chocolate (30%) (sugar, cocoa butter, cocoa mass, skimmed MILK powder, Anhydrous Milkfat, emulsifier (lecithins (Soy)), Imitation Flavour), Hazelnuts (28.5%), sugar, vegetable fat, wheat flour, whey powder, fat-reduced cocoa powder, emulsifier (lecithins (Soy)), raising agent (sodium bicarbonate), salt, Imitation Flavour. Total Cocoa Solids: 16%. In Milk Chocolate: 42%.<br data-mce-fragment=\"1\"><br data-mce-fragment=\"1\">Allergen Information: Contains Milk, Hazelnuts, Gluten, Soy.</p>\n<p class=\"MsoNormal\"> </p>",
+    "published_at": "2024-04-10T21:41:40+05:00",
+    "created_at": "2024-04-10T21:41:40+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet Co",
+    "product_type": "Candy & Chocolate",
+    "tags": [
+      "Candy & Chocolate",
+      "choco",
+      "Gifts"
+    ],
+    "variants": [
+      {
+        "id": 43985641734275,
+        "title": "3",
+        "option1": "3",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": false,
+        "featured_image": null,
+        "available": true,
+        "price": "1499.00",
+        "grams": 300,
+        "compare_at_price": "750.00",
+        "position": 2,
+        "product_id": 8146076139651,
+        "created_at": "2024-04-10T21:41:42+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      },
+      {
+        "id": 43985641767043,
+        "title": "16",
+        "option1": "16",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": false,
+        "featured_image": null,
+        "available": true,
+        "price": "4699.00",
+        "grams": 300,
+        "compare_at_price": "750.00",
+        "position": 3,
+        "product_id": 8146076139651,
+        "created_at": "2024-04-10T21:41:42+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 43292838133891,
+        "created_at": "2025-06-19T16:10:00+05:00",
+        "position": 1,
+        "updated_at": "2025-06-19T16:10:32+05:00",
+        "product_id": 8146076139651,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/ferrero-rocher-16-pack-perfect-gift.png?v=1750331432",
+        "width": 500,
+        "height": 500
+      },
+      {
+        "id": 43292838101123,
+        "created_at": "2025-06-19T16:10:00+05:00",
+        "position": 2,
+        "updated_at": "2025-06-19T16:11:11+05:00",
+        "product_id": 8146076139651,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/ferrero-rocher-3-pack-perfect-gift.png?v=1750331471",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "options": [
+      {
+        "name": "Size",
+        "position": 1,
+        "values": [
+          "3",
+          "16"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8146155667587,
+    "title": "Nestle KitKat 4 Finger Bar Gift",
+    "handle": "buy-nestle-kitkat-4-finger-bar-online",
+    "body_html": "<p>Searching for the perfect gift that brings joy to birthdays, anniversaries, or any special moment? Flower Bouquetpresents the iconic Nestle KitKat 4 Finger Milk Chocolate Bar, now available for fast online delivery in Lahore, Pakistan. With our promise of same-day delivery within 3 hours, it’s the ideal last-minute surprise for your girlfriend, children, parents, siblings, friends, or any loved one. <br data-mce-fragment=\"1\"><br data-mce-fragment=\"1\">Whether it’s expressing love and romance, celebrating a new baby, saying 'Get Well Soon', or marking milestones like Mother's Day, Valentine's Day, Eid, or Christmas, this premium chocolate bar is a delightful addition to bouquets, boutonnieres, corsages, or floral jewelry. <br data-mce-fragment=\"1\"><br data-mce-fragment=\"1\">Wondering what's the best gift for your bestie, nephew, or anyone dear? <br data-mce-fragment=\"1\"><br data-mce-fragment=\"1\">The answer is a sweet break with KitKat, making everyday moments memorable. Shop now with Flower Bouquetfor premium gifts and flowers for all life's celebrations and heartfelt moments.</p>\n<p class=\"MsoNormal\"> </p>",
+    "published_at": "2024-04-10T22:00:33+05:00",
+    "created_at": "2024-04-10T22:00:33+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet Co",
+    "product_type": "Candy & Chocolate",
+    "tags": [
+      "Candy & Chocolate",
+      "choco",
+      "Gifts"
+    ],
+    "variants": [
+      {
+        "id": 43985726210179,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "410.00",
+        "grams": 200,
+        "compare_at_price": null,
+        "position": 2,
+        "product_id": 8146155667587,
+        "created_at": "2024-04-10T22:00:34+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 43292821880963,
+        "created_at": "2025-06-19T16:04:50+05:00",
+        "position": 1,
+        "updated_at": "2025-06-19T16:05:21+05:00",
+        "product_id": 8146155667587,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/Nestle_KitKat-4_Finger.png?v=1750331121",
+        "width": 500,
+        "height": 500
+      },
+      {
+        "id": 43292783378563,
+        "created_at": "2025-06-19T15:54:51+05:00",
+        "position": 2,
+        "updated_at": "2025-06-19T16:04:59+05:00",
+        "product_id": 8146155667587,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/Nestle_KitKat_4_Finger.png?v=1750331099",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8146198691971,
+    "title": "Bounty Chocolate Bar 57g Gift",
+    "handle": "order-bounty-chocolate-bar-57g-online-for-fast-delivery-in-lahore",
+    "body_html": "<p>Bounty Chocolate Bar 57g, the perfect gift for any occasion, now available for online order with Flower Bouquets in Lahore, Pakistan. <br><br>Whether you're celebrating birthdays, anniversaries, expressing love and romance, or sending well wishes for Eid, Christmas, New Year, or Women's Day, Bounty's unique coconut-filled delight ensures a special treat for your girlfriend, children, mother, sister, brother, father, friend, or any cherished person in your life. <br><br>With Flower Bouquetpromise of fast and reliable delivery, including same-day and 3-hour options, gifting has never been easier. <br><br>Add a touch of sweetness to floral arrangements, boutonnieres, corsages, or as a standalone gesture of love, thanks, congratulations, or sympathy. <br><br><strong>Wondering about the best gift to express your feelings? </strong>Look no further.<br><br>Shop now and make every moment memorable with the exotic flavor of Bounty Chocolate Bar, your go-to choice for premium gifts and flowers for every milestone and celebration.</p>\n<p class=\"MsoNormal\"> </p>",
+    "published_at": "2024-04-10T22:13:52+05:00",
+    "created_at": "2024-04-10T22:13:52+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet Co",
+    "product_type": "Candy & Chocolate",
+    "tags": [
+      "Candy & Chocolate",
+      "choco",
+      "Gifts"
+    ],
+    "variants": [
+      {
+        "id": 43985773199491,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": false,
+        "featured_image": null,
+        "available": true,
+        "price": "590.00",
+        "grams": 200,
+        "compare_at_price": null,
+        "position": 2,
+        "product_id": 8146198691971,
+        "created_at": "2024-04-10T22:13:53+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 43292814114947,
+        "created_at": "2025-06-19T16:02:20+05:00",
+        "position": 1,
+        "updated_at": "2025-06-19T16:02:56+05:00",
+        "product_id": 8146198691971,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/bounty_chocolate_57g.png?v=1750330976",
+        "width": 500,
+        "height": 500
+      },
+      {
+        "id": 43292805791875,
+        "created_at": "2025-06-19T15:59:30+05:00",
+        "position": 2,
+        "updated_at": "2025-06-19T16:02:39+05:00",
+        "product_id": 8146198691971,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/bounty_chocolate.png?v=1750330959",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8632181063811,
+    "title": "Snickers Chocolate 57Gm",
+    "handle": "snickers-chocolate-bar",
+    "body_html": "<p data-start=\"191\" data-end=\"273\"><strong data-start=\"191\" data-end=\"273\">Experience the Irresistible Taste of Snickers – A Timeless Chocolate Favourite</strong></p>\n<p data-start=\"275\" data-end=\"537\">Delight in the bold, satisfying flavour of the <strong data-start=\"322\" data-end=\"348\">Snickers Chocolate Bar</strong>, crafted with crunchy roasted peanuts, soft nougat, creamy caramel, and coated in smooth milk chocolate. Every bite delivers a rich and energising experience that’s perfect for any moment.</p>\n<p data-start=\"539\" data-end=\"710\">Whether you're curating a chocolate bouquet, building a surprise box, or simply treating yourself, <strong data-start=\"638\" data-end=\"697\">Snickers adds the perfect blend of crunch and sweetness</strong> to your day.</p>\n<h3 data-start=\"717\" data-end=\"747\"><strong data-start=\"723\" data-end=\"745\">Why You’ll Love It</strong></h3>\n<p data-start=\"750\" data-end=\"799\">Made with <strong data-start=\"760\" data-end=\"797\">real peanuts, nougat, and caramel</strong></p>\n<p data-start=\"802\" data-end=\"848\">Coated in smooth, premium <strong data-start=\"828\" data-end=\"846\">milk chocolate</strong></p>\n<p data-start=\"851\" data-end=\"907\">A classic choice for <strong data-start=\"872\" data-end=\"905\">gifting, snacking, or sharing</strong></p>\n<p data-start=\"910\" data-end=\"961\">Loved for its satisfying texture and iconic taste</p>\n<p data-start=\"964\" data-end=\"1037\">Now available for delivery in <strong data-start=\"994\" data-end=\"1037\">Lahore, Karachi, Islamabad &amp; Faisalabad</strong></p>",
+    "published_at": "2025-06-18T12:04:51+05:00",
+    "created_at": "2025-06-18T12:04:50+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet",
+    "product_type": "",
+    "tags": [
+      "cakes",
+      "Candy & Chocolate",
+      "choco"
+    ],
+    "variants": [
+      {
+        "id": 45417637052547,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "394.00",
+        "grams": 0,
+        "compare_at_price": null,
+        "position": 1,
+        "product_id": 8632181063811,
+        "created_at": "2025-06-18T12:04:50+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 43285463957635,
+        "created_at": "2025-06-18T11:56:08+05:00",
+        "position": 1,
+        "updated_at": "2025-06-18T11:57:22+05:00",
+        "product_id": 8632181063811,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/snickers-chocolaate_900x_b39d3bcc-d529-42f0-884c-79fdd9abacb9.webp?v=1750229842",
+        "width": 900,
+        "height": 900
+      },
+      {
+        "id": 43292235530371,
+        "created_at": "2025-06-19T14:02:05+05:00",
+        "position": 2,
+        "updated_at": "2025-06-19T14:02:27+05:00",
+        "product_id": 8632181063811,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/chocolate_bar_with_caramel_peanuts_and_nougat.png?v=1750323747",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8632253382787,
+    "title": "Mars Chocolate 51Gm",
+    "handle": "mars-chocolate-bar",
+    "body_html": "<p data-start=\"263\" data-end=\"493\"><strong data-start=\"263\" data-end=\"372\">Classic indulgence never goes out of style – enjoy the rich, creamy experience of the Mars Chocolate Bar.</strong><br data-start=\"372\" data-end=\"375\">Made with soft nougat, silky caramel, and coated in smooth milk chocolate, Mars delivers a satisfying bite every time.</p>\n<p data-start=\"495\" data-end=\"615\">Perfect for gifting, personal treats, or adding to a chocolate bouquet, it’s a timeless favourite for every sweet tooth.</p>\n<h3 data-start=\"622\" data-end=\"652\"><strong data-start=\"628\" data-end=\"650\">Why You’ll Love It</strong></h3>\n<p data-start=\"655\" data-end=\"704\">Filled with soft nougat and <strong data-start=\"683\" data-end=\"702\">velvety caramel</strong></p>\n<p data-start=\"707\" data-end=\"746\">Covered in <strong data-start=\"718\" data-end=\"744\">premium milk chocolate</strong></p>\n<p data-start=\"749\" data-end=\"793\">A perfect balance of texture and sweetness</p>\n<p data-start=\"796\" data-end=\"841\">Great for <strong data-start=\"806\" data-end=\"839\">gifting, snacking, or sharing</strong></p>\n<p data-start=\"844\" data-end=\"877\">Loved by chocolate fans worldwide</p>",
+    "published_at": "2025-06-18T12:49:26+05:00",
+    "created_at": "2025-06-18T12:49:26+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet",
+    "product_type": "",
+    "tags": [
+      "cakes",
+      "Candy & Chocolate",
+      "choco"
+    ],
+    "variants": [
+      {
+        "id": 45417736831107,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "378.00",
+        "grams": 0,
+        "compare_at_price": null,
+        "position": 1,
+        "product_id": 8632253382787,
+        "created_at": "2025-06-18T12:49:26+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 43292658827395,
+        "created_at": "2025-06-19T15:31:18+05:00",
+        "position": 1,
+        "updated_at": "2025-06-19T15:32:00+05:00",
+        "product_id": 8632253382787,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/Mars_chocolate_bar.png?v=1750329120",
+        "width": 500,
+        "height": 500
+      },
+      {
+        "id": 43292660334723,
+        "created_at": "2025-06-19T15:31:36+05:00",
+        "position": 2,
+        "updated_at": "2025-06-19T15:32:43+05:00",
+        "product_id": 8632253382787,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/chocolate_bar_with_soft_nougat_and_caramel_filling.png?v=1750329163",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8636573909123,
+    "title": "Twix Chocolate 50Gm",
+    "handle": "twix-chocolate-50gm",
+    "body_html": "<p data-start=\"261\" data-end=\"600\"><strong data-start=\"261\" data-end=\"383\">Satisfy your sweet cravings with Twix – the perfect blend of crunchy biscuit, smooth caramel, and rich milk chocolate.</strong><br data-start=\"383\" data-end=\"386\">Twix Chocolate 50gm offers two delicious bars in one pack, making it the ideal treat to share, gift, or enjoy solo. The iconic golden wrapper and bold flavour make it a go-to choice for chocolate lovers everywhere.</p>\n<p data-start=\"602\" data-end=\"694\">Whether added to a bouquet or gifted as a standalone treat, <strong data-start=\"662\" data-end=\"693\">Twix never fails to impress</strong>.</p>\n<h3 data-start=\"701\" data-end=\"731\"><strong data-start=\"707\" data-end=\"729\">Why You’ll Love It</strong></h3>\n<p data-start=\"734\" data-end=\"798\">Made with <strong data-start=\"744\" data-end=\"796\">crunchy biscuit, creamy caramel &amp; milk chocolate<br></strong>Comes in a 50gm double-bar pack<br>Great for <strong data-start=\"847\" data-end=\"897\">snacking, gifting, or adding to surprise boxes<br></strong>A popular classic loved worldwide<br>Premium packaging with bold taste</p>",
+    "published_at": "2025-06-23T12:13:28+05:00",
+    "created_at": "2025-06-23T12:13:27+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet",
+    "product_type": "",
+    "tags": [
+      "cakes",
+      "Candy & Chocolate",
+      "choco"
+    ],
+    "variants": [
+      {
+        "id": 45429104672899,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "399.00",
+        "grams": 0,
+        "compare_at_price": null,
+        "position": 1,
+        "product_id": 8636573909123,
+        "created_at": "2025-06-23T12:13:27+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 43319668408451,
+        "created_at": "2025-06-23T13:47:08+05:00",
+        "position": 1,
+        "updated_at": "2025-06-23T13:47:34+05:00",
+        "product_id": 8636573909123,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/Twix_chocolate.png?v=1750668454",
+        "width": 2610,
+        "height": 3480
+      },
+      {
+        "id": 43319697277059,
+        "created_at": "2025-06-23T13:50:24+05:00",
+        "position": 2,
+        "updated_at": "2025-06-23T13:50:52+05:00",
+        "product_id": 8636573909123,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/Twix_chocolate_50_Gm.png?v=1750668652",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8632261968003,
+    "title": "Mars Miniatures 220G",
+    "handle": "mars-miniatures-chocolate-pack",
+    "body_html": "<p data-start=\"237\" data-end=\"498\"><strong data-start=\"237\" data-end=\"343\">Small bites, big flavour – Mars Miniatures bring the same rich chocolate experience in a compact form.</strong><br data-start=\"343\" data-end=\"346\">Each miniature features creamy nougat, silky caramel, and smooth milk chocolate, perfectly portioned for snacking, gifting, or adding to sweet platters.</p>\n<p data-start=\"500\" data-end=\"630\">With individual wrapping for freshness, these mini Mars bars are ideal for sharing, surprising, or satisfying late-night cravings.</p>\n<h3 data-start=\"637\" data-end=\"667\"><strong data-start=\"643\" data-end=\"665\">Why You’ll Love It</strong></h3>\n<p data-start=\"670\" data-end=\"720\">Classic <strong data-start=\"678\" data-end=\"694\">Mars flavour</strong> in convenient mini size</p>\n<p data-start=\"723\" data-end=\"785\">Filled with <strong data-start=\"735\" data-end=\"762\">caramel and soft nougat</strong>, coated in chocolate</p>\n<p data-start=\"788\" data-end=\"836\">Individually wrapped for hygiene and freshness</p>\n<p data-start=\"839\" data-end=\"891\">Ideal for <strong data-start=\"849\" data-end=\"889\">gift boxes, bouquets, or party bowls</strong></p>\n<p data-start=\"894\" data-end=\"934\">Great for snacking without overindulging</p>",
+    "published_at": "2025-06-18T12:54:34+05:00",
+    "created_at": "2025-06-18T12:54:33+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet",
+    "product_type": "",
+    "tags": [
+      "cakes",
+      "Candy & Chocolate",
+      "choco"
+    ],
+    "variants": [
+      {
+        "id": 45417746169987,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "2144.00",
+        "grams": 0,
+        "compare_at_price": null,
+        "position": 1,
+        "product_id": 8632261968003,
+        "created_at": "2025-06-18T12:54:33+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 43285682552963,
+        "created_at": "2025-06-18T12:52:08+05:00",
+        "position": 1,
+        "updated_at": "2025-06-18T12:53:32+05:00",
+        "product_id": 8632261968003,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/Mars_Miniatures_220G.webp?v=1750233212",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "id": 43292700180611,
+        "created_at": "2025-06-19T15:39:50+05:00",
+        "position": 2,
+        "updated_at": "2025-06-19T15:40:11+05:00",
+        "product_id": 8632261968003,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/Mars_Miniatures_220G.png?v=1750329611",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8632197742723,
+    "title": "Snickers Miniatures 220G",
+    "handle": "snickers-miniatures-chocolate",
+    "body_html": "<p data-start=\"244\" data-end=\"511\"><strong data-start=\"244\" data-end=\"359\">Small in size, big on flavour – Snickers Miniatures bring you the same bold taste in perfectly portioned bites.</strong><br data-start=\"359\" data-end=\"362\">Each mini bar features crunchy roasted peanuts, smooth caramel, fluffy nougat, and rich milk chocolate – all packed into a convenient snackable size.</p>\n<p data-start=\"513\" data-end=\"683\">Perfect for sharing, gifting, or treating yourself to a little indulgence, these miniature delights are a hit at parties, celebrations, or even as a late-night sweet fix.</p>\n<h3 data-start=\"690\" data-end=\"720\"><strong data-start=\"696\" data-end=\"718\">Why You’ll Love It</strong></h3>\n<p data-start=\"723\" data-end=\"766\">Same iconic Snickers flavour in mini size</p>\n<p data-start=\"769\" data-end=\"826\">Perfect for <strong data-start=\"781\" data-end=\"801\">gifting, sharing</strong>, or chocolate platters</p>\n<p data-start=\"829\" data-end=\"878\">Made with <strong data-start=\"839\" data-end=\"876\">real peanuts, nougat, and caramel</strong></p>\n<p data-start=\"881\" data-end=\"933\">Individually wrapped for freshness and convenience</p>\n<p data-start=\"936\" data-end=\"985\">A must-have for chocolate lovers who love variety</p>",
+    "published_at": "2025-06-18T12:14:16+05:00",
+    "created_at": "2025-06-18T12:14:15+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet",
+    "product_type": "",
+    "tags": [
+      "cakes",
+      "Candy & Chocolate",
+      "choco"
+    ],
+    "variants": [
+      {
+        "id": 45417658155139,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "2144.00",
+        "grams": 0,
+        "compare_at_price": null,
+        "position": 1,
+        "product_id": 8632197742723,
+        "created_at": "2025-06-18T12:14:15+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 43285516976259,
+        "created_at": "2025-06-18T12:12:07+05:00",
+        "position": 1,
+        "updated_at": "2025-06-19T15:43:24+05:00",
+        "product_id": 8632197742723,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/Snickers_Miniatures_chocolate_pouch_with_individually_wrapped_bars.webp?v=1750329804",
+        "width": 595,
+        "height": 595
+      },
+      {
+        "id": 43292712927363,
+        "created_at": "2025-06-19T15:42:48+05:00",
+        "position": 2,
+        "updated_at": "2025-06-19T15:44:06+05:00",
+        "product_id": 8632197742723,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/Snickers_Miniatures_chocolate_pouch.png?v=1750329846",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8632246009987,
+    "title": "Snickers Minis Pouch 180G",
+    "handle": "snickers-minis-12-pack",
+    "body_html": "<p data-start=\"238\" data-end=\"505\"><strong data-start=\"238\" data-end=\"384\">Big flavour in small bites – Snickers Minis bring the perfect balance of peanuts, caramel, nougat, and milk chocolate in a convenient 12-pack.</strong><br data-start=\"384\" data-end=\"387\">Each piece is individually wrapped, making it great for sharing, gifting, or keeping your snack game strong on the go.</p>\n<p data-start=\"507\" data-end=\"668\">Whether you're stocking up for your own cravings or surprising someone special, these <strong data-start=\"593\" data-end=\"620\">miniature Snickers bars</strong> deliver the same legendary taste in every bite.</p>\n<h3 data-start=\"675\" data-end=\"705\"><strong data-start=\"681\" data-end=\"703\">Why You’ll Love It</strong></h3>\n<p data-start=\"708\" data-end=\"756\">Classic Snickers taste in <strong data-start=\"734\" data-end=\"754\">bite-size format</strong></p>\n<p data-start=\"759\" data-end=\"804\">Includes <strong data-start=\"768\" data-end=\"802\">12 individually wrapped pieces</strong></p>\n<p data-start=\"807\" data-end=\"853\">Made with <strong data-start=\"817\" data-end=\"851\">real peanuts, caramel &amp; nougat</strong></p>\n<p data-start=\"856\" data-end=\"908\">Ideal for <strong data-start=\"866\" data-end=\"906\">gifting, sharing, or personal snacks</strong></p>\n<p data-start=\"911\" data-end=\"947\">Handy resealable pouch for freshness</p>",
+    "published_at": "2025-06-18T12:43:41+05:00",
+    "created_at": "2025-06-18T12:43:40+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet",
+    "product_type": "",
+    "tags": [
+      "cakes",
+      "Candy & Chocolate",
+      "choco"
+    ],
+    "variants": [
+      {
+        "id": 45417728376963,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "2798.00",
+        "grams": 0,
+        "compare_at_price": null,
+        "position": 1,
+        "product_id": 8632246009987,
+        "created_at": "2025-06-18T12:43:40+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 43285594341507,
+        "created_at": "2025-06-18T12:29:32+05:00",
+        "position": 1,
+        "updated_at": "2025-06-18T12:42:36+05:00",
+        "product_id": 8632246009987,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/Snickers_Minis_Pouch_180G.webp?v=1750232556",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "id": 43292193915011,
+        "created_at": "2025-06-19T13:50:38+05:00",
+        "position": 2,
+        "updated_at": "2025-06-19T13:50:40+05:00",
+        "product_id": 8632246009987,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/8c6db0046728779e54515dc68d73faff.jpg?v=1750323040",
+        "width": 736,
+        "height": 1162
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8632272453763,
+    "title": "Mr. Beast Feastables Milk Crunch Chocolate (10 x 60g)",
+    "handle": "mrbeast-feastables-milk-chocolate",
+    "body_html": "<p data-end=\"595\" data-start=\"254\"><strong data-end=\"351\" data-start=\"254\">Dive into the smooth, melt-in-your-mouth goodness of MrBeast's Feastables Milk Chocolate Bar.</strong><br data-end=\"354\" data-start=\"351\">Crafted with simple, high-quality ingredients, this premium chocolate delivers a rich, creamy experience in every bite. Whether you're a fan of MrBeast or just a chocolate lover, this bar is a must-try treat that’s both delicious and iconic.</p>\n<p data-end=\"673\" data-start=\"597\">Perfect for gifting, adding to hampers, or enjoying as your go-to sweet fix!</p>\n<h3 data-end=\"710\" data-start=\"680\"><strong data-end=\"708\" data-start=\"686\">Why You’ll Love It</strong></h3>\n<p data-end=\"776\" data-start=\"713\">Rich, smooth <strong data-end=\"774\" data-start=\"726\">milk chocolate made with quality ingredients</strong></p>\n<p data-end=\"828\" data-start=\"779\">Created by global YouTube sensation <strong data-end=\"826\" data-start=\"815\">MrBeast</strong></p>\n<p data-end=\"880\" data-start=\"831\">Simple, clean flavours – no artificial nonsense</p>\n<p data-end=\"934\" data-start=\"883\">Perfect for fans, gifting, or everyday indulgence</p>\n<p data-end=\"980\" data-start=\"937\">Visually appealing &amp; instantly recognisable</p>",
+    "published_at": "2025-06-18T13:02:07+05:00",
+    "created_at": "2025-06-18T13:02:06+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet",
+    "product_type": "",
+    "tags": [
+      "cakes",
+      "Candy & Chocolate",
+      "choco"
+    ],
+    "variants": [
+      {
+        "id": 45417762455683,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "2300.00",
+        "grams": 0,
+        "compare_at_price": null,
+        "position": 1,
+        "product_id": 8632272453763,
+        "created_at": "2025-06-18T13:02:06+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 43292163342467,
+        "created_at": "2025-06-19T13:42:01+05:00",
+        "position": 1,
+        "updated_at": "2025-06-19T13:42:19+05:00",
+        "product_id": 8632272453763,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/MrBeast_Feastables_milk_chocolate.png?v=1750322539",
+        "width": 500,
+        "height": 500
+      },
+      {
+        "id": 43292168585347,
+        "created_at": "2025-06-19T13:43:14+05:00",
+        "position": 2,
+        "updated_at": "2025-06-19T13:43:15+05:00",
+        "product_id": 8632272453763,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/product-image-milk-chocolate_1.webp?v=1750322595",
+        "width": 2535,
+        "height": 2292
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8202726801539,
+    "title": "Layers Dairy Milk Cake",
+    "handle": "dairy-milk-cake",
+    "body_html": "<p>Nothing but light dairy milk chocolate till the last bite!</p>",
+    "published_at": "2026-01-06T16:14:39+05:00",
+    "created_at": "2024-04-23T13:27:50+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet Co",
+    "product_type": "",
+    "tags": [
+      "cake",
+      "layers cakes"
+    ],
+    "variants": [
+      {
+        "id": 44124010414211,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "2699.00",
+        "grams": 0,
+        "compare_at_price": null,
+        "position": 1,
+        "product_id": 8202726801539,
+        "created_at": "2024-04-23T13:27:50+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 40465591238787,
+        "created_at": "2024-04-23T13:27:50+05:00",
+        "position": 1,
+        "updated_at": "2024-04-23T13:27:50+05:00",
+        "product_id": 8202726801539,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/Dairy-Milk-pgtfyvqoczab6isrp2od3nvrk1okm3cp04vdelhvuw.jpg?v=1713860870",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8202714022019,
+    "title": "Layers Pistachio Cake",
+    "handle": "pistachio-cake",
+    "body_html": "<p>Premium-rich Pistachio Cream layered on a Vanilla Sponge &amp; finely grounded fresh Pistachios spread on top</p>",
+    "published_at": "2024-04-23T13:27:12+05:00",
+    "created_at": "2024-04-23T13:27:12+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet Co",
+    "product_type": "",
+    "tags": [
+      "cake",
+      "layers cakes"
+    ],
+    "variants": [
+      {
+        "id": 44123996029059,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "3899.00",
+        "grams": 0,
+        "compare_at_price": null,
+        "position": 1,
+        "product_id": 8202714022019,
+        "created_at": "2024-04-23T13:27:13+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 40465575280771,
+        "created_at": "2024-04-23T13:27:13+05:00",
+        "position": 1,
+        "updated_at": "2024-04-23T13:27:13+05:00",
+        "product_id": 8202714022019,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/Pistachio-qjdpxbw0zp9y3n1ppyklw6lcs63x8o8jl8pd205sp4.jpg?v=1713860833",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8202715857027,
+    "title": "Layers Belgian Malt Cake",
+    "handle": "belgian-malt-cake",
+    "body_html": "<p>Made from purest belgian chocolate!</p>",
+    "published_at": "2024-04-23T13:27:18+05:00",
+    "created_at": "2024-04-23T13:27:18+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet Co",
+    "product_type": "",
+    "tags": [
+      "cake",
+      "layers cakes"
+    ],
+    "variants": [
+      {
+        "id": 44123998322819,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "3099.00",
+        "grams": 0,
+        "compare_at_price": null,
+        "position": 1,
+        "product_id": 8202715857027,
+        "created_at": "2024-04-23T13:27:18+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 40465577869443,
+        "created_at": "2024-04-23T13:27:18+05:00",
+        "position": 1,
+        "updated_at": "2024-04-23T13:27:18+05:00",
+        "product_id": 8202715857027,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/Belgian-Chocolate-pgtfyq3n7z2l8v0ym08lopazzqgdbwqazcygixq8w8.jpg?v=1713860838",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8202716872835,
+    "title": "Layers Ferrero Rocher Cake",
+    "handle": "ferrero-rocher-cake",
+    "body_html": "<p>Made from 100% ferrero hazelnut chocolate &amp; roasted nuts with ferrero rochers on the top!</p>",
+    "published_at": "2024-04-23T13:27:21+05:00",
+    "created_at": "2024-04-23T13:27:21+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet Co",
+    "product_type": "",
+    "tags": [
+      "cake",
+      "layers cakes"
+    ],
+    "variants": [
+      {
+        "id": 44123999305859,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "3999.00",
+        "grams": 0,
+        "compare_at_price": null,
+        "position": 1,
+        "product_id": 8202716872835,
+        "created_at": "2024-04-23T13:27:21+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 40465578950787,
+        "created_at": "2024-04-23T13:27:21+05:00",
+        "position": 1,
+        "updated_at": "2024-04-23T13:27:21+05:00",
+        "product_id": 8202716872835,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/ferrero-square-ptftrhoqbeg2qiuvjgh536xtsy42tljwwjbbx0choo.jpg?v=1713860841",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8202718937219,
+    "title": "Layers Nutella Cake",
+    "handle": "nutella-cake",
+    "body_html": "<p>Made from 100% nutella &amp; imported cream!</p>",
+    "published_at": "2024-04-23T13:27:27+05:00",
+    "created_at": "2024-04-23T13:27:27+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet Co",
+    "product_type": "",
+    "tags": [
+      "cake",
+      "layers cakes"
+    ],
+    "variants": [
+      {
+        "id": 44124001730691,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "2799.00",
+        "grams": 0,
+        "compare_at_price": null,
+        "position": 1,
+        "product_id": 8202718937219,
+        "created_at": "2024-04-23T13:27:27+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 40465581244547,
+        "created_at": "2024-04-23T13:27:27+05:00",
+        "position": 1,
+        "updated_at": "2024-04-23T13:27:27+05:00",
+        "product_id": 8202718937219,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/Nutella-pgtfyvqoczab6isrp2od3nvrk1okm3cp04vdelhvuw.jpg?v=1713860847",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8202719723651,
+    "title": "Layers Red Velvet Cake",
+    "handle": "red-velvet-cake",
+    "body_html": "<p>Cream cheese frosting on velvety soft red sponge.</p>",
+    "published_at": "2024-04-23T13:27:29+05:00",
+    "created_at": "2024-04-23T13:27:29+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet Co",
+    "product_type": "",
+    "tags": [
+      "cake",
+      "cakes",
+      "layers cakes"
+    ],
+    "variants": [
+      {
+        "id": 44124002549891,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "2799.00",
+        "grams": 0,
+        "compare_at_price": null,
+        "position": 1,
+        "product_id": 8202719723651,
+        "created_at": "2024-04-23T13:27:29+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 40465582358659,
+        "created_at": "2024-04-23T13:27:29+05:00",
+        "position": 1,
+        "updated_at": "2024-04-23T13:27:29+05:00",
+        "product_id": 8202719723651,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/Red-Velvet-pgtfyyk6xhe65coo8lw8t565c7ao96nw0ittufdpc8.jpg?v=1713860849",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8202720411779,
+    "title": "Layers Salted Caramel Cake",
+    "handle": "salted-caramel-cake",
+    "body_html": "<p>Salted caramel, Crème cheese and moist vanilla sponge!</p>",
+    "published_at": "2024-04-23T13:27:31+05:00",
+    "created_at": "2024-04-23T13:27:31+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet Co",
+    "product_type": "",
+    "tags": [
+      "cake",
+      "layers cakes"
+    ],
+    "variants": [
+      {
+        "id": 44124003270787,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "2999.00",
+        "grams": 0,
+        "compare_at_price": null,
+        "position": 1,
+        "product_id": 8202720411779,
+        "created_at": "2024-04-23T13:27:31+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 40465583145091,
+        "created_at": "2024-04-23T13:27:31+05:00",
+        "position": 1,
+        "updated_at": "2024-04-23T13:27:31+05:00",
+        "product_id": 8202720411779,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/Salted-Caramel-pgtfywoijtbli4rejl2zo5n85fjxtsgfc9iuvvghoo.jpg?v=1713860851",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8202724540547,
+    "title": "Layers German Fudge Cake",
+    "handle": "german-fudge-cake",
+    "body_html": "<p>Authentic fudge so light that it melts in your mouth!</p>",
+    "published_at": "2024-04-23T13:27:43+05:00",
+    "created_at": "2024-04-23T13:27:43+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet Co",
+    "product_type": "",
+    "tags": [
+      "cake",
+      "layers cakes"
+    ],
+    "variants": [
+      {
+        "id": 44124007760003,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "2599.00",
+        "grams": 0,
+        "compare_at_price": null,
+        "position": 1,
+        "product_id": 8202724540547,
+        "created_at": "2024-04-23T13:27:43+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 40465588355203,
+        "created_at": "2024-04-23T13:27:43+05:00",
+        "position": 1,
+        "updated_at": "2024-04-23T13:27:43+05:00",
+        "product_id": 8202724540547,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/German-Fudge-pgtfyq3n7z2l8v0ym08lopazzqgdbwqazcygixq8w8.jpg?v=1713860863",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8202725392515,
+    "title": "Layers Chocolate Mousse Cake",
+    "handle": "chocolate-mousse-cake",
+    "body_html": "<p>The lightest chocolate cake in town!</p>",
+    "published_at": "2024-04-23T13:27:45+05:00",
+    "created_at": "2024-04-23T13:27:45+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet Co",
+    "product_type": "",
+    "tags": [
+      "cake",
+      "layers cakes"
+    ],
+    "variants": [
+      {
+        "id": 44124008677507,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "2599.00",
+        "grams": 0,
+        "compare_at_price": null,
+        "position": 1,
+        "product_id": 8202725392515,
+        "created_at": "2024-04-23T13:27:46+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 40465589403779,
+        "created_at": "2024-04-23T13:27:45+05:00",
+        "position": 1,
+        "updated_at": "2024-04-23T13:27:45+05:00",
+        "product_id": 8202725392515,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/Chocolate-Mousse-pgtfz5529bn6emf466qmslidhwe8r2e0dfe87d3y4o.jpg?v=1713860865",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8202726047875,
+    "title": "Layers Coffee Cake",
+    "handle": "coffee-cake",
+    "body_html": "<p>Light crème cheese icing with a 'sweet sense of coffee'!</p>",
+    "published_at": "2024-04-23T13:27:48+05:00",
+    "created_at": "2024-04-23T13:27:48+05:00",
+    "updated_at": "2026-10-04T10:44:51+05:00",
+    "vendor": "Flower Bouquet Co",
+    "product_type": "",
+    "tags": [
+      "cake",
+      "layers cakes"
+    ],
+    "variants": [
+      {
+        "id": 44124009365635,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "2699.00",
+        "grams": 0,
+        "compare_at_price": null,
+        "position": 1,
+        "product_id": 8202726047875,
+        "created_at": "2024-04-23T13:27:48+05:00",
+        "updated_at": "2026-10-04T10:44:51+05:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 40465590190211,
+        "created_at": "2024-04-23T13:27:48+05:00",
+        "position": 1,
+        "updated_at": "2024-04-23T13:27:48+05:00",
+        "product_id": 8202726047875,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0590/3669/6707/files/Coffee-pgtfyr1het3vkgzlgin8972gl4bqjlu1bhly07ouq0.jpg?v=1713860868",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  }
+]

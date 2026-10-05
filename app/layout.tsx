@@ -2,11 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { CartProvider } from "./context/CartContext";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import CartDrawer from "./components/CartDrawer";
-import QuickViewModal from "./components/QuickViewModal";
-import { Toast, StickyMobileBar } from "./components/Toast";
+import StoreLayoutWrapper from "./components/StoreLayoutWrapper";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -73,24 +69,74 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: "#8B1E2D",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://lahorebouquet.com#website",
+    url: "https://lahorebouquet.com",
+    name: "Lahore Bouquet",
+    inLanguage: "en-PK",
+    publisher: {
+      "@id": "https://lahorebouquet.com#florist",
+    },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: "https://lahorebouquet.com/bouquets?q={search_term_string}",
+      },
+      "query-input": "required name=search_term_string",
+    },
+  };
+
   return (
-    <html lang="en" className={`${playfair.variable} ${cormorant.variable} ${jakarta.variable} antialiased scroll-smooth`}>
-      <body className="min-h-screen bg-[#101012] text-[#F4F4F6] selection:bg-[#E11D48] selection:text-white flex flex-col justify-between">
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${playfair.variable} ${cormorant.variable} ${jakarta.variable} antialiased scroll-smooth`}
+    >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                if (typeof document !== 'undefined') {
+                  const clean = () => {
+                    document.querySelectorAll('[bis_skin_checked]').forEach(function(el) {
+                      el.removeAttribute('bis_skin_checked');
+                    });
+                  };
+                  document.addEventListener('DOMContentLoaded', clean);
+                }
+              } catch (e) {}
+            `,
+          }}
+        />
+      </head>
+      <body
+        suppressHydrationWarning
+        className="min-h-screen bg-[#F8F3EA] text-[#2A2A2A] selection:bg-[#8B1E2D] selection:text-white flex flex-col justify-between"
+      >
         <CartProvider>
-          <Header />
-          <div className="flex-1">
+          <StoreLayoutWrapper>
             {children}
-          </div>
-          <Footer />
-          <CartDrawer />
-          <QuickViewModal />
-          <Toast />
-          <StickyMobileBar />
+          </StoreLayoutWrapper>
         </CartProvider>
       </body>
     </html>

@@ -6,9 +6,10 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/presentation", "/cart", "/checkout"],
+        disallow: ["/studio", "/studio/", "/presentation", "/cart", "/checkout"],
       },
     ],
     sitemap: "https://lahorebouquet.com/sitemap.xml",
+    host: "https://lahorebouquet.com",
   };
 }

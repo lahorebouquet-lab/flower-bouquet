@@ -1,54 +1,48 @@
 import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ALL_PRODUCTS } from "../../data/products";
+import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
-import { Sparkles, Truck, Camera, MessageCircle, Heart, Clock, ShieldCheck } from "lucide-react";
+import { Sparkles, MessageCircle, Clock, ShieldCheck, HeartHandshake, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Fresh Flower Gajray & Mehndi Jewellery in Lahore | Handcrafted",
+    absolute: "Gajray & Garlands Mala in Lahore | 4 Hours Delivery | Mehndi Jewellery",
   },
-  description: "Order fresh motia & red rose gajray, floral garlands (mala/haar), and handmade bridal mehndi jewellery in Lahore. Handcrafted daily with same-day delivery.",
+  description: "Order fresh motia & red rose gajray, wedding garlands (mala/haar), haath phool, and handmade bridal mehndi jewellery in Lahore. 4 hours express delivery across all areas. Prices from Rs. 2,499.",
   alternates: {
     canonical: "https://lahorebouquet.com/collections/fresh-flower-gajray",
   },
+  keywords: [
+    "gajray lahore",
+    "garlands mala lahore",
+    "fresh flower gajray",
+    "mehndi jewellery lahore",
+    "motia gajray lahore",
+    "rose gajray lahore",
+    "wedding garland lahore",
+    "wedding mala haar lahore",
+    "haath phool lahore",
+    "bridal floral jewellery lahore",
+    "4 hours delivery lahore",
+    "mehndi flower jewellery",
+    "nikah haar lahore",
+    "lahore bouquet gajray"
+  ],
   openGraph: {
-    title: "Fresh Flower Gajray & Mehndi Jewellery in Lahore | Handcrafted",
-    description: "Order fresh motia & red rose gajray, floral garlands (mala/haar), and handmade bridal mehndi jewellery in Lahore. Handcrafted daily with same-day delivery.",
+    title: "Gajray & Garlands Mala in Lahore | 4 Hours Delivery | Mehndi Jewellery",
+    description: "Order fresh motia & red rose gajray, wedding garlands (mala/haar), haath phool, and handmade bridal mehndi jewellery in Lahore. 4 hours express delivery across all areas.",
     url: "https://lahorebouquet.com/collections/fresh-flower-gajray",
+    siteName: "Lahore Bouquet",
+    locale: "en_PK",
+    type: "website",
   }
 };
 
-export const GAJRAY_ITEMS = [
-  {
-    name: "Classic Fresh Motia Gajray (Pair of 2)",
-    price: 650,
-    desc: "Fragrant night-blooming Arabian jasmine (motia) hand-strung on soft cotton thread with golden gota border.",
-    tags: "Bestseller • Mehndi Must-Have"
-  },
-  {
-    name: "Red Rose & Baby's Breath Wrist Cuffs",
-    price: 1200,
-    desc: "Petite crimson spray rosebuds woven with delicate gypsophila for brides, bridesmaids, and sisters.",
-    tags: "Bridal Special"
-  },
-  {
-    name: "Full Mehndi Floral Jewellery Set",
-    price: 3500,
-    desc: "Includes fresh flower matha patti, earrings (jhumkay), finger ring attached gajray, and neckline garland.",
-    tags: "Complete Bridal Set"
-  },
-  {
-    name: "Royal Nikah & Barat Rose Haar (Pair)",
-    price: 2800,
-    desc: "Traditional ceremonial red rose garlands paired with pearl bead accents for bride and groom.",
-    tags: "Nikah & Barat"
-  }
-];
-
-export default function FreshFlowerGajrayPage() {
-  const weddingProducts = ALL_PRODUCTS.filter(p => p.category === "Wedding Décor" || p.category === "Roses").slice(0, 4);
+export default async function FreshFlowerGajrayPage() {
+  const allProducts = await getSanityProducts();
+  const gajrayProducts = allProducts.filter(p => p.category === "Fresh Flower Gajray");
+  const weddingProducts = allProducts.filter(p => p.category === "Wedding Décor" || p.category === "Roses").slice(0, 4);
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -63,13 +57,13 @@ export default function FreshFlowerGajrayPage() {
       {
         "@type": "ListItem",
         position: 2,
-        name: "Collections",
-        item: "https://lahorebouquet.com/collections/bouquets",
+        name: "Wedding Décor",
+        item: "https://lahorebouquet.com/wedding-decor",
       },
       {
         "@type": "ListItem",
         position: 3,
-        name: "Fresh Flower Gajray & Mehndi Jewellery",
+        name: "Gajray & Garlands Mala in Lahore",
         item: "https://lahorebouquet.com/collections/fresh-flower-gajray",
       },
     ],
@@ -81,25 +75,65 @@ export default function FreshFlowerGajrayPage() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "How fresh do flower gajray stay during wedding events?",
+        name: "How fast can fresh flower gajray and garlands be delivered in Lahore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "We weave all gajray on the day of delivery and pack them in insulated cooling boxes with moist floral wraps. They stay crisp, fragrant, and fresh throughout your evening function.",
+          text: "We provide 4-hour express delivery for fresh gajray and malas across Lahore, including DHA, Gulberg, Bahria Town, Model Town, Johar Town, and Cantt. Same-day emergency orders are also accommodated when ordered before 6 PM.",
         },
       },
       {
         "@type": "Question",
-        name: "Can I customize the colors of my mehndi floral jewellery?",
+        name: "How fresh do flower gajray stay during wedding events in Lahore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes! You can choose your color palette (yellow marigold, blush pink roses, white motia, or purple lisianthus) to match your wedding outfit via WhatsApp.",
+          text: "We weave all gajray and garlands on the morning of delivery and pack them in insulated cooling boxes with moist floral wraps. They stay crisp, fragrant, and fresh throughout your evening Mehndi, Barat, or Nikah function.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I customize the colors of my mehndi floral jewellery to match my bridal dress?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes! You can choose your custom color palette (blush pink roses, peach blossom, ruby red, golden yellow marigold, or pure white jasmine motia) to match your wedding lehenga or sherwani via WhatsApp.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do you offer bulk gajray for wedding guests in Lahore?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, we prepare bulk fresh motia and rose gajray for Mayun, Mehndi, Sangeet, and Qawwali nights in packages of 20, 50, or 100+ pairs delivered directly to your venue or home in Lahore.",
         },
       },
     ],
   };
 
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Gajray & Garlands Mala Collection Lahore",
+    numberOfItems: gajrayProducts.length,
+    itemListElement: gajrayProducts.map((p, idx) => ({
+      "@type": "ListItem",
+      position: idx + 1,
+      item: {
+        "@type": "Product",
+        name: p.title,
+        url: `https://lahorebouquet.com/products/${p.slug}`,
+        image: `https://lahorebouquet.com${p.image}`,
+        description: p.desc,
+        offers: {
+          "@type": "Offer",
+          price: p.price,
+          priceCurrency: "PKR",
+          availability: "https://schema.org/InStock",
+        },
+      },
+    })),
+  };
+
   return (
-    <main className="max-w-6xl mx-auto px-4 sm:px-6 py-10 space-y-12">
+    <main className="max-w-7xl mx-auto px-4 sm:px-6 py-10 space-y-12 bg-[#F8F3EA] text-[#2A2A2A]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
@@ -108,84 +142,144 @@ export default function FreshFlowerGajrayPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+      />
 
       {/* Breadcrumb */}
-      <nav aria-label="Breadcrumb" className="text-xs text-white/50 flex items-center gap-2">
-        <Link href="/" className="hover:text-white transition-colors">Home</Link>
+      <nav aria-label="Breadcrumb" className="text-xs text-[#777777] flex items-center gap-2">
+        <Link href="/" className="hover:text-[#0B0B0B] transition-colors">Home</Link>
         <span>/</span>
-        <Link href="/collections/wedding-decor" className="hover:text-white transition-colors">Wedding Décor</Link>
+        <Link href="/wedding-decor" className="hover:text-[#0B0B0B] transition-colors">Wedding Décor</Link>
         <span>/</span>
-        <span className="text-[#E11D48] font-semibold">Fresh Flower Gajray</span>
+        <span className="text-[#8B1E2D] font-semibold">Gajray & Garlands Mala</span>
       </nav>
 
       {/* Hero Header */}
       <section className="space-y-4">
-        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#E11D48]/20 text-[#F43F5E] border border-[#E11D48]/40 text-xs font-bold uppercase tracking-wider">
-          <Sparkles className="w-3.5 h-3.5" />
-          Handcrafted Floral Jewellery • Fresh Motia & Roses
-        </span>
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#8B1E2D]/20 text-[#8B1E2D] border border-[#8B1E2D]/30 text-xs font-bold uppercase tracking-wider">
+            <Sparkles className="w-3.5 h-3.5 text-[#C6A15B]" />
+            Handcrafted Floral Artistry • 4 Hours Delivery Lahore
+          </span>
+          <span className="px-3 py-1 rounded-full bg-white border border-[#E5DED2] text-xs font-semibold text-[#0B0B0B]">
+            {gajrayProducts.length} Premium Designs
+          </span>
+        </div>
 
-        <h1 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
-          Fresh Flower Gajray & Mehndi Jewellery in Lahore
+        <h1 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0B0B0B] leading-tight">
+          Gajray & Garlands Mala for Weddings in Lahore
         </h1>
 
-        <p className="text-white/80 text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Complete your Dholak, Mayun, and Mehndi ceremonies with the intoxicating natural fragrance of pure Pakistani motia (Arabian jasmine) and fresh red garden roses. Our artisans in Gulberg handcraft bespoke gajray wrist cuffs, bridal matha patti, floral earrings, and ceremonial Nikah haar with refrigerated express delivery across Lahore.
+        <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
+          Complete your Mayun, Mehndi, Nikah, and Barat celebrations with the timeless fragrance of authentic Pakistani motia (Arabian jasmine) and fresh velvety red roses. Sourced fresh daily, our florists in Gulberg hand-weave ceremonial wedding garlands (haar/mala), bridal haath phool, wrist cuffs, floral choker necklaces, and matching guest gajray with <strong>guaranteed 4-hour refrigerated delivery across Lahore</strong>.
         </p>
 
-        <div className="flex flex-wrap gap-4 pt-2 text-xs text-white/80">
-          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#E11D48]" /> Crafted fresh on the day of delivery</span>
-          <span className="flex items-center gap-1.5"><ShieldCheck className="w-4 h-4 text-[#25D366]" /> Cold-packed to retain fragrance</span>
+        <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
+          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 4 Hours Express Lahore Delivery</span>
+          <span className="flex items-center gap-1.5"><ShieldCheck className="w-4 h-4 text-[#C6A15B]" /> Moisture-Sealed Cold Packing</span>
+          <span className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-[#25D366]" /> Live Photo on WhatsApp Before Dispatch</span>
           <a 
-            href="https://wa.me/923001234567?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20fresh%20flower%20gajray%20or%20mehndi%20jewellery."
+            href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20gajray%20or%20wedding%20garlands%20mala."
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-[#25D366] font-semibold hover:underline"
+            className="flex items-center gap-1.5 text-[#8B1E2D] font-semibold hover:text-[#C6A15B]"
           >
-            <MessageCircle className="w-4 h-4" /> Book Wedding Gajray on WhatsApp
+            <MessageCircle className="w-4 h-4 text-[#25D366]" /> Custom Bridal Order on WhatsApp
           </a>
         </div>
       </section>
 
-      {/* Gajray Menu Grid */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {GAJRAY_ITEMS.map((item, idx) => (
-          <div key={idx} className="p-6 rounded-2xl bg-[#17171E] border border-white/10 space-y-3 hover:border-[#E11D48]/40 transition-colors">
-            <div className="flex items-start justify-between gap-4">
-              <div>
-                <span className="text-[11px] font-bold text-[#F43F5E] uppercase tracking-wider">{item.tags}</span>
-                <h3 className="font-playfair text-xl font-bold text-white mt-1">{item.name}</h3>
-              </div>
-              <span className="text-base font-bold text-[#E11D48] whitespace-nowrap bg-[#E11D48]/10 px-3 py-1 rounded-xl border border-[#E11D48]/20">
-                Rs. {item.price.toLocaleString()} PKR
-              </span>
-            </div>
-            <p className="text-xs text-white/70 leading-relaxed">{item.desc}</p>
-            <a 
-              href={`https://wa.me/923001234567?text=Hello%20Lahore%20Bouquet!%20I%20want%20to%20order:%20${encodeURIComponent(item.name)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-xs text-[#25D366] font-semibold hover:underline pt-2"
-            >
-              <MessageCircle className="w-4 h-4" /> Order this design on WhatsApp →
-            </a>
+      {/* Gajray Products Grid */}
+      <section className="space-y-6">
+        <div className="flex items-center justify-between border-b border-[#E5DED2] pb-4">
+          <div>
+            <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Gajray & Garlands Mala Collection</h2>
+            <p className="text-xs text-[#777777]">Handcrafted gajray pairs, haath phool, bridal floral sets, and ceremonial malas</p>
           </div>
-        ))}
-      </section>
-
-      {/* Pairing Bouquets */}
-      <section className="space-y-4 pt-6 border-t border-white/10">
-        <div className="flex items-center justify-between text-xs text-white/60">
-          <span>Popular wedding & event floral bouquets</span>
-          <Link href="/collections/wedding-decor" className="text-[#E11D48] hover:underline font-semibold">
-            View All Wedding Décor →
-          </Link>
+          <span className="text-xs font-semibold text-[#8B1E2D] bg-[#8B1E2D]/10 px-3 py-1.5 rounded-full">
+            4-Hour Express Delivery
+          </span>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {weddingProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
+        {gajrayProducts.length > 0 ? (
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
+            {gajrayProducts.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-12 bg-white rounded-2xl border border-[#E5DED2]">
+            <p className="text-sm text-[#777777]">Loading handcrafted floral jewellery...</p>
+          </div>
+        )}
+      </section>
+
+      {/* Bespoke Bridal & Bulk Mehndi Inquiries */}
+      <section className="bg-white rounded-2xl border border-[rgba(198,161,91,0.35)] p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
+        <div className="space-y-2 text-center md:text-left">
+          <span className="text-xs font-bold text-[#8B1E2D] uppercase tracking-wider">Custom Wedding Packages</span>
+          <h3 className="font-playfair text-xl sm:text-2xl font-bold text-[#0B0B0B]">
+            Need Bulk Gajray for Mehndi Guests or Custom Bridal Jewellery?
+          </h3>
+          <p className="text-xs sm:text-sm text-[#777777] max-w-xl">
+            We prepare bulk fresh motia gajray for Mayun, Mehndi, and Dholak ceremonies (20 to 100+ pairs) with custom color themes matching your bridal dress. Live photos sent before dispatch.
+          </p>
+        </div>
+        <a
+          href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20I%20need%20a%20quote%20for%20bulk%20mehndi%20gajray%20or%20bespoke%20bridal%20flower%20jewellery."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#25D366] text-white text-sm font-bold shadow-md hover:bg-[#1EBE5D] transition-all whitespace-nowrap"
+        >
+          <MessageCircle className="w-5 h-5" />
+          Chat on WhatsApp: 0309 4895080
+        </a>
+      </section>
+
+      {/* Pairing Wedding Décor & Bouquets */}
+      {weddingProducts.length > 0 && (
+        <section className="space-y-4 pt-6 border-t border-[#E5DED2]">
+          <div className="flex items-center justify-between text-xs text-[#2A2A2A]">
+            <span className="font-semibold text-sm text-[#0B0B0B]">Popular Wedding Room & Car Décor</span>
+            <Link href="/wedding-decor" className="text-[#8B1E2D] hover:underline font-semibold">
+              View All Wedding Décor →
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+            {weddingProducts.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Comprehensive FAQs for High Search Visibility */}
+      <section className="bg-white p-8 sm:p-10 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-6">
+        <div className="flex items-center gap-2 text-[#0B0B0B]">
+          <Sparkles className="w-5 h-5 text-[#8B1E2D]" />
+          <h2 className="font-playfair text-2xl font-bold">Frequently Asked Questions — Gajray & Malas in Lahore</h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs text-[#2A2A2A] leading-relaxed">
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">How fast can gajray and malas be delivered?</h3>
+            <p>We deliver in 4 hours across Lahore including DHA (Phases 1-9), Gulberg, Bahria Town, Model Town, Johar Town, and Cantt. Same-day emergency orders are also accommodated.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">How do the flowers stay fresh during evening events?</h3>
+            <p>Every piece is woven on the day of delivery and packed in insulated moisture-retaining cold boxes to keep the jasmine motia crisp and fragrant all night.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Can I order matching floral jewellery for my bridal dress?</h3>
+            <p>Yes. Send us a photo of your bridal lehenga or outfit on WhatsApp, and our florists will match roses, baby&apos;s breath, pearls, and ribbons to your exact shades.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Do you offer bulk gajray discounts for wedding guests?</h3>
+            <p>Yes, we prepare wholesale and bulk packages of 20, 50, or 100+ fresh motia and red rose gajray pairs at discounted wedding rates with venue delivery.</p>
+          </div>
         </div>
       </section>
     </main>

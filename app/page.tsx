@@ -5,13 +5,21 @@ import { HOMEPAGE_FAQS } from "./data/homepage";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Fresh Flowers & Bouquets Delivery in Lahore | Lahore Bouquet",
+    absolute: "Flower Shop in Lahore | Fresh Bouquets & Same-Day Delivery | Lahore Bouquet",
   },
-  description: "Order fresh rose, sunflower and money bouquets in Lahore. Bridal room and car décor too. Delivery in 2 to 5 hours with a photo on WhatsApp first.",
+  description: "Looking for a flower shop near you in Lahore? Lahore Bouquet makes fresh bouquets to order and delivers across the city. Order online or call 0309-4895080.",
   alternates: {
     canonical: "https://lahorebouquet.com",
   },
   keywords: [
+    "flower shop near me",
+    "flower shop",
+    "flowers near me",
+    "florist",
+    "bouquet shop near me",
+    "fresh flowers",
+    "florist near me",
+    "flower wala",
     "flower delivery lahore",
     "fresh bouquets lahore",
     "red rose bouquet lahore",
@@ -22,15 +30,23 @@ export const metadata: Metadata = {
     "lahore bouquet"
   ],
   openGraph: {
-    title: "Fresh Flowers & Bouquets Delivery in Lahore | Lahore Bouquet",
-    description: "Order fresh rose, sunflower and money bouquets in Lahore. Bridal room and car décor too. Delivery in 2 to 5 hours with a photo on WhatsApp first.",
+    title: "Flower Shop in Lahore | Fresh Bouquets & Same-Day Delivery | Lahore Bouquet",
+    description: "Looking for a flower shop near you in Lahore? Lahore Bouquet makes fresh bouquets to order and delivers across the city. Order online or call 0309-4895080.",
     url: "https://lahorebouquet.com",
     type: "website",
     locale: "en_PK",
   }
 };
 
-export default function HomePage() {
+import { getSanityProducts, getSanityReviews, getSanityCategories } from "@/sanity/lib/fetch";
+
+export default async function HomePage() {
+  const [products, reviews, categories] = await Promise.all([
+    getSanityProducts(),
+    getSanityReviews(),
+    getSanityCategories(),
+  ]);
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -57,14 +73,14 @@ export default function HomePage() {
       postalCode: "54000",
       addressCountry: "PK",
     },
-    telephone: "+92 300 1234567",
+    telephone: "+923094895080",
     priceRange: "Rs. 1,180 - Rs. 14,500",
     openingHours: "Mo-Su 09:00-01:00",
     url: "https://lahorebouquet.com",
   };
 
   return (
-    <main className="min-h-screen bg-[#101012] text-white">
+    <main className="min-h-screen bg-[#F8F3EA] text-[#101012]">
       {/* Schema.org Microdata */}
       <script
         type="application/ld+json"
@@ -75,7 +91,11 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
       />
 
-      <HomeClient />
+      <HomeClient
+        initialProducts={products}
+        initialReviews={reviews}
+        initialCategories={categories}
+      />
     </main>
   );
 }

@@ -284,7 +284,7 @@ export default function BestsellersPage() {
           </div>
 
           {/* 4 Review Cards in 2x2 or 4-col Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
             {REVIEWS.map((rev) => (
               <div
                 key={rev.id}

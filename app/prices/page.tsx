@@ -3,21 +3,19 @@ import PricesClient from "./PricesClient";
 import { FAQ_DATA, SNAPSHOT_PRICES } from "./data";
 
 export const metadata: Metadata = {
-  title: "Flower Bouquet Price in Lahore | Free Delivery | Lahore Bouquet",
+  title: "Flower Bouquet Price in Lahore & Pakistan | Updated October 2026 | Lahore Bouquet",
   description:
-    "Bouquet prices in Lahore from PKR 1,180, gajray from PKR 450. Compare real starting prices for chocolate bouquets, wedding décor, car decoration & gifts. WhatsApp for exact quote.",
+    "See current flower bouquet prices in Lahore, from small bunches to large arrangements. Prices for roses, sunflowers, tulips and chocolate bouquets.",
   keywords: [
+    "flower bouquet price in pakistan",
     "flower bouquet price in lahore",
-    "bouquet price in lahore",
-    "cheap bouquet price lahore",
+    "bouquet price",
+    "flower bucket",
+    "large bouquet of flowers",
     "rose bouquet price in lahore",
-    "sunflower bouquet price in lahore",
-    "chocolate bouquet price lahore",
-    "wedding room decoration price in lahore",
-    "wedding car decoration price lahore",
-    "gajray price in lahore",
-    "flower jewellery price lahore",
-    "mehndi jewellery price in lahore",
+    "sunflower price in pakistan",
+    "tulip flower price in pakistan",
+    "chocolate bouquet price in pakistan",
     "lahore flower delivery prices",
   ],
   alternates: {

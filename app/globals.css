@@ -2,29 +2,58 @@
 
 @layer base {
   :root {
-    --color-bg: #101012;
-    --color-bg-alt: #161619;
-    --color-surface: #18181C;
-    --color-surface-card: #1D1D23;
-    --color-surface-card-hover: #26262F;
-    --color-forest: #16241D;
-    --color-red: #E11D48;
-    --color-red-light: #F43F5E;
-    --color-red-dark: #BE123C;
-    --color-red-soft: rgba(225, 29, 72, 0.15);
-    --color-border: rgba(255, 255, 255, 0.08);
-    --color-border-subtle: rgba(255, 255, 255, 0.05);
-    --color-border-red: rgba(225, 29, 72, 0.35);
-    --color-text-main: #F4F4F6;
-    --color-text-secondary: #A1A1AA;
-    --color-text-muted: #71717A;
+    /* Brand Master Color Palette */
+    --color-black: #0B0B0B;
+    --color-burgundy: #8B1E2D;
+    --color-ivory: #F8F3EA;
+    --color-gold: #C6A15B;
+    --color-charcoal: #2A2A2A;
+    --color-white: #FFFFFF;
+
+    /* Secondary / Structural Tokens */
+    --color-border-light: #E5DED2;
+    --color-border-gold: rgba(198, 161, 91, 0.30);
+    --color-muted: #636363;
     --color-whatsapp: #25D366;
+
+    /* Legacy mapping for safety */
+    --color-bg: #F8F3EA;
+    --color-surface: #FFFFFF;
+    --color-text-main: #0B0B0B;
+    --color-text-secondary: #2A2A2A;
+  }
+
+  html, body {
+    overflow-x: clip;
+    max-width: 100vw;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
   }
 
   body {
-    background-color: #101012;
-    color: #F4F4F6;
+    background-color: var(--color-ivory);
+    color: var(--color-charcoal);
     font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  /* Form Focus States (Section 19: No default browser blue) */
+  input:focus, 
+  textarea:focus, 
+  select:focus {
+    border-color: #C6A15B !important;
+    box-shadow: 0 0 0 2px rgba(198, 161, 91, 0.15) !important;
+    outline: none !important;
+  }
+
+  /* Mobile Safe Area utilities */
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  .pt-safe {
+    padding-top: env(safe-area-inset-top, 0px);
   }
 }
 
@@ -42,35 +71,83 @@
   font-weight: 400;
 }
 
-/* Luxury Dark Card Styling with Red Accent */
+/* Luxury Product Card: White on Ivory, Gold border on hover */
 .florabelle-card {
-  background: #1B1B22;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #FFFFFF;
+  border: 1px solid rgba(198, 161, 91, 0.25);
   border-radius: 16px;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 20px -2px rgba(11, 11, 11, 0.04);
 }
 
 .florabelle-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(225, 29, 72, 0.45);
-  box-shadow: 0 16px 36px -12px rgba(0, 0, 0, 0.7), 0 0 24px -4px rgba(225, 29, 72, 0.25);
+  border-color: #C6A15B;
+  box-shadow: 0 16px 36px -8px rgba(11, 11, 11, 0.10), 0 0 16px -2px rgba(198, 161, 91, 0.22);
 }
 
-.glass-panel {
-  background: rgba(24, 24, 28, 0.85);
-  backdrop-filter: blur(14px);
-  border: 1px solid rgba(255, 255, 255, 0.09);
+/* Luxury Dark Card (for Bestseller / Dark Sections) */
+.florabelle-card-dark {
+  background: #15151A;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 16px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.red-glow {
-  box-shadow: 0 0 25px -4px rgba(225, 29, 72, 0.35);
+.florabelle-card-dark:hover {
+  transform: translateY(-4px);
+  border-color: #C6A15B;
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.7), 0 0 16px -2px rgba(198, 161, 91, 0.30);
+}
+
+/* Standard Button System (Section 18) */
+.btn-primary {
+  background-color: #8B1E2D;
+  color: #FFFFFF;
+  transition: all 0.2s ease-in-out;
+}
+.btn-primary:hover {
+  background-color: #C6A15B;
+  color: #0B0B0B;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid #0B0B0B;
+  color: #0B0B0B;
+  transition: all 0.2s ease-in-out;
+}
+.btn-secondary:hover {
+  background-color: #0B0B0B;
+  color: #FFFFFF;
+}
+
+.btn-dark {
+  background-color: #0B0B0B;
+  color: #FFFFFF;
+  transition: all 0.2s ease-in-out;
+}
+.btn-dark:hover {
+  background-color: #C6A15B;
+  color: #0B0B0B;
+}
+
+.btn-gold-outline {
+  background-color: transparent;
+  border: 1px solid #C6A15B;
+  color: #FFFFFF;
+  transition: all 0.2s ease-in-out;
+}
+.btn-gold-outline:hover {
+  background-color: #C6A15B;
+  color: #0B0B0B;
 }
 
 /* Pulsing dot for live status */
 @keyframes lbPulse {
-  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-  70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(198, 161, 91, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(198, 161, 91, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(198, 161, 91, 0); }
 }
 
 .lb-pulse-dot {
@@ -87,20 +164,20 @@
   animation: fadeIn 0.25s ease-out forwards;
 }
 
-/* Custom smooth dark scrollbar with crimson red thumb */
+/* Custom luxury scrollbar */
 ::-webkit-scrollbar {
   width: 7px;
   height: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #101012;
+  background: #F8F3EA;
 }
 ::-webkit-scrollbar-thumb {
-  background: #2E2E36;
+  background: #C6A15B;
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #E11D48;
+  background: #8B1E2D;
 }
 
 .no-scrollbar::-webkit-scrollbar {
@@ -110,4 +187,3 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-

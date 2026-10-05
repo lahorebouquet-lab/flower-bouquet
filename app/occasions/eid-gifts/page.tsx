@@ -1,9 +1,9 @@
 import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ALL_PRODUCTS } from "../../data/products";
+import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
-import { Moon, Sparkles, Truck, Camera, MessageCircle, Gift } from "lucide-react";
+import { Moon, Truck, Camera, MessageCircle } from "lucide-react";
 
 export const metadata: Metadata = {
   title: {
@@ -20,8 +20,9 @@ export const metadata: Metadata = {
   }
 };
 
-export default function EidGiftsPage() {
-  const eidProducts = ALL_PRODUCTS.filter(p => p.category === "Gifts & Cakes" || p.category === "Bouquets" || p.category === "Money Bouquets").slice(0, 8);
+export default async function EidGiftsPage() {
+  const allProducts = await getSanityProducts();
+  const eidProducts = allProducts.filter(p => p.category === "Gifts & Cakes" || p.category === "Bouquets" || p.category === "Money Bouquets").slice(0, 8);
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -49,60 +50,60 @@ export default function EidGiftsPage() {
   };
 
   return (
-    <main className="max-w-6xl mx-auto px-4 sm:px-6 py-10 space-y-12">
+    <main className="max-w-6xl mx-auto px-4 sm:px-6 py-10 space-y-12 bg-[#F8F3EA] text-[#2A2A2A]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* Breadcrumb */}
-      <nav aria-label="Breadcrumb" className="text-xs text-white/50 flex items-center gap-2">
-        <Link href="/" className="hover:text-white transition-colors">Home</Link>
+      <nav aria-label="Breadcrumb" className="text-xs text-[#777777] flex items-center gap-2">
+        <Link href="/" className="hover:text-[#0B0B0B] transition-colors">Home</Link>
         <span>/</span>
-        <span className="text-white/60">Occasions</span>
+        <span className="text-[#777777]">Occasions</span>
         <span>/</span>
-        <span className="text-[#E11D48] font-semibold">Eid Gifts & Flowers</span>
+        <span className="text-[#8B1E2D] font-semibold">Eid Gifts & Flowers</span>
       </nav>
 
       {/* Hero Header */}
       <section className="space-y-4">
-        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#E11D48]/20 text-[#F43F5E] border border-[#E11D48]/40 text-xs font-bold uppercase tracking-wider">
-          <Moon className="w-3.5 h-3.5" />
+        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#8B1E2D]/20 text-[#C6A15B] border border-[#8B1E2D] text-xs font-bold uppercase tracking-wider">
+          <Moon className="w-3.5 h-3.5 text-[#C6A15B]" />
           Chaand Raat & Eid Mubarak Express Gifting
         </span>
 
-        <h1 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+        <h1 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0B0B0B] leading-tight">
           Eid Flower & Gift Delivery in Lahore
         </h1>
 
-        <p className="text-white/80 text-xs sm:text-sm leading-relaxed max-w-3xl">
+        <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
           Celebrate Eid ul Fitr and Eid ul Adha with loved ones across Lahore, even if you are ordering from the UK, USA, Canada, or UAE. We deliver fresh premium rose bouquets, festive money bouquets with crisp Eidi banknotes, premium mithai, and luxury chocolates across all Lahore areas on Chaand Raat and Eid morning.
         </p>
 
-        <div className="flex flex-wrap gap-4 pt-2 text-xs text-white/80">
-          <span className="flex items-center gap-1.5"><Truck className="w-4 h-4 text-[#E11D48]" /> Chaand Raat midnight delivery slots</span>
-          <span className="flex items-center gap-1.5"><Camera className="w-4 h-4 text-[#25D366]" /> Photo on WhatsApp before dispatch</span>
+        <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
+          <span className="flex items-center gap-1.5"><Truck className="w-4 h-4 text-[#8B1E2D]" /> Chaand Raat midnight delivery slots</span>
+          <span className="flex items-center gap-1.5"><Camera className="w-4 h-4 text-[#C6A15B]" /> Photo on WhatsApp before dispatch</span>
           <a 
-            href="https://wa.me/923001234567?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20an%20Eid%20gift%20combo%20in%20Lahore."
+            href="https://wa.me/923094895080?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20an%20Eid%20gift%20combo%20in%20Lahore."
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-[#25D366] font-semibold hover:underline"
+            className="flex items-center gap-1.5 text-[#8B1E2D] font-semibold hover:text-[#C6A15B]"
           >
-            <MessageCircle className="w-4 h-4" /> Book Eid Gifts on WhatsApp
+            <MessageCircle className="w-4 h-4 text-[#25D366]" /> Book Eid Gifts on WhatsApp
           </a>
         </div>
       </section>
 
       {/* Products Grid */}
       <section className="space-y-6">
-        <div className="flex items-center justify-between text-xs text-white/60">
+        <div className="flex items-center justify-between text-xs text-[#2A2A2A]">
           <span>Curated Eid floral bouquets & gift combos</span>
-          <Link href="/collections/bouquets" className="text-[#E11D48] hover:underline font-semibold">
+          <Link href="/collections/bouquets" className="text-[#8B1E2D] hover:underline font-semibold">
             View All Bouquets →
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
           {eidProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}

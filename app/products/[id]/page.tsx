@@ -4,10 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { 
   ALL_PRODUCTS, 
-  Product,
-  LAHORE_AREAS,
-  REVIEWS
+  Product, 
+  LAHORE_AREAS, 
+  REVIEWS 
 } from "../../data/products";
+import { getSanityProducts, getSanityProduct, getSanityReviews } from "@/sanity/lib/fetch";
 import ProductDetailActions from "../../components/ProductDetailActions";
 import ProductCard from "../../components/ProductCard";
 import { 
@@ -29,15 +30,20 @@ interface ProductPageProps {
 }
 
 export async function generateStaticParams() {
-  return ALL_PRODUCTS.flatMap((p) => [
-    { id: p.id.toString() },
+  const sanityProducts = await getSanityProducts();
+  const list = sanityProducts.length > 0 ? sanityProducts : ALL_PRODUCTS;
+  return list.flatMap((p) => [
+    { id: String(p.id) },
     { id: p.slug }
   ]);
 }
 
 export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
   const { id } = await params;
-  const product = ALL_PRODUCTS.find(p => p.id.toString() === id || p.slug === id);
+  const sanityProducts = await getSanityProducts();
+  const product = sanityProducts.find(p => String(p.id) === id || p.slug === id || p._id === id) 
+    || await getSanityProduct(id) 
+    || ALL_PRODUCTS.find(p => String(p.id) === id || p.slug === id);
 
   if (!product) {
     return {
@@ -45,8 +51,6 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
       description: "Explore our collection of fresh flower bouquets in Lahore."
     };
   }
-
-  const categoryUrl = `/collections/${product.category.toLowerCase().replace(/ & /g, "-").replace(/ /g, "-")}`;
 
   return {
     title: `${product.title} - Flower Delivery Lahore`,
@@ -60,7 +64,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
       "express bouquet delivery lahore"
     ],
     alternates: {
-      canonical: `/products/${product.slug}`,
+      canonical: `https://lahorebouquet.com/products/${product.slug}`,
     },
     openGraph: {
       title: `${product.title} | Lahore Bouquet`,
@@ -80,17 +84,25 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
 export default async function ProductDetailPage({ params }: ProductPageProps) {
   const { id } = await params;
-  const product = ALL_PRODUCTS.find(p => p.id.toString() === id || p.slug === id);
+  const [sanityProducts, sanityReviews] = await Promise.all([
+    getSanityProducts(),
+    getSanityReviews(),
+  ]);
+
+  const product = sanityProducts.find(p => String(p.id) === id || p.slug === id || p._id === id)
+    || await getSanityProduct(id)
+    || ALL_PRODUCTS.find(p => String(p.id) === id || p.slug === id);
 
   if (!product) {
     notFound();
   }
 
-  const relatedProducts = ALL_PRODUCTS
-    .filter(p => p.id !== product.id && (p.category === product.category || p.badgeType === "hot"))
+  const relatedProducts = sanityProducts
+    .filter(p => String(p.id) !== String(product.id) && (p.category === product.category || p.badgeType === "hot"))
     .slice(0, 4);
 
-  // Category Link mapping
+  const reviewsList = sanityReviews.length > 0 ? sanityReviews : REVIEWS;
+
   const getCategoryHref = (cat: string) => {
     switch (cat) {
       case "Bouquets": return "/collections/bouquets";
@@ -155,8 +167,10 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
     ]
   };
 
+  const isGoldBadge = product.badgeType === "hot" || product.badge?.toLowerCase().includes("premium") || product.badge?.toLowerCase().includes("new") || product.badge?.toLowerCase().includes("trending");
+
   return (
-    <main className="min-h-screen bg-[#101012] text-white">
+    <main className="min-h-screen bg-[#F8F3EA] text-[#2A2A2A]">
       {/* Schema.org Structured Data */}
       <script
         type="application/ld+json"
@@ -168,19 +182,19 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       />
 
       {/* Breadcrumbs Navigation */}
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 py-4 border-b border-white/10 text-xs text-white/50">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 py-4 border-b border-[#E5DED2] text-xs text-[#777777]">
         <ol className="flex items-center gap-2 flex-wrap">
           <li>
-            <Link href="/" className="hover:text-white transition-colors">Home</Link>
+            <Link href="/" className="hover:text-[#0B0B0B] transition-colors">Home</Link>
           </li>
           <li>/</li>
           <li>
-            <Link href={getCategoryHref(product.category)} className="hover:text-white transition-colors">
+            <Link href={getCategoryHref(product.category)} className="hover:text-[#0B0B0B] transition-colors">
               {product.category}
             </Link>
           </li>
           <li>/</li>
-          <li className="text-[#E11D48] font-medium truncate max-w-[280px] sm:max-w-md">
+          <li className="text-[#8B1E2D] font-medium truncate max-w-[280px] sm:max-w-md">
             {product.title}
           </li>
         </ol>
@@ -192,7 +206,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           
           {/* Left Column: Product Image Gallery */}
           <div className="lg:col-span-6 space-y-4">
-            <div className="relative aspect-[4/5] w-full rounded-2xl overflow-hidden bg-[#15151A] border border-white/10 shadow-2xl">
+            <div className="relative aspect-[4/5] w-full rounded-2xl overflow-hidden bg-white border border-[rgba(198,161,91,0.25)] shadow-md">
               <Image
                 src={product.image}
                 alt={product.title}
@@ -204,15 +218,19 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
 
               {/* Badge Pill */}
               <div className="absolute top-4 left-4 z-10">
-                <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#E11D48] text-white shadow-lg">
+                <span className={`px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm ${
+                  isGoldBadge 
+                    ? "bg-[#C6A15B] text-[#0B0B0B]" 
+                    : "bg-[#8B1E2D] text-white"
+                }`}>
                   {product.badge}
                 </span>
               </div>
 
               {/* Eco Badge */}
               <div className="absolute bottom-4 left-4 z-10">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/20 text-[11px] text-white font-medium">
-                  <Leaf className="w-3.5 h-3.5 text-[#25D366]" />
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 backdrop-blur-md border border-[#E5DED2] text-[11px] text-[#0B0B0B] font-medium shadow-xs">
+                  <Leaf className="w-3.5 h-3.5 text-[#8B1E2D]" />
                   100% Zero-Plastic Eco Wrap
                 </span>
               </div>
@@ -220,20 +238,20 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
 
             {/* Quality Seals */}
             <div className="grid grid-cols-3 gap-3 text-center text-xs">
-              <div className="p-3 rounded-xl bg-[#17171E] border border-white/10 space-y-1">
-                <Clock className="w-4 h-4 text-[#E11D48] mx-auto" />
-                <span className="font-semibold text-white block text-[11px]">2–5h Delivery</span>
-                <span className="text-[10px] text-white/50 block">Express in Lahore</span>
+              <div className="p-3 rounded-2xl bg-white border border-[#E5DED2] space-y-1 shadow-xs">
+                <Clock className="w-4 h-4 text-[#8B1E2D] mx-auto" />
+                <span className="font-semibold text-[#0B0B0B] block text-[11px]">2–5h Delivery</span>
+                <span className="text-[10px] text-[#777777] block">Express in Lahore</span>
               </div>
-              <div className="p-3 rounded-xl bg-[#17171E] border border-white/10 space-y-1">
-                <ShieldCheck className="w-4 h-4 text-[#25D366] mx-auto" />
-                <span className="font-semibold text-white block text-[11px]">Photo Proof</span>
-                <span className="text-[10px] text-white/50 block">Before Handover</span>
+              <div className="p-3 rounded-2xl bg-white border border-[#E5DED2] space-y-1 shadow-xs">
+                <ShieldCheck className="w-4 h-4 text-[#8B1E2D] mx-auto" />
+                <span className="font-semibold text-[#0B0B0B] block text-[11px]">Photo Proof</span>
+                <span className="text-[10px] text-[#777777] block">Before Handover</span>
               </div>
-              <div className="p-3 rounded-xl bg-[#17171E] border border-white/10 space-y-1">
-                <Sparkles className="w-4 h-4 text-[#E11D48] mx-auto" />
-                <span className="font-semibold text-white block text-[11px]">7-Day Freshness</span>
-                <span className="text-[10px] text-white/50 block">Cold-Chain Stems</span>
+              <div className="p-3 rounded-2xl bg-white border border-[#E5DED2] space-y-1 shadow-xs">
+                <Sparkles className="w-4 h-4 text-[#C6A15B] mx-auto" />
+                <span className="font-semibold text-[#0B0B0B] block text-[11px]">7-Day Freshness</span>
+                <span className="text-[10px] text-[#777777] block">Cold-Chain Stems</span>
               </div>
             </div>
           </div>
@@ -246,38 +264,38 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               <div className="flex items-center justify-between">
                 <Link 
                   href={getCategoryHref(product.category)}
-                  className="text-xs uppercase font-bold tracking-widest text-[#E11D48] hover:underline"
+                  className="text-xs uppercase font-bold tracking-widest text-[#8B1E2D] hover:underline"
                 >
                   {product.category}
                 </Link>
 
-                <div className="flex items-center gap-1.5 text-xs text-white/70">
-                  <div className="flex text-[#E11D48]">
+                <div className="flex items-center gap-1.5 text-xs text-[#2A2A2A]">
+                  <div className="flex text-[#C6A15B]">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-3.5 h-3.5 fill-[#E11D48]" />
+                      <Star key={i} className="w-3.5 h-3.5 fill-[#C6A15B]" />
                     ))}
                   </div>
-                  <span className="font-semibold text-white">{product.rating}</span>
-                  <span className="text-white/40">({product.reviewCount} verified reviews)</span>
+                  <span className="font-bold text-[#0B0B0B]">{product.rating}</span>
+                  <span className="text-[#777777]">({product.reviewCount} verified reviews)</span>
                 </div>
               </div>
 
               {/* Title */}
-              <h1 className="font-playfair text-2xl sm:text-4xl font-bold tracking-tight text-white leading-tight">
+              <h1 className="font-playfair text-2xl sm:text-4xl font-bold tracking-tight text-[#0B0B0B] leading-tight">
                 {product.title}
               </h1>
 
               {/* Price */}
               <div className="flex items-baseline gap-3 pt-2">
-                <span className="text-2xl sm:text-3xl font-extrabold text-[#E11D48]">
+                <span className="text-2xl sm:text-3xl font-extrabold text-[#8B1E2D]">
                   Rs. {product.price.toLocaleString()} PKR
                 </span>
                 {product.oldPrice && (
                   <>
-                    <span className="text-base text-white/40 line-through">
+                    <span className="text-base text-[#777777] line-through">
                       Rs. {product.oldPrice.toLocaleString()} PKR
                     </span>
-                    <span className="px-2 py-0.5 rounded-full bg-[#E11D48]/15 border border-[#E11D48]/40 text-[#F43F5E] text-xs font-bold">
+                    <span className="px-2.5 py-0.5 rounded-full bg-[#8B1E2D]/10 border border-[#8B1E2D]/30 text-[#8B1E2D] text-xs font-bold">
                       Save Rs. {(product.oldPrice - product.price).toLocaleString()}
                     </span>
                   </>
@@ -286,20 +304,20 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
             </div>
 
             {/* Description & Stems */}
-            <div className="space-y-3 text-xs sm:text-sm text-white/70 leading-relaxed border-t border-b border-white/10 py-4">
+            <div className="space-y-3 text-xs sm:text-sm text-[#2A2A2A] leading-relaxed border-t border-b border-[#E5DED2] py-4">
               <p>{product.desc}</p>
               {product.stems && (
-                <div className="p-3 rounded-xl bg-[#17171E] border border-white/10 flex items-start gap-2.5">
-                  <Leaf className="w-4 h-4 text-[#25D366] shrink-0 mt-0.5" />
+                <div className="p-3.5 rounded-2xl bg-white border border-[#E5DED2] flex items-start gap-2.5 shadow-xs">
+                  <Leaf className="w-4 h-4 text-[#8B1E2D] shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-semibold text-white text-xs block">Artisan Stem Composition:</span>
-                    <span className="text-xs text-white/80">{product.stems}</span>
+                    <span className="font-semibold text-[#0B0B0B] text-xs block">Artisan Stem Composition:</span>
+                    <span className="text-xs text-[#2A2A2A]">{product.stems}</span>
                   </div>
                 </div>
               )}
             </div>
 
-            {/* Interactive Actions Component (Quantity, Slot, Lahore Area, Greeting Card, Add to Bag, WhatsApp Order) */}
+            {/* Interactive Actions Component */}
             <ProductDetailActions product={product} />
 
           </div>
@@ -308,35 +326,35 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       </section>
 
       {/* Product Information Accordions / Tabs */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 border-t border-white/10">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 border-t border-[#E5DED2]">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs">
           
-          <div className="p-6 rounded-2xl bg-[#17171E] border border-white/10 space-y-3">
-            <h3 className="font-playfair text-lg font-bold text-white flex items-center gap-2">
-              <Leaf className="w-4 h-4 text-[#25D366]" />
+          <div className="p-6 rounded-2xl bg-white border border-[#E5DED2] space-y-3 shadow-xs">
+            <h3 className="font-playfair text-lg font-bold text-[#0B0B0B] flex items-center gap-2">
+              <Leaf className="w-4 h-4 text-[#8B1E2D]" />
               Florist Care & Vase Life
             </h3>
-            <p className="text-white/70 leading-relaxed">
+            <p className="text-[#2A2A2A] leading-relaxed">
               Upon receiving, trim 1–2 cm from stem bases at a 45-degree angle under cool water. Place in a clean vase with cold water. Keep away from direct sunlight, air-conditioner drafts, and ripening fruit to maintain peak bloom vitality for 7–12 days.
             </p>
           </div>
 
-          <div className="p-6 rounded-2xl bg-[#17171E] border border-white/10 space-y-3">
-            <h3 className="font-playfair text-lg font-bold text-white flex items-center gap-2">
-              <Truck className="w-4 h-4 text-[#E11D48]" />
+          <div className="p-6 rounded-2xl bg-white border border-[#E5DED2] space-y-3 shadow-xs">
+            <h3 className="font-playfair text-lg font-bold text-[#0B0B0B] flex items-center gap-2">
+              <Truck className="w-4 h-4 text-[#8B1E2D]" />
               Lahore Delivery Policies
             </h3>
-            <p className="text-white/70 leading-relaxed">
+            <p className="text-[#2A2A2A] leading-relaxed">
               Delivered exclusively via temperature-controlled florist dispatch. Midnight deliveries run between 11:30 PM – 12:15 AM. Senders receive a high-resolution photo proof of their prepared bouquet on WhatsApp before courier handover.
             </p>
           </div>
 
-          <div className="p-6 rounded-2xl bg-[#17171E] border border-white/10 space-y-3">
-            <h3 className="font-playfair text-lg font-bold text-white flex items-center gap-2">
-              <ShieldCheck className="w-4 h-4 text-[#25D366]" />
+          <div className="p-6 rounded-2xl bg-white border border-[#E5DED2] space-y-3 shadow-xs">
+            <h3 className="font-playfair text-lg font-bold text-[#0B0B0B] flex items-center gap-2">
+              <ShieldCheck className="w-4 h-4 text-[#8B1E2D]" />
               Zero-Risk Guarantee
             </h3>
-            <p className="text-white/70 leading-relaxed">
+            <p className="text-[#2A2A2A] leading-relaxed">
               If your bouquet arrives damaged or wilted due to transit, our atelier will immediately replace the arrangement with a fresh bouquet or provide a full refund within 3 hours. Your satisfaction is unconditionally guaranteed.
             </p>
           </div>
@@ -345,40 +363,40 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       </section>
 
       {/* Customer Reviews for this Bouquet */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 border-t border-white/10 space-y-8">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 border-t border-[#E5DED2] space-y-8">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
-            <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-white">Verified Customer Reviews</h2>
-            <p className="text-xs text-white/60">Real experiences from flower lovers across Lahore</p>
+            <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#0B0B0B]">Verified Customer Reviews</h2>
+            <p className="text-xs text-[#777777]">Real experiences from flower lovers across Lahore</p>
           </div>
           <div className="flex items-center gap-2">
-            <div className="flex text-[#E11D48]">
+            <div className="flex text-[#C6A15B]">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 fill-[#E11D48]" />
+                <Star key={i} className="w-4 h-4 fill-[#C6A15B]" />
               ))}
             </div>
-            <span className="text-sm font-bold text-white">{product.rating} Out of 5.0</span>
+            <span className="text-sm font-bold text-[#0B0B0B]">{product.rating} Out of 5.0</span>
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {REVIEWS.slice(0, 2).map((rev, idx) => (
-            <div key={idx} className="p-6 rounded-2xl bg-[#17171E] border border-white/10 space-y-3 text-xs">
+          {reviewsList.slice(0, 2).map((rev, idx) => (
+            <div key={idx} className="p-6 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] space-y-3 text-xs shadow-xs">
               <div className="flex items-center justify-between">
-                <div className="flex text-[#E11D48]">
+                <div className="flex text-[#C6A15B]">
                   {[...Array(rev.rating)].map((_, i) => (
-                    <Star key={i} className="w-3.5 h-3.5 fill-[#E11D48]" />
+                    <Star key={i} className="w-3.5 h-3.5 fill-[#C6A15B]" />
                   ))}
                 </div>
-                <span className="text-[11px] text-[#25D366] font-semibold flex items-center gap-1">
+                <span className="text-[11px] text-[#8B1E2D] font-semibold flex items-center gap-1">
                   <CheckCircle2 className="w-3 h-3" /> Verified Lahore Buyer
                 </span>
               </div>
-              <p className="text-white/80 italic leading-relaxed">
+              <p className="text-[#2A2A2A] italic leading-relaxed">
                 "{rev.quote}"
               </p>
-              <div className="pt-2 border-t border-white/10 flex items-center justify-between text-white/50 text-[11px]">
-                <span className="font-semibold text-white">{rev.name}</span>
+              <div className="pt-2 border-t border-[#E5DED2] flex items-center justify-between text-[#777777] text-[11px]">
+                <span className="font-semibold text-[#0B0B0B]">{rev.name}</span>
                 <span>{rev.location}</span>
               </div>
             </div>
@@ -387,23 +405,23 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       </section>
 
       {/* Related Products Carousel / Grid */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-16 border-t border-white/10 space-y-8">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-16 border-t border-[#E5DED2] space-y-8">
         <div className="flex items-center justify-between">
           <div>
-            <span className="text-xs uppercase font-bold tracking-widest text-[#E11D48]">You May Also Adore</span>
-            <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-white mt-1">
+            <span className="text-xs uppercase font-bold tracking-widest text-[#8B1E2D]">You May Also Adore</span>
+            <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#0B0B0B] mt-1">
               Similar Handcrafted Arrangements
             </h2>
           </div>
           <Link
             href={getCategoryHref(product.category)}
-            className="text-xs font-semibold text-[#E11D48] hover:text-[#F43F5E] flex items-center gap-1 transition-colors"
+            className="text-xs font-semibold text-[#8B1E2D] hover:text-[#0B0B0B] flex items-center gap-1 transition-colors"
           >
             View Entire {product.category} <ChevronRight className="w-3.5 h-3.5" />
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
           {relatedProducts.map((p) => (
             <ProductCard key={p.id} product={p} />
           ))}

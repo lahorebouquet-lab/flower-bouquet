@@ -1,7 +1,9 @@
 import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BookOpen, Calendar, Clock, ArrowRight, Sparkles } from "lucide-react";
+import Image from "next/image";
+import { BookOpen, Calendar, ArrowRight, Clock } from "lucide-react";
+import { getSanityBlogPosts } from "@/sanity/lib/fetch";
 
 export const metadata: Metadata = {
   title: {
@@ -25,7 +27,8 @@ export const BLOG_POSTS = [
     excerpt: "Learn how to protect cut roses, lilies, and sunflowers from wilting in Lahore's extreme climate. Professional water changing, stem trimming, and floral food techniques.",
     date: "October 2026",
     readTime: "4 min read",
-    tag: "Flower Care"
+    tag: "Flower Care",
+    image: "/images/hero-luxury-bouquet.jpg",
   },
   {
     slug: "anniversary-flower-guide-pakistan",
@@ -33,7 +36,8 @@ export const BLOG_POSTS = [
     excerpt: "Discover the symbolic meaning of anniversary blooms. How to choose between imported velvet roses, oriental lilies, and mixed pastels with midnight surprise delivery.",
     date: "October 2026",
     readTime: "5 min read",
-    tag: "Occasions Guide"
+    tag: "Occasions Guide",
+    image: "/images/lahoreblooms/crimson_blush.webp",
   },
   {
     slug: "money-bouquet-designs-and-pricing-lahore",
@@ -41,11 +45,15 @@ export const BLOG_POSTS = [
     excerpt: "Everything you need to know about ordering custom cash bouquets in Lahore. How banknotes are safely preserved, design trends, and pricing breakdowns.",
     date: "October 2026",
     readTime: "4 min read",
-    tag: "Gifting Trends"
+    tag: "Gifting Trends",
+    image: "/images/categories/money_bouquets.webp",
   }
 ];
 
-export default function BlogIndexPage() {
+export default async function BlogIndexPage() {
+  const sanityPosts = await getSanityBlogPosts();
+  const posts = (sanityPosts && sanityPosts.length > 0) ? sanityPosts : BLOG_POSTS;
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -66,54 +74,83 @@ export default function BlogIndexPage() {
   };
 
   return (
-    <main className="max-w-5xl mx-auto px-4 sm:px-6 py-10 space-y-12">
+    <main className="max-w-6xl mx-auto px-4 sm:px-6 py-10 space-y-12 bg-[#F8F3EA] text-[#2A2A2A]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* Breadcrumb */}
-      <nav aria-label="Breadcrumb" className="text-xs text-white/50 flex items-center gap-2">
-        <Link href="/" className="hover:text-white transition-colors">Home</Link>
+      <nav aria-label="Breadcrumb" className="text-xs text-[#777777] flex items-center gap-2">
+        <Link href="/" className="hover:text-[#0B0B0B] transition-colors">Home</Link>
         <span>/</span>
-        <span className="text-[#E11D48] font-semibold">Blog & Guides</span>
+        <span className="text-[#8B1E2D] font-semibold">Blog & Guides</span>
       </nav>
 
       {/* Hero Header */}
       <section className="space-y-4">
-        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#E11D48]/20 text-[#F43F5E] border border-[#E11D48]/40 text-xs font-bold uppercase tracking-wider">
-          <BookOpen className="w-3.5 h-3.5" />
+        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#8B1E2D]/20 text-[#C6A15B] border border-[#8B1E2D] text-xs font-bold uppercase tracking-wider">
+          <BookOpen className="w-3.5 h-3.5 text-[#C6A15B]" />
           Master Florist Advice & Local Insights
         </span>
 
-        <h1 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+        <h1 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0B0B0B] leading-tight">
           Lahore Floral Care & Gifting Guides
         </h1>
 
-        <p className="text-white/80 text-xs sm:text-sm leading-relaxed max-w-3xl">
+        <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
           Written by professional florists at our MM Alam Road workshop. Discover practical advice on preserving cut flower freshness in Pakistan, etiquette for wedding and anniversary bouquets, and insider guides to Lahore's floristry culture.
         </p>
       </section>
 
       {/* Blog Cards Grid */}
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {BLOG_POSTS.map((post, idx) => (
-          <article key={idx} className="p-6 rounded-2xl bg-[#17171E] border border-white/10 flex flex-col justify-between space-y-4 hover:border-[#E11D48]/40 transition-colors">
-            <div className="space-y-3">
-              <span className="text-[11px] font-bold text-[#F43F5E] uppercase tracking-wider">{post.tag}</span>
-              <h2 className="font-playfair text-lg font-bold text-white leading-snug">
-                <Link href={`/blog/${post.slug}`} className="hover:text-[#E11D48] transition-colors">
-                  {post.title}
-                </Link>
-              </h2>
-              <p className="text-xs text-white/70 leading-relaxed">{post.excerpt}</p>
-            </div>
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7">
+        {posts.map((post, idx) => (
+          <article 
+            key={post.slug || idx} 
+            className="group rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] flex flex-col justify-between overflow-hidden hover:border-[#C6A15B] transition-all shadow-sm hover:shadow-md"
+          >
+            {post.image && (
+              <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#F8F3EA]">
+                <Image
+                  src={post.image}
+                  alt={post.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-xs text-white text-[10px] font-bold uppercase tracking-wider">
+                  {post.tag}
+                </div>
+              </div>
+            )}
 
-            <div className="pt-4 border-t border-white/10 flex items-center justify-between text-[11px] text-white/50">
-              <span className="flex items-center gap-1"><Calendar className="w-3 h-3" /> {post.date}</span>
-              <Link href={`/blog/${post.slug}`} className="text-[#E11D48] font-semibold flex items-center gap-1 hover:underline">
-                Read Article <ArrowRight className="w-3 h-3" />
-              </Link>
+            <div className="p-5 sm:p-6 flex-1 flex flex-col justify-between space-y-4">
+              <div className="space-y-2.5">
+                <h2 className="font-playfair text-lg font-bold text-[#0B0B0B] leading-snug group-hover:text-[#8B1E2D] transition-colors">
+                  <Link href={`/blog/${post.slug}`}>
+                    {post.title}
+                  </Link>
+                </h2>
+                <p className="text-xs text-[#2A2A2A] leading-relaxed line-clamp-3">
+                  {post.excerpt}
+                </p>
+              </div>
+
+              <div className="pt-4 border-t border-[#E5DED2] flex items-center justify-between text-[11px] text-[#777777]">
+                <span className="flex items-center gap-1">
+                  <Calendar className="w-3 h-3" /> {post.date || "Recent"}
+                </span>
+                <span className="flex items-center gap-1">
+                  <Clock className="w-3 h-3" /> {post.readTime || "4 min"}
+                </span>
+                <Link 
+                  href={`/blog/${post.slug}`} 
+                  className="text-[#8B1E2D] hover:text-[#C6A15B] font-semibold flex items-center gap-1 transition-colors"
+                >
+                  Read <ArrowRight className="w-3 h-3" />
+                </Link>
+              </div>
             </div>
           </article>
         ))}

@@ -74,7 +74,7 @@ export default function Logo({ variant = "header", className = "" }: LogoProps) 
           width={188}
           height={172}
           priority
-          className="h-full w-auto object-contain drop-shadow-[0_2px_12px_rgba(225,29,72,0.25)] transition-transform duration-300 group-hover:scale-105"
+          className="h-full w-auto object-contain drop-shadow-[0_2px_12px_rgba(198,161,91,0.25)] transition-transform duration-300 group-hover:scale-105"
         />
       </div>
     </Link>

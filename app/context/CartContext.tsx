@@ -12,7 +12,7 @@ interface CartContextType {
   cart: CartItem[];
   addToCart: (product: Product, quantity?: number, e?: React.MouseEvent) => void;
   directOrderNow: (product: Product, e?: React.MouseEvent) => void;
-  updateQuantity: (productId: number, delta: number) => void;
+  updateQuantity: (productId: number | string, delta: number) => void;
   clearCart: () => void;
   totalCartCount: number;
   cartSubtotal: number;
@@ -24,8 +24,8 @@ interface CartContextType {
   setQuickViewProduct: (product: Product | null) => void;
   toastMessage: string | null;
   showToast: (msg: string) => void;
-  wishlist: number[];
-  toggleWishlist: (productId: number, e?: React.MouseEvent) => void;
+  wishlist: (number | string)[];
+  toggleWishlist: (productId: number | string, e?: React.MouseEvent) => void;
   
   // Checkout Form State
   senderName: string;
@@ -67,7 +67,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const [checkoutStep, setCheckoutStep] = useState<1 | 2 | 3 | 4 | 5>(1);
   const [quickViewProduct, setQuickViewProduct] = useState<Product | null>(null);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
-  const [wishlist, setWishlist] = useState<number[]>([1, 5]);
+  const [wishlist, setWishlist] = useState<(number | string)[]>([]);
 
   // Form states
   const [senderName, setSenderName] = useState("");
@@ -92,10 +92,10 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const addToCart = (product: Product, quantity = 1, e?: React.MouseEvent) => {
     if (e) e.stopPropagation();
     setCart((prev) => {
-      const existing = prev.find((item) => item.product.id === product.id);
+      const existing = prev.find((item) => String(item.product.id) === String(product.id));
       if (existing) {
         return prev.map((item) =>
-          item.product.id === product.id ? { ...item, quantity: item.quantity + quantity } : item
+          String(item.product.id) === String(product.id) ? { ...item, quantity: item.quantity + quantity } : item
         );
       }
       return [...prev, { product, quantity }];
@@ -106,7 +106,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const directOrderNow = (product: Product, e?: React.MouseEvent) => {
     if (e) e.stopPropagation();
     setCart((prev) => {
-      const existing = prev.find((item) => item.product.id === product.id);
+      const existing = prev.find((item) => String(item.product.id) === String(product.id));
       if (existing) return prev;
       return [...prev, { product, quantity: 1 }];
     });
@@ -114,11 +114,11 @@ export function CartProvider({ children }: { children: ReactNode }) {
     setCheckoutStep(2);
   };
 
-  const updateQuantity = (productId: number, delta: number) => {
+  const updateQuantity = (productId: number | string, delta: number) => {
     setCart((prev) =>
       prev
         .map((item) => {
-          if (item.product.id === productId) {
+          if (String(item.product.id) === String(productId)) {
             const newQty = item.quantity + delta;
             return newQty > 0 ? { ...item, quantity: newQty } : null;
           }
@@ -130,13 +130,13 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   const clearCart = () => setCart([]);
 
-  const toggleWishlist = (productId: number, e?: React.MouseEvent) => {
+  const toggleWishlist = (productId: number | string, e?: React.MouseEvent) => {
     if (e) e.stopPropagation();
     setWishlist((prev) => {
-      const exists = prev.includes(productId);
+      const exists = prev.some((id) => String(id) === String(productId));
       if (exists) {
         showToast("Removed from Wishlist");
-        return prev.filter((id) => id !== productId);
+        return prev.filter((id) => String(id) !== String(productId));
       } else {
         showToast("Saved to Wishlist ❤️");
         return [...prev, productId];
