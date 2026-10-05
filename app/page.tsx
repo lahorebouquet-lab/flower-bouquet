@@ -35,6 +35,14 @@ export const metadata: Metadata = {
     url: "https://lahorebouquet.com",
     type: "website",
     locale: "en_PK",
+    images: [
+      {
+        url: "https://lahorebouquet.com/images/hero-luxury-banner.webp",
+        width: 1024,
+        height: 443,
+        alt: "Flower Shop in Lahore | Fresh Bouquets & Same-Day Delivery | Lahore Bouquet",
+      },
+    ],
   }
 };
 

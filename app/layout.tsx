@@ -51,11 +51,20 @@ export const metadata: Metadata = {
     siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
+    images: [
+      {
+        url: "https://lahorebouquet.com/images/hero-luxury-banner.webp",
+        width: 1024,
+        height: 443,
+        alt: "Lahore Bouquet — Fresh Handcrafted Bouquets & Flower Delivery in Lahore",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Lahore Bouquet ✦ Fresh Handcrafted Bouquets in Lahore",
     description: "Same-day 2–5h express flower delivery across Lahore. Fresh imported roses, sunflowers & money bouquets.",
+    images: ["https://lahorebouquet.com/images/hero-luxury-banner.webp"],
   },
   icons: {
     icon: [
