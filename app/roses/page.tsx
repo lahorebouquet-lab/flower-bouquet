@@ -71,6 +71,22 @@ export default async function RosesPage() {
           "@type": "Answer",
           text: "Our premium bouquets use imported Dutch roses. The product page says clearly which flowers are in each bouquet."
         }
+      },
+      {
+        "@type": "Question",
+        name: "What do different rose colours mean?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Red means love and romance, pink means admiration and sweetness, white means purity and sympathy, yellow means friendship, and peach or orange means desire and enthusiasm."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Which rose colour is best for my wife or girlfriend?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Red roses are the most romantic choice for a wife or girlfriend, symbolising deep love. Pink roses are a softer alternative for admiration and affection."
+        }
       }
     ]
   };
@@ -189,6 +205,41 @@ export default async function RosesPage() {
         </div>
       </section>
 
+      {/* Rose Colour Meanings Guide */}
+      <section className="bg-white p-8 sm:p-10 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-6">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">What Do Rose Colours Mean?</h2>
+        <p className="text-xs text-[#2A2A2A] leading-relaxed">
+          Choosing the right colour says as much as the flowers themselves. Here is the classic
+          florist's guide our Lahore customers follow:
+        </p>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-xs leading-relaxed">
+          <div className="p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2] space-y-1">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Red Roses</h3>
+            <p>Love, romance and deep passion — the classic choice for a wife, girlfriend or Valentine's Day.</p>
+          </div>
+          <div className="p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2] space-y-1">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Pink Roses</h3>
+            <p>Admiration, sweetness and gratitude — perfect for mothers, friends and new relationships.</p>
+          </div>
+          <div className="p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2] space-y-1">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">White Roses</h3>
+            <p>Purity, sympathy and remembrance — suited for weddings, condolences and get-well wishes.</p>
+          </div>
+          <div className="p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2] space-y-1">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Yellow Roses</h3>
+            <p>Friendship and joy — a cheerful gift for friends, colleagues and celebrations.</p>
+          </div>
+          <div className="p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2] space-y-1">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Peach & Orange Roses</h3>
+            <p>Desire, enthusiasm and fascination — a bold, modern romantic gesture.</p>
+          </div>
+          <div className="p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2] space-y-1">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Imported vs Local</h3>
+            <p>Imported Dutch roses are larger, longer-lasting and cost PKR 450–650 per stem; fresh local roses cost PKR 40–70 per stem.</p>
+          </div>
+        </div>
+      </section>
+
       {/* Category FAQ */}
       <section className="bg-white p-8 sm:p-10 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-6">
         <div className="flex items-center gap-2 text-[#0B0B0B]">
@@ -204,6 +255,14 @@ export default async function RosesPage() {
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Are these roses imported?</h3>
             <p>Our premium bouquets use imported Dutch roses. The product page says clearly which flowers are in each bouquet.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">What do different rose colours mean?</h3>
+            <p>Red means love and romance, pink means admiration and sweetness, white means purity and sympathy, yellow means friendship, and peach or orange means desire and enthusiasm.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Which rose colour is best for my wife or girlfriend?</h3>
+            <p>Red roses are the most romantic choice for a wife or girlfriend, symbolising deep love. Pink roses are a softer alternative for admiration and affection.</p>
           </div>
         </div>
       </section>

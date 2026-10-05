@@ -129,6 +129,21 @@ export default function DeliveryAreasPage() {
           </a>
         </div>
       </section>
+
+      {/* Extended Area Coverage List */}
+      <section className="p-6 rounded-2xl bg-[#0B0B0B] border border-[rgba(198,161,91,0.25)] space-y-4 shadow-sm">
+        <h3 className="font-playfair text-lg font-bold text-white">More Areas We Deliver Across Lahore</h3>
+        <p className="text-xs text-[#BDBDBD] leading-relaxed max-w-2xl">
+          Beyond our dedicated delivery guides above, our riders cover these neighbourhoods daily
+          within the same 2–5 hour window:
+        </p>
+        <p className="text-xs text-[#C6A15B] leading-loose">
+          Valencia Town · Allama Iqbal Town · Faisal Town · Garden Town · Shadman · Sabzazar ·
+          Samanabad · Multan Road · Ferozepur Road · Ravi Road · Mughalpura · Shalimar · Harbanspura ·
+          Shahdara · Raiwind Road · Bahria Orchard · Lake City · Wapda Town · NFC · Tariq Gardens ·
+          DHA Rahbar · Askari 11 · Paragon City · Divine Gardens
+        </p>
+      </section>
     </main>
   );
 }

@@ -292,7 +292,7 @@ export default async function FlowerDeliveryLahorePage() {
             <h2 className="font-playfair text-xl font-bold text-[#0B0B0B]">Sending Flowers from Abroad</h2>
           </div>
           <p className="text-xs sm:text-sm text-[#555555] leading-relaxed">
-            If you are based in the <strong>UK, USA, UAE, Canada, Saudi Arabia, or Australia</strong>, you can easily send fresh flowers to your family and friends in Lahore. We accept international Visa/Mastercard payments and online bank transfers. We will send you photos and delivery confirmation on WhatsApp every step of the way.
+            If you are based in the <strong>UK, USA, UAE, Canada, Saudi Arabia, or Australia</strong>, you can easily send fresh flowers to your family and friends in Lahore. We accept international Visa/Mastercard payments and online bank transfers. We will send you photos and delivery confirmation on WhatsApp every step of the way. <Link href="/send-flowers-to-lahore-from-abroad" className="text-[#8B1E2D] font-semibold hover:text-[#C6A15B] transition-colors">Read our complete guide for overseas orders →</Link>
           </p>
         </div>
 
