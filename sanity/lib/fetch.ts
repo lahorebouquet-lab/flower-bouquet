@@ -1,4 +1,5 @@
 import { client } from './client'
+import { urlFor } from './image'
 import {
   ALL_PRODUCTS_QUERY,
   PRODUCT_BY_SLUG_OR_ID_QUERY,
@@ -10,6 +11,29 @@ import {
 } from './queries'
 import { Product } from '@/app/data/products'
 
+const FALLBACK_IMAGE = "/images/hero-luxury-bouquet.jpg";
+
+/** Build a usable image URL from a Sanity image object (or return fallback). */
+function resolveImage(img: any): string {
+  if (!img) return FALLBACK_IMAGE;
+  // Already a URL string (from coalesce or manual)
+  if (typeof img === "string") return img;
+  try {
+    const url = urlFor(img)?.url();
+    if (url) return url;
+  } catch { /* ignore */ }
+  return FALLBACK_IMAGE;
+}
+
+/** Normalize a fetched product's image/gallery to real URLs. */
+function normalizeProductImages<T extends { image?: any; gallery?: any }>(p: T): T {
+  return {
+    ...p,
+    image: resolveImage(p.image),
+    gallery: Array.isArray(p.gallery) ? p.gallery.map(resolveImage) : p.gallery,
+  };
+}
+
 export async function getSanityProducts(): Promise<Product[]> {
   try {
     const products = await client.fetch<Product[]>(
@@ -18,7 +42,7 @@ export async function getSanityProducts(): Promise<Product[]> {
       { next: { revalidate: 60 } }
     )
     if (products && products.length > 0) {
-      return products
+      return products.map(normalizeProductImages)
     }
   } catch (err) {
     console.error('Error fetching Sanity products:', err)
@@ -33,7 +57,7 @@ export async function getSanityProduct(slugOrId: string): Promise<Product | null
       { slugOrId },
       { next: { revalidate: 60 } }
     )
-    return product
+    return product ? normalizeProductImages(product) : null
   } catch (err) {
     console.error(`Error fetching Sanity product ${slugOrId}:`, err)
     return null
