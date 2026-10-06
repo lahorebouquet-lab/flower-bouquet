@@ -20,6 +20,7 @@ const SAVED_KEY = "lb-abandoned-cart-saved";
 export default function AbandonedCartPopup() {
   const [visible, setVisible] = useState(false);
   const savedRef = useRef(false);
+  const lastActivityRef = useRef<number>(Date.now());
   const {
     cart,
     cartSubtotal,
@@ -27,10 +28,19 @@ export default function AbandonedCartPopup() {
     senderName,
     setDiscountCode,
     setIsCartOpen,
+    isCartOpen,
     showToast,
   } = useCart();
 
   const hasItems = cart.length > 0;
+
+  // Track cart activity — popup should only fire when the shopper goes idle,
+  // not right after they add something (they're actively shopping).
+  useEffect(() => {
+    if (cart.length > 0) {
+      lastActivityRef.current = Date.now();
+    }
+  }, [cart]);
 
   // Save the abandoned cart to the API (once per session)
   const saveAbandonedCart = async () => {
@@ -63,27 +73,47 @@ export default function AbandonedCartPopup() {
     if (typeof window === "undefined" || !hasItems) return;
     if (window.localStorage.getItem(DISMISS_KEY)) return;
 
+    const IDLE_MS = 120000; // 2 minutes of no cart activity = abandoning
+    const MIN_AGE_MS = 60000; // don't fire within 60s of adding to cart
+
+    const shouldShow = () => {
+      if (window.localStorage.getItem(DISMISS_KEY)) return false;
+      if (isCartOpen) return false; // user is actively in the bag/checkout
+      const idleFor = Date.now() - lastActivityRef.current;
+      return idleFor >= IDLE_MS;
+    };
+
     const show = () => {
       setVisible(true);
       saveAbandonedCart();
     };
-    // Show after 90s with items in cart
-    const timer = setTimeout(show, 90000);
 
-    // Exit intent (desktop)
-    const onMouseOut = (e: MouseEvent) => {
-      if (e.clientY <= 0 && !window.localStorage.getItem(DISMISS_KEY)) {
+    // Check every 10s whether the shopper has gone idle with items in bag
+    const interval = setInterval(() => {
+      if (shouldShow()) {
+        clearInterval(interval);
         show();
+      }
+    }, 10000);
+
+    // Exit intent (desktop): only if they haven't just added something
+    const onMouseOut = (e: MouseEvent) => {
+      if (e.clientY <= 0 && !isCartOpen) {
+        const sinceActivity = Date.now() - lastActivityRef.current;
+        if (sinceActivity >= MIN_AGE_MS && !window.localStorage.getItem(DISMISS_KEY)) {
+          clearInterval(interval);
+          show();
+        }
       }
     };
     document.addEventListener("mouseout", onMouseOut);
 
     return () => {
-      clearTimeout(timer);
+      clearInterval(interval);
       document.removeEventListener("mouseout", onMouseOut);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [hasItems]);
+  }, [hasItems, isCartOpen]);
 
   const dismiss = () => {
     try {
