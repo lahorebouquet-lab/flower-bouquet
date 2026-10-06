@@ -95,6 +95,10 @@ export default function Footer() {
               <li><Link href="/money-bouquets" className="hover:text-[#C6A15B] transition-colors">Custom Money Bouquets</Link></li>
               <li><Link href="/gifts-and-cakes" className="hover:text-[#C6A15B] transition-colors">Gifts, Cakes & Chocolates</Link></li>
               <li><Link href="/corporate" className="hover:text-[#C6A15B] transition-colors">Corporate Office Flowers</Link></li>
+              <li><Link href="/teddy-bears-lahore" className="hover:text-[#C6A15B] transition-colors">Teddy Bears in Lahore</Link></li>
+              <li><Link href="/wedding-room-decoration-lahore" className="hover:text-[#C6A15B] transition-colors">Wedding Room Decoration</Link></li>
+              <li><Link href="/helium-balloons-lahore" className="hover:text-[#C6A15B] transition-colors">Helium Balloons</Link></li>
+              <li><Link href="/garlands-lahore" className="hover:text-[#C6A15B] transition-colors">Fresh Flower Garlands</Link></li>
               <li><Link href="/blog" className="hover:text-[#C6A15B] transition-colors">Floral Care Guides & Blog</Link></li>
             </ul>
           </div>

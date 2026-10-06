@@ -133,7 +133,6 @@ export default function HomeClient({
             src="/images/hero-blush-elegance-banner.webp"
             alt="Elegant blush pink rose and lily bouquet in a gold vase for flower delivery in Lahore | Lahore Bouquet"
             fetchPriority="high"
-            decoding="async"
             className="absolute inset-0 w-full h-full object-cover object-[70%_center] sm:object-center"
           />
 

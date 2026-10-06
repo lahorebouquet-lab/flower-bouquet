@@ -258,6 +258,34 @@ export default async function FreshFlowerGajrayPage() {
         </section>
       )}
 
+      {/* Floral Jewellery for Mehndi — keyword section */}
+      <section className="space-y-4">
+        <div className="flex items-center gap-2 text-[#0B0B0B]">
+          <Sparkles className="w-5 h-5 text-[#8B1E2D]" />
+          <h2 className="font-playfair text-2xl font-bold">Floral Jewellery for Mehndi in Lahore</h2>
+        </div>
+        <p className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed">
+          Fresh flower jewellery is the signature look of a Pakistani mehndi — delicate, fragrant and photographed all night. Our florists handcraft mehndi jewellery sets from fresh jasmine motia, roses and baby&apos;s breath: maang tikka strands, jhumka-style earrings, bracelets, hathphool and kamarband, all matched to your outfit colours. A complete bridal mehndi floral jewellery set starts at <strong>Rs. 3,500</strong>; individual pieces (tikka, earrings or bracelets) from <strong>Rs. 900</strong>.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs text-[#2A2A2A]">
+          <div className="p-5 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] space-y-2">
+            <h3 className="font-bold text-[#0B0B0B] text-sm">Bridal Mehndi Set</h3>
+            <p className="leading-relaxed">Tikka, earrings, 2 bracelets, hathphool — colour-matched to your dress. Rs. 3,500–6,000.</p>
+          </div>
+          <div className="p-5 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] space-y-2">
+            <h3 className="font-bold text-[#0B0B0B] text-sm">Family & Friends Sets</h3>
+            <p className="leading-relaxed">Matching tikka + bracelet sets for sisters and cousins, 5+ sets discounted. Rs. 1,500/set onwards.</p>
+          </div>
+          <div className="p-5 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] space-y-2">
+            <h3 className="font-bold text-[#0B0B0B] text-sm">Freshness Promise</h3>
+            <p className="leading-relaxed">Woven on your event morning, packed in cold boxes, delivered in 2–5 hours — fragrant all night.</p>
+          </div>
+        </div>
+        <p className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed">
+          Send your outfit photo on <a href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20want%20floral%20jewellery%20for%20a%20mehndi." target="_blank" rel="noopener noreferrer" className="text-[#8B1E2D] underline font-semibold">WhatsApp</a> and we&apos;ll design a matching set — also see our <Link href="/blog/gajra-prices-lahore-2026" className="text-[#8B1E2D] underline">gajra price guide</Link> and <Link href="/blog/nikkah-flowers-guide-lahore" className="text-[#8B1E2D] underline">nikkah flower guide</Link>.
+        </p>
+      </section>
+
       {/* Comprehensive FAQs for High Search Visibility */}
       <section className="bg-white p-8 sm:p-10 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-6">
         <div className="flex items-center gap-2 text-[#0B0B0B]">

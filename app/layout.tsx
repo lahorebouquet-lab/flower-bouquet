@@ -121,13 +121,6 @@ export default function RootLayout({
       className={`${playfair.variable} ${jakarta.variable} antialiased scroll-smooth`}
     >
       <head>
-        <link
-          rel="preload"
-          as="image"
-          href="/images/hero-blush-elegance-banner.webp"
-          type="image/webp"
-          fetchPriority="high"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}

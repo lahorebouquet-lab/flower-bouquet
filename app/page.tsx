@@ -72,6 +72,15 @@ export default async function HomePage() {
   const orgSchema = organizationSchema();
 
   return (
+    <>
+      {/* Homepage-only LCP preload: hero image discovered before client hydration */}
+      <link
+        rel="preload"
+        as="image"
+        href="/images/hero-blush-elegance-banner.webp"
+        type="image/webp"
+        fetchPriority="high"
+      />
     <main className="min-h-screen bg-[#F8F3EA] text-[#101012]">
       {/* Schema.org Microdata */}
       <script
@@ -92,5 +101,6 @@ export default async function HomePage() {
         initialCategories={categories}
       />
     </main>
+    </>
   );
 }

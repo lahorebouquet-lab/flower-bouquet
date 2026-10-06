@@ -112,6 +112,42 @@ export const BLOG_POSTS = [
     tag: "Overseas Guide",
     image: "/images/hero-luxury-bouquet.jpg",
   },
+  {
+    slug: "nikkah-flowers-guide-lahore",
+    title: "Nikkah Flowers in Lahore: Bridal Bouquet, Gajray & Stage Decor (2026)",
+    excerpt: "Bridal bouquets from Rs. 3,500, gajray from Rs. 1,200, stage decor packages — complete nikkah flower planning guide.",
+    date: "October 2026",
+    readTime: "6 min read",
+    tag: "Wedding Guide",
+    image: "/images/hero-luxury-bouquet.jpg",
+  },
+  {
+    slug: "rose-color-meanings-pakistan",
+    title: "Rose Color Meanings: What Each Rose Says in Pakistan",
+    excerpt: "Red for love, white for purity, pink for admiration — which rose color for which occasion, with prices.",
+    date: "October 2026",
+    readTime: "5 min read",
+    tag: "Flower Meanings",
+    image: "/images/hero-luxury-bouquet.jpg",
+  },
+  {
+    slug: "gajra-prices-lahore-2026",
+    title: "Gajra Prices in Lahore (2026): Fresh Gajray & Floral Jewellery Rates",
+    excerpt: "Gajra pairs Rs. 1,200–1,800, bridal sets from Rs. 2,500 — real 2026 rates and ordering tips.",
+    date: "October 2026",
+    readTime: "4 min read",
+    tag: "Price Guide",
+    image: "/images/hero-luxury-bouquet.jpg",
+  },
+  {
+    slug: "graduation-flowers-lahore",
+    title: "Graduation Flowers in Lahore: Convocation Bouquet Guide (2026)",
+    excerpt: "Sunflower bouquets Rs. 2,400–3,800, delivered to LUMS, Punjab University & every Lahore campus.",
+    date: "October 2026",
+    readTime: "4 min read",
+    tag: "Occasions Guide",
+    image: "/images/hero-luxury-bouquet.jpg",
+  },
 ];
 
 export default async function BlogIndexPage() {
