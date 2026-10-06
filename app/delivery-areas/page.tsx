@@ -29,6 +29,18 @@ export const LAHORE_ZONES = [
   { name: "Cantt & Cavalry Ground", time: "2 to 2.5 hours", slug: "/delivery-areas/cantt", highlight: "Saddar, PAF Colony, Cavalry Commercial, CMH" },
   { name: "Askari Housing (Askari 1 to 11)", time: "2 to 3 hours", slug: "/delivery-areas/askari", highlight: "Askari 1, 5, 9, 10, 11 (Bedian Road)" },
   { name: "Wapda Town & Township", time: "2.5 to 3.5 hours", slug: "/delivery-areas/wapda-town", highlight: "Chaudhary Chowk, College Road, Peco Road" },
+  { name: "Lake City Lahore", time: "3 to 4 hours", slug: "/delivery-areas/lake-city", highlight: "Golf Course, Downtown, Ring Road Interchange" },
+  { name: "Valencia Town", time: "2.5 to 3.5 hours", slug: "/delivery-areas/valencia-town", highlight: "Main Boulevard, Commercial Market" },
+  { name: "EME Society", time: "2.5 to 3.5 hours", slug: "/delivery-areas/eme-society", highlight: "Commercial Area, Multan Road Link" },
+  { name: "NFC Society", time: "2.5 to 3.5 hours", slug: "/delivery-areas/nfc", highlight: "NFC Commercial Market, Housing Blocks" },
+  { name: "Tariq Gardens", time: "2.5 to 3.5 hours", slug: "/delivery-areas/tariq-gardens", highlight: "Housing Blocks, Multan Road Corridor" },
+  { name: "DHA Rahbar", time: "3 to 4 hours", slug: "/delivery-areas/dha-rahbar", highlight: "Sectors, Commercial Area, near Valencia" },
+  { name: "Al Kabir Town", time: "3 to 4 hours", slug: "/delivery-areas/al-kabir-town", highlight: "Phase 1 & 2, Raiwind Road" },
+  { name: "Bahria Orchard", time: "3 to 4 hours", slug: "/delivery-areas/bahria-orchard", highlight: "Phases 1–4, Raiwind Road" },
+  { name: "Raiwind Road", time: "3 to 4 hours", slug: "/delivery-areas/raiwind-road", highlight: "Road Corridor, Housing Schemes" },
+  { name: "Thokar Niaz Baig", time: "2 to 3 hours", slug: "/delivery-areas/thokar-niaz-baig", highlight: "Interchange, M-2 Motorway Link" },
+  { name: "Iqbal Town", time: "2 to 3 hours", slug: "/delivery-areas/iqbal-town", highlight: "Moon Market, Allama Iqbal Town Blocks" },
+  { name: "Faisal Town", time: "2 to 3 hours", slug: "/delivery-areas/faisal-town", highlight: "Residential Blocks, near Johar Town" },
 ];
 
 export default function DeliveryAreasPage() {

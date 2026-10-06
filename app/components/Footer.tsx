@@ -129,6 +129,18 @@ export default function Footer() {
               <li><Link href="/delivery-areas/cantt" className="hover:text-[#C6A15B] transition-colors">Cantt & Cavalry Ground</Link></li>
               <li><Link href="/delivery-areas/askari" className="hover:text-[#C6A15B] transition-colors">Askari Housing (1 to 11)</Link></li>
               <li><Link href="/delivery-areas/wapda-town" className="hover:text-[#C6A15B] transition-colors">Wapda Town & Township</Link></li>
+              <li><Link href="/delivery-areas/lake-city" className="hover:text-[#C6A15B] transition-colors">Lake City Lahore</Link></li>
+              <li><Link href="/delivery-areas/valencia-town" className="hover:text-[#C6A15B] transition-colors">Valencia Town</Link></li>
+              <li><Link href="/delivery-areas/eme-society" className="hover:text-[#C6A15B] transition-colors">EME Society</Link></li>
+              <li><Link href="/delivery-areas/nfc" className="hover:text-[#C6A15B] transition-colors">NFC Society</Link></li>
+              <li><Link href="/delivery-areas/tariq-gardens" className="hover:text-[#C6A15B] transition-colors">Tariq Gardens</Link></li>
+              <li><Link href="/delivery-areas/dha-rahbar" className="hover:text-[#C6A15B] transition-colors">DHA Rahbar</Link></li>
+              <li><Link href="/delivery-areas/al-kabir-town" className="hover:text-[#C6A15B] transition-colors">Al Kabir Town</Link></li>
+              <li><Link href="/delivery-areas/bahria-orchard" className="hover:text-[#C6A15B] transition-colors">Bahria Orchard</Link></li>
+              <li><Link href="/delivery-areas/raiwind-road" className="hover:text-[#C6A15B] transition-colors">Raiwind Road</Link></li>
+              <li><Link href="/delivery-areas/thokar-niaz-baig" className="hover:text-[#C6A15B] transition-colors">Thokar Niaz Baig</Link></li>
+              <li><Link href="/delivery-areas/iqbal-town" className="hover:text-[#C6A15B] transition-colors">Iqbal Town</Link></li>
+              <li><Link href="/delivery-areas/faisal-town" className="hover:text-[#C6A15B] transition-colors">Faisal Town</Link></li>
             </ul>
           </div>
 

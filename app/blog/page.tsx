@@ -202,6 +202,24 @@ export const BLOG_POSTS = [
     tag: "Occasions Guide",
     image: "/images/hero-luxury-bouquet.jpg",
   },
+  {
+    slug: "rose-prices-lahore-2026",
+    title: "Rose Prices in Lahore (2026): Per-Stem & Bouquet Rate Guide",
+    excerpt: "Single rose Rs. 100–500, 12-rose bouquet from Rs. 1,800 — real 2026 Lahore rose price table, local vs imported.",
+    date: "October 2026",
+    readTime: "5 min read",
+    tag: "Price Guide",
+    image: "/images/hero-luxury-bouquet.jpg",
+  },
+  {
+    slug: "wedding-car-decoration-price-lahore",
+    title: "Wedding Car Decoration Prices in Lahore (2026)",
+    excerpt: "Fresh flower car decor Rs. 8,000–25,000, artificial from Rs. 3,500 — 2026 rates, booking tips & theme matching.",
+    date: "October 2026",
+    readTime: "5 min read",
+    tag: "Price Guide",
+    image: "/images/hero-luxury-bouquet.jpg",
+  },
 ];
 
 export default async function BlogIndexPage() {

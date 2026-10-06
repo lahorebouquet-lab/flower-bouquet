@@ -145,7 +145,7 @@ export default async function BouquetsPage() {
 
           {/* AEO / GEO Direct Answer */}
           <p className="text-[#F8F3EA]/90 text-sm sm:text-base leading-relaxed font-light">
-            A flower bouquet is the easiest way to say congratulations, sorry, I love you, or get well soon without needing the right words. Here you will find fresh bouquets made by hand in Lahore, in sizes from a small gift bunch to a big statement arrangement that fills a room. Every stem is inspected daily and delivered in <strong>2 to 5 hours</strong> with a photo on WhatsApp before dispatch.
+            A flower bouquet is the easiest way to say congratulations, sorry, I love you, or get well soon without needing the right words. Here you will find fresh bouquets made by hand in Lahore, in sizes from a small gift bunch to a big statement arrangement that fills a room. Every stem is inspected daily and delivered in <strong>2 to 5 hours</strong> with a photo and video on WhatsApp before dispatch.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#BDBDBD]">
