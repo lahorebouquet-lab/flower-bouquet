@@ -105,6 +105,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/contact", file: "app/contact/page.tsx" },
     { path: "/track-order", file: "app/track-order/page.tsx", noindex: true },
     { path: "/gift-reminders", file: "app/gift-reminders/page.tsx" },
+    { path: "/custom-bouquets-lahore", file: "app/custom-bouquets-lahore/page.tsx" },
+    { path: "/custom-cakes-lahore", file: "app/custom-cakes-lahore/page.tsx" },
+    { path: "/blog/custom-bouquet-guide-lahore", file: "app/blog/custom-bouquet-guide-lahore/page.tsx" },
+    { path: "/blog/custom-cake-order-guide-lahore", file: "app/blog/custom-cake-order-guide-lahore/page.tsx" },
     { path: "/policies", file: "app/policies/page.tsx" },
   ];
 
