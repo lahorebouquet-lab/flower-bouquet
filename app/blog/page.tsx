@@ -85,6 +85,33 @@ export const BLOG_POSTS = [
     tag: "Occasions Guide",
     image: "/images/lahoreblooms/crimson_blush.webp",
   },
+  {
+    slug: "send-flowers-to-lahore-from-uk",
+    title: "How to Send Flowers to Lahore from the UK (2026 Guide)",
+    excerpt: "UK Pakistani? Order by 12 noon UK time for same-day Lahore delivery. Pay by UK card, approve the bouquet photo on WhatsApp.",
+    date: "October 2026",
+    readTime: "5 min read",
+    tag: "Overseas Guide",
+    image: "/images/hero-luxury-bouquet.jpg",
+  },
+  {
+    slug: "send-flowers-to-lahore-from-usa",
+    title: "How to Send Flowers to Lahore from the USA (2026 Guide)",
+    excerpt: "US evening is Lahore morning — order at night in New York or California for next-morning Lahore delivery. Pay by US card.",
+    date: "October 2026",
+    readTime: "5 min read",
+    tag: "Overseas Guide",
+    image: "/images/hero-luxury-bouquet.jpg",
+  },
+  {
+    slug: "send-flowers-to-lahore-from-uae",
+    title: "How to Send Flowers to Lahore from the UAE (2026 Guide)",
+    excerpt: "Only 1 hour behind Pakistan — order by 3 PM UAE time from Dubai, Sharjah or Abu Dhabi for same-day Lahore delivery.",
+    date: "October 2026",
+    readTime: "5 min read",
+    tag: "Overseas Guide",
+    image: "/images/hero-luxury-bouquet.jpg",
+  },
 ];
 
 export default async function BlogIndexPage() {

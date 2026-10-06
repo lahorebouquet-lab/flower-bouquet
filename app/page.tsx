@@ -5,7 +5,7 @@ import { HOMEPAGE_FAQS } from "./data/homepage";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Flower Shop in Lahore | Fresh Bouquets & Same-Day Delivery | Lahore Bouquet",
+    absolute: "Flower Shop in Lahore | Same-Day Flower Delivery | Lahore Bouquet",
   },
   description: "Looking for a flower shop near you in Lahore? Lahore Bouquet makes fresh bouquets to order and delivers across the city. Order online or call 0310-4225974.",
   alternates: {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "lahore bouquet"
   ],
   openGraph: {
-    title: "Flower Shop in Lahore | Fresh Bouquets & Same-Day Delivery | Lahore Bouquet",
+    title: "Flower Shop in Lahore | Same-Day Flower Delivery | Lahore Bouquet",
     description: "Looking for a flower shop near you in Lahore? Lahore Bouquet makes fresh bouquets to order and delivers across the city. Order online or call 0310-4225974.",
     url: `${SITE_URL}`,
     type: "website",

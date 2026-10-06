@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Truck, MessageCircle, ArrowRight } from "lucide-react";
 import { SITE_URL } from "@/lib/business";
+import DeliveryCalculator from "./DeliveryCalculator";
 
 export const metadata: Metadata = {
   title: {
@@ -78,6 +79,9 @@ export default function DeliveryAreasPage() {
           We deliver across Lahore from our local base. Areas closer to our dispatch points are usually quicker. Tell us the full address and we'll confirm the time.
         </p>
       </section>
+
+      {/* Delivery Fee Calculator */}
+      <DeliveryCalculator />
 
       {/* Zones Grid */}
       <section className="grid grid-cols-1 sm:grid-cols-2 gap-4">
