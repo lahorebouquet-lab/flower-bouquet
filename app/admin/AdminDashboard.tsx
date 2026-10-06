@@ -1,6 +1,7 @@
 'use client'
 
 import { useCallback, useEffect, useState } from 'react'
+import GiftRemindersTab from './GiftRemindersTab'
 
 const STATUSES = [
   { value: '', label: 'All' },
@@ -72,6 +73,7 @@ export default function AdminDashboard() {
   const [query, setQuery] = useState('')
   const [expanded, setExpanded] = useState<string | null>(null)
   const [updating, setUpdating] = useState<string | null>(null)
+  const [activeTab, setActiveTab] = useState<'orders' | 'reminders'>('orders')
 
   const loadOrders = useCallback(async () => {
     setLoading(true)
@@ -226,6 +228,34 @@ export default function AdminDashboard() {
       </header>
 
       <main className="max-w-6xl mx-auto px-4 sm:px-8 py-6 space-y-6">
+        {/* Tabs */}
+        <div className="flex gap-2">
+          <button
+            onClick={() => setActiveTab('orders')}
+            className={`px-5 py-2.5 rounded-full text-sm font-bold transition-all ${
+              activeTab === 'orders'
+                ? 'bg-[#0B0B0B] text-white'
+                : 'bg-white border border-[#E5DED2] hover:border-[#0B0B0B]'
+            }`}
+          >
+            Orders
+          </button>
+          <button
+            onClick={() => setActiveTab('reminders')}
+            className={`px-5 py-2.5 rounded-full text-sm font-bold transition-all ${
+              activeTab === 'reminders'
+                ? 'bg-[#0B0B0B] text-white'
+                : 'bg-white border border-[#E5DED2] hover:border-[#0B0B0B]'
+            }`}
+          >
+            Gift Reminders
+          </button>
+        </div>
+
+        {activeTab === 'reminders' ? (
+          <GiftRemindersTab />
+        ) : (
+        <>
         {/* Status counts */}
         <div className="grid grid-cols-3 sm:grid-cols-7 gap-2">
           {STATUSES.map((s) => (
@@ -440,6 +470,8 @@ export default function AdminDashboard() {
               </div>
             ))}
           </div>
+        )}
+        </>
         )}
       </main>
     </div>

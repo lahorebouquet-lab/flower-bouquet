@@ -104,6 +104,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/about", file: "app/about/page.tsx" },
     { path: "/contact", file: "app/contact/page.tsx" },
     { path: "/track-order", file: "app/track-order/page.tsx", noindex: true },
+    { path: "/gift-reminders", file: "app/gift-reminders/page.tsx" },
     { path: "/policies", file: "app/policies/page.tsx" },
   ];
 
