@@ -105,7 +105,7 @@ export default function GajraPricesPage() {
           <li><strong>Bridal extras:</strong> tikka strands, hathphool and matching earrings add Rs. 1,000–2,000.</li>
           <li><strong>Bulk orders:</strong> 10+ pairs for mehendis get per-pair discounts — ask on WhatsApp.</li>
         </ul>
-        <p className="text-sm leading-relaxed">Browse the <Link href="/collections/fresh-flower-gajray" className="text-[#8B1E2D] underline">fresh gajray collection</Link> or read our <Link href="/blog/nikkah-flowers-guide-lahore" className="text-[#8B1E2D] underline">nikkah flower guide</Link> for full wedding flower planning.</p>
+        <p className="text-sm leading-relaxed">Browse the <Link href="/collections/fresh-flower-gajray" className="text-[#8B1E2D] underline">fresh gajray collection</Link>, pair them with a <Link href="/bouquets" className="text-[#8B1E2D] underline">fresh flower bouquet</Link> for the complete mehndi look, or read our <Link href="/blog/nikkah-flowers-guide-lahore" className="text-[#8B1E2D] underline">nikkah flower guide</Link> for full wedding flower planning.</p>
         <a href={whatsappLink("Hello Lahore Bouquet! I want to order fresh gajray. Please share today's rates.")} target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 rounded-full bg-[#8B1E2D] text-white text-sm font-bold hover:bg-[#C6A15B] hover:text-[#0B0B0B] transition-colors">Order Fresh Gajray on WhatsApp</a>
       </section>
 

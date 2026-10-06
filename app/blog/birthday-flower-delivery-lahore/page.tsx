@@ -85,6 +85,18 @@ export default function BirthdayFlowerDeliveryPage() {
       </section>
 
       <section className="space-y-4">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Birthday Bouquet Ideas in Lahore</h2>
+        <p className="text-sm leading-relaxed">Not sure which bouquet to pick? These are our most-ordered birthday bouquets in Lahore — every one is hand-tied fresh on the day of delivery:</p>
+        <div className="grid sm:grid-cols-2 gap-3">
+          <div className="p-5 rounded-2xl bg-white border border-[#E5DED2]"><div className="font-bold text-sm">Classic Red Rose Bouquet</div><p className="text-sm mt-1">12–50 stems, the timeless birthday gift. From Rs. 1,180.</p><Link href="/bouquets" className="text-xs text-[#8B1E2D] underline">Shop rose bouquets →</Link></div>
+          <div className="p-5 rounded-2xl bg-white border border-[#E5DED2]"><div className="font-bold text-sm">Elegant Lily Bouquet</div><p className="text-sm mt-1">Oriental lilies for a sophisticated birthday surprise.</p><Link href="/lily-bouquet-lahore" className="text-xs text-[#8B1E2D] underline">Shop lily bouquets →</Link></div>
+          <div className="p-5 rounded-2xl bg-white border border-[#E5DED2]"><div className="font-bold text-sm">Cheerful Sunflower Bouquet</div><p className="text-sm mt-1">Bright and joyful — perfect for friends. Rs. 2,400–3,800.</p><Link href="/sunflower-bouquet-lahore" className="text-xs text-[#8B1E2D] underline">Shop sunflower bouquets →</Link></div>
+          <div className="p-5 rounded-2xl bg-white border border-[#E5DED2]"><div className="font-bold text-sm">Chocolate Bouquet</div><p className="text-sm mt-1">Premium chocolates arranged like flowers — a birthday favourite.</p><Link href="/chocolate-bouquets-lahore" className="text-xs text-[#8B1E2D] underline">Shop chocolate bouquets →</Link></div>
+        </div>
+        <p className="text-sm leading-relaxed">Browse the full collection of <Link href="/bouquets" className="text-[#8B1E2D] underline font-semibold">birthday bouquets in Lahore</Link> — 262+ designs with same-day delivery.</p>
+      </section>
+
+      <section className="space-y-4">
         <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">The Midnight Birthday Surprise</h2>
         <ul className="space-y-2 text-sm list-disc list-inside leading-relaxed">
           <li><strong>Midnight delivery 11:30 PM–12:15 AM</strong> — flowers, cake and gifts arrive right at 12 AM.</li>
@@ -93,6 +105,15 @@ export default function BirthdayFlowerDeliveryPage() {
           <li><strong>Photo approval first</strong> — we send you a photo of everything on WhatsApp before dispatch.</li>
         </ul>
         <a href={whatsappLink("Hello Lahore Bouquet! I want to plan a birthday flower surprise in Lahore.")} target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 rounded-full bg-[#8B1E2D] text-white text-sm font-bold hover:bg-[#C6A15B] hover:text-[#0B0B0B] transition-colors">Plan a Birthday Surprise</a>
+      </section>
+
+      <section className="space-y-4">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">How to Order in 3 Steps</h2>
+        <ol className="space-y-2 text-sm list-decimal list-inside leading-relaxed">
+          <li><strong>Pick your bouquet</strong> — browse <Link href="/bouquets" className="text-[#8B1E2D] underline">birthday bouquets</Link> or tell us your budget on WhatsApp and our florist will suggest the best options.</li>
+          <li><strong>Add your extras</strong> — cake, <Link href="/teddy-bears-lahore" className="text-[#8B1E2D] underline">teddy bear</Link>, <Link href="/helium-balloons-lahore" className="text-[#8B1E2D] underline">helium balloons</Link> and a free handwritten card message.</li>
+          <li><strong>Approve the photo</strong> — we send a real photo on WhatsApp before dispatch. Nothing leaves until you say it looks perfect.</li>
+        </ol>
       </section>
 
       <section className="space-y-4">

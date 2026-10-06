@@ -106,6 +106,7 @@ export default function MidnightDeliveryBlogPage() {
             <div className="text-xs text-[#777777]">Chocolate fudge, red velvet, lotus milk cake</div>
           </Link>
         </div>
+        <p className="text-sm leading-relaxed">Every midnight combo starts with a <Link href="/bouquets" className="text-[#8B1E2D] underline font-semibold">fresh midnight bouquet</Link> — pick your flowers, add cake and gifts, and we handle the 12 AM surprise.</p>
       </section>
 
       <section className="space-y-4">

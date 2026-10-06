@@ -110,7 +110,7 @@ export default function ContactPage() {
               <span className="text-xs uppercase font-bold tracking-wider text-[#8B1E2D]">Fastest Way to Order</span>
               <h2 className="font-playfair text-xl font-bold text-[#0B0B0B] mt-1">WhatsApp Florist Chat</h2>
               <p className="text-xs text-[#2A2A2A] mt-1 leading-relaxed">
-                Send bouquet reference photos, specify your budget, or get live photo updates before your flowers leave our workshop.
+                Send bouquet reference photos, specify your budget, or get live photo updates before your flowers leave for delivery.
               </p>
             </div>
             <a

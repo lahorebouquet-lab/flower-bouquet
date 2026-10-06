@@ -253,7 +253,7 @@ export default async function BlogIndexPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Written by professional florists at our Lahore workshop. Discover practical advice on preserving cut flower freshness in Pakistan, etiquette for wedding and anniversary bouquets, and insider guides to Lahore's floristry culture.
+          Written by professional florists in Lahore. Discover practical advice on preserving cut flower freshness in Pakistan, etiquette for wedding and anniversary bouquets, and insider guides to Lahore's floristry culture.
         </p>
       </section>
 

@@ -36,7 +36,7 @@ export default function NotFound() {
             This Stem Has Wandered Off
           </h1>
           <p className="text-xs sm:text-sm text-[#2A2A2A] max-w-lg mx-auto leading-relaxed">
-            The page you are looking for might have been moved, renamed, or is temporarily out of season. Explore our most popular fresh floral arrangements or reach out to our Gulberg workshop directly.
+            The page you are looking for might have been moved, renamed, or is temporarily out of season. Explore our most popular fresh floral arrangements or reach out to us directly on WhatsApp.
           </p>
         </div>
 

@@ -48,8 +48,8 @@ export default async function BestsellersPage() {
             Bestselling Bouquets in Lahore
           </h1>
           <p className="text-sm sm:text-base text-[#2A2A2A] max-w-2xl mx-auto leading-relaxed">
-            Our most-ordered fresh flower arrangements — hand-tied every morning at our
-            Gulberg workshop and delivered across Lahore in 2–5 hours with a photo
+            Our most-ordered fresh flower arrangements — hand-tied fresh in Lahore every morning
+            and delivered across the city in 2–5 hours with a photo
             on WhatsApp before dispatch.
           </p>
         </div>

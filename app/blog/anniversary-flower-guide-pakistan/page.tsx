@@ -102,7 +102,7 @@ export default function AnniversaryGuidePage() {
         <section className="space-y-3">
           <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">The Midnight 12:00 AM Surprise Trick</h2>
           <p>
-            In cities like Lahore, ordering a midnight flower delivery is one of the most effective ways to show genuine thoughtfulness. Booking early with our Gulberg workshop ensures a courier is stationed outside your residence at 11:55 PM, ringing the bell precisely at the stroke of midnight.
+            In cities like Lahore, ordering a midnight flower delivery is one of the most effective ways to show genuine thoughtfulness. Booking early ensures a courier is stationed outside your residence at 11:55 PM, ringing the bell precisely at the stroke of midnight. Pair it with one of our <Link href="/bouquets" className="text-[#8B1E2D] underline">anniversary bouquets</Link> for the full surprise.
           </p>
         </section>
       </div>
