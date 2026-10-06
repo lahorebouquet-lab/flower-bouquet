@@ -94,6 +94,10 @@ const NAV_ITEMS: NavItem[] = [
       { name: "Floral Care & Blog", href: "/blog", desc: "Expert tips to make flowers last longer" },
     ],
   },
+  {
+    name: "Track Order",
+    href: "/track-order",
+  },
 ];
 
 export default function Header() {
