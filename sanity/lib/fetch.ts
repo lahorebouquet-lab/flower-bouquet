@@ -113,6 +113,7 @@ export interface SanityBlogPost {
   author?: string
   image?: string
   body?: any
+  faqs?: { question: string; answer: string }[]
   isFeatured?: boolean
 }
 

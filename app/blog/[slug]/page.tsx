@@ -70,6 +70,16 @@ export default async function BlogPostPage({ params }: Props) {
     },
   };
 
+  const faqSchema = post.faqs && post.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: post.faqs.map((f: { question: string; answer: string }) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
+  } : null;
+
   const portableTextComponents = {
     block: {
       h2: ({ children }: any) => (
@@ -128,6 +138,12 @@ export default async function BlogPostPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
 
       {/* Breadcrumb Navigation */}
       <nav aria-label="Breadcrumb" className="text-xs text-[#777777] flex items-center gap-2 flex-wrap">
@@ -190,14 +206,31 @@ export default async function BlogPostPage({ params }: Props) {
           </p>
         )}
 
-        {/* Florist Atelier Dispatch CTA */}
-        <div className="mt-10 p-6 rounded-xl bg-[#F8F3EA] border border-[#C6A15B]/40 space-y-3">
+        {/* FAQs */}
+        {post.faqs && post.faqs.length > 0 && (
+          <div className="mt-10 space-y-3">
+            <h2 className="font-playfair text-xl sm:text-2xl font-bold text-[#0B0B0B]">
+              Frequently Asked Questions
+            </h2>
+            {post.faqs.map((f: { question: string; answer: string }, i: number) => (
+              <details key={i} className="p-5 rounded-2xl bg-white border border-[#E5DED2] group">
+                <summary className="font-bold text-sm text-[#0B0B0B] cursor-pointer list-none flex justify-between items-center">
+                  {f.question}
+                  <span className="text-[#8B1E2D] group-open:rotate-45 transition-transform text-lg leading-none">+</span>
+                </summary>
+                <p className="text-sm mt-2 leading-relaxed">{f.answer}</p>
+              </details>
+            ))}
+          </div>
+        )}
+
+        {/* Florist Atelier Dispatch CTA */}        <div className="mt-10 p-6 rounded-xl bg-[#F8F3EA] border border-[#C6A15B]/40 space-y-3">
           <div className="flex items-center gap-2 text-[#8B1E2D] font-bold text-xs uppercase tracking-wider">
             <Sparkles className="w-4 h-4 text-[#C6A15B]" />
             Order Fresh Flowers in Lahore Today
           </div>
           <p className="text-xs text-[#2A2A2A] leading-relaxed">
-            Need fresh imported Dutch roses, sunflowers, or custom money bouquets in Lahore? We hand-tie fresh bouquets daily in our Gulberg atelier and dispatch across DHA, Bahria Town, and Model Town in 2 to 5 hours with WhatsApp photo proof.
+            Need fresh imported Dutch roses, sunflowers, or custom money bouquets in Lahore? We hand-tie fresh bouquets daily in Lahore and dispatch across DHA, Bahria Town, and Model Town in 2 to 5 hours with WhatsApp photo and video proof.
           </p>
           <div className="pt-2 flex flex-wrap gap-3">
             <Link

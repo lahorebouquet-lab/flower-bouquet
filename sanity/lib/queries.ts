@@ -111,6 +111,7 @@ export const BLOG_POST_BY_SLUG_QUERY = groq`
     author,
     "image": coalesce(mainImage.asset->url, "/images/hero-luxury-banner.webp"),
     body,
+    faqs[] { question, answer },
     isFeatured
   }
 `

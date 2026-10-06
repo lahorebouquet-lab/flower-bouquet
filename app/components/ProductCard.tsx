@@ -75,24 +75,24 @@ export default function ProductCard({ product }: { product: Product }) {
         </div>
 
         {/* Price & Action Buttons (Accessible touch targets and contrast >= 4.5:1) */}
-        <div className="pt-2 sm:pt-3 border-t border-[#E5DED2] flex items-center justify-between gap-2">
-          <div>
-            <div className="text-xs sm:text-base font-bold text-[#8B1E2D]">
+        <div className="pt-2 sm:pt-3 border-t border-[#E5DED2] flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex items-baseline gap-1.5">
+            <div className="text-sm sm:text-base font-bold text-[#8B1E2D] whitespace-nowrap">
               Rs. {product.price.toLocaleString()}
             </div>
             {product.oldPrice && (
-              <div className="text-xs text-[#636363] line-through">
+              <div className="text-[11px] sm:text-xs text-[#636363] line-through whitespace-nowrap">
                 Rs. {product.oldPrice.toLocaleString()}
               </div>
             )}
           </div>
 
-          <div className="flex items-center gap-2 shrink-0">
+          <div className="flex items-center gap-1.5 sm:gap-2">
             {/* Secondary Action: + Cart (Outline light button - Accessible name matches visible text) */}
             <button
               onClick={(e) => addToCart(product, 1, e)}
               aria-label="Add to Cart"
-              className="min-h-[38px] px-2.5 sm:px-3 py-1.5 rounded-full bg-white hover:bg-[#8B1E2D] text-[#0B0B0B] hover:text-white border border-[#E5DED2] hover:border-[#8B1E2D] text-xs font-semibold transition-all duration-200 shadow-2xs active:scale-95 cursor-pointer flex items-center justify-center"
+              className="flex-1 sm:flex-none min-h-[38px] px-2.5 sm:px-3 py-1.5 rounded-full bg-white hover:bg-[#8B1E2D] text-[#0B0B0B] hover:text-white border border-[#E5DED2] hover:border-[#8B1E2D] text-xs font-semibold transition-all duration-200 shadow-2xs active:scale-95 cursor-pointer flex items-center justify-center"
               title="Add to Shopping Bag"
             >
               + Cart
@@ -102,7 +102,7 @@ export default function ProductCard({ product }: { product: Product }) {
             <button
               onClick={(e) => directOrderNow(product, e)}
               aria-label="Order"
-              className="min-h-[38px] px-3.5 sm:px-4 py-1.5 rounded-full bg-[#8B1E2D] hover:bg-[#C6A15B] text-white hover:text-[#0B0B0B] text-xs font-bold transition-all duration-200 shadow-xs active:scale-95 cursor-pointer flex items-center justify-center"
+              className="flex-1 sm:flex-none min-h-[38px] px-3.5 sm:px-4 py-1.5 rounded-full bg-[#8B1E2D] hover:bg-[#C6A15B] text-white hover:text-[#0B0B0B] text-xs font-bold transition-all duration-200 shadow-xs active:scale-95 cursor-pointer flex items-center justify-center"
             >
               Order
             </button>

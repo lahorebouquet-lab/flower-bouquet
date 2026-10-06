@@ -41,6 +41,7 @@ export const blogType = defineType({
           { title: 'Wedding & Bridal Décor', value: 'Wedding & Bridal' },
           { title: 'Roses & Flower Meanings', value: 'Flower Meaning' },
           { title: 'Lahore Floristry & Culture', value: 'Lahore Floristry' },
+          { title: 'Price Guide', value: 'Price Guide' },
         ],
       },
       initialValue: 'Flower Care',
@@ -125,6 +126,21 @@ export const blogType = defineType({
               title: 'Alt Text (for SEO)',
             },
           ],
+        },
+      ],
+    }),
+    defineField({
+      name: 'faqs',
+      title: 'FAQs (shown with Google FAQ schema)',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            { name: 'question', title: 'Question', type: 'string', validation: (Rule) => Rule.required() },
+            { name: 'answer', title: 'Answer', type: 'text', rows: 3, validation: (Rule) => Rule.required() },
+          ],
+          preview: { select: { title: 'question' } },
         },
       ],
     }),
