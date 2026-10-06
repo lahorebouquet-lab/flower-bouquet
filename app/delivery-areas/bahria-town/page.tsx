@@ -59,7 +59,7 @@ export default async function BahriaTownDeliveryPage() {
         name: "How long does flower delivery to Bahria Town Lahore take?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Delivery to Bahria Town Lahore typically takes 2.5 to 4 hours with a flat fee of Rs. 400. We transport all bouquets via the Lahore Ring Road in temperature-controlled vans to prevent petals from wilting on the long southern run.",
+          text: "Delivery to Bahria Town Lahore typically takes 2.5 to 4 hours with a flat fee of Rs. 400. We transport all bouquets via the Lahore Ring Road in careful, climate-protected delivery to prevent petals from wilting on the long southern run.",
         },
       },
       {
@@ -197,7 +197,7 @@ export default async function BahriaTownDeliveryPage() {
         <div className="divide-y divide-[rgba(198,161,91,0.25)]">
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How long does flower delivery to Bahria Town Lahore take?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery to Bahria Town Lahore typically takes 2.5 to 4 hours with a flat fee of Rs. 400. We transport all bouquets via the Lahore Ring Road in temperature-controlled vans to prevent petals from wilting on the long southern run.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery to Bahria Town Lahore typically takes 2.5 to 4 hours with a flat fee of Rs. 400. We transport all bouquets via the Lahore Ring Road in careful, climate-protected delivery to prevent petals from wilting on the long southern run.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Do you deliver to Safari Villas and Lake City as well?</h3>

@@ -5,6 +5,13 @@ import Link from "next/link";
 import { MessageCircle, Phone, Clock, MapPin, Send, Mail } from "lucide-react";
 import { useCart } from "../context/CartContext";
 import Logo from "./Logo";
+import {
+  CONTACT_EMAIL,
+  CONTACT_PHONE,
+  BUSINESS_HOURS_DISPLAY,
+  BUSINESS_ADDRESS_DISPLAY,
+  siteWhatsappLink,
+} from "@/lib/site";
 
 export default function Footer() {
   const { showToast } = useCart();
@@ -36,7 +43,7 @@ export default function Footer() {
           <div className="lg:col-span-6">
             <form onSubmit={handleNewsletterSubmit} className="space-y-2">
               <span className="text-xs font-semibold text-white block leading-relaxed">
-                Receive Rs. 500 off your first floral order. Subscribe to the Lahore Bouquet Club for seasonal bloom updates and occasion reminders.
+                Subscribe to the Lahore Bouquet Club for seasonal bloom updates and occasion reminders.
               </span>
               <div className="flex gap-2">
                 <input 
@@ -149,32 +156,32 @@ export default function Footer() {
             <h3 className="font-semibold text-white tracking-wide text-sm">Florist Support</h3>
             <div className="space-y-2.5 text-[#BDBDBD]">
               <a 
-                href="https://wa.me/923104225974" 
+                href={siteWhatsappLink("Hi Lahore Bouquet! I have a question about flowers.")}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-[#C6A15B] hover:text-white transition-colors font-bold"
               >
                 <MessageCircle className="w-4 h-4 text-[#25D366]" />
-                <span>WhatsApp: 0310-4225974</span>
+                <span>WhatsApp: {CONTACT_PHONE.local}</span>
               </a>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#C6A15B]" />
-                <span>Direct Helpline: +92 310 4225974</span>
+                <span>Direct Helpline: {CONTACT_PHONE.intl}</span>
               </div>
               <a
-                href="mailto:flowerbouquet@gmail.com"
+                href={`mailto:${CONTACT_EMAIL}`}
                 className="flex items-center gap-2 hover:text-white transition-colors"
               >
                 <Mail className="w-4 h-4 text-[#C6A15B]" />
-                <span>flowerbouquet@gmail.com</span>
+                <span>{CONTACT_EMAIL}</span>
               </a>
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-[#C6A15B]" />
-                <span>Mon–Sun: 9:00 AM – 1:00 AM</span>
+                <span>{BUSINESS_HOURS_DISPLAY}</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-[#C6A15B]" />
-                <span>Lahore, Pakistan</span>
+                <span>{BUSINESS_ADDRESS_DISPLAY}</span>
               </div>
             </div>
           </div>

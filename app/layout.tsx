@@ -24,7 +24,7 @@ const IS_PROD_HOST =
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title: {
-      template: "%s | Lahore Bouquet - Fresh Flowers Lahore",
+      template: "%s | Lahore Bouquet",
       default: "Lahore Bouquet - Fresh Handcrafted Bouquets & Flower Delivery in Lahore",
     },
     description: "Send fresh handcrafted flower bouquets, imported roses, sunflowers, money bouquets, wedding decor & gift combos across Lahore. Express 2–5 hours and midnight delivery across all Lahore areas.",

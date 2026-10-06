@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { 
   ShoppingBag, 
@@ -12,10 +12,14 @@ import {
   ArrowRight, 
   Check, 
   CheckCircle2, 
-  MessageCircle 
+  MessageCircle,
+  Pencil
 } from "lucide-react";
 import { useCart } from "../context/CartContext";
 import { LAHORE_AREAS, TIME_SLOTS, CARD_OCCASIONS } from "../data/products";
+import { getDeliveryFee, formatDeliveryDate, DELIVERY_POLICY_LINE } from "@/lib/delivery";
+import { normalizePakistaniPhone, CONTACT_PHONE, siteWhatsappLink } from "@/lib/site";
+import DeliverySchedulePicker from "./DeliverySchedulePicker";
 
 export default function CartDrawer() {
   const {
@@ -27,6 +31,8 @@ export default function CartDrawer() {
     updateQuantity,
     clearCart,
     cartSubtotal,
+    deliveryFee,
+    orderTotal,
     totalCartCount,
     senderName,
     setSenderName,
@@ -54,8 +60,38 @@ export default function CartDrawer() {
     setPaymentMethod,
     placedOrderId,
     handlePlaceOrder,
-    generateWhatsAppMessage
+    generateWhatsAppMessage,
+    loadCustomizationIntoCheckout,
   } = useCart();
+
+  // Step 2 validation state
+  const [triedContinue, setTriedContinue] = useState(false);
+
+  const recipientPhoneValid = normalizePakistaniPhone(recipientPhone) !== null;
+  const senderPhoneValid = normalizePakistaniPhone(senderPhone) !== null;
+  const step2Valid =
+    recipientName.trim().length > 0 &&
+    recipientPhoneValid &&
+    selectedArea.length > 0 &&
+    streetAddress.trim().length > 0 &&
+    senderName.trim().length > 0 &&
+    senderPhoneValid;
+
+  const handleStep2Continue = () => {
+    setTriedContinue(true);
+    if (step2Valid) {
+      setTriedContinue(false);
+      setCheckoutStep(3);
+    }
+  };
+
+  const inputCls = (hasError: boolean) =>
+    `w-full px-3 py-2 bg-white border rounded-lg text-[#0B0B0B] placeholder-[#636363] outline-none ${
+      hasError ? "border-[#8B1E2D] ring-1 ring-[#8B1E2D]/30" : "border-[#E5DED2]"
+    }`;
+
+  const errMsg = (show: boolean, text: string) =>
+    show ? <p className="text-[11px] text-[#8B1E2D] font-medium mt-1">{text}</p> : null;
 
   if (!isCartOpen) return null;
 
@@ -124,10 +160,13 @@ export default function CartDrawer() {
                 <div className="space-y-3.5">
                   <div className="p-3 rounded-xl bg-white border border-[rgba(198,161,91,0.30)] text-xs text-[#2A2A2A] flex items-center gap-2.5 shadow-xs">
                     <Truck className="w-4 h-4 flex-shrink-0 text-[#8B1E2D]" />
-                    <span><strong className="text-[#0B0B0B]">Free Express Delivery (2–5 Hours)</strong> included across Lahore!</span>
+                    <span><strong className="text-[#0B0B0B]">{DELIVERY_POLICY_LINE}</strong> — 2–5 hour express.</span>
                   </div>
 
-                  {cart.map((item) => (
+                  {cart.map((item) => {
+                    const c = item.customization;
+                    const slotLabel = c ? TIME_SLOTS.find((s) => s.id === c.deliverySlot)?.label ?? c.deliverySlot : null;
+                    return (
                     <div 
                       key={item.product.id}
                       className="flex gap-3.5 p-3.5 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] shadow-xs"
@@ -142,7 +181,7 @@ export default function CartDrawer() {
                         />
                       </div>
 
-                      <div className="flex-1 flex flex-col justify-between">
+                      <div className="flex-1 flex flex-col justify-between min-w-0">
                         <div className="flex items-start justify-between gap-2">
                           <h4 className="text-xs font-semibold text-[#0B0B0B] line-clamp-1">
                             {item.product.title}
@@ -155,6 +194,26 @@ export default function CartDrawer() {
                             <Trash2 className="w-3.5 h-3.5" />
                           </button>
                         </div>
+
+                        {/* Per-item delivery summary (from product page choices) */}
+                        {c && (
+                          <div className="mt-1 text-[10px] text-[#555555] leading-relaxed">
+                            <span className="font-semibold text-[#0B0B0B]">{formatDeliveryDate(c.deliveryDate)}</span>
+                            {" · "}{slotLabel}
+                            {" · "}{c.area.replace(", Lahore", "")}
+                            {" · "}{c.cardOccasion.replace(/[\u{1F300}-\u{1FAFF}]/gu, "").trim() || c.cardOccasion}
+                            <button
+                              type="button"
+                              onClick={() => {
+                                loadCustomizationIntoCheckout(c);
+                                setCheckoutStep(3);
+                              }}
+                              className="ml-1.5 inline-flex items-center gap-0.5 text-[#8B1E2D] font-semibold hover:underline cursor-pointer"
+                            >
+                              <Pencil className="w-2.5 h-2.5" /> Edit
+                            </button>
+                          </div>
+                        )}
 
                         {/* Price in #8B1E2D */}
                         <div className="text-sm font-bold text-[#8B1E2D]">
@@ -187,7 +246,8 @@ export default function CartDrawer() {
                         </div>
                       </div>
                     </div>
-                  ))}
+                    );
+                  })}
                 </div>
               )}
             </>
@@ -208,8 +268,9 @@ export default function CartDrawer() {
                     placeholder="e.g. Ayesha Khan" 
                     value={recipientName}
                     onChange={(e) => setRecipientName(e.target.value)}
-                    className="w-full px-3 py-2 bg-white border border-[#E5DED2] rounded-lg text-[#0B0B0B] placeholder-[#636363] outline-none"
+                    className={inputCls(triedContinue && recipientName.trim().length === 0)}
                   />
+                  {errMsg(triedContinue && recipientName.trim().length === 0, "Please enter the recipient's name.")}
                 </div>
 
                 <div>
@@ -219,8 +280,9 @@ export default function CartDrawer() {
                     placeholder="0321-xxxxxxx" 
                     value={recipientPhone}
                     onChange={(e) => setRecipientPhone(e.target.value)}
-                    className="w-full px-3 py-2 bg-white border border-[#E5DED2] rounded-lg text-[#0B0B0B] placeholder-[#636363] outline-none"
+                    className={inputCls(triedContinue && !recipientPhoneValid)}
                   />
+                  {errMsg(triedContinue && !recipientPhoneValid, "Enter a valid Pakistani mobile: 03XXXXXXXXX or +923XXXXXXXXX.")}
                 </div>
 
                 <div>
@@ -230,11 +292,14 @@ export default function CartDrawer() {
                     onChange={(e) => setSelectedArea(e.target.value)}
                     className="w-full px-3 py-2 bg-white border border-[#E5DED2] rounded-lg text-[#0B0B0B] outline-none"
                   >
-                    {LAHORE_AREAS.map((area, aIdx) => (
-                      <option key={aIdx} value={area} className="bg-white text-[#0B0B0B]">
-                        {area}
-                      </option>
-                    ))}
+                    {LAHORE_AREAS.map((area, aIdx) => {
+                      const fee = getDeliveryFee(area);
+                      return (
+                        <option key={aIdx} value={area} className="bg-white text-[#0B0B0B]">
+                          {area}{fee.fee === 0 ? " — FREE delivery" : fee.fee === null ? " — fee on WhatsApp" : ` — Rs. ${fee.fee}`}
+                        </option>
+                      );
+                    })}
                   </select>
                 </div>
 
@@ -245,8 +310,9 @@ export default function CartDrawer() {
                     placeholder="House / Flat No., Street, Sector details..." 
                     value={streetAddress}
                     onChange={(e) => setStreetAddress(e.target.value)}
-                    className="w-full px-3 py-2 bg-white border border-[#E5DED2] rounded-lg text-[#0B0B0B] placeholder-[#636363] outline-none resize-none"
+                    className={`${inputCls(triedContinue && streetAddress.trim().length === 0)} resize-none`}
                   />
+                  {errMsg(triedContinue && streetAddress.trim().length === 0, "Please enter the full street address.")}
                 </div>
               </div>
 
@@ -256,26 +322,31 @@ export default function CartDrawer() {
                 </span>
                 <div className="grid grid-cols-2 gap-2">
                   <div>
-                    <label className="block text-[#2A2A2A] font-medium mb-1">Your Name</label>
+                    <label className="block text-[#2A2A2A] font-medium mb-1">Your Name *</label>
                     <input 
                       type="text" 
                       placeholder="Your Name" 
                       value={senderName}
                       onChange={(e) => setSenderName(e.target.value)}
-                      className="w-full px-3 py-2 bg-white border border-[#E5DED2] rounded-lg text-[#0B0B0B] placeholder-[#636363] outline-none"
+                      className={inputCls(triedContinue && senderName.trim().length === 0)}
                     />
+                    {errMsg(triedContinue && senderName.trim().length === 0, "Please enter your name.")}
                   </div>
                   <div>
-                    <label className="block text-[#2A2A2A] font-medium mb-1">Your WhatsApp</label>
+                    <label className="block text-[#2A2A2A] font-medium mb-1">Your WhatsApp *</label>
                     <input 
                       type="tel" 
                       placeholder="0300-xxxxxxx" 
                       value={senderPhone}
                       onChange={(e) => setSenderPhone(e.target.value)}
-                      className="w-full px-3 py-2 bg-white border border-[#E5DED2] rounded-lg text-[#0B0B0B] placeholder-[#636363] outline-none"
+                      className={inputCls(triedContinue && !senderPhoneValid)}
                     />
+                    {errMsg(triedContinue && !senderPhoneValid, "Valid number required — we send photo proof & tracking here.")}
                   </div>
                 </div>
+                <p className="text-[10px] text-[#636363]">
+                  Your WhatsApp is required — we send bouquet photo/video proof and delivery tracking on it.
+                </p>
               </div>
             </div>
           )}
@@ -285,28 +356,14 @@ export default function CartDrawer() {
             <div className="space-y-4 text-xs">
               <div className="p-4 rounded-2xl bg-white border border-[#E5DED2] space-y-3 shadow-xs">
                 <span className="font-semibold text-[#8B1E2D] block text-[11px] uppercase tracking-wider">
-                  Select Delivery Time Slot
+                  Delivery Date & Time Slot
                 </span>
-                <div className="grid grid-cols-2 gap-2">
-                  {TIME_SLOTS.map((slot) => (
-                    <button
-                      key={slot.id}
-                      type="button"
-                      onClick={() => setDeliveryTimeSlot(slot.id)}
-                      className={`p-2.5 rounded-xl border text-left transition-all cursor-pointer ${
-                        deliveryTimeSlot === slot.id
-                          ? "bg-[#8B1E2D]/10 border-[#8B1E2D] text-[#0B0B0B]"
-                          : "bg-[#F8F3EA] border-[#E5DED2] text-[#2A2A2A] hover:border-[#C6A15B]"
-                      }`}
-                    >
-                      <div className="flex items-center gap-1.5 font-semibold text-xs mb-0.5">
-                        <span>{slot.icon}</span>
-                        <span className={deliveryTimeSlot === slot.id ? "text-[#8B1E2D] font-bold" : ""}>{slot.label}</span>
-                      </div>
-                      <div className="text-[10px] text-[#555555]">{slot.time}</div>
-                    </button>
-                  ))}
-                </div>
+                <DeliverySchedulePicker
+                  date={deliveryDate}
+                  slotId={deliveryTimeSlot}
+                  onDateChange={setDeliveryDate}
+                  onSlotChange={setDeliveryTimeSlot}
+                />
               </div>
 
               <div className="p-4 rounded-2xl bg-white border border-[#E5DED2] space-y-3 shadow-xs">
@@ -453,12 +510,18 @@ export default function CartDrawer() {
                   <span className="font-semibold">Rs. {cartSubtotal.toLocaleString()}</span>
                 </div>
                 <div className="flex justify-between text-[#2A2A2A]">
-                  <span>Express Delivery in Lahore:</span>
-                  <span className="text-[#8B1E2D] font-semibold">FREE (Rs. 0)</span>
+                  <span>Express Delivery ({selectedArea.replace(", Lahore", "")}):</span>
+                  <span className="text-[#8B1E2D] font-semibold">
+                    {deliveryFee === null ? getDeliveryFee(selectedArea).label : deliveryFee === 0 ? "FREE (Rs. 0)" : `Rs. ${deliveryFee.toLocaleString()}`}
+                  </span>
+                </div>
+                <div className="flex justify-between text-[#2A2A2A]">
+                  <span>Delivery Date:</span>
+                  <span className="font-semibold">{formatDeliveryDate(deliveryDate)}</span>
                 </div>
                 <div className="flex justify-between text-sm font-bold text-[#8B1E2D] pt-2 border-t border-[#E5DED2]">
                   <span>Total Amount Payable:</span>
-                  <span>Rs. {cartSubtotal.toLocaleString()}</span>
+                  <span>Rs. {orderTotal.toLocaleString()}</span>
                 </div>
               </div>
             </div>
@@ -481,13 +544,14 @@ export default function CartDrawer() {
 
               <div className="p-4 rounded-2xl bg-white border border-[#E5DED2] text-left text-xs space-y-2 shadow-xs">
                 <div className="flex justify-between"><span className="text-[#636363]">Delivery Area:</span> <span className="font-semibold text-[#0B0B0B]">{selectedArea}</span></div>
+                <div className="flex justify-between"><span className="text-[#636363]">Delivery Date:</span> <span className="font-semibold text-[#0B0B0B]">{formatDeliveryDate(deliveryDate)}</span></div>
                 <div className="flex justify-between"><span className="text-[#636363]">Time Slot:</span> <span className="font-semibold text-[#0B0B0B]">{deliveryTimeSlot.toUpperCase()}</span></div>
-                <div className="flex justify-between"><span className="text-[#636363]">Total Payable:</span> <span className="font-bold text-[#8B1E2D]">Rs. {cartSubtotal.toLocaleString()}</span></div>
+                <div className="flex justify-between"><span className="text-[#636363]">Total Payable:</span> <span className="font-bold text-[#8B1E2D]">Rs. {orderTotal.toLocaleString()}</span></div>
               </div>
 
               {/* Send to WhatsApp Button */}
               <a
-                href={`https://wa.me/923104225974?text=${generateWhatsAppMessage()}`}
+                href={`https://wa.me/${CONTACT_PHONE.whatsapp}?text=${generateWhatsAppMessage()}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-3.5 rounded-full bg-[#8B1E2D] hover:bg-[#C6A15B] text-white hover:text-[#0B0B0B] font-bold text-xs flex items-center justify-center gap-2 shadow-md transition-all cursor-pointer"
@@ -544,7 +608,7 @@ export default function CartDrawer() {
               {checkoutStep === 2 && (
                 <button
                   type="button"
-                  onClick={() => setCheckoutStep(3)}
+                  onClick={handleStep2Continue}
                   className="flex-1 py-3.5 rounded-full bg-[#8B1E2D] hover:bg-[#C6A15B] text-white hover:text-[#0B0B0B] font-bold text-xs shadow-md transition-all text-center flex items-center justify-center gap-1.5 cursor-pointer active:scale-95"
                 >
                   <span>Continue to Delivery Slot</span>
@@ -570,7 +634,7 @@ export default function CartDrawer() {
                   className="flex-1 py-3.5 rounded-full bg-[#8B1E2D] hover:bg-[#C6A15B] text-white hover:text-[#0B0B0B] font-bold text-xs shadow-md transition-all text-center flex items-center justify-center gap-1.5 cursor-pointer active:scale-95"
                 >
                   <Check className="w-4 h-4" />
-                  <span>Confirm & Place Order (Rs. {cartSubtotal.toLocaleString()})</span>
+                  <span>Confirm & Place Order (Rs. {orderTotal.toLocaleString()})</span>
                 </button>
               )}
             </div>

@@ -11,8 +11,8 @@ import { getSanityProducts, getSanityProduct } from "@/sanity/lib/fetch";
 import { SITE_URL } from "@/lib/business";
 import ProductDetailActions from "../../components/ProductDetailActions";
 import ProductCard from "../../components/ProductCard";
+import Rating from "../../components/Rating";
 import { 
-  Star, 
   Clock, 
   Truck, 
   ShieldCheck, 
@@ -46,13 +46,19 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
   if (!product) {
     return {
-      title: "Product Not Found | Lahore Bouquet",
+      title: "Product Not Found",
       description: "Explore our collection of fresh flower bouquets in Lahore."
     };
   }
 
+  // Template appends " | Lahore Bouquet" (17 chars) — keep total under 60
+  const maxNameLen = 60 - " | Lahore Bouquet".length;
+  const shortName = product.title.length > maxNameLen
+    ? product.title.slice(0, maxNameLen - 1).trimEnd() + "…"
+    : product.title;
+
   return {
-    title: `${product.title} - Flower Delivery Lahore`,
+    title: shortName,
     description: `Buy ${product.title} in Lahore for Rs. ${product.price.toLocaleString()} PKR. ${product.desc} Enjoy same-day 2–5 hours express and midnight delivery with WhatsApp photo proof.`,
     keywords: [
       product.title.toLowerCase(),
@@ -66,7 +72,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
       canonical: `${SITE_URL}/products/${product.slug}`,
     },
     openGraph: {
-      title: `${product.title} | Lahore Bouquet`,
+      title: `${shortName} | Lahore Bouquet`,
       description: `Rs. ${product.price.toLocaleString()} PKR. Fresh hand-tied bouquet delivered across Lahore within 2–5 hours.`,
       images: [
         {
@@ -80,7 +86,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     },
     twitter: {
       card: "summary_large_image",
-      title: `${product.title} | Lahore Bouquet`,
+      title: `${shortName} | Lahore Bouquet`,
       description: `Rs. ${product.price.toLocaleString()} PKR. Fresh hand-tied bouquet delivered across Lahore within 2–5 hours.`,
       images: [product.image?.startsWith("http") ? product.image : `${SITE_URL}${product.image}`],
     }
@@ -226,7 +232,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               <div className="absolute bottom-4 left-4 z-10">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 backdrop-blur-md border border-[#E5DED2] text-[11px] text-[#0B0B0B] font-medium shadow-xs">
                   <Leaf className="w-3.5 h-3.5 text-[#8B1E2D]" />
-                  100% Zero-Plastic Eco Wrap
+                  Eco-Friendly Paper & Fabric Wrap
                 </span>
               </div>
             </div>
@@ -264,14 +270,11 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                   {product.category}
                 </Link>
 
-                <div className="flex items-center gap-1.5 text-xs text-[#2A2A2A]">
-                  <div className="flex text-[#C6A15B]">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-3.5 h-3.5 fill-[#C6A15B]" />
-                    ))}
-                  </div>
-                  <span className="text-[#777777]">Handcrafted fresh in Lahore</span>
-                </div>
+                {/* Real reviews only — Rating renders nothing when reviewCount is 0 */}
+                <Rating
+                  rating={product.rating ?? 0}
+                  reviewCount={product.reviewCount ?? 0}
+                />
               </div>
 
               {/* Title */}
@@ -339,7 +342,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               Lahore Delivery Policies
             </h3>
             <p className="text-[#2A2A2A] leading-relaxed">
-              Delivered exclusively via temperature-controlled florist dispatch. Midnight deliveries run between 11:30 PM – 12:15 AM. Senders receive a high-resolution photo proof of their prepared bouquet on WhatsApp before courier handover.
+              Delivered exclusively via careful, climate-protected delivery. Midnight deliveries run between 11:30 PM – 12:15 AM. Senders receive a high-resolution photo proof of their prepared bouquet on WhatsApp before courier handover.
             </p>
           </div>
 
@@ -349,7 +352,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               Zero-Risk Guarantee
             </h3>
             <p className="text-[#2A2A2A] leading-relaxed">
-              If your bouquet arrives damaged or wilted due to transit, our atelier will immediately replace the arrangement with a fresh bouquet or provide a full refund within 3 hours. Your satisfaction is unconditionally guaranteed.
+              If your bouquet arrives damaged or wilted due to transit, we&apos;ll replace it or refund you — just WhatsApp us a photo within 3 hours of delivery.
             </p>
           </div>
 

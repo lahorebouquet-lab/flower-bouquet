@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { 
@@ -17,6 +17,8 @@ import {
   Star, 
   CheckCircle2, 
   ChevronDown,
+  ChevronLeft,
+  ChevronRight,
   Banknote,
   Truck
 } from "lucide-react";
@@ -33,13 +35,17 @@ const CategorySection = dynamic(() => import("./CategorySection"), {
 
 import { SanityCategory } from "@/sanity/lib/fetch";
 import { Product } from "../data/products";
+import ReviewsSection from "./ReviewsSection";
+import type { SanityReview } from "@/sanity/lib/fetch";
 
 export default function HomeClient({
   initialProducts,
   initialCategories,
+  initialReviews,
 }: {
   initialProducts?: Product[];
   initialCategories?: SanityCategory[];
+  initialReviews?: SanityReview[];
 }) {
   const products = (initialProducts && initialProducts.length > 0) ? initialProducts : ALL_PRODUCTS;
 
@@ -50,18 +56,17 @@ export default function HomeClient({
   const filterOptions = ["All", "Roses", "Sunflowers", "Bouquets", "Wedding Décor", "Gifts & Cakes"];
 
   const bestsellers = useMemo(() => {
-    // 4 representative pinnacle products: Rose bouquet, Hand-tied bouquet, Sunflower bouquet, and Bestseller Cake
-    const topRose = products.find(p => (p.category === "Roses" || p.category === "Velvet Red Roses") && (p.badgeType === "hot" || p.badge?.includes("Signature")));
-    const topBouquet = products.find(p => p.category === "Bouquets" && (p.badgeType === "hot" || p.badgeType === "promotion" || p.badgeType === "favorite"));
-    const topSunflower = products.find(p => p.category === "Sunflowers");
-    const topCake = products.find(p => (p.category === "Gifts & Cakes" || p.category === "Chocolate Bouquets") && (p.badgeType === "bestseller" || p.badgeType === "hot"));
-
-    const curated = [topRose, topBouquet, topSunflower, topCake].filter(Boolean) as Product[];
-    if (curated.length === 4) return curated;
-
-    // Fallback to top rated items
-    return products.filter(p => p.badgeType === "hot" || p.badge === "Bestseller" || p.badge === "Signature").slice(0, 4);
+    // Bestsellers carousel: badge-marked products first, then fill to 8
+    const marked = products.filter(p => p.badgeType === "bestseller" || p.badgeType === "hot" || p.badge === "Bestseller" || p.badge === "Signature");
+    const markedIds = new Set(marked.map(p => String(p.id)));
+    const rest = products.filter(p => !markedIds.has(String(p.id)));
+    return [...marked, ...rest].slice(0, 8);
   }, [products]);
+
+  const bestsellerTrackRef = useRef<HTMLDivElement>(null);
+  const scrollBestsellers = (dir: "left" | "right") => {
+    bestsellerTrackRef.current?.scrollBy({ left: dir === "left" ? -320 : 320, behavior: "smooth" });
+  };
 
   const displayedProducts = useMemo(() => {
     // Exclude bestseller-section products so the two grids never repeat the same items
@@ -127,8 +132,8 @@ export default function HomeClient({
     <>
       {/* 1. HERO SECTION (Preserving 100% Real Size & Natural Uncropped Proportions) */}
       <section className="relative min-h-[480px] sm:min-h-[520px] lg:min-h-[580px] xl:min-h-[640px] flex items-center overflow-hidden border-b border-[#C6A15B]/30 bg-[#F6F1E7] py-10 sm:py-14 lg:py-16">
-        {/* Full-Width Background Image Layer - Responsive & LCP Optimized */}
-        <div className="absolute inset-0 z-0 overflow-hidden">
+        {/* Full-Width Background Image Layer - Desktop only (mobile shows a clear product image instead) */}
+        <div className="absolute inset-0 z-0 overflow-hidden hidden md:block">
           <img
             src="/images/hero-blush-elegance-banner.webp"
             alt="Elegant blush pink rose and lily bouquet in a gold vase for flower delivery in Lahore | Lahore Bouquet"
@@ -138,7 +143,6 @@ export default function HomeClient({
 
           {/* Soft cream left fade to ensure pristine text readability */}
           <div className="hidden lg:block absolute inset-y-0 left-0 w-2/5 bg-gradient-to-r from-[#F6F1E7] via-[#F6F1E7]/70 to-transparent pointer-events-none" />
-          <div className="block lg:hidden absolute inset-0 bg-gradient-to-t from-[#F6F1E7] via-[#F6F1E7]/80 to-transparent pointer-events-none" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
@@ -155,9 +159,25 @@ export default function HomeClient({
               Fresh Flower Bouquets in Lahore, <span className="text-[#8B1E2D]">Delivered to Your Door</span>
             </h1>
 
-            {/* Quick answer (AEO) */}
+            {/* Mobile: clear product image above the short copy */}
+            {bestsellers[0] && (
+              <div className="md:hidden mx-auto w-48 rounded-2xl overflow-hidden border border-[rgba(198,161,91,0.35)] shadow-md bg-white">
+                <Image
+                  src={bestsellers[0].image}
+                  alt={bestsellers[0].title}
+                  width={400}
+                  height={500}
+                  sizes="192px"
+                  className="w-full h-auto object-cover aspect-[4/5]"
+                  priority
+                />
+              </div>
+            )}
+
+            {/* Quick answer (AEO) — shortened to 1-2 lines on mobile */}
             <p className="text-[#2A2A2A] text-xs sm:text-sm lg:text-base max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              <strong>Same-day flower delivery in Lahore costs from Rs. 1,180 and arrives in 2–5 hours.</strong> Lahore Bouquet hand-ties fresh roses, sunflowers, lilies and money bouquets to order, sends you a photo and video on WhatsApp before dispatch, and delivers across DHA, Gulberg, Model Town, Bahria Town and Johar Town — with a midnight surprise slot for birthdays.
+              <strong>From Rs. 1,180 — same-day delivery in 2–5 hours.</strong>
+              <span className="hidden md:inline"> Lahore Bouquet hand-ties fresh roses, sunflowers, lilies and money bouquets to order, sends you a photo and video on WhatsApp before dispatch, and delivers across DHA, Gulberg, Model Town, Bahria Town and Johar Town — with a midnight surprise slot for birthdays.</span>
             </p>
 
             {/* Button System (Section 18):
@@ -246,7 +266,7 @@ export default function HomeClient({
       {/* 3. CATEGORY & FEATURED BOUQUETS SLIDER (Section 6: Warm Ivory #F8F3EA) */}
       <CategorySection categories={initialCategories} products={products} />
 
-      {/* 4. FEATURED / BESTSELLER SECTION (Harmonized with Warm Ivory card palette) */}
+      {/* 4. BESTSELLERS CAROUSEL (merged — single bestsellers showcase) */}
       <section className="w-full py-16 px-4 sm:px-6 bg-[#F8F3EA] border-b border-[#E5DED2] text-[#101012]">
         <div className="max-w-7xl mx-auto space-y-8">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
@@ -255,26 +275,49 @@ export default function HomeClient({
                 Curated Lahore Favorites
               </span>
               <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#0B0B0B] mt-1">
-                Bestsellers & Signature Arrangements
+                Bestsellers
               </h2>
               <p className="text-xs sm:text-sm text-[#2A2A2A] mt-1 max-w-xl">
                 Our most celebrated floral creations — handpicked Dutch roses, sunlit floral pairings, and regal celebration arrangements.
               </p>
             </div>
 
-            <Link
-              href="/bestsellers"
-              className="group inline-flex items-center gap-1.5 text-xs font-semibold tracking-wider uppercase text-[#0B0B0B] hover:text-[#8B1E2D] transition-colors"
-            >
-              <span>Explore All Bestsellers</span>
-              <ArrowRight className="w-3.5 h-3.5 text-[#8B1E2D] group-hover:translate-x-1 transition-transform" />
-            </Link>
+            <div className="flex items-center gap-2.5">
+              <div className="flex items-center gap-1.5">
+                <button
+                  onClick={() => scrollBestsellers("left")}
+                  aria-label="Scroll bestsellers left"
+                  className="w-8 h-8 flex items-center justify-center rounded-full bg-white hover:bg-[#8B1E2D] text-[#101012] hover:text-white border border-[#E5DED2] hover:border-[#8B1E2D] transition-all shadow-xs active:scale-95 cursor-pointer"
+                >
+                  <ChevronLeft className="w-4 h-4" />
+                </button>
+                <button
+                  onClick={() => scrollBestsellers("right")}
+                  aria-label="Scroll bestsellers right"
+                  className="w-8 h-8 flex items-center justify-center rounded-full bg-white hover:bg-[#8B1E2D] text-[#101012] hover:text-white border border-[#E5DED2] hover:border-[#8B1E2D] transition-all shadow-xs active:scale-95 cursor-pointer"
+                >
+                  <ChevronRight className="w-4 h-4" />
+                </button>
+              </div>
+              <Link
+                href="/bestsellers"
+                className="group inline-flex items-center gap-1.5 text-xs font-semibold tracking-wider uppercase text-[#0B0B0B] hover:text-[#8B1E2D] transition-colors"
+              >
+                <span>Explore All</span>
+                <ArrowRight className="w-3.5 h-3.5 text-[#8B1E2D] group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
           </div>
 
-          {/* Bestseller White Cards Grid (2 cards per row on mobile, 4 on desktop) */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+          {/* Bestsellers horizontal carousel */}
+          <div
+            ref={bestsellerTrackRef}
+            className="flex gap-3 sm:gap-6 overflow-x-auto scroll-smooth pb-2 snap-x snap-mandatory no-scrollbar"
+          >
             {bestsellers.map((prod) => (
-              <ProductCard key={`bestseller-${prod.id}`} product={prod} />
+              <div key={`bestseller-${prod.id}`} className="w-[200px] sm:w-[260px] shrink-0 snap-start">
+                <ProductCard product={prod} />
+              </div>
             ))}
           </div>
         </div>
@@ -383,7 +426,7 @@ export default function HomeClient({
               </div>
               <h3 className="font-playfair text-lg font-bold text-[#0B0B0B]">We deliver.</h3>
               <p className="text-xs text-[#2A2A2A] leading-relaxed">
-                Bouquets travel in temperature-controlled vans so stems remain crisp in Lahore's weather. Arrives in 2 to 5 hours.
+                Bouquets travel in careful, climate-protected delivery so stems remain crisp in Lahore's weather. Arrives in 2 to 5 hours.
               </p>
             </div>
           </div>
@@ -459,7 +502,10 @@ export default function HomeClient({
         </div>
       </section>
 
-      {/* 8. BRAND STORY / ABOUT TEASER (#F8F3EA background, #101012 heading, #2A2A2A body, #C6A15B line, #8B1E2D words) */}
+      {/* 8. CUSTOMER REVIEWS (only renders when Sanity reviews exist) */}
+      <ReviewsSection reviews={initialReviews ?? []} />
+
+      {/* 9. BRAND STORY / ABOUT TEASER (#F8F3EA background, #101012 heading, #2A2A2A body, #C6A15B line, #8B1E2D words) */}
       <section className="w-full py-16 px-4 sm:px-6 bg-[#F8F3EA] border-b border-[#E5DED2] text-[#101012]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
           <div className="md:col-span-7 space-y-4">

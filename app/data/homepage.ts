@@ -18,15 +18,15 @@ export const HOMEPAGE_FAQS: FAQItem[] = [
   },
   {
     q: "Which areas of Lahore do you deliver flowers to?",
-    a: "We deliver across Lahore: DHA (all phases), Gulberg, Model Town, Johar Town, Bahria Town, Cantt, Wapda Town, Askari, Valencia, EME, Fazaia, Lake City and surrounding areas. Each area has a published delivery time and fee — check our delivery areas page or use the fee calculator before ordering."
+    a: "We deliver across Lahore: DHA (all phases), Gulberg, Model Town, Johar Town, Bahria Town, Cantt, Wapda Town, Askari, Valencia, EME, Fazaia, Lake City and surrounding areas. Delivery is free across all listed areas — see our delivery areas page for the full list."
   },
   {
     q: "How much is the delivery fee in Lahore?",
-    a: "Delivery is free in our express zones (Gulberg, Model Town). Standard areas are charged a flat transparent fee shown before checkout — never hidden. Exact fee and delivery time for your block appear in our delivery fee calculator, so you know the full cost before you pay."
+    a: "Delivery is free across all listed Lahore areas — no hidden charges. If your area isn't listed, the fee is confirmed on WhatsApp before you order."
   },
   {
     q: "Can I get midnight flower delivery in Lahore?",
-    a: "Yes. We offer midnight delivery between 11:30 PM and 12:15 AM across Lahore — perfect for birthdays and anniversaries. Book before 8:00 PM on the day so our rider is stationed near your address at 11:55 PM. Midnight slots cost a small surcharge shown at checkout."
+    a: "Yes. We offer midnight delivery between 11:30 PM and 12:15 AM across Lahore — perfect for birthdays and anniversaries. Book before 8:00 PM on the day so our rider is stationed near your address at 11:55 PM."
   },
   {
     q: "Can I see the bouquet before it is delivered?",

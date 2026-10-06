@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ShieldCheck, Sparkles, Truck, Heart, Camera, MessageCircle, MapPin, CheckCircle2 } from "lucide-react";
-import { SITE_URL } from "@/lib/business";
+import { SITE_URL, BUSINESS } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -37,7 +37,7 @@ const aboutSchema = {
       name: "Lahore Bouquet",
       url: `${SITE_URL}`,
       telephone: "+923104225974",
-      email: "flowerbouquet@gmail.com",
+      email: BUSINESS.email,
       priceRange: "Rs. 1,180 - Rs. 14,500",
       address: {
         "@type": "PostalAddress",

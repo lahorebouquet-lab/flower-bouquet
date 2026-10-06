@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import { LAHORE_AREAS } from "../data/products";
 import { SITE_URL } from "@/lib/business";
+import { CONTACT_EMAIL, CONTACT_PHONE } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
@@ -40,8 +41,8 @@ export default function ContactPage() {
     "name": "Lahore Bouquet",
     "url": `${SITE_URL}/contact`,
     "image": `${SITE_URL}/icon.png`,
-    "telephone": "+923104225974",
-    "email": "flowerbouquet@gmail.com",
+    "telephone": CONTACT_PHONE.e164,
+    "email": CONTACT_EMAIL,
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Lahore",
@@ -161,11 +162,11 @@ export default function ContactPage() {
             </div>
             <div className="space-y-1">
               <a
-                href="mailto:flowerbouquet@gmail.com"
+                href={`mailto:${CONTACT_EMAIL}`}
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#F8F3EA] hover:bg-[#0B0B0B] text-[#0B0B0B] hover:text-white border border-[#E5DED2] font-semibold text-xs transition-all cursor-pointer block break-all"
               >
                 <Mail className="w-3.5 h-3.5 text-[#8B1E2D] shrink-0" />
-                flowerbouquet@gmail.com
+                {CONTACT_EMAIL}
               </a>
             </div>
           </div>

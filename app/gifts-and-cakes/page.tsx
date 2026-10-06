@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     canonical: `${SITE_URL}/gifts-and-cakes`,
   },
   openGraph: {
-    title: "Layers Cakes & Imported Chocolates Delivery in Lahore | Lahore Bouquet",
+    title: "Layers Cakes & Imported Chocolates Delivery in Lahore",
     description: "Send authentic Layers Bakeshop cakes & luxury chocolates in Lahore. Fast 2 to 4 hours express delivery across Gulberg, DHA, Bahria Town & Cantt.",
     url: `${SITE_URL}/gifts-and-cakes`,
     siteName: "Lahore Bouquet",
@@ -195,7 +195,7 @@ export default async function GiftsAndCakesPage() {
           <Truck className="w-6 h-6 text-[#8B1E2D] shrink-0" />
           <div>
             <div className="font-bold text-[#0B0B0B]">Safe Chilled Delivery</div>
-            <div className="text-[11px] text-[#777777]">Temperature-controlled box transit</div>
+            <div className="text-[11px] text-[#777777]">Climate-protected box transit</div>
           </div>
         </div>
         <div className="p-4 rounded-xl bg-white border border-[#E5DED2] flex items-center gap-3 shadow-xs">

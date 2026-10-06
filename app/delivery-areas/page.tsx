@@ -1,9 +1,10 @@
 import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Truck, MessageCircle, ArrowRight } from "lucide-react";
+import { Truck, MessageCircle, ArrowRight, CheckCircle2 } from "lucide-react";
 import { SITE_URL } from "@/lib/business";
-import DeliveryCalculator from "./DeliveryCalculator";
+import { DELIVERY_AREA_FEES, DELIVERY_POLICY_LINE } from "@/lib/delivery";
+import { siteWhatsappLink } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
@@ -80,7 +81,7 @@ export default function DeliveryAreasPage() {
       <section className="space-y-4">
         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#8B1E2D]/20 text-[#C6A15B] border border-[#8B1E2D] text-xs font-bold uppercase tracking-wider">
           <Truck className="w-3.5 h-3.5 text-[#C6A15B]" />
-          Temperature-Controlled Vans
+          Careful, Climate-Protected Delivery
         </span>
 
         <h1 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0B0B0B] leading-tight">
@@ -92,8 +93,42 @@ export default function DeliveryAreasPage() {
         </p>
       </section>
 
-      {/* Delivery Fee Calculator */}
-      <DeliveryCalculator />
+      {/* Delivery Policy — single source of truth in lib/delivery.ts */}
+      <section className="p-6 sm:p-8 rounded-2xl bg-white border border-[rgba(198,161,91,0.35)] shadow-sm space-y-5">
+        <div className="flex items-center gap-2">
+          <Truck className="w-5 h-5 text-[#8B1E2D]" />
+          <h2 className="font-playfair text-xl font-bold text-[#0B0B0B]">
+            Delivery Fees
+          </h2>
+        </div>
+        <p className="text-xs text-[#2A2A2A] leading-relaxed">
+          {DELIVERY_POLICY_LINE} — no hidden charges. For areas not listed below, the fee is confirmed on WhatsApp before you order.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          {DELIVERY_AREA_FEES.map((a) => (
+            <div
+              key={a.area}
+              className="flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-[#F8F3EA] border border-[#E5DED2] text-xs"
+            >
+              <span className="text-[#0B0B0B] font-medium">{a.area}</span>
+              {a.fee === 0 ? (
+                <span className="inline-flex items-center gap-1 text-[#8B1E2D] font-bold">
+                  <CheckCircle2 className="w-3.5 h-3.5" /> FREE
+                </span>
+              ) : (
+                <a
+                  href={siteWhatsappLink(`Hi Lahore Bouquet! What is the delivery fee for ${a.area}?`)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-[#8B1E2D] font-semibold hover:underline"
+                >
+                  <MessageCircle className="w-3.5 h-3.5" /> Fee on WhatsApp
+                </a>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* Zones Grid */}
       <section className="grid grid-cols-1 sm:grid-cols-2 gap-4">

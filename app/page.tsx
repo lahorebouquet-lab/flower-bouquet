@@ -46,13 +46,14 @@ export const metadata: Metadata = {
   }
 };
 
-import { getSanityProducts, getSanityCategories } from "@/sanity/lib/fetch";
+import { getSanityProducts, getSanityCategories, getSanityReviews } from "@/sanity/lib/fetch";
 import { floristSchema, organizationSchema, SITE_URL } from "@/lib/business";
 
 export default async function HomePage() {
-  const [products, categories] = await Promise.all([
+  const [products, categories, reviews] = await Promise.all([
     getSanityProducts(),
     getSanityCategories(),
+    getSanityReviews(),
   ]);
 
   const faqSchema = {
@@ -99,6 +100,7 @@ export default async function HomePage() {
       <HomeClient
         initialProducts={products}
         initialCategories={categories}
+        initialReviews={reviews}
       />
     </main>
     </>

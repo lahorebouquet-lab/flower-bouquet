@@ -7,22 +7,24 @@
  * FAQ, JSON-LD schema, llms.txt, meta tags).
  */
 
+import { CONTACT_EMAIL, CONTACT_PHONE, BUSINESS_HOURS_DISPLAY, BUSINESS_ADDRESS_DISPLAY } from "./site";
+
 export const BUSINESS = {
   name: "Lahore Bouquet",
   tagline: "Fresh Flower Bouquets in Lahore, Delivered to Your Door",
 
   phone: {
     /** E.164 for tel: links and schema */
-    e164: "+923104225974",
+    e164: CONTACT_PHONE.e164,
     /** International display */
-    intl: "+92 310 4225974",
+    intl: CONTACT_PHONE.intl,
     /** Local display */
-    local: "0310-4225974",
+    local: CONTACT_PHONE.local,
     /** wa.me format (no +) */
-    whatsapp: "923104225974",
+    whatsapp: CONTACT_PHONE.whatsapp,
   },
 
-  email: "flowerbouquet@gmail.com",
+  email: CONTACT_EMAIL,
 
   /** Honest city-level address — no fake street address (delivery-only). */
   address: {

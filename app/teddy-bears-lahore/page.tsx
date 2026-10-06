@@ -151,7 +151,7 @@ export default function TeddyBearsLahorePage() {
           <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Teddy Bear Sizes & Prices in Lahore</h2>
         </div>
         <p className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed max-w-3xl">
-          Transparent pricing — no hidden charges. Delivery fee depends on your area (free in Gulberg & Model Town, Rs. 250–400 elsewhere — check our <Link href="/delivery-areas" className="text-[#8B1E2D] underline">delivery fee calculator</Link>).
+          Transparent pricing — no hidden charges. Delivery is free across all listed Lahore areas — see our <Link href="/delivery-areas" className="text-[#8B1E2D] underline">delivery areas</Link> page.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {SIZES.map((s) => (

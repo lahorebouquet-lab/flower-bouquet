@@ -81,6 +81,7 @@ export interface SanityReview {
   quote: string
   item?: string
   verified?: boolean
+  photo?: string
 }
 
 export async function getSanityReviews(): Promise<SanityReview[]> {

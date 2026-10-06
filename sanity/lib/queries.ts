@@ -69,11 +69,13 @@ export const REVIEWS_QUERY = groq`
     _id,
     name,
     location,
+    rating,
     "quote": comment,
     comment,
     "item": bouquet,
     bouquet,
-    verified
+    verified,
+    "photo": photo.asset->url
   }
 `
 

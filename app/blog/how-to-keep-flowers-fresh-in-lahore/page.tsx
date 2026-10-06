@@ -124,7 +124,7 @@ export default function FlowerCareBlogPage() {
         <div className="space-y-1 text-center sm:text-left">
           <h3 className="font-playfair text-xl font-bold text-white">Need Fresh Hydrated Flowers Delivered Today?</h3>
           <p className="text-xs text-[#F8F3EA]/75">
-            All Lahore Bouquet arrangements are prepared in water tubes and delivered in temperature-controlled courier vans across Lahore.
+            All Lahore Bouquet arrangements are prepared in water tubes and delivered with careful, climate-protected delivery across Lahore.
           </p>
         </div>
         <Link 

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCart } from "../context/CartContext";
 import Logo from "./Logo";
+import AnnouncementBar from "./AnnouncementBar";
 import { Heart, ShoppingBag, Menu, X, ChevronDown, ChevronRight, Sparkles, MapPin } from "lucide-react";
 
 interface SubItem {
@@ -156,13 +157,7 @@ export default function Header() {
 
   return (
     <>
-      {/* Site-wide Top Announcement Bar (WCAG Compliant: #8B1E2D bg with #FFFFFF high-contrast text > 11:1 ratio) */}
-      <div className="bg-[#8B1E2D] border-b border-[#C6A15B]/30 text-center py-2 px-4 text-[11px] sm:text-xs text-white flex items-center justify-center gap-2">
-        <span className="w-1.5 h-1.5 rounded-full bg-[#FFF8E7] animate-pulse" aria-hidden="true" />
-        <span className="font-medium tracking-wide text-white">
-          <strong className="text-white font-bold underline decoration-[#C6A15B] decoration-2 underline-offset-2">Same-Day</strong> Flower, Cake & Perfume Delivery Across Lahore • Photo Proof on WhatsApp Before Dispatch
-        </span>
-      </div>
+      <AnnouncementBar />
 
       <header
         className={`sticky top-0 z-50 w-full transition-all duration-300 ${

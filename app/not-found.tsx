@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, Compass, MessageCircle, Sparkles, Flower2, Heart, Gift, Truck } from "lucide-react";
 
 export const metadata = {
-  title: "404 - Page Not Found | Lahore Bouquet",
+  title: "404 - Page Not Found",
   description: "The floral page you are looking for has moved or does not exist. Browse our fresh bouquets, roses, and same-day delivery services across Lahore.",
   robots: {
     index: false,

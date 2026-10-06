@@ -148,7 +148,7 @@ export default function SendFlowersFromUSAPage() {
       <section className="space-y-4">
         <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Pricing for US Senders</h2>
         <p className="text-sm leading-relaxed">
-          Bouquets start at Rs. 1,180 (about $4). Most US customers spend Rs. 2,600–7,499 ($9–26). Delivery is <strong>free</strong> in Gulberg and Model Town, Rs. 250–400 elsewhere — check the exact fee in our <Link href="/delivery-areas" className="text-[#8B1E2D] underline">delivery fee calculator</Link> or the full range on our <Link href="/prices" className="text-[#8B1E2D] underline">prices page</Link>.
+          Bouquets start at Rs. 1,180 (about $4). Most US customers spend Rs. 2,600–7,499 ($9–26). Delivery is <strong>free</strong> across all listed Lahore areas — see our <Link href="/delivery-areas" className="text-[#8B1E2D] underline">delivery areas</Link> page or the full range on our <Link href="/prices" className="text-[#8B1E2D] underline">prices page</Link>.
         </p>
         <a
           href={whatsappLink("Hello Lahore Bouquet! I'm ordering from the USA and want to send flowers to Lahore.")}

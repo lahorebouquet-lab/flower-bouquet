@@ -40,6 +40,12 @@ export const reviewType = defineType({
       type: 'boolean',
       initialValue: true,
     }),
+    defineField({
+      name: 'photo',
+      title: 'Customer Photo (optional)',
+      type: 'image',
+      options: { hotspot: true },
+    }),
   ],
   preview: {
     select: {

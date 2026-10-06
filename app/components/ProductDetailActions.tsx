@@ -1,8 +1,16 @@
 "use client";
 
 import React, { useState } from "react";
-import { Product, LAHORE_AREAS, TIME_SLOTS, CARD_OCCASIONS } from "../data/products";
-import { useCart } from "../context/CartContext";
+import { Product, LAHORE_AREAS, CARD_OCCASIONS } from "../data/products";
+import { useCart, CartItemCustomization } from "../context/CartContext";
+import {
+  getTodayISO,
+  formatDeliveryDate,
+  isSlotAvailableOnDate,
+  DELIVERY_SLOTS,
+} from "@/lib/delivery";
+import { CONTACT_PHONE } from "@/lib/site";
+import DeliverySchedulePicker from "./DeliverySchedulePicker";
 import { 
   ShoppingBag, 
   MessageCircle, 
@@ -19,51 +27,64 @@ import {
 } from "lucide-react";
 
 export default function ProductDetailActions({ product }: { product: Product }) {
-  const { addToCart, wishlist, toggleWishlist, setIsCartOpen, setCheckoutStep, showToast } = useCart();
+  const { addToCart, directOrderNow, wishlist, toggleWishlist, showToast, firstAvailableSlot } = useCart();
   const [quantity, setQuantity] = useState(1);
-  const [selectedSlot, setSelectedSlot] = useState(TIME_SLOTS[1].id);
+  const [selectedDate, setSelectedDate] = useState(getTodayISO());
+  const [selectedSlot, setSelectedSlot] = useState(() => firstAvailableSlot(getTodayISO()));
   const [selectedArea, setSelectedArea] = useState(LAHORE_AREAS[0]);
   const [cardOccasion, setCardOccasion] = useState(CARD_OCCASIONS[0]);
+  const [recipientName, setRecipientName] = useState("");
   const [cardMessage, setCardMessage] = useState("");
   const [isOrdering, setIsOrdering] = useState(false);
 
   const isWishlisted = wishlist.includes(product.id);
   const totalPrice = product.price * quantity;
 
+  const buildCustomization = (): CartItemCustomization => ({
+    deliveryDate: selectedDate,
+    deliverySlot: selectedSlot,
+    area: selectedArea,
+    cardOccasion,
+    recipientName: recipientName.trim(),
+    cardMessage: cardMessage.trim(),
+  });
+
   const handleAddToCart = () => {
-    addToCart(product, quantity);
+    addToCart(product, quantity, undefined, buildCustomization());
   };
 
   const handleInstantWhatsAppOrder = () => {
     setIsOrdering(true);
-    const selectedSlotObj = TIME_SLOTS.find(s => s.id === selectedSlot) || TIME_SLOTS[1];
+    const selectedSlotObj = DELIVERY_SLOTS.find(s => s.id === selectedSlot) || DELIVERY_SLOTS[1];
     
     let msg = `🌸 *New Order Request - Lahore Bouquet*\n\n`;
     msg += `• *Bouquet:* ${product.title}\n`;
     msg += `• *Quantity:* ${quantity}\n`;
     msg += `• *Price:* Rs. ${totalPrice.toLocaleString()} PKR\n`;
     msg += `• *Delivery Area:* ${selectedArea}\n`;
+    msg += `• *Delivery Date:* ${formatDeliveryDate(selectedDate)}\n`;
     msg += `• *Preferred Slot:* ${selectedSlotObj.label} (${selectedSlotObj.time})\n`;
+    if (recipientName.trim()) {
+      msg += `• *Recipient:* ${recipientName.trim()}\n`;
+    }
     if (cardMessage.trim()) {
       msg += `• *Greeting Card:* "${cardMessage.trim()}" (${cardOccasion})\n`;
     }
     msg += `\nPlease confirm availability and payment details. Thank you!`;
 
     const encoded = encodeURIComponent(msg);
-    window.open(`https://wa.me/923104225974?text=${encoded}`, "_blank");
+    window.open(`https://wa.me/${CONTACT_PHONE.whatsapp}?text=${encoded}`, "_blank");
     showToast("Opening WhatsApp with your order details...");
     setTimeout(() => setIsOrdering(false), 1000);
   };
 
   const handleDirectCheckout = () => {
-    addToCart(product, quantity);
-    setIsCartOpen(true);
-    setCheckoutStep(2); // Go directly to Delivery Details
+    directOrderNow(product, undefined, buildCustomization());
   };
 
   return (
     <div className="space-y-6 text-[#2A2A2A]">
-      {/* Lahore Area & Delivery Slot Selection */}
+      {/* Lahore Area & Delivery Schedule Selection */}
       <div className="p-4 rounded-2xl bg-white border border-[#E5DED2] space-y-3.5 text-xs shadow-xs">
         <div className="flex items-center justify-between">
           <span className="font-semibold flex items-center gap-1.5 text-[#0B0B0B]">
@@ -92,33 +113,14 @@ export default function ProductDetailActions({ product }: { product: Product }) 
           </select>
         </div>
 
-        {/* Delivery Time Slot Buttons */}
-        <div className="space-y-1.5">
-          <label className="text-[#2A2A2A] font-medium text-[11px]">Select Delivery Slot:</label>
-          <div className="grid grid-cols-2 gap-2">
-            {TIME_SLOTS.map((slot) => {
-              const isSelected = selectedSlot === slot.id;
-              return (
-                <button
-                  key={slot.id}
-                  type="button"
-                  onClick={() => setSelectedSlot(slot.id)}
-                  className={`p-2.5 rounded-xl border text-left transition-all cursor-pointer ${
-                    isSelected 
-                      ? "bg-[#8B1E2D]/10 border-[#8B1E2D] text-[#0B0B0B]" 
-                      : "bg-[#F8F3EA] border-[#E5DED2] text-[#2A2A2A] hover:border-[#C6A15B]"
-                  }`}
-                >
-                  <div className="flex items-center gap-1.5 font-medium text-[11px]">
-                    <span>{slot.icon}</span>
-                    <span className={isSelected ? "text-[#8B1E2D] font-bold" : ""}>{slot.label}</span>
-                  </div>
-                  <div className="text-[10px] text-[#555555] mt-0.5">{slot.time}</div>
-                </button>
-              );
-            })}
-          </div>
-        </div>
+        {/* Delivery Date + Time Slots (with Lahore cutoff logic) */}
+        <DeliverySchedulePicker
+          date={selectedDate}
+          slotId={selectedSlot}
+          onDateChange={setSelectedDate}
+          onSlotChange={setSelectedSlot}
+          compact
+        />
       </div>
 
       {/* Free Handwritten Greeting Card Customization */}
@@ -148,6 +150,8 @@ export default function ProductDetailActions({ product }: { product: Product }) 
           <input
             type="text"
             placeholder="Recipient's Name (Optional)"
+            value={recipientName}
+            onChange={(e) => setRecipientName(e.target.value)}
             className="w-full px-3 py-2 bg-white border border-[#E5DED2] rounded-xl text-[#0B0B0B] text-xs outline-none placeholder-[#636363]"
           />
         </div>
@@ -220,7 +224,7 @@ export default function ProductDetailActions({ product }: { product: Product }) 
         className="w-full py-3.5 px-4 rounded-full bg-[#0B0B0B] hover:bg-[#C6A15B] text-white hover:text-[#0B0B0B] border border-[#C6A15B]/50 font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-md transition-all cursor-pointer active:scale-95"
       >
         <MessageCircle className="w-4 h-4 text-[#25D366]" />
-        Order Instant Via WhatsApp (0310-4225974)
+        Order Instant Via WhatsApp ({CONTACT_PHONE.local})
       </button>
 
       {/* Wishlist and Trust Strip */}

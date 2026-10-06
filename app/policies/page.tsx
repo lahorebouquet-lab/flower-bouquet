@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     canonical: `${SITE_URL}/policies`,
   },
   openGraph: {
-    title: "Customer Policies | Lahore Bouquet",
+    title: "Customer Policies",
     description: "Read Lahore Bouquet's clear policies for delivery, flower substitution, damage replacement, and booking cancellations across Lahore.",
   }
 };

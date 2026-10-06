@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!post) {
     return {
-      title: "Blog Post Not Found | Lahore Bouquet",
+      title: "Blog Post Not Found",
     };
   }
 
