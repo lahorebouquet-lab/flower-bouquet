@@ -4,8 +4,7 @@ import React, { useState, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { 
-  ALL_PRODUCTS, 
-  REVIEWS 
+  ALL_PRODUCTS 
 } from "../data/products";
 import { HOMEPAGE_FAQS } from "../data/homepage";
 import ProductCard from "./ProductCard";
@@ -18,7 +17,8 @@ import {
   Star, 
   CheckCircle2, 
   ChevronDown,
-  Banknote
+  Banknote,
+  Truck
 } from "lucide-react";
 import dynamic from "next/dynamic";
 
@@ -31,20 +31,17 @@ const CategorySection = dynamic(() => import("./CategorySection"), {
   ssr: true,
 });
 
-import { SanityReview, SanityCategory } from "@/sanity/lib/fetch";
+import { SanityCategory } from "@/sanity/lib/fetch";
 import { Product } from "../data/products";
 
 export default function HomeClient({
   initialProducts,
-  initialReviews,
   initialCategories,
 }: {
   initialProducts?: Product[];
-  initialReviews?: SanityReview[];
   initialCategories?: SanityCategory[];
 }) {
   const products = (initialProducts && initialProducts.length > 0) ? initialProducts : ALL_PRODUCTS;
-  const reviews = (initialReviews && initialReviews.length > 0) ? initialReviews : REVIEWS;
 
   const [activeFilter, setActiveFilter] = useState<string>("All");
   const [visibleCount, setVisibleCount] = useState<number>(8);
@@ -52,14 +49,31 @@ export default function HomeClient({
 
   const filterOptions = ["All", "Roses", "Sunflowers", "Bouquets", "Wedding Décor", "Gifts & Cakes"];
 
+  const bestsellers = useMemo(() => {
+    // 4 representative pinnacle products: Rose bouquet, Hand-tied bouquet, Sunflower bouquet, and Bestseller Cake
+    const topRose = products.find(p => (p.category === "Roses" || p.category === "Velvet Red Roses") && (p.badgeType === "hot" || p.badge?.includes("Signature")));
+    const topBouquet = products.find(p => p.category === "Bouquets" && (p.badgeType === "hot" || p.badgeType === "promotion" || p.badgeType === "favorite"));
+    const topSunflower = products.find(p => p.category === "Sunflowers");
+    const topCake = products.find(p => (p.category === "Gifts & Cakes" || p.category === "Chocolate Bouquets") && (p.badgeType === "bestseller" || p.badgeType === "hot"));
+
+    const curated = [topRose, topBouquet, topSunflower, topCake].filter(Boolean) as Product[];
+    if (curated.length === 4) return curated;
+
+    // Fallback to top rated items
+    return products.filter(p => p.badgeType === "hot" || p.badge === "Bestseller" || p.badge === "Signature").slice(0, 4);
+  }, [products]);
+
   const displayedProducts = useMemo(() => {
+    // Exclude bestseller-section products so the two grids never repeat the same items
+    const bestsellerIds = new Set((bestsellers || []).map(p => p.id));
+    const pool = products.filter(p => !bestsellerIds.has(p.id));
     if (activeFilter === "All") {
       // Balanced curation across all florist & gift departments
-      const roses = products.filter(p => p.category === "Roses" || p.category === "Velvet Red Roses" || p.category === "Pure White Roses");
-      const bouquets = products.filter(p => p.category === "Bouquets");
-      const sunflowers = products.filter(p => p.category === "Sunflowers");
-      const cakesAndGifts = products.filter(p => p.category === "Gifts & Cakes" || p.category === "Chocolate Bouquets");
-      const specialty = products.filter(p => p.category === "Money Bouquets" || p.category === "Crochet" || p.category === "Dried" || p.category === "Wedding Décor");
+      const roses = pool.filter(p => p.category === "Roses" || p.category === "Velvet Red Roses" || p.category === "Pure White Roses");
+      const bouquets = pool.filter(p => p.category === "Bouquets");
+      const sunflowers = pool.filter(p => p.category === "Sunflowers");
+      const cakesAndGifts = pool.filter(p => p.category === "Gifts & Cakes" || p.category === "Chocolate Bouquets");
+      const specialty = pool.filter(p => p.category === "Money Bouquets" || p.category === "Crochet" || p.category === "Dried" || p.category === "Wedding Décor");
 
       const result: Product[] = [];
       const addedIds = new Set<string | number>();
@@ -107,49 +121,39 @@ export default function HomeClient({
       return result;
     }
     return products.filter(p => p.category === activeFilter);
-  }, [activeFilter, products]);
-
-  const bestsellers = useMemo(() => {
-    // 4 representative pinnacle products: Rose bouquet, Hand-tied bouquet, Sunflower bouquet, and Bestseller Cake
-    const topRose = products.find(p => (p.category === "Roses" || p.category === "Velvet Red Roses") && (p.badgeType === "hot" || p.badge?.includes("Signature")));
-    const topBouquet = products.find(p => p.category === "Bouquets" && (p.badgeType === "hot" || p.badgeType === "promotion" || p.badgeType === "favorite"));
-    const topSunflower = products.find(p => p.category === "Sunflowers");
-    const topCake = products.find(p => (p.category === "Gifts & Cakes" || p.category === "Chocolate Bouquets") && (p.badgeType === "bestseller" || p.badgeType === "hot"));
-
-    const curated = [topRose, topBouquet, topSunflower, topCake].filter(Boolean) as Product[];
-    if (curated.length === 4) return curated;
-
-    // Fallback to top rated items
-    return products.filter(p => p.badgeType === "hot" || p.badge === "Bestseller" || p.badge === "Signature").slice(0, 4);
-  }, [products]);
+  }, [activeFilter, products, bestsellers]);
 
   return (
     <>
       {/* 1. HERO SECTION (Preserving 100% Real Size & Natural Uncropped Proportions) */}
-      <section className="relative min-h-[480px] sm:min-h-[520px] lg:min-h-[580px] xl:min-h-[640px] flex items-center overflow-hidden border-b border-[#C6A15B]/30 bg-[#F6F1E7] py-10 sm:py-14 lg:py-16">
-        {/* Full-Width Background Image Layer - Responsive & LCP Optimized */}
-        <div className="absolute inset-0 z-0 overflow-hidden">
+      <section className="relative lg:min-h-[580px] xl:min-h-[640px] flex items-center overflow-hidden border-b border-[#C6A15B]/30 bg-[#F6F1E7] py-10 sm:py-14 lg:py-16">
+        {/* Desktop: Full-Width Background Image Layer - Responsive & LCP Optimized */}
+        <div className="hidden lg:block absolute inset-0 z-0 overflow-hidden">
           <picture>
-            <source
-              media="(max-width: 640px)"
-              srcSet="/images/hero-blush-elegance-banner.webp"
-              type="image/webp"
-            />
             <img
               src="/images/hero-blush-elegance-banner.webp"
               alt="Elegant blush pink rose and lily bouquet in a gold vase for flower delivery in Lahore | Lahore Bouquet"
               fetchPriority="high"
               decoding="async"
-              className="absolute inset-0 w-full h-full object-cover object-[70%_center] sm:object-cover sm:object-center"
+              className="absolute inset-0 w-full h-full object-cover object-center"
             />
           </picture>
 
           {/* Soft cream left fade to ensure pristine text readability */}
-          <div className="hidden lg:block absolute inset-y-0 left-0 w-2/5 bg-gradient-to-r from-[#F6F1E7] via-[#F6F1E7]/70 to-transparent pointer-events-none" />
-          <div className="block lg:hidden absolute inset-0 bg-gradient-to-t from-[#F6F1E7] via-[#F6F1E7]/80 to-transparent pointer-events-none" />
+          <div className="absolute inset-y-0 left-0 w-2/5 bg-gradient-to-r from-[#F6F1E7] via-[#F6F1E7]/70 to-transparent pointer-events-none" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
+          {/* Mobile: bouquet image shown clearly above the text (< lg) */}
+          <div className="lg:hidden mb-6 rounded-3xl overflow-hidden border border-[#C6A15B]/40 shadow-lg">
+            <img
+              src="/images/hero-blush-elegance-banner.webp"
+              alt="Elegant blush pink rose and lily bouquet in a gold vase for flower delivery in Lahore | Lahore Bouquet"
+              fetchPriority="high"
+              decoding="async"
+              className="w-full h-64 sm:h-80 object-cover object-center"
+            />
+          </div>
           {/* Natural clean text layout without any card or box border */}
           <div className="max-w-xl lg:max-w-2xl space-y-4 sm:space-y-6 text-center lg:text-left">
             {/* Eyebrow: burgundy on cream */}
@@ -163,9 +167,9 @@ export default function HomeClient({
               Fresh Flower Bouquets in Lahore, <span className="text-[#8B1E2D]">Delivered to Your Door</span>
             </h1>
 
-            {/* Description */}
+            {/* Quick answer (AEO) */}
             <p className="text-[#2A2A2A] text-xs sm:text-sm lg:text-base max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Lahore Bouquet is a premier flower shop in Lahore that makes fresh bouquets for birthdays, anniversaries, get-well wishes, and celebrations. Sourced daily and hand-tied to order in Gulberg, we deliver across Lahore in 2 to 5 hours—including DHA, Johar Town, Model Town, and Bahria Town—with a live photo sent on WhatsApp before dispatch.
+              <strong>Same-day flower delivery in Lahore costs from Rs. 1,180 and arrives in 2–5 hours.</strong> Lahore Bouquet hand-ties fresh roses, sunflowers, lilies and money bouquets to order, sends you a photo on WhatsApp before dispatch, and delivers across DHA, Gulberg, Model Town, Bahria Town and Johar Town — with a midnight surprise slot for birthdays.
             </p>
 
             {/* Button System (Section 18):
@@ -184,7 +188,7 @@ export default function HomeClient({
                 href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20flowers%20in%20Lahore."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-full bg-[#25D366]/15 hover:bg-[#25D366] text-[#25D366] hover:text-white border border-[#25D366]/50 font-semibold text-xs uppercase tracking-wider flex items-center gap-2 transition-all duration-200 active:scale-95 shadow-md"
+                className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-full bg-[#25D366] hover:bg-[#128C7E] text-white border border-[#25D366] font-semibold text-xs uppercase tracking-wider flex items-center gap-2 transition-all duration-200 active:scale-95 shadow-md"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>Order on WhatsApp</span>
@@ -194,13 +198,13 @@ export default function HomeClient({
             {/* Trust Micro-Badges (Accessible 12px text) */}
             <div className="pt-1 sm:pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-y-2 gap-x-4 text-xs text-[#2A2A2A]">
               <span className="flex items-center gap-1.5">
-                <Star className="w-3.5 h-3.5 fill-[#C6A15B] text-[#C6A15B]" />
-                <span><strong className="text-[#0B0B0B]">4.9/5 Rating</strong> (1,200+ Delivered)</span>
+                <Truck className="w-3.5 h-3.5 text-[#8B1E2D]" />
+                <span>Same-Day Delivery in Lahore</span>
               </span>
               <span className="hidden sm:inline text-[#0B0B0B]/30">•</span>
               <span>100% Fresh Stems Guarantee</span>
               <span className="hidden sm:inline text-white/40">•</span>
-              <span>Gulberg Artisanal Studio</span>
+              <span>Midnight Surprise Slot</span>
             </div>
           </div>
         </div>
@@ -500,58 +504,6 @@ export default function HomeClient({
               loading="lazy"
               className="object-cover"
             />
-          </div>
-        </div>
-      </section>
-
-      {/* 9. CUSTOMER REVIEWS (#F8F3EA background, #FFFFFF review cards) */}
-      <section className="w-full py-16 px-4 sm:px-6 border-b border-[#E5DED2] bg-[#F8F3EA] text-[#101012]">
-        <div className="max-w-7xl mx-auto space-y-10">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-            <div>
-              <span className="text-xs uppercase font-bold tracking-widest text-[#8B1E2D]">
-                Verified Customer Feedback
-              </span>
-              <h2 className="font-playfair text-2xl sm:text-4xl font-bold text-[#101012] mt-1">
-                What Customers Say
-              </h2>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="flex text-[#C6A15B]">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-[#C6A15B]" />
-                ))}
-              </div>
-              <span className="text-xs font-bold text-[#101012]">4.9 / 5.0 Rating in Lahore</span>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {reviews.map((rev, idx) => (
-              <div 
-                key={idx} 
-                className="p-6 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] hover:border-[#C6A15B] transition-all space-y-3 flex flex-col justify-between text-xs shadow-xs"
-              >
-                <div className="space-y-3">
-                  <div className="flex text-[#C6A15B]">
-                    {[...Array(rev.rating)].map((_, i) => (
-                      <Star key={i} className="w-3.5 h-3.5 fill-[#C6A15B]" />
-                    ))}
-                  </div>
-                  <p className="text-[#2A2A2A] italic leading-relaxed">
-                    "{rev.quote}"
-                  </p>
-                </div>
-                <div className="pt-3 border-t border-[#E5DED2]">
-                  <div className="flex items-center justify-between">
-                    <span className="font-bold text-[#101012]">{rev.name}</span>
-                    <span className="text-[10px] text-[#8B1E2D] font-bold">✓ Verified</span>
-                  </div>
-                  <div className="text-[11px] text-[#555555]">{rev.location}</div>
-                  <div className="text-[10px] text-[#8B1E2D] mt-1 font-semibold">{rev.item}</div>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>

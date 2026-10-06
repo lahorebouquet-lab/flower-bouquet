@@ -5,6 +5,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../components/ProductCard";
 import { Banknote, Truck, Camera, MessageCircle, HelpCircle } from "lucide-react";
+import { SITE_URL, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -12,12 +13,12 @@ export const metadata: Metadata = {
   },
   description: "Custom money bouquets in Lahore made with real PKR notes and fresh roses. Perfect for weddings, Eid and birthdays. Set your own budget.",
   alternates: {
-    canonical: "https://lahorebouquet.com/money-bouquets",
+    canonical: `${SITE_URL}/money-bouquets`,
   },
   openGraph: {
     title: "Money Bouquet in Lahore | Custom Cash Gift Bouquets",
     description: "Custom money bouquets in Lahore made with real PKR notes and fresh roses. Perfect for weddings, Eid and birthdays. Set your own budget.",
-    url: "https://lahorebouquet.com/money-bouquets",
+    url: `${SITE_URL}/money-bouquets`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
@@ -28,6 +29,8 @@ export default async function MoneyBouquetsPage() {
   const allProducts = await getSanityProducts();
   const moneyProducts = allProducts.filter(p => p.category === "Money Bouquets");
 
+  const itemListJsonLd = itemListSchema(moneyProducts, `${SITE_URL}/money-bouquets`, "Money Bouquets in Lahore");
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -36,19 +39,19 @@ export default async function MoneyBouquetsPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Bouquets",
-        item: "https://lahorebouquet.com/bouquets",
+        item: `${SITE_URL}/bouquets`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Money Bouquets",
-        item: "https://lahorebouquet.com/money-bouquets",
+        item: `${SITE_URL}/money-bouquets`,
       },
     ],
   };
@@ -86,6 +89,10 @@ export default async function MoneyBouquetsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
+      />
 
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="text-xs text-[#777777] flex items-center gap-2">
@@ -109,7 +116,7 @@ export default async function MoneyBouquetsPage() {
           </h1>
 
           <p className="text-[#F8F3EA]/85 text-xs sm:text-sm leading-relaxed font-light">
-            A money bouquet lets you give cash without handing over an envelope. We fold real notes by hand into a fan or flower shape and add fresh red roses. You choose the amount and the note denominations, whether Rs. 100, 500, 1,000 or 5,000.
+            <strong className="text-white">Money bouquets in Lahore start from Rs. 2,500 with same-day delivery in 2–5 hours.</strong> A money bouquet lets you give cash without handing over an envelope. We fold real notes by hand into a fan or flower shape and add fresh red roses. You choose the amount and the note denominations, whether Rs. 100, 500, 1,000 or 5,000.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-2 text-xs text-white/80">

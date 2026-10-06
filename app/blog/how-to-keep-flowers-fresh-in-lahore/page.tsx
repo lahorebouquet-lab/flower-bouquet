@@ -1,6 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -8,12 +9,12 @@ export const metadata: Metadata = {
   },
   description: "Learn how to keep cut roses and flower bouquets alive for up to 7 days in Lahore's warm climate. Practical florist tips on water changing, stem trimming, and vase placement.",
   alternates: {
-    canonical: "https://lahorebouquet.com/blog/how-to-keep-flowers-fresh-in-lahore",
+    canonical: `${SITE_URL}/blog/how-to-keep-flowers-fresh-in-lahore`,
   },
   openGraph: {
     title: "How to Keep Flower Bouquets Fresh in Lahore Heat (Florist Tips)",
     description: "Learn how to keep cut roses and flower bouquets alive for up to 7 days in Lahore's warm climate. Practical florist tips on water changing, stem trimming, and vase placement.",
-    url: "https://lahorebouquet.com/blog/how-to-keep-flowers-fresh-in-lahore",
+    url: `${SITE_URL}/blog/how-to-keep-flowers-fresh-in-lahore`,
     type: "article",
   }
 };
@@ -27,12 +28,12 @@ export default function FlowerCareBlogPage() {
     author: {
       "@type": "Organization",
       name: "Lahore Bouquet Florist Team",
-      url: "https://lahorebouquet.com",
+      url: `${SITE_URL}`,
     },
     publisher: {
       "@type": "Organization",
       name: "Lahore Bouquet",
-      url: "https://lahorebouquet.com",
+      url: `${SITE_URL}`,
     },
     datePublished: "2026-10-01",
     dateModified: "2026-10-03",

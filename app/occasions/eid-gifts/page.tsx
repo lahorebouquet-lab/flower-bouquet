@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { Moon, Truck, Camera, MessageCircle } from "lucide-react";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -11,12 +12,12 @@ export const metadata: Metadata = {
   },
   description: "Send Eid bouquets, imported roses, gourmet mithai boxes, chocolate hampers & gift baskets across Lahore. Same-day & Chaand Raat express delivery.",
   alternates: {
-    canonical: "https://lahorebouquet.com/occasions/eid-gifts",
+    canonical: `${SITE_URL}/occasions/eid-gifts`,
   },
   openGraph: {
     title: "Eid Gifts & Flower Delivery in Lahore | Eid ul Fitr & Adha",
     description: "Send Eid bouquets, imported roses, gourmet mithai boxes, chocolate hampers & gift baskets across Lahore. Same-day & Chaand Raat express delivery.",
-    url: "https://lahorebouquet.com/occasions/eid-gifts",
+    url: `${SITE_URL}/occasions/eid-gifts`,
   }
 };
 
@@ -32,19 +33,19 @@ export default async function EidGiftsPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Occasions",
-        item: "https://lahorebouquet.com/occasions/birthday",
+        item: `${SITE_URL}/occasions/birthday`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Eid Gifts & Flowers",
-        item: "https://lahorebouquet.com/occasions/eid-gifts",
+        item: `${SITE_URL}/occasions/eid-gifts`,
       },
     ],
   };

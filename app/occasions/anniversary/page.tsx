@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { Heart, Truck, Camera, MessageCircle, HelpCircle } from "lucide-react";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -11,12 +12,12 @@ export const metadata: Metadata = {
   },
   description: "Anniversary flower delivery in Lahore. Red roses, 50-rose bouquets, cake combos and midnight surprises. Photo on WhatsApp before delivery.",
   alternates: {
-    canonical: "https://lahorebouquet.com/occasions/anniversary",
+    canonical: `${SITE_URL}/occasions/anniversary`,
   },
   openGraph: {
     title: "Anniversary Flowers in Lahore | Roses & Surprise Setups",
     description: "Anniversary flower delivery in Lahore. Red roses, 50-rose bouquets, cake combos and midnight surprises. Photo on WhatsApp before delivery.",
-    url: "https://lahorebouquet.com/occasions/anniversary",
+    url: `${SITE_URL}/occasions/anniversary`,
   }
 };
 

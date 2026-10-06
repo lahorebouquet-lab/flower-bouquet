@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "Bestselling Bouquets in Lahore | Top-Rated Fresh Flowers",
   description: "Explore Lahore's favorite floral arrangements. Most-loved fresh Dutch roses, sunflower mixes, and luxury gift combos with same-day express delivery.",
   alternates: {
-    canonical: "https://lahorebouquet.com/bestsellers",
+    canonical: `${SITE_URL}/bestsellers`,
   },
   openGraph: {
     title: "Bestselling Bouquets in Lahore | Top-Rated Fresh Flowers",
     description: "Explore Lahore's favorite floral arrangements. Most-loved fresh Dutch roses, sunflower mixes, and luxury gift combos with same-day express delivery.",
-    url: "https://lahorebouquet.com/bestsellers",
+    url: `${SITE_URL}/bestsellers`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
@@ -29,13 +30,13 @@ export default function BestsellersLayout({
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Bestsellers",
-        item: "https://lahorebouquet.com/bestsellers",
+        item: `${SITE_URL}/bestsellers`,
       },
     ],
   };

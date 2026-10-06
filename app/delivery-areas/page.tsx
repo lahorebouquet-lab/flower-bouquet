@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Truck, MessageCircle, ArrowRight } from "lucide-react";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -9,12 +10,12 @@ export const metadata: Metadata = {
   },
   description: "We deliver flowers to DHA, Gulberg, Bahria Town, Model Town, Johar Town, Cantt, Askari and more across Lahore in 2 to 5 hours.",
   alternates: {
-    canonical: "https://lahorebouquet.com/delivery-areas",
+    canonical: `${SITE_URL}/delivery-areas`,
   },
   openGraph: {
     title: "Flower Delivery Areas in Lahore | DHA, Gulberg, Bahria",
     description: "We deliver flowers to DHA, Gulberg, Bahria Town, Model Town, Johar Town, Cantt, Askari and more across Lahore in 2 to 5 hours.",
-    url: "https://lahorebouquet.com/delivery-areas",
+    url: `${SITE_URL}/delivery-areas`,
   }
 };
 
@@ -38,13 +39,13 @@ export default function DeliveryAreasPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Delivery Areas",
-        item: "https://lahorebouquet.com/delivery-areas",
+        item: `${SITE_URL}/delivery-areas`,
       },
     ],
   };

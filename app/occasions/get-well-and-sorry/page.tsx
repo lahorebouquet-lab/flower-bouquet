@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { Truck, Camera, MessageCircle, HeartHandshake, AlertCircle } from "lucide-react";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -11,12 +12,12 @@ export const metadata: Metadata = {
   },
   description: "Get well soon and apology bouquets in Lahore. Soft white roses, sunflowers and gentle mixes delivered to homes and hospitals.",
   alternates: {
-    canonical: "https://lahorebouquet.com/occasions/get-well-and-sorry",
+    canonical: `${SITE_URL}/occasions/get-well-and-sorry`,
   },
   openGraph: {
     title: "Get Well Soon & Sorry Flowers in Lahore",
     description: "Get well soon and apology bouquets in Lahore. Soft white roses, sunflowers and gentle mixes delivered to homes and hospitals.",
-    url: "https://lahorebouquet.com/occasions/get-well-and-sorry",
+    url: `${SITE_URL}/occasions/get-well-and-sorry`,
   }
 };
 
@@ -43,13 +44,13 @@ export default async function GetWellAndSorryPage() {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://lahorebouquet.com",
+                item: `${SITE_URL}`,
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Get Well Soon & Sorry",
-                item: "https://lahorebouquet.com/occasions/get-well-and-sorry",
+                item: `${SITE_URL}/occasions/get-well-and-sorry`,
               },
             ],
           }),

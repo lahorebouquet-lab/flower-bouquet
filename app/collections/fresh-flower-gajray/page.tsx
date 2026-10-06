@@ -5,6 +5,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { Sparkles, MessageCircle, Clock, ShieldCheck, HeartHandshake, CheckCircle2 } from "lucide-react";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
   },
   description: "Order fresh motia & red rose gajray, wedding garlands (mala/haar), haath phool, and handmade bridal mehndi jewellery in Lahore. 4 hours express delivery across all areas. Prices from Rs. 2,499.",
   alternates: {
-    canonical: "https://lahorebouquet.com/collections/fresh-flower-gajray",
+    canonical: `${SITE_URL}/collections/fresh-flower-gajray`,
   },
   keywords: [
     "gajray lahore",
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Gajray & Garlands Mala in Lahore | 4 Hours Delivery | Mehndi Jewellery",
     description: "Order fresh motia & red rose gajray, wedding garlands (mala/haar), haath phool, and handmade bridal mehndi jewellery in Lahore. 4 hours express delivery across all areas.",
-    url: "https://lahorebouquet.com/collections/fresh-flower-gajray",
+    url: `${SITE_URL}/collections/fresh-flower-gajray`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
@@ -53,19 +54,19 @@ export default async function FreshFlowerGajrayPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Wedding Décor",
-        item: "https://lahorebouquet.com/wedding-decor",
+        item: `${SITE_URL}/wedding-decor`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Gajray & Garlands Mala in Lahore",
-        item: "https://lahorebouquet.com/collections/fresh-flower-gajray",
+        item: `${SITE_URL}/collections/fresh-flower-gajray`,
       },
     ],
   };

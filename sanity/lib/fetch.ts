@@ -101,6 +101,7 @@ export async function getSanityReviews(): Promise<SanityReview[]> {
 export interface SanityBlogPost {
   id: string
   _id: string
+  _updatedAt?: string
   title: string
   slug: string
   excerpt: string

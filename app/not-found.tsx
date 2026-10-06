@@ -76,7 +76,7 @@ export default function NotFound() {
           </Link>
 
           <a
-            href="https://wa.me/923001234567?text=Hi%20Lahore%20Bouquet,%20I%20was%20looking%20for%20flowers%20on%20your%20website%20and%20need%20assistance."
+            href="https://wa.me/923104225974?text=Hi%20Lahore%20Bouquet,%20I%20was%20looking%20for%20flowers%20on%20your%20website%20and%20need%20assistance."
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white font-semibold text-xs uppercase tracking-wider transition-all shadow-md flex items-center gap-2"

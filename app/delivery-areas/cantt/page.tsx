@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { MapPin, Clock, Camera, MessageCircle, ShieldCheck, ShieldAlert } from "lucide-react";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -11,12 +12,12 @@ export const metadata: Metadata = {
   },
   description: "Same-day fresh flowers delivered to Lahore Cantt, Saddar, Cavalry Ground, PAF Colony & CMH in 2 to 2.5 hours. Gate clearance protocol & photo on WhatsApp.",
   alternates: {
-    canonical: "https://lahorebouquet.com/delivery-areas/cantt",
+    canonical: `${SITE_URL}/delivery-areas/cantt`,
   },
   openGraph: {
     title: "Flower Delivery in Lahore Cantt & Cavalry Ground | Same-Day",
     description: "Same-day fresh flowers delivered to Lahore Cantt, Saddar, Cavalry Ground, PAF Colony & CMH in 2 to 2.5 hours. Gate clearance protocol & photo on WhatsApp.",
-    url: "https://lahorebouquet.com/delivery-areas/cantt",
+    url: `${SITE_URL}/delivery-areas/cantt`,
   }
 };
 
@@ -32,19 +33,19 @@ export default async function CanttDeliveryPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Delivery Areas",
-        item: "https://lahorebouquet.com/delivery-areas",
+        item: `${SITE_URL}/delivery-areas`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Cantt Lahore",
-        item: "https://lahorebouquet.com/delivery-areas/cantt",
+        item: `${SITE_URL}/delivery-areas/cantt`,
       },
     ],
   };

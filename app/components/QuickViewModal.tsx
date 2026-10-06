@@ -46,7 +46,7 @@ export default function QuickViewModal() {
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-3.5 h-3.5 fill-[#C6A15B]" />
                 ))}
-                <span className="text-[#636363] ml-1">({quickViewProduct.reviewCount} reviews)</span>
+                <span className="text-[#636363] ml-1">Handcrafted fresh in Lahore</span>
               </div>
 
               <p className="text-xs text-[#2A2A2A] leading-relaxed mb-4">

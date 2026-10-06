@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { Clock, Truck, MessageCircle, AlertCircle, ShieldCheck } from "lucide-react";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -11,12 +12,12 @@ export const metadata: Metadata = {
   },
   description: "Fresh flower bouquets, cakes & gifts delivered to Bahria Town Lahore (Sectors A–F, Safari Villas) and Lake City in 2 to 4 hours. Photo on WhatsApp first.",
   alternates: {
-    canonical: "https://lahorebouquet.com/delivery-areas/bahria-town",
+    canonical: `${SITE_URL}/delivery-areas/bahria-town`,
   },
   openGraph: {
     title: "Flower Delivery in Bahria Town Lahore | Same-Day Bouquets",
     description: "Fresh flower bouquets, cakes & gifts delivered to Bahria Town Lahore (Sectors A–F, Safari Villas) and Lake City in 2 to 4 hours. Photo on WhatsApp first.",
-    url: "https://lahorebouquet.com/delivery-areas/bahria-town",
+    url: `${SITE_URL}/delivery-areas/bahria-town`,
   }
 };
 
@@ -32,19 +33,19 @@ export default async function BahriaTownDeliveryPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Delivery Areas",
-        item: "https://lahorebouquet.com/delivery-areas",
+        item: `${SITE_URL}/delivery-areas`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Bahria Town Lahore",
-        item: "https://lahorebouquet.com/delivery-areas/bahria-town",
+        item: `${SITE_URL}/delivery-areas/bahria-town`,
       },
     ],
   };

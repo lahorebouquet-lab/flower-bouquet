@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { BookOpen, Calendar, ArrowRight, Clock } from "lucide-react";
 import { getSanityBlogPosts } from "@/sanity/lib/fetch";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -11,12 +12,12 @@ export const metadata: Metadata = {
   },
   description: "Expert floral care tips, occasion gifting guides, and Lahore floristry news by master florists at Lahore Bouquet.",
   alternates: {
-    canonical: "https://lahorebouquet.com/blog",
+    canonical: `${SITE_URL}/blog`,
   },
   openGraph: {
     title: "Flower Care & Gifting Guides Lahore | Florist Blog",
     description: "Expert floral care tips, occasion gifting guides, and Lahore floristry news by master florists at Lahore Bouquet.",
-    url: "https://lahorebouquet.com/blog",
+    url: `${SITE_URL}/blog`,
   }
 };
 
@@ -47,7 +48,43 @@ export const BLOG_POSTS = [
     readTime: "4 min read",
     tag: "Gifting Trends",
     image: "/images/categories/money_bouquets.webp",
-  }
+  },
+  {
+    slug: "flower-prices-lahore-2026",
+    title: "Flower Prices in Lahore 2026: Rose, Sunflower & Money Bouquet Price Guide",
+    excerpt: "What bouquets really cost in Lahore right now. Real 2026 price table: roses from Rs. 1,180, sunflowers, lilies, money bouquets and wedding décor packages.",
+    date: "October 2026",
+    readTime: "5 min read",
+    tag: "Price Guide",
+    image: "/images/hero-luxury-bouquet.jpg",
+  },
+  {
+    slug: "send-flowers-to-lahore-from-abroad",
+    title: "How to Send Flowers to Lahore from UK, USA & UAE (2026 Guide)",
+    excerpt: "Overseas Pakistani? Order on WhatsApp, pay by bank transfer, and get same-day 2–5 hour delivery across Lahore with photo confirmation.",
+    date: "October 2026",
+    readTime: "4 min read",
+    tag: "Overseas Guide",
+    image: "/images/hero-luxury-bouquet.jpg",
+  },
+  {
+    slug: "midnight-flower-cake-delivery-lahore",
+    title: "Midnight Flower & Cake Delivery in Lahore — How It Works",
+    excerpt: "Surprise them at exactly 12 AM. Midnight slots, cake combos, booking cut-offs and the Lahore areas we cover every night.",
+    date: "October 2026",
+    readTime: "4 min read",
+    tag: "Delivery Guide",
+    image: "/images/categories/money_bouquets.webp",
+  },
+  {
+    slug: "best-flowers-birthday-anniversary-get-well-pakistan",
+    title: "Best Flowers for Birthday, Anniversary & Get-Well in Pakistan",
+    excerpt: "Which blooms for which occasion? Florist guide with meanings, prices and same-day Lahore delivery for birthdays, anniversaries and get-well wishes.",
+    date: "October 2026",
+    readTime: "5 min read",
+    tag: "Occasions Guide",
+    image: "/images/lahoreblooms/crimson_blush.webp",
+  },
 ];
 
 export default async function BlogIndexPage() {
@@ -62,13 +99,13 @@ export default async function BlogIndexPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Blog & Floral Guides",
-        item: "https://lahorebouquet.com/blog",
+        item: `${SITE_URL}/blog`,
       },
     ],
   };

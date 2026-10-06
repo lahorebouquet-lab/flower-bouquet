@@ -16,6 +16,7 @@ import {
   Navigation
 } from "lucide-react";
 import { LAHORE_AREAS } from "../data/products";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -25,10 +26,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact Lahore Bouquet | WhatsApp, Phone & Address",
     description: "Contact Lahore Bouquet on WhatsApp or phone, in Lahore, Pakistan. Open 9 AM to 1 AM daily.",
-    url: "https://lahorebouquet.com/contact",
+    url: `${SITE_URL}/contact`,
   },
   alternates: {
-    canonical: "https://lahorebouquet.com/contact",
+    canonical: `${SITE_URL}/contact`,
   }
 };
 
@@ -37,8 +38,8 @@ export default function ContactPage() {
     "@context": "https://schema.org",
     "@type": "Florist",
     "name": "Lahore Bouquet",
-    "url": "https://lahorebouquet.com/contact",
-    "image": "https://lahorebouquet.com/icon.png",
+    "url": `${SITE_URL}/contact`,
+    "image": `${SITE_URL}/icon.png`,
     "telephone": "+923104225974",
     "email": "flowerbouquet@gmail.com",
     "address": {

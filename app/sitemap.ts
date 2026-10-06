@@ -1,75 +1,115 @@
-import { MetadataRoute } from "next";
+import type { MetadataRoute } from "next";
 import { getSanityProducts, getSanityBlogPosts } from "@/sanity/lib/fetch";
 import { ALL_PRODUCTS } from "./data/products";
+import { SITE_URL } from "@/lib/business";
+
+/**
+ * Real lastmod dates:
+ * - Products: Sanity _updatedAt
+ * - Blog posts: publishedAt / _updatedAt
+ * - Static pages: git last-commit date of the page file (falls back to a fixed baseline)
+ * No changefreq/priority (Google ignores them).
+ */
+
+function gitLastModified(relativePath: string): Date | null {
+  try {
+    const { execSync } = require("child_process") as typeof import("child_process");
+    const out = execSync(`git log -1 --format=%cI -- "${relativePath}"`, {
+      cwd: process.cwd(),
+      stdio: ["ignore", "pipe", "ignore"],
+    })
+      .toString()
+      .trim();
+    return out ? new Date(out) : null;
+  } catch {
+    return null;
+  }
+}
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = "https://lahorebouquet.com";
-  const now = new Date();
+  const baseUrl = SITE_URL;
+  const baseline = new Date("2026-10-01T00:00:00+05:00");
 
-  // Canonical Primary Routes (excluding 301-redirected alias routes)
-  const staticRoutes: MetadataRoute.Sitemap = [
-    { url: `${baseUrl}`, lastModified: now, changeFrequency: "daily", priority: 1.0 },
-    { url: `${baseUrl}/flower-delivery-in-lahore`, lastModified: now, changeFrequency: "daily", priority: 0.95 },
-    { url: `${baseUrl}/send-flowers-to-lahore-from-abroad`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${baseUrl}/birthday-decoration-lahore`, lastModified: now, changeFrequency: "weekly", priority: 0.85 },
-    { url: `${baseUrl}/lily-bouquet-lahore`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/bouquets`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
-    { url: `${baseUrl}/roses`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
-    { url: `${baseUrl}/roses/red-roses`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
-    { url: `${baseUrl}/roses/white-roses`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
-    { url: `${baseUrl}/sunflowers`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
-    { url: `${baseUrl}/sunflower-bouquet-lahore`, lastModified: now, changeFrequency: "daily", priority: 0.85 },
-    { url: `${baseUrl}/chocolate-bouquets-lahore`, lastModified: now, changeFrequency: "daily", priority: 0.85 },
-    { url: `${baseUrl}/tulip-bouquet-lahore`, lastModified: now, changeFrequency: "daily", priority: 0.85 },
-    { url: `${baseUrl}/money-bouquets`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/wedding-decor`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/gifts-and-cakes`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
-    { url: `${baseUrl}/collections/fresh-flower-gajray`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${baseUrl}/collections/scents-and-perfumes`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${baseUrl}/crochet-bouquets`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
-    { url: `${baseUrl}/dried-flowers`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
-    { url: `${baseUrl}/corporate`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/prices`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${baseUrl}/birthday-surprises`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
-    { url: `${baseUrl}/occasions/anniversary`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/occasions/love-and-romance`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/occasions/barat-and-walima`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/occasions/eid-gifts`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/occasions/congratulations`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/occasions/get-well-and-sorry`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/delivery-areas`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/delivery-areas/dha`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/delivery-areas/gulberg`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/delivery-areas/bahria-town`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/delivery-areas/model-town`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/delivery-areas/johar-town`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/delivery-areas/cantt`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/delivery-areas/askari`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/delivery-areas/wapda-town`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
-    { url: `${baseUrl}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/policies`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
+  // Map of route -> page file for git-based lastmod
+  const staticRoutes: Array<{ path: string; file: string }> = [
+    { path: "", file: "app/page.tsx" },
+    { path: "/flower-delivery-in-lahore", file: "app/flower-delivery-in-lahore/page.tsx" },
+    { path: "/send-flowers-to-lahore-from-abroad", file: "app/send-flowers-to-lahore-from-abroad/page.tsx" },
+    { path: "/birthday-decoration-lahore", file: "app/birthday-decoration-lahore/page.tsx" },
+    { path: "/lily-bouquet-lahore", file: "app/lily-bouquet-lahore/page.tsx" },
+    { path: "/bouquets", file: "app/bouquets/page.tsx" },
+    { path: "/roses", file: "app/roses/page.tsx" },
+    { path: "/roses/red-roses", file: "app/roses/red-roses/page.tsx" },
+    { path: "/roses/white-roses", file: "app/roses/white-roses/page.tsx" },
+    { path: "/sunflowers", file: "app/sunflowers/page.tsx" },
+    { path: "/sunflower-bouquet-lahore", file: "app/sunflower-bouquet-lahore/page.tsx" },
+    { path: "/chocolate-bouquets-lahore", file: "app/chocolate-bouquets-lahore/page.tsx" },
+    { path: "/tulip-bouquet-lahore", file: "app/tulip-bouquet-lahore/page.tsx" },
+    { path: "/money-bouquets", file: "app/money-bouquets/page.tsx" },
+    { path: "/wedding-decor", file: "app/wedding-decor/page.tsx" },
+    { path: "/gifts-and-cakes", file: "app/gifts-and-cakes/page.tsx" },
+    { path: "/collections/fresh-flower-gajray", file: "app/collections/fresh-flower-gajray/page.tsx" },
+    { path: "/collections/scents-and-perfumes", file: "app/collections/scents-and-perfumes/page.tsx" },
+    { path: "/crochet-bouquets", file: "app/crochet-bouquets/page.tsx" },
+    { path: "/dried-flowers", file: "app/dried-flowers/page.tsx" },
+    { path: "/corporate", file: "app/corporate/page.tsx" },
+    { path: "/prices", file: "app/prices/page.tsx" },
+    { path: "/birthday-surprises", file: "app/birthday-surprises/page.tsx" },
+    { path: "/occasions/anniversary", file: "app/occasions/anniversary/page.tsx" },
+    { path: "/occasions/love-and-romance", file: "app/occasions/love-and-romance/page.tsx" },
+    { path: "/occasions/barat-and-walima", file: "app/occasions/barat-and-walima/page.tsx" },
+    { path: "/occasions/eid-gifts", file: "app/occasions/eid-gifts/page.tsx" },
+    { path: "/occasions/congratulations", file: "app/occasions/congratulations/page.tsx" },
+    { path: "/occasions/get-well-and-sorry", file: "app/occasions/get-well-and-sorry/page.tsx" },
+    { path: "/delivery-areas", file: "app/delivery-areas/page.tsx" },
+    { path: "/delivery-areas/dha", file: "app/delivery-areas/dha/page.tsx" },
+    { path: "/delivery-areas/gulberg", file: "app/delivery-areas/gulberg/page.tsx" },
+    { path: "/delivery-areas/bahria-town", file: "app/delivery-areas/bahria-town/page.tsx" },
+    { path: "/delivery-areas/model-town", file: "app/delivery-areas/model-town/page.tsx" },
+    { path: "/delivery-areas/johar-town", file: "app/delivery-areas/johar-town/page.tsx" },
+    { path: "/delivery-areas/cantt", file: "app/delivery-areas/cantt/page.tsx" },
+    { path: "/delivery-areas/askari", file: "app/delivery-areas/askari/page.tsx" },
+    { path: "/delivery-areas/wapda-town", file: "app/delivery-areas/wapda-town/page.tsx" },
+    { path: "/blog", file: "app/blog/page.tsx" },
+    { path: "/about", file: "app/about/page.tsx" },
+    { path: "/contact", file: "app/contact/page.tsx" },
+    { path: "/policies", file: "app/policies/page.tsx" },
   ];
 
-  // Dynamic Sanity Products
+  const routes: MetadataRoute.Sitemap = staticRoutes.map(({ path, file }) => ({
+    url: `${baseUrl}${path}`,
+    lastModified: gitLastModified(file) ?? baseline,
+  }));
+
+  // Dynamic Sanity Products (real _updatedAt, with image entries)
   const sanityProducts = await getSanityProducts();
   const products = sanityProducts.length > 0 ? sanityProducts : ALL_PRODUCTS;
-  const productRoutes: MetadataRoute.Sitemap = products.map((product) => ({
-    url: `${baseUrl}/products/${product.slug}`,
-    lastModified: now,
-    changeFrequency: "weekly",
-    priority: 0.8,
-  }));
+  for (const product of products) {
+    const lastMod = product._updatedAt ? new Date(product._updatedAt) : baseline;
+    const imgUrl = product.image
+      ? product.image.startsWith("http")
+        ? product.image
+        : `${baseUrl}${product.image}`
+      : undefined;
+    routes.push({
+      url: `${baseUrl}/products/${product.slug}`,
+      lastModified: lastMod,
+      ...(imgUrl ? { images: [imgUrl] } : {}),
+    });
+  }
 
-  // Dynamic Sanity Blog Posts
+  // Dynamic Sanity Blog Posts (real publishedAt/_updatedAt)
   const sanityBlogs = await getSanityBlogPosts();
-  const blogRoutes: MetadataRoute.Sitemap = sanityBlogs.map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: post.publishedAt ? new Date(post.publishedAt) : now,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  }));
+  for (const post of sanityBlogs) {
+    routes.push({
+      url: `${baseUrl}/blog/${post.slug}`,
+      lastModified: post._updatedAt
+        ? new Date(post._updatedAt)
+        : post.publishedAt
+          ? new Date(post.publishedAt)
+          : baseline,
+    });
+  }
 
-  return [...staticRoutes, ...productRoutes, ...blogRoutes];
+  return routes;
 }

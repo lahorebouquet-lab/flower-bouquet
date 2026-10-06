@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../components/ProductCard";
 import { Truck, Camera, MessageCircle, HelpCircle, Gift } from "lucide-react";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -11,12 +12,12 @@ export const metadata: Metadata = {
   },
   description: "Birthday bouquets, cakes and midnight surprises in Lahore. Send flowers to your loved ones with a card. Same-day and 12 AM delivery.",
   alternates: {
-    canonical: "https://lahorebouquet.com/birthday-surprises",
+    canonical: `${SITE_URL}/birthday-surprises`,
   },
   openGraph: {
     title: "Birthday Flowers & Surprises in Lahore | Same-Day",
     description: "Birthday bouquets, cakes and midnight surprises in Lahore. Send flowers to your loved ones with a card. Same-day and 12 AM delivery.",
-    url: "https://lahorebouquet.com/birthday-surprises",
+    url: `${SITE_URL}/birthday-surprises`,
   }
 };
 

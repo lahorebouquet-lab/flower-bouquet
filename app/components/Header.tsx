@@ -177,7 +177,7 @@ export default function Header() {
             </div>
 
             {/* Center: Luxury Editorial Navigation with Dropdown Menus (Desktop) */}
-            <nav className="hidden lg:flex items-center gap-4 xl:gap-6">
+            <nav className="hidden lg:flex items-center gap-2.5 xl:gap-6">
               {NAV_ITEMS.map((item) => {
                 const hasChildren = Boolean(item.children && item.children.length > 0);
                 const isActive =
@@ -202,7 +202,7 @@ export default function Header() {
                           : "text-white/85 hover:text-[#C6A15B]"
                       }`}
                     >
-                      <span>{item.name}</span>
+                      <span className="whitespace-nowrap">{item.name}</span>
                       {hasChildren && (
                         <ChevronDown
                           className={`w-3.5 h-3.5 transition-transform duration-200 ${

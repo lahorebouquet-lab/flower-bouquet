@@ -6,6 +6,7 @@ import { Sun, Truck, Camera, MessageCircle, HelpCircle, Sparkles, Droplets, Hear
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import { ALL_PRODUCTS } from "../data/products";
 import ProductCard from "../components/ProductCard";
+import { SITE_URL, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
   },
   description: "Order a fresh sunflower bouquet in Lahore. Bright, cheerful and ideal for birthdays and thank-yous. Price from Rs. 1,590, delivery across the city.",
   alternates: {
-    canonical: "https://lahorebouquet.com/sunflower-bouquet-lahore",
+    canonical: `${SITE_URL}/sunflower-bouquet-lahore`,
   },
   keywords: [
     "sunflower bouquet",
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sunflower Bouquet in Lahore | Fresh Delivery",
     description: "Order a fresh sunflower bouquet in Lahore. Bright, cheerful and ideal for birthdays and thank-yous. Price from Rs. 1,590, delivery across the city.",
-    url: "https://lahorebouquet.com/sunflower-bouquet-lahore",
+    url: `${SITE_URL}/sunflower-bouquet-lahore`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
@@ -42,6 +43,8 @@ export default async function SunflowerBouquetLahorePage() {
     p.title.toLowerCase().includes("sunflower")
   );
 
+  const itemListJsonLd = itemListSchema(sunflowerProducts, `${SITE_URL}/sunflower-bouquet-lahore`, "Sunflower Bouquets in Lahore");
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -50,19 +53,19 @@ export default async function SunflowerBouquetLahorePage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Bouquets",
-        item: "https://lahorebouquet.com/bouquets",
+        item: `${SITE_URL}/bouquets`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Sunflower Bouquet Lahore",
-        item: "https://lahorebouquet.com/sunflower-bouquet-lahore",
+        item: `${SITE_URL}/sunflower-bouquet-lahore`,
       },
     ],
   };
@@ -122,6 +125,10 @@ export default async function SunflowerBouquetLahorePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
 
       {/* Breadcrumb */}

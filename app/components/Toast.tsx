@@ -19,6 +19,8 @@ export function Toast() {
 export function StickyMobileBar() {
   const { totalCartCount, cartSubtotal, setIsCartOpen, setCheckoutStep, generateWhatsAppMessage } = useCart();
 
+  if (totalCartCount === 0) return null;
+
   return (
     <div className="md:hidden fixed bottom-0 inset-x-0 z-40 bg-[#0B0B0B]/98 backdrop-blur-md border-t border-[rgba(198,161,91,0.25)] p-3 flex items-center justify-between gap-3 shadow-2xl text-white">
       <div 

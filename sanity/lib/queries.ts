@@ -5,6 +5,7 @@ export const ALL_PRODUCTS_QUERY = groq`
   *[_type == "product"] | order(_createdAt asc) {
     "id": _id,
     _id,
+    _updatedAt,
     title,
     "slug": slug.current,
     price,
@@ -17,8 +18,6 @@ export const ALL_PRODUCTS_QUERY = groq`
     desc,
     stems,
     occasion,
-    rating,
-    reviewCount,
     inStock
   }
 `
@@ -40,8 +39,6 @@ export const PRODUCT_BY_SLUG_OR_ID_QUERY = groq`
     desc,
     stems,
     occasion,
-    rating,
-    reviewCount,
     inStock
   }
 `
@@ -65,14 +62,13 @@ export const CATEGORIES_QUERY = groq`
   }
 `
 
-// Query all reviews
+// Query all reviews (currently unused — all review docs removed as unverified)
 export const REVIEWS_QUERY = groq`
   *[_type == "review"] | order(_createdAt desc) {
     "id": _id,
     _id,
     name,
     location,
-    rating,
     "quote": comment,
     comment,
     "item": bouquet,
@@ -86,6 +82,7 @@ export const BLOG_POSTS_QUERY = groq`
   *[_type == "blog"] | order(publishedAt desc, _createdAt desc) {
     "id": _id,
     _id,
+    _updatedAt,
     title,
     "slug": slug.current,
     excerpt,

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { Sparkles, MessageCircle, Clock, ShieldCheck } from "lucide-react";
+import { SITE_URL, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -11,12 +12,12 @@ export const metadata: Metadata = {
   },
   description: "Pair fresh flower bouquets with imported perfumes, authentic Arabian oud, pure rose attar & scented candles in Lahore. Same-day & midnight gift delivery.",
   alternates: {
-    canonical: "https://lahorebouquet.com/collections/scents-and-perfumes",
+    canonical: `${SITE_URL}/collections/scents-and-perfumes`,
   },
   openGraph: {
     title: "Luxury Scents, Perfumes & Flower Gifts in Lahore",
     description: "Pair fresh flower bouquets with imported perfumes, authentic Arabian oud, pure rose attar & scented candles in Lahore. Same-day & midnight gift delivery.",
-    url: "https://lahorebouquet.com/collections/scents-and-perfumes",
+    url: `${SITE_URL}/collections/scents-and-perfumes`,
   }
 };
 
@@ -51,6 +52,8 @@ export default async function ScentsAndPerfumesPage() {
   const allProducts = await getSanityProducts();
   const giftProducts = allProducts.filter(p => p.category === "Gifts & Cakes" || p.category === "Roses").slice(0, 4);
 
+  const itemListJsonLd = itemListSchema(giftProducts, `${SITE_URL}/collections/scents-and-perfumes`, "Scents & Perfumes in Lahore");
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -59,19 +62,19 @@ export default async function ScentsAndPerfumesPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Collections",
-        item: "https://lahorebouquet.com/collections/bouquets",
+        item: `${SITE_URL}/collections/bouquets`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Scents & Perfumes",
-        item: "https://lahorebouquet.com/collections/scents-and-perfumes",
+        item: `${SITE_URL}/collections/scents-and-perfumes`,
       },
     ],
   };
@@ -108,6 +111,10 @@ export default async function ScentsAndPerfumesPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
 
       {/* Breadcrumb */}

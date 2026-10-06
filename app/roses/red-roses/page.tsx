@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { Heart, Truck, Camera, MessageCircle, HelpCircle } from "lucide-react";
+import { SITE_URL, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -11,12 +12,12 @@ export const metadata: Metadata = {
   },
   description: "Send imported red roses in Lahore. 1, 12, 24 or 50 stems in black or cream wrap, with a handwritten card. Delivered in 2 to 5 hours.",
   alternates: {
-    canonical: "https://lahorebouquet.com/roses/red-roses",
+    canonical: `${SITE_URL}/roses/red-roses`,
   },
   openGraph: {
     title: "Red Rose Bouquet Lahore | Imported Dutch Red Roses",
     description: "Send imported red roses in Lahore. 1, 12, 24 or 50 stems in black or cream wrap, with a handwritten card. Delivered in 2 to 5 hours.",
-    url: "https://lahorebouquet.com/roses/red-roses",
+    url: `${SITE_URL}/roses/red-roses`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
@@ -35,6 +36,8 @@ export default async function RedRosesPage() {
     )
   );
 
+  const itemListJsonLd = itemListSchema(redRoses, `${SITE_URL}/roses/red-roses`, "Red Rose Bouquets in Lahore");
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -43,19 +46,19 @@ export default async function RedRosesPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Roses",
-        item: "https://lahorebouquet.com/roses",
+        item: `${SITE_URL}/roses`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Red Roses",
-        item: "https://lahorebouquet.com/roses/red-roses",
+        item: `${SITE_URL}/roses/red-roses`,
       },
     ],
   };
@@ -92,6 +95,10 @@ export default async function RedRosesPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
 
       {/* Breadcrumb */}

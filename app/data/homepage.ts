@@ -5,12 +5,12 @@ export interface FAQItem {
 
 export const HOMEPAGE_FAQS: FAQItem[] = [
   {
-    q: "Is there a flower shop near me in Lahore that delivers the same day?",
-    a: "Yes. Lahore Bouquet is located on Lahore, and delivers the same day across all major areas of Lahore (DHA, Gulberg, Johar Town, Model Town, Bahria Town, Cantt) for orders placed before 4:00 PM. Delivery typically takes 2 to 5 hours."
+    q: "Is there a phoolon ki dukaan near me in Lahore with same-day phool delivery?",
+    a: "Yes. Lahore Bouquet is based in Lahore, and delivers the same day across all major areas of Lahore (DHA, Gulberg, Johar Town, Model Town, Bahria Town, Cantt) for orders placed before 4:00 PM. Phool delivery typically takes 2 to 5 hours."
   },
   {
-    q: "How much does a flower bouquet cost in Lahore?",
-    a: "Bouquets start at Rs. 1,180 for a single rose and Rs. 1,900 for a fresh hand-tied bunch. Medium bouquets range from Rs. 2,600 to Rs. 3,800, while large signature Dutch rose arrangements are Rs. 7,499. See our prices page for the full rate list."
+    q: "How much does a gulab ka guldasta (rose bouquet) cost in Lahore?",
+    a: "Bouquets start at Rs. 1,180 for a single rose and Rs. 1,900 for a fresh hand-tied bunch. Medium gulab ke guldastay range from Rs. 2,600 to Rs. 3,800, while large signature Dutch rose arrangements are Rs. 7,499. See our prices page for the full rate list."
   },
   {
     q: "Can I order flowers online and send them to someone else in Lahore?",

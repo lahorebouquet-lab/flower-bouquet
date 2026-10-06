@@ -6,6 +6,7 @@ import { Sparkles, Truck, Camera, MessageCircle, HelpCircle, Droplets, Snowflake
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import { ALL_PRODUCTS } from "../data/products";
 import ProductCard from "../components/ProductCard";
+import { SITE_URL, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
   },
   description: "Buy a tulip bouquet in Lahore. Fresh tulips in pink, red, white and yellow, hand-tied and delivered. Tulip flower price from Rs. 4,800.",
   alternates: {
-    canonical: "https://lahorebouquet.com/tulip-bouquet-lahore",
+    canonical: `${SITE_URL}/tulip-bouquet-lahore`,
   },
   keywords: [
     "tulip bouquet",
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Tulip Bouquet in Lahore | Fresh Tulips, Delivered",
     description: "Buy a tulip bouquet in Lahore. Fresh tulips in pink, red, white and yellow, hand-tied and delivered. Tulip flower price from Rs. 4,800.",
-    url: "https://lahorebouquet.com/tulip-bouquet-lahore",
+    url: `${SITE_URL}/tulip-bouquet-lahore`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
@@ -42,6 +43,8 @@ export default async function TulipBouquetLahorePage() {
     p.title.toLowerCase().includes("tulip")
   );
 
+  const itemListJsonLd = itemListSchema(tulipProducts, `${SITE_URL}/tulip-bouquet-lahore`, "Tulip Bouquets in Lahore");
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -50,19 +53,19 @@ export default async function TulipBouquetLahorePage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Bouquets",
-        item: "https://lahorebouquet.com/bouquets",
+        item: `${SITE_URL}/bouquets`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Tulip Bouquet Lahore",
-        item: "https://lahorebouquet.com/tulip-bouquet-lahore",
+        item: `${SITE_URL}/tulip-bouquet-lahore`,
       },
     ],
   };
@@ -115,6 +118,10 @@ export default async function TulipBouquetLahorePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
 
       {/* Breadcrumb */}

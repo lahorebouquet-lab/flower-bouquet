@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../app/components/ProductCard";
 import { Briefcase, Building, Clock, ShieldCheck, MessageCircle, FileText } from "lucide-react";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -11,12 +12,12 @@ export const metadata: Metadata = {
   },
   description: "Corporate flower delivery across Lahore. Weekly office reception florals, executive gifting, client appreciation hampers & conference stage décor. Official NTN invoicing.",
   alternates: {
-    canonical: "https://lahorebouquet.com/corporate",
+    canonical: `${SITE_URL}/corporate`,
   },
   openGraph: {
     title: "Corporate Flower Delivery Lahore | Office Plants & Event Floral",
     description: "Corporate flower delivery across Lahore. Weekly office reception florals, executive gifting, client appreciation hampers & conference stage décor. Official NTN invoicing.",
-    url: "https://lahorebouquet.com/corporate",
+    url: `${SITE_URL}/corporate`,
   }
 };
 
@@ -32,13 +33,13 @@ export default async function CorporatePage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Corporate Flowers",
-        item: "https://lahorebouquet.com/corporate",
+        item: `${SITE_URL}/corporate`,
       },
     ],
   };

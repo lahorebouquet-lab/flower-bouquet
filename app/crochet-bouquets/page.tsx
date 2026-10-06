@@ -5,6 +5,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../components/ProductCard";
 import { Truck, Camera, MessageCircle, HelpCircle, Heart } from "lucide-react";
+import { SITE_URL, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -12,12 +13,12 @@ export const metadata: Metadata = {
   },
   description: "Crochet flower bouquets in Lahore that never wilt. Handmade sunflower and rose bouquets, a gift that lasts for years.",
   alternates: {
-    canonical: "https://lahorebouquet.com/crochet-bouquets",
+    canonical: `${SITE_URL}/crochet-bouquets`,
   },
   openGraph: {
     title: "Handmade Crochet Flower Bouquets in Lahore",
     description: "Crochet flower bouquets in Lahore that never wilt. Handmade sunflower and rose bouquets, a gift that lasts for years.",
-    url: "https://lahorebouquet.com/crochet-bouquets",
+    url: `${SITE_URL}/crochet-bouquets`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
@@ -33,6 +34,8 @@ export default async function CrochetBouquetsPage() {
     )
   );
 
+  const itemListJsonLd = itemListSchema(crochetProducts, `${SITE_URL}/crochet-bouquets`, "Crochet Bouquets in Lahore");
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -41,19 +44,19 @@ export default async function CrochetBouquetsPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Bouquets",
-        item: "https://lahorebouquet.com/bouquets",
+        item: `${SITE_URL}/bouquets`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Crochet Bouquets",
-        item: "https://lahorebouquet.com/crochet-bouquets",
+        item: `${SITE_URL}/crochet-bouquets`,
       },
     ],
   };
@@ -90,6 +93,10 @@ export default async function CrochetBouquetsPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
 
       {/* Breadcrumb */}

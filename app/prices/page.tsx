@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import PricesClient from "./PricesClient";
 import { FAQ_DATA, SNAPSHOT_PRICES } from "./data";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "Flower Bouquet Price in Lahore & Pakistan | Updated October 2026 | Lahore Bouquet",
@@ -19,13 +20,13 @@ export const metadata: Metadata = {
     "lahore flower delivery prices",
   ],
   alternates: {
-    canonical: "https://lahorebouquet.com/prices",
+    canonical: `${SITE_URL}/prices`,
   },
   openGraph: {
     title: "Flower Bouquet Price in Lahore | Free Delivery | Lahore Bouquet",
     description:
       "Bouquet prices in Lahore from PKR 1,180, gajray from PKR 450. Compare real starting prices for chocolate bouquets, wedding décor, car decoration & gifts. WhatsApp for exact quote.",
-    url: "https://lahorebouquet.com/prices",
+    url: `${SITE_URL}/prices`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
@@ -57,13 +58,13 @@ export default function PricesPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Prices",
-        item: "https://lahorebouquet.com/prices",
+        item: `${SITE_URL}/prices`,
       },
     ],
   };

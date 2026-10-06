@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { Truck, Camera, MessageCircle, Award } from "lucide-react";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -11,12 +12,12 @@ export const metadata: Metadata = {
   },
   description: "Congratulation and graduation bouquets in Lahore. Sunflowers, mixed roses and money bouquets for new jobs, results and milestones.",
   alternates: {
-    canonical: "https://lahorebouquet.com/occasions/congratulations",
+    canonical: `${SITE_URL}/occasions/congratulations`,
   },
   openGraph: {
     title: "Congratulations & Graduation Flowers in Lahore",
     description: "Congratulation and graduation bouquets in Lahore. Sunflowers, mixed roses and money bouquets for new jobs, results and milestones.",
-    url: "https://lahorebouquet.com/occasions/congratulations",
+    url: `${SITE_URL}/occasions/congratulations`,
   }
 };
 
@@ -34,13 +35,13 @@ export default async function CongratulationsPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Congratulations & Graduations",
-        item: "https://lahorebouquet.com/occasions/congratulations",
+        item: `${SITE_URL}/occasions/congratulations`,
       },
     ],
   };

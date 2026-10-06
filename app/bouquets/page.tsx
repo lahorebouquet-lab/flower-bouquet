@@ -5,6 +5,7 @@ import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../components/ProductCard";
 import { Sparkles, Truck, Camera, MessageCircle, HelpCircle, Heart, Droplets, CheckCircle2 } from "lucide-react";
 import { ALL_PRODUCTS } from "../data/products";
+import { SITE_URL, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
   },
   description: "Browse fresh flower bouquets in Lahore: roses, sunflowers, tulips, lilies and mixed bouquets. Small to large sizes, with delivery across the city.",
   alternates: {
-    canonical: "https://lahorebouquet.com/bouquets",
+    canonical: `${SITE_URL}/bouquets`,
   },
   keywords: [
     "flower bouquet",
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Flower Bouquets in Lahore | Fresh, Hand-Tied, Delivered",
     description: "Browse fresh flower bouquets in Lahore: roses, sunflowers, tulips, lilies and mixed bouquets. Small to large sizes, with delivery across the city.",
-    url: "https://lahorebouquet.com/bouquets",
+    url: `${SITE_URL}/bouquets`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
@@ -48,6 +49,8 @@ export default async function BouquetsPage() {
     p.category === "Dried"
   );
 
+  const itemListJsonLd = itemListSchema(bouquets, `${SITE_URL}/bouquets`, "Flower Bouquets in Lahore");
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -56,13 +59,13 @@ export default async function BouquetsPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Flower Bouquets",
-        item: "https://lahorebouquet.com/bouquets",
+        item: `${SITE_URL}/bouquets`,
       },
     ],
   };
@@ -115,6 +118,10 @@ export default async function BouquetsPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
 
       {/* Breadcrumb */}

@@ -2,63 +2,48 @@
 # NOTE: This file is an optional experimental AI-accessibility file providing structured public context for LLMs and answer engines. It is not an official search engine standard and does not guarantee indexing or AI citation.
 
 # Organization & Brand Identity
-- Brand Name: Lahore Bouquet (formerly Florabelle)
-- Business Type: Independent Florist Atelier, Flower Delivery Service, and Event Décor Studio
+- Brand Name: Lahore Bouquet
+- Business Type: Independent Florist — Flower Delivery Service across Lahore (delivery-only, no walk-in storefront)
 - Website: https://lahorebouquet.com
-- Workshop Location: MM Alam Road, Gulberg III, Lahore, Punjab 54000, Pakistan
-- Operational Region: Lahore metropolitan area (Gulberg, DHA Phases 1–9, Bahria Town, Model Town, Johar Town, Cantt, Askari, Wapda Town, Valencia, Lake City)
-- Contact Support: +92 300 1234567 (Voice & WhatsApp)
-- Opening Hours: Monday to Sunday, 08:00 AM – 01:00 AM PKT
-- Price Range: PKR 1,180 to PKR 25,000
+- Service Area: Lahore, Punjab, Pakistan (DHA, Gulberg, Bahria Town, Model Town, Johar Town, Cantt, Askari, Wapda Town, Township, Faisal Town, Garden Town, Valencia, Lake City)
+- Contact: +92 310 4225974 (Voice & WhatsApp), flowerbouquet@gmail.com
+- Opening Hours: Monday to Sunday, 09:00 AM – 01:00 AM PKT
+- Price Range: Rs. 1,180 – Rs. 35,000
 
 # Core Offerings & Services
 1. Fresh Hand-Tied Bouquets: Imported Dutch red, pink, white roses, golden sunflowers, oriental lilies, chrysanthemum bunches.
-2. Custom Currency / Money Bouquets: Genuine State Bank of Pakistan banknotes (Rs. 10, Rs. 50, Rs. 100, Rs. 500, Rs. 1000, Rs. 5000) carefully sleeved in protective transparent polymer (never stapled or punctured) and styled with fresh roses.
+2. Custom Currency / Money Bouquets: Genuine State Bank of Pakistan banknotes carefully arranged with fresh roses.
 3. Keepsake Florals: Handmade eternal crochet flower bouquets and naturally preserved everlasting dried botanical stems.
 4. Bakery Cakes & Gourmet Gift Combos: Fresh chocolate fudge, red velvet, lotus three-milk cakes, and Ferrero Rocher chocolate bouquets.
 5. Cultural Floristry: Handcrafted fresh motia and rose petal Gajray, mehndi flower jewellery sets, and wedding stage garlands.
-6. Fragrances & Aromatherapy: Royal Arabian Oud, Rooh-e-Gulab, branded designer perfumes, and hand-poured soy wax botanical candles.
-7. Wedding & Event Décor: Fresh rose and orchid bridal car decoration, bridal room canopy / masehri flower arrangements, and corporate reception florals.
+6. Fragrances: Branded designer perfumes and hand-poured soy wax botanical candles.
+7. Wedding & Event Décor: Fresh rose bridal car decoration, bridal room canopy / masehri flower arrangements, and corporate reception florals.
 
-# Key Business Policies & Operational Dispatches
-- WhatsApp Photo Verification: A high-definition photograph of every custom arrangement is sent to the customer on WhatsApp before the rider dispatches. If adjustments are requested, florists refine the bouquet prior to delivery.
+# Key Business Policies
+- WhatsApp Photo Verification: A photograph of every arrangement is sent to the customer on WhatsApp before dispatch.
 - Same-Day Express Delivery: Orders delivered within 2 to 5 hours across all Lahore zones.
 - Midnight Surprise Slot: 11:30 PM to 12:15 AM delivery available for birthdays and anniversaries (advance booking required).
-- Accepted Payment Methods: Cash on Delivery (COD), Online Bank Transfer (Bank Alfalah, Meezan Bank, Raast), JazzCash, and EasyPaisa.
+- Accepted Payment Methods: Cash on Delivery (COD), Online Bank Transfer, JazzCash, and EasyPaisa.
 
 # Canonical Public Page Directory
 - Homepage: https://lahorebouquet.com/
 - Hand-Tied Bouquets: https://lahorebouquet.com/bouquets
 - Imported Dutch Roses: https://lahorebouquet.com/roses
-- Velvet Red Roses: https://lahorebouquet.com/roses/red-roses
-- Pure White Roses: https://lahorebouquet.com/roses/white-roses
-- Sunflowers & Mixed Blooms: https://lahorebouquet.com/sunflowers
+- Red Roses: https://lahorebouquet.com/roses/red-roses
+- White Roses: https://lahorebouquet.com/roses/white-roses
+- Sunflower Bouquets: https://lahorebouquet.com/sunflower-bouquet-lahore
+- Lily Bouquets: https://lahorebouquet.com/lily-bouquet-lahore
+- Tulip Bouquets: https://lahorebouquet.com/tulip-bouquet-lahore
 - Custom Money Bouquets: https://lahorebouquet.com/money-bouquets
 - Handmade Crochet Bouquets: https://lahorebouquet.com/crochet-bouquets
 - Dried Everlasting Florals: https://lahorebouquet.com/dried-flowers
 - Cakes & Gift Combos: https://lahorebouquet.com/gifts-and-cakes
 - Fresh Flower Gajray: https://lahorebouquet.com/collections/fresh-flower-gajray
-- Scents & Arabian Oud: https://lahorebouquet.com/collections/scents-and-perfumes
 - Wedding & Car Décor: https://lahorebouquet.com/wedding-decor
 - Birthday Surprises: https://lahorebouquet.com/birthday-surprises
-- Wedding Anniversaries: https://lahorebouquet.com/occasions/anniversary
-- Love & Romance: https://lahorebouquet.com/occasions/love-and-romance
-- Barat & Walima Décor: https://lahorebouquet.com/occasions/barat-and-walima
-- Eid Mubarak Gifts: https://lahorebouquet.com/occasions/eid-gifts
-- Congratulations & Graduations: https://lahorebouquet.com/occasions/congratulations
-- Get Well Soon & Apologies: https://lahorebouquet.com/occasions/get-well-and-sorry
-- Corporate Office Florals: https://lahorebouquet.com/corporate
+- Bestsellers: https://lahorebouquet.com/bestsellers
 - Transparent Price Guide: https://lahorebouquet.com/prices
 - Lahore Delivery Areas Hub: https://lahorebouquet.com/delivery-areas
-- DHA Lahore Delivery: https://lahorebouquet.com/delivery-areas/dha
-- Gulberg MM Alam Delivery: https://lahorebouquet.com/delivery-areas/gulberg
-- Bahria Town Delivery: https://lahorebouquet.com/delivery-areas/bahria-town
-- Model Town Delivery: https://lahorebouquet.com/delivery-areas/model-town
-- Johar Town Delivery: https://lahorebouquet.com/delivery-areas/johar-town
-- Cantt & Cavalry Ground Delivery: https://lahorebouquet.com/delivery-areas/cantt
-- Askari Housing Delivery: https://lahorebouquet.com/delivery-areas/askari
-- Wapda Town Delivery: https://lahorebouquet.com/delivery-areas/wapda-town
-- Floral Care Blog & Guides: https://lahorebouquet.com/blog
 - About Us: https://lahorebouquet.com/about
-- Contact & Atelier: https://lahorebouquet.com/contact
-- Customer Policies: https://lahorebouquet.com/policies
+- Contact: https://lahorebouquet.com/contact
+- Blog & Guides: https://lahorebouquet.com/blog

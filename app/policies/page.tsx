@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ShieldCheck, Truck, RefreshCw, AlertCircle, MessageCircle } from "lucide-react";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
   },
   description: "Read Lahore Bouquet's clear policies for delivery, flower substitution, damage replacement, and booking cancellations across Lahore.",
   alternates: {
-    canonical: "https://lahorebouquet.com/policies",
+    canonical: `${SITE_URL}/policies`,
   },
   openGraph: {
     title: "Customer Policies | Lahore Bouquet",
@@ -26,11 +27,11 @@ export default function PoliciesPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "@id": "https://lahorebouquet.com/policies#webpage",
-            url: "https://lahorebouquet.com/policies",
+            "@id": `${SITE_URL}/policies#webpage`,
+            url: `${SITE_URL}/policies`,
             name: "Customer Policies | Lahore Bouquet",
-            isPartOf: { "@id": "https://lahorebouquet.com#website" },
-            about: { "@id": "https://lahorebouquet.com#florist" },
+            isPartOf: { "@id": `${SITE_URL}#website` },
+            about: { "@id": `${SITE_URL}#florist` },
           }),
         }}
       />

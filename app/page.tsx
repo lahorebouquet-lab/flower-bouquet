@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   },
   description: "Looking for a flower shop near you in Lahore? Lahore Bouquet makes fresh bouquets to order and delivers across the city. Order online or call 0310-4225974.",
   alternates: {
-    canonical: "https://lahorebouquet.com",
+    canonical: `${SITE_URL}`,
   },
   keywords: [
     "flower shop near me",
@@ -32,12 +32,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Flower Shop in Lahore | Fresh Bouquets & Same-Day Delivery | Lahore Bouquet",
     description: "Looking for a flower shop near you in Lahore? Lahore Bouquet makes fresh bouquets to order and delivers across the city. Order online or call 0310-4225974.",
-    url: "https://lahorebouquet.com",
+    url: `${SITE_URL}`,
     type: "website",
     locale: "en_PK",
     images: [
       {
-        url: "https://lahorebouquet.com/images/hero-luxury-banner.webp",
+        url: `${SITE_URL}/images/hero-luxury-banner.webp`,
         width: 1024,
         height: 443,
         alt: "Flower Shop in Lahore | Fresh Bouquets & Same-Day Delivery | Lahore Bouquet",
@@ -46,12 +46,12 @@ export const metadata: Metadata = {
   }
 };
 
-import { getSanityProducts, getSanityReviews, getSanityCategories } from "@/sanity/lib/fetch";
+import { getSanityProducts, getSanityCategories } from "@/sanity/lib/fetch";
+import { floristSchema, organizationSchema, SITE_URL } from "@/lib/business";
 
 export default async function HomePage() {
-  const [products, reviews, categories] = await Promise.all([
+  const [products, categories] = await Promise.all([
     getSanityProducts(),
-    getSanityReviews(),
     getSanityCategories(),
   ]);
 
@@ -68,24 +68,8 @@ export default async function HomePage() {
     })),
   };
 
-  const businessSchema = {
-    "@context": "https://schema.org",
-    "@type": "Florist",
-    name: "Lahore Bouquet",
-    image: "https://lahorebouquet.com/icon.png",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Lahore",
-      addressLocality: "Lahore",
-      addressRegion: "Punjab",
-      postalCode: "54000",
-      addressCountry: "PK",
-    },
-    telephone: "+923104225974",
-    priceRange: "Rs. 1,180 - Rs. 14,500",
-    openingHours: "Mo-Su 09:00-01:00",
-    url: "https://lahorebouquet.com",
-  };
+  const businessSchema = floristSchema();
+  const orgSchema = organizationSchema();
 
   return (
     <main className="min-h-screen bg-[#F8F3EA] text-[#101012]">
@@ -98,10 +82,13 @@ export default async function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+      />
 
       <HomeClient
         initialProducts={products}
-        initialReviews={reviews}
         initialCategories={categories}
       />
     </main>

@@ -5,6 +5,7 @@ import { Truck, Clock, ShieldCheck, Camera, Phone, MessageCircle, MapPin, HeartH
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import { ALL_PRODUCTS, LAHORE_AREAS } from "../data/products";
 import ProductCard from "../components/ProductCard";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
   },
   description: "Order flowers online for delivery anywhere in Lahore. Same-day bouquets, photo before dispatch, and card messages. Order before 4 PM for same-day delivery.",
   alternates: {
-    canonical: "https://lahorebouquet.com/flower-delivery-in-lahore",
+    canonical: `${SITE_URL}/flower-delivery-in-lahore`,
   },
   keywords: [
     "flower delivery in lahore",
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Flower Delivery in Lahore | Same-Day Bouquets, Order Online",
     description: "Order flowers online for delivery anywhere in Lahore. Same-day bouquets, photo before dispatch, and card messages. Order before 4 PM for same-day delivery.",
-    url: "https://lahorebouquet.com/flower-delivery-in-lahore",
+    url: `${SITE_URL}/flower-delivery-in-lahore`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
@@ -45,13 +46,13 @@ export default async function FlowerDeliveryLahorePage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Flower Delivery in Lahore",
-        item: "https://lahorebouquet.com/flower-delivery-in-lahore",
+        item: `${SITE_URL}/flower-delivery-in-lahore`,
       },
     ],
   };

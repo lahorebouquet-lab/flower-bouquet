@@ -5,6 +5,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../components/ProductCard";
 import { Sparkles, Camera, MessageCircle, HelpCircle, Calendar, ShieldCheck } from "lucide-react";
+import { SITE_URL, serviceSchema, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
   },
   description: "Fresh flower wedding room decoration, traditional masehri design, and bridal car decoration in Lahore. On-site setup across all areas. Prices from Rs. 6,500.",
   alternates: {
-    canonical: "https://lahorebouquet.com/wedding-decor",
+    canonical: `${SITE_URL}/wedding-decor`,
   },
   keywords: [
     "wedding room decoration",
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Wedding Room & Car Decoration in Lahore | Masehri & Bridal Décor",
     description: "Fresh flower wedding room decoration, traditional masehri design, and bridal car decoration in Lahore. On-site setup across all areas. Prices from Rs. 6,500.",
-    url: "https://lahorebouquet.com/wedding-decor",
+    url: `${SITE_URL}/wedding-decor`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
@@ -38,6 +39,14 @@ export default async function WeddingDecorPage() {
   const allProducts = await getSanityProducts();
   const weddingProducts = allProducts.filter(p => p.category === "Wedding Décor");
 
+  const itemListJsonLd = itemListSchema(weddingProducts, `${SITE_URL}/wedding-decor`, "Wedding Flower Décor in Lahore");
+
+  const decorServiceJsonLd = serviceSchema({
+    name: "Wedding Flower Decoration in Lahore",
+    url: `${SITE_URL}/wedding-decor`,
+    description: "Fresh flower wedding decoration in Lahore — bridal car decor, bridal room canopy (masehri), stage florals and event arrangements across DHA, Gulberg, Bahria Town and all Lahore areas.",
+  });
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -46,13 +55,13 @@ export default async function WeddingDecorPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Wedding Décor",
-        item: "https://lahorebouquet.com/wedding-decor",
+        item: `${SITE_URL}/wedding-decor`,
       },
     ],
   };
@@ -121,6 +130,14 @@ export default async function WeddingDecorPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(decorServiceJsonLd) }}
       />
 
       {/* Breadcrumb */}

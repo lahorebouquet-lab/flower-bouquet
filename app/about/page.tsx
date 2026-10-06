@@ -3,19 +3,20 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ShieldCheck, Sparkles, Truck, Heart, Camera, MessageCircle, MapPin, CheckCircle2 } from "lucide-react";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "About Lahore Bouquet | Florist in Gulberg, Lahore",
+    absolute: "About Lahore Bouquet | Florist in Lahore",
   },
   description: "Meet Lahore Bouquet, a Lahore florist. Hand-tied bouquets, bridal décor and same-day flower delivery across Lahore.",
   alternates: {
-    canonical: "https://lahorebouquet.com/about",
+    canonical: `${SITE_URL}/about`,
   },
   openGraph: {
-    title: "About Lahore Bouquet | Florist in Gulberg, Lahore",
+    title: "About Lahore Bouquet | Florist in Lahore",
     description: "Meet Lahore Bouquet, a Lahore florist. Hand-tied bouquets, bridal décor and same-day flower delivery across Lahore.",
-    url: "https://lahorebouquet.com/about",
+    url: `${SITE_URL}/about`,
   }
 };
 
@@ -24,17 +25,17 @@ const aboutSchema = {
   "@graph": [
     {
       "@type": "AboutPage",
-      "@id": "https://lahorebouquet.com/about#webpage",
-      url: "https://lahorebouquet.com/about",
-      name: "About Lahore Bouquet | Florist in Gulberg, Lahore",
-      isPartOf: { "@id": "https://lahorebouquet.com#website" },
-      about: { "@id": "https://lahorebouquet.com#florist" },
+      "@id": `${SITE_URL}/about#webpage`,
+      url: `${SITE_URL}/about`,
+      name: "About Lahore Bouquet | Florist in Lahore",
+      isPartOf: { "@id": `${SITE_URL}#website` },
+      about: { "@id": `${SITE_URL}#florist` },
     },
     {
       "@type": "Florist",
-      "@id": "https://lahorebouquet.com#florist",
+      "@id": `${SITE_URL}#florist`,
       name: "Lahore Bouquet",
-      url: "https://lahorebouquet.com",
+      url: `${SITE_URL}`,
       telephone: "+923104225974",
       email: "flowerbouquet@gmail.com",
       priceRange: "Rs. 1,180 - Rs. 14,500",
@@ -75,7 +76,7 @@ export default function AboutPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm lg:text-base leading-relaxed max-w-3xl">
-          We are an artisanal florist studio in Gulberg III, Lahore. Our florists tie every bouquet by hand, send you a photo before it leaves, and deliver it in temperature-regulated transport so it arrives looking pristine.
+          We are a Lahore-based floral atelier serving the whole city. Our florists tie every bouquet by hand, send you a photo before it leaves, and deliver it across Lahore so it arrives looking pristine.
         </p>
       </section>
 

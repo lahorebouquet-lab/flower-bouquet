@@ -5,6 +5,7 @@ import { getSanityProducts } from "@/sanity/lib/fetch";
 import { ALL_PRODUCTS } from "../data/products";
 import ProductCard from "../components/ProductCard";
 import { Flame, Truck, Camera, MessageCircle } from "lucide-react";
+import { itemListSchema, SITE_URL } from "@/lib/business";
 
 export default async function BestsellersPage() {
   const sanityProducts = await getSanityProducts();
@@ -21,10 +22,16 @@ export default async function BestsellersPage() {
   const displayProducts =
     bestsellers.length > 0
       ? bestsellers
-      : [...allProducts].sort((a, b) => (b.rating || 0) - (a.rating || 0)).slice(0, 12);
+      : [...allProducts].slice(0, 12);
+
+  const itemListJsonLd = itemListSchema(displayProducts, `${SITE_URL}/bestsellers`, "Bestselling Bouquets in Lahore");
 
   return (
     <div className="min-h-screen bg-[#F8F3EA]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
+      />
       {/* Page Header */}
       <section className="border-b border-[#C6A15B]/30 bg-[#F6F1E7]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-14 text-center">

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { MapPin, Clock, Camera, MessageCircle, Sparkles } from "lucide-react";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -11,12 +12,12 @@ export const metadata: Metadata = {
   },
   description: "Rapid 30–60 minute flower delivery across Gulberg I, II & III, Lahore, Liberty and Main Boulevard from our Lahore workshop. Photo on WhatsApp first.",
   alternates: {
-    canonical: "https://lahorebouquet.com/delivery-areas/gulberg",
+    canonical: `${SITE_URL}/delivery-areas/gulberg`,
   },
   openGraph: {
     title: "Express Flower Delivery in Gulberg Lahore | Gulberg & Liberty",
     description: "Rapid 30–60 minute flower delivery across Gulberg I, II & III, Lahore, Liberty and Main Boulevard from our Lahore workshop. Photo on WhatsApp first.",
-    url: "https://lahorebouquet.com/delivery-areas/gulberg",
+    url: `${SITE_URL}/delivery-areas/gulberg`,
   }
 };
 
@@ -32,19 +33,19 @@ export default async function GulbergDeliveryPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Delivery Areas",
-        item: "https://lahorebouquet.com/delivery-areas",
+        item: `${SITE_URL}/delivery-areas`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Gulberg Lahore",
-        item: "https://lahorebouquet.com/delivery-areas/gulberg",
+        item: `${SITE_URL}/delivery-areas/gulberg`,
       },
     ],
   };

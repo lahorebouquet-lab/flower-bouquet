@@ -5,6 +5,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../components/ProductCard";
 import { Truck, Camera, MessageCircle, HelpCircle, Leaf } from "lucide-react";
+import { SITE_URL, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -12,12 +13,12 @@ export const metadata: Metadata = {
   },
   description: "Dried and preserved flower bunches in Lahore. Bamboo wildflower bunch from Rs. 1,250. Long-lasting home décor and gifts.",
   alternates: {
-    canonical: "https://lahorebouquet.com/dried-flowers",
+    canonical: `${SITE_URL}/dried-flowers`,
   },
   openGraph: {
     title: "Dried Flower Bouquets in Lahore | Preserved Flowers",
     description: "Dried and preserved flower bunches in Lahore. Bamboo wildflower bunch from Rs. 1,250. Long-lasting home décor and gifts.",
-    url: "https://lahorebouquet.com/dried-flowers",
+    url: `${SITE_URL}/dried-flowers`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
@@ -35,6 +36,8 @@ export default async function DriedFlowersPage() {
     )
   );
 
+  const itemListJsonLd = itemListSchema(driedProducts, `${SITE_URL}/dried-flowers`, "Dried Flowers in Lahore");
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -43,19 +46,19 @@ export default async function DriedFlowersPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Bouquets",
-        item: "https://lahorebouquet.com/bouquets",
+        item: `${SITE_URL}/bouquets`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Dried Flowers",
-        item: "https://lahorebouquet.com/dried-flowers",
+        item: `${SITE_URL}/dried-flowers`,
       },
     ],
   };
@@ -84,6 +87,10 @@ export default async function DriedFlowersPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
 
       {/* Breadcrumb */}

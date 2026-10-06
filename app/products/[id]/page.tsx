@@ -5,10 +5,10 @@ import Link from "next/link";
 import { 
   ALL_PRODUCTS, 
   Product, 
-  LAHORE_AREAS, 
-  REVIEWS 
+  LAHORE_AREAS
 } from "../../data/products";
-import { getSanityProducts, getSanityProduct, getSanityReviews } from "@/sanity/lib/fetch";
+import { getSanityProducts, getSanityProduct } from "@/sanity/lib/fetch";
+import { SITE_URL } from "@/lib/business";
 import ProductDetailActions from "../../components/ProductDetailActions";
 import ProductCard from "../../components/ProductCard";
 import { 
@@ -17,7 +17,6 @@ import {
   Truck, 
   ShieldCheck, 
   Heart, 
-  CheckCircle2, 
   Leaf, 
   Sparkles, 
   MapPin,
@@ -64,30 +63,33 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
       "express bouquet delivery lahore"
     ],
     alternates: {
-      canonical: `https://lahorebouquet.com/products/${product.slug}`,
+      canonical: `${SITE_URL}/products/${product.slug}`,
     },
     openGraph: {
       title: `${product.title} | Lahore Bouquet`,
       description: `Rs. ${product.price.toLocaleString()} PKR. Fresh hand-tied bouquet delivered across Lahore within 2–5 hours.`,
       images: [
         {
-          url: product.image,
+          url: product.image?.startsWith("http") ? product.image : `${SITE_URL}${product.image}`,
           width: 800,
           height: 1000,
           alt: product.title,
         }
       ],
       type: "website"
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${product.title} | Lahore Bouquet`,
+      description: `Rs. ${product.price.toLocaleString()} PKR. Fresh hand-tied bouquet delivered across Lahore within 2–5 hours.`,
+      images: [product.image?.startsWith("http") ? product.image : `${SITE_URL}${product.image}`],
     }
   };
 }
 
 export default async function ProductDetailPage({ params }: ProductPageProps) {
   const { id } = await params;
-  const [sanityProducts, sanityReviews] = await Promise.all([
-    getSanityProducts(),
-    getSanityReviews(),
-  ]);
+  const sanityProducts = await getSanityProducts();
 
   const product = sanityProducts.find(p => String(p.id) === id || p.slug === id || p._id === id)
     || await getSanityProduct(id)
@@ -101,17 +103,15 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
     .filter(p => String(p.id) !== String(product.id) && (p.category === product.category || p.badgeType === "hot"))
     .slice(0, 4);
 
-  const reviewsList = sanityReviews.length > 0 ? sanityReviews : REVIEWS;
-
   const getCategoryHref = (cat: string) => {
     switch (cat) {
-      case "Bouquets": return "/collections/bouquets";
-      case "Roses": return "/collections/roses";
-      case "Sunflowers": return "/collections/sunflowers";
-      case "Money Bouquets": return "/collections/money-bouquets";
-      case "Wedding Décor": return "/collections/wedding-decor";
-      case "Gifts & Cakes": return "/collections/gifts-cakes";
-      default: return "/collections/bouquets";
+      case "Bouquets": return "/bouquets";
+      case "Roses": return "/roses";
+      case "Sunflowers": return "/sunflowers";
+      case "Money Bouquets": return "/money-bouquets";
+      case "Wedding Décor": return "/wedding-decor";
+      case "Gifts & Cakes": return "/gifts-and-cakes";
+      default: return "/bouquets";
     }
   };
 
@@ -119,7 +119,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
     "@context": "https://schema.org/",
     "@type": "Product",
     "name": product.title,
-    "image": `https://lahorebouquet.com${product.image}`,
+    "image": `${SITE_URL}${product.image}`,
     "description": product.desc,
     "sku": `LB-${product.id}`,
     "brand": {
@@ -128,17 +128,12 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
     },
     "offers": {
       "@type": "Offer",
-      "url": `https://lahorebouquet.com/products/${product.slug}`,
+      "url": `${SITE_URL}/products/${product.slug}`,
       "priceCurrency": "PKR",
       "price": product.price,
       "priceValidUntil": "2027-12-31",
       "availability": "https://schema.org/InStock",
       "itemCondition": "https://schema.org/NewCondition"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": product.rating,
-      "reviewCount": product.reviewCount
     }
   };
 
@@ -150,19 +145,19 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://lahorebouquet.com"
+        "item": SITE_URL
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": product.category,
-        "item": `https://lahorebouquet.com${getCategoryHref(product.category)}`
+        "item": `${SITE_URL}${getCategoryHref(product.category)}`
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": product.title,
-        "item": `https://lahorebouquet.com/products/${product.slug}`
+        "item": `${SITE_URL}/products/${product.slug}`
       }
     ]
   };
@@ -275,8 +270,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                       <Star key={i} className="w-3.5 h-3.5 fill-[#C6A15B]" />
                     ))}
                   </div>
-                  <span className="font-bold text-[#0B0B0B]">{product.rating}</span>
-                  <span className="text-[#777777]">({product.reviewCount} verified reviews)</span>
+                  <span className="text-[#777777]">Handcrafted fresh in Lahore</span>
                 </div>
               </div>
 
@@ -359,48 +353,6 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
             </p>
           </div>
 
-        </div>
-      </section>
-
-      {/* Customer Reviews for this Bouquet */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 border-t border-[#E5DED2] space-y-8">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div>
-            <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#0B0B0B]">Verified Customer Reviews</h2>
-            <p className="text-xs text-[#777777]">Real experiences from flower lovers across Lahore</p>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="flex text-[#C6A15B]">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 fill-[#C6A15B]" />
-              ))}
-            </div>
-            <span className="text-sm font-bold text-[#0B0B0B]">{product.rating} Out of 5.0</span>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {reviewsList.slice(0, 2).map((rev, idx) => (
-            <div key={idx} className="p-6 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] space-y-3 text-xs shadow-xs">
-              <div className="flex items-center justify-between">
-                <div className="flex text-[#C6A15B]">
-                  {[...Array(rev.rating)].map((_, i) => (
-                    <Star key={i} className="w-3.5 h-3.5 fill-[#C6A15B]" />
-                  ))}
-                </div>
-                <span className="text-[11px] text-[#8B1E2D] font-semibold flex items-center gap-1">
-                  <CheckCircle2 className="w-3 h-3" /> Verified Lahore Buyer
-                </span>
-              </div>
-              <p className="text-[#2A2A2A] italic leading-relaxed">
-                "{rev.quote}"
-              </p>
-              <div className="pt-2 border-t border-[#E5DED2] flex items-center justify-between text-[#777777] text-[11px]">
-                <span className="font-semibold text-[#0B0B0B]">{rev.name}</span>
-                <span>{rev.location}</span>
-              </div>
-            </div>
-          ))}
         </div>
       </section>
 

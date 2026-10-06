@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { Sparkles, Truck, Camera, MessageCircle, HelpCircle } from "lucide-react";
+import { SITE_URL, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -11,12 +12,12 @@ export const metadata: Metadata = {
   },
   description: "Fresh white rose bouquets in Lahore. Single stems, dozens and 50-rose bouquets for weddings, apologies and new beginnings. Same-day delivery.",
   alternates: {
-    canonical: "https://lahorebouquet.com/roses/white-roses",
+    canonical: `${SITE_URL}/roses/white-roses`,
   },
   openGraph: {
     title: "White Rose Bouquet in Lahore | Fresh White Roses",
     description: "Fresh white rose bouquets in Lahore. Single stems, dozens and 50-rose bouquets for weddings, apologies and new beginnings. Same-day delivery.",
-    url: "https://lahorebouquet.com/roses/white-roses",
+    url: `${SITE_URL}/roses/white-roses`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
@@ -38,6 +39,8 @@ export default async function WhiteRosesPage() {
     )
   );
 
+  const itemListJsonLd = itemListSchema(whiteRoses, `${SITE_URL}/roses/white-roses`, "White Rose Bouquets in Lahore");
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -46,19 +49,19 @@ export default async function WhiteRosesPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Roses",
-        item: "https://lahorebouquet.com/roses",
+        item: `${SITE_URL}/roses`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "White Roses",
-        item: "https://lahorebouquet.com/roses/white-roses",
+        item: `${SITE_URL}/roses/white-roses`,
       },
     ],
   };
@@ -95,6 +98,10 @@ export default async function WhiteRosesPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
 
       {/* Breadcrumb */}

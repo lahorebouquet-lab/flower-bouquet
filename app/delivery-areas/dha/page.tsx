@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { MapPin, Clock, Camera, MessageCircle, AlertCircle } from "lucide-react";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -11,12 +12,12 @@ export const metadata: Metadata = {
   },
   description: "Fresh flowers delivered to DHA Lahore Phases 1 to 9 in about 2 to 3 hours. Roses, cakes, midnight surprises and bridal décor.",
   alternates: {
-    canonical: "https://lahorebouquet.com/delivery-areas/dha",
+    canonical: `${SITE_URL}/delivery-areas/dha`,
   },
   openGraph: {
     title: "Flower Delivery in DHA Lahore | Same-Day Bouquets",
     description: "Fresh flowers delivered to DHA Lahore Phases 1 to 9 in about 2 to 3 hours. Roses, cakes, midnight surprises and bridal décor.",
-    url: "https://lahorebouquet.com/delivery-areas/dha",
+    url: `${SITE_URL}/delivery-areas/dha`,
   }
 };
 
@@ -28,19 +29,19 @@ const dhaBreadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://lahorebouquet.com",
+      item: `${SITE_URL}`,
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Delivery Areas",
-      item: "https://lahorebouquet.com/delivery-areas",
+      item: `${SITE_URL}/delivery-areas`,
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "DHA Lahore",
-      item: "https://lahorebouquet.com/delivery-areas/dha",
+      item: `${SITE_URL}/delivery-areas/dha`,
     },
   ],
 };

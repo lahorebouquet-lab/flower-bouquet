@@ -1,6 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -8,12 +9,12 @@ export const metadata: Metadata = {
   },
   description: "Complete guide to custom cash flower bouquets in Lahore. Learn about banknote denominations, safe floral pinning, pricing breakdowns, and security verification.",
   alternates: {
-    canonical: "https://lahorebouquet.com/blog/money-bouquet-designs-and-pricing-lahore",
+    canonical: `${SITE_URL}/blog/money-bouquet-designs-and-pricing-lahore`,
   },
   openGraph: {
     title: "Money Bouquets in Lahore: Denominations, Designs & Pricing",
     description: "Complete guide to custom cash flower bouquets in Lahore. Learn about banknote denominations, safe floral pinning, pricing breakdowns, and security verification.",
-    url: "https://lahorebouquet.com/blog/money-bouquet-designs-and-pricing-lahore",
+    url: `${SITE_URL}/blog/money-bouquet-designs-and-pricing-lahore`,
     type: "article",
   }
 };
@@ -27,12 +28,12 @@ export default function MoneyBouquetGuidePage() {
     author: {
       "@type": "Organization",
       name: "Lahore Bouquet Florist Team",
-      url: "https://lahorebouquet.com",
+      url: `${SITE_URL}`,
     },
     publisher: {
       "@type": "Organization",
       name: "Lahore Bouquet",
-      url: "https://lahorebouquet.com",
+      url: `${SITE_URL}`,
     },
     datePublished: "2026-10-02",
     dateModified: "2026-10-03",

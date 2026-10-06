@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { Sparkles, Truck, Camera, MessageCircle, HelpCircle, Calendar } from "lucide-react";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -11,12 +12,12 @@ export const metadata: Metadata = {
   },
   description: "Bridal bouquets, stage flowers, car décor and mehndi jewellery for barat and walima in Lahore. Book early. Fresh flowers made to your theme.",
   alternates: {
-    canonical: "https://lahorebouquet.com/occasions/barat-and-walima",
+    canonical: `${SITE_URL}/occasions/barat-and-walima`,
   },
   openGraph: {
     title: "Barat & Walima Flowers in Lahore | Bouquets & Décor",
     description: "Bridal bouquets, stage flowers, car décor and mehndi jewellery for barat and walima in Lahore. Book early. Fresh flowers made to your theme.",
-    url: "https://lahorebouquet.com/occasions/barat-and-walima",
+    url: `${SITE_URL}/occasions/barat-and-walima`,
   }
 };
 

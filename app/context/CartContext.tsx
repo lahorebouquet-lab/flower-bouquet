@@ -60,9 +60,7 @@ interface CartContextType {
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
 export function CartProvider({ children }: { children: ReactNode }) {
-  const [cart, setCart] = useState<CartItem[]>([
-    { product: ALL_PRODUCTS[0], quantity: 1 }
-  ]);
+  const [cart, setCart] = useState<CartItem[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [checkoutStep, setCheckoutStep] = useState<1 | 2 | 3 | 4 | 5>(1);
   const [quickViewProduct, setQuickViewProduct] = useState<Product | null>(null);

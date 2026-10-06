@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { Heart, Truck, Camera, MessageCircle, HelpCircle } from "lucide-react";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -11,12 +12,12 @@ export const metadata: Metadata = {
   },
   description: "Romantic bouquets in Lahore for proposals, dates and surprises. Red roses, single-rose bouquets and 50-rose designs. Same-day delivery.",
   alternates: {
-    canonical: "https://lahorebouquet.com/occasions/love-and-romance",
+    canonical: `${SITE_URL}/occasions/love-and-romance`,
   },
   openGraph: {
     title: "Romantic Flowers in Lahore | Love Bouquets & Proposals",
     description: "Romantic bouquets in Lahore for proposals, dates and surprises. Red roses, single-rose bouquets and 50-rose designs. Same-day delivery.",
-    url: "https://lahorebouquet.com/occasions/love-and-romance",
+    url: `${SITE_URL}/occasions/love-and-romance`,
   }
 };
 

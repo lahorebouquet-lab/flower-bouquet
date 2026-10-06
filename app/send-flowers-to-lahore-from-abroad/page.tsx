@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Globe2, CreditCard, Camera, Clock, MessageCircle, HelpCircle, Plane } from "lucide-react";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -10,13 +11,13 @@ export const metadata: Metadata = {
   description:
     "Living in the UK, USA, UAE, Saudi Arabia or Canada? Send fresh flowers, cakes and gifts to your family in Lahore. Pay with your international card, we deliver in 2–5 hours with WhatsApp photo proof.",
   alternates: {
-    canonical: "https://lahorebouquet.com/send-flowers-to-lahore-from-abroad",
+    canonical: `${SITE_URL}/send-flowers-to-lahore-from-abroad`,
   },
   openGraph: {
     title: "Send Flowers to Lahore from Abroad | UK, USA, UAE, Saudi",
     description:
       "Living in the UK, USA, UAE, Saudi Arabia or Canada? Send fresh flowers, cakes and gifts to your family in Lahore. Pay with your international card, we deliver in 2–5 hours with WhatsApp photo proof.",
-    url: "https://lahorebouquet.com/send-flowers-to-lahore-from-abroad",
+    url: `${SITE_URL}/send-flowers-to-lahore-from-abroad`,
     type: "website",
     locale: "en_PK",
   },
@@ -62,13 +63,13 @@ export default function SendFromAbroadPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Send Flowers from Abroad",
-        item: "https://lahorebouquet.com/send-flowers-to-lahore-from-abroad",
+        item: `${SITE_URL}/send-flowers-to-lahore-from-abroad`,
       },
     ],
   };

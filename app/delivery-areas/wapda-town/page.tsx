@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { MapPin, Clock, Camera, MessageCircle } from "lucide-react";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -11,12 +12,12 @@ export const metadata: Metadata = {
   },
   description: "Fresh flower bouquets, roses & birthday cakes delivered to Wapda Town, PIA Society, Valencia & Township Lahore in 2.5 to 3.5 hours. Photo on WhatsApp first.",
   alternates: {
-    canonical: "https://lahorebouquet.com/delivery-areas/wapda-town",
+    canonical: `${SITE_URL}/delivery-areas/wapda-town`,
   },
   openGraph: {
     title: "Flower Delivery in Wapda Town & Township Lahore | Same-Day",
     description: "Fresh flower bouquets, roses & birthday cakes delivered to Wapda Town, PIA Society, Valencia & Township Lahore in 2.5 to 3.5 hours. Photo on WhatsApp first.",
-    url: "https://lahorebouquet.com/delivery-areas/wapda-town",
+    url: `${SITE_URL}/delivery-areas/wapda-town`,
   }
 };
 
@@ -32,19 +33,19 @@ export default async function WapdaTownDeliveryPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Delivery Areas",
-        item: "https://lahorebouquet.com/delivery-areas",
+        item: `${SITE_URL}/delivery-areas`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Wapda Town Lahore",
-        item: "https://lahorebouquet.com/delivery-areas/wapda-town",
+        item: `${SITE_URL}/delivery-areas/wapda-town`,
       },
     ],
   };

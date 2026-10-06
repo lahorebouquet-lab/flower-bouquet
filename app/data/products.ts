@@ -1,6 +1,7 @@
 export interface Product {
   id: number | string;
   _id?: string;
+  _updatedAt?: string;
   badge?: string;
   badgeType?: "hot" | "bestseller" | "save" | "new" | "favorite" | "promotion" | string;
   title: string;

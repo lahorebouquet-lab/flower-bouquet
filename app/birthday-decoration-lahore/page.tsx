@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PartyPopper, Truck, Camera, MessageCircle, HelpCircle, Sparkles, Clock, MapPin, BadgeCheck } from "lucide-react";
+import { SITE_URL, serviceSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
   description:
     "Book birthday decoration in Lahore — helium balloon bunches, flower backdrops, table styling and surprise setups at home. Packages from Rs. 4,999. Same-day booking available.",
   alternates: {
-    canonical: "https://lahorebouquet.com/birthday-decoration-lahore",
+    canonical: `${SITE_URL}/birthday-decoration-lahore`,
   },
   keywords: [
     "birthday decoration in lahore",
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
     title: "Birthday Decoration in Lahore | Balloon & Flower Setup at Home",
     description:
       "Book birthday decoration in Lahore — helium balloon bunches, flower backdrops, table styling and surprise setups at home. Packages from Rs. 4,999.",
-    url: "https://lahorebouquet.com/birthday-decoration-lahore",
+    url: `${SITE_URL}/birthday-decoration-lahore`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
@@ -103,8 +104,8 @@ export default function BirthdayDecorationLahorePage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://lahorebouquet.com" },
-      { "@type": "ListItem", position: 2, name: "Birthday Decoration in Lahore", item: "https://lahorebouquet.com/birthday-decoration-lahore" },
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}` },
+      { "@type": "ListItem", position: 2, name: "Birthday Decoration in Lahore", item: `${SITE_URL}/birthday-decoration-lahore` },
     ],
   };
 
@@ -118,31 +119,17 @@ export default function BirthdayDecorationLahorePage() {
     })),
   };
 
-  const serviceSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
+  const birthdayServiceJsonLd = serviceSchema({
     name: "Birthday Decoration in Lahore",
-    provider: {
-      "@type": "Florist",
-      name: "Lahore Bouquet",
-      telephone: "+92 310 4225974",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "Lahore",
-        addressLocality: "Lahore",
-        addressCountry: "PK",
-      },
-    },
-    areaServed: "Lahore, Pakistan",
-    description:
-      "Birthday decoration at home in Lahore: helium balloons, flower backdrops, table styling and surprise setups. Packages from Rs. 4,999.",
-  };
+    url: `${SITE_URL}/birthday-decoration-lahore`,
+    description: "Birthday decoration at home in Lahore: helium balloons, flower backdrops, table styling and surprise setups. Packages from Rs. 4,999.",
+  });
 
   return (
     <main className="max-w-6xl mx-auto px-4 sm:px-6 py-10 space-y-12 bg-[#F8F3EA] text-[#2A2A2A]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(birthdayServiceJsonLd) }} />
 
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="text-xs text-[#777777] flex items-center gap-2">

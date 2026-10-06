@@ -307,7 +307,6 @@ export default function CategorySection({ categories, products }: CategorySectio
       oldPrice: p.oldPrice,
       image: p.image,
       badge: p.badge || "Bestseller",
-      rating: p.rating || 4.9,
       href: `/products/${p.slug || p.id}`,
     }));
   const featuredBouquets = liveFeatured.length > 0 ? liveFeatured : FEATURED_BOUQUETS;
@@ -426,7 +425,7 @@ export default function CategorySection({ categories, products }: CategorySectio
                 Our Most Ordered Bouquets
               </h2>
               <p className="text-xs text-[#2A2A2A] mt-0.5">
-                Every bouquet is hand-tied in our Gulberg atelier. WhatsApp photo proof sent before dispatch.
+                Every bouquet is hand-tied fresh in Lahore. WhatsApp photo proof sent before dispatch.
               </p>
             </div>
 
@@ -497,10 +496,6 @@ export default function CategorySection({ categories, products }: CategorySectio
                       <span className="px-1.5 py-0.5 rounded bg-[#8B1E2D] text-white text-[8px] font-bold uppercase tracking-wider shadow-xs">
                         {bouquet.badge}
                       </span>
-                      <div className="flex items-center gap-0.5 px-1 py-0.5 rounded bg-white/90 backdrop-blur-sm border border-[rgba(198,161,91,0.30)] text-[8px] text-[#0B0B0B] font-bold shadow-xs">
-                        <Star className="w-2 h-2 fill-[#C6A15B] text-[#C6A15B]" />
-                        <span>{bouquet.rating}</span>
-                      </div>
                     </div>
                   </div>
 

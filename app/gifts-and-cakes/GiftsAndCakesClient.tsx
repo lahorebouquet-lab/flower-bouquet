@@ -91,8 +91,8 @@ function GiftsAndCakesInner({ initialProducts }: Props) {
       list.sort((a, b) => a.price - b.price);
     } else if (sortBy === "price-high") {
       list.sort((a, b) => b.price - a.price);
-    } else if (sortBy === "rating") {
-      list.sort((a, b) => (b.rating || 5) - (a.rating || 5));
+    } else if (sortBy === "newest") {
+      list.sort((a, b) => String(b.id).localeCompare(String(a.id)));
     }
 
     return list;
@@ -152,7 +152,7 @@ function GiftsAndCakesInner({ initialProducts }: Props) {
               <option value="featured">Featured First</option>
               <option value="price-low">Price: Low to High</option>
               <option value="price-high">Price: High to Low</option>
-              <option value="rating">Top Customer Rated</option>
+              <option value="newest">Newest First</option>
             </select>
           </div>
         </div>

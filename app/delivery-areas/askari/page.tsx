@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { MapPin, Clock, Camera, MessageCircle, ShieldCheck } from "lucide-react";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -11,12 +12,12 @@ export const metadata: Metadata = {
   },
   description: "Express same-day flower delivery across Askari 1, Askari 5, Askari 9, Askari 10 & Askari 11 (Bedian Road) in 2 to 3 hours. Photo on WhatsApp first.",
   alternates: {
-    canonical: "https://lahorebouquet.com/delivery-areas/askari",
+    canonical: `${SITE_URL}/delivery-areas/askari`,
   },
   openGraph: {
     title: "Flower Delivery in Askari Lahore | Askari 1 to 11",
     description: "Express same-day flower delivery across Askari 1, Askari 5, Askari 9, Askari 10 & Askari 11 (Bedian Road) in 2 to 3 hours. Photo on WhatsApp first.",
-    url: "https://lahorebouquet.com/delivery-areas/askari",
+    url: `${SITE_URL}/delivery-areas/askari`,
   }
 };
 
@@ -32,19 +33,19 @@ export default async function AskariDeliveryPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Delivery Areas",
-        item: "https://lahorebouquet.com/delivery-areas",
+        item: `${SITE_URL}/delivery-areas`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Askari Housing Lahore",
-        item: "https://lahorebouquet.com/delivery-areas/askari",
+        item: `${SITE_URL}/delivery-areas/askari`,
       },
     ],
   };

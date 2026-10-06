@@ -1,6 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -8,12 +9,12 @@ export const metadata: Metadata = {
   },
   description: "Discover the best flowers for wedding anniversaries in Pakistan. Traditional and modern floral choices for 1st, 5th, 10th, and 25th milestones with midnight delivery.",
   alternates: {
-    canonical: "https://lahorebouquet.com/blog/anniversary-flower-guide-pakistan",
+    canonical: `${SITE_URL}/blog/anniversary-flower-guide-pakistan`,
   },
   openGraph: {
     title: "Best Anniversary Flowers by Year in Pakistan | Florist Guide",
     description: "Discover the best flowers for wedding anniversaries in Pakistan. Traditional and modern floral choices for 1st, 5th, 10th, and 25th milestones with midnight delivery.",
-    url: "https://lahorebouquet.com/blog/anniversary-flower-guide-pakistan",
+    url: `${SITE_URL}/blog/anniversary-flower-guide-pakistan`,
     type: "article",
   }
 };
@@ -27,12 +28,12 @@ export default function AnniversaryGuidePage() {
     author: {
       "@type": "Organization",
       name: "Lahore Bouquet Florist Team",
-      url: "https://lahorebouquet.com",
+      url: `${SITE_URL}`,
     },
     publisher: {
       "@type": "Organization",
       name: "Lahore Bouquet",
-      url: "https://lahorebouquet.com",
+      url: `${SITE_URL}`,
     },
     datePublished: "2026-10-02",
     dateModified: "2026-10-03",

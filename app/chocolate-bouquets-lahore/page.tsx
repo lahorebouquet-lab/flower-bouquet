@@ -5,6 +5,7 @@ import { Sparkles, Truck, Camera, MessageCircle, HelpCircle, Gift, Heart, Shield
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import { ALL_PRODUCTS } from "../data/products";
 import ProductCard from "../components/ProductCard";
+import { SITE_URL, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
   },
   description: "Order a chocolate bouquet in Lahore: chocolates arranged like flowers. Chocolate bouquet price in Pakistan from Rs. 4,200. Delivery across the city.",
   alternates: {
-    canonical: "https://lahorebouquet.com/chocolate-bouquets-lahore",
+    canonical: `${SITE_URL}/chocolate-bouquets-lahore`,
   },
   keywords: [
     "chocolate bouquet",
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Chocolate Bouquet in Lahore | Price & Delivery",
     description: "Order a chocolate bouquet in Lahore: chocolates arranged like flowers. Chocolate bouquet price in Pakistan from Rs. 4,200. Delivery across the city.",
-    url: "https://lahorebouquet.com/chocolate-bouquets-lahore",
+    url: `${SITE_URL}/chocolate-bouquets-lahore`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
@@ -45,6 +46,8 @@ export default async function ChocolateBouquetsLahorePage() {
     p.title.toLowerCase().includes("hamper")
   );
 
+  const itemListJsonLd = itemListSchema(chocolateProducts, `${SITE_URL}/chocolate-bouquets-lahore`, "Chocolate Bouquets in Lahore");
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -53,19 +56,19 @@ export default async function ChocolateBouquetsLahorePage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Bouquets",
-        item: "https://lahorebouquet.com/bouquets",
+        item: `${SITE_URL}/bouquets`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Chocolate Bouquets",
-        item: "https://lahorebouquet.com/chocolate-bouquets-lahore",
+        item: `${SITE_URL}/chocolate-bouquets-lahore`,
       },
     ],
   };
@@ -126,6 +129,10 @@ export default async function ChocolateBouquetsLahorePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
 
       {/* Breadcrumb */}

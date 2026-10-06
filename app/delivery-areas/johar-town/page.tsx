@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { MapPin, Clock, Camera, MessageCircle, Building2 } from "lucide-react";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -11,12 +12,12 @@ export const metadata: Metadata = {
   },
   description: "Express flower delivery across Johar Town Phases 1 & 2, Emporium Mall, Faisal Town & Shaukat Khanum Hospital in 2 to 3 hours. Photo on WhatsApp first.",
   alternates: {
-    canonical: "https://lahorebouquet.com/delivery-areas/johar-town",
+    canonical: `${SITE_URL}/delivery-areas/johar-town`,
   },
   openGraph: {
     title: "Flower Delivery in Johar Town Lahore | Same-Day Bouquets",
     description: "Express flower delivery across Johar Town Phases 1 & 2, Emporium Mall, Faisal Town & Shaukat Khanum Hospital in 2 to 3 hours. Photo on WhatsApp first.",
-    url: "https://lahorebouquet.com/delivery-areas/johar-town",
+    url: `${SITE_URL}/delivery-areas/johar-town`,
   }
 };
 
@@ -32,19 +33,19 @@ export default async function JoharTownDeliveryPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Delivery Areas",
-        item: "https://lahorebouquet.com/delivery-areas",
+        item: `${SITE_URL}/delivery-areas`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Johar Town Lahore",
-        item: "https://lahorebouquet.com/delivery-areas/johar-town",
+        item: `${SITE_URL}/delivery-areas/johar-town`,
       },
     ],
   };

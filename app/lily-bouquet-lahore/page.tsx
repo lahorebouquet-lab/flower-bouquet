@@ -6,6 +6,7 @@ import { Flower2, Truck, Camera, MessageCircle, HelpCircle, Sparkles, Droplets, 
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import { ALL_PRODUCTS } from "../data/products";
 import ProductCard from "../components/ProductCard";
+import { SITE_URL, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
   },
   description: "Order a fresh lily bouquet in Lahore. Elegant Oriental and Asiatic lilies — perfect for sympathy, get-well wishes and refined gifting. Delivery in 2–5 hours.",
   alternates: {
-    canonical: "https://lahorebouquet.com/lily-bouquet-lahore",
+    canonical: `${SITE_URL}/lily-bouquet-lahore`,
   },
   keywords: [
     "lily bouquet",
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Lily Bouquet in Lahore | Fresh Oriental Lilies Delivery",
     description: "Order a fresh lily bouquet in Lahore. Elegant Oriental and Asiatic lilies — perfect for sympathy, get-well wishes and refined gifting.",
-    url: "https://lahorebouquet.com/lily-bouquet-lahore",
+    url: `${SITE_URL}/lily-bouquet-lahore`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
@@ -60,15 +61,17 @@ export default async function LilyBouquetLahorePage() {
     p.title.toLowerCase().includes("lily") ||
     p.title.toLowerCase().includes("lilies")
   );
+
+  const itemListJsonLd = itemListSchema(lilyProducts, `${SITE_URL}/lily-bouquet-lahore`, "Lily Bouquets in Lahore");
   const displayProducts = lilyProducts.length > 0 ? lilyProducts : allProducts.filter(p => p.badgeType === "bestseller" || p.badge === "Bestseller").slice(0, 4);
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://lahorebouquet.com" },
-      { "@type": "ListItem", position: 2, name: "Bouquets", item: "https://lahorebouquet.com/bouquets" },
-      { "@type": "ListItem", position: 3, name: "Lily Bouquet Lahore", item: "https://lahorebouquet.com/lily-bouquet-lahore" },
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}` },
+      { "@type": "ListItem", position: 2, name: "Bouquets", item: `${SITE_URL}/bouquets` },
+      { "@type": "ListItem", position: 3, name: "Lily Bouquet Lahore", item: `${SITE_URL}/lily-bouquet-lahore` },
     ],
   };
 
@@ -86,6 +89,10 @@ export default async function LilyBouquetLahorePage() {
     <main className="max-w-7xl mx-auto px-4 sm:px-6 py-10 space-y-14 bg-[#F8F3EA] text-[#2A2A2A]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
+      />
 
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="text-xs text-[#777777] flex items-center gap-2">

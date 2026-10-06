@@ -5,6 +5,7 @@ import { getSanityProducts } from "@/sanity/lib/fetch";
 import { ALL_PRODUCTS } from "../data/products";
 import GiftsAndCakesClient from "./GiftsAndCakesClient";
 import { Gift, Truck, Camera, MessageCircle, HelpCircle, ShieldCheck, Clock, Heart } from "lucide-react";
+import { SITE_URL, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -27,12 +28,12 @@ export const metadata: Metadata = {
     "lahore bouquet gifts"
   ],
   alternates: {
-    canonical: "https://lahorebouquet.com/gifts-and-cakes",
+    canonical: `${SITE_URL}/gifts-and-cakes`,
   },
   openGraph: {
     title: "Layers Cakes & Imported Chocolates Delivery in Lahore | Lahore Bouquet",
     description: "Send authentic Layers Bakeshop cakes & luxury chocolates in Lahore. Fast 2 to 4 hours express delivery across Gulberg, DHA, Bahria Town & Cantt.",
-    url: "https://lahorebouquet.com/gifts-and-cakes",
+    url: `${SITE_URL}/gifts-and-cakes`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
@@ -53,6 +54,8 @@ export default async function GiftsAndCakesPage() {
       p.title.toLowerCase().includes("ferrero")
   );
 
+  const itemListJsonLd = itemListSchema(giftProducts, `${SITE_URL}/gifts-and-cakes`, "Gifts & Cakes in Lahore");
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -61,13 +64,13 @@ export default async function GiftsAndCakesPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Gifts & Cakes",
-        item: "https://lahorebouquet.com/gifts-and-cakes",
+        item: `${SITE_URL}/gifts-and-cakes`,
       },
     ],
   };
@@ -128,6 +131,10 @@ export default async function GiftsAndCakesPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
 
       {/* Breadcrumb Navigation */}

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../components/ProductCard";
 import { Sun, Truck, Camera, MessageCircle, HelpCircle } from "lucide-react";
+import { SITE_URL, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   },
   description: "Order a fresh sunflower bouquet in Lahore. Bright, cheerful and ideal for birthdays and thank-yous. Price from Rs. 1,590, delivery across the city.",
   alternates: {
-    canonical: "https://lahorebouquet.com/sunflowers",
+    canonical: `${SITE_URL}/sunflowers`,
   },
   keywords: [
     "sunflower bouquet",
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sunflower Bouquet in Lahore | Fresh Delivery",
     description: "Order a fresh sunflower bouquet in Lahore. Bright, cheerful and ideal for birthdays and thank-yous. Price from Rs. 1,590, delivery across the city.",
-    url: "https://lahorebouquet.com/sunflowers",
+    url: `${SITE_URL}/sunflowers`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
@@ -34,6 +35,8 @@ export default async function SunflowersPage() {
   const allProducts = await getSanityProducts();
   const sunflowers = allProducts.filter(p => p.category === "Sunflowers");
 
+  const itemListJsonLd = itemListSchema(sunflowers, `${SITE_URL}/sunflowers`, "Sunflower Bouquets in Lahore");
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -42,19 +45,19 @@ export default async function SunflowersPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Bouquets",
-        item: "https://lahorebouquet.com/bouquets",
+        item: `${SITE_URL}/bouquets`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Sunflowers",
-        item: "https://lahorebouquet.com/sunflowers",
+        item: `${SITE_URL}/sunflowers`,
       },
     ],
   };
@@ -99,6 +102,10 @@ export default async function SunflowersPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
 
       {/* Breadcrumb */}

@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { Calendar, Clock, User, ArrowLeft, ArrowRight, Share2, Sparkles } from "lucide-react";
 import { getSanityBlogPost, getSanityBlogPosts } from "@/sanity/lib/fetch";
 import { PortableText } from "next-sanity";
+import { SITE_URL } from "@/lib/business";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -60,12 +61,12 @@ export default async function BlogPostPage({ params }: Props) {
     author: {
       "@type": "Organization",
       name: post.author || "Lahore Bouquet Florist Team",
-      url: "https://lahorebouquet.com",
+      url: `${SITE_URL}`,
     },
     publisher: {
       "@type": "Organization",
       name: "Lahore Bouquet",
-      url: "https://lahorebouquet.com",
+      url: `${SITE_URL}`,
     },
   };
 

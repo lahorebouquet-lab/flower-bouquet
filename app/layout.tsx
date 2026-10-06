@@ -3,6 +3,7 @@ import { Playfair_Display, Cormorant_Garamond, Plus_Jakarta_Sans } from "next/fo
 import "./globals.css";
 import { CartProvider } from "./context/CartContext";
 import StoreLayoutWrapper from "./components/StoreLayoutWrapper";
+import { SITE_URL } from "@/lib/business";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -24,59 +25,70 @@ const jakarta = Plus_Jakarta_Sans({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: {
-    template: "%s | Lahore Bouquet - Fresh Flowers Lahore",
-    default: "Lahore Bouquet ✦ Fresh Handcrafted Bouquets & Flower Delivery in Lahore",
-  },
-  description: "Send fresh handcrafted flower bouquets, imported roses, sunflowers, money bouquets, wedding decor & gift combos across Lahore. Express 2–5 hours and midnight delivery across all Lahore areas.",
-  keywords: [
-    "lahore bouquet",
-    "flower bouquet lahore",
-    "flower delivery lahore",
-    "send flowers to lahore",
-    "rose bouquet lahore",
-    "sunflower bouquet lahore",
-    "money bouquet lahore",
-    "wedding room decor lahore",
-    "bridal canopy decor lahore",
-    "midnight flower delivery lahore",
-    "fresh flowers shop lahore"
-  ],
-  metadataBase: new URL("https://lahorebouquet.com"),
-  openGraph: {
-    title: "Lahore Bouquet ✦ Fresh Floristry & Handcrafted Bouquets in Lahore",
-    description: "Same-Day 2–5h Express Flower Delivery across Lahore. Fresh imported roses, sunflowers, money bouquets & wedding decor.",
-    url: "https://lahorebouquet.com",
-    siteName: "Lahore Bouquet",
-    locale: "en_PK",
-    type: "website",
-    images: [
-      {
-        url: "https://lahorebouquet.com/images/hero-luxury-banner.webp",
-        width: 1024,
-        height: 443,
-        alt: "Lahore Bouquet — Fresh Handcrafted Bouquets & Flower Delivery in Lahore",
-      },
+const IS_PROD_HOST =
+  process.env.VERCEL_ENV === "production" ||
+  (!process.env.VERCEL && !SITE_URL.includes("vercel.app"));
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: {
+      template: "%s | Lahore Bouquet - Fresh Flowers Lahore",
+      default: "Lahore Bouquet - Fresh Handcrafted Bouquets & Flower Delivery in Lahore",
+    },
+    description: "Send fresh handcrafted flower bouquets, imported roses, sunflowers, money bouquets, wedding decor & gift combos across Lahore. Express 2–5 hours and midnight delivery across all Lahore areas.",
+    keywords: [
+      "lahore bouquet",
+      "flower bouquet lahore",
+      "flower delivery lahore",
+      "send flowers to lahore",
+      "rose bouquet lahore",
+      "sunflower bouquet lahore",
+      "money bouquet lahore",
+      "wedding room decor lahore",
+      "bridal canopy decor lahore",
+      "midnight flower delivery lahore",
+      "fresh flowers shop lahore"
     ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Lahore Bouquet ✦ Fresh Handcrafted Bouquets in Lahore",
-    description: "Same-day 2–5h express flower delivery across Lahore. Fresh imported roses, sunflowers & money bouquets.",
-    images: ["https://lahorebouquet.com/images/hero-luxury-banner.webp"],
-  },
-  icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon.png", type: "image/png" },
-    ],
-    shortcut: "/favicon.png",
-    apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
-    ],
-  },
-};
+    metadataBase: new URL(SITE_URL),
+    ...(IS_PROD_HOST ? {} : { robots: { index: false, follow: false } }),
+    alternates: {
+      canonical: SITE_URL,
+      languages: { "en-PK": SITE_URL },
+    },
+    openGraph: {
+      title: "Lahore Bouquet - Fresh Floristry & Handcrafted Bouquets in Lahore",
+      description: "Same-Day 2–5h Express Flower Delivery across Lahore. Fresh imported roses, sunflowers, money bouquets & wedding decor.",
+      url: SITE_URL,
+      siteName: "Lahore Bouquet",
+      locale: "en_PK",
+      type: "website",
+      images: [
+        {
+          url: `${SITE_URL}/og-image.jpg`,
+          width: 1200,
+          height: 630,
+          alt: "Lahore Bouquet — Fresh Handcrafted Bouquets & Flower Delivery in Lahore",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Lahore Bouquet - Fresh Handcrafted Bouquets in Lahore",
+      description: "Same-day 2–5h express flower delivery across Lahore. Fresh imported roses, sunflowers & money bouquets.",
+      images: [`${SITE_URL}/og-image.jpg`],
+    },
+    icons: {
+      icon: [
+        { url: "/favicon.ico", sizes: "any" },
+        { url: "/favicon.png", type: "image/png" },
+      ],
+      shortcut: "/favicon.png",
+      apple: [
+        { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+      ],
+    },
+  };
+}
 
 export const viewport = {
   width: "device-width",
@@ -93,18 +105,18 @@ export default function RootLayout({
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "@id": "https://lahorebouquet.com#website",
-    url: "https://lahorebouquet.com",
+    "@id": `${SITE_URL}#website`,
+    url: SITE_URL,
     name: "Lahore Bouquet",
     inLanguage: "en-PK",
     publisher: {
-      "@id": "https://lahorebouquet.com#florist",
+      "@id": `${SITE_URL}#florist`,
     },
     potentialAction: {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: "https://lahorebouquet.com/bouquets?q={search_term_string}",
+        urlTemplate: `${SITE_URL}/bouquets?q={search_term_string}`,
       },
       "query-input": "required name=search_term_string",
     },
@@ -112,7 +124,7 @@ export default function RootLayout({
 
   return (
     <html
-      lang="en"
+      lang="en-PK"
       suppressHydrationWarning
       className={`${playfair.variable} ${cormorant.variable} ${jakarta.variable} antialiased scroll-smooth`}
     >

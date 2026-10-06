@@ -5,6 +5,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../components/ProductCard";
 import { Heart, Truck, Camera, MessageCircle, HelpCircle } from "lucide-react";
+import { SITE_URL, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -12,12 +13,12 @@ export const metadata: Metadata = {
   },
   description: "Fresh imported Dutch roses in Lahore. Single stems from Rs. 1,180, dozens, 24 and 50-rose bouquets. Photo on WhatsApp before delivery.",
   alternates: {
-    canonical: "https://lahorebouquet.com/roses",
+    canonical: `${SITE_URL}/roses`,
   },
   openGraph: {
     title: "Rose Bouquets in Lahore | Red & White Roses Delivery",
     description: "Fresh imported Dutch roses in Lahore. Single stems from Rs. 1,180, dozens, 24 and 50-rose bouquets. Photo on WhatsApp before delivery.",
-    url: "https://lahorebouquet.com/roses",
+    url: `${SITE_URL}/roses`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
@@ -28,6 +29,8 @@ export default async function RosesPage() {
   const allProducts = await getSanityProducts();
   const roses = allProducts.filter(p => p.category === "Roses");
 
+  const itemListJsonLd = itemListSchema(roses, `${SITE_URL}/roses`, "Rose Bouquets in Lahore");
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -36,19 +39,19 @@ export default async function RosesPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lahorebouquet.com",
+        item: `${SITE_URL}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Bouquets",
-        item: "https://lahorebouquet.com/bouquets",
+        item: `${SITE_URL}/bouquets`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Roses",
-        item: "https://lahorebouquet.com/roses",
+        item: `${SITE_URL}/roses`,
       },
     ],
   };
@@ -102,6 +105,10 @@ export default async function RosesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
+      />
 
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="text-xs text-[#777777] flex items-center gap-2">
@@ -125,7 +132,7 @@ export default async function RosesPage() {
           </h1>
 
           <p className="text-[#F8F3EA]/85 text-xs sm:text-sm leading-relaxed font-light">
-            Roses say what you cannot say out loud. We use imported Dutch roses for our main bouquets because the heads are bigger, the stems are longer, and they last longer in a vase once you trim them. A single rose in black wrapping is enough for some people. Others want 50.
+            <strong className="text-white">Rose bouquets in Lahore start from Rs. 1,180 with same-day delivery in 2–5 hours.</strong> Roses say what you cannot say out loud. We use imported Dutch roses for our main bouquets because the heads are bigger, the stems are longer, and they last longer in a vase once you trim them. A single rose in black wrapping is enough for some people. Others want 50.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-2 text-xs text-white/80">
