@@ -108,7 +108,10 @@ export async function GET(req: NextRequest) {
       params.q = `*${q}*`
     }
 
-    const orders = await client.fetch(
+    // NOTE: use writeClient (useCdn:false) for admin reads so status changes
+    // show immediately instead of lagging behind Sanity's CDN cache.
+    const reader = process.env.SANITY_API_WRITE_TOKEN ? writeClient : client
+    const orders = await reader.fetch(
       `*[${filter}] | order(placedAt desc)[0...$limit] {
         _id, orderId, status, senderName, senderPhone,
         recipientName, recipientPhone, streetAddress, area,
@@ -120,7 +123,7 @@ export async function GET(req: NextRequest) {
       }`,
       { ...params, limit }
     )
-    const counts = await client.fetch(
+    const counts = await reader.fetch(
       `{
         "all": count(*[_type == "order"]),
         "pending": count(*[_type == "order" && status == "pending"]),
