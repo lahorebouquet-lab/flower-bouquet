@@ -195,6 +195,33 @@ export default function TrackOrderClient() {
         <p className="text-center text-xs text-[#999]">
           Order ID nahi mil rahi? <Link href="/" className="text-[#8B1E2D] underline">WhatsApp par rabta karein</Link> — hum dhoond ke de denge.
         </p>
+
+        {/* FAQs */}
+        <section className="bg-white rounded-2xl border border-[#E5DED2] p-6 space-y-4">
+          <h2 className="font-playfair text-xl font-bold text-[#0B0B0B]">Order Tracking — FAQs</h2>
+          <div className="space-y-4">
+            <div>
+              <h3 className="font-bold text-sm text-[#0B0B0B]">Where do I find my Order ID?</h3>
+              <p className="text-xs text-[#636363] mt-1">Your Order ID (e.g. FLB-123456) is shown on the order confirmation screen right after checkout, and it&apos;s also included in the WhatsApp order message we send you.</p>
+            </div>
+            <div>
+              <h3 className="font-bold text-sm text-[#0B0B0B]">Why do I need my phone number to track?</h3>
+              <p className="text-xs text-[#636363] mt-1">For privacy — only the person who placed the order (with the same phone number used at checkout) can see the order details and delivery address.</p>
+            </div>
+            <div>
+              <h3 className="font-bold text-sm text-[#0B0B0B]">What do the tracking statuses mean?</h3>
+              <p className="text-xs text-[#636363] mt-1">Order Received → we have your order. Confirmed → payment/order verified. Preparing → your bouquet is being hand-tied fresh. Out for Delivery → the rider is on the way. Delivered → enjoy!</p>
+            </div>
+            <div>
+              <h3 className="font-bold text-sm text-[#0B0B0B]">It says order not found — what should I do?</h3>
+              <p className="text-xs text-[#636363] mt-1">Double-check the Order ID spelling and make sure you&apos;re using the same phone number you ordered with. Still stuck? Message us on WhatsApp (0310-4225974) and we&apos;ll find it for you.</p>
+            </div>
+            <div>
+              <h3 className="font-bold text-sm text-[#0B0B0B]">Will I get updates without checking this page?</h3>
+              <p className="text-xs text-[#636363] mt-1">Yes — we send WhatsApp updates at every step, including a live bouquet photo for your approval before dispatch. This page is handy when you want to check status yourself anytime.</p>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   )

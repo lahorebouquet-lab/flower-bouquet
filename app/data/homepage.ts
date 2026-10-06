@@ -74,6 +74,6 @@ export const HOMEPAGE_FAQS: FAQItem[] = [
   },
   {
     q: "How do I track my flower order?",
-    a: "After you order, you get WhatsApp updates at every step: order confirmed, bouquet photo for your approval, rider dispatched, and delivered. For surprise deliveries, we confirm delivery without spoiling the surprise."
+    a: "Use our Track Order page — enter your Order ID (e.g. FLB-123456) and the phone number you ordered with to see live status: Order Received, Confirmed, Preparing, Out for Delivery, and Delivered. You also get WhatsApp updates at every step, including a bouquet photo for your approval before dispatch."
   }
 ];
