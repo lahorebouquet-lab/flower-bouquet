@@ -22,20 +22,34 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
+  // Keep title under 60 chars — truncate long Sanity titles at word boundaries.
+  const maxLen = 60 - " | Lahore Bouquet Blog".length;
+  let shortTitle = post.title;
+  if (shortTitle.length > maxLen) {
+    shortTitle = shortTitle.slice(0, maxLen).trimEnd();
+    const ls = shortTitle.lastIndexOf(" ");
+    if (ls > maxLen * 0.6) shortTitle = shortTitle.slice(0, ls);
+  }
+
+  // Article images must be absolute URLs for Google rich results.
+  const ogImage = post.image
+    ? post.image.startsWith("http") ? post.image : `https://lahorebouquet.com${post.image}`
+    : undefined;
+
   return {
     title: {
-      absolute: `${post.title} | Lahore Bouquet Blog`,
+      absolute: `${shortTitle} | Lahore Bouquet Blog`,
     },
     description: post.excerpt,
     alternates: {
       canonical: `https://lahorebouquet.com/blog/${post.slug}`,
     },
     openGraph: {
-      title: post.title,
+      title: shortTitle,
       description: post.excerpt,
       url: `https://lahorebouquet.com/blog/${post.slug}`,
       type: "article",
-      images: post.image ? [{ url: post.image }] : undefined,
+      images: ogImage ? [{ url: ogImage }] : undefined,
     },
   };
 }
@@ -51,12 +65,16 @@ export default async function BlogPostPage({ params }: Props) {
   const allPosts = await getSanityBlogPosts();
   const relatedPosts = allPosts.filter((p) => p.slug !== post.slug).slice(0, 3);
 
+  const articleImageAbs = post.image
+    ? (post.image.startsWith("http") ? post.image : `https://lahorebouquet.com${post.image}`)
+    : undefined;
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: post.title,
     description: post.excerpt,
-    image: post.image ? [post.image] : undefined,
+    image: articleImageAbs ? [articleImageAbs] : undefined,
     datePublished: post.publishedAt || "2026-10-01",
     author: {
       "@type": "Organization",

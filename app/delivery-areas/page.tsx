@@ -18,6 +18,14 @@ export const metadata: Metadata = {
     title: "Flower Delivery Areas in Lahore | DHA, Gulberg, Bahria",
     description: "We deliver flowers to DHA, Gulberg, Bahria Town, Model Town, Johar Town, Cantt, Askari and more across Lahore in 2 to 5 hours.",
     url: `${SITE_URL}/delivery-areas`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Flower Delivery Areas in Lahore | DHA, Gulberg, Bahria",
+      },
+    ],
   }
 };
 

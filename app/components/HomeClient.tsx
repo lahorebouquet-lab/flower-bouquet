@@ -436,7 +436,7 @@ export default function HomeClient({
           <div className="md:col-span-7 space-y-4">
             <div className="w-10 h-[2px] bg-[#C6A15B]" />
             <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012]">
-              Handcrafted with Heart in Gulberg, Delivered across Lahore
+              Handcrafted with Heart in Lahore, Delivered across the City
             </h2>
             <p className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed">
               Lahore Bouquet was founded with a singular conviction: <span className="text-[#8B1E2D] font-semibold">gifting flowers should be deeply personal and dependable</span>. Unlike automated aggregators, every arrangement is tied by our master florists in Lahore.

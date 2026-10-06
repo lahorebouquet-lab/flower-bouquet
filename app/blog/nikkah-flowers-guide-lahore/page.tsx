@@ -16,6 +16,14 @@ export const metadata: Metadata = {
     description: "Bridal bouquets, gajray, stage decor prices and ordering timeline for nikkah ceremonies in Lahore.",
     url: `${SITE_URL}/blog/nikkah-flowers-guide-lahore`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Nikkah Flowers in Lahore — Bridal Bouquet, Gajray & Decor Guide",
+      },
+    ],
   }
 };
 

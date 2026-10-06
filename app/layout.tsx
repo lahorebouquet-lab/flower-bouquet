@@ -65,9 +65,9 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: "Lahore Bouquet - Fresh Handcrafted Bouquets in Lahore",
-      description: "Same-day 2–5h express flower delivery across Lahore. Fresh imported roses, sunflowers & money bouquets.",
-      images: [`${SITE_URL}/og-image.jpg`],
+      // NOTE: title/description/images intentionally omitted — Twitter/X
+      // falls back to each page's own openGraph tags, so page-specific
+      // share images are never overridden by a generic one.
     },
     icons: {
       icon: [

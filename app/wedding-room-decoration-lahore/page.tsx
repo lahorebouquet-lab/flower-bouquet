@@ -3,10 +3,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BedDouble, Flower2, Flame, Lightbulb, MessageCircle, Truck, Camera, Sparkles, CalendarCheck } from "lucide-react";
 import { SITE_URL, whatsappLink } from "@/lib/business";
+import RelatedProducts from "../components/RelatedProducts";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Wedding Room Decoration in Lahore | Bridal Room Decor | Lahore Bouquet",
+    absolute: "Wedding Room Decoration in Lahore | Lahore Bouquet",
   },
   description: "Bridal & wedding room decoration in Lahore from Rs. 14,999 — rose petals, candles, fairy lights, bed styling. Packages up to Rs. 39,999. Book 3–5 days ahead. Same-city decorators across DHA, Gulberg, Bahria Town.",
   alternates: {
@@ -250,6 +251,23 @@ export default function WeddingRoomDecorationPage() {
       </section>
 
       {/* FAQ */}
+      
+      <section className="my-10">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B] text-center mb-6">Related Guides</h2>
+        <div className="grid sm:grid-cols-2 gap-3">
+          <Link href="/blog/nikkah-flowers-guide-lahore" className="block p-4 rounded-xl bg-white border border-[#E5DED2] hover:border-[#8B1E2D] transition-colors">
+            <span className="text-sm font-semibold text-[#0B0B0B]">Nikkah Flowers Guide</span>
+            <span className="text-[#8B1E2D] ml-2">→</span>
+          </Link>
+          <Link href="/blog/wedding-car-decoration-price-lahore" className="block p-4 rounded-xl bg-white border border-[#E5DED2] hover:border-[#8B1E2D] transition-colors">
+            <span className="text-sm font-semibold text-[#0B0B0B]">Wedding Car Decoration Prices</span>
+            <span className="text-[#8B1E2D] ml-2">→</span>
+          </Link>
+        </div>
+      </section>
+
+      <RelatedProducts title="Wedding Collection" categoryMatch="Wedding" count={4} />
+
       <section className="space-y-4">
         <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Wedding Room Decoration FAQs</h2>
         <div className="space-y-3">

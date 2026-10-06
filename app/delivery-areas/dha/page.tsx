@@ -4,7 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { MapPin, Clock, Camera, MessageCircle, Wallet, Gift, HelpCircle, Navigation, AlertCircle, Package } from "lucide-react";
-import { SITE_URL } from "@/lib/business";
+import { SITE_URL, areaFloristSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -18,6 +18,14 @@ export const metadata: Metadata = {
     title: "Flower Delivery in DHA Lahore | Rs. 250, 2–3 Hours",
     description: "Same-day flower delivery to DHA Lahore Phases 1–9, Defence Raya & Sector Y in 2–3 hours. Delivery fee Rs. 250. Imported roses, money bouquets, cakes & midnight surprises. Photo on WhatsApp first.",
     url: `${SITE_URL}/delivery-areas/dha`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Flower Delivery in DHA Lahore | Rs. 250, 2–3 Hours",
+      },
+    ],
   }
 };
 
@@ -93,6 +101,8 @@ const dhaFaqSchema = {
   ],
 };
 
+const areaFlorist = areaFloristSchema("DHA", `${SITE_URL}/delivery-areas/dha`);
+
 export default async function DHADeliveryPage() {
   const allProducts = await getSanityProducts();
   const popularBouquets = allProducts.slice(0, 4);
@@ -106,6 +116,10 @@ export default async function DHADeliveryPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(dhaFaqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(areaFlorist) }}
       />
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="text-xs text-[#777777] flex items-center gap-2">

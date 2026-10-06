@@ -16,6 +16,14 @@ export const metadata: Metadata = {
     description: "Rose bouquets from Rs. 1,180, sunflowers, lilies, money bouquets and décor — Lahore's 2026 flower price table.",
     url: `${SITE_URL}/blog/flower-prices-lahore-2026`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Flower Prices in Lahore 2026: Complete Price Guide",
+      },
+    ],
   }
 };
 

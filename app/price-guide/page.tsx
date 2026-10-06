@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { MessageCircle, Clock, ArrowRight } from "lucide-react";
+import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -11,6 +12,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Flower Prices in Lahore 2026 | Bouquet Price Guide",
     description: "See what fresh flowers cost in Lahore: single roses, dozens, 50-rose bouquets, money bouquets, cakes and wedding décor. Updated prices.",
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Flower Prices in Lahore 2026 | Bouquet Price Guide",
+      },
+    ],
   }
 };
 

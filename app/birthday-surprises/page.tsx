@@ -18,6 +18,14 @@ export const metadata: Metadata = {
     title: "Birthday Flowers & Surprises in Lahore | Same-Day",
     description: "Birthday bouquets, cakes and midnight surprises in Lahore. Send flowers to your loved ones with a card. Same-day and 12 AM delivery.",
     url: `${SITE_URL}/birthday-surprises`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Birthday Flowers & Surprises in Lahore | Same-Day",
+      },
+    ],
   }
 };
 

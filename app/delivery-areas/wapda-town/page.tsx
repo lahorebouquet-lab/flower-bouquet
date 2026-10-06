@@ -4,7 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { MapPin, Clock, Camera, MessageCircle, Wallet, Gift, HelpCircle, Navigation, Package } from "lucide-react";
-import { SITE_URL } from "@/lib/business";
+import { SITE_URL, areaFloristSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -18,6 +18,14 @@ export const metadata: Metadata = {
     title: "Flower Delivery in Wapda Town Lahore | Rs. 300, 2.5–3.5 Hours",
     description: "Same-day flower bouquets, roses & cakes delivered to Wapda Town, PIA Society, Valencia & Township Lahore in 2.5–3.5 hours. Fee Rs. 300. Photo on WhatsApp first, COD, midnight slot.",
     url: `${SITE_URL}/delivery-areas/wapda-town`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Flower Delivery in Wapda Town Lahore | Rs. 300, 2.5–3.5 Hours",
+      },
+    ],
   }
 };
 

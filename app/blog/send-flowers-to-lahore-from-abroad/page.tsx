@@ -16,6 +16,14 @@ export const metadata: Metadata = {
     description: "Order on WhatsApp, pay by bank transfer, get a photo before delivery — same-day flower delivery across Lahore for overseas Pakistanis.",
     url: `${SITE_URL}/blog/send-flowers-to-lahore-from-abroad`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Send Flowers to Lahore from UK, USA & UAE",
+      },
+    ],
   }
 };
 

@@ -18,6 +18,14 @@ export const metadata: Metadata = {
     title: "Anniversary Flowers in Lahore | Roses & Surprise Setups",
     description: "Anniversary flower delivery in Lahore. Red roses, 50-rose bouquets, cake combos and midnight surprises. Photo on WhatsApp before delivery.",
     url: `${SITE_URL}/occasions/anniversary`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Anniversary Flowers in Lahore | Roses & Surprise Setups",
+      },
+    ],
   }
 };
 

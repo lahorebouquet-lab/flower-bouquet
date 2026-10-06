@@ -18,6 +18,14 @@ export const metadata: Metadata = {
     title: "Corporate Flower Delivery Lahore | Office Subscriptions & Event Floral",
     description: "Weekly office flower subscriptions, executive gifting, conference stage décor and bulk festive gifting across Lahore — with official invoicing.",
     url: `${SITE_URL}/corporate`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Corporate Flower Delivery Lahore | Office Subscriptions & Event Floral",
+      },
+    ],
   }
 };
 

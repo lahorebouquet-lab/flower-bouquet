@@ -4,7 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { MapPin, Clock, Camera, MessageCircle, Sparkles, Wallet, Gift, HelpCircle, Navigation, Package } from "lucide-react";
-import { SITE_URL } from "@/lib/business";
+import { SITE_URL, areaFloristSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -18,6 +18,14 @@ export const metadata: Metadata = {
     title: "Flower Delivery in Gulberg Lahore | FREE, 30–90 Mins",
     description: "Free 30–90 minute flower delivery in Gulberg I, II & III, Liberty, MM Alam Road & Main Boulevard Lahore. Bouquets from Rs. 1,180. Midnight slot, photo on WhatsApp first, COD. Open 9 AM–1 AM daily.",
     url: `${SITE_URL}/delivery-areas/gulberg`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Flower Delivery in Gulberg Lahore | FREE, 30–90 Mins",
+      },
+    ],
   }
 };
 

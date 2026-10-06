@@ -18,6 +18,14 @@ export const metadata: Metadata = {
     title: "Barat & Walima Flowers in Lahore | Bouquets & Décor",
     description: "Bridal bouquets, stage flowers, car décor and mehndi jewellery for barat and walima in Lahore. Book early. Fresh flowers made to your theme.",
     url: `${SITE_URL}/occasions/barat-and-walima`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Barat & Walima Flowers in Lahore | Bouquets & Décor",
+      },
+    ],
   }
 };
 

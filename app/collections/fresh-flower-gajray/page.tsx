@@ -9,7 +9,7 @@ import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Gajray & Garlands Mala in Lahore | 4 Hours Delivery | Mehndi Jewellery",
+    absolute: "Fresh Gajray in Lahore | Mehndi Jewellery | Lahore Bouquet",
   },
   description: "Order fresh motia & red rose gajray, wedding garlands (mala/haar), haath phool, and handmade bridal mehndi jewellery in Lahore. 4 hours express delivery across all areas. Prices from Rs. 2,499.",
   alternates: {
@@ -32,12 +32,20 @@ export const metadata: Metadata = {
     "lahore bouquet gajray"
   ],
   openGraph: {
-    title: "Gajray & Garlands Mala in Lahore | 4 Hours Delivery | Mehndi Jewellery",
+    title: "Fresh Gajray in Lahore | Mehndi Jewellery | Lahore Bouquet",
     description: "Order fresh motia & red rose gajray, wedding garlands (mala/haar), haath phool, and handmade bridal mehndi jewellery in Lahore. 4 hours express delivery across all areas.",
     url: `${SITE_URL}/collections/fresh-flower-gajray`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Fresh Gajray in Lahore | Mehndi Jewellery | Lahore Bouquet",
+      },
+    ],
   }
 };
 

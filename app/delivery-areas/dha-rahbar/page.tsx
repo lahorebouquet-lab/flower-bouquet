@@ -5,7 +5,7 @@ import { getSanityProducts, getSanityAreaPage } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import NeighborhoodTemplate from "../../components/NeighborhoodTemplate";
 import { MapPin, Clock, Camera, MessageCircle, Wallet, Gift, HelpCircle, Navigation, AlertCircle, Package } from "lucide-react";
-import { SITE_URL } from "@/lib/business";
+import { SITE_URL, areaFloristSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -19,6 +19,14 @@ export const metadata: Metadata = {
     title: "Flower Delivery in DHA Rahbar Lahore | Rs. 400, 3–4 Hours",
     description: "Same-day flower delivery to DHA Rahbar Lahore — sectors & commercial area near Valencia Town in 3–4 hours. Delivery fee Rs. 400. Fresh roses, money bouquets, cakes & midnight surprises. Photo on WhatsApp first.",
     url: `${SITE_URL}/delivery-areas/dha-rahbar`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Flower Delivery in DHA Rahbar Lahore | Rs. 400, 3–4 Hours",
+      },
+    ],
   }
 };
 
@@ -94,6 +102,8 @@ const dhaRahbarFaqSchema = {
   ],
 };
 
+const areaFlorist = areaFloristSchema("DHA Rahbar", `${SITE_URL}/delivery-areas/dha-rahbar`);
+
 export default async function DHARahbarDeliveryPage() {
   // Sanity CMS first — falls back to static content below if unreachable
   const sanityData = await getSanityAreaPage("dha-rahbar");
@@ -113,6 +123,10 @@ export default async function DHARahbarDeliveryPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(dhaRahbarFaqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(areaFlorist) }}
       />
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="text-xs text-[#777777] flex items-center gap-2">

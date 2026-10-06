@@ -18,6 +18,14 @@ export const metadata: Metadata = {
     title: "Flower Care & Gifting Guides Lahore | Florist Blog",
     description: "Expert floral care tips, occasion gifting guides, and Lahore floristry news by master florists at Lahore Bouquet.",
     url: `${SITE_URL}/blog`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Flower Care & Gifting Guides Lahore | Florist Blog",
+      },
+    ],
   }
 };
 

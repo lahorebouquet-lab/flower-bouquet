@@ -5,7 +5,7 @@ import { getSanityProducts, getSanityAreaPage } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import NeighborhoodTemplate from "../../components/NeighborhoodTemplate";
 import { MapPin, Clock, Camera, MessageCircle, Wallet, Gift, HelpCircle, Navigation, AlertCircle, Package } from "lucide-react";
-import { SITE_URL } from "@/lib/business";
+import { SITE_URL, areaFloristSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -19,6 +19,14 @@ export const metadata: Metadata = {
     title: "Flower Delivery in NFC Society Lahore | Rs. 400, 2.5–3.5 Hours",
     description: "Same-day flower delivery to NFC Society Lahore — housing blocks and commercial market in 2.5–3.5 hours. Delivery fee Rs. 400 flat. Bouquet photo on WhatsApp before dispatch.",
     url: `${SITE_URL}/delivery-areas/nfc`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Flower Delivery in NFC Society Lahore | Rs. 400, 2.5–3.5 Hours",
+      },
+    ],
   }
 };
 
@@ -94,6 +102,8 @@ const nfcFaqSchema = {
   ],
 };
 
+const areaFlorist = areaFloristSchema("NFC", `${SITE_URL}/delivery-areas/nfc`);
+
 export default async function NFCSocietyDeliveryPage() {
   // Sanity CMS first — falls back to static content below if unreachable
   const sanityData = await getSanityAreaPage("nfc");
@@ -113,6 +123,10 @@ export default async function NFCSocietyDeliveryPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(nfcFaqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(areaFlorist) }}
       />
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="text-xs text-[#777777] flex items-center gap-2">

@@ -16,6 +16,14 @@ export const metadata: Metadata = {
     description: "Complete guide to custom cash flower bouquets in Lahore. Learn about banknote denominations, safe floral pinning, pricing breakdowns, and security verification.",
     url: `${SITE_URL}/blog/money-bouquet-designs-and-pricing-lahore`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Money Bouquets in Lahore: Denominations, Designs & Pricing",
+      },
+    ],
   }
 };
 

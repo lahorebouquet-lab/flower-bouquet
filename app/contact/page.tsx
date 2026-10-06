@@ -28,6 +28,14 @@ export const metadata: Metadata = {
     title: "Contact Lahore Bouquet | WhatsApp, Phone & Address",
     description: "Contact Lahore Bouquet on WhatsApp or phone, in Lahore, Pakistan. Open 9 AM to 1 AM daily.",
     url: `${SITE_URL}/contact`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Contact Lahore Bouquet | WhatsApp, Phone & Address",
+      },
+    ],
   },
   alternates: {
     canonical: `${SITE_URL}/contact`,

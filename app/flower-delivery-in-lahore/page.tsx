@@ -30,6 +30,14 @@ export const metadata: Metadata = {
     siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Flower Delivery in Lahore | Same-Day Bouquets, Order Online",
+      },
+    ],
   },
 };
 

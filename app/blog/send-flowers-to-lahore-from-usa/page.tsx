@@ -16,6 +16,14 @@ export const metadata: Metadata = {
     description: "Order from New York, Houston or California — pay by US card, approve the bouquet photo on WhatsApp, get delivery confirmation in Lahore.",
     url: `${SITE_URL}/blog/send-flowers-to-lahore-from-usa`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Send Flowers to Lahore from the USA — Same-Day Delivery Guide",
+      },
+    ],
   }
 };
 

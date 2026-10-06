@@ -16,6 +16,14 @@ export const metadata: Metadata = {
     description: "1-hour time difference means easy same-day ordering from Dubai, Sharjah & Abu Dhabi. Pay by card, approve the photo on WhatsApp.",
     url: `${SITE_URL}/blog/send-flowers-to-lahore-from-uae`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Send Flowers to Lahore from the UAE — Same-Day Delivery Guide",
+      },
+    ],
   }
 };
 

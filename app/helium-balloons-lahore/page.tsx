@@ -3,10 +3,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PartyPopper, CircleDot, Rainbow, MessageCircle, Truck, Camera, Sparkles, BadgeCheck } from "lucide-react";
 import { SITE_URL, whatsappLink } from "@/lib/business";
+import RelatedProducts from "../components/RelatedProducts";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Helium Balloons in Lahore | Birthday Balloon Decoration | Lahore Bouquet",
+    absolute: "Helium Balloons in Lahore | Birthday Decor | Lahore Bouquet",
   },
   description: "Helium balloons in Lahore from Rs. 199/balloon — latex, metallic & confetti balloons, garlands, arches & full birthday decoration. Same-day delivery across DHA, Gulberg, Bahria Town.",
   alternates: {
@@ -239,6 +240,23 @@ export default function HeliumBalloonsLahorePage() {
       </section>
 
       {/* FAQ */}
+      
+      <section className="my-10">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B] text-center mb-6">Related Guides</h2>
+        <div className="grid sm:grid-cols-2 gap-3">
+          <Link href="/blog/birthday-flower-delivery-lahore" className="block p-4 rounded-xl bg-white border border-[#E5DED2] hover:border-[#8B1E2D] transition-colors">
+            <span className="text-sm font-semibold text-[#0B0B0B]">Birthday Delivery Guide</span>
+            <span className="text-[#8B1E2D] ml-2">→</span>
+          </Link>
+          <Link href="/blog/anniversary-flower-guide-pakistan" className="block p-4 rounded-xl bg-white border border-[#E5DED2] hover:border-[#8B1E2D] transition-colors">
+            <span className="text-sm font-semibold text-[#0B0B0B]">Anniversary Flowers Guide</span>
+            <span className="text-[#8B1E2D] ml-2">→</span>
+          </Link>
+        </div>
+      </section>
+
+      <RelatedProducts title="Party Combos" categoryMatch="Gifts & Cakes" count={4} />
+
       <section className="space-y-4">
         <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Helium Balloon FAQs</h2>
         <div className="space-y-3">

@@ -16,6 +16,14 @@ export const metadata: Metadata = {
     description: "Florist guide: which blooms suit birthdays, anniversaries and get-well wishes — with meanings and Lahore prices.",
     url: `${SITE_URL}/blog/best-flowers-birthday-anniversary-get-well-pakistan`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Best Flowers for Birthday, Anniversary & Get-Well in Pakistan",
+      },
+    ],
   }
 };
 

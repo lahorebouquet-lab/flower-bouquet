@@ -18,6 +18,14 @@ export const metadata: Metadata = {
     title: "Eid Gifts & Flower Delivery in Lahore | Eid ul Fitr & Adha",
     description: "Send Eid bouquets, imported roses, gourmet mithai boxes, chocolate hampers & gift baskets across Lahore. Same-day & Chaand Raat express delivery.",
     url: `${SITE_URL}/occasions/eid-gifts`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Eid Gifts & Flower Delivery in Lahore | Eid ul Fitr & Adha",
+      },
+    ],
   }
 };
 

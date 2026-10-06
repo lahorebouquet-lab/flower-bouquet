@@ -16,6 +16,14 @@ export const metadata: Metadata = {
     description: "Red for love, white for purity, yellow for friendship — the complete rose meaning guide for Pakistan.",
     url: `${SITE_URL}/blog/rose-color-meanings-pakistan`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Rose Color Meanings — What Each Rose Says",
+      },
+    ],
   }
 };
 

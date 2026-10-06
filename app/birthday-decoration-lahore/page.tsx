@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PartyPopper, Truck, Camera, MessageCircle, HelpCircle, Sparkles, Clock, MapPin, BadgeCheck } from "lucide-react";
 import { SITE_URL, serviceSchema } from "@/lib/business";
+import RelatedProducts from "../components/RelatedProducts";
 
 export const metadata: Metadata = {
   title: {
@@ -29,6 +30,14 @@ export const metadata: Metadata = {
     siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Birthday Decoration in Lahore | Balloon & Flower Setup at Home",
+      },
+    ],
   },
 };
 
@@ -260,6 +269,23 @@ export default function BirthdayDecorationLahorePage() {
       </section>
 
       {/* FAQs */}
+      
+      <section className="my-10">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B] text-center mb-6">Related Guides</h2>
+        <div className="grid sm:grid-cols-2 gap-3">
+          <Link href="/blog/birthday-flower-delivery-lahore" className="block p-4 rounded-xl bg-white border border-[#E5DED2] hover:border-[#8B1E2D] transition-colors">
+            <span className="text-sm font-semibold text-[#0B0B0B]">Birthday Flower Delivery Guide</span>
+            <span className="text-[#8B1E2D] ml-2">→</span>
+          </Link>
+          <Link href="/blog/midnight-flower-cake-delivery-lahore" className="block p-4 rounded-xl bg-white border border-[#E5DED2] hover:border-[#8B1E2D] transition-colors">
+            <span className="text-sm font-semibold text-[#0B0B0B]">Midnight Flower & Cake Delivery</span>
+            <span className="text-[#8B1E2D] ml-2">→</span>
+          </Link>
+        </div>
+      </section>
+
+      <RelatedProducts title="Birthday Best Combos" categoryMatch="Gifts & Cakes" count={4} />
+
       <section className="bg-white p-8 sm:p-10 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-6">
         <div className="flex items-center gap-2 text-[#0B0B0B]">
           <HelpCircle className="w-5 h-5 text-[#8B1E2D]" />

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { MapPin, Clock, Camera, MessageCircle, ShieldCheck, Wallet, Gift, HelpCircle, Navigation, Package } from "lucide-react";
-import { SITE_URL } from "@/lib/business";
+import { SITE_URL, areaFloristSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -18,6 +18,14 @@ export const metadata: Metadata = {
     title: "Flower Delivery in Askari Lahore | Rs. 300, 2–3 Hours",
     description: "Same-day flower delivery to Askari 1, 5, 9, 10 & 11 (Bedian Road) Lahore in 2–3 hours. Fee Rs. 300. Gated-community protocol, WhatsApp photo proof, COD, midnight slot. Open 9 AM–1 AM.",
     url: `${SITE_URL}/delivery-areas/askari`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Flower Delivery in Askari Lahore | Rs. 300, 2–3 Hours",
+      },
+    ],
   }
 };
 

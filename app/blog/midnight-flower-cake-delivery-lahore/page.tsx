@@ -16,6 +16,14 @@ export const metadata: Metadata = {
     description: "Flowers + cake at your door at 12 AM sharp. Slots, pricing and booking cut-offs explained.",
     url: `${SITE_URL}/blog/midnight-flower-cake-delivery-lahore`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Midnight Flower & Cake Delivery in Lahore",
+      },
+    ],
   }
 };
 

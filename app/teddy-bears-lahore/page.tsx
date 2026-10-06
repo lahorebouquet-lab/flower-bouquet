@@ -3,10 +3,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Gift, Ruler, MoonStar, MessageCircle, Truck, Camera, Sparkles, Heart } from "lucide-react";
 import { SITE_URL, whatsappLink } from "@/lib/business";
+import RelatedProducts from "../components/RelatedProducts";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Teddy Bears in Lahore | Giant Teddy Bear Delivery | Lahore Bouquet",
+    absolute: "Teddy Bears in Lahore | Giant Teddy Delivery | Lahore Bouquet",
   },
   description: "Order teddy bears online in Lahore — from cute small plushies (Rs. 1,499) to 6-feet giant teddy bears (Rs. 12,999). Same-day & midnight delivery with roses and chocolate combos across DHA, Gulberg, Bahria Town.",
   alternates: {
@@ -241,6 +242,23 @@ export default function TeddyBearsLahorePage() {
       </section>
 
       {/* FAQ */}
+      
+      <section className="my-10">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B] text-center mb-6">Related Guides</h2>
+        <div className="grid sm:grid-cols-2 gap-3">
+          <Link href="/blog/birthday-flower-delivery-lahore" className="block p-4 rounded-xl bg-white border border-[#E5DED2] hover:border-[#8B1E2D] transition-colors">
+            <span className="text-sm font-semibold text-[#0B0B0B]">Birthday Flower Delivery in Lahore</span>
+            <span className="text-[#8B1E2D] ml-2">→</span>
+          </Link>
+          <Link href="/blog/send-flowers-to-lahore-from-abroad" className="block p-4 rounded-xl bg-white border border-[#E5DED2] hover:border-[#8B1E2D] transition-colors">
+            <span className="text-sm font-semibold text-[#0B0B0B]">Send Flowers to Lahore from Abroad</span>
+            <span className="text-[#8B1E2D] ml-2">→</span>
+          </Link>
+        </div>
+      </section>
+
+      <RelatedProducts title="Teddy & Gift Combos" categoryMatch="Gifts & Cakes" count={4} />
+
       <section className="space-y-4">
         <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Teddy Bear FAQs</h2>
         <div className="space-y-3">

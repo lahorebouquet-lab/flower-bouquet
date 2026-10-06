@@ -17,6 +17,14 @@ export const metadata: Metadata = {
     title: "About Lahore Bouquet | Florist in Lahore",
     description: "Meet Lahore Bouquet, a Lahore florist. Hand-tied bouquets, bridal décor and same-day flower delivery across Lahore.",
     url: `${SITE_URL}/about`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "About Lahore Bouquet | Florist in Lahore",
+      },
+    ],
   }
 };
 
@@ -85,7 +93,7 @@ export default function AboutPage() {
         <div className="md:col-span-6 relative aspect-[4/3] rounded-2xl overflow-hidden border border-[rgba(198,161,91,0.25)] shadow-md">
           <Image 
             src="/images/hero_workshop.jpg"
-            alt="Lahore Bouquet Workshop in Lahore"
+            alt="Florists hand-tying fresh bouquets in Lahore"
             fill
             className="object-cover"
           />

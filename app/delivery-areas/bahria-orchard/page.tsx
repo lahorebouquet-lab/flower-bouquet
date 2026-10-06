@@ -5,7 +5,7 @@ import { getSanityProducts, getSanityAreaPage } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import NeighborhoodTemplate from "../../components/NeighborhoodTemplate";
 import { MapPin, Clock, Camera, MessageCircle, Wallet, Gift, HelpCircle, Navigation, AlertCircle, Package } from "lucide-react";
-import { SITE_URL } from "@/lib/business";
+import { SITE_URL, areaFloristSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -19,6 +19,14 @@ export const metadata: Metadata = {
     title: "Flower Delivery in Bahria Orchard Lahore | Rs. 500, 3–4 Hours",
     description: "Same-day flower delivery to Bahria Orchard Lahore — Phases 1–4 near Raiwind Road in 3–4 hours. Delivery fee Rs. 500. Fresh roses, money bouquets, cakes & midnight surprises. Photo on WhatsApp first.",
     url: `${SITE_URL}/delivery-areas/bahria-orchard`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Flower Delivery in Bahria Orchard Lahore | Rs. 500, 3–4 Hours",
+      },
+    ],
   }
 };
 
@@ -94,6 +102,8 @@ const bahriaOrchardFaqSchema = {
   ],
 };
 
+const areaFlorist = areaFloristSchema("Bahria Orchard", `${SITE_URL}/delivery-areas/bahria-orchard`);
+
 export default async function BahriaOrchardDeliveryPage() {
   // Sanity CMS first — falls back to static content below if unreachable
   const sanityData = await getSanityAreaPage("bahria-orchard");
@@ -113,6 +123,10 @@ export default async function BahriaOrchardDeliveryPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(bahriaOrchardFaqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(areaFlorist) }}
       />
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="text-xs text-[#777777] flex items-center gap-2">

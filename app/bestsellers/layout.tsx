@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
-  title: "Bestselling Bouquets in Lahore | Top-Rated Fresh Flowers",
+  title: "Bestselling Bouquets in Lahore",
   description: "Explore Lahore's favorite floral arrangements. Most-loved fresh Dutch roses, sunflower mixes, and luxury gift combos with same-day express delivery.",
   alternates: {
     canonical: `${SITE_URL}/bestsellers`,
   },
   openGraph: {
-    title: "Bestselling Bouquets in Lahore | Top-Rated Fresh Flowers",
+    title: "Bestselling Bouquets in Lahore",
     description: "Explore Lahore's favorite floral arrangements. Most-loved fresh Dutch roses, sunflower mixes, and luxury gift combos with same-day express delivery.",
     url: `${SITE_URL}/bestsellers`,
     siteName: "Lahore Bouquet",

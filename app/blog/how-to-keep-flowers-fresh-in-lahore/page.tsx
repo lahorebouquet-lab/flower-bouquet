@@ -16,6 +16,14 @@ export const metadata: Metadata = {
     description: "Learn how to keep cut roses and flower bouquets alive for up to 7 days in Lahore's warm climate. Practical florist tips on water changing, stem trimming, and vase placement.",
     url: `${SITE_URL}/blog/how-to-keep-flowers-fresh-in-lahore`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "How to Keep Flower Bouquets Fresh in Lahore Heat (Florist Tips)",
+      },
+    ],
   }
 };
 

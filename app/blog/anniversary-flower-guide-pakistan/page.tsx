@@ -16,6 +16,14 @@ export const metadata: Metadata = {
     description: "Discover the best flowers for wedding anniversaries in Pakistan. Traditional and modern floral choices for 1st, 5th, 10th, and 25th milestones with midnight delivery.",
     url: `${SITE_URL}/blog/anniversary-flower-guide-pakistan`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Best Anniversary Flowers by Year in Pakistan | Florist Guide",
+      },
+    ],
   }
 };
 

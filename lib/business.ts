@@ -139,6 +139,43 @@ export function floristSchema(url: string = SITE_URL) {
   };
 }
 
+/**
+ * Florist schema for a specific delivery-area page.
+ * Service-area business: no street address (per no-storefront decision),
+ * just the area served + delivery-specific details.
+ */
+export function areaFloristSchema(areaName: string, pageUrl: string, fee?: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Florist",
+    "@id": `${pageUrl}#florist`,
+    name: `${BUSINESS.name} — ${areaName}`,
+    url: pageUrl,
+    image: `${SITE_URL}/og-image.jpg`,
+    telephone: BUSINESS.phone.e164,
+    email: BUSINESS.email,
+    priceRange: BUSINESS.priceRange.display,
+    currenciesAccepted: "PKR",
+    paymentAccepted: "Cash, Bank Transfer, JazzCash, EasyPaisa",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Lahore",
+      addressRegion: "Punjab",
+      addressCountry: "PK",
+    },
+    areaServed: {
+      "@type": "City",
+      name: `${areaName}, Lahore`,
+    },
+    openingHoursSpecification: BUSINESS.openingHours.days.map((day) => ({
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: day,
+      opens: BUSINESS.openingHours.opens,
+      closes: BUSINESS.openingHours.closes,
+    })),
+  };
+}
+
 /** ItemList JSON-LD for collection/category pages (SEO rich results). */
 export function itemListSchema(
   products: Array<{ title: string; slug: string; price?: number; image?: string }>,

@@ -15,6 +15,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Customer Policies",
     description: "Read Lahore Bouquet's clear policies for delivery, flower substitution, damage replacement, and booking cancellations across Lahore.",
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Customer Policies",
+      },
+    ],
   }
 };
 

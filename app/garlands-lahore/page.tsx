@@ -3,10 +3,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Flower2, Users, Church, MessageCircle, Truck, Camera, Sparkles, Leaf } from "lucide-react";
 import { SITE_URL, whatsappLink } from "@/lib/business";
+import RelatedProducts from "../components/RelatedProducts";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Fresh Flower Garlands (Haar) in Lahore | Marigold, Rose & Jasmine | Lahore Bouquet",
+    absolute: "Fresh Flower Garlands (Haar) in Lahore | Lahore Bouquet",
   },
   description: "Fresh flower garlands (haar) in Lahore from Rs. 999 — marigold, rose & jasmine haar for baraat, nikkah, mehndi and welcome ceremonies. Bulk wedding orders with same-day delivery.",
   alternates: {
@@ -241,6 +242,23 @@ export default function GarlandsLahorePage() {
       </section>
 
       {/* FAQ */}
+      
+      <section className="my-10">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B] text-center mb-6">Related Guides</h2>
+        <div className="grid sm:grid-cols-2 gap-3">
+          <Link href="/blog/gajra-prices-lahore-2026" className="block p-4 rounded-xl bg-white border border-[#E5DED2] hover:border-[#8B1E2D] transition-colors">
+            <span className="text-sm font-semibold text-[#0B0B0B]">Gajra Prices 2026</span>
+            <span className="text-[#8B1E2D] ml-2">→</span>
+          </Link>
+          <Link href="/blog/nikkah-flowers-guide-lahore" className="block p-4 rounded-xl bg-white border border-[#E5DED2] hover:border-[#8B1E2D] transition-colors">
+            <span className="text-sm font-semibold text-[#0B0B0B]">Nikkah Flowers Guide</span>
+            <span className="text-[#8B1E2D] ml-2">→</span>
+          </Link>
+        </div>
+      </section>
+
+      <RelatedProducts title="Gajray & Garlands" categoryMatch="Gajray" count={4} />
+
       <section className="space-y-4">
         <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Garland FAQs</h2>
         <div className="space-y-3">

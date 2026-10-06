@@ -5,7 +5,7 @@ import { getSanityProducts, getSanityAreaPage } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import NeighborhoodTemplate from "../../components/NeighborhoodTemplate";
 import { MapPin, Clock, Camera, MessageCircle, Wallet, Gift, HelpCircle, Navigation, AlertCircle, Package } from "lucide-react";
-import { SITE_URL } from "@/lib/business";
+import { SITE_URL, areaFloristSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -19,6 +19,14 @@ export const metadata: Metadata = {
     title: "Flower Delivery in Tariq Gardens Lahore | Rs. 400, 2.5–3.5 Hours",
     description: "Same-day flower delivery to Tariq Gardens Lahore — housing blocks off the Multan Road corridor in 2.5–3.5 hours. Delivery fee Rs. 400. Fresh roses, money bouquets, cakes & midnight surprises. Photo on WhatsApp first.",
     url: `${SITE_URL}/delivery-areas/tariq-gardens`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Flower Delivery in Tariq Gardens Lahore | Rs. 400, 2.5–3.5 Hours",
+      },
+    ],
   }
 };
 
@@ -94,6 +102,8 @@ const tariqGardensFaqSchema = {
   ],
 };
 
+const areaFlorist = areaFloristSchema("Tariq Gardens", `${SITE_URL}/delivery-areas/tariq-gardens`);
+
 export default async function TariqGardensDeliveryPage() {
   // Sanity CMS first — falls back to static content below if unreachable
   const sanityData = await getSanityAreaPage("tariq-gardens");
@@ -113,6 +123,10 @@ export default async function TariqGardensDeliveryPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(tariqGardensFaqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(areaFlorist) }}
       />
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="text-xs text-[#777777] flex items-center gap-2">

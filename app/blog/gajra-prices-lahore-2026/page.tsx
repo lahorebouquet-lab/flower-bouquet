@@ -16,6 +16,14 @@ export const metadata: Metadata = {
     description: "Gajra pairs from Rs. 1,200, bridal sets from Rs. 2,500. Real 2026 prices and ordering guide.",
     url: `${SITE_URL}/blog/gajra-prices-lahore-2026`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Gajra Prices in Lahore — Fresh Gajray & Floral Jewellery Rates",
+      },
+    ],
   }
 };
 

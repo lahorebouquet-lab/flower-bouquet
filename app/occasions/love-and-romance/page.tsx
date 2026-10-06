@@ -18,6 +18,14 @@ export const metadata: Metadata = {
     title: "Romantic Flowers in Lahore | Love Bouquets & Proposals",
     description: "Romantic bouquets in Lahore for proposals, dates and surprises. Red roses, single-rose bouquets and 50-rose designs. Same-day delivery.",
     url: `${SITE_URL}/occasions/love-and-romance`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Romantic Flowers in Lahore | Love Bouquets & Proposals",
+      },
+    ],
   }
 };
 

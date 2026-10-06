@@ -18,6 +18,14 @@ export const metadata: Metadata = {
     title: "Congratulations & Graduation Flowers in Lahore",
     description: "Congratulation and graduation bouquets in Lahore. Sunflowers, mixed roses and money bouquets for new jobs, results and milestones.",
     url: `${SITE_URL}/occasions/congratulations`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Congratulations & Graduation Flowers in Lahore",
+      },
+    ],
   }
 };
 

@@ -18,6 +18,14 @@ export const metadata: Metadata = {
     title: "Luxury Scents, Perfumes & Flower Gifts in Lahore",
     description: "Pair fresh flower bouquets with imported perfumes, authentic Arabian oud, pure rose attar & scented candles in Lahore. Same-day & midnight gift delivery.",
     url: `${SITE_URL}/collections/scents-and-perfumes`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Luxury Scents, Perfumes & Flower Gifts in Lahore",
+      },
+    ],
   }
 };
 

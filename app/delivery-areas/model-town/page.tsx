@@ -4,7 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { MapPin, Clock, Camera, MessageCircle, Trees, Wallet, Gift, HelpCircle, Navigation, Package } from "lucide-react";
-import { SITE_URL } from "@/lib/business";
+import { SITE_URL, areaFloristSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -18,6 +18,14 @@ export const metadata: Metadata = {
     title: "Flower Delivery in Model Town Lahore | FREE, 1.5–2.5 Hours",
     description: "Free flower delivery to Model Town Blocks A–M, Link Road & Garden Town Lahore in 1.5–2.5 hours. Bouquets from Rs. 1,180. Midnight slot, WhatsApp photo proof, COD. Open 9 AM–1 AM.",
     url: `${SITE_URL}/delivery-areas/model-town`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Flower Delivery in Model Town Lahore | FREE, 1.5–2.5 Hours",
+      },
+    ],
   }
 };
 

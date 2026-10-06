@@ -5,7 +5,7 @@ import { getSanityProducts, getSanityAreaPage } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import NeighborhoodTemplate from "../../components/NeighborhoodTemplate";
 import { MapPin, Clock, Camera, MessageCircle, Wallet, Gift, HelpCircle, Navigation, AlertCircle, Package } from "lucide-react";
-import { SITE_URL } from "@/lib/business";
+import { SITE_URL, areaFloristSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -19,6 +19,14 @@ export const metadata: Metadata = {
     title: "Flower Delivery in Thokar Niaz Baig Lahore | Rs. 300, 2–3 Hours",
     description: "Same-day flower delivery to Thokar Niaz Baig Lahore — interchange, M-2 motorway entry & nearby blocks — in 2–3 hours. Delivery fee Rs. 300. Imported roses, money bouquets, cakes & midnight surprises. Photo on WhatsApp first.",
     url: `${SITE_URL}/delivery-areas/thokar-niaz-baig`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Flower Delivery in Thokar Niaz Baig Lahore | Rs. 300, 2–3 Hours",
+      },
+    ],
   }
 };
 
@@ -94,6 +102,8 @@ const thokarNiazBaigFaqSchema = {
   ],
 };
 
+const areaFlorist = areaFloristSchema("Thokar Niaz Baig", `${SITE_URL}/delivery-areas/thokar-niaz-baig`);
+
 export default async function ThokarNiazBaigDeliveryPage() {
   // Sanity CMS first — falls back to static content below if unreachable
   const sanityData = await getSanityAreaPage("thokar-niaz-baig");
@@ -113,6 +123,10 @@ export default async function ThokarNiazBaigDeliveryPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(thokarNiazBaigFaqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(areaFlorist) }}
       />
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="text-xs text-[#777777] flex items-center gap-2">

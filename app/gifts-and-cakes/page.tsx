@@ -37,12 +37,26 @@ export const metadata: Metadata = {
     siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Layers Cakes & Imported Chocolates Delivery in Lahore",
+      },
+    ],
   },
 };
 
-export default async function GiftsAndCakesPage() {
+export default async function GiftsAndCakesPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ filter?: string; category?: string }>;
+}) {
   const sanityProducts = await getSanityProducts();
   const allProducts = sanityProducts && sanityProducts.length > 0 ? sanityProducts : ALL_PRODUCTS;
+  const params = await searchParams;
+  const urlFilter = params.filter || params.category || "";
 
   const giftProducts = allProducts.filter(
     (p) =>
@@ -215,7 +229,7 @@ export default async function GiftsAndCakesPage() {
       </section>
 
       {/* Interactive Filterable Products Catalog */}
-      <GiftsAndCakesClient initialProducts={giftProducts} />
+      <GiftsAndCakesClient initialProducts={giftProducts} initialFilter={urlFilter} key={urlFilter} />
 
       {/* SEO Editorial Content Section */}
       <section className="bg-white p-6 sm:p-10 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-6">

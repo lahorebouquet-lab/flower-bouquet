@@ -51,15 +51,38 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     };
   }
 
-  // Template appends " | Lahore Bouquet" (17 chars) — keep total under 60
+  // Template appends " | Lahore Bouquet" (17 chars) — keep total under 60.
+  // Truncate at word boundaries so titles never cut mid-word.
   const maxNameLen = 60 - " | Lahore Bouquet".length;
-  const shortName = product.title.length > maxNameLen
-    ? product.title.slice(0, maxNameLen - 1).trimEnd() + "…"
-    : product.title;
+  let shortName = product.title;
+  if (shortName.length > maxNameLen) {
+    shortName = shortName.slice(0, maxNameLen).trimEnd();
+    const lastSpace = shortName.lastIndexOf(" ");
+    if (lastSpace > maxNameLen * 0.6) shortName = shortName.slice(0, lastSpace);
+  }
+
+  // Meta description: 120-160 chars, keyword + price + CTA early, no duplication.
+  const priceStr = `Rs. ${product.price.toLocaleString()}`;
+  let metaDesc = `Buy ${product.title} in Lahore for ${priceStr}. Same-day 2–5h express & midnight delivery with WhatsApp photo proof.`;
+  if (metaDesc.length > 160) {
+    metaDesc = metaDesc.slice(0, 157).trimEnd();
+    const ls = metaDesc.lastIndexOf(" ");
+    if (ls > 100) metaDesc = metaDesc.slice(0, ls);
+    metaDesc += "…";
+  }
+
+  // OG description: category-aware (cake/gajray shouldn't say "bouquet").
+  const catLower = (product.category || "").toLowerCase();
+  const itemWord = catLower.includes("cake") ? "cake"
+    : catLower.includes("gajray") ? "gajray pair"
+    : catLower.includes("chocolate") ? "chocolate bouquet"
+    : catLower.includes("perfume") || catLower.includes("scent") ? "gift set"
+    : "bouquet";
+  const ogDesc = `${priceStr}. Fresh hand-tied ${itemWord} delivered across Lahore within 2–5 hours.`;
 
   return {
     title: shortName,
-    description: `Buy ${product.title} in Lahore for Rs. ${product.price.toLocaleString()} PKR. ${product.desc} Enjoy same-day 2–5 hours express and midnight delivery with WhatsApp photo proof.`,
+    description: metaDesc,
     keywords: [
       product.title.toLowerCase(),
       `${product.category.toLowerCase()} lahore`,
@@ -73,7 +96,8 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     },
     openGraph: {
       title: `${shortName} | Lahore Bouquet`,
-      description: `Rs. ${product.price.toLocaleString()} PKR. Fresh hand-tied bouquet delivered across Lahore within 2–5 hours.`,
+      description: ogDesc,
+      url: `${SITE_URL}/products/${product.slug}`,
       images: [
         {
           url: product.image?.startsWith("http") ? product.image : `${SITE_URL}${product.image}`,
@@ -87,7 +111,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     twitter: {
       card: "summary_large_image",
       title: `${shortName} | Lahore Bouquet`,
-      description: `Rs. ${product.price.toLocaleString()} PKR. Fresh hand-tied bouquet delivered across Lahore within 2–5 hours.`,
+      description: ogDesc,
       images: [product.image?.startsWith("http") ? product.image : `${SITE_URL}${product.image}`],
     }
   };
@@ -105,9 +129,39 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
     notFound();
   }
 
-  const relatedProducts = sanityProducts
-    .filter(p => String(p.id) !== String(product.id) && (p.category === product.category || p.badgeType === "hot"))
-    .slice(0, 4);
+  // Category-aware related products: same category first, then related
+  // categories (cakes→gifts, gajray→wedding), then popular items. Never the
+  // same generic 4 on every page.
+  const CATEGORY_AFFINITY: Record<string, string[]> = {
+    "Gifts & Cakes": ["Gifts & Cakes", "Bouquets"],
+    "Fresh Flower Gajray": ["Fresh Flower Gajray", "Wedding Décor", "Roses"],
+    "Wedding Décor": ["Wedding Décor", "Fresh Flower Gajray", "Roses"],
+    "Money Bouquets": ["Money Bouquets", "Bouquets", "Roses"],
+    "Roses": ["Roses", "Bouquets", "Sunflowers"],
+    "Sunflowers": ["Sunflowers", "Bouquets", "Roses"],
+    "Bouquets": ["Bouquets", "Roses", "Sunflowers"],
+    "Crochet": ["Crochet", "Bouquets", "Dried"],
+    "Dried": ["Dried", "Bouquets", "Crochet"],
+  };
+  const affinity = CATEGORY_AFFINITY[product.category] || [product.category, "Bouquets", "Roses"];
+  const others = sanityProducts.filter((p) => String(p.id) !== String(product.id));
+  const relatedProducts: typeof others = [];
+  for (const cat of affinity) {
+    for (const p of others) {
+      if (relatedProducts.length >= 4) break;
+      if (p.category === cat && !relatedProducts.includes(p)) relatedProducts.push(p);
+    }
+    if (relatedProducts.length >= 4) break;
+  }
+  // Fill remaining slots with popular items (not already picked)
+  if (relatedProducts.length < 4) {
+    for (const p of others) {
+      if (relatedProducts.length >= 4) break;
+      if ((p.badgeType === "hot" || p.badgeType === "bestseller") && !relatedProducts.includes(p)) {
+        relatedProducts.push(p);
+      }
+    }
+  }
 
   const getCategoryHref = (cat: string) => {
     switch (cat) {
@@ -121,11 +175,15 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
     }
   };
 
+  const productImageUrl = product.image?.startsWith("http")
+    ? product.image
+    : `${SITE_URL}${product.image}`;
+
   const jsonLd = {
     "@context": "https://schema.org/",
     "@type": "Product",
     "name": product.title,
-    "image": `${SITE_URL}${product.image}`,
+    "image": productImageUrl,
     "description": product.desc,
     "sku": `LB-${product.id}`,
     "brand": {
@@ -327,30 +385,30 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs">
           
           <div className="p-6 rounded-2xl bg-white border border-[#E5DED2] space-y-3 shadow-xs">
-            <h3 className="font-playfair text-lg font-bold text-[#0B0B0B] flex items-center gap-2">
+            <h2 className="font-playfair text-lg font-bold text-[#0B0B0B] flex items-center gap-2">
               <Leaf className="w-4 h-4 text-[#8B1E2D]" />
               Florist Care & Vase Life
-            </h3>
+            </h2>
             <p className="text-[#2A2A2A] leading-relaxed">
               Upon receiving, trim 1–2 cm from stem bases at a 45-degree angle under cool water. Place in a clean vase with cold water. Keep away from direct sunlight, air-conditioner drafts, and ripening fruit to maintain peak bloom vitality for 7–12 days.
             </p>
           </div>
 
           <div className="p-6 rounded-2xl bg-white border border-[#E5DED2] space-y-3 shadow-xs">
-            <h3 className="font-playfair text-lg font-bold text-[#0B0B0B] flex items-center gap-2">
+            <h2 className="font-playfair text-lg font-bold text-[#0B0B0B] flex items-center gap-2">
               <Truck className="w-4 h-4 text-[#8B1E2D]" />
               Lahore Delivery Policies
-            </h3>
+            </h2>
             <p className="text-[#2A2A2A] leading-relaxed">
               Delivered exclusively via careful, climate-protected delivery. Midnight deliveries run between 11:30 PM – 12:15 AM. Senders receive a high-resolution photo proof of their prepared bouquet on WhatsApp before courier handover.
             </p>
           </div>
 
           <div className="p-6 rounded-2xl bg-white border border-[#E5DED2] space-y-3 shadow-xs">
-            <h3 className="font-playfair text-lg font-bold text-[#0B0B0B] flex items-center gap-2">
+            <h2 className="font-playfair text-lg font-bold text-[#0B0B0B] flex items-center gap-2">
               <ShieldCheck className="w-4 h-4 text-[#8B1E2D]" />
               Zero-Risk Guarantee
-            </h3>
+            </h2>
             <p className="text-[#2A2A2A] leading-relaxed">
               If your bouquet arrives damaged or wilted due to transit, we&apos;ll replace it or refund you — just WhatsApp us a photo within 3 hours of delivery.
             </p>

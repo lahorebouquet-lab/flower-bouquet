@@ -4,7 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { Clock, Truck, MessageCircle, AlertCircle, ShieldCheck, Wallet, Gift, HelpCircle, Navigation, Package } from "lucide-react";
-import { SITE_URL } from "@/lib/business";
+import { SITE_URL, areaFloristSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -18,6 +18,14 @@ export const metadata: Metadata = {
     title: "Flower Delivery in Bahria Town Lahore | Rs. 400, 2.5–4 Hours",
     description: "Same-day flower delivery to Bahria Town Sectors A–F, Safari Villas & Lake City in 2.5–4 hours. Fee Rs. 400. AC-van transit, WhatsApp photo proof, COD, midnight slot. Open 9 AM–1 AM.",
     url: `${SITE_URL}/delivery-areas/bahria-town`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Flower Delivery in Bahria Town Lahore | Rs. 400, 2.5–4 Hours",
+      },
+    ],
   }
 };
 

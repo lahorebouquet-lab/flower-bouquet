@@ -4,7 +4,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { MapPin, Clock, Camera, MessageCircle, Building2, Wallet, Gift, HelpCircle, Navigation, Package } from "lucide-react";
-import { SITE_URL } from "@/lib/business";
+import { SITE_URL, areaFloristSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -18,6 +18,14 @@ export const metadata: Metadata = {
     title: "Flower Delivery in Johar Town Lahore | Rs. 250, 2–3 Hours",
     description: "Same-day flower delivery across Johar Town Phases 1 & 2, Emporium Mall, G1 Market & Shaukat Khanum Hospital in 2–3 hours. Fee Rs. 250. WhatsApp photo proof, COD, midnight slot. Open 9 AM–1 AM.",
     url: `${SITE_URL}/delivery-areas/johar-town`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Flower Delivery in Johar Town Lahore | Rs. 250, 2–3 Hours",
+      },
+    ],
   }
 };
 

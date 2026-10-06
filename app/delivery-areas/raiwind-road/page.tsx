@@ -5,7 +5,7 @@ import { getSanityProducts, getSanityAreaPage } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import NeighborhoodTemplate from "../../components/NeighborhoodTemplate";
 import { MapPin, Clock, Camera, MessageCircle, Wallet, Gift, HelpCircle, Navigation, AlertCircle, Package } from "lucide-react";
-import { SITE_URL } from "@/lib/business";
+import { SITE_URL, areaFloristSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -19,6 +19,14 @@ export const metadata: Metadata = {
     title: "Flower Delivery on Raiwind Road Lahore | Rs. 500, 3–4 Hours",
     description: "Same-day flower delivery along Raiwind Road Lahore — Bahria Orchard, Al Kabir Town, farmhouses & marquees — in 3–4 hours. Delivery fee Rs. 500. Imported roses, money bouquets, cakes & midnight surprises. Photo on WhatsApp first.",
     url: `${SITE_URL}/delivery-areas/raiwind-road`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Flower Delivery on Raiwind Road Lahore | Rs. 500, 3–4 Hours",
+      },
+    ],
   }
 };
 
@@ -94,6 +102,8 @@ const raiwindRoadFaqSchema = {
   ],
 };
 
+const areaFlorist = areaFloristSchema("Raiwind Road", `${SITE_URL}/delivery-areas/raiwind-road`);
+
 export default async function RaiwindRoadDeliveryPage() {
   // Sanity CMS first — falls back to static content below if unreachable
   const sanityData = await getSanityAreaPage("raiwind-road");
@@ -113,6 +123,10 @@ export default async function RaiwindRoadDeliveryPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(raiwindRoadFaqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(areaFlorist) }}
       />
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="text-xs text-[#777777] flex items-center gap-2">

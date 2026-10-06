@@ -27,7 +27,7 @@ export default async function BestsellersPage() {
   const itemListJsonLd = itemListSchema(displayProducts, `${SITE_URL}/bestsellers`, "Bestselling Bouquets in Lahore");
 
   return (
-    <div className="min-h-screen bg-[#F8F3EA]">
+    <main className="min-h-screen bg-[#F8F3EA]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
@@ -75,6 +75,9 @@ export default async function BestsellersPage() {
 
       {/* Product Grid */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
+        <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#0B0B0B] text-center mb-2">
+          Our Bestselling Arrangements
+        </h2>
         <p className="text-xs text-[#636363] mb-6 text-center">
           Showing {displayProducts.length} bestselling arrangements
         </p>
@@ -106,6 +109,6 @@ export default async function BestsellersPage() {
           </Link>
         </div>
       </section>
-    </div>
+    </main>
   );
 }

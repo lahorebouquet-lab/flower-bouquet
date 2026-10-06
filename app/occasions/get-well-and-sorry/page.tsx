@@ -18,6 +18,14 @@ export const metadata: Metadata = {
     title: "Get Well Soon & Sorry Flowers in Lahore",
     description: "Get well soon and apology bouquets in Lahore. Soft white roses, sunflowers and gentle mixes delivered to homes and hospitals.",
     url: `${SITE_URL}/occasions/get-well-and-sorry`,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Get Well Soon & Sorry Flowers in Lahore",
+      },
+    ],
   }
 };
 

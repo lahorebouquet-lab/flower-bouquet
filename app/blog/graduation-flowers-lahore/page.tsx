@@ -16,6 +16,14 @@ export const metadata: Metadata = {
     description: "Sunflower & rose bouquets from Rs. 1,900, delivered to every Lahore campus on convocation day.",
     url: `${SITE_URL}/blog/graduation-flowers-lahore`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Graduation Flowers in Lahore — Convocation Bouquet Guide",
+      },
+    ],
   }
 };
 

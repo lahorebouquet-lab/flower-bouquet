@@ -20,6 +20,14 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/send-flowers-to-lahore-from-abroad`,
     type: "website",
     locale: "en_PK",
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Send Flowers to Lahore from Abroad | UK, USA, UAE, Saudi",
+      },
+    ],
   },
 };
 

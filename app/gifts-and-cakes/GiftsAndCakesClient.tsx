@@ -1,48 +1,28 @@
 "use client";
 
-import React, { useState, useMemo, useEffect, Suspense } from "react";
-import { useSearchParams } from "next/navigation";
+import React, { useState, useMemo, Suspense } from "react";
 import { Product } from "../data/products";
 import ProductCard from "../components/ProductCard";
 import { Search, Sparkles, Cake, Gift, ArrowUpDown } from "lucide-react";
 
 interface Props {
   initialProducts: Product[];
+  initialFilter?: string;
 }
 
-function GiftsAndCakesInner({ initialProducts }: Props) {
-  const searchParams = useSearchParams();
-  const urlFilter = searchParams.get("filter") || searchParams.get("category");
+function getFilterFromParam(urlFilter: string | undefined): string {
+  if (!urlFilter) return "all";
+  const lower = urlFilter.toLowerCase();
+  if (lower.includes("cake")) return "layers-cakes";
+  if (lower.includes("choc") || lower.includes("mithai")) return "chocolates";
+  if (lower.includes("2500") || lower.includes("budget")) return "under-2500";
+  return "all";
+}
 
-  // Determine initial filter based on query param
-  const getInitialFilter = () => {
-    if (!urlFilter) return "all";
-    const lower = urlFilter.toLowerCase();
-    if (lower.includes("cake")) return "layers-cakes";
-    if (lower.includes("choc") || lower.includes("mithai")) return "chocolates";
-    if (lower.includes("2500") || lower.includes("budget")) return "under-2500";
-    return "all";
-  };
-
-  const [activeFilter, setActiveFilter] = useState<string>(getInitialFilter);
+function GiftsAndCakesInner({ initialProducts, initialFilter }: Props) {
+  const [activeFilter, setActiveFilter] = useState<string>(() => getFilterFromParam(initialFilter));
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [sortBy, setSortBy] = useState<string>("featured");
-
-  // React to URL query changes (e.g. clicking header dropdown item while already on page)
-  useEffect(() => {
-    if (urlFilter) {
-      const lower = urlFilter.toLowerCase();
-      if (lower.includes("cake")) {
-        setActiveFilter("layers-cakes");
-      } else if (lower.includes("choc") || lower.includes("mithai")) {
-        setActiveFilter("chocolates");
-      } else if (lower.includes("2500") || lower.includes("budget")) {
-        setActiveFilter("under-2500");
-      } else {
-        setActiveFilter("all");
-      }
-    }
-  }, [urlFilter]);
 
   const filteredProducts = useMemo(() => {
     let list = [...initialProducts];
@@ -252,10 +232,13 @@ function GiftsAndCakesInner({ initialProducts }: Props) {
   );
 }
 
-export default function GiftsAndCakesClient({ initialProducts }: Props) {
+export default function GiftsAndCakesClient({ initialProducts, initialFilter }: Props) {
+  // NOTE: no useSearchParams here — the server passes initialFilter as a prop
+  // (with key={initialFilter} to remount on change), so the product grid
+  // server-renders for SEO instead of client-only hydration.
   return (
     <Suspense fallback={<div className="py-8 text-center text-xs text-[#777777]">Loading Gifts & Cakes collection...</div>}>
-      <GiftsAndCakesInner initialProducts={initialProducts} />
+      <GiftsAndCakesInner initialProducts={initialProducts} initialFilter={initialFilter} />
     </Suspense>
   );
 }

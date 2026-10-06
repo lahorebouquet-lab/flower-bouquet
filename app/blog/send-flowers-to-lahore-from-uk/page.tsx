@@ -16,6 +16,14 @@ export const metadata: Metadata = {
     description: "Order by 12 noon UK time, pay by international card, get photo proof on WhatsApp. Same-day flower delivery across Lahore for UK Pakistanis.",
     url: `${SITE_URL}/blog/send-flowers-to-lahore-from-uk`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Send Flowers to Lahore from the UK — Same-Day Delivery Guide",
+      },
+    ],
   }
 };
 
