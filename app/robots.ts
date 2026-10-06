@@ -1,13 +1,29 @@
 import type { MetadataRoute } from "next";
+import { headers } from "next/headers";
 import { SITE_URL } from "@/lib/business";
 
-export default function robots(): MetadataRoute.Robots {
-  const isProd =
-    process.env.VERCEL_ENV === "production" ||
-    (!process.env.VERCEL && !SITE_URL.includes("vercel.app"));
+/**
+ * Indexing rule: ONLY the final canonical domain may be crawled.
+ * Every preview / staging / *.vercel.app host returns "Disallow: /",
+ * so the preview link can never get indexed or compete with lahorebouquet.com.
+ * The moment the domain is connected, indexing starts automatically —
+ * no code or config change needed then.
+ */
+function canonicalHosts(): Set<string> {
+  try {
+    const h = new URL(SITE_URL).hostname.toLowerCase().replace(/^www\./, "");
+    return new Set([h, `www.${h}`]);
+  } catch {
+    return new Set(["lahorebouquet.com", "www.lahorebouquet.com"]);
+  }
+}
 
-  if (!isProd) {
-    // Preview / development hosts must never compete with the real domain.
+export default async function robots(): Promise<MetadataRoute.Robots> {
+  const rawHost = (await headers()).get("host") ?? "";
+  const host = rawHost.toLowerCase().split(":")[0];
+
+  if (!canonicalHosts().has(host)) {
+    // Preview / development / vercel.app hosts: never index.
     return {
       rules: [{ userAgent: "*", disallow: "/" }],
     };
