@@ -31,8 +31,14 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
 
   if (!isCanonical) {
     // Preview / development / vercel.app hosts: never index.
+    // Exception: SiteAuditBot (Semrush Site Audit) is allowed so the owner
+    // can run technical SEO audits on staging. All other bots (including
+    // Googlebot) remain fully blocked — the preview URL stays unindexed.
     return {
-      rules: [{ userAgent: "*", disallow: "/" }],
+      rules: [
+        { userAgent: "*", disallow: "/" },
+        { userAgent: "SiteAuditBot", allow: "/" },
+      ],
     };
   }
 
