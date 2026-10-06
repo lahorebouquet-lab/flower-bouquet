@@ -570,6 +570,14 @@ export default function CartDrawer() {
               >
                 Continue Shopping
               </button>
+
+              <a
+                href="/track-order"
+                onClick={() => setIsCartOpen(false)}
+                className="block w-full py-2.5 rounded-full text-[#8B1E2D] hover:text-[#6d1623] text-xs font-bold underline underline-offset-4 transition-colors cursor-pointer"
+              >
+                🔍 Track your order status online
+              </a>
             </div>
           )}
 

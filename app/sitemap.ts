@@ -102,6 +102,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/garlands-lahore", file: "app/garlands-lahore/page.tsx" },
     { path: "/about", file: "app/about/page.tsx" },
     { path: "/contact", file: "app/contact/page.tsx" },
+    { path: "/track-order", file: "app/track-order/page.tsx" },
     { path: "/policies", file: "app/policies/page.tsx" },
   ];
 

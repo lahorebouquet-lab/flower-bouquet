@@ -194,6 +194,7 @@ export default function Footer() {
             <span>© 2026 Lahore Bouquet (Pvt) Ltd. All Rights Reserved.</span>
             <Link href="/about" className="hover:text-[#C6A15B] transition-colors underline">About Us</Link>
             <Link href="/contact" className="hover:text-[#C6A15B] transition-colors underline">Contact</Link>
+            <Link href="/track-order" className="hover:text-[#C6A15B] transition-colors underline">Track Order</Link>
             <Link href="/policies" className="hover:text-[#C6A15B] transition-colors underline">Store Policies</Link>
             <Link href="/prices" className="hover:text-[#C6A15B] transition-colors underline">Price Guide</Link>
           </div>
