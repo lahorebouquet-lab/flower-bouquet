@@ -5,7 +5,8 @@ import { reviewType } from './review'
 import { blogType } from './blog'
 import { areaPageType } from './areaPage'
 import { orderType } from './order'
+import { abandonedCartType } from './abandonedCart'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [productType, categoryType, reviewType, blogType, areaPageType, orderType],
+  types: [productType, categoryType, reviewType, blogType, areaPageType, orderType, abandonedCartType],
 }

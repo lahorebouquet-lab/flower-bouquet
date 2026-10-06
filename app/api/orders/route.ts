@@ -93,6 +93,8 @@ export async function POST(req: NextRequest) {
       paymentMethod: String(body.paymentMethod || ''),
       subtotal: Number(body.subtotal) || 0,
       deliveryFee: Number(body.deliveryFee) || 0,
+      discountCode: String(body.discountCode || ''),
+      discountAmount: Number(body.discountAmount) || 0,
       total: Number(body.total) || 0,
       wantPhotoBeforeDispatch: body.wantPhotoBeforeDispatch !== false,
       placedAt: new Date().toISOString(),

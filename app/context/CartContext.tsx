@@ -36,6 +36,9 @@ interface CartContextType {
   totalCartCount: number;
   cartSubtotal: number;
   deliveryFee: number | null;
+  discountCode: string;
+  setDiscountCode: (code: string) => void;
+  discountAmount: number;
   orderTotal: number;
   isCartOpen: boolean;
   setIsCartOpen: (open: boolean) => void;
@@ -280,7 +283,20 @@ export function CartProvider({ children }: { children: ReactNode }) {
   }, [cart]);
 
   const deliveryFee = useMemo(() => getDeliveryFee(selectedArea).fee, [selectedArea]);
-  const orderTotal = useMemo(() => cartSubtotal + (deliveryFee ?? 0), [cartSubtotal, deliveryFee]);
+
+  /** Discount codes: WELCOME10 = 10% off subtotal (abandoned-cart recovery). */
+  const [discountCode, setDiscountCode] = useState("");
+  const discountAmount = useMemo(() => {
+    if (discountCode.trim().toUpperCase() === "WELCOME10") {
+      return Math.round(cartSubtotal * 0.1);
+    }
+    return 0;
+  }, [discountCode, cartSubtotal]);
+
+  const orderTotal = useMemo(
+    () => cartSubtotal - discountAmount + (deliveryFee ?? 0),
+    [cartSubtotal, discountAmount, deliveryFee]
+  );
 
   const handlePlaceOrder = () => {
     const randomId = `FLB-${Math.floor(100000 + Math.random() * 900000)}`;
@@ -306,6 +322,8 @@ export function CartProvider({ children }: { children: ReactNode }) {
         paymentMethod,
         subtotal: cartSubtotal,
         deliveryFee: deliveryFee ?? 0,
+        discountCode: discountCode.trim().toUpperCase() || undefined,
+        discountAmount,
         total: orderTotal,
         wantPhotoBeforeDispatch,
         items: cart.map((item) => ({
@@ -349,7 +367,8 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
     const text =
       `🌸 *NEW LAHORE BOUQUET ORDER - #${placedOrderId || "DIRECT"}*\n\n` +
-      `*Order Total:* Rs. ${orderTotal.toLocaleString()} (Delivery: ${feeInfo.label})\n\n` +
+      `*Order Total:* Rs. ${orderTotal.toLocaleString()} (Delivery: ${feeInfo.label})` +
+      (discountAmount > 0 ? ` [Discount ${discountCode.trim().toUpperCase()}: −Rs. ${discountAmount.toLocaleString()}]` : "") + `\n\n` +
       `*Selected Items:*\n${itemsList}\n\n` +
       `*Delivery Area:* ${selectedArea}\n` +
       `*Street Address:* ${streetAddress || "Not specified"}\n` +
@@ -378,6 +397,9 @@ export function CartProvider({ children }: { children: ReactNode }) {
         totalCartCount,
         cartSubtotal,
         deliveryFee,
+        discountCode,
+        setDiscountCode,
+        discountAmount,
         orderTotal,
         isCartOpen,
         setIsCartOpen,

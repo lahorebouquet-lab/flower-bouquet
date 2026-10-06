@@ -68,6 +68,8 @@ export const orderType = defineType({
     defineField({ name: 'paymentMethod', title: 'Payment Method', type: 'string' }),
     defineField({ name: 'subtotal', title: 'Subtotal (Rs)', type: 'number' }),
     defineField({ name: 'deliveryFee', title: 'Delivery Fee (Rs)', type: 'number' }),
+    defineField({ name: 'discountCode', title: 'Discount Code', type: 'string' }),
+    defineField({ name: 'discountAmount', title: 'Discount (Rs)', type: 'number' }),
     defineField({ name: 'total', title: 'Total (Rs)', type: 'number' }),
     defineField({
       name: 'wantPhotoBeforeDispatch',

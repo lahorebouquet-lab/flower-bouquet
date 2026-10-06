@@ -33,6 +33,9 @@ export default function CartDrawer() {
     clearCart,
     cartSubtotal,
     deliveryFee,
+    discountCode,
+    setDiscountCode,
+    discountAmount,
     orderTotal,
     totalCartCount,
     senderName,
@@ -590,9 +593,27 @@ export default function CartDrawer() {
         {/* Drawer Footer Actions (Section 16: Primary checkout button #8B1E2D, hover #C6A15B) */}
         {checkoutStep < 5 && cart.length > 0 && (
           <div className="p-4 sm:p-5 border-t border-[#E5DED2] bg-white space-y-3">
+            {/* Discount code */}
+            <div className="flex items-center gap-2">
+              <input
+                type="text"
+                value={discountCode}
+                onChange={(e) => setDiscountCode(e.target.value.toUpperCase())}
+                placeholder="Discount code (e.g. WELCOME10)"
+                className="flex-1 px-3 py-2 rounded-xl border border-[#E5DED2] text-xs uppercase placeholder:normal-case placeholder:text-[#999] focus:outline-none focus:border-[#8B1E2D]"
+              />
+              {discountAmount > 0 && (
+                <span className="text-xs font-bold text-green-700 whitespace-nowrap">
+                  −Rs. {discountAmount.toLocaleString()}
+                </span>
+              )}
+            </div>
+            {discountCode.trim() !== "" && discountAmount === 0 && (
+              <p className="text-[11px] text-[#8B1E2D]">Invalid code. Try WELCOME10 for 10% off.</p>
+            )}
             <div className="flex items-center justify-between text-xs">
               <span className="text-[#636363]">Subtotal</span>
-              <span className="text-base font-bold text-[#8B1E2D]">Rs. {cartSubtotal.toLocaleString()}</span>
+              <span className="text-base font-bold text-[#8B1E2D]">Rs. {(cartSubtotal - discountAmount).toLocaleString()}</span>
             </div>
 
             <div className="flex items-center gap-2">
