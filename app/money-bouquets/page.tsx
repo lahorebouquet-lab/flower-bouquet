@@ -3,7 +3,6 @@ import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
-import { projectId, dataset } from "@/sanity/env";
 import ProductCard from "../components/ProductCard";
 import { Banknote, Truck, Camera, MessageCircle, HelpCircle } from "lucide-react";
 
@@ -28,7 +27,6 @@ export const metadata: Metadata = {
 export default async function MoneyBouquetsPage() {
   const allProducts = await getSanityProducts();
   const moneyProducts = allProducts.filter(p => p.category === "Money Bouquets");
-  const buildTag = `<!-- build:${new Date().toISOString()} pid:${projectId} ds:${dataset} sanity:${allProducts.length} money:${moneyProducts.length} err:${String((globalThis as any).__SANITY_ERR || 'none').replace(/-->/g, '')} -->`;
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -80,7 +78,6 @@ export default async function MoneyBouquetsPage() {
 
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 py-10 space-y-12 bg-[#F8F3EA] text-[#2A2A2A]">
-      <div dangerouslySetInnerHTML={{ __html: buildTag }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
