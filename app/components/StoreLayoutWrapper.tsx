@@ -8,7 +8,6 @@ import CartDrawer from "./CartDrawer";
 import QuickViewModal from "./QuickViewModal";
 import FloatingWhatsApp from "./FloatingWhatsApp";
 import OfferPopup from "./OfferPopup";
-import AbandonedCartPopup from "./AbandonedCartPopup";
 import { Toast, StickyMobileBar } from "./Toast";
 
 export default function StoreLayoutWrapper({
@@ -36,7 +35,6 @@ export default function StoreLayoutWrapper({
       <StickyMobileBar />
       <FloatingWhatsApp />
       <OfferPopup />
-      <AbandonedCartPopup />
     </>
   );
 }
