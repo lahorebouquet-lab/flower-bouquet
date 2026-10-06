@@ -295,10 +295,6 @@ export default function CategorySection({ categories, products }: CategorySectio
                 <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.25em] text-[#8B1E2D]">
                   MOST POPULAR IN LAHORE
                 </span>
-                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-white border border-[rgba(198,161,91,0.30)] text-[9px] sm:text-[10px] text-[#2A2A2A] font-medium shadow-xs">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#8B1E2D] animate-pulse" />
-                  Auto-Sliding
-                </span>
               </div>
               <h2 className="font-playfair text-xl sm:text-2xl font-bold text-[#101012] mt-0.5 tracking-tight">
                 Our Most Ordered Bouquets
