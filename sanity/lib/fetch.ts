@@ -21,6 +21,7 @@ export async function getSanityProducts(): Promise<Product[]> {
     }
   } catch (err) {
     console.error('Error fetching Sanity products:', err)
+    ;(globalThis as any).__SANITY_ERR = String(err).slice(0, 300)
   }
   return []
 }

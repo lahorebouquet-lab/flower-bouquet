@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 export default async function MoneyBouquetsPage() {
   const allProducts = await getSanityProducts();
   const moneyProducts = allProducts.filter(p => p.category === "Money Bouquets");
-  const buildTag = `<!-- build:${new Date().toISOString()} sanity:${allProducts.length} money:${moneyProducts.length} -->`;
+  const buildTag = `<!-- build:${new Date().toISOString()} sanity:${allProducts.length} money:${moneyProducts.length} err:${String((globalThis as any).__SANITY_ERR || 'none').replace(/-->/g, '')} -->`;
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
