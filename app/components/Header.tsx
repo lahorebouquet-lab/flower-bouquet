@@ -274,7 +274,7 @@ export default function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp Order"
-                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-[#0E7C5B]/15 border border-[#0E7C5B]/40 hover:bg-[#0E7C5B] text-[#0B6E4F] hover:text-white font-semibold text-xs tracking-wide transition-all duration-200 shadow-sm active:scale-95"
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-[#0E7C5B] border border-[#0E7C5B] hover:bg-[#0B6E4F] hover:border-[#0B6E4F] text-white font-semibold text-xs tracking-wide transition-all duration-200 shadow-sm active:scale-95"
               >
                 <svg
                   className="w-3.5 h-3.5 fill-current"

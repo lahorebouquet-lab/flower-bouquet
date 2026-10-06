@@ -191,7 +191,7 @@ export default function HomeClient({
               </span>
               <span className="hidden sm:inline text-[#0B0B0B]/30">•</span>
               <span>100% Fresh Stems Guarantee</span>
-              <span className="hidden sm:inline text-white/40">•</span>
+              <span className="hidden sm:inline text-[#0B0B0B]/30">•</span>
               <span>Midnight Surprise Slot</span>
             </div>
           </div>
