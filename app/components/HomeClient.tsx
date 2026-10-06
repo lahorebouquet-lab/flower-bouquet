@@ -126,34 +126,30 @@ export default function HomeClient({
   return (
     <>
       {/* 1. HERO SECTION (Preserving 100% Real Size & Natural Uncropped Proportions) */}
-      <section className="relative lg:min-h-[580px] xl:min-h-[640px] flex items-center overflow-hidden border-b border-[#C6A15B]/30 bg-[#F6F1E7] py-10 sm:py-14 lg:py-16">
-        {/* Desktop: Full-Width Background Image Layer - Responsive & LCP Optimized */}
-        <div className="hidden lg:block absolute inset-0 z-0 overflow-hidden">
+      <section className="relative min-h-[480px] sm:min-h-[520px] lg:min-h-[580px] xl:min-h-[640px] flex items-center overflow-hidden border-b border-[#C6A15B]/30 bg-[#F6F1E7] py-10 sm:py-14 lg:py-16">
+        {/* Full-Width Background Image Layer - Responsive & LCP Optimized */}
+        <div className="absolute inset-0 z-0 overflow-hidden">
           <picture>
+            <source
+              media="(max-width: 640px)"
+              srcSet="/images/hero-blush-elegance-banner.webp"
+              type="image/webp"
+            />
             <img
               src="/images/hero-blush-elegance-banner.webp"
               alt="Elegant blush pink rose and lily bouquet in a gold vase for flower delivery in Lahore | Lahore Bouquet"
               fetchPriority="high"
               decoding="async"
-              className="absolute inset-0 w-full h-full object-cover object-center"
+              className="absolute inset-0 w-full h-full object-cover object-[70%_center] sm:object-cover sm:object-center"
             />
           </picture>
 
           {/* Soft cream left fade to ensure pristine text readability */}
-          <div className="absolute inset-y-0 left-0 w-2/5 bg-gradient-to-r from-[#F6F1E7] via-[#F6F1E7]/70 to-transparent pointer-events-none" />
+          <div className="hidden lg:block absolute inset-y-0 left-0 w-2/5 bg-gradient-to-r from-[#F6F1E7] via-[#F6F1E7]/70 to-transparent pointer-events-none" />
+          <div className="block lg:hidden absolute inset-0 bg-gradient-to-t from-[#F6F1E7] via-[#F6F1E7]/80 to-transparent pointer-events-none" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
-          {/* Mobile: bouquet image shown clearly above the text (< lg) */}
-          <div className="lg:hidden mb-6 rounded-3xl overflow-hidden border border-[#C6A15B]/40 shadow-lg">
-            <img
-              src="/images/hero-blush-elegance-banner.webp"
-              alt="Elegant blush pink rose and lily bouquet in a gold vase for flower delivery in Lahore | Lahore Bouquet"
-              fetchPriority="high"
-              decoding="async"
-              className="w-full h-64 sm:h-80 object-cover object-center"
-            />
-          </div>
           {/* Natural clean text layout without any card or box border */}
           <div className="max-w-xl lg:max-w-2xl space-y-4 sm:space-y-6 text-center lg:text-left">
             {/* Eyebrow: burgundy on cream */}
