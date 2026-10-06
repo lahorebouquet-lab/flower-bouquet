@@ -115,3 +115,20 @@ export const BLOG_POST_BY_SLUG_QUERY = groq`
   }
 `
 
+
+export const AREA_PAGE_BY_SLUG_QUERY = groq`
+  *[_type == "areaPage" && slug.current == $slug][0] {
+    "id": _id,
+    title,
+    "slug": slug.current,
+    areaName,
+    deliveryFee,
+    deliveryTime,
+    intro,
+    landmarks,
+    faqs[] { question, answer },
+    nearbyAreas[] { name, slug },
+    seoTitle,
+    seoDescription
+  }
+`

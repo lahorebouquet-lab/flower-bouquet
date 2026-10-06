@@ -1,8 +1,9 @@
 import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getSanityProducts } from "@/sanity/lib/fetch";
+import { getSanityProducts, getSanityAreaPage } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
+import NeighborhoodTemplate from "../../components/NeighborhoodTemplate";
 import { MapPin, Clock, Camera, MessageCircle, Wallet, Gift, HelpCircle, Navigation, AlertCircle, Package } from "lucide-react";
 import { SITE_URL } from "@/lib/business";
 
@@ -94,6 +95,12 @@ const thokarNiazBaigFaqSchema = {
 };
 
 export default async function ThokarNiazBaigDeliveryPage() {
+  // Sanity CMS first — falls back to static content below if unreachable
+  const sanityData = await getSanityAreaPage("thokar-niaz-baig");
+  if (sanityData) {
+    return <NeighborhoodTemplate data={sanityData} />;
+  }
+
   const allProducts = await getSanityProducts();
   const popularBouquets = allProducts.slice(0, 4);
 

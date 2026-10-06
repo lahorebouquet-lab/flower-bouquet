@@ -6,6 +6,7 @@ import {
   REVIEWS_QUERY,
   BLOG_POSTS_QUERY,
   BLOG_POST_BY_SLUG_QUERY,
+  AREA_PAGE_BY_SLUG_QUERY,
 } from './queries'
 import { Product } from '@/app/data/products'
 
@@ -145,3 +146,32 @@ export async function getSanityBlogPost(slug: string): Promise<SanityBlogPost | 
   }
 }
 
+
+export interface SanityAreaPage {
+  id: string
+  title: string
+  slug: string
+  areaName: string
+  deliveryFee?: string
+  deliveryTime?: string
+  intro: string
+  landmarks?: string[]
+  faqs?: { question: string; answer: string }[]
+  nearbyAreas?: { name: string; slug: string }[]
+  seoTitle?: string
+  seoDescription?: string
+}
+
+export async function getSanityAreaPage(slug: string): Promise<SanityAreaPage | null> {
+  try {
+    const page = await client.fetch<SanityAreaPage | null>(
+      AREA_PAGE_BY_SLUG_QUERY,
+      { slug },
+      { next: { revalidate: 60 } }
+    )
+    return page
+  } catch (err) {
+    console.error(`Error fetching Sanity area page ${slug}:`, err)
+    return null
+  }
+}
