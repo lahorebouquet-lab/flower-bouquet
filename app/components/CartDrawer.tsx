@@ -542,7 +542,7 @@ export default function CartDrawer() {
                 <h3 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Order Confirmed!</h3>
                 <p className="text-xs text-[#8B1E2D] font-bold mt-1">Order ID: #{placedOrderId}</p>
                 <p className="text-xs text-[#2A2A2A] max-w-sm mx-auto mt-2">
-                  Thank you! Your floral arrangement is now entering our Gulberg studio for fresh selection and artistic wrapping.
+                  Thank you! Your flowers are being freshly selected and hand-tied for artistic wrapping.
                 </p>
               </div>
 
