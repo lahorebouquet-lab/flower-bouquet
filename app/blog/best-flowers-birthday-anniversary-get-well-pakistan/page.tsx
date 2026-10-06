@@ -5,14 +5,14 @@ import { SITE_URL, BUSINESS } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Best Flowers for Birthday, Anniversary & Get-Well in Pakistan (2026)",
+    absolute: "Best Flowers for Birthday & Anniversary in Pakistan (2026)",
   },
   description: "Which flowers to send for birthdays, anniversaries and get-well wishes in Pakistan? Florist guide to roses, lilies, sunflowers and mixed bouquets with meaning and prices.",
   alternates: {
     canonical: `${SITE_URL}/blog/best-flowers-birthday-anniversary-get-well-pakistan`,
   },
   openGraph: {
-    title: "Best Flowers for Birthday, Anniversary & Get-Well in Pakistan",
+    title: "Best Flowers for Birthday & Anniversary in Pakistan (2026)",
     description: "Florist guide: which blooms suit birthdays, anniversaries and get-well wishes — with meanings and Lahore prices.",
     url: `${SITE_URL}/blog/best-flowers-birthday-anniversary-get-well-pakistan`,
     type: "article",

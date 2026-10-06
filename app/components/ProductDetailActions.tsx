@@ -99,8 +99,10 @@ export default function ProductDetailActions({ product }: { product: Product }) 
 
         {/* Lahore Area Selector */}
         <div className="space-y-1">
-          <label className="text-[#2A2A2A] font-medium text-[11px]">Select Lahore Destination:</label>
+          <label htmlFor="pdp-area" className="text-[#2A2A2A] font-medium text-[11px]">Select Lahore Destination:</label>
           <select 
+            id="pdp-area"
+            aria-label="Select Lahore delivery area"
             value={selectedArea}
             onChange={(e) => setSelectedArea(e.target.value)}
             className="w-full px-3 py-2 bg-white border border-[#E5DED2] rounded-xl text-[#0B0B0B] outline-none"
@@ -137,6 +139,8 @@ export default function ProductDetailActions({ product }: { product: Product }) 
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
           <select
+            id="pdp-card-occasion"
+            aria-label="Greeting card occasion"
             value={cardOccasion}
             onChange={(e) => setCardOccasion(e.target.value)}
             className="w-full px-3 py-2 bg-white border border-[#E5DED2] rounded-xl text-[#0B0B0B] text-xs outline-none"
@@ -149,6 +153,7 @@ export default function ProductDetailActions({ product }: { product: Product }) 
           </select>
           <input
             type="text"
+            aria-label="Recipient's name (optional)"
             placeholder="Recipient's Name (Optional)"
             value={recipientName}
             onChange={(e) => setRecipientName(e.target.value)}

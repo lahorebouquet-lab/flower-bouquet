@@ -12,7 +12,7 @@ import { CONTACT_PHONE } from "@/lib/site";
  * Hidden while the cart drawer is open.
  */
 export default function FloatingWhatsApp({ productName }: { productName?: string }) {
-  const { isCartOpen } = useCart();
+  const { isCartOpen, totalCartCount } = useCart();
   const pathname = usePathname();
 
   if (isCartOpen) return null;
@@ -32,7 +32,10 @@ export default function FloatingWhatsApp({ productName }: { productName?: string
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with Lahore Bouquet on WhatsApp"
-      className="fixed bottom-5 right-5 z-40 w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#1DA851] text-white flex items-center justify-center shadow-[0_8px_24px_rgba(37,211,102,0.45)] transition-all hover:scale-105 active:scale-95"
+      className={`fixed right-5 z-40 w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#1DA851] text-white flex items-center justify-center shadow-[0_8px_24px_rgba(37,211,102,0.45)] transition-all hover:scale-105 active:scale-95 ${
+        // Lift above the sticky mobile cart bar when it's visible
+        totalCartCount > 0 ? "bottom-24 md:bottom-5" : "bottom-5"
+      }`}
       style={{ marginBottom: "env(safe-area-inset-bottom)", marginRight: "env(safe-area-inset-right)" }}
     >
       <MessageCircle className="w-7 h-7 fill-white/20" />

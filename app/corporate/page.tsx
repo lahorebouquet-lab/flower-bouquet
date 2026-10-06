@@ -8,14 +8,14 @@ import { SITE_URL, whatsappLink } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Corporate Flower Delivery Lahore | Office Subscriptions & Event Floral",
+    absolute: "Corporate Flower Delivery Lahore | Office & Event Plans",
   },
   description: "Corporate flowers in Lahore: weekly office subscriptions from Rs. 4,500/month, executive gifting, event stage décor & bulk festive gifting. Official invoicing, dedicated account manager.",
   alternates: {
     canonical: `${SITE_URL}/corporate`,
   },
   openGraph: {
-    title: "Corporate Flower Delivery Lahore | Office Subscriptions & Event Floral",
+    title: "Corporate Flower Delivery Lahore | Office & Event Plans",
     description: "Weekly office flower subscriptions, executive gifting, conference stage décor and bulk festive gifting across Lahore — with official invoicing.",
     url: `${SITE_URL}/corporate`,
     images: [

@@ -12,9 +12,31 @@ const VALID_STATUSES = [
   'cancelled',
 ]
 
+// Simple in-memory rate limit: max 10 order submissions per IP per 10 minutes.
+// (Resets on redeploy — enough to stop casual spam; checkout stays public by design.)
+const rateLimit = new Map<string, { count: number; resetAt: number }>()
+function isRateLimited(ip: string): boolean {
+  const now = Date.now()
+  const entry = rateLimit.get(ip)
+  if (!entry || now > entry.resetAt) {
+    rateLimit.set(ip, { count: 1, resetAt: now + 10 * 60 * 1000 })
+    return false
+  }
+  entry.count += 1
+  return entry.count > 10
+}
+
 /** Public: save a new order when the customer places it. */
 export async function POST(req: NextRequest) {
   try {
+    const ip = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'unknown'
+    if (isRateLimited(ip)) {
+      return NextResponse.json(
+        { error: 'Too many requests. Please try again in a few minutes.' },
+        { status: 429 }
+      )
+    }
+
     const body = await req.json()
 
     const orderId = String(body.orderId || '').trim()
@@ -24,6 +46,13 @@ export async function POST(req: NextRequest) {
     const items = Array.isArray(body.items) ? body.items : []
     if (items.length === 0) {
       return NextResponse.json({ error: 'items are required' }, { status: 400 })
+    }
+
+    // Sanity check on browser-sent totals (full per-product recalculation
+    // happens in admin review before dispatch)
+    const total = Number(body.total) || 0
+    if (total <= 0 || total > 500000) {
+      return NextResponse.json({ error: 'Invalid order total' }, { status: 400 })
     }
 
     if (!process.env.SANITY_API_WRITE_TOKEN) {

@@ -10,9 +10,9 @@ import { SITE_URL, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Sunflower Bouquet in Lahore | Fresh Delivery | Lahore Bouquet",
+    absolute: "Send Sunflower Bouquet in Lahore | Same-Day Gift Delivery",
   },
-  description: "Order a fresh sunflower bouquet in Lahore. Bright, cheerful and ideal for birthdays and thank-yous. Price from Rs. 1,590, delivery across the city.",
+  description: "Send a sunflower bouquet in Lahore as a bright same-day gift. Fresh hand-tied sunflowers from Rs. 1,590 with 2–5 hour express delivery, 9 AM–1 AM.",
   alternates: {
     canonical: `${SITE_URL}/sunflower-bouquet-lahore`,
   },
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     "fresh sunflower delivery lahore"
   ],
   openGraph: {
-    title: "Sunflower Bouquet in Lahore | Fresh Delivery",
-    description: "Order a fresh sunflower bouquet in Lahore. Bright, cheerful and ideal for birthdays and thank-yous. Price from Rs. 1,590, delivery across the city.",
+    title: "Send Sunflower Bouquet in Lahore | Same-Day Gift Delivery",
+    description: "Send a sunflower bouquet in Lahore as a bright same-day gift. Fresh hand-tied sunflowers from Rs. 1,590 with 2–5 hour express delivery, 9 AM–1 AM.",
     url: `${SITE_URL}/sunflower-bouquet-lahore`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Sunflower Bouquet in Lahore | Fresh Delivery",
+        alt: "Send Sunflower Bouquet in Lahore | Same-Day Gift Delivery",
       },
     ],
   },

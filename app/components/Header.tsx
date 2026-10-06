@@ -176,7 +176,7 @@ export default function Header() {
             </div>
 
             {/* Center: Luxury Editorial Navigation with Dropdown Menus (Desktop) */}
-            <nav className="hidden lg:flex items-center gap-2.5 xl:gap-6">
+            <nav className="hidden xl:flex items-center gap-2.5 xl:gap-6">
               {NAV_ITEMS.map((item) => {
                 const hasChildren = Boolean(item.children && item.children.length > 0);
                 const isActive =
@@ -321,7 +321,7 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
                 aria-expanded={mobileMenuOpen}
-                className="lg:hidden h-10 w-10 rounded-full flex items-center justify-center border border-white/10 bg-white/[0.04] text-white/80 hover:text-[#C6A15B] hover:bg-white/[0.08] transition-all cursor-pointer"
+                className="xl:hidden h-10 w-10 rounded-full flex items-center justify-center border border-white/10 bg-white/[0.04] text-white/80 hover:text-[#C6A15B] hover:bg-white/[0.08] transition-all cursor-pointer"
               >
                 {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </button>
@@ -332,7 +332,7 @@ export default function Header() {
 
       {/* Mobile Accordion Navigation Drawer (Section 24: Mobile Header Black, Menu Black, CTA Burgundy, Accent Gold) */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-0 top-[72px] bottom-0 z-40 bg-[#0B0B0B]/98 backdrop-blur-xl border-t border-[rgba(198,161,91,0.20)] overflow-y-auto animate-fade-in flex flex-col justify-between p-5 text-white">
+        <div className="xl:hidden fixed inset-x-0 top-[72px] bottom-0 z-40 bg-[#0B0B0B]/98 backdrop-blur-xl border-t border-[rgba(198,161,91,0.20)] overflow-y-auto animate-fade-in flex flex-col justify-between p-5 text-white">
           <div className="space-y-1.5">
             <p className="text-[10px] uppercase font-bold tracking-[0.25em] text-[#C6A15B] mb-2 px-2">
               Explore Collections & Categories

@@ -38,6 +38,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/birthday-decoration-lahore", file: "app/birthday-decoration-lahore/page.tsx" },
     { path: "/lily-bouquet-lahore", file: "app/lily-bouquet-lahore/page.tsx" },
     { path: "/bouquets", file: "app/bouquets/page.tsx" },
+    { path: "/bestsellers", file: "app/bestsellers/page.tsx" },
     { path: "/roses", file: "app/roses/page.tsx" },
     { path: "/roses/red-roses", file: "app/roses/red-roses/page.tsx" },
     { path: "/roses/white-roses", file: "app/roses/white-roses/page.tsx" },
@@ -129,8 +130,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }
 
   // Dynamic Sanity Blog Posts (real publishedAt/_updatedAt)
+  // Dedupe against static entries above (same slug can exist in both)
+  const seenBlogSlugs = new Set(
+    staticRoutes
+      .filter((r) => r.path.startsWith("/blog/"))
+      .map((r) => r.path.replace("/blog/", ""))
+  );
   const sanityBlogs = await getSanityBlogPosts();
   for (const post of sanityBlogs) {
+    if (seenBlogSlugs.has(post.slug)) continue;
+    seenBlogSlugs.add(post.slug);
     routes.push({
       url: `${baseUrl}/blog/${post.slug}`,
       lastModified: post._updatedAt

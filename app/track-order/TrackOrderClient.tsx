@@ -74,8 +74,9 @@ export default function TrackOrderClient() {
         {/* Form */}
         <form onSubmit={track} className="bg-white rounded-2xl border border-[#E5DED2] shadow-sm p-6 space-y-4">
           <div>
-            <label className="text-xs font-bold text-[#0B0B0B] uppercase tracking-wide">Order ID</label>
+            <label htmlFor="track-order-id" className="text-xs font-bold text-[#0B0B0B] uppercase tracking-wide">Order ID</label>
             <input
+              id="track-order-id"
               value={orderId}
               onChange={(e) => setOrderId(e.target.value)}
               placeholder="e.g. FLB-123456"
@@ -84,8 +85,9 @@ export default function TrackOrderClient() {
             <p className="text-[11px] text-[#999] mt-1">Order confirm hone par jo ID mili thi (WhatsApp message me bhi hai)</p>
           </div>
           <div>
-            <label className="text-xs font-bold text-[#0B0B0B] uppercase tracking-wide">Phone Number</label>
+            <label htmlFor="track-phone" className="text-xs font-bold text-[#0B0B0B] uppercase tracking-wide">Phone Number</label>
             <input
+              id="track-phone"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               placeholder="03XXXXXXXXX"

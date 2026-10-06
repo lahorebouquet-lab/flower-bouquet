@@ -42,6 +42,8 @@ export async function generateMetadata(): Promise<Metadata> {
       "fresh flowers shop lahore"
     ],
     metadataBase: new URL(SITE_URL),
+    manifest: "/manifest.webmanifest",
+    themeColor: "#8B1E2D",
     ...(IS_PROD_HOST ? {} : { robots: { index: false, follow: false } }),
     alternates: {
       canonical: SITE_URL,

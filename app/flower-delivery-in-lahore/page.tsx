@@ -141,7 +141,7 @@ export default async function FlowerDeliveryLahorePage() {
     { zone: "Johar Town & Model Town", fee: "Rs. 350 – 450", time: "2 to 3 hours", areas: "Johar Town (G1/G2/Emporium), Model Town, Garden Town, Faisal Town" },
     { zone: "DHA Phases 7 to 9 & Raya", fee: "Rs. 500 – 600", time: "2.5 to 3.5 hours", areas: "DHA Phase 7, Phase 8 (Park View/Ex-Air Avenue), DHA Raya, Phase 9 Prism" },
     { zone: "Bahria Town & Lake City", fee: "Rs. 600 – 800", time: "3 to 4 hours", areas: "Bahria Town (Sectors A-F), Lake City, Raiwind Road, Khayaban-e-Amin" },
-    { zone: "Askari, Wapda Town & Valencia", fee: "Rs. 400 – 550", time: "2 to 4 hours", areas: "Askari 1 to 11, Wapda Town, Valencia, Township, Allama Iqbal Town" },
+    { zone: "Askari, Wapda Town & Valencia", fee: "Rs. 400 – 550", time: "2–5 hours", areas: "Askari 1 to 11, Wapda Town, Valencia, Township, Allama Iqbal Town" },
   ];
 
   return (

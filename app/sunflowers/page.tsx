@@ -8,9 +8,9 @@ import { SITE_URL, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Sunflower Bouquet in Lahore | Fresh Delivery | Lahore Bouquet",
+    absolute: "Sunflower Bouquets in Lahore | Shop Fresh Sunflowers",
   },
-  description: "Order a fresh sunflower bouquet in Lahore. Bright, cheerful and ideal for birthdays and thank-yous. Price from Rs. 1,590, delivery across the city.",
+  description: "Shop fresh sunflower bouquets in Lahore. Bright cheerful blooms, hand-tied daily. Prices from Rs. 1,590 with same-day delivery across the city.",
   alternates: {
     canonical: `${SITE_URL}/sunflowers`,
   },
@@ -22,8 +22,8 @@ export const metadata: Metadata = {
     "fresh sunflower delivery lahore"
   ],
   openGraph: {
-    title: "Sunflower Bouquet in Lahore | Fresh Delivery",
-    description: "Order a fresh sunflower bouquet in Lahore. Bright, cheerful and ideal for birthdays and thank-yous. Price from Rs. 1,590, delivery across the city.",
+    title: "Sunflower Bouquets in Lahore | Shop Fresh Sunflowers",
+    description: "Shop fresh sunflower bouquets in Lahore. Bright cheerful blooms, hand-tied daily. Prices from Rs. 1,590 with same-day delivery across the city.",
     url: `${SITE_URL}/sunflowers`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Sunflower Bouquet in Lahore | Fresh Delivery",
+        alt: "Sunflower Bouquets in Lahore | Shop Fresh Sunflowers",
       },
     ],
   },

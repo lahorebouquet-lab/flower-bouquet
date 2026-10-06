@@ -5,14 +5,14 @@ import { SITE_URL, BUSINESS, whatsappLink } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Send Flowers to Lahore from the USA (2026 Guide) | Same-Day Delivery",
+    absolute: "Send Flowers to Lahore from the USA | Same-Day Delivery",
   },
   description: "In the USA and want to send flowers to Lahore? Order the evening before US time for next-day Lahore delivery. Pay by US card, get WhatsApp photo proof. Full 2026 guide.",
   alternates: {
     canonical: `${SITE_URL}/blog/send-flowers-to-lahore-from-usa`,
   },
   openGraph: {
-    title: "Send Flowers to Lahore from the USA — Same-Day Delivery Guide",
+    title: "Send Flowers to Lahore from the USA | Same-Day Delivery",
     description: "Order from New York, Houston or California — pay by US card, approve the bouquet photo on WhatsApp, get delivery confirmation in Lahore.",
     url: `${SITE_URL}/blog/send-flowers-to-lahore-from-usa`,
     type: "article",

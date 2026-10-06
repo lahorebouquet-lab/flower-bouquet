@@ -5,14 +5,14 @@ import { SITE_URL, BUSINESS, whatsappLink } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Gajra Prices in Lahore (2026) | Fresh Jasmine Gajray & Floral Jewellery Rates",
+    absolute: "Gajra Prices in Lahore 2026 | Fresh Jasmine Gajray Guide",
   },
   description: "How much do gajray cost in Lahore? Fresh jasmine gajra pairs from Rs. 1,200, bridal sets from Rs. 2,500, floral jewellery from Rs. 3,500. 2026 price guide with ordering tips.",
   alternates: {
     canonical: `${SITE_URL}/blog/gajra-prices-lahore-2026`,
   },
   openGraph: {
-    title: "Gajra Prices in Lahore — Fresh Gajray & Floral Jewellery Rates",
+    title: "Gajra Prices in Lahore 2026 | Fresh Jasmine Gajray Guide",
     description: "Gajra pairs from Rs. 1,200, bridal sets from Rs. 2,500. Real 2026 prices and ordering guide.",
     url: `${SITE_URL}/blog/gajra-prices-lahore-2026`,
     type: "article",

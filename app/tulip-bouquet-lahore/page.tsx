@@ -10,7 +10,7 @@ import { SITE_URL, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Tulip Bouquet in Lahore | Fresh Tulips, Delivered | Lahore Bouquet",
+    absolute: "Tulip Bouquet in Lahore | Fresh Tulips Delivered",
   },
   description: "Buy a tulip bouquet in Lahore. Fresh tulips in pink, red, white and yellow, hand-tied and delivered. Tulip flower price from Rs. 4,800.",
   alternates: {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "imported dutch tulips pakistan"
   ],
   openGraph: {
-    title: "Tulip Bouquet in Lahore | Fresh Tulips, Delivered",
+    title: "Tulip Bouquet in Lahore | Fresh Tulips Delivered",
     description: "Buy a tulip bouquet in Lahore. Fresh tulips in pink, red, white and yellow, hand-tied and delivered. Tulip flower price from Rs. 4,800.",
     url: `${SITE_URL}/tulip-bouquet-lahore`,
     siteName: "Lahore Bouquet",

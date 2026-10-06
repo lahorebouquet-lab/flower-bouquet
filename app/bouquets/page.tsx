@@ -45,17 +45,32 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function BouquetsPage() {
+export default async function BouquetsPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ q?: string }>;
+}) {
   const sanityProducts = await getSanityProducts();
   const allProducts = sanityProducts.length > 0 ? sanityProducts : ALL_PRODUCTS;
-  
-  const bouquets = allProducts.filter(p => 
-    p.category === "Bouquets" || 
-    p.category === "Roses" || 
+  const params = await searchParams;
+  const query = (params.q || "").trim().toLowerCase();
+
+  let bouquets = allProducts.filter(p =>
+    p.category === "Bouquets" ||
+    p.category === "Roses" ||
     p.category === "Sunflowers" ||
     p.category === "Crochet" ||
     p.category === "Dried"
   );
+
+  // Server-side search (matches the WebSite SearchAction schema target)
+  if (query) {
+    bouquets = bouquets.filter(p =>
+      p.title.toLowerCase().includes(query) ||
+      p.category?.toLowerCase().includes(query) ||
+      p.desc?.toLowerCase().includes(query)
+    );
+  }
 
   const itemListJsonLd = itemListSchema(bouquets, `${SITE_URL}/bouquets`, "Flower Bouquets in Lahore");
 
@@ -205,9 +220,22 @@ export default async function BouquetsPage() {
       {/* Product Grid */}
       <section className="space-y-4">
         <div className="flex items-center justify-between text-xs text-[#555555]">
-          <span>Showing {bouquets.length} hand-tied bouquets in Lahore</span>
+          <span>
+            {query ? (
+              <>Search results for <strong className="text-[#0B0B0B]">“{(await searchParams).q?.trim()}”</strong> — {bouquets.length} found</>
+            ) : (
+              <>Showing {bouquets.length} hand-tied bouquets in Lahore</>
+            )}
+          </span>
           <span className="text-[#8B1E2D] font-semibold">Same-day express delivery active</span>
         </div>
+
+        {query && bouquets.length === 0 && (
+          <div className="bg-white p-10 rounded-2xl border border-[#E5DED2] text-center">
+            <p className="text-sm font-semibold text-[#0B0B0B]">No bouquets match your search.</p>
+            <p className="text-xs text-[#636363] mt-1">Try “rose”, “sunflower”, or “chocolate”.</p>
+          </div>
+        )}
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
           {bouquets.map((product) => (

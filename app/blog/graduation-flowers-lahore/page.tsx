@@ -5,14 +5,14 @@ import { SITE_URL, BUSINESS, whatsappLink } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Graduation Flowers in Lahore (2026) | Bouquets for Convocation Day",
+    absolute: "Graduation Flowers in Lahore 2026 | Convocation Bouquets",
   },
   description: "Best graduation bouquets in Lahore — sunflower, rose & mixed bouquets from Rs. 1,900 with same-day delivery to LUMS, Punjab University, FAST & all campuses. 2026 guide.",
   alternates: {
     canonical: `${SITE_URL}/blog/graduation-flowers-lahore`,
   },
   openGraph: {
-    title: "Graduation Flowers in Lahore — Convocation Bouquet Guide",
+    title: "Graduation Flowers in Lahore 2026 | Convocation Bouquets",
     description: "Sunflower & rose bouquets from Rs. 1,900, delivered to every Lahore campus on convocation day.",
     url: `${SITE_URL}/blog/graduation-flowers-lahore`,
     type: "article",

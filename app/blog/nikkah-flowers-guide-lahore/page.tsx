@@ -5,14 +5,14 @@ import { SITE_URL, BUSINESS, whatsappLink } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Nikkah Flowers in Lahore (2026 Guide) | Bridal Bouquet, Gajray & Stage Decor",
+    absolute: "Nikkah Flowers Lahore 2026 | Bridal Bouquet & Stage Guide Decor",
   },
   description: "Planning a nikkah in Lahore? Bridal bouquet ideas, fresh gajray prices, stage flower decoration costs and same-day delivery. Complete 2026 nikkah flower guide.",
   alternates: {
     canonical: `${SITE_URL}/blog/nikkah-flowers-guide-lahore`,
   },
   openGraph: {
-    title: "Nikkah Flowers in Lahore — Bridal Bouquet, Gajray & Decor Guide",
+    title: "Nikkah Flowers Lahore 2026 | Bridal Bouquet & Stage Guide",
     description: "Bridal bouquets, gajray, stage decor prices and ordering timeline for nikkah ceremonies in Lahore.",
     url: `${SITE_URL}/blog/nikkah-flowers-guide-lahore`,
     type: "article",

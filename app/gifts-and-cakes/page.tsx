@@ -9,7 +9,7 @@ import { SITE_URL, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Layers Cakes & Imported Chocolates Delivery in Lahore | Same Day & Midnight",
+    absolute: "Cakes & Chocolates Delivery in Lahore | Same-Day & Midnight",
   },
   description: "Send original Layers Bakeshop cakes and imported chocolates in Lahore. Lotus Three Milk, Raffaello, Ferrero Rocher, Nutella & KitKat paired with fresh flowers. Same-day 2–4 hours & midnight surprise delivery with WhatsApp photo proof.",
   keywords: [
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
     canonical: `${SITE_URL}/gifts-and-cakes`,
   },
   openGraph: {
-    title: "Layers Cakes & Imported Chocolates Delivery in Lahore",
-    description: "Send authentic Layers Bakeshop cakes & luxury chocolates in Lahore. Fast 2 to 4 hours express delivery across Gulberg, DHA, Bahria Town & Cantt.",
+    title: "Cakes & Chocolates Delivery in Lahore | Same-Day & Midnight",
+    description: "Send authentic Layers Bakeshop cakes & luxury chocolates in Lahore. Fast 2–5 hours express delivery across Gulberg, DHA, Bahria Town & Cantt.",
     url: `${SITE_URL}/gifts-and-cakes`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
@@ -106,7 +106,7 @@ export default async function GiftsAndCakesPage({
         name: "How fast can you deliver cakes and chocolates in Lahore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "We offer express 2 to 4 hours delivery across all Lahore sectors including Gulberg, DHA Phases 1–9, Bahria Town, Model Town, Johar Town, Cantt, Askari, and Wapda Town."
+          text: "We offer express 2–5 hours delivery across all Lahore sectors including Gulberg, DHA Phases 1–9, Bahria Town, Model Town, Johar Town, Cantt, Askari, and Wapda Town."
         }
       },
       {
@@ -281,7 +281,7 @@ export default async function GiftsAndCakesPage({
           </div>
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">How fast is the delivery in Lahore?</h3>
-            <p>Express daytime delivery takes 2 to 4 hours. You can also schedule ahead for specific time slots or choose our Midnight Surprise slot.</p>
+            <p>Express daytime delivery takes 2–5 hours. You can also schedule ahead for specific time slots or choose our Midnight Surprise slot.</p>
           </div>
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Do you offer midnight surprise cake delivery?</h3>
