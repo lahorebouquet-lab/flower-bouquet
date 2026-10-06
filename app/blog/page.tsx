@@ -206,7 +206,9 @@ export const BLOG_POSTS = [
 
 export default async function BlogIndexPage() {
   const sanityPosts = await getSanityBlogPosts();
-  const posts = (sanityPosts && sanityPosts.length > 0) ? sanityPosts : BLOG_POSTS;
+  // Merge: show Sanity CMS posts first, then static guides (dedupe by slug)
+  const sanitySlugs = new Set((sanityPosts || []).map((p: { slug: string }) => p.slug));
+  const posts = [...(sanityPosts || []), ...BLOG_POSTS.filter((p) => !sanitySlugs.has(p.slug))];
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
