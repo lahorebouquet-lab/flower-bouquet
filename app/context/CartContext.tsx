@@ -288,6 +288,48 @@ export function CartProvider({ children }: { children: ReactNode }) {
     setPlacedOrderId(randomId);
     setCheckoutStep(5);
     showToast(`Order Confirmed! ID: ${randomId}`);
+    // Save the order to Sanity so it appears in the /admin dashboard.
+    // Fire-and-forget: the WhatsApp flow is the primary channel, so a save
+    // failure must never block the customer.
+    try {
+      const payload = {
+        orderId: randomId,
+        senderName,
+        senderPhone,
+        recipientName,
+        recipientPhone,
+        streetAddress,
+        area: selectedArea,
+        deliveryDate,
+        deliveryTimeSlot,
+        cardOccasion,
+        cardMessage,
+        paymentMethod,
+        subtotal: cartSubtotal,
+        deliveryFee: deliveryFee ?? 0,
+        total: orderTotal,
+        wantPhotoBeforeDispatch,
+        items: cart.map((item) => ({
+          title: item.product.title,
+          slug: item.product.slug,
+          price: item.product.price,
+          quantity: item.quantity,
+          deliveryDate: item.customization?.deliveryDate || deliveryDate,
+          deliverySlot: item.customization?.deliverySlot || deliveryTimeSlot,
+          area: item.customization?.area || selectedArea,
+          cardOccasion: item.customization?.cardOccasion || cardOccasion,
+          recipientName: item.customization?.recipientName || recipientName,
+          cardMessage: item.customization?.cardMessage || cardMessage,
+        })),
+      };
+      fetch('/api/orders', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      }).catch((e) => console.error('Order save failed:', e));
+    } catch (e) {
+      console.error('Order save failed:', e);
+    }
   };
 
   const generateWhatsAppMessage = () => {
