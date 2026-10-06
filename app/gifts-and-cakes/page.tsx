@@ -285,6 +285,13 @@ export default async function GiftsAndCakesPage({
           </div>
         </div>
       </section>
+
+      {/* Related customization */}
+      <section className="text-center text-xs text-[#636363] space-x-4">
+        <span className="font-bold text-[#0B0B0B]">Want it personalized?</span>
+        <Link href="/custom-cakes-lahore" className="text-[#8B1E2D] underline font-semibold">Design a Custom Cake</Link>
+        <Link href="/custom-bouquets-lahore" className="text-[#8B1E2D] underline font-semibold">Design a Custom Bouquet</Link>
+      </section>
     </main>
   );
 }
