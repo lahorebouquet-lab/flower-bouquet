@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "Flower Delivery in Lahore Cantt & Cavalry | Rs. 250, 2–2.5 Hours",
   },
-  description: "Same-day flower delivery to Lahore Cantt, Saddar, Cavalry Ground, PAF Colony & CMH in 2–2.5 hours. Fee Rs. 250. Gate-clearance protocol, photo on WhatsApp first, COD. Open 9 AM–1 AM.",
+  description: "Same-day flower delivery to Lahore Cantt, Saddar, Cavalry Ground, PAF Colony & CMH in 2–2.5 hours. Fee Rs. 250. Gate-clearance protocol, photo on WhatsApp",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/cantt`,
   },
   openGraph: {
     title: "Flower Delivery in Lahore Cantt & Cavalry | Rs. 250, 2–2.5 Hours",
-    description: "Same-day flower delivery to Lahore Cantt, Saddar, Cavalry Ground, PAF Colony & CMH in 2–2.5 hours. Fee Rs. 250. Gate-clearance protocol, photo on WhatsApp first, COD. Open 9 AM–1 AM.",
+    description: "Same-day flower delivery to Lahore Cantt, Saddar, Cavalry Ground, PAF Colony & CMH in 2–2.5 hours. Fee Rs. 250. Gate-clearance protocol, photo on WhatsApp",
     url: `${SITE_URL}/delivery-areas/cantt`,
     images: [
       {
@@ -137,7 +137,7 @@ export default async function CanttDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Lahore Cantonment and Cavalry Ground need couriers who understand gate security protocols and military checkpoint navigation. From our workshop on Lahore, we cross into Cantt via Sherpao Bridge or the Cavalry Underpass within minutes, delivering handcrafted bouquets in 2 to 2.5 hours for a flat Rs. 250 — with live WhatsApp photo proof before the rider leaves. To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your colony and street details for gate clearance — approve the bouquet photo, then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
+          Lahore Cantonment and Cavalry Ground need couriers who understand gate security protocols and military checkpoint navigation. From Lahore, we cross into Cantt via Sherpao Bridge or the Cavalry Underpass within minutes, delivering handcrafted bouquets in 2 to 2.5 hours for a flat Rs. 250 — with live WhatsApp photo proof before the rider leaves. To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your colony and street details for gate clearance — approve the bouquet photo, then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">

@@ -92,8 +92,8 @@ export default function AboutPage() {
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
         <div className="md:col-span-6 relative aspect-[4/3] rounded-2xl overflow-hidden border border-[rgba(198,161,91,0.25)] shadow-md">
           <Image 
-            src="/images/hero_workshop.jpg"
-            alt="Florists hand-tying fresh bouquets in Lahore"
+            src="/images/about-flowers.jpg"
+            alt="Hands holding a heart-shaped arrangement of fresh pink roses and yellow flowers"
             fill
             className="object-cover"
           />

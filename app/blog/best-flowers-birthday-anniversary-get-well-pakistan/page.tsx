@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: {
     absolute: "Best Flowers for Birthday & Anniversary in Pakistan (2026)",
   },
-  description: "Which flowers to send for birthdays, anniversaries and get-well wishes in Pakistan? Florist guide to roses, lilies, sunflowers and mixed bouquets with meaning and prices.",
+  description: "Which flowers to send for birthdays, anniversaries and get-well wishes in Pakistan? Florist guide to roses, lilies, sunflowers and mixed bouquets.",
   alternates: {
     canonical: `${SITE_URL}/blog/best-flowers-birthday-anniversary-get-well-pakistan`,
   },

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: {
     absolute: "Send Flowers to Lahore from the UAE | Same-Day Delivery",
   },
-  description: "In Dubai, Sharjah or Abu Dhabi and want to send flowers to Lahore? Only 1 hour time difference — order by 3 PM UAE time for same-day delivery. Pay by card or transfer. Full 2026 guide.",
+  description: "In Dubai, Sharjah or Abu Dhabi and want to send flowers to Lahore? Only 1 hour time difference — order by 3 PM UAE time for same-day delivery. Pay by card",
   alternates: {
     canonical: `${SITE_URL}/blog/send-flowers-to-lahore-from-uae`,
   },

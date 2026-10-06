@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: {
     absolute: "Flower Prices in Lahore 2026 | Rose, Sunflower & Money Bouquets",
   },
-  description: "Complete 2026 flower price guide for Lahore. Rose bouquets from Rs. 1,180, sunflower bunches, lily prices, money bouquet costs and wedding décor packages — updated October 2026.",
+  description: "Complete 2026 flower price guide for Lahore. Rose bouquets from Rs. 1,180, sunflower bunches, lily prices, money bouquet costs and wedding décor packages",
   alternates: {
     canonical: `${SITE_URL}/blog/flower-prices-lahore-2026`,
   },

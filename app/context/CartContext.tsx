@@ -89,12 +89,11 @@ const FORM_KEY = "lb-checkout-form-v1";
 
 function defaultCustomization(): CartItemCustomization {
   const today = getTodayISO();
-  const slot = TIME_SLOTS.find((s) => isSlotAvailableOnDate(s.id, today))?.id ?? TIME_SLOTS[0].id;
   return {
     deliveryDate: today,
-    deliverySlot: slot,
-    area: LAHORE_AREAS[0],
-    cardOccasion: CARD_OCCASIONS[0],
+    deliverySlot: "",
+    area: "",
+    cardOccasion: "",
     recipientName: "",
     cardMessage: "",
   };
@@ -136,13 +135,13 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const [senderPhone, setSenderPhone] = useState(String(savedForm.senderPhone ?? ""));
   const [recipientName, setRecipientName] = useState(String(savedForm.recipientName ?? ""));
   const [recipientPhone, setRecipientPhone] = useState(String(savedForm.recipientPhone ?? ""));
-  const [selectedArea, setSelectedArea] = useState(String(savedForm.selectedArea ?? LAHORE_AREAS[0]));
+  const [selectedArea, setSelectedArea] = useState(String(savedForm.selectedArea ?? ""));
   const [streetAddress, setStreetAddress] = useState(String(savedForm.streetAddress ?? ""));
   const [deliveryDate, setDeliveryDate] = useState(String(savedForm.deliveryDate ?? getTodayISO()));
   const [deliveryTimeSlot, setDeliveryTimeSlot] = useState(
-    String(savedForm.deliveryTimeSlot ?? defaultCustomization().deliverySlot)
+    String(savedForm.deliveryTimeSlot ?? "")
   );
-  const [cardOccasion, setCardOccasion] = useState(String(savedForm.cardOccasion ?? CARD_OCCASIONS[0]));
+  const [cardOccasion, setCardOccasion] = useState(String(savedForm.cardOccasion ?? ""));
   const [cardMessage, setCardMessage] = useState(
     String(savedForm.cardMessage ?? "Wishing you a day as radiant and beautiful as these blooms!")
   );

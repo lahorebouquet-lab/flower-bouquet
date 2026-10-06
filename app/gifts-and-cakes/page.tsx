@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: {
     absolute: "Cakes & Chocolates Delivery in Lahore | Same-Day & Midnight",
   },
-  description: "Send original Layers Bakeshop cakes and imported chocolates in Lahore. Lotus Three Milk, Raffaello, Ferrero Rocher, Nutella & KitKat paired with fresh flowers. Same-day 2–4 hours & midnight surprise delivery with WhatsApp photo proof.",
+  description: "Send original Layers Bakeshop cakes and imported chocolates in Lahore. Lotus Three Milk, Raffaello, Ferrero Rocher and more, paired with fresh flowers.",
   keywords: [
     "layers cakes lahore",
     "layers bakeshop lahore delivery",

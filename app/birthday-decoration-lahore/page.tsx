@@ -9,8 +9,7 @@ export const metadata: Metadata = {
   title: {
     absolute: "Birthday Decoration in Lahore | Balloon & Flower Setup at Home",
   },
-  description:
-    "Book birthday decoration in Lahore — helium balloon bunches, flower backdrops, table styling and surprise setups at home. Packages from Rs. 4,999. Same-day booking available.",
+  description: "Book birthday decoration in Lahore — helium balloon bunches, flower backdrops, table styling and surprise setups at home. Packages from Rs. 4,999.",
   alternates: {
     canonical: `${SITE_URL}/birthday-decoration-lahore`,
   },

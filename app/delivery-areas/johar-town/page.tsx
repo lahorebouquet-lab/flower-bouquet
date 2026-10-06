@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "Flower Delivery in Johar Town Lahore | Rs. 250, 2–3 Hours",
   },
-  description: "Same-day flower delivery across Johar Town Phases 1 & 2, Emporium Mall, G1 Market & Shaukat Khanum Hospital in 2–3 hours. Fee Rs. 250. WhatsApp photo proof, COD, midnight slot. Open 9 AM–1 AM.",
+  description: "Same-day flower delivery across Johar Town Phases 1 & 2, Emporium Mall, G1 Market & Shaukat Khanum Hospital in 2–3 hours. Fee Rs. 250. WhatsApp photo",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/johar-town`,
   },
   openGraph: {
     title: "Flower Delivery in Johar Town Lahore | Rs. 250, 2–3 Hours",
-    description: "Same-day flower delivery across Johar Town Phases 1 & 2, Emporium Mall, G1 Market & Shaukat Khanum Hospital in 2–3 hours. Fee Rs. 250. WhatsApp photo proof, COD, midnight slot. Open 9 AM–1 AM.",
+    description: "Same-day flower delivery across Johar Town Phases 1 & 2, Emporium Mall, G1 Market & Shaukat Khanum Hospital in 2–3 hours. Fee Rs. 250. WhatsApp photo",
     url: `${SITE_URL}/delivery-areas/johar-town`,
     images: [
       {

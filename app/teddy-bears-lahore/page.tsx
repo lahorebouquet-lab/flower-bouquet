@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: {
     absolute: "Teddy Bears in Lahore | Giant Teddy Delivery | Lahore Bouquet",
   },
-  description: "Order teddy bears online in Lahore — from cute small plushies (Rs. 1,499) to 6-feet giant teddy bears (Rs. 12,999). Same-day & midnight delivery with roses and chocolate combos across DHA, Gulberg, Bahria Town.",
+  description: "Order teddy bears online in Lahore — from cute small plushies (Rs. 1,499) to 6-feet giant teddy bears (Rs. 12,999). Same-day & midnight delivery across Lahore.",
   alternates: {
     canonical: `${SITE_URL}/teddy-bears-lahore`,
   },

@@ -27,15 +27,16 @@ import {
 } from "lucide-react";
 
 export default function ProductDetailActions({ product }: { product: Product }) {
-  const { addToCart, directOrderNow, wishlist, toggleWishlist, showToast, firstAvailableSlot } = useCart();
+  const { addToCart, directOrderNow, wishlist, toggleWishlist, showToast } = useCart();
   const [quantity, setQuantity] = useState(1);
   const [selectedDate, setSelectedDate] = useState(getTodayISO());
-  const [selectedSlot, setSelectedSlot] = useState(() => firstAvailableSlot(getTodayISO()));
-  const [selectedArea, setSelectedArea] = useState(LAHORE_AREAS[0]);
-  const [cardOccasion, setCardOccasion] = useState(CARD_OCCASIONS[0]);
+  const [selectedSlot, setSelectedSlot] = useState("");
+  const [selectedArea, setSelectedArea] = useState("");
+  const [cardOccasion, setCardOccasion] = useState("");
   const [recipientName, setRecipientName] = useState("");
   const [cardMessage, setCardMessage] = useState("");
   const [isOrdering, setIsOrdering] = useState(false);
+  const [showValidation, setShowValidation] = useState(false);
 
   const isWishlisted = wishlist.includes(product.id);
   const totalPrice = product.price * quantity;
@@ -44,16 +45,28 @@ export default function ProductDetailActions({ product }: { product: Product }) 
     deliveryDate: selectedDate,
     deliverySlot: selectedSlot,
     area: selectedArea,
-    cardOccasion,
+    cardOccasion: cardOccasion || "No card",
     recipientName: recipientName.trim(),
     cardMessage: cardMessage.trim(),
   });
 
+  /** Area + slot are required — no silent defaults. */
+  const validateSelection = (): boolean => {
+    if (!selectedArea || !selectedSlot) {
+      setShowValidation(true);
+      showToast("Please select your delivery area and time slot first");
+      return false;
+    }
+    return true;
+  };
+
   const handleAddToCart = () => {
+    if (!validateSelection()) return;
     addToCart(product, quantity, undefined, buildCustomization());
   };
 
   const handleInstantWhatsAppOrder = () => {
+    if (!validateSelection()) return;
     setIsOrdering(true);
     const selectedSlotObj = DELIVERY_SLOTS.find(s => s.id === selectedSlot) || DELIVERY_SLOTS[1];
     
@@ -79,6 +92,7 @@ export default function ProductDetailActions({ product }: { product: Product }) 
   };
 
   const handleDirectCheckout = () => {
+    if (!validateSelection()) return;
     directOrderNow(product, undefined, buildCustomization());
   };
 
@@ -99,20 +113,26 @@ export default function ProductDetailActions({ product }: { product: Product }) 
 
         {/* Lahore Area Selector */}
         <div className="space-y-1">
-          <label htmlFor="pdp-area" className="text-[#2A2A2A] font-medium text-[11px]">Select Lahore Destination:</label>
+          <label htmlFor="pdp-area" className="text-[#2A2A2A] font-medium text-[11px]">
+            Select Lahore Destination: <span className="text-[#8B1E2D]">*</span>
+          </label>
           <select 
             id="pdp-area"
             aria-label="Select Lahore delivery area"
             value={selectedArea}
-            onChange={(e) => setSelectedArea(e.target.value)}
-            className="w-full px-3 py-2 bg-white border border-[#E5DED2] rounded-xl text-[#0B0B0B] outline-none"
+            onChange={(e) => { setSelectedArea(e.target.value); setShowValidation(false); }}
+            className={`w-full px-3 py-2 bg-white border rounded-xl text-[#0B0B0B] outline-none ${showValidation && !selectedArea ? "border-[#8B1E2D] ring-1 ring-[#8B1E2D]" : "border-[#E5DED2]"}`}
           >
+            <option value="" disabled>— Choose your area —</option>
             {LAHORE_AREAS.map((area) => (
               <option key={area} value={area} className="bg-white text-[#0B0B0B]">
                 {area}
               </option>
             ))}
           </select>
+          {showValidation && !selectedArea && (
+            <p className="text-[10px] text-[#8B1E2D] font-semibold">Please choose a delivery area</p>
+          )}
         </div>
 
         {/* Delivery Date + Time Slots (with Lahore cutoff logic) */}
@@ -120,7 +140,8 @@ export default function ProductDetailActions({ product }: { product: Product }) 
           date={selectedDate}
           slotId={selectedSlot}
           onDateChange={setSelectedDate}
-          onSlotChange={setSelectedSlot}
+          onSlotChange={(id) => { setSelectedSlot(id); setShowValidation(false); }}
+          highlightRequired={showValidation}
           compact
         />
       </div>
@@ -145,6 +166,7 @@ export default function ProductDetailActions({ product }: { product: Product }) 
             onChange={(e) => setCardOccasion(e.target.value)}
             className="w-full px-3 py-2 bg-white border border-[#E5DED2] rounded-xl text-[#0B0B0B] text-xs outline-none"
           >
+            <option value="">— Card occasion (optional) —</option>
             {CARD_OCCASIONS.map((occ) => (
               <option key={occ} value={occ} className="bg-white text-[#0B0B0B]">
                 {occ}

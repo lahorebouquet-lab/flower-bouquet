@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: {
     absolute: "Gajra Prices in Lahore 2026 | Fresh Jasmine Gajray Guide",
   },
-  description: "How much do gajray cost in Lahore? Fresh jasmine gajra pairs from Rs. 1,200, bridal sets from Rs. 2,500, floral jewellery from Rs. 3,500. 2026 price guide with ordering tips.",
+  description: "How much do gajray cost in Lahore? Fresh jasmine gajra pairs from Rs. 1,200, bridal sets from Rs. 2,500, floral jewellery from Rs. 3,500. 2026 price guide",
   alternates: {
     canonical: `${SITE_URL}/blog/gajra-prices-lahore-2026`,
   },

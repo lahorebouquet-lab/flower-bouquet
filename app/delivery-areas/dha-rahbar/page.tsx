@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "Flower Delivery in DHA Rahbar Lahore | Rs. 400, 3–4 Hours",
   },
-  description: "Same-day flower delivery to DHA Rahbar Lahore — sectors & commercial area near Valencia Town in 3–4 hours. Delivery fee Rs. 400. Fresh roses, money bouquets, cakes & midnight surprises. Photo on WhatsApp first.",
+  description: "Same-day flower delivery to DHA Rahbar Lahore — sectors & commercial area near Valencia Town in 3–4 hours. Delivery fee Rs. 400. Fresh roses, money",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/dha-rahbar`,
   },
   openGraph: {
     title: "Flower Delivery in DHA Rahbar Lahore | Rs. 400, 3–4 Hours",
-    description: "Same-day flower delivery to DHA Rahbar Lahore — sectors & commercial area near Valencia Town in 3–4 hours. Delivery fee Rs. 400. Fresh roses, money bouquets, cakes & midnight surprises. Photo on WhatsApp first.",
+    description: "Same-day flower delivery to DHA Rahbar Lahore — sectors & commercial area near Valencia Town in 3–4 hours. Delivery fee Rs. 400. Fresh roses, money",
     url: `${SITE_URL}/delivery-areas/dha-rahbar`,
     images: [
       {

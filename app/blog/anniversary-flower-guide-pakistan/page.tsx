@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "Best Anniversary Flowers by Year in Pakistan | Florist Guide",
   },
-  description: "Discover the best flowers for wedding anniversaries in Pakistan. Traditional and modern floral choices for 1st, 5th, 10th, and 25th milestones with midnight delivery.",
+  description: "Discover the best flowers for wedding anniversaries in Pakistan. Traditional and modern floral choices for 1st, 5th, 10th, and 25th milestones.",
   alternates: {
     canonical: `${SITE_URL}/blog/anniversary-flower-guide-pakistan`,
   },
   openGraph: {
     title: "Best Anniversary Flowers by Year in Pakistan | Florist Guide",
-    description: "Discover the best flowers for wedding anniversaries in Pakistan. Traditional and modern floral choices for 1st, 5th, 10th, and 25th milestones with midnight delivery.",
+    description: "Discover the best flowers for wedding anniversaries in Pakistan. Traditional and modern floral choices for 1st, 5th, 10th, and 25th milestones.",
     url: `${SITE_URL}/blog/anniversary-flower-guide-pakistan`,
     type: "article",
     images: [

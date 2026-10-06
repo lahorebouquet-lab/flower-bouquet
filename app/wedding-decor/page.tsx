@@ -52,7 +52,7 @@ export default async function WeddingDecorPage() {
   const decorServiceJsonLd = serviceSchema({
     name: "Wedding Flower Decoration in Lahore",
     url: `${SITE_URL}/wedding-decor`,
-    description: "Fresh flower wedding decoration in Lahore — bridal car decor, bridal room canopy (masehri), stage florals and event arrangements across DHA, Gulberg, Bahria Town and all Lahore areas.",
+    description: "Fresh flower wedding decoration in Lahore — bridal car decor, bridal room canopy (masehri), stage florals and event arrangements across DHA, Gulberg",
   });
 
   const breadcrumbSchema = {

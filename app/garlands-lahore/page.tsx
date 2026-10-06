@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: {
     absolute: "Fresh Flower Garlands (Haar) in Lahore | Lahore Bouquet",
   },
-  description: "Fresh flower garlands (haar) in Lahore from Rs. 999 — marigold, rose & jasmine haar for baraat, nikkah, mehndi and welcome ceremonies. Bulk wedding orders with same-day delivery.",
+  description: "Fresh flower garlands (haar) in Lahore from Rs. 999 — marigold, rose & jasmine haar for baraat, nikkah, mehndi and welcome ceremonies. Bulk wedding orders",
   alternates: {
     canonical: `${SITE_URL}/garlands-lahore`,
   },

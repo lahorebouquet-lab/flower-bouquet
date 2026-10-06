@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: {
     absolute: "Fresh Gajray in Lahore | Mehndi Jewellery | Lahore Bouquet",
   },
-  description: "Order fresh motia & red rose gajray, wedding garlands (mala/haar), haath phool, and handmade bridal mehndi jewellery in Lahore. 4 hours express delivery across all areas. Prices from Rs. 2,499.",
+  description: "Order fresh motia & red rose gajray, wedding garlands (mala/haar), haath phool, and handmade bridal mehndi jewellery in Lahore. 4 hours express delivery",
   alternates: {
     canonical: `${SITE_URL}/collections/fresh-flower-gajray`,
   },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Fresh Gajray in Lahore | Mehndi Jewellery | Lahore Bouquet",
-    description: "Order fresh motia & red rose gajray, wedding garlands (mala/haar), haath phool, and handmade bridal mehndi jewellery in Lahore. 4 hours express delivery across all areas.",
+    description: "Order fresh motia & red rose gajray, wedding garlands (mala/haar), haath phool, and handmade bridal mehndi jewellery in Lahore. 4 hours express delivery",
     url: `${SITE_URL}/collections/fresh-flower-gajray`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",

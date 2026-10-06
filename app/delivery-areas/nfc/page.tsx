@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "Flower Delivery in NFC Society Lahore | Rs. 400, 2.5–3.5 Hours",
   },
-  description: "Same-day flower delivery to NFC Society Lahore — housing blocks and commercial market in 2.5–3.5 hours. Delivery fee Rs. 400 flat. Bouquet photo on WhatsApp before dispatch.",
+  description: "Same-day flower delivery to NFC Society Lahore — housing blocks and commercial market in 2.5–3.5 hours. Delivery fee Rs. 400 flat. Bouquet photo on",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/nfc`,
   },
   openGraph: {
     title: "Flower Delivery in NFC Society Lahore | Rs. 400, 2.5–3.5 Hours",
-    description: "Same-day flower delivery to NFC Society Lahore — housing blocks and commercial market in 2.5–3.5 hours. Delivery fee Rs. 400 flat. Bouquet photo on WhatsApp before dispatch.",
+    description: "Same-day flower delivery to NFC Society Lahore — housing blocks and commercial market in 2.5–3.5 hours. Delivery fee Rs. 400 flat. Bouquet photo on",
     url: `${SITE_URL}/delivery-areas/nfc`,
     images: [
       {

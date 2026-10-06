@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "Flower Delivery in Bahria Orchard Lahore | Rs. 500, 3–4 Hours",
   },
-  description: "Same-day flower delivery to Bahria Orchard Lahore — Phases 1–4 near Raiwind Road in 3–4 hours. Delivery fee Rs. 500. Fresh roses, money bouquets, cakes & midnight surprises. Photo on WhatsApp first.",
+  description: "Same-day flower delivery to Bahria Orchard Lahore — Phases 1–4 near Raiwind Road in 3–4 hours. Delivery fee Rs. 500. Fresh roses, money bouquets, cakes &",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/bahria-orchard`,
   },
   openGraph: {
     title: "Flower Delivery in Bahria Orchard Lahore | Rs. 500, 3–4 Hours",
-    description: "Same-day flower delivery to Bahria Orchard Lahore — Phases 1–4 near Raiwind Road in 3–4 hours. Delivery fee Rs. 500. Fresh roses, money bouquets, cakes & midnight surprises. Photo on WhatsApp first.",
+    description: "Same-day flower delivery to Bahria Orchard Lahore — Phases 1–4 near Raiwind Road in 3–4 hours. Delivery fee Rs. 500. Fresh roses, money bouquets, cakes &",
     url: `${SITE_URL}/delivery-areas/bahria-orchard`,
     images: [
       {

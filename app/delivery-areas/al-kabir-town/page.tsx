@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "Flower Delivery in Al Kabir Town Lahore | Rs. 500, 3–4 Hours",
   },
-  description: "Same-day flower delivery to Al Kabir Town Lahore — Phase 1 & 2 near Raiwind Road in 3–4 hours. Delivery fee Rs. 500. Fresh roses, money bouquets, cakes & midnight surprises. Photo on WhatsApp first.",
+  description: "Same-day flower delivery to Al Kabir Town Lahore — Phase 1 & 2 near Raiwind Road in 3–4 hours. Delivery fee Rs. 500. Fresh roses, money bouquets, cakes &",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/al-kabir-town`,
   },
   openGraph: {
     title: "Flower Delivery in Al Kabir Town Lahore | Rs. 500, 3–4 Hours",
-    description: "Same-day flower delivery to Al Kabir Town Lahore — Phase 1 & 2 near Raiwind Road in 3–4 hours. Delivery fee Rs. 500. Fresh roses, money bouquets, cakes & midnight surprises. Photo on WhatsApp first.",
+    description: "Same-day flower delivery to Al Kabir Town Lahore — Phase 1 & 2 near Raiwind Road in 3–4 hours. Delivery fee Rs. 500. Fresh roses, money bouquets, cakes &",
     url: `${SITE_URL}/delivery-areas/al-kabir-town`,
     images: [
       {

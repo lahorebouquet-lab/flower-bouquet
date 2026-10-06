@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "Flower Delivery in Gulberg Lahore | FREE, 30–90 Mins",
   },
-  description: "Free 30–90 minute flower delivery in Gulberg I, II & III, Liberty, MM Alam Road & Main Boulevard Lahore. Bouquets from Rs. 1,180. Midnight slot, photo on WhatsApp first, COD. Open 9 AM–1 AM daily.",
+  description: "Free 30–90 minute flower delivery in Gulberg I, II & III, Liberty, MM Alam Road & Main Boulevard Lahore. Bouquets from Rs. 1,180. Midnight slot, photo on",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/gulberg`,
   },
   openGraph: {
     title: "Flower Delivery in Gulberg Lahore | FREE, 30–90 Mins",
-    description: "Free 30–90 minute flower delivery in Gulberg I, II & III, Liberty, MM Alam Road & Main Boulevard Lahore. Bouquets from Rs. 1,180. Midnight slot, photo on WhatsApp first, COD. Open 9 AM–1 AM daily.",
+    description: "Free 30–90 minute flower delivery in Gulberg I, II & III, Liberty, MM Alam Road & Main Boulevard Lahore. Bouquets from Rs. 1,180. Midnight slot, photo on",
     url: `${SITE_URL}/delivery-areas/gulberg`,
     images: [
       {

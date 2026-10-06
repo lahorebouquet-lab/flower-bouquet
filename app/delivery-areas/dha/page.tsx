@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "Flower Delivery in DHA Lahore | Rs. 250, 2–3 Hours",
   },
-  description: "Same-day flower delivery to DHA Lahore Phases 1–9, Defence Raya & Sector Y in 2–3 hours. Delivery fee Rs. 250. Imported roses, money bouquets, cakes & midnight surprises. Photo on WhatsApp first.",
+  description: "Same-day flower delivery to DHA Lahore Phases 1–9, Defence Raya & Sector Y in 2–3 hours. Delivery fee Rs. 250. Imported roses, money bouquets, cakes &",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/dha`,
   },
   openGraph: {
     title: "Flower Delivery in DHA Lahore | Rs. 250, 2–3 Hours",
-    description: "Same-day flower delivery to DHA Lahore Phases 1–9, Defence Raya & Sector Y in 2–3 hours. Delivery fee Rs. 250. Imported roses, money bouquets, cakes & midnight surprises. Photo on WhatsApp first.",
+    description: "Same-day flower delivery to DHA Lahore Phases 1–9, Defence Raya & Sector Y in 2–3 hours. Delivery fee Rs. 250. Imported roses, money bouquets, cakes &",
     url: `${SITE_URL}/delivery-areas/dha`,
     images: [
       {

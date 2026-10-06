@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: {
     absolute: "Corporate Flower Delivery Lahore | Office & Event Plans",
   },
-  description: "Corporate flowers in Lahore: weekly office subscriptions from Rs. 4,500/month, executive gifting, event stage décor & bulk festive gifting. Official invoicing, dedicated account manager.",
+  description: "Corporate flowers in Lahore: weekly office subscriptions from Rs. 4,500/month, executive gifting, event stage décor & bulk festive gifting. Official",
   alternates: {
     canonical: `${SITE_URL}/corporate`,
   },

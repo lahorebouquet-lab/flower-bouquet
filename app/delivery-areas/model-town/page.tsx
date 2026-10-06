@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "Flower Delivery in Model Town Lahore | FREE, 1.5–2.5 Hours",
   },
-  description: "Free flower delivery to Model Town Blocks A–M, Link Road & Garden Town Lahore in 1.5–2.5 hours. Bouquets from Rs. 1,180. Midnight slot, WhatsApp photo proof, COD. Open 9 AM–1 AM.",
+  description: "Free flower delivery to Model Town Blocks A–M, Link Road & Garden Town Lahore in 1.5–2.5 hours. Bouquets from Rs. 1,180. Midnight slot, WhatsApp photo",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/model-town`,
   },
   openGraph: {
     title: "Flower Delivery in Model Town Lahore | FREE, 1.5–2.5 Hours",
-    description: "Free flower delivery to Model Town Blocks A–M, Link Road & Garden Town Lahore in 1.5–2.5 hours. Bouquets from Rs. 1,180. Midnight slot, WhatsApp photo proof, COD. Open 9 AM–1 AM.",
+    description: "Free flower delivery to Model Town Blocks A–M, Link Road & Garden Town Lahore in 1.5–2.5 hours. Bouquets from Rs. 1,180. Midnight slot, WhatsApp photo",
     url: `${SITE_URL}/delivery-areas/model-town`,
     images: [
       {

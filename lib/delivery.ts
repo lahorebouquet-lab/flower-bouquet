@@ -126,6 +126,15 @@ export function isSlotAvailableToday(slot: DeliverySlot, now?: Date): boolean {
   return lahoreNow.getTime() < cutoff.getTime();
 }
 
+/** Human-readable order-by time for today's cutoff, e.g. "3:00 PM". */
+export function getSlotCutoffLabel(slot: DeliverySlot): string {
+  const h24 = slot.startHour - SLOT_CUTOFF_HOURS;
+  const h = h24 % 12 === 0 ? 12 : h24 % 12;
+  const ampm = h24 < 12 ? "AM" : "PM";
+  const mm = String(slot.startMinute).padStart(2, "0");
+  return `${h}:${mm} ${ampm}`;
+}
+
 /** Slots are only restricted for today — all slots available on future dates. */
 export function isSlotAvailableOnDate(slotId: string, isoDate: string, now?: Date): boolean {
   if (isoDate !== getTodayISO()) return true;

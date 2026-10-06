@@ -353,6 +353,7 @@ export default function CategorySection({ categories, products }: CategorySectio
                 <Link
                   key={p.id}
                   href={`/products/${p.slug || p.id}`}
+                  aria-label={`View ${p.title} — Rs. ${p.price.toLocaleString()}`}
                   className="w-[160px] sm:w-[200px] shrink-0 snap-start group/card relative rounded-xl overflow-hidden bg-white border border-[rgba(198,161,91,0.25)] hover:border-[#C6A15B] transition-all duration-300 hover:shadow-[0_8px_18px_rgba(198,161,91,0.18)] hover:-translate-y-1 flex flex-col"
                 >
                   <div className="relative aspect-[4/5] w-full overflow-hidden bg-[#F8F3EA]">

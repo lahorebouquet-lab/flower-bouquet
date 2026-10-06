@@ -100,7 +100,7 @@ export default function PresentationPage() {
               </div>
 
               <div className="relative min-h-[260px] md:min-h-[320px] overflow-hidden">
-                <Image src="/images/hero_workshop.jpg" alt="Florist workshop" fill className="object-cover" />
+                <Image src="/images/about-flowers.jpg" alt="Hands holding a heart-shaped arrangement of fresh flowers" fill className="object-cover" />
                 <div className="absolute bottom-4 right-4 glass-card text-white p-3 rounded-xl shadow-lg max-w-[130px]">
                   <div className="text-[10px] leading-tight text-white/90 font-medium mb-1.5">
                     <div>Natural.</div>

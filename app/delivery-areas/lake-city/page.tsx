@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "Flower Delivery in Lake City Lahore | Rs. 500, 3–4 Hours",
   },
-  description: "Same-day flower delivery to Lake City Lahore — golf-course villas, Downtown commercial and sectors near the Ring Road interchange in 3–4 hours. Delivery fee Rs. 500 flat. Bouquet photo on WhatsApp before dispatch.",
+  description: "Same-day flower delivery to Lake City Lahore — golf-course villas, Downtown commercial and sectors near the Ring Road interchange in 3–4 hours. Delivery",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/lake-city`,
   },
   openGraph: {
     title: "Flower Delivery in Lake City Lahore | Rs. 500, 3–4 Hours",
-    description: "Same-day flower delivery to Lake City Lahore — golf-course villas, Downtown commercial and sectors near the Ring Road interchange in 3–4 hours. Delivery fee Rs. 500 flat. Bouquet photo on WhatsApp before dispatch.",
+    description: "Same-day flower delivery to Lake City Lahore — golf-course villas, Downtown commercial and sectors near the Ring Road interchange in 3–4 hours. Delivery",
     url: `${SITE_URL}/delivery-areas/lake-city`,
     images: [
       {

@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "Flower Delivery in Wapda Town Lahore | Rs. 300, 2.5–3.5 Hours",
   },
-  description: "Same-day flower bouquets, roses & cakes delivered to Wapda Town, PIA Society, Valencia & Township Lahore in 2.5–3.5 hours. Fee Rs. 300. Photo on WhatsApp first, COD, midnight slot.",
+  description: "Same-day flower bouquets, roses & cakes delivered to Wapda Town, PIA Society, Valencia & Township Lahore in 2.5–3.5 hours. Fee Rs. 300. Photo on WhatsApp",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/wapda-town`,
   },
   openGraph: {
     title: "Flower Delivery in Wapda Town Lahore | Rs. 300, 2.5–3.5 Hours",
-    description: "Same-day flower bouquets, roses & cakes delivered to Wapda Town, PIA Society, Valencia & Township Lahore in 2.5–3.5 hours. Fee Rs. 300. Photo on WhatsApp first, COD, midnight slot.",
+    description: "Same-day flower bouquets, roses & cakes delivered to Wapda Town, PIA Society, Valencia & Township Lahore in 2.5–3.5 hours. Fee Rs. 300. Photo on WhatsApp",
     url: `${SITE_URL}/delivery-areas/wapda-town`,
     images: [
       {

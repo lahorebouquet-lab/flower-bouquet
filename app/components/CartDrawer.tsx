@@ -28,6 +28,7 @@ export default function CartDrawer() {
     setIsCartOpen,
     checkoutStep,
     setCheckoutStep,
+    showToast,
     updateQuantity,
     clearCart,
     cartSubtotal,
@@ -292,6 +293,7 @@ export default function CartDrawer() {
                     onChange={(e) => setSelectedArea(e.target.value)}
                     className="w-full px-3 py-2 bg-white border border-[#E5DED2] rounded-lg text-[#0B0B0B] outline-none"
                   >
+                    <option value="" disabled>— Select your area —</option>
                     {LAHORE_AREAS.map((area, aIdx) => {
                       const fee = getDeliveryFee(area);
                       return (
@@ -363,6 +365,7 @@ export default function CartDrawer() {
                   slotId={deliveryTimeSlot}
                   onDateChange={setDeliveryDate}
                   onSlotChange={setDeliveryTimeSlot}
+                  highlightRequired={triedContinue}
                 />
               </div>
 
@@ -382,6 +385,7 @@ export default function CartDrawer() {
                     onChange={(e) => setCardOccasion(e.target.value)}
                     className="w-full px-3 py-2 bg-white border border-[#E5DED2] rounded-lg text-[#0B0B0B] outline-none"
                   >
+                    <option value="">— Select occasion (optional) —</option>
                     {CARD_OCCASIONS.map((occ, oIdx) => (
                       <option key={oIdx} value={occ} className="bg-white">
                         {occ}
@@ -627,7 +631,14 @@ export default function CartDrawer() {
               {checkoutStep === 3 && (
                 <button
                   type="button"
-                  onClick={() => setCheckoutStep(4)}
+                  onClick={() => {
+                    if (!deliveryTimeSlot) {
+                      setTriedContinue(true);
+                      showToast("Please select a delivery time slot");
+                      return;
+                    }
+                    setCheckoutStep(4);
+                  }}
                   className="flex-1 py-3.5 rounded-full bg-[#8B1E2D] hover:bg-[#C6A15B] text-white hover:text-[#0B0B0B] font-bold text-xs shadow-md transition-all text-center flex items-center justify-center gap-1.5 cursor-pointer active:scale-95"
                 >
                   <span>Proceed to Payment</span>

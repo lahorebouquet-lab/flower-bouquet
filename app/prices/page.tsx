@@ -24,8 +24,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Flower Bouquet Price in Lahore | Free Delivery",
-    description:
-      "Bouquet prices in Lahore from PKR 1,180, gajray from PKR 450. Compare real starting prices for chocolate bouquets, wedding décor, car decoration & gifts. WhatsApp for exact quote.",
+    description: "Bouquet prices in Lahore from PKR 1,180, gajray from PKR 450. Compare real starting prices for chocolate bouquets, wedding décor, car decoration & gifts.",
     url: `${SITE_URL}/prices`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",

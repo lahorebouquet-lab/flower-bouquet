@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: {
     absolute: "Rose Color Meanings in Pakistan (2026) | What Each Rose Says",
   },
-  description: "What do red, white, pink, yellow roses mean? Complete rose color meaning guide for gifting in Pakistan — birthdays, nikkah, apologies, get-well. Same-day Lahore delivery.",
+  description: "What do red, white, pink, yellow roses mean? Complete rose color meaning guide for gifting in Pakistan — birthdays, nikkah, apologies, get-well. Same-day",
   alternates: {
     canonical: `${SITE_URL}/blog/rose-color-meanings-pakistan`,
   },

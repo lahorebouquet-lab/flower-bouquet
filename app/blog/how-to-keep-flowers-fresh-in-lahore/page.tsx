@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "How to Keep Flower Bouquets Fresh in Lahore Heat (Florist Tips)",
   },
-  description: "Learn how to keep cut roses and flower bouquets alive for up to 7 days in Lahore's warm climate. Practical florist tips on water changing, stem trimming, and vase placement.",
+  description: "Learn how to keep cut roses and flower bouquets alive for up to 7 days in Lahore's warm climate. Practical florist tips on water changing, stem trimming",
   alternates: {
     canonical: `${SITE_URL}/blog/how-to-keep-flowers-fresh-in-lahore`,
   },
   openGraph: {
     title: "How to Keep Flower Bouquets Fresh in Lahore Heat (Florist Tips)",
-    description: "Learn how to keep cut roses and flower bouquets alive for up to 7 days in Lahore's warm climate. Practical florist tips on water changing, stem trimming, and vase placement.",
+    description: "Learn how to keep cut roses and flower bouquets alive for up to 7 days in Lahore's warm climate. Practical florist tips on water changing, stem trimming",
     url: `${SITE_URL}/blog/how-to-keep-flowers-fresh-in-lahore`,
     type: "article",
     images: [

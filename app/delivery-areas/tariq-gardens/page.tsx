@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "Flower Delivery in Tariq Gardens Lahore | Rs. 400, 2.5–3.5 Hours",
   },
-  description: "Same-day flower delivery to Tariq Gardens Lahore — housing blocks off the Multan Road corridor in 2.5–3.5 hours. Delivery fee Rs. 400. Fresh roses, money bouquets, cakes & midnight surprises. Photo on WhatsApp first.",
+  description: "Same-day flower delivery to Tariq Gardens Lahore — housing blocks off the Multan Road corridor in 2.5–3.5 hours. Delivery fee Rs. 400. Fresh roses, money",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/tariq-gardens`,
   },
   openGraph: {
     title: "Flower Delivery in Tariq Gardens Lahore | Rs. 400, 2.5–3.5 Hours",
-    description: "Same-day flower delivery to Tariq Gardens Lahore — housing blocks off the Multan Road corridor in 2.5–3.5 hours. Delivery fee Rs. 400. Fresh roses, money bouquets, cakes & midnight surprises. Photo on WhatsApp first.",
+    description: "Same-day flower delivery to Tariq Gardens Lahore — housing blocks off the Multan Road corridor in 2.5–3.5 hours. Delivery fee Rs. 400. Fresh roses, money",
     url: `${SITE_URL}/delivery-areas/tariq-gardens`,
     images: [
       {

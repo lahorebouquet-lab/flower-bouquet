@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: {
     absolute: "Wedding Room Decoration in Lahore | Lahore Bouquet",
   },
-  description: "Bridal & wedding room decoration in Lahore from Rs. 14,999 — rose petals, candles, fairy lights, bed styling. Packages up to Rs. 39,999. Book 3–5 days ahead. Same-city decorators across DHA, Gulberg, Bahria Town.",
+  description: "Bridal & wedding room decoration in Lahore from Rs. 14,999 — rose petals, candles, fairy lights, bed styling. Packages up to Rs. 39,999. Book 3–5 days",
   alternates: {
     canonical: `${SITE_URL}/wedding-room-decoration-lahore`,
   },

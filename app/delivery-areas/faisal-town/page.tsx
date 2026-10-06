@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "Flower Delivery in Faisal Town Lahore | Rs. 300, 2–3 Hours",
   },
-  description: "Same-day flower delivery to Faisal Town Lahore — residential blocks, near Johar Town & Shaukat Khanum — in 2–3 hours. Delivery fee Rs. 300. Imported roses, money bouquets, cakes & midnight surprises. Photo on WhatsApp first.",
+  description: "Same-day flower delivery to Faisal Town Lahore — residential blocks, near Johar Town & Shaukat Khanum — in 2–3 hours. Delivery fee Rs. 300.",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/faisal-town`,
   },
   openGraph: {
     title: "Flower Delivery in Faisal Town Lahore | Rs. 300, 2–3 Hours",
-    description: "Same-day flower delivery to Faisal Town Lahore — residential blocks, near Johar Town & Shaukat Khanum — in 2–3 hours. Delivery fee Rs. 300. Imported roses, money bouquets, cakes & midnight surprises. Photo on WhatsApp first.",
+    description: "Same-day flower delivery to Faisal Town Lahore — residential blocks, near Johar Town & Shaukat Khanum — in 2–3 hours. Delivery fee Rs. 300.",
     url: `${SITE_URL}/delivery-areas/faisal-town`,
     images: [
       {

@@ -8,15 +8,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "Send Flowers to Lahore from Abroad | UK, USA, UAE, Saudi",
   },
-  description:
-    "Living in the UK, USA, UAE, Saudi Arabia or Canada? Send fresh flowers, cakes and gifts to your family in Lahore. Pay with your international card, we deliver in 2–5 hours with WhatsApp photo proof.",
+  description: "Living in the UK, USA, UAE, Saudi Arabia or Canada? Send fresh flowers, cakes and gifts to your family in Lahore. Pay with your international card, we",
   alternates: {
     canonical: `${SITE_URL}/send-flowers-to-lahore-from-abroad`,
   },
   openGraph: {
     title: "Send Flowers to Lahore from Abroad | UK, USA, UAE, Saudi",
-    description:
-      "Living in the UK, USA, UAE, Saudi Arabia or Canada? Send fresh flowers, cakes and gifts to your family in Lahore. Pay with your international card, we deliver in 2–5 hours with WhatsApp photo proof.",
+    description: "Living in the UK, USA, UAE, Saudi Arabia or Canada? Send fresh flowers, cakes and gifts to your family in Lahore. Pay with your international card, we",
     url: `${SITE_URL}/send-flowers-to-lahore-from-abroad`,
     type: "website",
     locale: "en_PK",

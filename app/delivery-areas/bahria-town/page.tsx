@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "Flower Delivery in Bahria Town Lahore | Rs. 400, 2.5–4 Hours",
   },
-  description: "Same-day flower delivery to Bahria Town Sectors A–F, Safari Villas & Lake City in 2.5–4 hours. Fee Rs. 400. AC-van transit, WhatsApp photo proof, COD, midnight slot. Open 9 AM–1 AM.",
+  description: "Same-day flower delivery to Bahria Town Sectors A–F, Safari Villas & Lake City in 2.5–4 hours. Fee Rs. 400. AC-van transit, WhatsApp photo proof, COD",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/bahria-town`,
   },
   openGraph: {
     title: "Flower Delivery in Bahria Town Lahore | Rs. 400, 2.5–4 Hours",
-    description: "Same-day flower delivery to Bahria Town Sectors A–F, Safari Villas & Lake City in 2.5–4 hours. Fee Rs. 400. AC-van transit, WhatsApp photo proof, COD, midnight slot. Open 9 AM–1 AM.",
+    description: "Same-day flower delivery to Bahria Town Sectors A–F, Safari Villas & Lake City in 2.5–4 hours. Fee Rs. 400. AC-van transit, WhatsApp photo proof, COD",
     url: `${SITE_URL}/delivery-areas/bahria-town`,
     images: [
       {
@@ -137,7 +137,7 @@ export default async function BahriaTownDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Sending flowers to Bahria Town requires careful temperature control during transit. From our workshop on Lahore, our climate-controlled courier vans navigate via the Lahore Ring Road to reach Sectors A through F, Safari Villas, and Lake City within 2.5 to 4 hours for a flat Rs. 400. You receive a photo of your hand-tied bouquet on WhatsApp before our rider departs. To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your sector, street and house number — approve the bouquet photo we send, then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
+          Sending flowers to Bahria Town requires careful temperature control during transit. From Lahore, our climate-controlled courier vans navigate via the Lahore Ring Road to reach Sectors A through F, Safari Villas, and Lake City within 2.5 to 4 hours for a flat Rs. 400. You receive a photo of your hand-tied bouquet on WhatsApp before our rider departs. To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your sector, street and house number — approve the bouquet photo we send, then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">

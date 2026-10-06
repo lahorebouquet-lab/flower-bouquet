@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "Flower Delivery in EME Society Lahore | Rs. 400, 2.5–3.5 Hours",
   },
-  description: "Same-day flower delivery to EME Society Lahore — commercial area and residential blocks off Multan Road in 2.5–3.5 hours. Delivery fee Rs. 400 flat. Bouquet photo on WhatsApp before dispatch.",
+  description: "Same-day flower delivery to EME Society Lahore — commercial area and residential blocks off Multan Road in 2.5–3.5 hours. Delivery fee Rs. 400 flat.",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/eme-society`,
   },
   openGraph: {
     title: "Flower Delivery in EME Society Lahore | Rs. 400, 2.5–3.5 Hours",
-    description: "Same-day flower delivery to EME Society Lahore — commercial area and residential blocks off Multan Road in 2.5–3.5 hours. Delivery fee Rs. 400 flat. Bouquet photo on WhatsApp before dispatch.",
+    description: "Same-day flower delivery to EME Society Lahore — commercial area and residential blocks off Multan Road in 2.5–3.5 hours. Delivery fee Rs. 400 flat.",
     url: `${SITE_URL}/delivery-areas/eme-society`,
     images: [
       {

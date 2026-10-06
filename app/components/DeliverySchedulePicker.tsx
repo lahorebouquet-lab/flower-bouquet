@@ -7,6 +7,7 @@ import {
   getMaxDateISO,
   formatDeliveryDate,
   isSlotAvailableOnDate,
+  getSlotCutoffLabel,
 } from "@/lib/delivery";
 
 interface DeliverySchedulePickerProps {
@@ -15,6 +16,7 @@ interface DeliverySchedulePickerProps {
   onDateChange: (iso: string) => void;
   onSlotChange: (id: string) => void;
   compact?: boolean;
+  highlightRequired?: boolean;
 }
 
 /**
@@ -28,6 +30,7 @@ export default function DeliverySchedulePicker({
   onDateChange,
   onSlotChange,
   compact = false,
+  highlightRequired = false,
 }: DeliverySchedulePickerProps) {
   const today = getTodayISO();
   const maxDate = getMaxDateISO();
@@ -72,6 +75,9 @@ export default function DeliverySchedulePicker({
         <label className={`text-[#2A2A2A] font-medium ${compact ? "text-[11px]" : "text-xs"}`}>
           Select Delivery Slot <span className="text-[#8B1E2D]">*</span>
         </label>
+        {highlightRequired && !slotId && (
+          <p className="text-[10px] text-[#8B1E2D] font-semibold">Please choose a delivery slot</p>
+        )}
         {allDisabledToday && (
           <p className="text-[11px] text-[#8B1E2D] bg-[#8B1E2D]/10 border border-[#8B1E2D]/30 rounded-xl px-3 py-2">
             Today&apos;s slots are fully booked — please choose tomorrow or a later date.
@@ -104,7 +110,7 @@ export default function DeliverySchedulePicker({
                 <div className="text-[10px] text-[#555555] mt-0.5">{slot.time}</div>
                 {!available && (
                   <div className="text-[10px] text-[#8B1E2D] font-semibold mt-0.5">
-                    Not available today
+                    Order by {getSlotCutoffLabel(slot)} for today
                   </div>
                 )}
               </button>

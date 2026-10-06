@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: {
     absolute: "How to Send Flowers to Lahore from UK, USA & UAE (2026 Guide)",
   },
-  description: "Living abroad? Send fresh flowers to Lahore from the UK, USA, UAE or anywhere. WhatsApp ordering, bank transfer payments, photo confirmation and same-day 2–5 hour delivery across Lahore.",
+  description: "Living abroad? Send fresh flowers to Lahore from the UK, USA, UAE or anywhere. WhatsApp ordering, bank transfer payments, photo confirmation and same-day",
   alternates: {
     canonical: `${SITE_URL}/blog/send-flowers-to-lahore-from-abroad`,
   },

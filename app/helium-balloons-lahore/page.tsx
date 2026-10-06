@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: {
     absolute: "Helium Balloons in Lahore | Birthday Decor | Lahore Bouquet",
   },
-  description: "Helium balloons in Lahore from Rs. 199/balloon — latex, metallic & confetti balloons, garlands, arches & full birthday decoration. Same-day delivery across DHA, Gulberg, Bahria Town.",
+  description: "Helium balloons in Lahore from Rs. 199/balloon — latex, metallic & confetti balloons, garlands, arches & full birthday decoration. Same-day delivery",
   alternates: {
     canonical: `${SITE_URL}/helium-balloons-lahore`,
   },

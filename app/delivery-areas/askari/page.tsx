@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "Flower Delivery in Askari Lahore | Rs. 300, 2–3 Hours",
   },
-  description: "Same-day flower delivery to Askari 1, 5, 9, 10 & 11 (Bedian Road) Lahore in 2–3 hours. Fee Rs. 300. Gated-community protocol, WhatsApp photo proof, COD, midnight slot. Open 9 AM–1 AM.",
+  description: "Same-day flower delivery to Askari 1, 5, 9, 10 & 11 (Bedian Road) Lahore in 2–3 hours. Fee Rs. 300. Gated-community protocol, WhatsApp photo proof, COD",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/askari`,
   },
   openGraph: {
     title: "Flower Delivery in Askari Lahore | Rs. 300, 2–3 Hours",
-    description: "Same-day flower delivery to Askari 1, 5, 9, 10 & 11 (Bedian Road) Lahore in 2–3 hours. Fee Rs. 300. Gated-community protocol, WhatsApp photo proof, COD, midnight slot. Open 9 AM–1 AM.",
+    description: "Same-day flower delivery to Askari 1, 5, 9, 10 & 11 (Bedian Road) Lahore in 2–3 hours. Fee Rs. 300. Gated-community protocol, WhatsApp photo proof, COD",
     url: `${SITE_URL}/delivery-areas/askari`,
     images: [
       {
@@ -178,7 +178,7 @@ export default async function AskariDeliveryPage() {
         <ul className="space-y-2 text-xs text-[#2A2A2A] list-disc list-inside leading-relaxed">
           <li><strong>Askari 1 & Askari 2:</strong> Cantt central sectors along Sarwar Road — family homes and officers&apos; residences.</li>
           <li><strong>Askari 3 & Askari 4:</strong> established residential pockets with schools and community markets nearby.</li>
-          <li><strong>Askari 5 & Askari 6:</strong> the Gulberg–Cantonment perimeter corridor; quick routing from our workshop.</li>
+          <li><strong>Askari 5 & Askari 6:</strong> the Gulberg–Cantonment perimeter corridor; quick routing from our Lahore base.</li>
           <li><strong>Askari 9 & Askari 10:</strong> Zarrar Shaheed Road and the Allama Iqbal Airport bypass — birthday and anniversary bouquets to villas.</li>
           <li><strong>Askari 11 (Bedian Road):</strong> high-rise towers and modern villas via the Ring Road Bedian Interchange.</li>
           <li><strong>Bedian Road farmhouses & villas:</strong> event and nikkah-function flowers delivered to farmhouse venues along Bedian Road.</li>
