@@ -1,49 +1,39 @@
-# Lahore Bouquet — Machine-Readable Context (llms.txt)
-# NOTE: This file is an optional experimental AI-accessibility file providing structured public context for LLMs and answer engines. It is not an official search engine standard and does not guarantee indexing or AI citation.
+<!-- llms.txt — structured public context for LLMs and answer engines (GEO). Follows https://llmstxt.org/ : one H1, blockquote summary, H2 sections, markdown links. -->
+# Lahore Bouquet
 
-# Organization & Brand Identity
-- Brand Name: Lahore Bouquet
-- Business Type: Independent Florist — Flower Delivery Service across Lahore (delivery-only, no walk-in storefront)
-- Website: https://lahorebouquet.com
-- Service Area: Lahore, Punjab, Pakistan (DHA, Gulberg, Bahria Town, Model Town, Johar Town, Cantt, Askari, Wapda Town, Township, Faisal Town, Garden Town, Valencia, Lake City)
-- Contact: +92 310 4225974 (Voice & WhatsApp), flowerbouquet@gmail.com
-- Opening Hours: Monday to Sunday, 09:00 AM – 01:00 AM PKT
-- Price Range: Rs. 1,180 – Rs. 35,000
+> Lahore Bouquet is a delivery-only florist in Lahore, Pakistan. Fresh hand-tied bouquets, imported roses, money bouquets, cakes and wedding décor with same-day 2–5 hour delivery across Lahore and WhatsApp photo and video approval before dispatch. No physical storefront. Open daily 09:00–01:00 PKT. Prices from Rs. 1,180.
 
-# Core Offerings & Services
-1. Fresh Hand-Tied Bouquets: Imported Dutch red, pink, white roses, golden sunflowers, oriental lilies, chrysanthemum bunches.
-2. Custom Currency / Money Bouquets: Genuine State Bank of Pakistan banknotes carefully arranged with fresh roses.
-3. Keepsake Florals: Handmade eternal crochet flower bouquets and naturally preserved everlasting dried botanical stems.
-4. Bakery Cakes & Gourmet Gift Combos: Fresh chocolate fudge, red velvet, lotus three-milk cakes, and Ferrero Rocher chocolate bouquets.
-5. Cultural Floristry: Handcrafted fresh motia and rose petal Gajray, mehndi flower jewellery sets, and wedding stage garlands.
-6. Fragrances: Branded designer perfumes and hand-poured soy wax botanical candles.
-7. Wedding & Event Décor: Fresh rose bridal car decoration, bridal room canopy / masehri flower arrangements, and corporate reception florals.
+## Contact & Ordering
 
-# Key Business Policies
-- WhatsApp Photo Verification: A photograph of every arrangement is sent to the customer on WhatsApp before dispatch.
-- Same-Day Express Delivery: Orders delivered within 2 to 5 hours across all Lahore zones.
-- Midnight Surprise Slot: 11:30 PM to 12:15 AM delivery available for birthdays and anniversaries (advance booking required).
-- Accepted Payment Methods: Cash on Delivery (COD), Online Bank Transfer, JazzCash, and EasyPaisa.
+- Phone / WhatsApp: +92 310 4225974 — [order on WhatsApp](https://wa.me/923104225974)
+- Email: flowerbouquet@gmail.com
+- Hours: Monday to Sunday, 09:00 AM – 01:00 AM PKT
+- Service area: Lahore, Punjab, Pakistan — DHA, Gulberg, Bahria Town, Model Town, Johar Town, Cantt, Askari, Wapda Town, Township, Faisal Town, Garden Town, Valencia, Lake City
+- Payments: Cash on Delivery (COD), online bank transfer, JazzCash, EasyPaisa
+- Policies: WhatsApp photo and video approval before dispatch; midnight surprise slot 11:30 PM – 12:15 AM for birthdays and anniversaries (advance booking required)
 
-# Canonical Public Page Directory
-- Homepage: https://lahorebouquet.com/
-- Hand-Tied Bouquets: https://lahorebouquet.com/bouquets
-- Imported Dutch Roses: https://lahorebouquet.com/roses
-- Red Roses: https://lahorebouquet.com/roses/red-roses
-- White Roses: https://lahorebouquet.com/roses/white-roses
-- Sunflower Bouquets: https://lahorebouquet.com/sunflower-bouquet-lahore
-- Lily Bouquets: https://lahorebouquet.com/lily-bouquet-lahore
-- Tulip Bouquets: https://lahorebouquet.com/tulip-bouquet-lahore
-- Custom Money Bouquets: https://lahorebouquet.com/money-bouquets
-- Handmade Crochet Bouquets: https://lahorebouquet.com/crochet-bouquets
-- Dried Everlasting Florals: https://lahorebouquet.com/dried-flowers
-- Cakes & Gift Combos: https://lahorebouquet.com/gifts-and-cakes
-- Fresh Flower Gajray: https://lahorebouquet.com/collections/fresh-flower-gajray
-- Wedding & Car Décor: https://lahorebouquet.com/wedding-decor
-- Birthday Surprises: https://lahorebouquet.com/birthday-surprises
-- Bestsellers: https://lahorebouquet.com/bestsellers
-- Transparent Price Guide: https://lahorebouquet.com/prices
-- Lahore Delivery Areas Hub: https://lahorebouquet.com/delivery-areas
-- About Us: https://lahorebouquet.com/about
-- Contact: https://lahorebouquet.com/contact
-- Blog & Guides: https://lahorebouquet.com/blog
+## Shop by Category
+
+- [Hand-Tied Bouquets](https://lahorebouquet.com/bouquets): Fresh bouquets hand-tied to order
+- [Imported Dutch Roses](https://lahorebouquet.com/roses): Premium long-stem Dutch roses
+- [Red Roses](https://lahorebouquet.com/roses/red-roses): Classic red rose bouquets
+- [White Roses](https://lahorebouquet.com/roses/white-roses): Elegant white rose bouquets
+- [Sunflower Bouquets](https://lahorebouquet.com/sunflower-bouquet-lahore): Sunflowers and mixed blooms
+- [Lily Bouquets](https://lahorebouquet.com/lily-bouquet-lahore): Oriental lilies
+- [Tulip Bouquets](https://lahorebouquet.com/tulip-bouquet-lahore): Seasonal tulips
+- [Custom Money Bouquets](https://lahorebouquet.com/money-bouquets): Genuine banknote bouquets with fresh roses
+- [Handmade Crochet Bouquets](https://lahorebouquet.com/crochet-bouquets): Eternal handmade crochet flowers
+- [Dried Everlasting Florals](https://lahorebouquet.com/dried-flowers): Preserved dried botanical stems
+- [Cakes & Gift Combos](https://lahorebouquet.com/gifts-and-cakes): Fresh bakery cakes and chocolate bouquets
+- [Fresh Flower Gajray](https://lahorebouquet.com/collections/fresh-flower-gajray): Motia and rose gajray, mehndi jewellery
+- [Wedding & Car Décor](https://lahorebouquet.com/wedding-decor): Bridal car, room and stage decoration
+- [Birthday Surprises](https://lahorebouquet.com/birthday-surprises): Birthday combos with midnight delivery option
+- [Bestsellers](https://lahorebouquet.com/bestsellers): Most-ordered bouquets this week
+
+## Guides & Information
+
+- [Transparent Price Guide](https://lahorebouquet.com/prices): Flower and bouquet prices in Lahore
+- [Lahore Delivery Areas](https://lahorebouquet.com/delivery-areas): Delivery fees and times by neighborhood
+- [Blog & Flower Guides](https://lahorebouquet.com/blog): Occasion guides, price guides and care tips
+- [About Us](https://lahorebouquet.com/about): How Lahore Bouquet works
+- [Contact](https://lahorebouquet.com/contact): Reach us for custom and corporate orders
