@@ -186,6 +186,21 @@ interface CategorySectionProps {
   products?: Product[];
 }
 
+/**
+ * Curated bestseller showcase — hand-picked products with the most
+ * professional photography, best-looking first. Slugs in display order.
+ */
+const SHOWCASE_SLUGS = [
+  "scarlet-romance-12-red-roses-lahore",      // Red roses — studio shot
+  "pink-charm-18-roses-lahore",               // Pink roses — studio shot
+  "layers-lotus-biscoff-cake-lahore",         // Cake — professional bakery shot
+  "layers-lotus-three-milk-cake-lahore",      // Cake — professional bakery shot
+  "layers-chocolate-heaven-cake-lahore",      // Cake — professional bakery shot
+  "white-jasmine-gajray-pair-lahore",         // Gajray — clean product shot
+  "velvet-heart-100-red-roses-lahore",        // Grand roses
+  "golden-sunshine-25-yellow-roses-lahore",   // Yellow roses
+];
+
 export default function CategorySection({ categories, products }: CategorySectionProps) {
   const depts: DepartmentItem[] = (categories && categories.length > 0)
     ? categories.map((c) => ({
@@ -215,10 +230,168 @@ export default function CategorySection({ categories, products }: CategorySectio
     ? filteredDepts.slice(0, 8)
     : filteredDepts;
 
+  // Bestseller showcase: curated slugs first (best-looking), then badged products to fill
+  const showcaseProducts = (() => {
+    if (!products || products.length === 0) return [];
+    const bySlug = new Map(products.map((p) => [p.slug || String(p.id), p]));
+    const curated = SHOWCASE_SLUGS.map((s) => bySlug.get(s)).filter(Boolean) as Product[];
+    const curatedIds = new Set(curated.map((p) => String(p.id)));
+    const fill = products
+      .filter((p) => !curatedIds.has(String(p.id)))
+      .filter((p) => p.badgeType === "bestseller" || p.badgeType === "hot" || p.badge === "Bestseller")
+      .slice(0, Math.max(0, 10 - curated.length));
+    return [...curated, ...fill];
+  })();
+
+  // Showcase slider state & refs
+  const showcaseRef = useRef<HTMLDivElement>(null);
+  const [isShowcasePaused, setIsShowcasePaused] = useState(false);
+  const [canShowcaseScrollLeft, setCanShowcaseScrollLeft] = useState(false);
+
+  // Auto-slide showcase
+  useEffect(() => {
+    if (isShowcasePaused || showcaseProducts.length === 0) return;
+    const interval = setInterval(() => {
+      if (showcaseRef.current) {
+        const { scrollLeft, scrollWidth, clientWidth } = showcaseRef.current;
+        if (scrollLeft + clientWidth >= scrollWidth - 10) {
+          showcaseRef.current.scrollTo({ left: 0, behavior: "smooth" });
+        } else {
+          showcaseRef.current.scrollBy({ left: 220, behavior: "smooth" });
+        }
+      }
+    }, 4500);
+    return () => clearInterval(interval);
+  }, [isShowcasePaused, showcaseProducts.length]);
+
+  const handleShowcaseScroll = () => {
+    if (showcaseRef.current) {
+      setCanShowcaseScrollLeft(showcaseRef.current.scrollLeft > 10);
+    }
+  };
+
+  const scrollShowcase = (direction: "left" | "right") => {
+    showcaseRef.current?.scrollBy({ left: direction === "left" ? -260 : 260, behavior: "smooth" });
+  };
+
   return (
     <section className="relative w-full py-10 sm:py-14 border-b border-[#E5DED2] bg-[#F8F3EA] text-[#101012] overflow-hidden">
       <div className="max-w-[1520px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-12 sm:space-y-16">
         
+        {/* ========================================================================= */}
+        {/* 1. BESTSELLER SHOWCASE (Curated — best-looking products first)            */}
+        {/* ========================================================================= */}
+        {showcaseProducts.length > 0 && (
+        <div 
+          className="space-y-3.5"
+          onMouseEnter={() => setIsShowcasePaused(true)}
+          onMouseLeave={() => setIsShowcasePaused(false)}
+        >
+          {/* Header Row: Title, Subtitle, Navigation Chevrons & View All Button */}
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 border-b border-[#E5DED2] pb-3">
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="w-4 h-[1.5px] bg-[#8B1E2D]" />
+                <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.25em] text-[#8B1E2D]">
+                  MOST POPULAR IN LAHORE
+                </span>
+                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-white border border-[rgba(198,161,91,0.30)] text-[9px] sm:text-[10px] text-[#2A2A2A] font-medium shadow-xs">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#8B1E2D] animate-pulse" />
+                  Auto-Sliding
+                </span>
+              </div>
+              <h2 className="font-playfair text-xl sm:text-2xl font-bold text-[#101012] mt-0.5 tracking-tight">
+                Our Most Ordered Bouquets
+              </h2>
+              <p className="text-xs text-[#2A2A2A] mt-0.5">
+                Every bouquet is hand-tied fresh in Lahore. WhatsApp photo proof sent before dispatch.
+              </p>
+            </div>
+
+            {/* Slider Controls */}
+            <div className="flex items-center gap-2.5 self-start sm:self-end">
+              <div className="flex items-center gap-1.5">
+                <button
+                  onClick={() => scrollShowcase("left")}
+                  disabled={!canShowcaseScrollLeft}
+                  aria-label="Slide bestsellers left"
+                  className={`w-8 h-8 flex items-center justify-center rounded-full border transition-all ${
+                    !canShowcaseScrollLeft
+                      ? "opacity-35 cursor-not-allowed bg-white/70 text-gray-400 border-[#E5DED2]"
+                      : "bg-white hover:bg-[#8B1E2D] text-[#101012] hover:text-white border-[#E5DED2] hover:border-[#8B1E2D] shadow-xs active:scale-95 cursor-pointer"
+                  }`}
+                >
+                  <ChevronLeft className="w-4 h-4" />
+                </button>
+                <button
+                  onClick={() => scrollShowcase("right")}
+                  aria-label="Slide bestsellers right"
+                  className="w-8 h-8 flex items-center justify-center rounded-full bg-white hover:bg-[#8B1E2D] text-[#101012] hover:text-white border border-[#E5DED2] hover:border-[#8B1E2D] transition-all shadow-xs active:scale-95 cursor-pointer"
+                >
+                  <ChevronRight className="w-4 h-4" />
+                </button>
+              </div>
+
+              <Link
+                href="/bestsellers"
+                className="group inline-flex items-center gap-1.5 text-xs font-semibold tracking-wider uppercase text-white hover:text-[#0B0B0B] px-3.5 py-1.5 rounded-full bg-[#8B1E2D] hover:bg-[#C6A15B] transition-all shadow-xs"
+              >
+                <span>View All</span>
+                <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
+              </Link>
+            </div>
+          </div>
+
+          {/* Showcase Sliding Track */}
+          <div className="relative group/track">
+            <div
+              ref={showcaseRef}
+              onScroll={handleShowcaseScroll}
+              className="flex gap-3 sm:gap-4 overflow-x-auto scroll-smooth pb-2 pt-1 snap-x snap-mandatory no-scrollbar"
+            >
+              {showcaseProducts.map((p) => (
+                <Link
+                  key={p.id}
+                  href={`/products/${p.slug || p.id}`}
+                  className="w-[160px] sm:w-[200px] shrink-0 snap-start group/card relative rounded-xl overflow-hidden bg-white border border-[rgba(198,161,91,0.25)] hover:border-[#C6A15B] transition-all duration-300 hover:shadow-[0_8px_18px_rgba(198,161,91,0.18)] hover:-translate-y-1 flex flex-col"
+                >
+                  <div className="relative aspect-[4/5] w-full overflow-hidden bg-[#F8F3EA]">
+                    <Image
+                      src={p.image}
+                      alt={p.title}
+                      fill
+                      sizes="(max-width: 640px) 160px, 200px"
+                      className="object-cover transition-transform duration-500 group-hover/card:scale-105"
+                      loading="lazy"
+                    />
+                    {p.badge && (
+                      <div className="absolute top-1.5 left-1.5">
+                        <span className="px-1.5 py-0.5 rounded bg-[#8B1E2D] text-white text-[8px] font-bold uppercase tracking-wider shadow-xs">
+                          {p.badge}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                  <div className="p-2.5 flex flex-col gap-1 bg-white flex-1">
+                    <h3 className="font-playfair text-[11px] sm:text-xs font-semibold text-[#101012] group-hover/card:text-[#8B1E2D] transition-colors line-clamp-1 leading-tight">
+                      {p.title}
+                    </h3>
+                    <div className="flex items-center justify-between mt-auto pt-1 border-t border-[#E5DED2]">
+                      <span className="text-[11px] sm:text-xs font-bold text-[#8B1E2D]">
+                        Rs. {p.price.toLocaleString()}
+                      </span>
+                      <span className="text-[10px] font-semibold text-[#8B1E2D] group-hover/card:text-[#0B0B0B] transition-colors">
+                        Order →
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+        )}
+
         {/* ========================================================================= */}
         {/* 2. (NICHE / BOTTOM) SHOP BY CATEGORY & OCCASIONS (Refined Compact Size)   */}
         {/* ========================================================================= */}

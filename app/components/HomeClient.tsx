@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo, useRef } from "react";
+import React, { useState, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { 
@@ -17,8 +17,6 @@ import {
   Star, 
   CheckCircle2, 
   ChevronDown,
-  ChevronLeft,
-  ChevronRight,
   Banknote,
   Truck
 } from "lucide-react";
@@ -55,23 +53,22 @@ export default function HomeClient({
 
   const filterOptions = ["All", "Roses", "Sunflowers", "Bouquets", "Wedding Décor", "Gifts & Cakes"];
 
-  const bestsellers = useMemo(() => {
-    // Bestsellers carousel: badge-marked products first, then fill to 8
-    const marked = products.filter(p => p.badgeType === "bestseller" || p.badgeType === "hot" || p.badge === "Bestseller" || p.badge === "Signature");
-    const markedIds = new Set(marked.map(p => String(p.id)));
-    const rest = products.filter(p => !markedIds.has(String(p.id)));
-    return [...marked, ...rest].slice(0, 8);
-  }, [products]);
-
-  const bestsellerTrackRef = useRef<HTMLDivElement>(null);
-  const scrollBestsellers = (dir: "left" | "right") => {
-    bestsellerTrackRef.current?.scrollBy({ left: dir === "left" ? -320 : 320, behavior: "smooth" });
-  };
+  // Showcase slugs (must match CategorySection SHOWCASE_SLUGS) — excluded from Complete Collection
+  const SHOWCASE_SLUGS = [
+    "scarlet-romance-12-red-roses-lahore",
+    "pink-charm-18-roses-lahore",
+    "layers-lotus-biscoff-cake-lahore",
+    "layers-lotus-three-milk-cake-lahore",
+    "layers-chocolate-heaven-cake-lahore",
+    "white-jasmine-gajray-pair-lahore",
+    "velvet-heart-100-red-roses-lahore",
+    "golden-sunshine-25-yellow-roses-lahore",
+  ];
 
   const displayedProducts = useMemo(() => {
-    // Exclude bestseller-section products so the two grids never repeat the same items
-    const bestsellerIds = new Set((bestsellers || []).map(p => p.id));
-    const pool = products.filter(p => !bestsellerIds.has(p.id));
+    // Exclude showcase products so the carousel and grid never repeat the same items
+    const showcaseSlugs = new Set(SHOWCASE_SLUGS);
+    const pool = products.filter(p => !showcaseSlugs.has(p.slug || String(p.id)));
     if (activeFilter === "All") {
       // Balanced curation across all florist & gift departments
       const roses = pool.filter(p => p.category === "Roses" || p.category === "Velvet Red Roses" || p.category === "Pure White Roses");
@@ -126,7 +123,7 @@ export default function HomeClient({
       return result;
     }
     return products.filter(p => p.category === activeFilter);
-  }, [activeFilter, products, bestsellers]);
+  }, [activeFilter, products]);
 
   return (
     <>
@@ -250,63 +247,6 @@ export default function HomeClient({
 
       {/* 3. CATEGORY & FEATURED BOUQUETS SLIDER (Section 6: Warm Ivory #F8F3EA) */}
       <CategorySection categories={initialCategories} products={products} />
-
-      {/* 4. BESTSELLERS CAROUSEL (merged — single bestsellers showcase) */}
-      <section className="w-full py-16 px-4 sm:px-6 bg-[#F8F3EA] border-b border-[#E5DED2] text-[#101012]">
-        <div className="max-w-7xl mx-auto space-y-8">
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
-            <div>
-              <span className="text-xs uppercase font-bold tracking-widest text-[#8B1E2D]">
-                Curated Lahore Favorites
-              </span>
-              <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#0B0B0B] mt-1">
-                Bestsellers
-              </h2>
-              <p className="text-xs sm:text-sm text-[#2A2A2A] mt-1 max-w-xl">
-                Our most celebrated floral creations — handpicked Dutch roses, sunlit floral pairings, and regal celebration arrangements.
-              </p>
-            </div>
-
-            <div className="flex items-center gap-2.5">
-              <div className="flex items-center gap-1.5">
-                <button
-                  onClick={() => scrollBestsellers("left")}
-                  aria-label="Scroll bestsellers left"
-                  className="w-8 h-8 flex items-center justify-center rounded-full bg-white hover:bg-[#8B1E2D] text-[#101012] hover:text-white border border-[#E5DED2] hover:border-[#8B1E2D] transition-all shadow-xs active:scale-95 cursor-pointer"
-                >
-                  <ChevronLeft className="w-4 h-4" />
-                </button>
-                <button
-                  onClick={() => scrollBestsellers("right")}
-                  aria-label="Scroll bestsellers right"
-                  className="w-8 h-8 flex items-center justify-center rounded-full bg-white hover:bg-[#8B1E2D] text-[#101012] hover:text-white border border-[#E5DED2] hover:border-[#8B1E2D] transition-all shadow-xs active:scale-95 cursor-pointer"
-                >
-                  <ChevronRight className="w-4 h-4" />
-                </button>
-              </div>
-              <Link
-                href="/bestsellers"
-                className="group inline-flex items-center gap-1.5 text-xs font-semibold tracking-wider uppercase text-[#0B0B0B] hover:text-[#8B1E2D] transition-colors"
-              >
-                <span>Explore All</span>
-                <ArrowRight className="w-3.5 h-3.5 text-[#8B1E2D] group-hover:translate-x-1 transition-transform" />
-              </Link>
-            </div>
-          </div>
-
-          {/* Bestsellers horizontal carousel */}
-          <div
-            ref={bestsellerTrackRef}
-            className="flex gap-3 sm:gap-6 overflow-x-auto scroll-smooth pb-2 snap-x snap-mandatory no-scrollbar"
-          >
-            {bestsellers.map((prod) => (
-              <div key={`bestseller-${prod.id}`} className="w-[200px] sm:w-[260px] shrink-0 snap-start">
-                <ProductCard product={prod} />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* 5. FULL BOUQUET CATALOG (Background #F8F3EA, Heading #101012, #FFFFFF cards) */}
       <section className="w-full py-16 px-4 sm:px-6 border-b border-[#E5DED2] bg-[#F8F3EA] text-[#101012]">
