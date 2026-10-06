@@ -132,8 +132,8 @@ export default function HomeClient({
     <>
       {/* 1. HERO SECTION (Preserving 100% Real Size & Natural Uncropped Proportions) */}
       <section className="relative min-h-[480px] sm:min-h-[520px] lg:min-h-[580px] xl:min-h-[640px] flex items-center overflow-hidden border-b border-[#C6A15B]/30 bg-[#F6F1E7] py-10 sm:py-14 lg:py-16">
-        {/* Full-Width Background Image Layer - Desktop only (mobile shows a clear product image instead) */}
-        <div className="absolute inset-0 z-0 overflow-hidden hidden md:block">
+        {/* Full-Width Background Image Layer - Responsive & LCP Optimized */}
+        <div className="absolute inset-0 z-0 overflow-hidden">
           <img
             src="/images/hero-blush-elegance-banner.webp"
             alt="Elegant blush pink rose and lily bouquet in a gold vase for flower delivery in Lahore | Lahore Bouquet"
@@ -143,6 +143,7 @@ export default function HomeClient({
 
           {/* Soft cream left fade to ensure pristine text readability */}
           <div className="hidden lg:block absolute inset-y-0 left-0 w-2/5 bg-gradient-to-r from-[#F6F1E7] via-[#F6F1E7]/70 to-transparent pointer-events-none" />
+          <div className="block lg:hidden absolute inset-0 bg-gradient-to-t from-[#F6F1E7] via-[#F6F1E7]/80 to-transparent pointer-events-none" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
@@ -159,25 +160,9 @@ export default function HomeClient({
               Fresh Flower Bouquets in Lahore, <span className="text-[#8B1E2D]">Delivered to Your Door</span>
             </h1>
 
-            {/* Mobile: clear product image above the short copy */}
-            {bestsellers[0] && (
-              <div className="md:hidden mx-auto w-48 rounded-2xl overflow-hidden border border-[rgba(198,161,91,0.35)] shadow-md bg-white">
-                <Image
-                  src={bestsellers[0].image}
-                  alt={bestsellers[0].title}
-                  width={400}
-                  height={500}
-                  sizes="192px"
-                  className="w-full h-auto object-cover aspect-[4/5]"
-                  priority
-                />
-              </div>
-            )}
-
-            {/* Quick answer (AEO) — shortened to 1-2 lines on mobile */}
+            {/* Quick answer (AEO) */}
             <p className="text-[#2A2A2A] text-xs sm:text-sm lg:text-base max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              <strong>From Rs. 1,180 — same-day delivery in 2–5 hours.</strong>
-              <span className="hidden md:inline"> Lahore Bouquet hand-ties fresh roses, sunflowers, lilies and money bouquets to order, sends you a photo and video on WhatsApp before dispatch, and delivers across DHA, Gulberg, Model Town, Bahria Town and Johar Town — with a midnight surprise slot for birthdays.</span>
+              <strong>Same-day flower delivery in Lahore costs from Rs. 1,180 and arrives in 2–5 hours.</strong> Lahore Bouquet hand-ties fresh roses, sunflowers, lilies and money bouquets to order, sends you a photo and video on WhatsApp before dispatch, and delivers across DHA, Gulberg, Model Town, Bahria Town and Johar Town — with a midnight surprise slot for birthdays.
             </p>
 
             {/* Button System (Section 18):
