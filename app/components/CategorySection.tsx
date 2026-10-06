@@ -345,14 +345,19 @@ export default function CategorySection({ categories, products }: CategorySectio
     return () => clearInterval(interval);
   }, [isBouquetPaused]);
 
+  const bouquetScrollRaf = useRef<number>(0);
   const handleBouquetScroll = () => {
-    if (bouquetSliderRef.current) {
-      const scrollLeft = bouquetSliderRef.current.scrollLeft;
-      setCanBouquetScrollLeft(scrollLeft > 10);
-      const cardWidth = 185;
-      const index = Math.round(scrollLeft / cardWidth);
-      setActiveBouquetIndex(Math.min(Math.max(0, index), featuredBouquets.length - 1));
-    }
+    if (bouquetScrollRaf.current) return;
+    bouquetScrollRaf.current = requestAnimationFrame(() => {
+      bouquetScrollRaf.current = 0;
+      if (bouquetSliderRef.current) {
+        const scrollLeft = bouquetSliderRef.current.scrollLeft;
+        setCanBouquetScrollLeft(scrollLeft > 10);
+        const cardWidth = 185;
+        const index = Math.round(scrollLeft / cardWidth);
+        setActiveBouquetIndex(Math.min(Math.max(0, index), featuredBouquets.length - 1));
+      }
+    });
   };
 
   const scrollBouquets = (direction: "left" | "right") => {

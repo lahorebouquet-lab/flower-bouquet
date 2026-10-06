@@ -57,10 +57,6 @@
   }
 }
 
-.font-cormorant {
-  font-family: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
-}
-
 .font-playfair {
   font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
 }

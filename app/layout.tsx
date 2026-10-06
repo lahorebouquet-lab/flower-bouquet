@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
+import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { CartProvider } from "./context/CartContext";
 import StoreLayoutWrapper from "./components/StoreLayoutWrapper";
@@ -8,14 +8,6 @@ import { SITE_URL } from "@/lib/business";
 const playfair = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin"],
-  display: "swap",
-});
-
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  style: ["normal", "italic"],
   display: "swap",
 });
 
@@ -126,7 +118,7 @@ export default function RootLayout({
     <html
       lang="en-PK"
       suppressHydrationWarning
-      className={`${playfair.variable} ${cormorant.variable} ${jakarta.variable} antialiased scroll-smooth`}
+      className={`${playfair.variable} ${jakarta.variable} antialiased scroll-smooth`}
     >
       <head>
         <script
