@@ -16,6 +16,14 @@ export const metadata: Metadata = {
     title: "Fresh Flower Garlands (Haar) in Lahore",
     description: "Marigold, rose & jasmine haar from Rs. 999 for baraat, nikkah, mehndi & welcome. Bulk wedding orders, same-day Lahore delivery.",
     url: `${SITE_URL}/garlands-lahore`,
+    images: [
+      {
+        url: `${SITE_URL}/images/page-garlands-haar-lahore.webp`,
+        width: 1200,
+        height: 800,
+        alt: "Fresh marigold and rose garlands (haar) for weddings in Lahore",
+      },
+    ],
   }
 };
 
@@ -121,6 +129,16 @@ export default function GarlandsLahorePage() {
           <span className="flex items-center gap-1.5"><Truck className="w-4 h-4 text-[#8B1E2D]" /> Same-day 2–5 hour delivery</span>
           <span className="flex items-center gap-1.5"><Camera className="w-4 h-4 text-[#C6A15B]" /> Photo approval on WhatsApp first</span>
           <span className="flex items-center gap-1.5"><Leaf className="w-4 h-4 text-[#8B1E2D]" /> Strung fresh the same morning</span>
+        </div>
+
+        <div className="rounded-2xl overflow-hidden border border-[rgba(198,161,91,0.35)] shadow-sm">
+          <img
+            src="/images/page-garlands-haar-lahore.webp"
+            alt="Fresh marigold, rose and jasmine garlands (haar) hand-strung for baraat and nikkah in Lahore"
+            className="w-full h-auto object-cover"
+            loading="eager"
+            fetchPriority="high"
+          />
         </div>
       </section>
 
