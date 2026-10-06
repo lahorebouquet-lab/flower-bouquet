@@ -118,7 +118,7 @@ export default function MidnightDeliveryBlogPage() {
         ))}
       </section>
 
-      <a href={whatsappLink("Hi Lahore Bouquet! I want to book a midnight flower & cake delivery in Lahore.")} target="_blank" rel="noopener noreferrer" className="inline-block px-7 py-3.5 rounded-full bg-[#25D366] text-white font-bold text-sm shadow-md hover:bg-[#128C7E] transition-colors">
+      <a href={whatsappLink("Hi Lahore Bouquet! I want to book a midnight flower & cake delivery in Lahore.")} target="_blank" rel="noopener noreferrer" className="inline-block px-7 py-3.5 rounded-full bg-[#0E7C5B] text-white font-bold text-sm shadow-md hover:bg-[#0B6E4F] transition-colors">
         Book Midnight Delivery — {BUSINESS.phone.intl}
       </a>
     </article>

@@ -233,7 +233,7 @@ export default async function FreshFlowerGajrayPage() {
           href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20need%20a%20quote%20for%20bulk%20mehndi%20gajray%20or%20bespoke%20bridal%20flower%20jewellery."
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#25D366] text-white text-sm font-bold shadow-md hover:bg-[#1EBE5D] transition-all whitespace-nowrap"
+          className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#0E7C5B] text-white text-sm font-bold shadow-md hover:bg-[#0B6E4F] transition-all whitespace-nowrap"
         >
           <MessageCircle className="w-5 h-5" />
           Chat on WhatsApp: 0310 4225974

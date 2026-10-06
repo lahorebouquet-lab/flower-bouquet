@@ -47,7 +47,7 @@ export function StickyMobileBar() {
           href={`https://wa.me/923104225974?text=${generateWhatsAppMessage()}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="p-2.5 rounded-full bg-[#25D366] text-white hover:opacity-90 font-bold cursor-pointer"
+          className="p-2.5 rounded-full bg-[#0E7C5B] text-white hover:opacity-90 font-bold cursor-pointer"
           title="Chat on WhatsApp"
         >
           <MessageCircle className="w-4 h-4" />

@@ -119,7 +119,7 @@ export default function SendFlowersAbroadBlogPage() {
         ))}
       </section>
 
-      <a href={whatsappLink("Hi Lahore Bouquet! I'm ordering from abroad and want to send flowers to Lahore.")} target="_blank" rel="noopener noreferrer" className="inline-block px-7 py-3.5 rounded-full bg-[#25D366] text-white font-bold text-sm shadow-md hover:bg-[#128C7E] transition-colors">
+      <a href={whatsappLink("Hi Lahore Bouquet! I'm ordering from abroad and want to send flowers to Lahore.")} target="_blank" rel="noopener noreferrer" className="inline-block px-7 py-3.5 rounded-full bg-[#0E7C5B] text-white font-bold text-sm shadow-md hover:bg-[#0B6E4F] transition-colors">
         Order on WhatsApp — {BUSINESS.phone.intl}
       </a>
     </article>

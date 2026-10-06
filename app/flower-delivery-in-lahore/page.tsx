@@ -192,7 +192,7 @@ export default async function FlowerDeliveryLahorePage() {
               href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20want%20to%20order%20flowers%20for%20delivery%20in%20Lahore."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white text-xs sm:text-sm font-semibold transition-all shadow-md active:scale-95"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#0E7C5B] hover:bg-[#0B6E4F] text-white text-xs sm:text-sm font-semibold transition-all shadow-md active:scale-95"
             >
               <MessageCircle className="w-4 h-4" />
               Order on WhatsApp (0310-4225974)

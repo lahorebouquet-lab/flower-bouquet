@@ -184,7 +184,7 @@ export default function HomeClient({
                 href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20flowers%20in%20Lahore."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-full bg-[#25D366] hover:bg-[#128C7E] text-white border border-[#25D366] font-semibold text-xs uppercase tracking-wider flex items-center gap-2 transition-all duration-200 active:scale-95 shadow-md"
+                className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-full bg-[#0E7C5B] hover:bg-[#0B6E4F] text-white border border-[#0E7C5B] font-semibold text-xs uppercase tracking-wider flex items-center gap-2 transition-all duration-200 active:scale-95 shadow-md"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>Order on WhatsApp</span>
