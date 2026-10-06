@@ -5,9 +5,9 @@ import { SITE_URL, BUSINESS, whatsappLink } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Midnight Flower & Cake Delivery in Lahore — How It Works (2026)",
+    absolute: "Midnight Flower & Cake Delivery in Lahore (2026)",
   },
-  description: "Surprise someone at exactly 12 AM. How Lahore Bouquet's midnight flower and cake delivery works: slots, cut-off times, charges and the areas we cover across Lahore.",
+  description: "Surprise someone at exactly 12 AM. How Lahore Bouquet's midnight flower and cake delivery works: slots, cut-off times, charges and the areas we cover",
   alternates: {
     canonical: `${SITE_URL}/blog/midnight-flower-cake-delivery-lahore`,
   },

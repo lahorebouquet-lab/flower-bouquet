@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: {
     absolute: "Send Flowers to Lahore from the UK | Same-Day Delivery",
   },
-  description: "In the UK and want to send flowers to Lahore? Order by 12 noon UK time for same-day delivery. Pay by international card, get WhatsApp photo proof. Full 2026 guide.",
+  description: "In the UK and want to send flowers to Lahore? Order by 12 noon UK time for same-day delivery. Pay by international card, get WhatsApp photo proof. Full",
   alternates: {
     canonical: `${SITE_URL}/blog/send-flowers-to-lahore-from-uk`,
   },

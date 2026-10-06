@@ -5,7 +5,7 @@ import { SITE_URL, BUSINESS, whatsappLink } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Nikkah Flowers Lahore 2026 | Bridal Bouquet & Stage Guide Decor",
+    absolute: "Nikkah Flowers Lahore 2026 | Bridal Bouquet Guide",
   },
   description: "Planning a nikkah in Lahore? Bridal bouquet ideas, fresh gajray prices, stage flower decoration costs and same-day delivery. Complete 2026 nikkah flower guide.",
   alternates: {

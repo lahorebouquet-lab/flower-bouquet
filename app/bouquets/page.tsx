@@ -7,7 +7,7 @@ import { Sparkles, Truck, Camera, MessageCircle, HelpCircle, Heart, Droplets, Ch
 import { ALL_PRODUCTS } from "../data/products";
 import { SITE_URL, itemListSchema } from "@/lib/business";
 
-export const metadata: Metadata = {
+const BASE_METADATA: Metadata = {
   title: {
     absolute: "Flower Bouquets in Lahore | Fresh, Hand-Tied, Delivered",
   },
@@ -44,6 +44,24 @@ export const metadata: Metadata = {
     ],
   },
 };
+
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: Promise<{ q?: string }>;
+}): Promise<Metadata> {
+  const params = await searchParams;
+  const query = (params.q || "").trim();
+  // Search result pages should not be indexed — canonical page is /bouquets
+  if (query) {
+    return {
+      ...BASE_METADATA,
+      robots: { index: false, follow: true },
+      alternates: { canonical: `${SITE_URL}/bouquets` },
+    };
+  }
+  return BASE_METADATA;
+}
 
 export default async function BouquetsPage({
   searchParams,
@@ -107,7 +125,7 @@ export default async function BouquetsPage({
       },
       {
         "@type": "Question",
-        name: "Can I customise a flower bouquet in Lahore?",
+        name: "Can I customise a bouquet?",
         acceptedAnswer: {
           "@type": "Answer",
           text: "Yes. Tell us your preferred colours, flower types (roses, sunflowers, lilies), and target budget. Our florist will build a custom bouquet tailored to you. Message us on WhatsApp at 0310-4225974."

@@ -76,26 +76,18 @@ export default async function SunflowersPage() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "How much does a sunflower bouquet cost in Pakistan?",
+        name: "Are sunflowers available all year?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Sunflower bouquets in Pakistan start from Rs. 1,590 for a two-stem bunch and range up to Rs. 2,600 to Rs. 3,800 for sunflower and rose mixed bouquets."
+          text: "Availability changes with the season. If we cannot get fresh stems, we will tell you before you pay."
         }
       },
       {
         "@type": "Question",
-        name: "How long do fresh sunflowers last?",
+        name: "How long do sunflowers last?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "With fresh clean water and stems trimmed every two days, fresh sunflowers typically last between 5 to 7 days in indoor conditions."
-        }
-      },
-      {
-        "@type": "Question",
-        name: "Do sunflowers symbolize anything special?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Sunflowers commonly symbolize loyalty, optimism, warmth, and adoration, making them the perfect thoughtful gift for friends and family."
+          text: "Usually about a week with fresh water."
         }
       }
     ]

@@ -5,14 +5,14 @@ import { SITE_URL, BUSINESS } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Flower Prices in Lahore 2026 | Rose, Sunflower & Money Bouquets",
+    absolute: "Flower Prices in Lahore 2026 | Rose & Bouquet Rates",
   },
   description: "Complete 2026 flower price guide for Lahore. Rose bouquets from Rs. 1,180, sunflower bunches, lily prices, money bouquet costs and wedding décor packages",
   alternates: {
     canonical: `${SITE_URL}/blog/flower-prices-lahore-2026`,
   },
   openGraph: {
-    title: "Flower Prices in Lahore 2026 | Rose, Sunflower & Money Bouquets",
+    title: "Flower Prices in Lahore 2026 | Rose & Bouquet Rates",
     description: "Rose bouquets from Rs. 1,180, sunflowers, lilies, money bouquets and décor — Lahore's 2026 flower price table.",
     url: `${SITE_URL}/blog/flower-prices-lahore-2026`,
     type: "article",
@@ -46,7 +46,7 @@ export default function FlowerPricesBlogPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Flower Prices in Lahore 2026 | Rose, Sunflower & Money Bouquets",
+    headline: "Flower Prices in Lahore 2026 | Rose & Bouquet Rates",
     description: "Complete 2026 flower price guide for Lahore with real price tables for roses, sunflowers, lilies, money bouquets and wedding décor.",
     author: { "@type": "Organization", name: "Lahore Bouquet Florist Team", url: `${SITE_URL}` },
     publisher: { "@type": "Organization", name: "Lahore Bouquet", url: `${SITE_URL}` },

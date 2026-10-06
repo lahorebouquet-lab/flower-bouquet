@@ -53,12 +53,14 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
   // Template appends " | Lahore Bouquet" (17 chars) — keep total under 60.
   // Truncate at word boundaries so titles never cut mid-word.
+  // Strip trailing prepositions/punctuation (e.g. "for", "in", ":") left by the cut.
   const maxNameLen = 60 - " | Lahore Bouquet".length;
   let shortName = product.title;
   if (shortName.length > maxNameLen) {
     shortName = shortName.slice(0, maxNameLen).trimEnd();
     const lastSpace = shortName.lastIndexOf(" ");
     if (lastSpace > maxNameLen * 0.6) shortName = shortName.slice(0, lastSpace);
+    shortName = shortName.replace(/\s+(for|in|on|at|with|and|of|the|a|an)$/i, "").replace(/[:\-–—,.]+$/, "").trimEnd();
   }
 
   // Meta description: 120-160 chars, keyword + price + CTA early, no duplication.
@@ -214,6 +216,12 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           "@type": "ShippingDeliveryTime",
           "handlingTime": {
             "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
             "minValue": 2,
             "maxValue": 5,
             "unitCode": "HUR"
@@ -223,11 +231,8 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       "hasMerchantReturnPolicy": {
         "@type": "MerchantReturnPolicy",
         "applicableCountry": "PK",
-        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-        "merchantReturnDays": 1,
-        "returnMethod": "https://schema.org/ReturnByMail",
-        "returnFees": "https://schema.org/FreeReturn",
-        "description": "Freshness promise: if flowers arrive damaged or wilted, we replace the bouquet or refund your order. Share a photo on WhatsApp within 24 hours of delivery."
+        "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+        "description": "Fresh flowers are perishable and cannot be returned. Freshness promise: if flowers arrive damaged or wilted, share a photo on WhatsApp within 24 hours and we will replace the bouquet or refund your order."
       }
     }
   };

@@ -9,7 +9,7 @@ import { SITE_URL, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Chocolate Bouquet in Lahore | Price & Delivery | Lahore Bouquet",
+    absolute: "Chocolate Bouquet in Lahore | Price & Delivery",
   },
   description: "Order a chocolate bouquet in Lahore: chocolates arranged like flowers. Chocolate bouquet price in Pakistan from Rs. 4,200. Delivery across the city.",
   alternates: {
@@ -90,31 +90,31 @@ export default async function ChocolateBouquetsLahorePage() {
         name: "Can I get a chocolate bouquet delivered today in Lahore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. We offer same-day chocolate bouquet delivery across Lahore within 2 to 5 hours for orders placed before 4:00 PM."
+          text: "Yes. Same-day delivery is available within 2 to 5 hours for orders confirmed before 4:00 PM."
         }
       },
       {
         "@type": "Question",
-        name: "What is the chocolate bouquet price in Pakistan?",
+        name: "How long do the chocolates stay fresh?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Chocolate bouquets in Lahore start from Rs. 3,800 to Rs. 4,200 for Cadbury and Ferrero Rocher arrangements, and go up to Rs. 6,500+ for large floral combos and acrylic gift hampers."
+          text: "We only use sealed, factory-fresh chocolates with verified expiry dates. Keep the arrangement in an air-conditioned room away from direct Lahore summer heat."
         }
       },
       {
         "@type": "Question",
-        name: "How do you protect chocolate bouquets from melting in Lahore heat?",
+        name: "Can I add a handwritten card?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "All our chocolate bouquets are crafted in temperature-controlled ateliers and dispatched with careful, climate-protected delivery to prevent chocolates from melting."
+          text: "Yes. Every chocolate bouquet includes a complimentary handwritten card with your personalized message."
         }
       },
       {
         "@type": "Question",
-        name: "Can I customize the brand of chocolates used?",
+        name: "What is the starting price?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. We can craft custom bouquets using Ferrero Rocher, Cadbury Dairy Milk, KitKat, Lindt, Galaxy, or Kinder chocolates. Contact us on WhatsApp (0310-4225974) for custom orders."
+          text: "Chocolate bouquets start from Rs. 3,800 to Rs. 4,200 depending on the confectionery selected."
         }
       }
     ]

@@ -8,22 +8,22 @@ import { SITE_URL, areaFloristSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Flower Delivery in DHA Lahore | Rs. 250, 2–3 Hours",
+    absolute: "Flower Delivery in DHA Lahore | FREE delivery, 2–3 hrs",
   },
-  description: "Same-day flower delivery to DHA Lahore Phases 1–9, Defence Raya & Sector Y in 2–3 hours. Delivery fee Rs. 250. Imported roses, money bouquets, cakes &",
+  description: "Same-day flower delivery to DHA Lahore Phases 1–9, Defence Raya & Sector Y in 2–3 hours. Delivery FREE delivery. Imported roses, money bouquets, cakes &",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/dha`,
   },
   openGraph: {
-    title: "Flower Delivery in DHA Lahore | Rs. 250, 2–3 Hours",
-    description: "Same-day flower delivery to DHA Lahore Phases 1–9, Defence Raya & Sector Y in 2–3 hours. Delivery fee Rs. 250. Imported roses, money bouquets, cakes &",
+    title: "Flower Delivery in DHA Lahore | FREE delivery, 2–3 hrs",
+    description: "Same-day flower delivery to DHA Lahore Phases 1–9, Defence Raya & Sector Y in 2–3 hours. Delivery FREE delivery. Imported roses, money bouquets, cakes &",
     url: `${SITE_URL}/delivery-areas/dha`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in DHA Lahore | Rs. 250, 2–3 Hours",
+        alt: "Flower Delivery in DHA Lahore | FREE delivery, 2–3 hrs",
       },
     ],
   }
@@ -63,7 +63,7 @@ const dhaFaqSchema = {
       name: "How long does flower delivery to DHA Lahore take, and what is the fee?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Delivery to DHA Lahore takes 2 to 3 hours with a flat fee of Rs. 250. Orders to Phases 1 to 5 usually arrive at the faster end of the window; Phases 6 to 9, Defence Raya and Sector Y take the full window during peak traffic.",
+        text: "Delivery to DHA Lahore takes 2 to 3 hours with free delivery. Orders to Phases 1 to 5 usually arrive at the faster end of the window; Phases 6 to 9, Defence Raya and Sector Y take the full window during peak traffic.",
       },
     },
     {
@@ -146,7 +146,7 @@ export default async function DHADeliveryPage() {
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
-          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 2 to 3 hours • Rs. 250 flat delivery fee</span>
+          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 2 to 3 hours • FREE delivery</span>
           <span className="flex items-center gap-1.5"><Camera className="w-4 h-4 text-[#C6A15B]" /> Photo on WhatsApp before it leaves</span>
           <a 
             href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20flowers%20to%20DHA%20Lahore."
@@ -166,7 +166,7 @@ export default async function DHADeliveryPage() {
           <h2 className="font-playfair text-xl font-bold">Delivery time & fee — DHA Lahore</h2>
         </div>
         <ul className="space-y-2 text-xs text-[#2A2A2A] list-disc list-inside leading-relaxed">
-          <li><strong>Delivery fee: Rs. 250 flat</strong> — across DHA Phases 1 to 9, DHA Phase 9 Town, Defence Raya and Sector Y. No hidden charges.</li>
+          <li><strong>Delivery fee: FREE</strong> — across DHA Phases 1 to 9, DHA Phase 9 Town, Defence Raya and Sector Y. No hidden charges.</li>
           <li><strong>Delivery time: 2 to 3 hours</strong>, 7 days a week, from 9 AM to 1 AM. Phases 1–5 are usually fastest; Phases 6–9 and Raya take the full window in peak traffic.</li>
           <li><strong>Midnight slot:</strong> available every night — message us on WhatsApp by the evening to reserve it.</li>
           <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
@@ -210,7 +210,7 @@ export default async function DHADeliveryPage() {
         <div className="divide-y divide-[rgba(198,161,91,0.25)]">
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How long does flower delivery to DHA Lahore take, and what is the fee?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery to DHA Lahore takes 2 to 3 hours with a flat fee of Rs. 250. Orders to Phases 1 to 5 usually arrive at the faster end of the window; Phases 6 to 9, Defence Raya and Sector Y take the full window during peak traffic.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery to DHA Lahore takes 2 to 3 hours with free delivery. Orders to Phases 1 to 5 usually arrive at the faster end of the window; Phases 6 to 9, Defence Raya and Sector Y take the full window during peak traffic.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Which DHA phases and sectors do you deliver to?</h3>
@@ -243,7 +243,7 @@ export default async function DHADeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your DHA phase, street and house number, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,180 — including which roses and seasonal flowers arrived today.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh and send you a photo on WhatsApp before the rider leaves. Nothing ships until you reply that it looks perfect — ask for tweaks and we redo it.</li>
-          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your DHA phase within 2–3 hours for the Rs. 250 flat fee — or in the midnight slot.</li>
+          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your DHA phase within 2–3 hours for the FREE fee — or in the midnight slot.</li>
         </ol>
       </section>
 
@@ -276,7 +276,7 @@ export default async function DHADeliveryPage() {
           </Link>
           <Link href="/delivery-areas/cantt" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Lahore Cantt →</p>
-            <p className="text-xs text-[#2A2A2A]">Rs. 250 • 2–2.5 hours. Saddar, Cavalry Ground, PAF Colony and CMH with gate clearance.</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 2–2.5 hours. Saddar, Cavalry Ground, PAF Colony and CMH with gate clearance.</p>
           </Link>
           <Link href="/delivery-areas/model-town" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Model Town →</p>

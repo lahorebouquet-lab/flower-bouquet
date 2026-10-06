@@ -7,7 +7,7 @@ import RelatedProducts from "../components/RelatedProducts";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Teddy Bears in Lahore | Giant Teddy Delivery | Lahore Bouquet",
+    absolute: "Giant Teddy Bears in Lahore | Same-Day Delivery",
   },
   description: "Order teddy bears online in Lahore — from cute small plushies (Rs. 1,499) to 6-feet giant teddy bears (Rs. 12,999). Same-day & midnight delivery across Lahore.",
   alternates: {

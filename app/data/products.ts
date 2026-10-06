@@ -33,7 +33,7 @@ export const ALL_PRODUCTS: Product[] = [
     oldPrice: 8500,
     image: "/images/hero-luxury-bouquet.jpg",
     category: "Roses",
-    desc: "The pinnacle of Lahore luxury gifting. 36 premium imported Dutch velvet red roses nestled in fragrant baby's breath and silver dollar eucalyptus, wrapped in matte black and rich burgundy paper, tied with our signature champagne gold Lahore Bouquet satin ribbon. Hand-tied in Gulberg and delivered anywhere in Lahore in 2 to 4 hours with a live photo sent on WhatsApp before dispatch.",
+    desc: "The pinnacle of Lahore luxury gifting. 36 premium imported Dutch velvet red roses nestled in fragrant baby's breath and silver dollar eucalyptus, wrapped in matte black and rich burgundy paper, tied with our signature champagne gold Lahore Bouquet satin ribbon. Hand-tied in Lahore and delivered anywhere in Lahore in 2–5 hours with a live photo sent on WhatsApp before dispatch.",
     stems: "36 Imported Dutch Red Roses, Baby's Breath & Silver Dollar Eucalyptus",
     swatches: ["#8B1E2D", "#0B0B0B", "#C6A15B"],
     occasion: ["Anniversary", "Romance", "Birthday", "Congratulations", "Wedding"]

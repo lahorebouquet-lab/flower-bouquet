@@ -8,14 +8,14 @@ import { SITE_URL, areaFloristSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Flower Delivery in Model Town Lahore | FREE, 1.5–2.5 Hours",
+    absolute: "Flower Delivery in Model Town Lahore | FREE, 1.5–2.5 hrs",
   },
   description: "Free flower delivery to Model Town Blocks A–M, Link Road & Garden Town Lahore in 1.5–2.5 hours. Bouquets from Rs. 1,180. Midnight slot, WhatsApp photo",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/model-town`,
   },
   openGraph: {
-    title: "Flower Delivery in Model Town Lahore | FREE, 1.5–2.5 Hours",
+    title: "Flower Delivery in Model Town Lahore | FREE, 1.5–2.5 hrs",
     description: "Free flower delivery to Model Town Blocks A–M, Link Road & Garden Town Lahore in 1.5–2.5 hours. Bouquets from Rs. 1,180. Midnight slot, WhatsApp photo",
     url: `${SITE_URL}/delivery-areas/model-town`,
     images: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in Model Town Lahore | FREE, 1.5–2.5 Hours",
+        alt: "Flower Delivery in Model Town Lahore | FREE, 1.5–2.5 hrs",
       },
     ],
   }
@@ -246,7 +246,7 @@ export default async function ModelTownDeliveryPage() {
       <section className="space-y-4">
         <div className="flex items-center justify-between text-xs text-[#2A2A2A]">
           <span>Popular bouquets ordered in Model Town</span>
-          <Link href="/collections/bouquets" className="text-[#8B1E2D] hover:underline font-semibold">
+          <Link href="/bouquets" className="text-[#8B1E2D] hover:underline font-semibold">
             View All Bouquets →
           </Link>
         </div>
@@ -271,11 +271,11 @@ export default async function ModelTownDeliveryPage() {
           </Link>
           <Link href="/delivery-areas/johar-town" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Johar Town →</p>
-            <p className="text-xs text-[#2A2A2A]">Rs. 250 • 2–3 hours. Phases 1 & 2, Emporium Mall and Shaukat Khanum Hospital.</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 2–3 hours. Phases 1 & 2, Emporium Mall and Shaukat Khanum Hospital.</p>
           </Link>
           <Link href="/delivery-areas/dha" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">DHA Lahore →</p>
-            <p className="text-xs text-[#2A2A2A]">Rs. 250 • 2–3 hours. Phases 1–9, Defence Raya and Sector Y.</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 2–3 hours. Phases 1–9, Defence Raya and Sector Y.</p>
           </Link>
         </div>
       </section>

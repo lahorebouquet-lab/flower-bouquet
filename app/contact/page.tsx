@@ -21,11 +21,11 @@ import { CONTACT_EMAIL, CONTACT_PHONE } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Contact Lahore Bouquet | WhatsApp, Phone & Address",
+    absolute: "Contact Lahore Bouquet | WhatsApp & Phone",
   },
   description: "Contact Lahore Bouquet on WhatsApp or phone, in Lahore, Pakistan. Open 9 AM to 1 AM daily.",
   openGraph: {
-    title: "Contact Lahore Bouquet | WhatsApp, Phone & Address",
+    title: "Contact Lahore Bouquet | WhatsApp & Phone",
     description: "Contact Lahore Bouquet on WhatsApp or phone, in Lahore, Pakistan. Open 9 AM to 1 AM daily.",
     url: `${SITE_URL}/contact`,
     images: [
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Contact Lahore Bouquet | WhatsApp, Phone & Address",
+        alt: "Contact Lahore Bouquet | WhatsApp & Phone",
       },
     ],
   },

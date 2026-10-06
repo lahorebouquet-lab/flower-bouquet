@@ -107,7 +107,7 @@ export default async function EidGiftsPage() {
       <section className="space-y-6">
         <div className="flex items-center justify-between text-xs text-[#2A2A2A]">
           <span>Curated Eid floral bouquets & gift combos</span>
-          <Link href="/collections/bouquets" className="text-[#8B1E2D] hover:underline font-semibold">
+          <Link href="/bouquets" className="text-[#8B1E2D] hover:underline font-semibold">
             View All Bouquets →
           </Link>
         </div>

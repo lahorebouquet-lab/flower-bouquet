@@ -129,7 +129,7 @@ export default async function ScentsAndPerfumesPage() {
       <nav aria-label="Breadcrumb" className="text-xs text-[#777777] flex items-center gap-2">
         <Link href="/" className="hover:text-[#0B0B0B] transition-colors">Home</Link>
         <span>/</span>
-        <Link href="/collections/gifts-cakes" className="hover:text-[#0B0B0B] transition-colors">Gifts & Cakes</Link>
+        <Link href="/gifts-and-cakes" className="hover:text-[#0B0B0B] transition-colors">Gifts & Cakes</Link>
         <span>/</span>
         <span className="text-[#8B1E2D] font-semibold">Scents & Perfumes</span>
       </nav>
@@ -193,7 +193,7 @@ export default async function ScentsAndPerfumesPage() {
       <section className="space-y-4 pt-6 border-t border-[#E5DED2]">
         <div className="flex items-center justify-between text-xs text-[#2A2A2A]">
           <span>Popular bouquets to pair with perfumes</span>
-          <Link href="/collections/bouquets" className="text-[#8B1E2D] hover:underline font-semibold">
+          <Link href="/bouquets" className="text-[#8B1E2D] hover:underline font-semibold">
             View All Bouquets →
           </Link>
         </div>

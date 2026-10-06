@@ -9,22 +9,22 @@ import { SITE_URL, areaFloristSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Flower Delivery in Al Kabir Town Lahore | Rs. 500, 3–4 Hours",
+    absolute: "Flower Delivery in Al Kabir Town Lahore | FREE delivery, 3–4 hrs",
   },
-  description: "Same-day flower delivery to Al Kabir Town Lahore — Phase 1 & 2 near Raiwind Road in 3–4 hours. Delivery fee Rs. 500. Fresh roses, money bouquets, cakes &",
+  description: "Same-day flower delivery to Al Kabir Town Lahore — Phase 1 & 2 near Raiwind Road in 3–4 hours. Delivery FREE delivery. Fresh roses, money bouquets, cakes &",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/al-kabir-town`,
   },
   openGraph: {
-    title: "Flower Delivery in Al Kabir Town Lahore | Rs. 500, 3–4 Hours",
-    description: "Same-day flower delivery to Al Kabir Town Lahore — Phase 1 & 2 near Raiwind Road in 3–4 hours. Delivery fee Rs. 500. Fresh roses, money bouquets, cakes &",
+    title: "Flower Delivery in Al Kabir Town Lahore | FREE delivery, 3–4 hrs",
+    description: "Same-day flower delivery to Al Kabir Town Lahore — Phase 1 & 2 near Raiwind Road in 3–4 hours. Delivery FREE delivery. Fresh roses, money bouquets, cakes &",
     url: `${SITE_URL}/delivery-areas/al-kabir-town`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in Al Kabir Town Lahore | Rs. 500, 3–4 Hours",
+        alt: "Flower Delivery in Al Kabir Town Lahore | FREE delivery, 3–4 hrs",
       },
     ],
   }
@@ -64,7 +64,7 @@ const alKabirTownFaqSchema = {
       name: "How long does flower delivery to Al Kabir Town take, and what is the fee?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Delivery to Al Kabir Town takes 3 to 4 hours with a flat fee of Rs. 500. The Raiwind Road corridor gets congested in the evening, so morning and early-afternoon orders arrive at the faster end of the window.",
+        text: "Delivery to Al Kabir Town takes 3 to 4 hours with free delivery. The Raiwind Road corridor gets congested in the evening, so morning and early-afternoon orders arrive at the faster end of the window.",
       },
     },
     {
@@ -88,7 +88,7 @@ const alKabirTownFaqSchema = {
       name: "Do you offer midnight delivery to Al Kabir Town?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Our midnight slot runs 11:30 PM to 12:15 AM with a Rs. 500 surcharge. Message us on WhatsApp by the evening to reserve — midnight orders cannot be arranged last minute.",
+        text: "Yes. Our midnight slot runs 11:30 PM to 12:15 AM with free delivery. Message us on WhatsApp by the evening to reserve — midnight orders cannot be arranged last minute.",
       },
     },
     {
@@ -149,11 +149,11 @@ export default async function AlKabirTownDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Al Kabir Town sits just off Raiwind Road near Bahria Orchard, and our riders cover Phase 1 and Phase 2 daily along with the commercial area. Most orders arrive within 3 to 4 hours for a flat delivery fee of Rs. 500. Share your exact phase, block and house number — a location pin on WhatsApp saves the rider a detour. Our florists send you a photo on WhatsApp before your bouquet leaves. Order on WhatsApp at 0310-4225974 (9 AM–1 AM), then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
+          Al Kabir Town sits just off Raiwind Road near Bahria Orchard, and our riders cover Phase 1 and Phase 2 daily along with the commercial area. Most orders arrive within 3 to 4 hours for a flat free delivery. Share your exact phase, block and house number — a location pin on WhatsApp saves the rider a detour. Our florists send you a photo on WhatsApp before your bouquet leaves. Order on WhatsApp at 0310-4225974 (9 AM–1 AM), then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
-          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 3 to 4 hours • Rs. 500 flat delivery fee</span>
+          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 3 to 4 hours • FREE delivery</span>
           <span className="flex items-center gap-1.5"><Camera className="w-4 h-4 text-[#C6A15B]" /> Photo on WhatsApp before it leaves</span>
           <a
             href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20flowers%20to%20Al%20Kabir%20Town%20Lahore."
@@ -173,9 +173,9 @@ export default async function AlKabirTownDeliveryPage() {
           <h2 className="font-playfair text-xl font-bold">Delivery time & fee — Al Kabir Town</h2>
         </div>
         <ul className="space-y-2 text-xs text-[#2A2A2A] list-disc list-inside leading-relaxed">
-          <li><strong>Delivery fee: Rs. 500 flat</strong> — across Al Kabir Town Phase 1 and Phase 2, including the commercial area.</li>
+          <li><strong>Delivery fee: FREE</strong> — across Al Kabir Town Phase 1 and Phase 2, including the commercial area.</li>
           <li><strong>Delivery time: 3 to 4 hours</strong>, 7 days a week, 9 AM to 1 AM. Morning and early-afternoon orders usually arrive fastest.</li>
-          <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM, with a Rs. 500 surcharge. Reserve on WhatsApp by the evening.</li>
+          <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM, with free delivery. Reserve on WhatsApp by the evening.</li>
           <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
           <li><strong>Prices start at Rs. 1,180.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our florists will confirm your slot instantly.</li>
         </ul>
@@ -215,7 +215,7 @@ export default async function AlKabirTownDeliveryPage() {
         <div className="divide-y divide-[rgba(198,161,91,0.25)]">
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How long does flower delivery to Al Kabir Town take, and what is the fee?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery to Al Kabir Town takes 3 to 4 hours with a flat fee of Rs. 500. The Raiwind Road corridor gets congested in the evening, so morning and early-afternoon orders arrive at the faster end of the window.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery to Al Kabir Town takes 3 to 4 hours with free delivery. The Raiwind Road corridor gets congested in the evening, so morning and early-afternoon orders arrive at the faster end of the window.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Which parts of Al Kabir Town do you cover?</h3>
@@ -227,7 +227,7 @@ export default async function AlKabirTownDeliveryPage() {
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Do you offer midnight delivery to Al Kabir Town?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes. Our midnight slot runs 11:30 PM to 12:15 AM with a Rs. 500 surcharge. Message us on WhatsApp by the evening to reserve — midnight orders cannot be arranged last minute.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes. Our midnight slot runs 11:30 PM to 12:15 AM with free delivery. Message us on WhatsApp by the evening to reserve — midnight orders cannot be arranged last minute.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">WhatsApp par Al Kabir Town ke liye order kaise karun?</h3>
@@ -245,7 +245,7 @@ export default async function AlKabirTownDeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your phase, block, house number, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,180.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh and send you a photo on WhatsApp before the rider leaves. Nothing ships until you reply it looks perfect — ask for tweaks and we redo it.</li>
-          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your block within 3–4 hours for the Rs. 500 flat fee — or in the midnight slot.</li>
+          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your block within 3–4 hours for the FREE fee — or in the midnight slot.</li>
         </ol>
       </section>
 
@@ -274,15 +274,15 @@ export default async function AlKabirTownDeliveryPage() {
         <div className="grid sm:grid-cols-3 gap-3">
           <Link href="/delivery-areas/bahria-orchard" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Bahria Orchard →</p>
-            <p className="text-xs text-[#2A2A2A]">Rs. 500 • 3–4 hours. Phases 1–4 off Raiwind Road.</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 3–4 hours. Phases 1–4 off Raiwind Road.</p>
           </Link>
           <Link href="/delivery-areas/raiwind-road" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Raiwind Road →</p>
-            <p className="text-xs text-[#2A2A2A]">Rs. 500 • 3–4 hours. Raiwind Road corridor.</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 3–4 hours. Raiwind Road corridor.</p>
           </Link>
           <Link href="/delivery-areas/lake-city" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Lake City →</p>
-            <p className="text-xs text-[#2A2A2A]">Rs. 500 • 3–4 hours. Golf course & Downtown commercial.</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 3–4 hours. Golf course & Downtown commercial.</p>
           </Link>
         </div>
       </section>

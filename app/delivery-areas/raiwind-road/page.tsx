@@ -9,22 +9,22 @@ import { SITE_URL, areaFloristSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Flower Delivery on Raiwind Road Lahore | Rs. 500, 3–4 Hours",
+    absolute: "Flower Delivery on Raiwind Road Lahore | FREE delivery, 3–4 hrs",
   },
-  description: "Same-day flower delivery along Raiwind Road Lahore — Bahria Orchard, Al Kabir Town, farmhouses & marquees — in 3–4 hours. Delivery fee Rs. 500.",
+  description: "Same-day flower delivery along Raiwind Road Lahore — Bahria Orchard, Al Kabir Town, farmhouses & marquees — in 3–4 hours. Delivery FREE delivery.",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/raiwind-road`,
   },
   openGraph: {
-    title: "Flower Delivery on Raiwind Road Lahore | Rs. 500, 3–4 Hours",
-    description: "Same-day flower delivery along Raiwind Road Lahore — Bahria Orchard, Al Kabir Town, farmhouses & marquees — in 3–4 hours. Delivery fee Rs. 500.",
+    title: "Flower Delivery on Raiwind Road Lahore | FREE delivery, 3–4 hrs",
+    description: "Same-day flower delivery along Raiwind Road Lahore — Bahria Orchard, Al Kabir Town, farmhouses & marquees — in 3–4 hours. Delivery FREE delivery.",
     url: `${SITE_URL}/delivery-areas/raiwind-road`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery on Raiwind Road Lahore | Rs. 500, 3–4 Hours",
+        alt: "Flower Delivery on Raiwind Road Lahore | FREE delivery, 3–4 hrs",
       },
     ],
   }
@@ -64,7 +64,7 @@ const raiwindRoadFaqSchema = {
       name: "How long does flower delivery on Raiwind Road take, and what is the fee?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Delivery along Raiwind Road takes 3 to 4 hours with a flat fee of Rs. 500. Addresses near the city-side entry and Bhobtian Chowk usually arrive at the faster end; deeper schemes like Bahria Orchard Phase 4 and Al Kabir Town Phase 2 take the full window.",
+        text: "Delivery along Raiwind Road takes 3 to 4 hours with free delivery. Addresses near the city-side entry and Bhobtian Chowk usually arrive at the faster end; deeper schemes like Bahria Orchard Phase 4 and Al Kabir Town Phase 2 take the full window.",
       },
     },
     {
@@ -149,11 +149,11 @@ export default async function RaiwindRoadDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Raiwind Road is one of Lahore&apos;s fastest-growing residential corridors, and our riders run it every day — from the city-side entry all the way out to Bahria Orchard and Al Kabir Town. Because the corridor is long, delivery takes 3 to 4 hours with a flat fee of Rs. 500. Our florists send you a photo on WhatsApp before your bouquet leaves, and we deliver to homes, offices, farmhouses and wedding marquees along the road. To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your scheme and block details — approve the bouquet photo we send, then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
+          Raiwind Road is one of Lahore&apos;s fastest-growing residential corridors, and our riders run it every day — from the city-side entry all the way out to Bahria Orchard and Al Kabir Town. Because the corridor is long, delivery takes 3 to 4 hours with free delivery. Our florists send you a photo on WhatsApp before your bouquet leaves, and we deliver to homes, offices, farmhouses and wedding marquees along the road. To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your scheme and block details — approve the bouquet photo we send, then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
-          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 3 to 4 hours • Rs. 500 flat delivery fee</span>
+          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 3 to 4 hours • FREE delivery</span>
           <span className="flex items-center gap-1.5"><Camera className="w-4 h-4 text-[#C6A15B]" /> Photo on WhatsApp before it leaves</span>
           <a
             href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20flowers%20to%20Raiwind%20Road%20Lahore."
@@ -173,9 +173,9 @@ export default async function RaiwindRoadDeliveryPage() {
           <h2 className="font-playfair text-xl font-bold">Delivery time & fee — Raiwind Road Lahore</h2>
         </div>
         <ul className="space-y-2 text-xs text-[#2A2A2A] list-disc list-inside leading-relaxed">
-          <li><strong>Delivery fee: Rs. 500 flat</strong> — anywhere along the Raiwind Road corridor, from the city-side entry to Bahria Orchard, Al Kabir Town and Adda Plot. No hidden charges.</li>
+          <li><strong>Delivery fee: FREE</strong> — anywhere along the Raiwind Road corridor, from the city-side entry to Bahria Orchard, Al Kabir Town and Adda Plot. No hidden charges.</li>
           <li><strong>Delivery time: 3 to 4 hours</strong>, 7 days a week, from 9 AM to 1 AM. Near-side addresses around Bhobtian Chowk are usually fastest; deeper phases take the full window.</li>
-          <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM every night with a Rs. 500 surcharge — message us on WhatsApp by the evening to reserve it.</li>
+          <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM every night with free delivery — message us on WhatsApp by the evening to reserve it.</li>
           <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
           <li><strong>Prices start at Rs. 1,180.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
         </ul>
@@ -217,7 +217,7 @@ export default async function RaiwindRoadDeliveryPage() {
         <div className="divide-y divide-[rgba(198,161,91,0.25)]">
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How long does flower delivery on Raiwind Road take, and what is the fee?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery along Raiwind Road takes 3 to 4 hours with a flat fee of Rs. 500. Addresses near the city-side entry and Bhobtian Chowk usually arrive at the faster end; deeper schemes like Bahria Orchard Phase 4 and Al Kabir Town Phase 2 take the full window.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery along Raiwind Road takes 3 to 4 hours with free delivery. Addresses near the city-side entry and Bhobtian Chowk usually arrive at the faster end; deeper schemes like Bahria Orchard Phase 4 and Al Kabir Town Phase 2 take the full window.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Which housing schemes on Raiwind Road do you deliver to?</h3>
@@ -250,7 +250,7 @@ export default async function RaiwindRoadDeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your scheme, phase or block, street and house number, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,180 — including which roses and seasonal flowers arrived today.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh and send you a photo on WhatsApp before the rider leaves. Nothing ships until you reply that it looks perfect — ask for tweaks and we redo it.</li>
-          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your Raiwind Road address within 3–4 hours for the Rs. 500 flat fee — or in the midnight slot.</li>
+          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your Raiwind Road address within 3–4 hours for the FREE fee — or in the midnight slot.</li>
         </ol>
       </section>
 
@@ -279,15 +279,15 @@ export default async function RaiwindRoadDeliveryPage() {
         <div className="grid sm:grid-cols-3 gap-3">
           <Link href="/delivery-areas/bahria-orchard" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Bahria Orchard →</p>
-            <p className="text-xs text-[#2A2A2A]">Rs. 500 • 3–4 hours. Phases 1–4 off Raiwind Road.</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 3–4 hours. Phases 1–4 off Raiwind Road.</p>
           </Link>
           <Link href="/delivery-areas/al-kabir-town" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Al Kabir Town →</p>
-            <p className="text-xs text-[#2A2A2A]">Rs. 500 • 3–4 hours. Phase 1 &amp; 2 near Raiwind Road.</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 3–4 hours. Phase 1 &amp; 2 near Raiwind Road.</p>
           </Link>
           <Link href="/delivery-areas/lake-city" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Lake City →</p>
-            <p className="text-xs text-[#2A2A2A]">Rs. 500 • 3–4 hours. Golf course &amp; Downtown commercial.</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 3–4 hours. Golf course &amp; Downtown commercial.</p>
           </Link>
         </div>
       </section>

@@ -85,37 +85,37 @@ export default async function FreshFlowerGajrayPage() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "How fast can fresh flower gajray and garlands be delivered in Lahore?",
+        name: "How fast can gajray and malas be delivered?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "We provide 4-hour express delivery for fresh gajray and malas across Lahore, including DHA, Gulberg, Bahria Town, Model Town, Johar Town, and Cantt. Same-day emergency orders are also accommodated when ordered before 6 PM.",
-        },
+          text: "We deliver in 4 hours across Lahore including DHA (Phases 1-9), Gulberg, Bahria Town, Model Town, Johar Town, and Cantt. Same-day emergency orders are also accommodated."
+        }
       },
       {
         "@type": "Question",
-        name: "How fresh do flower gajray stay during wedding events in Lahore?",
+        name: "How do the flowers stay fresh during evening events?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "We weave all gajray and garlands on the morning of delivery and pack them in insulated cooling boxes with moist floral wraps. They stay crisp, fragrant, and fresh throughout your evening Mehndi, Barat, or Nikah function.",
-        },
+          text: "Every piece is woven on the day of delivery and packed in insulated moisture-retaining cold boxes to keep the jasmine motia crisp and fragrant all night."
+        }
       },
       {
         "@type": "Question",
-        name: "Can I customize the colors of my mehndi floral jewellery to match my bridal dress?",
+        name: "Can I order matching floral jewellery for my bridal dress?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes! You can choose your custom color palette (blush pink roses, peach blossom, ruby red, golden yellow marigold, or pure white jasmine motia) to match your wedding lehenga or sherwani via WhatsApp.",
-        },
+          text: "Yes. Send us a photo of your bridal lehenga or outfit on WhatsApp, and our florists will match roses, baby's breath, pearls, and ribbons to your exact shades."
+        }
       },
       {
         "@type": "Question",
-        name: "Do you offer bulk gajray for wedding guests in Lahore?",
+        name: "Do you offer bulk gajray discounts for wedding guests?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes, we prepare bulk fresh motia and rose gajray for Mayun, Mehndi, Sangeet, and Qawwali nights in packages of 20, 50, or 100+ pairs delivered directly to your venue or home in Lahore.",
-        },
-      },
-    ],
+          text: "Yes, we prepare wholesale and bulk packages of 20, 50, or 100+ fresh motia and red rose gajray pairs at discounted wedding rates with venue delivery."
+        }
+      }
+    ]
   };
 
   const itemListSchema = {

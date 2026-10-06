@@ -4,7 +4,7 @@ import { FAQ_DATA, SNAPSHOT_PRICES } from "./data";
 import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
-  title: "Flower Bouquet Price in Lahore & Pakistan | Updated October 2026",
+  title: "Flower Bouquet Price in Lahore (Oct 2026) | Lahore Bouquet",
   description:
     "See current flower bouquet prices in Lahore, from small bunches to large arrangements. Prices for roses, sunflowers, tulips and chocolate bouquets.",
   keywords: [

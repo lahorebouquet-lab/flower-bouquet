@@ -9,7 +9,7 @@ import { SITE_URL, serviceSchema, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Wedding Room & Car Decoration in Lahore | Masehri & Bridal Décor",
+    absolute: "Wedding Decoration in Lahore | Room & Car Décor",
   },
   description: "Fresh flower wedding room decoration, traditional masehri design, and bridal car decoration in Lahore. On-site setup across all areas. Prices from Rs. 6,500.",
   alternates: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "fresh flower car decoration lahore"
   ],
   openGraph: {
-    title: "Wedding Room & Car Decoration in Lahore | Masehri & Bridal Décor",
+    title: "Wedding Decoration in Lahore | Room & Car Décor",
     description: "Fresh flower wedding room decoration, traditional masehri design, and bridal car decoration in Lahore. On-site setup across all areas. Prices from Rs. 6,500.",
     url: `${SITE_URL}/wedding-decor`,
     siteName: "Lahore Bouquet",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Wedding Room & Car Decoration in Lahore | Masehri & Bridal Décor",
+        alt: "Wedding Decoration in Lahore | Room & Car Décor",
       },
     ],
   },
@@ -80,34 +80,18 @@ export default async function WeddingDecorPage() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "Do florists come to the house for bridal room and masehri setup in Lahore?",
+        name: "Do you set up at the venue?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Our expert floral decorators travel to your home or venue anywhere in Lahore (DHA, Bahria Town, Gulberg, Model Town, Johar Town) and complete the bridal bed canopy or masehri installation with fresh fragrant roses and ambient fairy lights."
+          text: "Yes, anywhere in Lahore."
         }
       },
       {
         "@type": "Question",
-        name: "How far in advance should I book wedding car decoration in Lahore?",
+        name: "Do the flowers smell?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "We recommend booking at least 2 to 3 days in advance to reserve your preferred date and time slot. Same-day emergency car decoration is also accommodated based on florist availability."
-        }
-      },
-      {
-        "@type": "Question",
-        name: "How much does wedding car decoration cost in Lahore?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Wedding car decoration starts from Rs. 6,500 for classic bonnet bouquets and ribbon ribbons, and goes up to Rs. 12,000+ for full luxury floral netting with imported roses, orchids, and baby's breath."
-        }
-      },
-      {
-        "@type": "Question",
-        name: "Do you also provide fresh flower mehndi jewellery and gajray?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes! We craft matching fresh flower jewellery (haath phool, matha patti, jhumkay) and fragrant motia gajray for Mehndi and Mayun celebrations across Lahore."
+          text: "Fresh roses do, and that is the point. Tell us if anyone in the room has an allergy."
         }
       },
       {

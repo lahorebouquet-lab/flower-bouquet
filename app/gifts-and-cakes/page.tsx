@@ -95,42 +95,34 @@ export default async function GiftsAndCakesPage({
     mainEntity: [
       {
         "@type": "Question",
-        name: "Are the cakes authentic from Layers Bakeshop Lahore?",
+        name: "Are the cakes authentic from Layers Bakeshop?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes, 100%. All Layers cakes are picked up fresh from official Layers Bakeshop kitchens (Lahore) on the day of delivery, sealed in bakery packaging, and accompanied by the bakery tag and celebration candles."
+          text: "Yes. All cakes are picked up fresh from official Layers Bakeshop outlets on Lahore and DHA Lahore immediately prior to dispatch."
         }
       },
       {
         "@type": "Question",
-        name: "How fast can you deliver cakes and chocolates in Lahore?",
+        name: "How fast is the delivery in Lahore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "We offer express 2–5 hours delivery across all Lahore sectors including Gulberg, DHA Phases 1–9, Bahria Town, Model Town, Johar Town, Cantt, Askari, and Wapda Town."
+          text: "Express daytime delivery takes 2–5 hours. You can also schedule ahead for specific time slots or choose our Midnight Surprise slot."
         }
       },
       {
         "@type": "Question",
-        name: "Do you offer midnight surprise delivery for birthdays and anniversaries?",
+        name: "Do you offer midnight surprise cake delivery?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes, our dedicated Midnight Surprise slot operates between 11:30 PM and 12:15 AM across Lahore. Pre-booking by 8:00 PM is recommended."
+          text: "Yes! We deliver between 11:30 PM and 12:15 AM so your loved ones are surprised right when the clock strikes 12 on their birthday or anniversary."
         }
       },
       {
         "@type": "Question",
-        name: "Will I get a photo of the cake and bouquet before delivery?",
+        name: "Can I add custom wording or candles?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Absolutely. Our logistics team sends a live photograph of the assembled cake, gift card, and fresh floral arrangement directly to your WhatsApp before dispatch."
-        }
-      },
-      {
-        "@type": "Question",
-        name: "Can I write a customized message on the greeting card?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes, every cake and floral order includes a complimentary embossed greeting card and birthday candle. You can enter your personal message during checkout or via WhatsApp."
+          text: "Yes, complimentary greeting cards and celebration candles are included with every cake. Enter your message at checkout or via WhatsApp."
         }
       }
     ]

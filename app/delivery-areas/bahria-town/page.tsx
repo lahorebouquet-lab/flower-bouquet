@@ -8,22 +8,22 @@ import { SITE_URL, areaFloristSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Flower Delivery in Bahria Town Lahore | Rs. 400, 2.5–4 Hours",
+    absolute: "Flower Delivery in Bahria Town Lahore | FREE delivery, 2.5–4 hrs",
   },
-  description: "Same-day flower delivery to Bahria Town Sectors A–F, Safari Villas & Lake City in 2.5–4 hours. Fee Rs. 400. AC-van transit, WhatsApp photo proof, COD",
+  description: "Same-day flower delivery to Bahria Town Sectors A–F, Safari Villas & Lake City in 2.5–4 hours. FREE delivery. AC-van transit, WhatsApp photo proof, COD",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/bahria-town`,
   },
   openGraph: {
-    title: "Flower Delivery in Bahria Town Lahore | Rs. 400, 2.5–4 Hours",
-    description: "Same-day flower delivery to Bahria Town Sectors A–F, Safari Villas & Lake City in 2.5–4 hours. Fee Rs. 400. AC-van transit, WhatsApp photo proof, COD",
+    title: "Flower Delivery in Bahria Town Lahore | FREE delivery, 2.5–4 hrs",
+    description: "Same-day flower delivery to Bahria Town Sectors A–F, Safari Villas & Lake City in 2.5–4 hours. FREE delivery. AC-van transit, WhatsApp photo proof, COD",
     url: `${SITE_URL}/delivery-areas/bahria-town`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in Bahria Town Lahore | Rs. 400, 2.5–4 Hours",
+        alt: "Flower Delivery in Bahria Town Lahore | FREE delivery, 2.5–4 hrs",
       },
     ],
   }
@@ -67,7 +67,7 @@ export default async function BahriaTownDeliveryPage() {
         name: "How long does flower delivery to Bahria Town Lahore take?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Delivery to Bahria Town Lahore typically takes 2.5 to 4 hours with a flat fee of Rs. 400. We transport all bouquets via the Lahore Ring Road in careful, climate-protected delivery to prevent petals from wilting on the long southern run.",
+          text: "Delivery to Bahria Town Lahore typically takes 2.5 to 4 hours with free delivery. We transport all bouquets via the Lahore Ring Road in careful, climate-protected delivery to prevent petals from wilting on the long southern run.",
         },
       },
       {
@@ -75,12 +75,12 @@ export default async function BahriaTownDeliveryPage() {
         name: "Do you deliver to Safari Villas and Lake City as well?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes, our southern delivery route covers Bahria Town Sectors A through F, Safari Villas, Sector Jasmine, and Lake City with same-day and midnight slots at the same Rs. 400 flat fee.",
+          text: "Yes, our southern delivery route covers Bahria Town Sectors A through F, Safari Villas, Sector Jasmine, and Lake City with same-day and midnight slots at the same FREE fee.",
         },
       },
       {
         "@type": "Question",
-        name: "Why is the Bahria Town delivery fee Rs. 400?",
+        name: "Why is the Bahria Town delivery FREE delivery?",
         acceptedAnswer: {
           "@type": "Answer",
           text: "Bahria Town is our longest route — the rider travels via the Lahore Ring Road and your bouquet rides in an air-conditioned van so the flowers arrive fresh, not wilted. The Rs. 400 fee covers that distance and climate-controlled transit, with no other hidden charges.",
@@ -137,11 +137,11 @@ export default async function BahriaTownDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Sending flowers to Bahria Town requires careful temperature control during transit. From Lahore, our climate-controlled courier vans navigate via the Lahore Ring Road to reach Sectors A through F, Safari Villas, and Lake City within 2.5 to 4 hours for a flat Rs. 400. You receive a photo of your hand-tied bouquet on WhatsApp before our rider departs. To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your sector, street and house number — approve the bouquet photo we send, then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
+          Sending flowers to Bahria Town requires careful temperature control during transit. From Lahore, our climate-controlled courier vans navigate via the Lahore Ring Road to reach Sectors A through F, Safari Villas, and Lake City within 2.5 to 4 hours with free delivery. You receive a photo of your hand-tied bouquet on WhatsApp before our rider departs. To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your sector, street and house number — approve the bouquet photo we send, then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
-          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 2.5 to 4 hours • Rs. 400 flat delivery fee</span>
+          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 2.5 to 4 hours • FREE delivery</span>
           <span className="flex items-center gap-1.5"><ShieldCheck className="w-4 h-4 text-[#C6A15B]" /> AC van hydration transit</span>
           <a 
             href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20flowers%20to%20Bahria%20Town%20Lahore."
@@ -161,7 +161,7 @@ export default async function BahriaTownDeliveryPage() {
           <h2 className="font-playfair text-xl font-bold">Delivery time & fee — Bahria Town Lahore</h2>
         </div>
         <ul className="space-y-2 text-xs text-[#2A2A2A] list-disc list-inside leading-relaxed">
-          <li><strong>Delivery fee: Rs. 400 flat</strong> — across Bahria Town Sectors A to F, Safari Villas, Sector Jasmine and Lake City. Covers the Ring Road distance and air-conditioned transit.</li>
+          <li><strong>Delivery fee: FREE</strong> — across Bahria Town Sectors A to F, Safari Villas, Sector Jasmine and Lake City. Covers the Ring Road distance and air-conditioned transit.</li>
           <li><strong>Delivery time: 2.5 to 4 hours</strong>, 7 days a week, from 9 AM to 1 AM, via the Lahore Ring Road.</li>
           <li><strong>Midnight slot:</strong> available every night — please book by 8:00 PM so our evening Ring Road dispatch can be scheduled smoothly.</li>
           <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
@@ -205,14 +205,14 @@ export default async function BahriaTownDeliveryPage() {
         <div className="divide-y divide-[rgba(198,161,91,0.25)]">
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How long does flower delivery to Bahria Town Lahore take?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery to Bahria Town Lahore typically takes 2.5 to 4 hours with a flat fee of Rs. 400. We transport all bouquets via the Lahore Ring Road in careful, climate-protected delivery to prevent petals from wilting on the long southern run.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery to Bahria Town Lahore typically takes 2.5 to 4 hours with free delivery. We transport all bouquets via the Lahore Ring Road in careful, climate-protected delivery to prevent petals from wilting on the long southern run.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Do you deliver to Safari Villas and Lake City as well?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes, our southern delivery route covers Bahria Town Sectors A through F, Safari Villas, Sector Jasmine, and Lake City with same-day and midnight slots at the same Rs. 400 flat fee.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes, our southern delivery route covers Bahria Town Sectors A through F, Safari Villas, Sector Jasmine, and Lake City with same-day and midnight slots at the same FREE fee.</p>
           </div>
           <div className="py-3 space-y-1">
-            <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Why is the Bahria Town delivery fee Rs. 400?</h3>
+            <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Why is the Bahria Town delivery FREE delivery?</h3>
             <p className="text-xs text-[#2A2A2A] leading-relaxed">Bahria Town is our longest route — the rider travels via the Lahore Ring Road and your bouquet rides in an air-conditioned van so the flowers arrive fresh, not wilted. The Rs. 400 fee covers that distance and climate-controlled transit, with no other hidden charges.</p>
           </div>
           <div className="py-3 space-y-1">
@@ -238,7 +238,7 @@ export default async function BahriaTownDeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your Bahria sector, street and house number, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,180 — including which roses and seasonal flowers arrived today.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh, hydrate it for the long southern run, and send you a photo on WhatsApp before the rider leaves. Nothing ships until you reply that it looks perfect.</li>
-          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider travels by AC van via the Ring Road and reaches your sector within 2.5–4 hours for Rs. 400 — midnight slot available (book by 8 PM).</li>
+          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider travels by AC van via the Ring Road and reaches your sector within 2.5–4 hours with free delivery — midnight slot available (book by 8 PM).</li>
         </ol>
       </section>
 
@@ -246,7 +246,7 @@ export default async function BahriaTownDeliveryPage() {
       <section className="space-y-4">
         <div className="flex items-center justify-between text-xs text-[#2A2A2A]">
           <span>Popular bouquets ordered in Bahria Town</span>
-          <Link href="/collections/bouquets" className="text-[#8B1E2D] hover:underline font-semibold">
+          <Link href="/bouquets" className="text-[#8B1E2D] hover:underline font-semibold">
             View All Bouquets →
           </Link>
         </div>
@@ -267,15 +267,15 @@ export default async function BahriaTownDeliveryPage() {
         <div className="grid sm:grid-cols-3 gap-3">
           <Link href="/delivery-areas/wapda-town" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Wapda Town →</p>
-            <p className="text-xs text-[#2A2A2A]">Rs. 300 • 2.5–3.5 hours. Wapda Town, PIA Society, Valencia and Township.</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 2.5–3.5 hours. Wapda Town, PIA Society, Valencia and Township.</p>
           </Link>
           <Link href="/delivery-areas/johar-town" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Johar Town →</p>
-            <p className="text-xs text-[#2A2A2A]">Rs. 250 • 2–3 hours. Phases 1 & 2, Emporium Mall and Shaukat Khanum Hospital.</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 2–3 hours. Phases 1 & 2, Emporium Mall and Shaukat Khanum Hospital.</p>
           </Link>
           <Link href="/delivery-areas/dha" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">DHA Lahore →</p>
-            <p className="text-xs text-[#2A2A2A]">Rs. 250 • 2–3 hours. Phases 1–9, Defence Raya and Sector Y.</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 2–3 hours. Phases 1–9, Defence Raya and Sector Y.</p>
           </Link>
         </div>
       </section>

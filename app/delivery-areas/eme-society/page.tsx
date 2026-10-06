@@ -9,22 +9,22 @@ import { SITE_URL, areaFloristSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Flower Delivery in EME Society Lahore | Rs. 400, 2.5–3.5 Hours",
+    absolute: "Flower Delivery in EME Society Lahore | FREE delivery, 2.5–3.5 hrs",
   },
-  description: "Same-day flower delivery to EME Society Lahore — commercial area and residential blocks off Multan Road in 2.5–3.5 hours. Delivery fee Rs. 400 flat.",
+  description: "Same-day flower delivery to EME Society Lahore — commercial area and residential blocks off Multan Road in 2.5–3.5 hours. Delivery FREE delivery flat.",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/eme-society`,
   },
   openGraph: {
-    title: "Flower Delivery in EME Society Lahore | Rs. 400, 2.5–3.5 Hours",
-    description: "Same-day flower delivery to EME Society Lahore — commercial area and residential blocks off Multan Road in 2.5–3.5 hours. Delivery fee Rs. 400 flat.",
+    title: "Flower Delivery in EME Society Lahore | FREE delivery, 2.5–3.5 hrs",
+    description: "Same-day flower delivery to EME Society Lahore — commercial area and residential blocks off Multan Road in 2.5–3.5 hours. Delivery FREE delivery flat.",
     url: `${SITE_URL}/delivery-areas/eme-society`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in EME Society Lahore | Rs. 400, 2.5–3.5 Hours",
+        alt: "Flower Delivery in EME Society Lahore | FREE delivery, 2.5–3.5 hrs",
       },
     ],
   }
@@ -64,7 +64,7 @@ const emeSocietyFaqSchema = {
       name: "How long does flower delivery to EME Society Lahore take, and what is the fee?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Delivery to EME Society takes 2.5 to 3.5 hours with a flat fee of Rs. 400. Orders to the commercial area usually arrive at the faster end of the window; the residential blocks deeper inside the society take the full window during evening traffic on Multan Road.",
+        text: "Delivery to EME Society takes 2.5 to 3.5 hours with free delivery. Orders to the commercial area usually arrive at the faster end of the window; the residential blocks deeper inside the society take the full window during evening traffic on Multan Road.",
       },
     },
     {
@@ -149,11 +149,11 @@ export default async function EMESocietyDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          EME Society sits off the Multan Road link, and our riders reach its commercial area and residential blocks in 2.5 to 3.5 hours for a flat Rs. 400 fee. It is a large, family-heavy society — birthday and anniversary bouquets to block homes make up most of our orders here, with shop-opening flowers and congratulatory stands for the commercial area close behind. Every bouquet is photographed on WhatsApp before the rider leaves, so you approve exactly what arrives. To order, message 0310-4225974 any time between 9 AM and 1 AM with your block, street and house number — then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
+          EME Society sits off the Multan Road link, and our riders reach its commercial area and residential blocks in 2.5 to 3.5 hours with free delivery fee. It is a large, family-heavy society — birthday and anniversary bouquets to block homes make up most of our orders here, with shop-opening flowers and congratulatory stands for the commercial area close behind. Every bouquet is photographed on WhatsApp before the rider leaves, so you approve exactly what arrives. To order, message 0310-4225974 any time between 9 AM and 1 AM with your block, street and house number — then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
-          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 2.5 to 3.5 hours • Rs. 400 flat delivery fee</span>
+          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 2.5 to 3.5 hours • FREE delivery</span>
           <span className="flex items-center gap-1.5"><Camera className="w-4 h-4 text-[#C6A15B]" /> Photo on WhatsApp before it leaves</span>
           <a
             href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20flowers%20to%20EME%20Society%20Lahore."
@@ -173,9 +173,9 @@ export default async function EMESocietyDeliveryPage() {
           <h2 className="font-playfair text-xl font-bold">Delivery time & fee — EME Society Lahore</h2>
         </div>
         <ul className="space-y-2 text-xs text-[#2A2A2A] list-disc list-inside leading-relaxed">
-          <li><strong>Delivery fee: Rs. 400 flat</strong> — across the EME Society commercial area, residential blocks and the sectors off the Multan Road link. No hidden charges.</li>
+          <li><strong>Delivery fee: FREE</strong> — across the EME Society commercial area, residential blocks and the sectors off the Multan Road link. No hidden charges.</li>
           <li><strong>Delivery time: 2.5 to 3.5 hours</strong>, 7 days a week, from 9 AM to 1 AM. The commercial area is usually fastest; the blocks deeper inside the society take the full window in evening Multan Road traffic.</li>
-          <li><strong>Midnight slot:</strong> available every night from 11:30 PM to 12:15 AM with a Rs. 500 surcharge — message us on WhatsApp by the evening to reserve it.</li>
+          <li><strong>Midnight slot:</strong> available every night from 11:30 PM to 12:15 AM with free delivery — message us on WhatsApp by the evening to reserve it.</li>
           <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
           <li><strong>Prices start at Rs. 1,180.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
         </ul>
@@ -217,7 +217,7 @@ export default async function EMESocietyDeliveryPage() {
         <div className="divide-y divide-[rgba(198,161,91,0.25)]">
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How long does flower delivery to EME Society Lahore take, and what is the fee?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery to EME Society takes 2.5 to 3.5 hours with a flat fee of Rs. 400. Orders to the commercial area usually arrive at the faster end of the window; the residential blocks deeper inside the society take the full window during evening traffic on Multan Road.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery to EME Society takes 2.5 to 3.5 hours with free delivery. Orders to the commercial area usually arrive at the faster end of the window; the residential blocks deeper inside the society take the full window during evening traffic on Multan Road.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Which parts of EME Society do you deliver to?</h3>
@@ -250,7 +250,7 @@ export default async function EMESocietyDeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your block, street and house number, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,180 — including which roses and seasonal flowers arrived today.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh and send you a photo on WhatsApp before the rider leaves. Nothing ships until you reply that it looks perfect — ask for tweaks and we redo it.</li>
-          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your EME Society address within 2.5–3.5 hours for the Rs. 400 flat fee — or in the midnight slot from 11:30 PM to 12:15 AM for a Rs. 500 surcharge.</li>
+          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your EME Society address within 2.5–3.5 hours with FREE delivery — midnight slot 11:30 PM to 12:15 AM also available.</li>
         </ol>
       </section>
 
@@ -279,15 +279,15 @@ export default async function EMESocietyDeliveryPage() {
         <div className="grid sm:grid-cols-3 gap-3">
           <Link href="/delivery-areas/valencia-town" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Valencia Town →</p>
-            <p className="text-xs text-[#2A2A2A]">Rs. 400 • 2.5–3.5 hours. Main boulevard &amp; commercial market.</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 2.5–3.5 hours. Main boulevard &amp; commercial market.</p>
           </Link>
           <Link href="/delivery-areas/nfc" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">NFC Society →</p>
-            <p className="text-xs text-[#2A2A2A]">Rs. 400 • 2.5–3.5 hours. NFC commercial market.</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 2.5–3.5 hours. NFC commercial market.</p>
           </Link>
           <Link href="/delivery-areas/dha-rahbar" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">DHA Rahbar →</p>
-            <p className="text-xs text-[#2A2A2A]">Rs. 400 • 3–4 hours. Sectors near Valencia Town.</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 3–4 hours. Sectors near Valencia Town.</p>
           </Link>
         </div>
       </section>

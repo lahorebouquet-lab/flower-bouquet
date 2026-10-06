@@ -1,11 +1,36 @@
 export const revalidate = 60;
 import React from "react";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import { ALL_PRODUCTS } from "../data/products";
 import ProductCard from "../components/ProductCard";
 import { Flame, Truck, Camera, MessageCircle } from "lucide-react";
 import { itemListSchema, SITE_URL } from "@/lib/business";
+
+export const metadata: Metadata = {
+  title: "Bestselling Bouquets in Lahore | Most Loved Flowers",
+  description:
+    "Shop Lahore's bestselling flower bouquets — signature roses, sunflowers and luxury arrangements customers reorder. Same-day delivery across Lahore.",
+  alternates: { canonical: `${SITE_URL}/bestsellers` },
+  openGraph: {
+    title: "Bestselling Bouquets in Lahore | Most Loved Flowers",
+    description:
+      "Shop Lahore's bestselling flower bouquets — signature roses, sunflowers and luxury arrangements. Same-day delivery.",
+    url: `${SITE_URL}/bestsellers`,
+    siteName: "Lahore Bouquet",
+    locale: "en_PK",
+    type: "website",
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Bestselling Bouquets in Lahore",
+      },
+    ],
+  },
+};
 
 export default async function BestsellersPage() {
   const sanityProducts = await getSanityProducts();

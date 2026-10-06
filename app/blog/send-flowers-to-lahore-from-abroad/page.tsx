@@ -5,7 +5,7 @@ import { SITE_URL, BUSINESS, whatsappLink } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "How to Send Flowers to Lahore from UK, USA & UAE (2026 Guide)",
+    absolute: "Send Flowers to Lahore from UK, USA & UAE (2026)",
   },
   description: "Living abroad? Send fresh flowers to Lahore from the UK, USA, UAE or anywhere. WhatsApp ordering, bank transfer payments, photo confirmation and same-day",
   alternates: {
@@ -50,7 +50,7 @@ export default function SendFlowersAbroadBlogPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "How to Send Flowers to Lahore from UK, USA & UAE (2026 Guide)",
+    headline: "Send Flowers to Lahore from UK, USA & UAE (2026)",
     description: "Step-by-step guide for overseas Pakistanis to send fresh flowers to Lahore with same-day delivery.",
     author: { "@type": "Organization", name: "Lahore Bouquet Florist Team", url: `${SITE_URL}` },
     publisher: { "@type": "Organization", name: "Lahore Bouquet", url: `${SITE_URL}` },

@@ -31,7 +31,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseline = new Date("2026-10-01T00:00:00+05:00");
 
   // Map of route -> page file for git-based lastmod
-  const staticRoutes: Array<{ path: string; file: string }> = [
+  const staticRoutes: Array<{ path: string; file: string; noindex?: boolean }> = [
     { path: "", file: "app/page.tsx" },
     { path: "/flower-delivery-in-lahore", file: "app/flower-delivery-in-lahore/page.tsx" },
     { path: "/send-flowers-to-lahore-from-abroad", file: "app/send-flowers-to-lahore-from-abroad/page.tsx" },
@@ -103,14 +103,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/garlands-lahore", file: "app/garlands-lahore/page.tsx" },
     { path: "/about", file: "app/about/page.tsx" },
     { path: "/contact", file: "app/contact/page.tsx" },
-    { path: "/track-order", file: "app/track-order/page.tsx" },
+    { path: "/track-order", file: "app/track-order/page.tsx", noindex: true },
     { path: "/policies", file: "app/policies/page.tsx" },
   ];
 
-  const routes: MetadataRoute.Sitemap = staticRoutes.map(({ path, file }) => ({
-    url: `${baseUrl}${path}`,
-    lastModified: gitLastModified(file) ?? baseline,
-  }));
+  const routes: MetadataRoute.Sitemap = staticRoutes
+    .filter(({ noindex }) => !noindex)
+    .map(({ path, file }) => ({
+      url: `${baseUrl}${path}`,
+      lastModified: gitLastModified(file) ?? baseline,
+    }));
 
   // Dynamic Sanity Products (real _updatedAt, with image entries)
   const sanityProducts = await getSanityProducts();

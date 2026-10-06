@@ -147,32 +147,26 @@ export function floristSchema(url: string = SITE_URL) {
 export function areaFloristSchema(areaName: string, pageUrl: string, fee?: string) {
   return {
     "@context": "https://schema.org",
-    "@type": "Florist",
-    "@id": `${pageUrl}#florist`,
-    name: `${BUSINESS.name} — ${areaName}`,
+    "@type": "Service",
+    "@id": `${pageUrl}#service`,
+    name: `Flower Delivery in ${areaName}, Lahore`,
     url: pageUrl,
     image: `${SITE_URL}/og-image.jpg`,
-    telephone: BUSINESS.phone.e164,
-    email: BUSINESS.email,
-    priceRange: BUSINESS.priceRange.display,
-    currenciesAccepted: "PKR",
-    paymentAccepted: "Cash, Bank Transfer, JazzCash, EasyPaisa",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Lahore",
-      addressRegion: "Punjab",
-      addressCountry: "PK",
-    },
+    provider: { "@id": `${SITE_URL}#florist` },
     areaServed: {
       "@type": "City",
       name: `${areaName}, Lahore`,
     },
-    openingHoursSpecification: BUSINESS.openingHours.days.map((day) => ({
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: day,
-      opens: BUSINESS.openingHours.opens,
-      closes: BUSINESS.openingHours.closes,
-    })),
+    ...(fee
+      ? {
+          offers: {
+            "@type": "Offer",
+            priceCurrency: "PKR",
+            price: fee,
+            availability: "https://schema.org/InStock",
+          },
+        }
+      : {}),
   };
 }
 

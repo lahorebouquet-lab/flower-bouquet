@@ -5,14 +5,14 @@ import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "How to Keep Flower Bouquets Fresh in Lahore Heat (Florist Tips)",
+    absolute: "Keep Flower Bouquets Fresh in Lahore Heat | Tips",
   },
   description: "Learn how to keep cut roses and flower bouquets alive for up to 7 days in Lahore's warm climate. Practical florist tips on water changing, stem trimming",
   alternates: {
     canonical: `${SITE_URL}/blog/how-to-keep-flowers-fresh-in-lahore`,
   },
   openGraph: {
-    title: "How to Keep Flower Bouquets Fresh in Lahore Heat (Florist Tips)",
+    title: "Keep Flower Bouquets Fresh in Lahore Heat | Tips",
     description: "Learn how to keep cut roses and flower bouquets alive for up to 7 days in Lahore's warm climate. Practical florist tips on water changing, stem trimming",
     url: `${SITE_URL}/blog/how-to-keep-flowers-fresh-in-lahore`,
     type: "article",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "How to Keep Flower Bouquets Fresh in Lahore Heat (Florist Tips)",
+        alt: "Keep Flower Bouquets Fresh in Lahore Heat | Tips",
       },
     ],
   }
@@ -136,7 +136,7 @@ export default function FlowerCareBlogPage() {
           </p>
         </div>
         <Link 
-          href="/collections/bouquets" 
+          href="/bouquets" 
           className="px-6 py-3 rounded-xl bg-[#8B1E2D] hover:bg-[#C6A15B] text-white hover:text-[#0B0B0B] text-xs font-bold whitespace-nowrap transition-all shadow-lg"
         >
           Explore Fresh Bouquets →

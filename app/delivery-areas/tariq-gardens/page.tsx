@@ -9,22 +9,22 @@ import { SITE_URL, areaFloristSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Flower Delivery in Tariq Gardens Lahore | Rs. 400, 2.5–3.5 Hours",
+    absolute: "Flower Delivery Tariq Gardens Lahore | FREE delivery, 2.5–3.5 hrs",
   },
-  description: "Same-day flower delivery to Tariq Gardens Lahore — housing blocks off the Multan Road corridor in 2.5–3.5 hours. Delivery fee Rs. 400. Fresh roses, money",
+  description: "Same-day flower delivery to Tariq Gardens Lahore — housing blocks off the Multan Road corridor in 2.5–3.5 hours. Delivery FREE delivery. Fresh roses, money",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/tariq-gardens`,
   },
   openGraph: {
-    title: "Flower Delivery in Tariq Gardens Lahore | Rs. 400, 2.5–3.5 Hours",
-    description: "Same-day flower delivery to Tariq Gardens Lahore — housing blocks off the Multan Road corridor in 2.5–3.5 hours. Delivery fee Rs. 400. Fresh roses, money",
+    title: "Flower Delivery Tariq Gardens Lahore | FREE delivery, 2.5–3.5 hrs",
+    description: "Same-day flower delivery to Tariq Gardens Lahore — housing blocks off the Multan Road corridor in 2.5–3.5 hours. Delivery FREE delivery. Fresh roses, money",
     url: `${SITE_URL}/delivery-areas/tariq-gardens`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in Tariq Gardens Lahore | Rs. 400, 2.5–3.5 Hours",
+        alt: "Flower Delivery Tariq Gardens Lahore | FREE delivery, 2.5–3.5 hrs",
       },
     ],
   }
@@ -64,7 +64,7 @@ const tariqGardensFaqSchema = {
       name: "How long does flower delivery to Tariq Gardens take, and what is the fee?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Delivery to Tariq Gardens takes 2.5 to 3.5 hours with a flat fee of Rs. 400. Earlier orders arrive fastest; evening Multan Road rush hour can push deliveries toward the full window.",
+        text: "Delivery to Tariq Gardens takes 2.5 to 3.5 hours with free delivery. Earlier orders arrive fastest; evening Multan Road rush hour can push deliveries toward the full window.",
       },
     },
     {
@@ -88,7 +88,7 @@ const tariqGardensFaqSchema = {
       name: "Do you offer midnight delivery to Tariq Gardens?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Our midnight slot runs 11:30 PM to 12:15 AM with a Rs. 500 surcharge. Message us on WhatsApp by the evening to reserve — midnight orders cannot be arranged last minute.",
+        text: "Yes. Our midnight slot runs 11:30 PM to 12:15 AM with free delivery. Message us on WhatsApp by the evening to reserve — midnight orders cannot be arranged last minute.",
       },
     },
     {
@@ -149,11 +149,11 @@ export default async function TariqGardensDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Tariq Gardens sits right on the Multan Road corridor, and our riders cover its housing blocks daily. Most orders arrive within 2.5 to 3.5 hours for a flat delivery fee of Rs. 400. Our florists send you a photo on WhatsApp before your bouquet leaves. We deliver to homes, shops and offices along the corridor — order on WhatsApp at 0310-4225974 (9 AM–1 AM), then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
+          Tariq Gardens sits right on the Multan Road corridor, and our riders cover its housing blocks daily. Most orders arrive within 2.5 to 3.5 hours for a flat free delivery. Our florists send you a photo on WhatsApp before your bouquet leaves. We deliver to homes, shops and offices along the corridor — order on WhatsApp at 0310-4225974 (9 AM–1 AM), then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
-          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 2.5 to 3.5 hours • Rs. 400 flat delivery fee</span>
+          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 2.5 to 3.5 hours • FREE delivery</span>
           <span className="flex items-center gap-1.5"><Camera className="w-4 h-4 text-[#C6A15B]" /> Photo on WhatsApp before it leaves</span>
           <a
             href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20flowers%20to%20Tariq%20Gardens%20Lahore."
@@ -173,9 +173,9 @@ export default async function TariqGardensDeliveryPage() {
           <h2 className="font-playfair text-xl font-bold">Delivery time & fee — Tariq Gardens</h2>
         </div>
         <ul className="space-y-2 text-xs text-[#2A2A2A] list-disc list-inside leading-relaxed">
-          <li><strong>Delivery fee: Rs. 400 flat</strong> — across all Tariq Gardens housing blocks and the Multan Road corridor pockets we serve.</li>
+          <li><strong>Delivery fee: FREE</strong> — across all Tariq Gardens housing blocks and the Multan Road corridor pockets we serve.</li>
           <li><strong>Delivery time: 2.5 to 3.5 hours</strong>, 7 days a week, 9 AM to 1 AM. Evening Multan Road rush hour can push orders toward the full window.</li>
-          <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM, with a Rs. 500 surcharge. Reserve on WhatsApp by the evening.</li>
+          <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM, with free delivery. Reserve on WhatsApp by the evening.</li>
           <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
           <li><strong>Prices start at Rs. 1,180.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our florists will confirm your slot instantly.</li>
         </ul>
@@ -215,7 +215,7 @@ export default async function TariqGardensDeliveryPage() {
         <div className="divide-y divide-[rgba(198,161,91,0.25)]">
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How long does flower delivery to Tariq Gardens take, and what is the fee?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery to Tariq Gardens takes 2.5 to 3.5 hours with a flat fee of Rs. 400. Earlier orders arrive fastest; evening Multan Road rush hour can push deliveries toward the full window.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery to Tariq Gardens takes 2.5 to 3.5 hours with free delivery. Earlier orders arrive fastest; evening Multan Road rush hour can push deliveries toward the full window.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Which blocks and areas around Tariq Gardens do you cover?</h3>
@@ -227,7 +227,7 @@ export default async function TariqGardensDeliveryPage() {
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Do you offer midnight delivery to Tariq Gardens?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes. Our midnight slot runs 11:30 PM to 12:15 AM with a Rs. 500 surcharge. Message us on WhatsApp by the evening to reserve — midnight orders cannot be arranged last minute.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes. Our midnight slot runs 11:30 PM to 12:15 AM with free delivery. Message us on WhatsApp by the evening to reserve — midnight orders cannot be arranged last minute.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">WhatsApp par Tariq Gardens ke liye order kaise karun?</h3>
@@ -245,7 +245,7 @@ export default async function TariqGardensDeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your block, house number, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,180.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh and send you a photo on WhatsApp before the rider leaves. Nothing ships until you reply it looks perfect — ask for tweaks and we redo it.</li>
-          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your block within 2.5–3.5 hours for the Rs. 400 flat fee — or in the midnight slot.</li>
+          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your block within 2.5–3.5 hours for the FREE fee — or in the midnight slot.</li>
         </ol>
       </section>
 
@@ -274,15 +274,15 @@ export default async function TariqGardensDeliveryPage() {
         <div className="grid sm:grid-cols-3 gap-3">
           <Link href="/delivery-areas/nfc" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">NFC Society →</p>
-            <p className="text-xs text-[#2A2A2A]">Rs. 400 • 2.5–3.5 hours. NFC commercial market.</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 2.5–3.5 hours. NFC commercial market.</p>
           </Link>
           <Link href="/delivery-areas/valencia-town" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Valencia Town →</p>
-            <p className="text-xs text-[#2A2A2A]">Rs. 400 • 2.5–3.5 hours. Main boulevard & commercial market.</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 2.5–3.5 hours. Main boulevard & commercial market.</p>
           </Link>
           <Link href="/delivery-areas/eme-society" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">EME Society →</p>
-            <p className="text-xs text-[#2A2A2A]">Rs. 400 • 2.5–3.5 hours. Commercial area off Multan Road.</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 2.5–3.5 hours. Commercial area off Multan Road.</p>
           </Link>
         </div>
       </section>

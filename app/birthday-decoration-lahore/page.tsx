@@ -7,7 +7,7 @@ import RelatedProducts from "../components/RelatedProducts";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Birthday Decoration in Lahore | Balloon & Flower Setup at Home",
+    absolute: "Birthday Decoration in Lahore | Balloons & Flowers",
   },
   description: "Book birthday decoration in Lahore — helium balloon bunches, flower backdrops, table styling and surprise setups at home. Packages from Rs. 4,999.",
   alternates: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "flower birthday backdrop lahore",
   ],
   openGraph: {
-    title: "Birthday Decoration in Lahore | Balloon & Flower Setup at Home",
+    title: "Birthday Decoration in Lahore | Balloons & Flowers",
     description:
       "Book birthday decoration in Lahore — helium balloon bunches, flower backdrops, table styling and surprise setups at home. Packages from Rs. 4,999.",
     url: `${SITE_URL}/birthday-decoration-lahore`,
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Birthday Decoration in Lahore | Balloon & Flower Setup at Home",
+        alt: "Birthday Decoration in Lahore | Balloons & Flowers",
       },
     ],
   },

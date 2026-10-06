@@ -246,7 +246,7 @@ export default async function GulbergDeliveryPage() {
       <section className="space-y-4">
         <div className="flex items-center justify-between text-xs text-[#2A2A2A]">
           <span>Popular bouquets ordered in Gulberg</span>
-          <Link href="/collections/bouquets" className="text-[#8B1E2D] hover:underline font-semibold">
+          <Link href="/bouquets" className="text-[#8B1E2D] hover:underline font-semibold">
             View All Bouquets →
           </Link>
         </div>
@@ -271,11 +271,11 @@ export default async function GulbergDeliveryPage() {
           </Link>
           <Link href="/delivery-areas/dha" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">DHA Lahore →</p>
-            <p className="text-xs text-[#2A2A2A]">Rs. 250 • 2–3 hours. Phases 1–9, Defence Raya and Sector Y with gated-community protocol.</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 2–3 hours. Phases 1–9, Defence Raya and Sector Y with gated-community protocol.</p>
           </Link>
           <Link href="/delivery-areas/cantt" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Lahore Cantt →</p>
-            <p className="text-xs text-[#2A2A2A]">Rs. 250 • 2–2.5 hours. Saddar, Cavalry Ground, PAF Colony and CMH with gate clearance.</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 2–2.5 hours. Saddar, Cavalry Ground, PAF Colony and CMH with gate clearance.</p>
           </Link>
         </div>
       </section>

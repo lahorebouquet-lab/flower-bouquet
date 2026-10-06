@@ -9,22 +9,22 @@ import { SITE_URL, areaFloristSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Flower Delivery in Thokar Niaz Baig Lahore | Rs. 300, 2–3 Hours",
+    absolute: "Flower Delivery Thokar Niaz Baig | FREE delivery, 2–3 hrs",
   },
-  description: "Same-day flower delivery to Thokar Niaz Baig Lahore — interchange, M-2 motorway entry & nearby blocks — in 2–3 hours. Delivery fee Rs. 300.",
+  description: "Same-day flower delivery to Thokar Niaz Baig Lahore — interchange, M-2 motorway entry & nearby blocks — in 2–3 hours. Delivery FREE delivery.",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/thokar-niaz-baig`,
   },
   openGraph: {
-    title: "Flower Delivery in Thokar Niaz Baig Lahore | Rs. 300, 2–3 Hours",
-    description: "Same-day flower delivery to Thokar Niaz Baig Lahore — interchange, M-2 motorway entry & nearby blocks — in 2–3 hours. Delivery fee Rs. 300.",
+    title: "Flower Delivery Thokar Niaz Baig | FREE delivery, 2–3 hrs",
+    description: "Same-day flower delivery to Thokar Niaz Baig Lahore — interchange, M-2 motorway entry & nearby blocks — in 2–3 hours. Delivery FREE delivery.",
     url: `${SITE_URL}/delivery-areas/thokar-niaz-baig`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in Thokar Niaz Baig Lahore | Rs. 300, 2–3 Hours",
+        alt: "Flower Delivery Thokar Niaz Baig | FREE delivery, 2–3 hrs",
       },
     ],
   }
@@ -64,7 +64,7 @@ const thokarNiazBaigFaqSchema = {
       name: "How long does flower delivery to Thokar Niaz Baig take, and what is the fee?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Delivery to Thokar Niaz Baig takes 2 to 3 hours with a flat fee of Rs. 300. Blocks close to the interchange and Multan Road arrive at the faster end; orders deeper toward Wapda Town take the full window in peak traffic.",
+        text: "Delivery to Thokar Niaz Baig takes 2 to 3 hours with free delivery. Blocks close to the interchange and Multan Road arrive at the faster end; orders deeper toward Wapda Town take the full window in peak traffic.",
       },
     },
     {
@@ -153,7 +153,7 @@ export default async function ThokarNiazBaigDeliveryPage() {
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
-          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 2 to 3 hours • Rs. 300 flat delivery fee</span>
+          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 2 to 3 hours • FREE delivery</span>
           <span className="flex items-center gap-1.5"><Camera className="w-4 h-4 text-[#C6A15B]" /> Photo on WhatsApp before it leaves</span>
           <a
             href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20flowers%20to%20Thokar%20Niaz%20Baig%20Lahore."
@@ -173,9 +173,9 @@ export default async function ThokarNiazBaigDeliveryPage() {
           <h2 className="font-playfair text-xl font-bold">Delivery time & fee — Thokar Niaz Baig Lahore</h2>
         </div>
         <ul className="space-y-2 text-xs text-[#2A2A2A] list-disc list-inside leading-relaxed">
-          <li><strong>Delivery fee: Rs. 300 flat</strong> — around the Thokar Niaz Baig interchange, the Multan Road corridor near Thokar and nearby blocks. No hidden charges.</li>
+          <li><strong>Delivery fee: FREE</strong> — around the Thokar Niaz Baig interchange, the Multan Road corridor near Thokar and nearby blocks. No hidden charges.</li>
           <li><strong>Delivery time: 2 to 3 hours</strong>, 7 days a week, from 9 AM to 1 AM. Interchange-side addresses are usually fastest; deeper blocks toward Wapda Town take the full window.</li>
-          <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM every night with a Rs. 500 surcharge — message us on WhatsApp by the evening to reserve it.</li>
+          <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM every night with free delivery — message us on WhatsApp by the evening to reserve it.</li>
           <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
           <li><strong>Prices start at Rs. 1,180.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
         </ul>
@@ -217,7 +217,7 @@ export default async function ThokarNiazBaigDeliveryPage() {
         <div className="divide-y divide-[rgba(198,161,91,0.25)]">
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How long does flower delivery to Thokar Niaz Baig take, and what is the fee?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery to Thokar Niaz Baig takes 2 to 3 hours with a flat fee of Rs. 300. Blocks close to the interchange and Multan Road arrive at the faster end; orders deeper toward Wapda Town take the full window in peak traffic.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery to Thokar Niaz Baig takes 2 to 3 hours with free delivery. Blocks close to the interchange and Multan Road arrive at the faster end; orders deeper toward Wapda Town take the full window in peak traffic.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Which areas around Thokar Niaz Baig do you cover?</h3>
@@ -250,7 +250,7 @@ export default async function ThokarNiazBaigDeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your block, street and house number, the occasion and your budget — or your expected arrival time if you are coming off the motorway. Our florists will suggest fresh options starting at Rs. 1,180.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh and send you a photo on WhatsApp before the rider leaves. Nothing ships until you reply that it looks perfect — ask for tweaks and we redo it.</li>
-          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your Thokar Niaz Baig address within 2–3 hours for the Rs. 300 flat fee — or in the midnight slot.</li>
+          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your Thokar Niaz Baig address within 2–3 hours for the FREE fee — or in the midnight slot.</li>
         </ol>
       </section>
 
@@ -279,15 +279,15 @@ export default async function ThokarNiazBaigDeliveryPage() {
         <div className="grid sm:grid-cols-3 gap-3">
           <Link href="/delivery-areas/johar-town" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Johar Town →</p>
-            <p className="text-xs text-[#2A2A2A]">Rs. 250 • 2–3 hours. G1 Market, Emporium Mall.</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 2–3 hours. G1 Market, Emporium Mall.</p>
           </Link>
           <Link href="/delivery-areas/iqbal-town" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Iqbal Town →</p>
-            <p className="text-xs text-[#2A2A2A]">Rs. 300 • 2–3 hours. Moon Market, blocks.</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 2–3 hours. Moon Market, blocks.</p>
           </Link>
           <Link href="/delivery-areas/faisal-town" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Faisal Town →</p>
-            <p className="text-xs text-[#2A2A2A]">Rs. 300 • 2–3 hours. Blocks near Johar Town.</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 2–3 hours. Blocks near Johar Town.</p>
           </Link>
         </div>
       </section>

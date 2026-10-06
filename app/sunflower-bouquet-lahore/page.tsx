@@ -84,34 +84,34 @@ export default async function SunflowerBouquetLahorePage() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "How much does a sunflower bouquet cost in Pakistan?",
+        name: "How long do sunflowers last?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Sunflower bouquets in Pakistan start from Rs. 1,590 to Rs. 1,900 for a two-stem hand-tied bunch, and range from Rs. 2,600 to Rs. 3,800 for sunflower and rose mixed bouquets."
+          text: "With clean water and regular stem trimming, fresh sunflowers last 5 to 7 days in a cool indoor spot."
         }
       },
       {
         "@type": "Question",
-        name: "How long do fresh sunflowers last?",
+        name: "Do sunflowers have a strong scent?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "With fresh clean water and stems trimmed every two days, fresh sunflowers typically last between 5 to 7 days in Lahore indoor conditions."
+          text: "No. Sunflowers have a very gentle, subtle earthy scent, making them safe for hospital rooms and people sensitive to strong perfumes."
         }
       },
       {
         "@type": "Question",
-        name: "Are fresh sunflowers available year-round in Lahore?",
+        name: "Can I customize sunflower with roses?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Fresh sunflowers are most abundant and vibrant during spring and summer. During off-peak weeks, we source greenhouse-grown stems or notify you before booking if substitutions are needed."
+          text: "Yes. Our popular \"Solara\" bouquet mixes golden sunflowers with red or blush pink roses for an elegant balance."
         }
       },
       {
         "@type": "Question",
-        name: "What do sunflowers symbolize when gifted?",
+        name: "Do you send a photo before delivery?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Sunflowers symbolize loyalty, adoration, optimism, and warmth. They are the ideal gift for birthdays, university graduations, and hospital get-well wishes."
+          text: "Always. We WhatsApp you a high-resolution photo of your actual bouquet before it leaves for delivery in Lahore."
         }
       }
     ]

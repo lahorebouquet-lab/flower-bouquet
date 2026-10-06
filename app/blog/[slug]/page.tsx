@@ -22,13 +22,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  // Keep title under 60 chars — truncate long Sanity titles at word boundaries.
-  const maxLen = 60 - " | Lahore Bouquet Blog".length;
+  // Keep title under ~60 chars at word boundaries. If the Sanity title is long,
+  // prefer the full heading over the "| Lahore Bouquet Blog" suffix.
+  const SUFFIX = " | Lahore Bouquet Blog";
   let shortTitle = post.title;
-  if (shortTitle.length > maxLen) {
-    shortTitle = shortTitle.slice(0, maxLen).trimEnd();
-    const ls = shortTitle.lastIndexOf(" ");
-    if (ls > maxLen * 0.6) shortTitle = shortTitle.slice(0, ls);
+  let fullTitle = `${shortTitle}${SUFFIX}`;
+  if (fullTitle.length > 62) {
+    // Try without suffix first
+    if (shortTitle.length <= 62) {
+      fullTitle = shortTitle;
+    } else {
+      // Truncate the heading itself at a word boundary, strip trailing punctuation
+      let cut = shortTitle.slice(0, 58).trimEnd();
+      const ls = cut.lastIndexOf(" ");
+      if (ls > 35) cut = cut.slice(0, ls);
+      shortTitle = cut.replace(/[:\-–—,.]+$/, "").trimEnd();
+      fullTitle = shortTitle;
+    }
   }
 
   // Article images must be absolute URLs for Google rich results.
@@ -38,7 +48,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: {
-      absolute: `${shortTitle} | Lahore Bouquet Blog`,
+      absolute: fullTitle,
     },
     description: post.excerpt,
     alternates: {

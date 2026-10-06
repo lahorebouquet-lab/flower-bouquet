@@ -8,22 +8,22 @@ import { SITE_URL, areaFloristSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Flower Delivery in Johar Town Lahore | Rs. 250, 2–3 Hours",
+    absolute: "Flower Delivery in Johar Town Lahore | FREE delivery, 2–3 hrs",
   },
-  description: "Same-day flower delivery across Johar Town Phases 1 & 2, Emporium Mall, G1 Market & Shaukat Khanum Hospital in 2–3 hours. Fee Rs. 250. WhatsApp photo",
+  description: "Same-day flower delivery across Johar Town Phases 1 & 2, Emporium Mall, G1 Market & Shaukat Khanum Hospital in 2–3 hours. FREE delivery. WhatsApp photo",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/johar-town`,
   },
   openGraph: {
-    title: "Flower Delivery in Johar Town Lahore | Rs. 250, 2–3 Hours",
-    description: "Same-day flower delivery across Johar Town Phases 1 & 2, Emporium Mall, G1 Market & Shaukat Khanum Hospital in 2–3 hours. Fee Rs. 250. WhatsApp photo",
+    title: "Flower Delivery in Johar Town Lahore | FREE delivery, 2–3 hrs",
+    description: "Same-day flower delivery across Johar Town Phases 1 & 2, Emporium Mall, G1 Market & Shaukat Khanum Hospital in 2–3 hours. FREE delivery. WhatsApp photo",
     url: `${SITE_URL}/delivery-areas/johar-town`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in Johar Town Lahore | Rs. 250, 2–3 Hours",
+        alt: "Flower Delivery in Johar Town Lahore | FREE delivery, 2–3 hrs",
       },
     ],
   }
@@ -75,7 +75,7 @@ export default async function JoharTownDeliveryPage() {
         name: "How fast is delivery to Johar Town Phase 1 and Emporium Mall area?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Standard delivery takes between 2 to 3 hours via Canal Road and Khayaban-e-Firdousi, with a flat fee of Rs. 250. Urgent express delivery can be arranged on WhatsApp at 0310-4225974.",
+          text: "Standard delivery takes between 2 to 3 hours via Canal Road and Khayaban-e-Firdousi, with free delivery. Urgent express delivery can be arranged on WhatsApp at 0310-4225974.",
         },
       },
       {
@@ -83,7 +83,7 @@ export default async function JoharTownDeliveryPage() {
         name: "What is the delivery fee for Johar Town?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "A flat Rs. 250 across Johar Town Phases 1 and 2, Faisal Town and the Emporium corridor — including midnight deliveries. No hidden charges.",
+          text: "Free delivery across Johar Town Phases 1 and 2, Faisal Town and the Emporium corridor — including midnight deliveries. No hidden charges.",
         },
       },
       {
@@ -137,11 +137,11 @@ export default async function JoharTownDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          We provide fresh flower bouquet delivery across Johar Town Phases 1 and 2, Faisal Town, and adjacent commercial hubs — all for a flat Rs. 250. Whether you need a celebration bouquet delivered near Emporium Mall, an anniversary surprise in Block J or R, or get-well flowers delivered to Shaukat Khanum Hospital or Doctors Hospital, our florists guarantee rapid dispatch and live WhatsApp photo proof before the rider leaves. To order, message 0310-4225974 on WhatsApp any time between 9 AM and 1 AM with your block and street — approve the bouquet photo, then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
+          We provide fresh flower bouquet delivery across Johar Town Phases 1 and 2, Faisal Town, and adjacent commercial hubs — all with free delivery. Whether you need a celebration bouquet delivered near Emporium Mall, an anniversary surprise in Block J or R, or get-well flowers delivered to Shaukat Khanum Hospital or Doctors Hospital, our florists guarantee rapid dispatch and live WhatsApp photo proof before the rider leaves. To order, message 0310-4225974 on WhatsApp any time between 9 AM and 1 AM with your block and street — approve the bouquet photo, then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
-          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 2 to 3 hours • Rs. 250 flat delivery fee</span>
+          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 2 to 3 hours • FREE delivery</span>
           <span className="flex items-center gap-1.5"><Camera className="w-4 h-4 text-[#C6A15B]" /> Photo on WhatsApp before dispatch</span>
           <a 
             href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20flowers%20to%20Johar%20Town%20Lahore."
@@ -161,7 +161,7 @@ export default async function JoharTownDeliveryPage() {
           <h2 className="font-playfair text-xl font-bold">Delivery time & fee — Johar Town Lahore</h2>
         </div>
         <ul className="space-y-2 text-xs text-[#2A2A2A] list-disc list-inside leading-relaxed">
-          <li><strong>Delivery fee: Rs. 250 flat</strong> — across Johar Town Phases 1 & 2, Faisal Town, the Emporium corridor and Khayaban-e-Firdousi. No hidden charges.</li>
+          <li><strong>Delivery fee: FREE</strong> — across Johar Town Phases 1 & 2, Faisal Town, the Emporium corridor and Khayaban-e-Firdousi. No hidden charges.</li>
           <li><strong>Delivery time: 2 to 3 hours</strong>, 7 days a week, from 9 AM to 1 AM, via Canal Road and Khayaban-e-Firdousi.</li>
           <li><strong>Midnight slot:</strong> available every night — message us on WhatsApp by the evening to reserve it.</li>
           <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
@@ -209,11 +209,11 @@ export default async function JoharTownDeliveryPage() {
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How fast is delivery to Johar Town Phase 1 and Emporium Mall area?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Standard delivery takes between 2 to 3 hours via Canal Road and Khayaban-e-Firdousi, with a flat fee of Rs. 250. Urgent express delivery can be arranged on WhatsApp at 0310-4225974.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Standard delivery takes between 2 to 3 hours via Canal Road and Khayaban-e-Firdousi, with free delivery. Urgent express delivery can be arranged on WhatsApp at 0310-4225974.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">What is the delivery fee for Johar Town?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">A flat Rs. 250 across Johar Town Phases 1 and 2, Faisal Town and the Emporium corridor — including midnight deliveries. No hidden charges.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Free delivery across Johar Town Phases 1 and 2, Faisal Town and the Emporium corridor — including midnight deliveries. No hidden charges.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Do you deliver flowers to offices and events near Expo Centre?</h3>
@@ -238,7 +238,7 @@ export default async function JoharTownDeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your Johar Town block and street, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,180 — including which roses and seasonal flowers arrived today.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh and send you a photo on WhatsApp before the rider leaves. Nothing ships until you reply that it looks perfect — ask for tweaks and we redo it.</li>
-          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your Johar Town block within 2–3 hours for Rs. 250 — or in the midnight slot.</li>
+          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your Johar Town block within 2–3 hours with free delivery — or in the midnight slot.</li>
         </ol>
       </section>
 
@@ -246,7 +246,7 @@ export default async function JoharTownDeliveryPage() {
       <section className="space-y-4">
         <div className="flex items-center justify-between text-xs text-[#2A2A2A]">
           <span>Popular bouquets ordered in Johar Town</span>
-          <Link href="/collections/bouquets" className="text-[#8B1E2D] hover:underline font-semibold">
+          <Link href="/bouquets" className="text-[#8B1E2D] hover:underline font-semibold">
             View All Bouquets →
           </Link>
         </div>
@@ -271,11 +271,11 @@ export default async function JoharTownDeliveryPage() {
           </Link>
           <Link href="/delivery-areas/wapda-town" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Wapda Town →</p>
-            <p className="text-xs text-[#2A2A2A]">Rs. 300 • 2.5–3.5 hours. Wapda Town, PIA Society, Valencia and Township.</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 2.5–3.5 hours. Wapda Town, PIA Society, Valencia and Township.</p>
           </Link>
           <Link href="/delivery-areas/dha" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">DHA Lahore →</p>
-            <p className="text-xs text-[#2A2A2A]">Rs. 250 • 2–3 hours. Phases 1–9, Defence Raya and Sector Y.</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 2–3 hours. Phases 1–9, Defence Raya and Sector Y.</p>
           </Link>
         </div>
       </section>

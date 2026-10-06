@@ -84,34 +84,34 @@ export default async function TulipBouquetLahorePage() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "Are fresh tulips available all year in Lahore?",
+        name: "Are tulips available all year in Lahore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Tulips are cold-climate flowers and seasonal in Pakistan. They are most readily available from November through April via air-freighted Dutch imports. Please verify daily stock on WhatsApp (0310-4225974)."
+          text: "They are cold-season imports from the Netherlands (primarily November to April). During other months, availability is limited and requires advance inquiry."
         }
       },
       {
         "@type": "Question",
-        name: "What is the tulip flower price in Pakistan?",
+        name: "How much does a tulip bouquet cost in Pakistan?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Because tulips are air-freighted from the Netherlands, prices typically range from Rs. 4,800 for a 10-stem bunch to Rs. 8,500+ for large 20-stem statement bouquets."
+          text: "Prices start from Rs. 4,800 for 10-12 stems, depending on current Dutch air-freight rates and seasonal availability."
         }
       },
       {
         "@type": "Question",
-        name: "How long do tulips last in Lahore?",
+        name: "Can I mix tulips with roses?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "In an air-conditioned room with cold water and ice cubes added daily, fresh tulips last between 4 to 6 days."
+          text: "Yes. We can create bespoke mixed arrangements pairing Dutch tulips with spray roses or baby's breath."
         }
       },
       {
         "@type": "Question",
-        name: "Why do cut tulips bend towards the light?",
+        name: "Do you send a picture before dispatch?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Tulips are one of the few flowers that continue to grow in the vase after being cut. They naturally curve towards sunlight. Rotate the vase daily to keep stems straight."
+          text: "Yes. You will receive a WhatsApp photo of your handcrafted tulip bouquet before our air-conditioned van departs."
         }
       }
     ]

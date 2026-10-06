@@ -52,13 +52,13 @@ export const COST_FACTORS = [
 export const OCCASIONS_DATA = [
   { name: "Anniversaries", href: "/occasions/anniversary", tag: "From PKR 1,900" },
   { name: "Birthdays", href: "/occasions/birthday", tag: "From PKR 1,180" },
-  { name: "Eid Celebrations", href: "/collections/bouquets", tag: "From PKR 1,500" },
-  { name: "Father's Day", href: "/collections/gifts-cakes", tag: "From PKR 1,800" },
-  { name: "Get Well Soon", href: "/collections/sunflowers", tag: "From PKR 500" },
-  { name: "Graduation Days", href: "/collections/bouquets", tag: "From PKR 1,200" },
-  { name: "Mother's Day", href: "/collections/roses", tag: "From PKR 1,900" },
-  { name: "Valentine's Day", href: "/collections/roses", tag: "From PKR 1,900" },
-  { name: "Send from Abroad (Overseas Pakistanis)", href: "/collections/bouquets", tag: "Worldwide Cards Accepted" },
+  { name: "Eid Celebrations", href: "/bouquets", tag: "From PKR 1,500" },
+  { name: "Father's Day", href: "/gifts-and-cakes", tag: "From PKR 1,800" },
+  { name: "Get Well Soon", href: "/sunflowers", tag: "From PKR 500" },
+  { name: "Graduation Days", href: "/bouquets", tag: "From PKR 1,200" },
+  { name: "Mother's Day", href: "/roses", tag: "From PKR 1,900" },
+  { name: "Valentine's Day", href: "/roses", tag: "From PKR 1,900" },
+  { name: "Send from Abroad (Overseas Pakistanis)", href: "/bouquets", tag: "Worldwide Cards Accepted" },
 ];
 
 export const LAHORE_DELIVERY_ZONES = [
@@ -139,7 +139,7 @@ export default function PricesClient() {
           {/* Primary Action Buttons */}
           <div className="pt-4 flex flex-wrap items-center justify-center gap-3.5">
             <Link
-              href="/collections/bouquets"
+              href="/bouquets"
               className="px-6 py-3.5 rounded-xl bg-[#8B1E2D] hover:bg-[#C6A15B] text-white hover:text-[#0B0B0B] font-bold text-xs uppercase tracking-wider flex items-center gap-2 shadow-lg transition-all"
             >
               <span>Browse All Bouquets</span>
@@ -305,7 +305,7 @@ export default function PricesClient() {
                 <span className="text-xs font-bold text-[#8B1E2D]">Sunflower Bouquets</span>
                 <div className="text-base font-bold text-[#0B0B0B]">From PKR 500</div>
                 <p className="text-[11px] text-[#2A2A2A]">Bright, cheerful golden blooms for birthdays, graduations, and get-well wishes.</p>
-                <Link href="/collections/sunflowers" className="text-[11px] text-[#8B1E2D] font-semibold flex items-center gap-1 pt-1 hover:text-[#C6A15B]">
+                <Link href="/sunflowers" className="text-[11px] text-[#8B1E2D] font-semibold flex items-center gap-1 pt-1 hover:text-[#C6A15B]">
                   <span>Explore Sunflowers</span> →
                 </Link>
               </div>
@@ -314,7 +314,7 @@ export default function PricesClient() {
                 <span className="text-xs font-bold text-[#8B1E2D]">Rose Bouquets</span>
                 <div className="text-base font-bold text-[#0B0B0B]">PKR 1,180 – 5,500</div>
                 <p className="text-[11px] text-[#2A2A2A]">Classic single-stem up to royal 50-stem imported Dutch velvet rose arrangements.</p>
-                <Link href="/collections/roses" className="text-[11px] text-[#8B1E2D] font-semibold flex items-center gap-1 pt-1 hover:text-[#C6A15B]">
+                <Link href="/roses" className="text-[11px] text-[#8B1E2D] font-semibold flex items-center gap-1 pt-1 hover:text-[#C6A15B]">
                   <span>Explore Roses</span> →
                 </Link>
               </div>
@@ -323,7 +323,7 @@ export default function PricesClient() {
                 <span className="text-xs font-bold text-[#8B1E2D]">Chocolate Bouquets</span>
                 <div className="text-base font-bold text-[#0B0B0B]">From PKR 2,299</div>
                 <p className="text-[11px] text-[#2A2A2A]">Ferrero Rocher, Cadbury Dairy Milk, and KitKat bars paired with fresh floral accents.</p>
-                <Link href="/collections/gifts-cakes" className="text-[11px] text-[#8B1E2D] font-semibold flex items-center gap-1 pt-1 hover:text-[#C6A15B]">
+                <Link href="/gifts-and-cakes" className="text-[11px] text-[#8B1E2D] font-semibold flex items-center gap-1 pt-1 hover:text-[#C6A15B]">
                   <span>Explore Chocolates</span> →
                 </Link>
               </div>
@@ -332,7 +332,7 @@ export default function PricesClient() {
                 <span className="text-xs font-bold text-[#8B1E2D]">Oriental Lily Bouquets</span>
                 <div className="text-base font-bold text-[#0B0B0B]">From PKR 3,999</div>
                 <p className="text-[11px] text-[#2A2A2A]">Ultra-fragrant Casablanca and Asiatic white/pink lilies for VIP corporate gifting.</p>
-                <Link href="/collections/bouquets" className="text-[11px] text-[#8B1E2D] font-semibold flex items-center gap-1 pt-1 hover:text-[#C6A15B]">
+                <Link href="/bouquets" className="text-[11px] text-[#8B1E2D] font-semibold flex items-center gap-1 pt-1 hover:text-[#C6A15B]">
                   <span>Explore Lilies</span> →
                 </Link>
               </div>
@@ -343,7 +343,7 @@ export default function PricesClient() {
                 <span className="font-bold text-[#0B0B0B]">Smart Value Tip:</span>
                 <p className="text-[#2A2A2A]">If you want the lowest bouquet price, keep the design compact and upgrade only the parts that matter most — such as luxury Korean matte wrap, a sprig of baby’s breath, or a personalized wax-sealed greeting card.</p>
               </div>
-              <Link href="/collections/bouquets" className="px-4 py-2 rounded-lg bg-[#8B1E2D] hover:bg-[#C6A15B] text-white hover:text-[#0B0B0B] font-bold whitespace-nowrap self-start sm:self-auto transition-all shadow-sm">
+              <Link href="/bouquets" className="px-4 py-2 rounded-lg bg-[#8B1E2D] hover:bg-[#C6A15B] text-white hover:text-[#0B0B0B] font-bold whitespace-nowrap self-start sm:self-auto transition-all shadow-sm">
                 Compare All Bouquets
               </Link>
             </div>
@@ -366,7 +366,7 @@ export default function PricesClient() {
                 <span className="text-xs font-bold text-[#8B1E2D]">Wedding Room Decoration</span>
                 <div className="text-base font-bold text-[#0B0B0B]">From PKR 6,000</div>
                 <p className="text-[11px] text-[#2A2A2A]">Petal pathways, canopy bed styling, scented candles, and ambient lighting upgrades.</p>
-                <Link href="/collections/wedding-decor" className="text-[11px] text-[#8B1E2D] font-semibold flex items-center gap-1 pt-1 hover:text-[#C6A15B]">
+                <Link href="/wedding-decor" className="text-[11px] text-[#8B1E2D] font-semibold flex items-center gap-1 pt-1 hover:text-[#C6A15B]">
                   <span>Room Styling</span> →
                 </Link>
               </div>
@@ -375,7 +375,7 @@ export default function PricesClient() {
                 <span className="text-xs font-bold text-[#8B1E2D]">Wedding Car Decoration</span>
                 <div className="text-base font-bold text-[#0B0B0B]">From PKR 1,500</div>
                 <p className="text-[11px] text-[#2A2A2A]">Ribbon designs up to full fresh flower bonnet cascades tailored to your car model.</p>
-                <Link href="/collections/wedding-decor" className="text-[11px] text-[#8B1E2D] font-semibold flex items-center gap-1 pt-1 hover:text-[#C6A15B]">
+                <Link href="/wedding-decor" className="text-[11px] text-[#8B1E2D] font-semibold flex items-center gap-1 pt-1 hover:text-[#C6A15B]">
                   <span>Car Styling</span> →
                 </Link>
               </div>
@@ -384,7 +384,7 @@ export default function PricesClient() {
                 <span className="text-xs font-bold text-[#8B1E2D]">Mayon & Mehndi Décor</span>
                 <div className="text-base font-bold text-[#0B0B0B]">From PKR 10,000</div>
                 <p className="text-[11px] text-[#2A2A2A]">Traditional yellow marigold walls, dholki cushions, floral hangings, and stage backdrops.</p>
-                <Link href="/collections/wedding-decor" className="text-[11px] text-[#8B1E2D] font-semibold flex items-center gap-1 pt-1 hover:text-[#C6A15B]">
+                <Link href="/wedding-decor" className="text-[11px] text-[#8B1E2D] font-semibold flex items-center gap-1 pt-1 hover:text-[#C6A15B]">
                   <span>Mehndi Stages</span> →
                 </Link>
               </div>
@@ -393,7 +393,7 @@ export default function PricesClient() {
                 <span className="text-xs font-bold text-[#8B1E2D]">Nikah Ceremony Décor</span>
                 <div className="text-base font-bold text-[#0B0B0B]">From PKR 15,000</div>
                 <p className="text-[11px] text-[#2A2A2A]">Pure white and pastel floral backdrops, mirror tables, and signature floral curtains.</p>
-                <Link href="/collections/wedding-decor" className="text-[11px] text-[#8B1E2D] font-semibold flex items-center gap-1 pt-1 hover:text-[#C6A15B]">
+                <Link href="/wedding-decor" className="text-[11px] text-[#8B1E2D] font-semibold flex items-center gap-1 pt-1 hover:text-[#C6A15B]">
                   <span>Nikah Stages</span> →
                 </Link>
               </div>
@@ -665,7 +665,7 @@ export default function PricesClient() {
             </a>
 
             <Link
-              href="/collections/bouquets"
+              href="/bouquets"
               className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-transparent border border-[#C6A15B] text-white hover:bg-[#C6A15B] hover:text-[#0B0B0B] font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all"
             >
               <span>Browse Catalog</span>

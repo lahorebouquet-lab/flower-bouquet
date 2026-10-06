@@ -74,23 +74,23 @@ export default async function FlowerDeliveryLahorePage() {
         name: "Do you offer same-day flower delivery in Lahore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Lahore Bouquet delivers fresh flowers the same day across Lahore for orders placed before 4:00 PM. Delivery typically takes between 2 to 5 hours from order confirmation."
+          text: "Yes. Orders placed before 4:00 PM are delivered the same day within 2 to 5 hours across all major Lahore localities."
         }
       },
       {
         "@type": "Question",
-        name: "Can I choose a specific delivery time in Lahore?",
+        name: "Can I choose a specific delivery time?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. You can select your preferred delivery window at checkout (Morning 10 AM-1 PM, Afternoon 1 PM-5 PM, Evening 5 PM-9 PM, or Midnight Surprise 11:30 PM-12:15 AM)."
+          text: "Yes. Choose from Morning (10 AM-1 PM), Afternoon (1 PM-5 PM), Evening (5 PM-9 PM), or Midnight (11:30 PM-12:15 AM) at checkout."
         }
       },
       {
         "@type": "Question",
-        name: "What if the receiver is not home at the time of delivery?",
+        name: "What if the receiver is not home?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Our courier calls the recipient before arriving. If they are unavailable, we contact you immediately to reschedule or safely leave the bouquet with a designated family member or security guard."
+          text: "Our rider calls the recipient before arriving. If unanswered, we immediately notify you before deciding whether to leave the package with security or reschedule."
         }
       },
       {
@@ -98,15 +98,7 @@ export default async function FlowerDeliveryLahorePage() {
         name: "Can I send flowers to a hospital in Lahore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. We deliver get-well-soon bouquets to major Lahore hospitals including Doctors Hospital, Shaukat Khanum, CMH, Hameed Latif, and National Hospital. Please ensure you provide the patient's name, ward, and room number."
-        }
-      },
-      {
-        "@type": "Question",
-        name: "Can I order flowers from overseas (UK, USA, UAE) for someone in Lahore?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes. Many of our customers live abroad and send flowers to family in Lahore. You can order online and pay securely with credit or debit card, bank transfer, or mobile wallet."
+          text: "Yes. We deliver to Doctors Hospital, Shaukat Khanum, CMH, Hameed Latif, and other medical centers. Include ward/room details during checkout."
         }
       }
     ]
