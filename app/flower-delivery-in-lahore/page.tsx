@@ -113,7 +113,7 @@ export default async function FlowerDeliveryLahorePage() {
       telephone: "+923104225974",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "MM Alam Road, Gulberg III",
+        streetAddress: "Lahore",
         addressLocality: "Lahore",
         addressRegion: "Punjab",
         postalCode: "54000",
@@ -127,7 +127,7 @@ export default async function FlowerDeliveryLahorePage() {
   };
 
   const deliveryZones = [
-    { zone: "Gulberg & MM Alam Atelier", fee: "Rs. 200 – 300", time: "1 to 2 hours", areas: "Gulberg I, II, III, Main Boulevard, Jail Road" },
+    { zone: "Gulberg & Lahore Atelier", fee: "Rs. 200 – 300", time: "1 to 2 hours", areas: "Gulberg I, II, III, Main Boulevard, Jail Road" },
     { zone: "DHA Phases 1 to 6 & Cantt", fee: "Rs. 350 – 450", time: "2 to 3 hours", areas: "DHA Phases 1-6, Cantt, Cavalry Ground, PAF Colony" },
     { zone: "Johar Town & Model Town", fee: "Rs. 350 – 450", time: "2 to 3 hours", areas: "Johar Town (G1/G2/Emporium), Model Town, Garden Town, Faisal Town" },
     { zone: "DHA Phases 7 to 9 & Raya", fee: "Rs. 500 – 600", time: "2.5 to 3.5 hours", areas: "DHA Phase 7, Phase 8 (Park View/Ex-Air Avenue), DHA Raya, Phase 9 Prism" },
@@ -207,7 +207,7 @@ export default async function FlowerDeliveryLahorePage() {
             Delivery Charges and Timing by Lahore Area
           </h2>
           <p className="text-xs sm:text-sm text-[#555555]">
-            Delivery charges are based on distance from our MM Alam Road atelier. We deliver safely in air-conditioned vehicles so blooms arrive crisp and fresh.
+            Delivery charges are based on distance from our Lahore atelier. We deliver safely in air-conditioned vehicles so blooms arrive crisp and fresh.
           </p>
         </div>
 

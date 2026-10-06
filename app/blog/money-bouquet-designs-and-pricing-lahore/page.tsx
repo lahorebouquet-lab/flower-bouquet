@@ -117,7 +117,7 @@ export default function MoneyBouquetGuidePage() {
         <div className="space-y-1 text-center sm:text-left">
           <h3 className="font-playfair text-xl font-bold text-white">Want to Customize a Cash Bouquet?</h3>
           <p className="text-xs text-[#F8F3EA]/75">
-            Speak directly with our MM Alam Road florists to choose your exact note denomination and floral styling.
+            Speak directly with our Lahore florists to choose your exact note denomination and floral styling.
           </p>
         </div>
         <Link 

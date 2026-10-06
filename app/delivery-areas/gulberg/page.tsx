@@ -7,15 +7,15 @@ import { MapPin, Clock, Camera, MessageCircle, Sparkles } from "lucide-react";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Express Flower Delivery in Gulberg Lahore | MM Alam & Liberty",
+    absolute: "Express Flower Delivery in Gulberg Lahore | Gulberg & Liberty",
   },
-  description: "Rapid 30–60 minute flower delivery across Gulberg I, II & III, MM Alam Road, Liberty and Main Boulevard from our MM Alam workshop. Photo on WhatsApp first.",
+  description: "Rapid 30–60 minute flower delivery across Gulberg I, II & III, Lahore, Liberty and Main Boulevard from our Lahore workshop. Photo on WhatsApp first.",
   alternates: {
     canonical: "https://lahorebouquet.com/delivery-areas/gulberg",
   },
   openGraph: {
-    title: "Express Flower Delivery in Gulberg Lahore | MM Alam & Liberty",
-    description: "Rapid 30–60 minute flower delivery across Gulberg I, II & III, MM Alam Road, Liberty and Main Boulevard from our MM Alam workshop. Photo on WhatsApp first.",
+    title: "Express Flower Delivery in Gulberg Lahore | Gulberg & Liberty",
+    description: "Rapid 30–60 minute flower delivery across Gulberg I, II & III, Lahore, Liberty and Main Boulevard from our Lahore workshop. Photo on WhatsApp first.",
     url: "https://lahorebouquet.com/delivery-areas/gulberg",
   }
 };
@@ -58,7 +58,7 @@ export default async function GulbergDeliveryPage() {
         name: "How quickly can you deliver flowers to Gulberg Lahore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Because our florist workshop is located directly on MM Alam Road in Gulberg III, orders to Gulberg I, II, III, Liberty, and Main Boulevard can be delivered within 30 to 90 minutes.",
+          text: "Because our florist workshop is located directly on Lahore, orders to Gulberg I, II, III, Liberty, and Main Boulevard can be delivered within 30 to 90 minutes.",
         },
       },
       {
@@ -96,7 +96,7 @@ export default async function GulbergDeliveryPage() {
       <section className="space-y-4">
         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#8B1E2D]/20 text-[#C6A15B] border border-[#8B1E2D] text-xs font-bold uppercase tracking-wider">
           <MapPin className="w-3.5 h-3.5 text-[#C6A15B]" />
-          Home Base • MM Alam Road Express (30–90 Mins)
+          Home Base • Express Delivery (30–90 Mins)
         </span>
 
         <h1 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0B0B0B] leading-tight">
@@ -104,7 +104,7 @@ export default async function GulbergDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Gulberg is our home neighborhood. Our workshop is located on MM Alam Road, Gulberg III, meaning your bouquets are tied fresh and delivered within minutes. Whether you are sending roses to an office on Main Boulevard, surprising someone at an MM Alam café, or ordering midnight flowers to Gulberg II, our florists guarantee rapid dispatch and live WhatsApp photo proof.
+          Gulberg is one of our fastest delivery zones. Our Lahore workshop ties your bouquets fresh and dispatches them within minutes. Whether you are sending roses to an office on Main Boulevard, surprising someone at an MM Alam café, or ordering midnight flowers to Gulberg II, our florists guarantee rapid dispatch and live WhatsApp photo proof.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
@@ -128,7 +128,7 @@ export default async function GulbergDeliveryPage() {
           <h2 className="font-playfair text-xl font-bold">Key Gulberg Delivery Zones</h2>
         </div>
         <ul className="space-y-2 text-xs text-[#2A2A2A] list-disc list-inside leading-relaxed">
-          <li><strong>MM Alam Road & Kasuri Road:</strong> Rapid doorstep delivery to fine-dining spots, corporate suites, and residential apartments.</li>
+          <li><strong>Lahore & Kasuri Road:</strong> Rapid doorstep delivery to fine-dining spots, corporate suites, and residential apartments.</li>
           <li><strong>Liberty Market & Noor Jehan Road:</strong> Boutiques, bridal salons, and shopping centers.</li>
           <li><strong>Main Boulevard & Jail Road Corridor:</strong> Commercial headquarters, banking plazas, and hotels.</li>
           <li><strong>Gulberg II & Mini Market:</strong> Quiet residential blocks, schools, and family homes.</li>

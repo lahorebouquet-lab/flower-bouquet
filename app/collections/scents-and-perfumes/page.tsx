@@ -85,7 +85,7 @@ export default async function ScentsAndPerfumesPage() {
         name: "Can I request a specific branded perfume to be delivered with flowers?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes! Our MM Alam Road concierge team can source your requested designer perfume (such as J., Khaadi, Chanel, Dior, or Versace) from authorized retail counters and pair it with fresh flowers.",
+          text: "Yes! Our Lahore concierge team can source your requested designer perfume (such as J., Khaadi, Chanel, Dior, or Versace) from authorized retail counters and pair it with fresh flowers.",
         },
       },
       {

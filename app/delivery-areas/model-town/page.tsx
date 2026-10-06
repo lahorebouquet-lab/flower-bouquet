@@ -58,7 +58,7 @@ export default async function ModelTownDeliveryPage() {
         name: "How fast is flower delivery to Model Town Lahore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "From our MM Alam Road workshop, Model Town is a short 15-20 minute drive down Ferozepur Road or Kalma Chowk underpass. Most orders reach Blocks A to M in 1.5 to 2.5 hours.",
+          text: "From our Lahore workshop, Model Town is a short 15-20 minute drive down Ferozepur Road or Kalma Chowk underpass. Most orders reach Blocks A to M in 1.5 to 2.5 hours.",
         },
       },
       {
@@ -104,7 +104,7 @@ export default async function ModelTownDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Located just minutes from our MM Alam Road workshop via Kalma Chowk, Model Town is one of our quickest delivery zones. We deliver fresh Dutch roses, sunflower arrangements, money bouquets, and celebration cakes across Blocks A through M, Circular Road, and Model Town Link Road within 2 hours.
+          Located just minutes from our Lahore workshop via Kalma Chowk, Model Town is one of our quickest delivery zones. We deliver fresh Dutch roses, sunflower arrangements, money bouquets, and celebration cakes across Blocks A through M, Circular Road, and Model Town Link Road within 2 hours.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">

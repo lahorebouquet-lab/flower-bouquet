@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "About Lahore Bouquet | Florist in Gulberg, Lahore",
   },
-  description: "Meet Lahore Bouquet, a florist on MM Alam Road, Gulberg. Hand-tied bouquets, bridal décor and same-day flower delivery across Lahore.",
+  description: "Meet Lahore Bouquet, a Lahore florist. Hand-tied bouquets, bridal décor and same-day flower delivery across Lahore.",
   alternates: {
     canonical: "https://lahorebouquet.com/about",
   },
   openGraph: {
     title: "About Lahore Bouquet | Florist in Gulberg, Lahore",
-    description: "Meet Lahore Bouquet, a florist on MM Alam Road, Gulberg. Hand-tied bouquets, bridal décor and same-day flower delivery across Lahore.",
+    description: "Meet Lahore Bouquet, a Lahore florist. Hand-tied bouquets, bridal décor and same-day flower delivery across Lahore.",
     url: "https://lahorebouquet.com/about",
   }
 };
@@ -40,10 +40,8 @@ const aboutSchema = {
       priceRange: "Rs. 1,180 - Rs. 14,500",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "MM Alam Road, Gulberg III",
         addressLocality: "Lahore",
         addressRegion: "Punjab",
-        postalCode: "54000",
         addressCountry: "PK",
       },
     },
@@ -69,7 +67,7 @@ export default function AboutPage() {
         <div className="w-10 h-[2px] bg-[#C6A15B]" />
         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white text-[#8B1E2D] border border-[#E5DED2] text-xs font-bold uppercase tracking-wider shadow-xs">
           <MapPin className="w-3.5 h-3.5 text-[#8B1E2D]" />
-          MM Alam Road, Gulberg III, Lahore
+          Lahore, Pakistan
         </span>
 
         <h1 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0B0B0B] leading-tight">
@@ -86,7 +84,7 @@ export default function AboutPage() {
         <div className="md:col-span-6 relative aspect-[4/3] rounded-2xl overflow-hidden border border-[rgba(198,161,91,0.25)] shadow-md">
           <Image 
             src="/images/hero_workshop.jpg"
-            alt="Lahore Bouquet Workshop on MM Alam Road Gulberg Lahore"
+            alt="Lahore Bouquet Workshop in Lahore"
             fill
             className="object-cover"
           />
@@ -159,7 +157,7 @@ export default function AboutPage() {
       <section className="p-8 rounded-2xl bg-[#0B0B0B] text-white border border-[#C6A15B]/30 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-md">
         <div className="space-y-1 text-center sm:text-left">
           <div className="text-base font-bold text-white">Visit our shop or order same-day online</div>
-          <div className="text-xs text-[#BDBDBD]">MM Alam Road, Gulberg III, Lahore • Open 9:00 AM to 1:00 AM daily.</div>
+          <div className="text-xs text-[#BDBDBD]">Lahore, Pakistan • Open 9:00 AM to 1:00 AM daily.</div>
         </div>
 
         <div className="flex items-center gap-3">

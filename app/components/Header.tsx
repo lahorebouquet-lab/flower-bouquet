@@ -74,7 +74,7 @@ const NAV_ITEMS: NavItem[] = [
     href: "/delivery-areas",
     children: [
       { name: "All Lahore Zones", href: "/delivery-areas", desc: "Full delivery schedule & coverage" },
-      { name: "Gulberg MM Alam Express", href: "/delivery-areas/gulberg", desc: "Our home workshop • 30–90 mins", badge: "Express" },
+      { name: "Gulberg Lahore Express", href: "/delivery-areas/gulberg", desc: "Our fastest delivery zone • 30–90 mins", badge: "Express" },
       { name: "DHA Lahore (Phases 1–9)", href: "/delivery-areas/dha", desc: "Phases 1-9, Raya & Sector Y", badge: "2-3h" },
       { name: "Bahria Town & Lake City", href: "/delivery-areas/bahria-town", desc: "Sectors A-F via Ring Road" },
       { name: "Model Town & Garden Town", href: "/delivery-areas/model-town", desc: "Blocks A-M & Link Road" },

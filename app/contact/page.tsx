@@ -21,10 +21,10 @@ export const metadata: Metadata = {
   title: {
     absolute: "Contact Lahore Bouquet | WhatsApp, Phone & Address",
   },
-  description: "Contact Lahore Bouquet on WhatsApp or phone, or visit us on MM Alam Road, Gulberg III, Lahore. Open 9 AM to 1 AM daily.",
+  description: "Contact Lahore Bouquet on WhatsApp or phone, in Lahore, Pakistan. Open 9 AM to 1 AM daily.",
   openGraph: {
     title: "Contact Lahore Bouquet | WhatsApp, Phone & Address",
-    description: "Contact Lahore Bouquet on WhatsApp or phone, or visit us on MM Alam Road, Gulberg III, Lahore. Open 9 AM to 1 AM daily.",
+    description: "Contact Lahore Bouquet on WhatsApp or phone, in Lahore, Pakistan. Open 9 AM to 1 AM daily.",
     url: "https://lahorebouquet.com/contact",
   },
   alternates: {
@@ -43,10 +43,8 @@ export default function ContactPage() {
     "email": "flowerbouquet@gmail.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "MM Alam Road, Gulberg III",
       "addressLocality": "Lahore",
       "addressRegion": "Punjab",
-      "postalCode": "54000",
       "addressCountry": "PK"
     },
     "geo": {
@@ -86,7 +84,7 @@ export default function ContactPage() {
           </h1>
 
           <p className="text-[#2A2A2A] max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-            Send us a WhatsApp message, call our Gulberg studio, or visit us in person on MM Alam Road. A real florist will answer your questions and take custom bouquet orders.
+            Send us a WhatsApp message or call our helpline. A real florist will answer your questions and take custom bouquet orders.
           </p>
 
           {/* Breadcrumb Navigation */}
@@ -177,10 +175,10 @@ export default function ContactPage() {
               <MapPin className="w-6 h-6" />
             </div>
             <div>
-              <span className="text-xs uppercase font-bold tracking-wider text-[#C6A15B]">Shop Location</span>
-              <h2 className="font-playfair text-xl font-bold text-[#0B0B0B] mt-1">Gulberg III Studio</h2>
+              <span className="text-xs uppercase font-bold tracking-wider text-[#C6A15B]">Service Area</span>
+              <h2 className="font-playfair text-xl font-bold text-[#0B0B0B] mt-1">Lahore Delivery Network</h2>
               <p className="text-xs text-[#2A2A2A] mt-1 leading-relaxed">
-                MM Alam Road, Gulberg III, Lahore, Punjab, Pakistan.
+                Lahore, Punjab, Pakistan. We deliver to homes, offices, hospitals, and venues across the city.
               </p>
             </div>
             <div className="text-xs text-[#2A2A2A] flex items-center gap-1.5 pt-1">
@@ -196,34 +194,17 @@ export default function ContactPage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-4">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
-            <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Find Us on MM Alam Road</h2>
-            <p className="text-xs text-[#2A2A2A]">MM Alam Road, Gulberg III, Lahore • Open 9:00 AM to 1:00 AM daily</p>
+            <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Serving All of Lahore</h2>
+            <p className="text-xs text-[#2A2A2A]">Lahore, Pakistan • Open 9:00 AM to 1:00 AM daily</p>
           </div>
 
-          <a
-            href="https://maps.google.com/?q=MM+Alam+Road+Gulberg+III+Lahore"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/delivery-areas"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#8B1E2D] hover:bg-[#C6A15B] text-white hover:text-[#0B0B0B] font-bold text-xs uppercase tracking-wider shadow-md transition-all self-start sm:self-auto active:scale-95"
           >
             <Navigation className="w-4 h-4" />
-            <span>Get Directions on Google Maps</span>
-          </a>
-        </div>
-
-        {/* Embedded Responsive Google Map */}
-        <div className="w-full aspect-[21/9] min-h-[300px] rounded-2xl overflow-hidden border border-[#E5DED2] shadow-md relative">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13606.331206822295!2d74.3486111!3d31.5097222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919045b85a3a41f%3A0x6b447833595ad596!2sM.M.+Alam+Rd%2C+Gulberg+III%2C+Lahore%2C+Punjab!5e0!3m2!1sen!2spk!4v1680000000000!5m2!1sen!2spk"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen={false}
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Lahore Bouquet Location on MM Alam Road Gulberg III Lahore"
-            className="w-full h-full"
-          />
+            <span>See Delivery Areas & Times</span>
+          </Link>
         </div>
       </section>
 

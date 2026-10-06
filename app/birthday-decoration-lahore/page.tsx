@@ -128,7 +128,7 @@ export default function BirthdayDecorationLahorePage() {
       telephone: "+92 310 4225974",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "MM Alam Road, Gulberg III",
+        streetAddress: "Lahore",
         addressLocality: "Lahore",
         addressCountry: "PK",
       },

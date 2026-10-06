@@ -29,7 +29,7 @@ export default function Footer() {
           <div className="lg:col-span-6 space-y-3">
             <Logo variant="footer" />
             <p className="text-[#BDBDBD] text-xs max-w-md leading-relaxed">
-              Lahore Bouquet is a luxury floral atelier on MM Alam Road, Gulberg III. We hand-tie fresh imported roses, arrange celebratory money bouquets, and hand-deliver across all sectors of Lahore. Direct florist assistance on WhatsApp.
+              Lahore Bouquet is a luxury floral atelier in Lahore. We hand-tie fresh imported roses, arrange celebratory money bouquets, and hand-deliver across all sectors of Lahore. Direct florist assistance on WhatsApp.
             </p>
           </div>
 
@@ -158,7 +158,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-[#C6A15B]" />
-                <span>MM Alam Road, Gulberg III, Lahore</span>
+                <span>Lahore, Pakistan</span>
               </div>
             </div>
           </div>

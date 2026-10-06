@@ -81,7 +81,7 @@ export default async function GiftsAndCakesPage() {
         name: "Are the cakes authentic from Layers Bakeshop Lahore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes, 100%. All Layers cakes are picked up fresh from official Layers Bakeshop kitchens (MM Alam Road / DHA Lahore) on the day of delivery, sealed in bakery packaging, and accompanied by the bakery tag and celebration candles."
+          text: "Yes, 100%. All Layers cakes are picked up fresh from official Layers Bakeshop kitchens (Lahore) on the day of delivery, sealed in bakery packaging, and accompanied by the bakery tag and celebration candles."
         }
       },
       {
@@ -181,7 +181,7 @@ export default async function GiftsAndCakesPage() {
           <ShieldCheck className="w-6 h-6 text-[#8B1E2D] shrink-0" />
           <div>
             <div className="font-bold text-[#0B0B0B]">100% Authentic Layers</div>
-            <div className="text-[11px] text-[#777777]">Fresh from MM Alam / DHA kitchens</div>
+            <div className="text-[11px] text-[#777777]">Fresh from Lahore kitchens</div>
           </div>
         </div>
         <div className="p-4 rounded-xl bg-white border border-[#E5DED2] flex items-center gap-3 shadow-xs">
@@ -256,7 +256,7 @@ export default async function GiftsAndCakesPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 text-xs text-[#2A2A2A] leading-relaxed">
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Are the cakes authentic from Layers Bakeshop?</h3>
-            <p>Yes. All cakes are picked up fresh from official Layers Bakeshop outlets on MM Alam Road and DHA Lahore immediately prior to dispatch.</p>
+            <p>Yes. All cakes are picked up fresh from official Layers Bakeshop outlets on Lahore and DHA Lahore immediately prior to dispatch.</p>
           </div>
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">How fast is the delivery in Lahore?</h3>

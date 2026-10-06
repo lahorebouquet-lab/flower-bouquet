@@ -75,7 +75,7 @@ export default async function HomePage() {
     image: "https://lahorebouquet.com/icon.png",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "MM Alam Road, Gulberg III",
+      streetAddress: "Lahore",
       addressLocality: "Lahore",
       addressRegion: "Punjab",
       postalCode: "54000",

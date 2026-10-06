@@ -476,7 +476,7 @@ export default function HomeClient({
               Handcrafted with Heart in Gulberg, Delivered across Lahore
             </h2>
             <p className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed">
-              Lahore Bouquet was founded with a singular conviction: <span className="text-[#8B1E2D] font-semibold">gifting flowers should be deeply personal and dependable</span>. Unlike automated aggregators, every arrangement is tied by our master florists on MM Alam Road.
+              Lahore Bouquet was founded with a singular conviction: <span className="text-[#8B1E2D] font-semibold">gifting flowers should be deeply personal and dependable</span>. Unlike automated aggregators, every arrangement is tied by our master florists in Lahore.
             </p>
             <p className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed">
               Whether you are sending <span className="text-[#8B1E2D] font-semibold">50 imported red roses to DHA</span>, arranging fresh motia gajray for a wedding in Model Town, or preparing a midnight birthday surprise in Johar Town, our florists personally craft and photograph your order before dispatch.

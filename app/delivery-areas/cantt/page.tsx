@@ -104,7 +104,7 @@ export default async function CanttDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Lahore Cantonment and Cavalry Ground require reliable couriers who understand gate security protocols and military checkpoint navigation. From our workshop on MM Alam Road, we cross into Cantt via Sherpao Bridge or Cavalry Underpass within 20 minutes, delivering handcrafted bouquets with live WhatsApp proof.
+          Lahore Cantonment and Cavalry Ground require reliable couriers who understand gate security protocols and military checkpoint navigation. From our workshop on Lahore, we cross into Cantt via Sherpao Bridge or Cavalry Underpass within 20 minutes, delivering handcrafted bouquets with live WhatsApp proof.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">

@@ -74,7 +74,7 @@ export default function DeliveryAreasPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          We deliver across Lahore from our shop on MM Alam Road, Gulberg III. Areas closer to us are usually quicker. Tell us the full address and we'll confirm the time.
+          We deliver across Lahore from our local base. Areas closer to our dispatch points are usually quicker. Tell us the full address and we'll confirm the time.
         </p>
       </section>
 

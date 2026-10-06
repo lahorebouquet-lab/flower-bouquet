@@ -634,7 +634,7 @@ export const ALL_PRODUCTS: Product[] = [
     "category": "Gifts & Cakes",
     "rating": 5,
     "reviewCount": 42,
-    "desc": "Original Layers Bakeshop Raffaello Cake in Lahore. Super-moist delicate vanilla sponge layered with velvety white chocolate mousse, roasted almond crumbles, and topped with iconic Raffaello truffles. Freshly picked up from Layers kitchen on MM Alam Road and delivered across Lahore in 2 to 4 hours with live WhatsApp photo proof before dispatch.",
+    "desc": "Original Layers Bakeshop Raffaello Cake in Lahore. Super-moist delicate vanilla sponge layered with velvety white chocolate mousse, roasted almond crumbles, and topped with iconic Raffaello truffles. Freshly picked up from Layers kitchen on Lahore and delivered across Lahore in 2 to 4 hours with live WhatsApp photo proof before dispatch.",
     "stems": "Original 2.5 Lbs Layers Cake, Candle & Free Greeting Card",
     "swatches": [
       "#FAF7F2",

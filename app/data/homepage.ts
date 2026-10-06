@@ -6,7 +6,7 @@ export interface FAQItem {
 export const HOMEPAGE_FAQS: FAQItem[] = [
   {
     q: "Is there a flower shop near me in Lahore that delivers the same day?",
-    a: "Yes. Lahore Bouquet is located on MM Alam Road, Gulberg III, and delivers the same day across all major areas of Lahore (DHA, Gulberg, Johar Town, Model Town, Bahria Town, Cantt) for orders placed before 4:00 PM. Delivery typically takes 2 to 5 hours."
+    a: "Yes. Lahore Bouquet is located on Lahore, and delivers the same day across all major areas of Lahore (DHA, Gulberg, Johar Town, Model Town, Bahria Town, Cantt) for orders placed before 4:00 PM. Delivery typically takes 2 to 5 hours."
   },
   {
     q: "How much does a flower bouquet cost in Lahore?",

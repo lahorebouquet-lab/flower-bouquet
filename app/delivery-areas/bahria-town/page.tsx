@@ -104,7 +104,7 @@ export default async function BahriaTownDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Sending flowers to Bahria Town requires careful temperature control during transit. From our workshop on MM Alam Road, our climate-controlled courier vans navigate via Lahore Ring Road to reach Sectors A through F, Safari Villas, and Lake City within 2.5 to 4 hours. You receive a photo of your hand-tied bouquet on WhatsApp before our driver departs.
+          Sending flowers to Bahria Town requires careful temperature control during transit. From our workshop on Lahore, our climate-controlled courier vans navigate via Lahore Ring Road to reach Sectors A through F, Safari Villas, and Lake City within 2.5 to 4 hours. You receive a photo of your hand-tied bouquet on WhatsApp before our driver departs.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">

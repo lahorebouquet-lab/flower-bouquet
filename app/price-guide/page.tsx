@@ -117,7 +117,7 @@ export default function PriceGuidePage() {
           <div className="space-y-3">
             <h2 className="font-playfair text-xl font-bold text-[#0B0B0B]">Is delivery extra?</h2>
             <p className="text-xs text-[#2A2A2A] leading-relaxed">
-              Delivery charges depend on your delivery sector in Lahore (typically Rs. 200–350 depending on distance from our MM Alam Road Gulberg flower shop). We always tell you the exact delivery charge before you confirm your order.
+              Delivery charges depend on your delivery sector in Lahore (typically Rs. 200–350 depending on distance from our Lahore Gulberg flower shop). We always tell you the exact delivery charge before you confirm your order.
             </p>
           </div>
           <div className="pt-2 border-t border-[#E5DED2]">
