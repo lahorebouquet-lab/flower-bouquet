@@ -7,7 +7,7 @@ import { Sparkles, Truck, Camera, MessageCircle, HelpCircle, Heart, Droplets, Ch
 import { ALL_PRODUCTS } from "../data/products";
 import { SITE_URL, itemListSchema } from "@/lib/business";
 
-const BASE_METADATA: Metadata = {
+export const BASE_METADATA: Metadata = {
   title: {
     absolute: "Flower Bouquets in Lahore | Fresh, Hand-Tied, Delivered",
   },

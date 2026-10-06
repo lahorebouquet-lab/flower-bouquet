@@ -1,1 +1,1 @@
-export { default, metadata } from "../../bouquets/page";
+export { default, BASE_METADATA as metadata } from "../../bouquets/page";
