@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/wedding-room-decoration-lahore`,
     images: [
       {
-        url: `${SITE_URL}/images/page-wedding-room-decoration.webp`,
+        url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
-        height: 800,
+        height: 630,
         alt: "Romantic bridal room decorated with red rose petals, candles and fairy lights in Lahore",
       },
     ],
@@ -137,16 +137,6 @@ export default function WeddingRoomDecorationPage() {
           <span className="flex items-center gap-1.5"><Truck className="w-4 h-4 text-[#8B1E2D]" /> We come to your home / hotel</span>
           <span className="flex items-center gap-1.5"><Camera className="w-4 h-4 text-[#C6A15B]" /> Photo before handover</span>
           <span className="flex items-center gap-1.5"><CalendarCheck className="w-4 h-4 text-[#8B1E2D]" /> Book 3–5 days ahead</span>
-        </div>
-
-        <div className="rounded-2xl overflow-hidden border border-[rgba(198,161,91,0.35)] shadow-sm">
-          <img
-            src="/images/page-wedding-room-decoration.webp"
-            alt="Bridal bedroom decorated with red rose petals in a heart shape, candles and fairy lights — wedding room decoration in Lahore"
-            className="w-full h-auto object-cover"
-            loading="eager"
-            fetchPriority="high"
-          />
         </div>
       </section>
 

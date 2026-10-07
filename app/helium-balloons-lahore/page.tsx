@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/helium-balloons-lahore`,
     images: [
       {
-        url: `${SITE_URL}/images/page-helium-balloons-lahore.webp`,
+        url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
-        height: 800,
+        height: 630,
         alt: "Colorful helium balloons with ribbons for birthday decoration in Lahore",
       },
     ],
@@ -130,16 +130,6 @@ export default function HeliumBalloonsLahorePage() {
           <span className="flex items-center gap-1.5"><Truck className="w-4 h-4 text-[#8B1E2D]" /> Same-day 2–5 hour delivery</span>
           <span className="flex items-center gap-1.5"><Camera className="w-4 h-4 text-[#C6A15B]" /> Photo approval on WhatsApp first</span>
           <span className="flex items-center gap-1.5"><BadgeCheck className="w-4 h-4 text-[#8B1E2D]" /> Inflated fresh before dispatch</span>
-        </div>
-
-        <div className="rounded-2xl overflow-hidden border border-[rgba(198,161,91,0.35)] shadow-sm">
-          <img
-            src="/images/page-helium-balloons-lahore.webp"
-            alt="Bunch of colorful helium balloons with ribbons — helium balloon delivery and birthday decoration in Lahore"
-            className="w-full h-auto object-cover"
-            loading="eager"
-            fetchPriority="high"
-          />
         </div>
       </section>
 

@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/teddy-bears-lahore`,
     images: [
       {
-        url: `${SITE_URL}/images/page-teddy-bears-lahore.webp`,
+        url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
-        height: 800,
+        height: 630,
         alt: "Giant teddy bear holding red roses — teddy bear delivery in Lahore",
       },
     ],
@@ -132,16 +132,6 @@ export default function TeddyBearsLahorePage() {
           <span className="flex items-center gap-1.5"><Truck className="w-4 h-4 text-[#8B1E2D]" /> Same-day 2–5 hour delivery</span>
           <span className="flex items-center gap-1.5"><Camera className="w-4 h-4 text-[#C6A15B]" /> Photo approval on WhatsApp first</span>
           <span className="flex items-center gap-1.5"><MoonStar className="w-4 h-4 text-[#8B1E2D]" /> Midnight delivery 11:30 PM – 12:15 AM</span>
-        </div>
-
-        <div className="rounded-2xl overflow-hidden border border-[rgba(198,161,91,0.35)] shadow-sm">
-          <img
-            src="/images/page-teddy-bears-lahore.webp"
-            alt="Giant teddy bear holding a bouquet of red roses — teddy bear delivery in Lahore by Lahore Bouquet"
-            className="w-full h-auto object-cover"
-            loading="eager"
-            fetchPriority="high"
-          />
         </div>
       </section>
 
