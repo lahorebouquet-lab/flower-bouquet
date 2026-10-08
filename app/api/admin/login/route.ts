@@ -1,14 +1,37 @@
 import { NextRequest, NextResponse } from 'next/server'
 import {
   verifyPassword,
-  expectedSessionToken,
+  createSession,
+  destroySession,
   adminCookie,
   ADMIN_COOKIE_NAME,
 } from '@/lib/adminAuth'
 
-/** Admin login: verify password, set httpOnly session cookie. */
+// In-memory rate limit: max 5 login attempts per IP per 10 minutes.
+// (Resets on redeploy — enough to blunt brute-force scripts.)
+const loginAttempts = new Map<string, { count: number; resetAt: number }>()
+function isRateLimited(ip: string): boolean {
+  const now = Date.now()
+  const entry = loginAttempts.get(ip)
+  if (!entry || now > entry.resetAt) {
+    loginAttempts.set(ip, { count: 1, resetAt: now + 10 * 60 * 1000 })
+    return false
+  }
+  entry.count += 1
+  return entry.count > 5
+}
+
+/** Admin login: verify password, mint a random Sanity-backed session. */
 export async function POST(req: NextRequest) {
   try {
+    const ip = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'unknown'
+    if (isRateLimited(ip)) {
+      return NextResponse.json(
+        { error: 'Too many attempts. Please try again in a few minutes.' },
+        { status: 429 }
+      )
+    }
+
     const body = await req.json()
     const password = String(body.password || '')
 
@@ -18,9 +41,9 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Ghalat password' }, { status: 401 })
     }
 
-    const token = expectedSessionToken()
+    const token = await createSession()
     if (!token) {
-      return NextResponse.json({ error: 'Admin login is not configured' }, { status: 500 })
+      return NextResponse.json({ error: 'Could not create admin session' }, { status: 500 })
     }
 
     const res = NextResponse.json({ ok: true })
@@ -39,8 +62,9 @@ export async function POST(req: NextRequest) {
   }
 }
 
-/** Admin logout: clear the session cookie. */
+/** Admin logout: destroy the server-side session and clear the cookie. */
 export async function DELETE() {
+  await destroySession()
   const res = NextResponse.json({ ok: true })
   res.cookies.set(ADMIN_COOKIE_NAME, '', { path: '/', maxAge: 0 })
   return res
