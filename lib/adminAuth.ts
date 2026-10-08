@@ -95,8 +95,63 @@ export async function destroySession(): Promise<void> {
   }
 }
 
-export function adminCookie(token: string) {
-  return {
+const LOGIN_MAX_ATTEMPTS = 5
+const LOGIN_WINDOW_MS = 10 * 60 * 1000 // 10 minutes
+
+function attemptDocId(ip: string): string {
+  const safe = ip.replace(/[^a-zA-Z0-9]/g, '-').slice(0, 64) || 'unknown'
+  return `loginAttempt.${safe}`
+}
+
+/**
+ * Sanity-backed login rate limit (serverless-safe: per-instance memory
+ * doesn't survive across Vercel function instances). Returns true when the
+ * IP has exhausted its attempts for the current window.
+ */
+export async function isLoginRateLimited(ip: string): Promise<boolean> {
+  const id = attemptDocId(ip)
+  const now = Date.now()
+  try {
+    const doc = await writeClient.fetch(
+      `*[_type == "loginAttempt" && _id == $id][0]{ count, resetAt }`,
+      { id }
+    )
+    if (!doc || now > new Date(doc.resetAt).getTime()) {
+      await writeClient.createOrReplace({
+        _id: id,
+        _type: 'loginAttempt',
+        ip,
+        count: 1,
+        resetAt: new Date(now + LOGIN_WINDOW_MS).toISOString(),
+      })
+      // Best-effort cleanup of stale counters.
+      writeClient
+        .delete({
+          query: `*[_type == "loginAttempt" && resetAt < $cutoff]`,
+          params: { cutoff: new Date(now - 60 * 60 * 1000).toISOString() },
+        })
+        .catch(() => {})
+      return false
+    }
+    if (doc.count >= LOGIN_MAX_ATTEMPTS) return true
+    await writeClient.patch(id).inc({ count: 1 }).commit()
+    return false
+  } catch (err) {
+    console.error('login rate-limit check failed:', err)
+    return false // fail open — password check + delay still apply
+  }
+}
+
+/** Clear the attempt counter after a successful login. */
+export async function clearLoginAttempts(ip: string): Promise<void> {
+  try {
+    await writeClient.delete(attemptDocId(ip))
+  } catch {
+    /* nothing to clear */
+  }
+}
+
+export function adminCookie(token: string) {  return {
     name: COOKIE_NAME,
     value: token,
     httpOnly: true,

@@ -3,29 +3,17 @@ import {
   verifyPassword,
   createSession,
   destroySession,
+  isLoginRateLimited,
+  clearLoginAttempts,
   adminCookie,
   ADMIN_COOKIE_NAME,
 } from '@/lib/adminAuth'
-
-// In-memory rate limit: max 5 login attempts per IP per 10 minutes.
-// (Resets on redeploy — enough to blunt brute-force scripts.)
-const loginAttempts = new Map<string, { count: number; resetAt: number }>()
-function isRateLimited(ip: string): boolean {
-  const now = Date.now()
-  const entry = loginAttempts.get(ip)
-  if (!entry || now > entry.resetAt) {
-    loginAttempts.set(ip, { count: 1, resetAt: now + 10 * 60 * 1000 })
-    return false
-  }
-  entry.count += 1
-  return entry.count > 5
-}
 
 /** Admin login: verify password, mint a random Sanity-backed session. */
 export async function POST(req: NextRequest) {
   try {
     const ip = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'unknown'
-    if (isRateLimited(ip)) {
+    if (await isLoginRateLimited(ip)) {
       return NextResponse.json(
         { error: 'Too many attempts. Please try again in a few minutes.' },
         { status: 429 }
@@ -45,6 +33,7 @@ export async function POST(req: NextRequest) {
     if (!token) {
       return NextResponse.json({ error: 'Could not create admin session' }, { status: 500 })
     }
+    await clearLoginAttempts(ip)
 
     const res = NextResponse.json({ ok: true })
     const c = adminCookie(token)
