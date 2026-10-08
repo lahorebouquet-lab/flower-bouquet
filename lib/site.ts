@@ -3,12 +3,13 @@
  * Single source of truth for contact details used across the site
  * (header, footer, checkout, JSON-LD schema, WhatsApp links).
  *
- * NOTE: CONTACT_EMAIL was changed from flowerbouquet@gmail.com to
- * info@lahorebouquet.com on 2026-10-06 per owner request. Ensure this
- * inbox is monitored before relying on it for customer contact.
+ * NOTE: CONTACT_EMAIL was changed from info@lahorebouquet.com to
+ * lahorebouquet@gmail.com on 2026-10-08 per owner request ("ye hi lge
+ * rehne do"). Ensure this inbox is monitored before relying on it for
+ * customer contact.
  */
 
-export const CONTACT_EMAIL = "info@lahorebouquet.com";
+export const CONTACT_EMAIL = "lahorebouquet@gmail.com";
 
 export const CONTACT_PHONE = {
   /** E.164 for tel: links and schema */
