@@ -287,6 +287,15 @@ export function CartProvider({ children }: { children: ReactNode }) {
     setPlacedOrderId(randomId);
     setCheckoutStep(5);
     showToast(`Order Confirmed! ID: ${randomId}`);
+    // Remember this order on the device so /track-order can pre-fill it later.
+    try {
+      const recent = JSON.parse(localStorage.getItem('lb_recent_orders') || '[]');
+      const list = Array.isArray(recent) ? recent : [];
+      list.unshift({ orderId: randomId, phone: senderPhone || '', placedAt: new Date().toISOString() });
+      localStorage.setItem('lb_recent_orders', JSON.stringify(list.slice(0, 5)));
+    } catch {
+      /* ignore */
+    }
     // Save the order to Sanity so it appears in the /admin dashboard.
     // Fire-and-forget: the WhatsApp flow is the primary channel, so a save
     // failure must never block the customer.

@@ -1,7 +1,6 @@
 'use client'
 
-import { useState } from 'react'
-import Link from 'next/link'
+import { useState, useEffect } from 'react'
 
 const TIMELINE = [
   { value: 'pending', label: 'Order Received', icon: '🧾', desc: 'Hum ne aap ka order receive kar liya hai' },
@@ -33,6 +32,24 @@ export default function TrackOrderClient() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const [order, setOrder] = useState<TrackedOrder | null>(null)
+  const [recentOrder, setRecentOrder] = useState<{ orderId: string; phone: string } | null>(null)
+
+  // Pre-fill from the last order placed on this device (saved at checkout)
+  useEffect(() => {
+    try {
+      const recent = JSON.parse(localStorage.getItem('lb_recent_orders') || '[]')
+      if (Array.isArray(recent) && recent.length > 0) {
+        const latest = recent[0]
+        if (latest.orderId) {
+          setOrderId(latest.orderId)
+          setRecentOrder({ orderId: latest.orderId, phone: latest.phone || '' })
+          if (latest.phone) setPhone(latest.phone)
+        }
+      }
+    } catch {
+      /* ignore */
+    }
+  }, [])
 
   const track = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -193,8 +210,22 @@ export default function TrackOrderClient() {
 
         {/* Help */}
         <p className="text-center text-xs text-[#999]">
-          Order ID nahi mil rahi? <Link href="/" className="text-[#8B1E2D] underline">WhatsApp par rabta karein</Link> — hum dhoond ke de denge.
+          Order ID nahi mil rahi?{' '}
+          <a
+            href={`https://wa.me/923104225974?text=${encodeURIComponent('Assalam-o-Alaikum! Mujhe apni Order ID nahi mil rahi — mera order dhoondne me madad karein. Mera naam aur phone number ye hai:')}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#8B1E2D] underline font-bold"
+          >
+            WhatsApp par rabta karein (0310-4225974)
+          </a>{' '}
+          — hum dhoond ke de denge.
         </p>
+        {recentOrder && !order && (
+          <p className="text-center text-xs text-[#8B1E2D] bg-[#8B1E2D]/5 border border-[#8B1E2D]/20 rounded-xl px-4 py-3">
+            ✅ Aap ka last order <b>#{recentOrder.orderId}</b> upar fill kar diya gaya hai — bas phone number confirm karke Track dabayein.
+          </p>
+        )}
 
         {/* FAQs */}
         <section className="bg-white rounded-2xl border border-[#E5DED2] p-6 space-y-4">
