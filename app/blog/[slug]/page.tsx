@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { Calendar, Clock, User, ArrowLeft, ArrowRight, Share2, Sparkles } from "lucide-react";
 import { getSanityBlogPost, getSanityBlogPosts } from "@/sanity/lib/fetch";
 import { PortableText } from "next-sanity";
+import { urlFor } from "@/sanity/lib/image";
 import { SITE_URL } from "@/lib/business";
 
 interface Props {
@@ -157,6 +158,30 @@ export default async function BlogPostPage({ params }: Props) {
       strong: ({ children }: any) => (
         <strong className="font-bold text-[#0B0B0B]">{children}</strong>
       ),
+    },
+    types: {
+      image: ({ value }: any) => {
+        const src = value?.asset?._ref ? urlFor(value)?.width(1200)?.url() : null;
+        if (!src) return null;
+        return (
+          <figure className="my-8">
+            <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-md border border-[rgba(198,161,91,0.25)] bg-white">
+              <Image
+                src={src}
+                alt={value?.alt || "Lahore Bouquet"}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 800px"
+              />
+            </div>
+            {value?.caption && (
+              <figcaption className="text-center text-xs text-[#777777] mt-2 italic">
+                {value.caption}
+              </figcaption>
+            )}
+          </figure>
+        );
+      },
     },
   };
 
