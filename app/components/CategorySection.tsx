@@ -163,7 +163,7 @@ export const ALL_DEPARTMENTS: DepartmentItem[] = [
     type: "gifts",
     tagline: "Motia & rose handcrafted wrist cuffs",
     href: "/collections/fresh-flower-gajray",
-    image: "/images/gajray/complete-fresh-flower-gajra-set-lahore.png",
+    image: "/images/gajray/complete-fresh-flower-gajra-set-lahore.webp",
     badge: "Handmade",
   },
   {
