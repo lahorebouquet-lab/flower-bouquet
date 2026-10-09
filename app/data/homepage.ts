@@ -6,7 +6,7 @@ export interface FAQItem {
 export const HOMEPAGE_FAQS: FAQItem[] = [
   {
     q: "How much does a flower bouquet cost in Lahore?",
-    a: "Bouquets at Lahore Bouquet start at Rs. 1,180 for a single rose and Rs. 1,900 for a fresh hand-tied bunch. Medium rose bouquets range from Rs. 2,600 to Rs. 3,800, large signature Dutch rose arrangements are Rs. 7,499, and premium imported-flower designs go up to Rs. 35,000. Our prices page has the complete rate list with per-stem and bouquet pricing."
+    a: "Bouquets at Lahore Bouquet start at Rs. 1,239 for a single rose and Rs. 1,900 for a fresh hand-tied bunch. Medium rose bouquets range from Rs. 2,600 to Rs. 3,800, large signature Dutch rose arrangements are Rs. 7,499, and premium imported-flower designs go up to Rs. 35,000. Our prices page has the complete rate list with per-stem and bouquet pricing."
   },
   {
     q: "How much does a gulab ka guldasta (rose bouquet) cost in Lahore?",
@@ -46,7 +46,7 @@ export const HOMEPAGE_FAQS: FAQItem[] = [
   },
   {
     q: "Do you sell flowers if I just need a single bunch or small bouquet?",
-    a: "Yes. Hand-tied small bouquets start from Rs. 1,180 to Rs. 1,900. Whether you need a delicate gift bunch or a huge statement bouquet, every order is handcrafted fresh on the day of delivery."
+    a: "Yes. Hand-tied small bouquets start from Rs. 1,239 to Rs. 1,900. Whether you need a delicate gift bunch or a huge statement bouquet, every order is handcrafted fresh on the day of delivery."
   },
   {
     q: "Do you deliver cakes and gifts with flowers?",

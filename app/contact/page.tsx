@@ -70,7 +70,7 @@ export default function ContactPage() {
         "closes": "01:00"
       }
     ],
-    "priceRange": "Rs. 1,180 - Rs. 14,500"
+    "priceRange": "Rs. 1,239 - Rs. 14,500"
   };
 
   return (

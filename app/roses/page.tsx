@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "Rose Bouquets in Lahore | Red & White Roses Delivery",
   },
-  description: "Fresh imported Dutch roses in Lahore. Single stems from Rs. 1,180, dozens, 24 and 50-rose bouquets. Photo on WhatsApp before delivery.",
+  description: "Fresh imported Dutch roses in Lahore. Single stems from Rs. 1,239, dozens, 24 and 50-rose bouquets. Photo on WhatsApp before delivery.",
   alternates: {
     canonical: `${SITE_URL}/roses`,
   },
   openGraph: {
     title: "Rose Bouquets in Lahore | Red & White Roses Delivery",
-    description: "Fresh imported Dutch roses in Lahore. Single stems from Rs. 1,180, dozens, 24 and 50-rose bouquets. Photo on WhatsApp before delivery.",
+    description: "Fresh imported Dutch roses in Lahore. Single stems from Rs. 1,239, dozens, 24 and 50-rose bouquets. Photo on WhatsApp before delivery.",
     url: `${SITE_URL}/roses`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
@@ -140,7 +140,7 @@ export default async function RosesPage() {
           </h1>
 
           <p className="text-[#F8F3EA]/85 text-xs sm:text-sm leading-relaxed font-light">
-            <strong className="text-white">Rose bouquets in Lahore start from Rs. 1,180 with same-day delivery in 2–5 hours.</strong> Roses say what you cannot say out loud. We use imported Dutch roses for our main bouquets because the heads are bigger, the stems are longer, and they last longer in a vase once you trim them. A single rose in black wrapping is enough for some people. Others want 50.
+            <strong className="text-white">Rose bouquets in Lahore start from Rs. 1,239 with same-day delivery in 2–5 hours.</strong> Roses say what you cannot say out loud. We use imported Dutch roses for our main bouquets because the heads are bigger, the stems are longer, and they last longer in a vase once you trim them. A single rose in black wrapping is enough for some people. Others want 50.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-2 text-xs text-white/80">

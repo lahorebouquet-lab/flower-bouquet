@@ -4,7 +4,7 @@ import { FAQ_DATA, SNAPSHOT_PRICES } from "./data";
 import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
-  title: "Flower Bouquet Price in Lahore (Oct 2026) | Lahore Bouquet",
+  title: "Flower Bouquet Prices in Lahore | Lahore Bouquet",
   description:
     "See current flower bouquet prices in Lahore, from small bunches to large arrangements. Prices for roses, sunflowers, tulips and chocolate bouquets.",
   keywords: [
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Flower Bouquet Price in Lahore | Free Delivery",
-    description: "Bouquet prices in Lahore from PKR 1,180, gajray from PKR 450. Compare real starting prices for chocolate bouquets, wedding décor, car decoration & gifts.",
+    description: "Bouquet prices in Lahore from PKR 1,239, gajray from PKR 370. Compare real starting prices for chocolate bouquets, wedding décor, car decoration & gifts.",
     url: `${SITE_URL}/prices`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Flower Bouquet Price in Lahore | Free Delivery",
     description:
-      "Bouquet prices in Lahore from PKR 1,180, gajray from PKR 450. Compare real starting prices for chocolate bouquets, wedding décor, car decoration & gifts.",
+      "Bouquet prices in Lahore from PKR 1,239, gajray from PKR 370. Compare real starting prices for chocolate bouquets, wedding décor, car decoration & gifts.",
     images: ["/images/product_1_eucalyptus_rose.jpg"],
   },
 };

@@ -102,7 +102,7 @@ export default async function NeighborhoodTemplate({ data }: Props) {
           <li><strong>Delivery time: {time}</strong>, 7 days a week, from 9 AM to 1 AM.</li>
           <li><strong>Midnight slot:</strong> available every night 11:30 PM – 12:15 AM — message us on WhatsApp by the evening to reserve it.</li>
           <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
-          <li><strong>Prices start at Rs. 1,180.</strong> Call or WhatsApp <strong>{BUSINESS.phone.local}</strong> and our Lahore florists will confirm your slot instantly.</li>
+          <li><strong>Prices start at Rs. 1,239.</strong> Call or WhatsApp <strong>{BUSINESS.phone.local}</strong> and our Lahore florists will confirm your slot instantly.</li>
         </ul>
       </section>
 
@@ -130,7 +130,7 @@ export default async function NeighborhoodTemplate({ data }: Props) {
         <div className="grid sm:grid-cols-3 gap-3">
           <Link href="/bouquets" className="p-5 rounded-2xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Fresh Bouquets →</p>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Birthday, anniversary, apology and get-well bouquets from Rs. 1,180, hand-tied fresh.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Birthday, anniversary, apology and get-well bouquets from Rs. 1,239, hand-tied fresh.</p>
           </Link>
           <Link href="/birthday-surprises" className="p-5 rounded-2xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Birthday Surprises →</p>
@@ -168,7 +168,7 @@ export default async function NeighborhoodTemplate({ data }: Props) {
           <h2 className="font-playfair text-xl font-bold">How ordering works in {data.areaName}</h2>
         </div>
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
-          <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>{BUSINESS.phone.local}</strong> on WhatsApp (open 9 AM–1 AM daily) with your {data.areaName} address, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,180.</li>
+          <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>{BUSINESS.phone.local}</strong> on WhatsApp (open 9 AM–1 AM daily) with your {data.areaName} address, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,239.</li>
           <li><strong>Approve the photo & video.</strong> We tie your bouquet fresh and send you a photo and video on WhatsApp before the rider leaves. Nothing ships until you reply that it looks perfect.</li>
           <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches {data.areaName} within {time} for a {fee} fee — or in the midnight slot.</li>
         </ol>

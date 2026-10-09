@@ -158,55 +158,6 @@ export const ALL_PRODUCTS: Product[] = [
     occasion: ["Birthday", "Get Well Soon", "Congratulations"]
   },
 
-  // 8. Solara: Sunflower and Rose Harmony Bouquet
-  {
-    id: 8,
-    badge: "Bestseller",
-    badgeType: "bestseller",
-    title: "Solara: Sunflower and Rose Harmony Bouquet",
-    slug: "solara-premium-sunflower-rose-bouquet",
-    price: 2650,
-    oldPrice: 3000,
-    image: "/images/explore_autumntulip.jpg",
-    category: "Sunflowers",
-    desc: "Three sunflowers with six white roses and fillers. Bright and soft at the same time. A safe choice for birthdays and celebrations.",
-    stems: "3 Sunflowers, 6 White Roses & Fillers",
-    swatches: ["#F59E0B", "#FFFFFF", "#8B5CF6"],
-    occasion: ["Birthday", "Anniversary", "Congratulations"]
-  },
-
-  // 9. Red Letter: Single Red Rose Bouquet
-  {
-    id: 9,
-    badge: "Classic",
-    badgeType: "hot",
-    title: "Red Letter: Single Red Rose Bouquet",
-    slug: "red-letter-single-red-rose-bouquet",
-    price: 1180,
-    image: "/images/hero_rose_portrait.webp",
-    category: "Roses",
-    desc: "One long-stem imported red rose, baby's breath and a red ribbon. Small, but it means something. Good for a surprise at the office or a first date.",
-    stems: "1 Long-Stem Imported Dutch Rose",
-    swatches: ["#8B1E2D", "#0F0F11"],
-    occasion: ["Romance", "Just Because"]
-  },
-
-  // 10. Pearl Note: Single White Rose in Black Wrapping
-  {
-    id: 10,
-    badge: "Popular",
-    badgeType: "bestseller",
-    title: "Pearl Note: Single White Rose in Black Wrapping",
-    slug: "pearl-note-single-white-rose",
-    price: 1180,
-    image: "/images/product_1_eucalyptus_rose.jpg",
-    category: "Roses",
-    desc: "One premium white rose in black paper with a white ribbon. Simple and elegant.",
-    stems: "1 Premium Dutch White Rose",
-    swatches: ["#FFFFFF", "#18181B"],
-    occasion: ["Apology", "Congratulations"]
-  },
-
   // 11. Money Bouquet: Cash Surprise with Roses
   {
     id: 11,
@@ -2255,41 +2206,3 @@ export const CARD_OCCASIONS = [
   "Just Because 🌿"
 ];
 
-export const REVIEWS = [
-  {
-    quote: "What you approve on WhatsApp is what actually arrives. The Crimson Blush roses were fresh, long-stemmed, and arrived in DHA Phase 5 within 2.5 hours. Excellent service.",
-    name: "Ayesha",
-    location: "DHA Phase 5, Lahore",
-    item: "Crimson Blush Rose Bouquet"
-  },
-  {
-    quote: "Booked the 11:30 PM midnight surprise slot for our anniversary in Gulberg. The bouquet arrived right on time with warm fairy lights and a neat handwritten card. My wife was thrilled.",
-    name: "Hamza",
-    location: "Gulberg III, Lahore",
-    item: "Birthday Cake & Acrylic Flower Box"
-  },
-  {
-    quote: "Ordered the Mehndi flower jewellery set (haath phool and matha patti) for my sister's event in Bahria Town. The motia and rosebuds were fragrant and completely fresh.",
-    name: "Fatima",
-    location: "Bahria Town, Lahore",
-    item: "Mehndi Fresh Flower Jewellery Set"
-  },
-  {
-    quote: "Ordered from the UK for my mother in Model Town. Effortless payment, WhatsApp photo before dispatch, and delivered in air-conditioned vans. The sunflowers were radiant.",
-    name: "Bilal",
-    location: "Model Town, Lahore",
-    item: "Golden Duo Sunflowers"
-  },
-  {
-    quote: "The single rose in black wrapping is so elegant and affordable at Rs. 1,180. Ordered three times already for friends and office colleagues in Johar Town.",
-    name: "Zainab",
-    location: "Johar Town, Lahore",
-    item: "Pearl Note Single White Rose"
-  },
-  {
-    quote: "Their wedding car decoration service was seamless. The florists came directly to our house in Cantt and styled the car with fresh imported roses and ribbons in under 45 minutes.",
-    name: "Usman",
-    location: "Cantt, Lahore",
-    item: "Fresh Flower Wedding Car Decoration"
-  }
-];

@@ -331,7 +331,7 @@ export default async function BouquetsPage({
               <tr className="hover:bg-[#F8F3EA]/60 transition-colors">
                 <td className="py-4 px-4 sm:px-6 font-semibold text-[#0B0B0B]">Small Bouquet</td>
                 <td className="py-4 px-4 sm:px-6 text-[#666666]">6 to 10 stems</td>
-                <td className="py-4 px-4 sm:px-6 text-[#8B1E2D] font-bold">Rs. 1,180 – 1,900</td>
+                <td className="py-4 px-4 sm:px-6 text-[#8B1E2D] font-bold">Rs. 1,239 – 1,900</td>
                 <td className="py-4 px-4 sm:px-6 text-[#666666]">Thank-you, office desk, quick surprise gift</td>
               </tr>
               <tr className="hover:bg-[#F8F3EA]/60 transition-colors">

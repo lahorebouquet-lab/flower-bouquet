@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "Flower Delivery in Gulberg Lahore | FREE, 30–90 Mins",
   },
-  description: "Free 30–90 minute flower delivery in Gulberg I, II & III, Liberty, MM Alam Road & Main Boulevard Lahore. Bouquets from Rs. 1,180. Midnight slot, photo on",
+  description: "Free 30–90 minute flower delivery in Gulberg I, II & III, Liberty, MM Alam Road & Main Boulevard Lahore. Bouquets from Rs. 1,239. Midnight slot, photo on",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/gulberg`,
   },
   openGraph: {
     title: "Flower Delivery in Gulberg Lahore | FREE, 30–90 Mins",
-    description: "Free 30–90 minute flower delivery in Gulberg I, II & III, Liberty, MM Alam Road & Main Boulevard Lahore. Bouquets from Rs. 1,180. Midnight slot, photo on",
+    description: "Free 30–90 minute flower delivery in Gulberg I, II & III, Liberty, MM Alam Road & Main Boulevard Lahore. Bouquets from Rs. 1,239. Midnight slot, photo on",
     url: `${SITE_URL}/delivery-areas/gulberg`,
     images: [
       {
@@ -75,7 +75,7 @@ export default async function GulbergDeliveryPage() {
         name: "Is flower delivery really free in Gulberg?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Delivery inside Gulberg (I, II and III), Liberty Market, MM Alam Road, Kasuri Road and the Main Boulevard corridor is completely free with no minimum order. You only pay for the bouquet itself, and prices start at Rs. 1,180.",
+          text: "Yes. Delivery inside Gulberg (I, II and III), Liberty Market, MM Alam Road, Kasuri Road and the Main Boulevard corridor is completely free with no minimum order. You only pay for the bouquet itself, and prices start at Rs. 1,239.",
         },
       },
       {
@@ -165,7 +165,7 @@ export default async function GulbergDeliveryPage() {
           <li><strong>Delivery time: 30 to 90 minutes</strong>, 7 days a week, from 9 AM to 1 AM.</li>
           <li><strong>Midnight slot:</strong> available every night — message us on WhatsApp by the evening to reserve it.</li>
           <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
-          <li><strong>Prices start at Rs. 1,180.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
+          <li><strong>Prices start at Rs. 1,239.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
         </ul>
       </section>
 
@@ -209,7 +209,7 @@ export default async function GulbergDeliveryPage() {
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Is flower delivery really free in Gulberg?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes. Delivery inside Gulberg (I, II and III), Liberty Market, MM Alam Road, Kasuri Road and the Main Boulevard corridor is completely free with no minimum order. You only pay for the bouquet itself, and prices start at Rs. 1,180.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes. Delivery inside Gulberg (I, II and III), Liberty Market, MM Alam Road, Kasuri Road and the Main Boulevard corridor is completely free with no minimum order. You only pay for the bouquet itself, and prices start at Rs. 1,239.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Can you deliver flowers to restaurants on MM Alam Road?</h3>
@@ -236,7 +236,7 @@ export default async function GulbergDeliveryPage() {
           Ordering flowers in Gulberg takes about a minute — and because this is our home zone, everything moves fastest here. Here is exactly what happens after you get in touch:
         </p>
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
-          <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your Gulberg address, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,180 — including which roses and seasonal flowers arrived today.</li>
+          <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your Gulberg address, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,239 — including which roses and seasonal flowers arrived today.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh and send you a photo on WhatsApp before the rider leaves. Nothing ships until you reply that it looks perfect — ask for tweaks and we redo it.</li>
           <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your Gulberg doorstep within 30–90 minutes — or in the midnight slot for the evening surprise.</li>
         </ol>

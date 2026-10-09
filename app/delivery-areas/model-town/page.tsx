@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "Flower Delivery in Model Town Lahore | FREE, 1.5–2.5 hrs",
   },
-  description: "Free flower delivery to Model Town Blocks A–M, Link Road & Garden Town Lahore in 1.5–2.5 hours. Bouquets from Rs. 1,180. Midnight slot, WhatsApp photo",
+  description: "Free flower delivery to Model Town Blocks A–M, Link Road & Garden Town Lahore in 1.5–2.5 hours. Bouquets from Rs. 1,239. Midnight slot, WhatsApp photo",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/model-town`,
   },
   openGraph: {
     title: "Flower Delivery in Model Town Lahore | FREE, 1.5–2.5 hrs",
-    description: "Free flower delivery to Model Town Blocks A–M, Link Road & Garden Town Lahore in 1.5–2.5 hours. Bouquets from Rs. 1,180. Midnight slot, WhatsApp photo",
+    description: "Free flower delivery to Model Town Blocks A–M, Link Road & Garden Town Lahore in 1.5–2.5 hours. Bouquets from Rs. 1,239. Midnight slot, WhatsApp photo",
     url: `${SITE_URL}/delivery-areas/model-town`,
     images: [
       {
@@ -75,7 +75,7 @@ export default async function ModelTownDeliveryPage() {
         name: "Is flower delivery free in Model Town?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Delivery to Model Town Blocks A to M, Model Town Link Road, Garden Town and Barkat Market is free with no minimum order. Bouquets start at Rs. 1,180.",
+          text: "Yes. Delivery to Model Town Blocks A to M, Model Town Link Road, Garden Town and Barkat Market is free with no minimum order. Bouquets start at Rs. 1,239.",
         },
       },
       {
@@ -165,7 +165,7 @@ export default async function ModelTownDeliveryPage() {
           <li><strong>Delivery time: 1.5 to 2.5 hours</strong>, 7 days a week, from 9 AM to 1 AM, via Ferozepur Road or the Kalma Chowk underpass.</li>
           <li><strong>Midnight slot:</strong> available every night — message us on WhatsApp by the evening to reserve it.</li>
           <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
-          <li><strong>Prices start at Rs. 1,180.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
+          <li><strong>Prices start at Rs. 1,239.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
         </ul>
       </section>
 
@@ -209,7 +209,7 @@ export default async function ModelTownDeliveryPage() {
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Is flower delivery free in Model Town?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes. Delivery to Model Town Blocks A to M, Model Town Link Road, Garden Town and Barkat Market is free with no minimum order. Bouquets start at Rs. 1,180.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes. Delivery to Model Town Blocks A to M, Model Town Link Road, Garden Town and Barkat Market is free with no minimum order. Bouquets start at Rs. 1,239.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Do you deliver to Model Town Link Road and Garden Town?</h3>
@@ -236,7 +236,7 @@ export default async function ModelTownDeliveryPage() {
           Ordering in Model Town is quick because our riders run the Kalma Chowk route all day. Here is what happens after you message us:
         </p>
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
-          <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your Model Town block and street, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,180 — including which roses and seasonal flowers arrived today.</li>
+          <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your Model Town block and street, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,239 — including which roses and seasonal flowers arrived today.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh and send you a photo on WhatsApp before the rider leaves. Nothing ships until you reply that it looks perfect — ask for tweaks and we redo it.</li>
           <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your Model Town doorstep within 1.5–2.5 hours — midnight slot included.</li>
         </ol>

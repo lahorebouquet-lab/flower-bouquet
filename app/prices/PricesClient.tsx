@@ -51,7 +51,7 @@ export const COST_FACTORS = [
 
 export const OCCASIONS_DATA = [
   { name: "Anniversaries", href: "/occasions/anniversary", tag: "From PKR 1,900" },
-  { name: "Birthdays", href: "/occasions/birthday", tag: "From PKR 1,180" },
+  { name: "Birthdays", href: "/occasions/birthday", tag: "From PKR 1,239" },
   { name: "Eid Celebrations", href: "/bouquets", tag: "From PKR 1,500" },
   { name: "Father's Day", href: "/gifts-and-cakes", tag: "From PKR 1,800" },
   { name: "Get Well Soon", href: "/sunflowers", tag: "From PKR 500" },
@@ -116,7 +116,7 @@ export default function PricesClient() {
             </h1>
 
             <p className="text-[#F8F3EA]/90 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-              Flower bouquet prices in Lahore at Lahore Bouquet start from <strong>Rs. 1,180</strong> for a small single-stem bunch and go up to <strong>Rs. 8,900+</strong> for large premium arrangements. All bouquets are arranged fresh to order with same-day delivery across Lahore. <em>Last updated: October 2026</em>.
+              Flower bouquet prices in Lahore at Lahore Bouquet start from <strong>Rs. 1,239</strong> for a small single-stem bunch and go up to <strong>Rs. 8,900+</strong> for large premium arrangements. All bouquets are arranged fresh to order with same-day delivery across Lahore. <em>Last updated: October 2026</em>.
             </p>
           </div>
 
@@ -312,7 +312,7 @@ export default function PricesClient() {
 
               <div className="p-4 rounded-xl bg-[#F8F3EA] border border-[rgba(198,161,91,0.25)] space-y-2">
                 <span className="text-xs font-bold text-[#8B1E2D]">Rose Bouquets</span>
-                <div className="text-base font-bold text-[#0B0B0B]">PKR 1,180 – 5,500</div>
+                <div className="text-base font-bold text-[#0B0B0B]">PKR 1,239 – 5,500</div>
                 <p className="text-[11px] text-[#2A2A2A]">Classic single-stem up to royal 50-stem imported Dutch velvet rose arrangements.</p>
                 <Link href="/roses" className="text-[11px] text-[#8B1E2D] font-semibold flex items-center gap-1 pt-1 hover:text-[#C6A15B]">
                   <span>Explore Roses</span> →

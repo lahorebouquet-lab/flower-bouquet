@@ -155,7 +155,7 @@ export default async function RedRosesPage() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs text-[#2A2A2A]">
           <div className="p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2] space-y-1">
             <div className="font-bold text-[#0B0B0B] text-sm">1 long-stem rose</div>
-            <div className="text-[#8B1E2D] font-bold">Rs. 1,180</div>
+            <div className="text-[#8B1E2D] font-bold">Rs. 1,239</div>
             <div className="text-[11px] text-[#777777]">Single stem with baby's breath</div>
           </div>
           <div className="p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2] space-y-1">

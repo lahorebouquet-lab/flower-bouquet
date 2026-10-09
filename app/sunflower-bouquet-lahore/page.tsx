@@ -103,7 +103,7 @@ export default async function SunflowerBouquetLahorePage() {
         name: "Can I customize sunflower with roses?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Our popular \"Solara\" bouquet mixes golden sunflowers with red or blush pink roses for an elegant balance."
+          text: "Yes. Our Sunflower & White Roses bouquet pairs golden sunflowers with elegant white roses for a striking contrast."
         }
       },
       {
@@ -119,7 +119,7 @@ export default async function SunflowerBouquetLahorePage() {
 
   const priceGuide = [
     { name: "Golden Duo: Two Sunflowers with Baby's Breath", price: "Rs. 1,900", desc: "Two jumbo golden blooms with aromatic gypsophila and kraft wrap." },
-    { name: "Solara: Sunflower and Rose Harmony Bouquet", price: "Rs. 2,600", desc: "Golden sunflowers paired with blushing garden roses and greenery." },
+    { name: "Sunflower & White Roses \u2013 Black Wrap", price: "Rs. 2,499", desc: "Golden sunflowers paired with elegant white roses in a chic black wrap." },
     { name: "Graduation Celebration Sunflower Bouquet", price: "Rs. 3,800", desc: "Multi-stem sunflower statement bundle with convocation satin ribbon." },
     { name: "Handmade Crochet Everlasting Sunflower Bouquet", price: "Rs. 2,800", desc: "Eternal handcrafted yarn sunflowers that never wilt or need water." },
   ];
@@ -302,7 +302,7 @@ export default async function SunflowerBouquetLahorePage() {
           </div>
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Can I customize sunflower with roses?</h3>
-            <p>Yes. Our popular &quot;Solara&quot; bouquet mixes golden sunflowers with red or blush pink roses for an elegant balance.</p>
+            <p>Yes. Our Sunflower &amp; White Roses bouquet pairs golden sunflowers with elegant white roses for a striking contrast.</p>
           </div>
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Do you send a photo before delivery?</h3>

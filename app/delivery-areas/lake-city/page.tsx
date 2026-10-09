@@ -177,7 +177,7 @@ export default async function LakeCityDeliveryPage() {
           <li><strong>Delivery time: 3 to 4 hours</strong>, 7 days a week, from 9 AM to 1 AM. Allow the full window for golf-course villas and during evening traffic on the Raiwind Road corridor.</li>
           <li><strong>Midnight slot:</strong> available every night from 11:30 PM to 12:15 AM with free delivery — message us on WhatsApp by the evening to reserve it.</li>
           <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
-          <li><strong>Prices start at Rs. 1,180.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
+          <li><strong>Prices start at Rs. 1,239.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
         </ul>
       </section>
 
@@ -248,7 +248,7 @@ export default async function LakeCityDeliveryPage() {
           Gated-community deliveries need a little more coordination, and we&apos;ve got the routine down. Here is what happens after you message us:
         </p>
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
-          <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your sector, street and house number, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,180 — including which roses and seasonal flowers arrived today. For the golf-course villas, also share your gate&apos;s guard number for smooth entry.</li>
+          <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your sector, street and house number, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,239 — including which roses and seasonal flowers arrived today. For the golf-course villas, also share your gate&apos;s guard number for smooth entry.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh and send you a photo on WhatsApp before the rider leaves. Nothing ships until you reply that it looks perfect — ask for tweaks and we redo it.</li>
           <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your Lake City address within 3–4 hours with FREE delivery — midnight slot 11:30 PM to 12:15 AM also available.</li>
         </ol>

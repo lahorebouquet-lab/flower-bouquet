@@ -159,7 +159,7 @@ export default function HomeClient({
 
             {/* Quick answer (AEO) */}
             <p className="text-[#2A2A2A] text-xs sm:text-sm lg:text-base max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              <strong>Same-day flower delivery in Lahore costs from Rs. 1,180 and arrives in 2–5 hours.</strong> Lahore Bouquet hand-ties fresh roses, sunflowers, lilies and money bouquets to order, sends you a photo and video on WhatsApp before dispatch, and delivers across DHA, Gulberg, Model Town, Bahria Town and Johar Town — with a midnight surprise slot for birthdays.
+              <strong>Same-day flower delivery in Lahore costs from Rs. 1,239 and arrives in 2–5 hours.</strong> Lahore Bouquet hand-ties fresh roses, sunflowers, lilies and money bouquets to order, sends you a photo and video on WhatsApp before dispatch, and delivers across DHA, Gulberg, Model Town, Bahria Town and Johar Town — with a midnight surprise slot for birthdays.
             </p>
 
             {/* Button System (Section 18):
