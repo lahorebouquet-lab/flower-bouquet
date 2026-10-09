@@ -38,7 +38,7 @@ const FAQS = [
   },
   {
     q: "What flowers do you send for get-well wishes?",
-    a: "Cheerful, low-fragrance flowers: sunflowers, white lilies or pastel mixed bouquets. Avoid strongly scented oriental lilies for hospital rooms. A small Rs. 1,180–Rs. 2,500 bouquet is perfect."
+    a: "Cheerful, low-fragrance flowers: sunflowers, white lilies or pastel mixed bouquets. Avoid strongly scented oriental lilies for hospital rooms. A small Rs. 1,239–Rs. 2,500 bouquet is perfect."
   }
 ];
 
@@ -84,7 +84,7 @@ export default function OccasionFlowersBlogPage() {
         </h1>
         <p className="text-sm text-[#777777]">By Lahore Bouquet Florist Team • Updated 6 October 2026 • 5 min read</p>
         <p className="text-sm sm:text-base leading-relaxed">
-          <strong>Quick answer:</strong> Birthdays → bright mixed bouquets or sunflowers (Rs. 1,500–5,000). Anniversaries → red roses, 12 for early years, 24–50 for milestones (Rs. 2,500–12,000). Get-well → cheerful low-fragrance lilies or pastels (Rs. 1,180–2,500). Same-day delivery across Lahore in 2–5 hours.
+          <strong>Quick answer:</strong> Birthdays → bright mixed bouquets or sunflowers (Rs. 1,500–5,000). Anniversaries → red roses, 12 for early years, 24–50 for milestones (Rs. 2,500–12,000). Get-well → cheerful low-fragrance lilies or pastels (Rs. 1,239–2,500). Same-day delivery across Lahore in 2–5 hours.
         </p>
       </header>
 

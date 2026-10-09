@@ -88,7 +88,7 @@ export default function SendFlowersAbroadBlogPage() {
         </h1>
         <p className="text-sm text-[#777777]">By Lahore Bouquet Florist Team • Updated 6 October 2026 • 4 min read</p>
         <p className="text-sm sm:text-base leading-relaxed">
-          <strong>Quick answer:</strong> WhatsApp us at <strong>{BUSINESS.phone.intl}</strong>, pick a bouquet from Rs. 1,180, pay by international bank transfer, and we deliver the same day in Lahore within 2–5 hours — with a photo sent to you before dispatch and delivery confirmation after.
+          <strong>Quick answer:</strong> WhatsApp us at <strong>{BUSINESS.phone.intl}</strong>, pick a bouquet from Rs. 1,239, pay by international bank transfer, and we deliver the same day in Lahore within 2–5 hours — with a photo sent to you before dispatch and delivery confirmation after.
         </p>
       </header>
 

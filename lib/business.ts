@@ -51,9 +51,9 @@ export const BUSINESS = {
   },
 
   priceRange: {
-    min: 1180,
-    max: 35000,
-    display: "Rs. 1,180 – Rs. 35,000",
+    min: 349,
+    max: 500000,
+    display: "Rs. 349 – Rs. 500,000",
   },
 
   delivery: {

@@ -46,7 +46,7 @@ const aboutSchema = {
       url: `${SITE_URL}`,
       telephone: "+923104225974",
       email: BUSINESS.email,
-      priceRange: "Rs. 1,180 - Rs. 14,500",
+      priceRange: "Rs. 349 - Rs. 500,000",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Lahore",

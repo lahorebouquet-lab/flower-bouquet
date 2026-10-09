@@ -120,7 +120,7 @@ export default function RoseMeaningsPage() {
           <li><strong>Mother's Day:</strong> pink roses, the universal gratitude flower.</li>
           <li><strong>Condolence:</strong> white roses only — respectful and traditional.</li>
         </ul>
-        <p className="text-sm leading-relaxed">Ready to order? Explore our <Link href="/bouquets" className="text-[#8B1E2D] underline font-semibold">fresh rose bouquets in Lahore</Link> — red, pink, white and mixed, from Rs. 1,180 with same-day delivery.</p>
+        <p className="text-sm leading-relaxed">Ready to order? Explore our <Link href="/bouquets" className="text-[#8B1E2D] underline font-semibold">fresh rose bouquets in Lahore</Link> — red, pink, white and mixed, from Rs. 1,239 with same-day delivery.</p>
       </section>
 
       <section className="space-y-4">

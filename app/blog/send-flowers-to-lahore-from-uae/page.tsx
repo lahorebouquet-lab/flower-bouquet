@@ -152,7 +152,7 @@ export default function SendFlowersFromUAEPage() {
       <section className="space-y-4">
         <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Pricing for UAE Senders</h2>
         <p className="text-sm leading-relaxed">
-          Bouquets start at Rs. 1,180 (about AED 15). Most UAE customers spend Rs. 2,600–7,499 (AED 35–100). Delivery is <strong>free</strong> across all listed Lahore areas — see our <Link href="/delivery-areas" className="text-[#8B1E2D] underline">delivery areas</Link> page or the full range on our <Link href="/prices" className="text-[#8B1E2D] underline">prices page</Link>.
+          Bouquets start at Rs. 1,239 (about AED 15). Most UAE customers spend Rs. 2,600–7,499 (AED 35–100). Delivery is <strong>free</strong> across all listed Lahore areas — see our <Link href="/delivery-areas" className="text-[#8B1E2D] underline">delivery areas</Link> page or the full range on our <Link href="/prices" className="text-[#8B1E2D] underline">prices page</Link>.
         </p>
         <a
           href={whatsappLink("Hello Lahore Bouquet! I'm ordering from the UAE and want to send flowers to Lahore.")}

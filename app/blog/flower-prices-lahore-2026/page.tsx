@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "Flower Prices in Lahore 2026 | Rose & Bouquet Rates",
   },
-  description: "Complete 2026 flower price guide for Lahore. Rose bouquets from Rs. 1,180, sunflower bunches, lily prices, money bouquet costs and wedding décor packages",
+  description: "Complete 2026 flower price guide for Lahore. Rose bouquets from Rs. 1,239, sunflower bunches, lily prices, money bouquet costs and wedding décor packages",
   alternates: {
     canonical: `${SITE_URL}/blog/flower-prices-lahore-2026`,
   },
   openGraph: {
     title: "Flower Prices in Lahore 2026 | Rose & Bouquet Rates",
-    description: "Rose bouquets from Rs. 1,180, sunflowers, lilies, money bouquets and décor — Lahore's 2026 flower price table.",
+    description: "Rose bouquets from Rs. 1,239, sunflowers, lilies, money bouquets and décor — Lahore's 2026 flower price table.",
     url: `${SITE_URL}/blog/flower-prices-lahore-2026`,
     type: "article",
     images: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "How much does a rose bouquet cost in Lahore?",
-    a: "A fresh rose bouquet in Lahore costs from Rs. 1,180 for a small hand-tied bunch. A dozen imported Dutch roses typically costs Rs. 2,500–Rs. 4,500, while premium 50-rose arrangements go up to Rs. 12,000+."
+    a: "A fresh rose bouquet in Lahore costs from Rs. 1,239 for a small hand-tied bunch. A dozen imported Dutch roses typically costs Rs. 2,500–Rs. 4,500, while premium 50-rose arrangements go up to Rs. 12,000+."
   },
   {
     q: "What is the price of a money bouquet in Lahore?",
@@ -84,7 +84,7 @@ export default function FlowerPricesBlogPage() {
         </h1>
         <p className="text-sm text-[#777777]">By Lahore Bouquet Florist Team • Updated 6 October 2026 • 5 min read</p>
         <p className="text-sm sm:text-base leading-relaxed">
-          <strong>Quick answer:</strong> In Lahore, a fresh flower bouquet costs from <strong>Rs. 1,180</strong>. Imported rose bouquets run Rs. 2,500–Rs. 12,000, sunflowers Rs. 1,500–Rs. 5,000, and money bouquets from Rs. 2,500 plus cash value. Prices below are what Lahore Bouquet actually charges in October 2026.
+          <strong>Quick answer:</strong> In Lahore, a fresh flower bouquet costs from <strong>Rs. 1,239</strong>. Imported rose bouquets run Rs. 2,500–Rs. 12,000, sunflowers Rs. 1,500–Rs. 5,000, and money bouquets from Rs. 2,500 plus cash value. Prices below are what Lahore Bouquet actually charges in October 2026.
         </p>
       </header>
 
@@ -99,7 +99,7 @@ export default function FlowerPricesBlogPage() {
               </tr>
             </thead>
             <tbody className="bg-white divide-y divide-[#E5DED2]">
-              <tr><td className="px-4 py-3">Small mixed bouquet</td><td className="px-4 py-3 font-semibold">Rs. 1,180 – Rs. 2,000</td></tr>
+              <tr><td className="px-4 py-3">Small mixed bouquet</td><td className="px-4 py-3 font-semibold">Rs. 1,239 – Rs. 2,000</td></tr>
               <tr><td className="px-4 py-3">Imported Dutch rose bouquet (12 roses)</td><td className="px-4 py-3 font-semibold">Rs. 2,500 – Rs. 4,500</td></tr>
               <tr><td className="px-4 py-3">Premium rose bouquet (24–50 roses)</td><td className="px-4 py-3 font-semibold">Rs. 5,000 – Rs. 12,000</td></tr>
               <tr><td className="px-4 py-3">Sunflower bouquet</td><td className="px-4 py-3 font-semibold">Rs. 1,500 – Rs. 5,000</td></tr>
@@ -130,7 +130,7 @@ export default function FlowerPricesBlogPage() {
         <div className="grid sm:grid-cols-3 gap-4">
           <Link href="/roses" className="p-5 rounded-2xl bg-white border border-[#E5DED2] hover:border-[#C6A15B] transition-colors">
             <div className="font-bold text-[#0B0B0B]">Rose Bouquets</div>
-            <div className="text-xs text-[#777777]">from Rs. 1,180</div>
+            <div className="text-xs text-[#777777]">from Rs. 1,239</div>
           </Link>
           <Link href="/money-bouquets" className="p-5 rounded-2xl bg-white border border-[#E5DED2] hover:border-[#C6A15B] transition-colors">
             <div className="font-bold text-[#0B0B0B]">Money Bouquets</div>

@@ -38,7 +38,7 @@ const FAQS = [
   },
   {
     q: "How much does it cost to send flowers from the UK to Lahore?",
-    a: "Bouquets start at Rs. 1,180 (roughly £3–4). A beautiful medium rose bouquet costs Rs. 2,600–3,800 (about £7–11), and delivery fees are Rs. 0–400 depending on the Lahore area. You see the full price in GBP terms on your card statement — no hidden charges."
+    a: "Bouquets start at Rs. 1,239 (roughly £3–4). A beautiful medium rose bouquet costs Rs. 2,600–3,800 (about £7–11), and delivery fees are Rs. 0–400 depending on the Lahore area. You see the full price in GBP terms on your card statement — no hidden charges."
   },
   {
     q: "How will I know the flowers were delivered in Lahore?",
@@ -152,7 +152,7 @@ export default function SendFlowersFromUKPage() {
       <section className="space-y-4">
         <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Pricing for UK Senders</h2>
         <p className="text-sm leading-relaxed">
-          Bouquets start at Rs. 1,180 (about £3). Most UK customers spend Rs. 2,600–7,499 (£7–20) for a generous bouquet. Delivery is <strong>free</strong> across all listed Lahore areas — see our <Link href="/delivery-areas" className="text-[#8B1E2D] underline">delivery areas</Link> page. Compare the full range on our <Link href="/prices" className="text-[#8B1E2D] underline">prices page</Link>.
+          Bouquets start at Rs. 1,239 (about £3). Most UK customers spend Rs. 2,600–7,499 (£7–20) for a generous bouquet. Delivery is <strong>free</strong> across all listed Lahore areas — see our <Link href="/delivery-areas" className="text-[#8B1E2D] underline">delivery areas</Link> page. Compare the full range on our <Link href="/prices" className="text-[#8B1E2D] underline">prices page</Link>.
         </p>
         <a
           href={whatsappLink("Hello Lahore Bouquet! I'm ordering from the UK and want to send flowers to Lahore.")}

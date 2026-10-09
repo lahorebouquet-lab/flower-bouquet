@@ -78,7 +78,7 @@ export const BLOG_POSTS = [
   {
     slug: "flower-prices-lahore-2026",
     title: "Flower Prices in Lahore 2026: Rose, Sunflower & Money Bouquet Price Guide",
-    excerpt: "What bouquets really cost in Lahore right now. Real 2026 price table: roses from Rs. 1,180, sunflowers, lilies, money bouquets and wedding décor packages.",
+    excerpt: "What bouquets really cost in Lahore right now. Real 2026 price table: roses from Rs. 1,239, sunflowers, lilies, money bouquets and wedding décor packages.",
     date: "October 2026",
     readTime: "5 min read",
     tag: "Price Guide",
