@@ -46,7 +46,7 @@ export const BLOG_POSTS = [
     date: "October 2026",
     readTime: "5 min read",
     tag: "Occasions Guide",
-    image: "/images/lahoreblooms/crimson_blush.webp",
+    image: "/images/hero-luxury-bouquet.jpg",
   },
   {
     slug: "money-bouquet-designs-and-pricing-lahore",
@@ -64,7 +64,7 @@ export const BLOG_POSTS = [
     date: "October 2026",
     readTime: "5 min read",
     tag: "Customization Guide",
-    image: "/images/categories/hand_tied_bouquets.webp",
+    image: "/images/categories/all_bouquets.webp",
   },
   {
     slug: "custom-cake-order-guide-lahore",
@@ -109,7 +109,7 @@ export const BLOG_POSTS = [
     date: "October 2026",
     readTime: "5 min read",
     tag: "Occasions Guide",
-    image: "/images/lahoreblooms/crimson_blush.webp",
+    image: "/images/categories/birthday_surprises.webp",
   },
   {
     slug: "send-flowers-to-lahore-from-uk",

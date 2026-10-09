@@ -41,7 +41,7 @@ export const ALL_DEPARTMENTS: DepartmentItem[] = [
     type: "bouquets",
     tagline: "12, 24, or 50 stem arrangements",
     href: "/roses/red-roses",
-    image: "/images/lahoreblooms/ruby_vale_rose.webp",
+    image: "/images/categories/roses_collection.webp",
     badge: "Bestseller",
   },
   {
@@ -67,7 +67,7 @@ export const ALL_DEPARTMENTS: DepartmentItem[] = [
     type: "bouquets",
     tagline: "Keepsake eternal yarn flowers",
     href: "/crochet-bouquets",
-    image: "/images/lahoreblooms/crochet_sub.webp",
+    image: "/images/categories/all_bouquets.webp",
   },
   {
     id: "dried-flowers",
@@ -95,7 +95,7 @@ export const ALL_DEPARTMENTS: DepartmentItem[] = [
     tagline: "Romantic long-stem rose tributes",
     href: "/occasions/anniversary",
     badge: "Romantic",
-    image: "/images/lahoreblooms/crimson_blush.webp",
+    image: "/images/hero-luxury-bouquet.jpg",
   },
   {
     id: "love-romance",
@@ -103,7 +103,7 @@ export const ALL_DEPARTMENTS: DepartmentItem[] = [
     type: "occasions",
     tagline: "Red roses, chocolates & greeting cards",
     href: "/occasions/love-and-romance",
-    image: "/images/lahoreblooms/scarlet_vow.webp",
+    image: "/images/pink_rose_bouquet.jpg",
   },
   {
     id: "barat-walima",
@@ -120,7 +120,7 @@ export const ALL_DEPARTMENTS: DepartmentItem[] = [
     tagline: "Chaand Raat hampers & Eidi bouquets",
     href: "/occasions/eid-gifts",
     badge: "Special",
-    image: "/images/lahoreblooms/duo_royale.webp",
+    image: "/images/categories/gifts_cakes.webp",
   },
   {
     id: "congratulations",
@@ -128,7 +128,7 @@ export const ALL_DEPARTMENTS: DepartmentItem[] = [
     type: "occasions",
     tagline: "Festive congratulations bouquets",
     href: "/occasions/congratulations",
-    image: "/images/lahoreblooms/golden_duo.webp",
+    image: "/images/explore_floral.jpg",
   },
   {
     id: "get-well",
@@ -136,7 +136,7 @@ export const ALL_DEPARTMENTS: DepartmentItem[] = [
     type: "occasions",
     tagline: "Gentle hospital & apology flowers",
     href: "/occasions/get-well-and-sorry",
-    image: "/images/lahoreblooms/pink_meadow.webp",
+    image: "/images/product_3_pastel_wildflower.jpg",
   },
 
   // --- CAKES, GIFTS & SERVICES (Aligned with Header Nav) ---
@@ -154,7 +154,7 @@ export const ALL_DEPARTMENTS: DepartmentItem[] = [
     type: "gifts",
     tagline: "Pure Rooh-e-Gulab & woody oud",
     href: "/collections/scents-and-perfumes",
-    image: "/images/lahoreblooms/cat_jewellery.webp",
+    image: "/images/new_arrival_vase.jpg",
     badge: "New",
   },
   {
@@ -163,7 +163,7 @@ export const ALL_DEPARTMENTS: DepartmentItem[] = [
     type: "gifts",
     tagline: "Motia & rose handcrafted wrist cuffs",
     href: "/collections/fresh-flower-gajray",
-    image: "/images/lahoreblooms/ivory_promise.webp",
+    image: "/images/gajray/complete-fresh-flower-gajra-set-lahore.png",
     badge: "Handmade",
   },
   {
