@@ -8,8 +8,31 @@ import { normalizePakistaniPhone } from '@/lib/site'
  * keeps other customers' orders private.
  * Returns only customer-safe fields (no admin notes, masked address).
  */
+
+// Simple in-memory rate limit: max 30 tracking lookups per IP per 10 minutes.
+// (Resets on redeploy — enough to stop enumeration abuse.)
+const rateLimit = new Map<string, { count: number; resetAt: number }>()
+function isRateLimited(ip: string): boolean {
+  const now = Date.now()
+  const entry = rateLimit.get(ip)
+  if (!entry || now > entry.resetAt) {
+    rateLimit.set(ip, { count: 1, resetAt: now + 10 * 60 * 1000 })
+    return false
+  }
+  entry.count += 1
+  return entry.count > 30
+}
+
 export async function GET(req: NextRequest) {
   try {
+    const ip = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'unknown'
+    if (isRateLimited(ip)) {
+      return NextResponse.json(
+        { error: 'Too many requests. Please try again in a few minutes.' },
+        { status: 429 }
+      )
+    }
+
     const { searchParams } = new URL(req.url)
     const orderId = (searchParams.get('orderId') || '').trim().toUpperCase()
     const phoneRaw = (searchParams.get('phone') || '').trim()
