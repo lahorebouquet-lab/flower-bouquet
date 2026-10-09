@@ -106,6 +106,10 @@ export default function Footer() {
               <li><Link href="/wedding-room-decoration-lahore" className="hover:text-[#C6A15B] transition-colors">Wedding Room Decoration</Link></li>
               <li><Link href="/helium-balloons-lahore" className="hover:text-[#C6A15B] transition-colors">Helium Balloons</Link></li>
               <li><Link href="/garlands-lahore" className="hover:text-[#C6A15B] transition-colors">Fresh Flower Garlands</Link></li>
+              <li><Link href="/gajray-lahore" className="hover:text-[#C6A15B] transition-colors">Fresh Gajray in Lahore</Link></li>
+              <li><Link href="/flower-jewellery-lahore" className="hover:text-[#C6A15B] transition-colors">Flower Jewellery in Lahore</Link></li>
+              <li><Link href="/bridal-room-decoration-lahore" className="hover:text-[#C6A15B] transition-colors">Bridal Room Decoration</Link></li>
+              <li><Link href="/wedding-car-decoration-lahore" className="hover:text-[#C6A15B] transition-colors">Wedding Car Decoration</Link></li>
               <li><Link href="/blog" className="hover:text-[#C6A15B] transition-colors">Floral Care Guides & Blog</Link></li>
             </ul>
           </div>
