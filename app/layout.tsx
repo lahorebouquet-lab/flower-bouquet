@@ -123,6 +123,7 @@ export default function RootLayout({
       className={`${playfair.variable} ${jakarta.variable} antialiased scroll-smooth`}
     >
       <head>
+        <meta name="p:domain_verify" content="62541480aab5c95a9fed18f8727e972f" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
