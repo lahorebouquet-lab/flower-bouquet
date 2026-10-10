@@ -49,7 +49,6 @@ export default function HomeClient({
 
   const [activeFilter, setActiveFilter] = useState<string>("All");
   const [visibleCount, setVisibleCount] = useState<number>(8);
-  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
 
   const filterOptions = ["All", "Roses", "Sunflowers", "Bouquets", "Wedding Décor", "Gifts & Cakes"];
 
@@ -369,7 +368,7 @@ export default function HomeClient({
               Why People Order From Lahore Bouquet
             </h2>
             <p className="text-xs text-[#2A2A2A]">
-              Dedicated artisanal floristry, honest stems, and genuine customer care.
+              Fresh flowers, honest prices, and real customer care.
             </p>
           </div>
 
@@ -439,7 +438,7 @@ export default function HomeClient({
               Handcrafted with Heart in Lahore, Delivered across the City
             </h2>
             <p className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed">
-              Lahore Bouquet was founded with a singular conviction: <span className="text-[#8B1E2D] font-semibold">gifting flowers should be deeply personal and dependable</span>. Unlike automated aggregators, every arrangement is tied by our master florists in Lahore.
+              We started Lahore Bouquet with one simple goal: <span className="text-[#8B1E2D] font-semibold">sending flowers should be easy and reliable</span>. Every bouquet is hand-tied by our team in Lahore.
             </p>
             <p className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed">
               Whether you are sending <span className="text-[#8B1E2D] font-semibold">50 imported red roses to DHA</span>, arranging fresh motia gajray for a wedding in Model Town, or preparing a midnight birthday surprise in Johar Town, our florists personally craft and photograph your order before dispatch.
@@ -535,31 +534,25 @@ export default function HomeClient({
 
           <div className="space-y-3">
             {HOMEPAGE_FAQS.map((faq, idx) => (
-              <div
+              <details
                 key={idx}
-                className="rounded-2xl bg-white border border-[#E5DED2] hover:border-[rgba(198,161,91,0.40)] overflow-hidden transition-all shadow-xs"
+                className="rounded-2xl bg-white border border-[#E5DED2] hover:border-[rgba(198,161,91,0.40)] overflow-hidden transition-all shadow-xs group"
               >
-                <button
-                  onClick={() => setOpenFaqIndex(openFaqIndex === idx ? null : idx)}
-                  aria-expanded={openFaqIndex === idx}
-                  className="w-full p-5 text-left flex items-center justify-between gap-4 cursor-pointer"
+                <summary
+                  className="w-full p-5 text-left flex items-center justify-between gap-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden"
                 >
                   <span className="text-sm font-semibold text-[#101012]">
                     {faq.q}
                   </span>
                   <ChevronDown
-                    className={`w-4 h-4 text-[#8B1E2D] shrink-0 transition-transform duration-200 ${
-                      openFaqIndex === idx ? "rotate-180" : ""
-                    }`}
+                    className="w-4 h-4 text-[#8B1E2D] shrink-0 transition-transform duration-200 group-open:rotate-180"
                   />
-                </button>
+                </summary>
 
-                {openFaqIndex === idx && (
-                  <div className="px-5 pb-5 pt-1 text-xs text-[#2A2A2A] leading-relaxed border-t border-[#E5DED2]">
-                    {faq.a}
-                  </div>
-                )}
-              </div>
+                <div className="px-5 pb-5 pt-1 text-xs text-[#2A2A2A] leading-relaxed border-t border-[#E5DED2]">
+                  {faq.a}
+                </div>
+              </details>
             ))}
           </div>
         </div>

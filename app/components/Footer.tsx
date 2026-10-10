@@ -36,7 +36,7 @@ export default function Footer() {
           <div className="lg:col-span-6 space-y-3">
             <Logo variant="footer" />
             <p className="text-[#BDBDBD] text-xs max-w-md leading-relaxed">
-              Lahore Bouquet is a luxury floral atelier in Lahore. We hand-tie fresh imported roses, arrange celebratory money bouquets, and hand-deliver across all sectors of Lahore. Direct florist assistance on WhatsApp.
+              Lahore Bouquet is a flower shop in Lahore. We hand-tie fresh roses, make money bouquets for celebrations, and deliver across Lahore. Chat with us directly on WhatsApp.
             </p>
           </div>
 
@@ -78,13 +78,9 @@ export default function Footer() {
             <ul className="space-y-2 text-[#BDBDBD]">
               <li><Link href="/bouquets" className="hover:text-[#C6A15B] transition-colors">All Bouquets</Link></li>
               <li><Link href="/roses" className="hover:text-[#C6A15B] transition-colors">Roses Collection</Link></li>
-              <li><Link href="/roses/red-roses" className="hover:text-[#C6A15B] transition-colors">Imported Red Roses</Link></li>
-              <li><Link href="/tulip-bouquet-lahore" className="hover:text-[#C6A15B] transition-colors">Imported Dutch Tulips</Link></li>
               <li><Link href="/sunflower-bouquet-lahore" className="hover:text-[#C6A15B] transition-colors">Sunflower Bouquets</Link></li>
-              <li><Link href="/chocolate-bouquets-lahore" className="hover:text-[#C6A15B] transition-colors">Chocolate Bouquets</Link></li>
-              <li><Link href="/crochet-bouquets" className="hover:text-[#C6A15B] transition-colors">Handmade Crochet Bouquets</Link></li>
-              <li><Link href="/dried-flowers" className="hover:text-[#C6A15B] transition-colors">Dried Everlasting Flora</Link></li>
-              <li><Link href="/collections/scents-and-perfumes" className="hover:text-[#C6A15B] text-white font-medium transition-colors">✦ Scents & Perfume Gifts</Link></li>
+              <li><Link href="/gajray-lahore" className="hover:text-[#C6A15B] transition-colors">Fresh Gajray</Link></li>
+              <li><Link href="/bestsellers" className="hover:text-[#C6A15B] transition-colors">Bestsellers</Link></li>
             </ul>
           </div>
 
@@ -94,23 +90,10 @@ export default function Footer() {
             <ul className="space-y-2 text-[#BDBDBD]">
               <li><Link href="/prices" className="hover:text-[#C6A15B] text-white font-medium transition-colors">★ Lahore Price Guide 2026</Link></li>
               <li><Link href="/flower-delivery-in-lahore" className="hover:text-[#C6A15B] transition-colors">Express Same-Day Delivery</Link></li>
-              <li><Link href="/send-flowers-to-lahore-from-abroad" className="hover:text-[#C6A15B] transition-colors">Send from Abroad (UK, USA, UAE)</Link></li>
-              <li><Link href="/birthday-decoration-lahore" className="hover:text-[#C6A15B] transition-colors">Birthday Decoration at Home</Link></li>
-              <li><Link href="/lily-bouquet-lahore" className="hover:text-[#C6A15B] transition-colors">Fresh Lily Bouquets</Link></li>
-              <li><Link href="/wedding-decor" className="hover:text-[#C6A15B] transition-colors">Wedding Room & Car Décor</Link></li>
-              <li><Link href="/collections/fresh-flower-gajray" className="hover:text-[#C6A15B] transition-colors">Fresh Motia & Rose Gajray</Link></li>
-              <li><Link href="/money-bouquets" className="hover:text-[#C6A15B] transition-colors">Custom Money Bouquets</Link></li>
-              <li><Link href="/gifts-and-cakes" className="hover:text-[#C6A15B] transition-colors">Gifts, Cakes & Chocolates</Link></li>
-              <li><Link href="/corporate" className="hover:text-[#C6A15B] transition-colors">Corporate Office Flowers</Link></li>
-              <li><Link href="/teddy-bears-lahore" className="hover:text-[#C6A15B] transition-colors">Teddy Bears in Lahore</Link></li>
-              <li><Link href="/wedding-room-decoration-lahore" className="hover:text-[#C6A15B] transition-colors">Wedding Room Decoration</Link></li>
-              <li><Link href="/helium-balloons-lahore" className="hover:text-[#C6A15B] transition-colors">Helium Balloons</Link></li>
-              <li><Link href="/garlands-lahore" className="hover:text-[#C6A15B] transition-colors">Fresh Flower Garlands</Link></li>
-              <li><Link href="/gajray-lahore" className="hover:text-[#C6A15B] transition-colors">Fresh Gajray in Lahore</Link></li>
-              <li><Link href="/flower-jewellery-lahore" className="hover:text-[#C6A15B] transition-colors">Flower Jewellery in Lahore</Link></li>
-              <li><Link href="/bridal-room-decoration-lahore" className="hover:text-[#C6A15B] transition-colors">Bridal Room Decoration</Link></li>
-              <li><Link href="/wedding-car-decoration-lahore" className="hover:text-[#C6A15B] transition-colors">Wedding Car Decoration</Link></li>
-              <li><Link href="/blog" className="hover:text-[#C6A15B] transition-colors">Floral Care Guides & Blog</Link></li>
+              <li><Link href="/birthday-decoration-lahore" className="hover:text-[#C6A15B] transition-colors">Birthday Decoration</Link></li>
+              <li><Link href="/wedding-decor" className="hover:text-[#C6A15B] transition-colors">Wedding Décor</Link></li>
+              <li><Link href="/gifts-and-cakes" className="hover:text-[#C6A15B] transition-colors">Gifts & Cakes</Link></li>
+              <li><Link href="/blog" className="hover:text-[#C6A15B] transition-colors">Blog & Guides</Link></li>
             </ul>
           </div>
 
@@ -118,40 +101,22 @@ export default function Footer() {
           <div className="space-y-3">
             <h3 className="font-semibold text-white tracking-wide text-sm">Occasions</h3>
             <ul className="space-y-2 text-[#BDBDBD]">
-              <li><Link href="/birthday-surprises" className="hover:text-[#C6A15B] transition-colors">Birthday Surprises</Link></li>
-              <li><Link href="/occasions/anniversary" className="hover:text-[#C6A15B] transition-colors">Wedding Anniversaries</Link></li>
+              <li><Link href="/birthday-surprises" className="hover:text-[#C6A15B] transition-colors">Birthday</Link></li>
+              <li><Link href="/occasions/anniversary" className="hover:text-[#C6A15B] transition-colors">Anniversary</Link></li>
               <li><Link href="/occasions/love-and-romance" className="hover:text-[#C6A15B] transition-colors">Love & Romance</Link></li>
-              <li><Link href="/occasions/barat-and-walima" className="hover:text-[#C6A15B] transition-colors">Barat & Walima</Link></li>
-              <li><Link href="/occasions/eid-gifts" className="hover:text-[#C6A15B] transition-colors">Eid Mubarak Gifts</Link></li>
-              <li><Link href="/occasions/congratulations" className="hover:text-[#C6A15B] transition-colors">Congratulations & Graduations</Link></li>
-              <li><Link href="/occasions/get-well-and-sorry" className="hover:text-[#C6A15B] transition-colors">Get Well Soon & Apologies</Link></li>
+              <li><Link href="/occasions/eid-gifts" className="hover:text-[#C6A15B] transition-colors">Eid Gifts</Link></li>
             </ul>
           </div>
 
-          {/* Column 4: Express Lahore Delivery Zones */}
+          {/* Column 4: Delivery Areas */}
           <div className="space-y-3">
-            <h3 className="font-semibold text-white tracking-wide text-sm">Lahore Delivery Zones</h3>
+            <h3 className="font-semibold text-white tracking-wide text-sm">Delivery Areas</h3>
             <ul className="space-y-2 text-[#BDBDBD]">
-              <li><Link href="/delivery-areas/dha" className="hover:text-[#C6A15B] transition-colors">DHA Lahore (Phases 1–9)</Link></li>
-              <li><Link href="/delivery-areas/gulberg" className="hover:text-[#C6A15B] transition-colors">Gulberg I, II & III</Link></li>
-              <li><Link href="/delivery-areas/bahria-town" className="hover:text-[#C6A15B] transition-colors">Bahria Town & Lake City</Link></li>
-              <li><Link href="/delivery-areas/model-town" className="hover:text-[#C6A15B] transition-colors">Model Town & Garden Town</Link></li>
-              <li><Link href="/delivery-areas/johar-town" className="hover:text-[#C6A15B] transition-colors">Johar Town & Faisal Town</Link></li>
-              <li><Link href="/delivery-areas/cantt" className="hover:text-[#C6A15B] transition-colors">Cantt & Cavalry Ground</Link></li>
-              <li><Link href="/delivery-areas/askari" className="hover:text-[#C6A15B] transition-colors">Askari Housing (1 to 11)</Link></li>
-              <li><Link href="/delivery-areas/wapda-town" className="hover:text-[#C6A15B] transition-colors">Wapda Town & Township</Link></li>
-              <li><Link href="/delivery-areas/lake-city" className="hover:text-[#C6A15B] transition-colors">Lake City Lahore</Link></li>
-              <li><Link href="/delivery-areas/valencia-town" className="hover:text-[#C6A15B] transition-colors">Valencia Town</Link></li>
-              <li><Link href="/delivery-areas/eme-society" className="hover:text-[#C6A15B] transition-colors">EME Society</Link></li>
-              <li><Link href="/delivery-areas/nfc" className="hover:text-[#C6A15B] transition-colors">NFC Society</Link></li>
-              <li><Link href="/delivery-areas/tariq-gardens" className="hover:text-[#C6A15B] transition-colors">Tariq Gardens</Link></li>
-              <li><Link href="/delivery-areas/dha-rahbar" className="hover:text-[#C6A15B] transition-colors">DHA Rahbar</Link></li>
-              <li><Link href="/delivery-areas/al-kabir-town" className="hover:text-[#C6A15B] transition-colors">Al Kabir Town</Link></li>
-              <li><Link href="/delivery-areas/bahria-orchard" className="hover:text-[#C6A15B] transition-colors">Bahria Orchard</Link></li>
-              <li><Link href="/delivery-areas/raiwind-road" className="hover:text-[#C6A15B] transition-colors">Raiwind Road</Link></li>
-              <li><Link href="/delivery-areas/thokar-niaz-baig" className="hover:text-[#C6A15B] transition-colors">Thokar Niaz Baig</Link></li>
-              <li><Link href="/delivery-areas/iqbal-town" className="hover:text-[#C6A15B] transition-colors">Iqbal Town</Link></li>
-              <li><Link href="/delivery-areas/faisal-town" className="hover:text-[#C6A15B] transition-colors">Faisal Town</Link></li>
+              <li><Link href="/delivery-areas/dha" className="hover:text-[#C6A15B] transition-colors">DHA Lahore</Link></li>
+              <li><Link href="/delivery-areas/gulberg" className="hover:text-[#C6A15B] transition-colors">Gulberg</Link></li>
+              <li><Link href="/delivery-areas/bahria-town" className="hover:text-[#C6A15B] transition-colors">Bahria Town</Link></li>
+              <li><Link href="/delivery-areas/model-town" className="hover:text-[#C6A15B] transition-colors">Model Town</Link></li>
+              <li><Link href="/flower-delivery-in-lahore" className="hover:text-[#C6A15B] transition-colors">All Areas →</Link></li>
             </ul>
           </div>
 
@@ -195,7 +160,7 @@ export default function Footer() {
         {/* Bottom Guarantees, Policy Links & Copyright (WCAG AAA Compliant on #0B0B0B) */}
         <div className="pt-8 border-t border-[rgba(198,161,91,0.20)] flex flex-col md:flex-row items-center justify-between gap-4 text-[#B0B0B0] text-[11px]">
           <div className="flex items-center gap-4 flex-wrap">
-            <span>© 2026 Lahore Bouquet (Pvt) Ltd. All Rights Reserved.</span>
+            <span>© 2026 Lahore Bouquet. All Rights Reserved.</span>
             <Link href="/about" className="hover:text-[#C6A15B] transition-colors underline">About Us</Link>
             <Link href="/contact" className="hover:text-[#C6A15B] transition-colors underline">Contact</Link>
             <Link href="/track-order" className="hover:text-[#C6A15B] transition-colors underline">Track Order</Link>

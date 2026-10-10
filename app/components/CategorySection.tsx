@@ -230,17 +230,12 @@ export default function CategorySection({ categories, products }: CategorySectio
     ? filteredDepts.slice(0, 8)
     : filteredDepts;
 
-  // Bestseller showcase: curated slugs first (best-looking), then badged products to fill
+  // Bestseller showcase: only products with explicit badgeType "bestseller" in Sanity, max 4 on homepage
   const showcaseProducts = (() => {
     if (!products || products.length === 0) return [];
-    const bySlug = new Map(products.map((p) => [p.slug || String(p.id), p]));
-    const curated = SHOWCASE_SLUGS.map((s) => bySlug.get(s)).filter(Boolean) as Product[];
-    const curatedIds = new Set(curated.map((p) => String(p.id)));
-    const fill = products
-      .filter((p) => !curatedIds.has(String(p.id)))
-      .filter((p) => p.badgeType === "bestseller" || p.badgeType === "hot" || p.badge === "Bestseller")
-      .slice(0, Math.max(0, 10 - curated.length));
-    return [...curated, ...fill];
+    return products
+      .filter((p) => p.badgeType === "bestseller")
+      .slice(0, 4);
   })();
 
   // Showcase slider state & refs
@@ -511,7 +506,7 @@ export default function CategorySection({ categories, products }: CategorySectio
         <div className="pt-3 border-t border-[#E5DED2] flex flex-wrap items-center justify-between text-xs text-[#2A2A2A] gap-3">
           <div className="flex items-center gap-2">
             <Sparkles className="w-3.5 h-3.5 text-[#8B1E2D]" />
-            <span className="font-medium text-[#101012]">Handcrafted fresh daily with 100% genuine imported Dutch blooms</span>
+            <span className="font-medium text-[#101012]">Handcrafted fresh daily — imported Dutch roses in our rose bouquets, local fresh flowers clearly labeled</span>
           </div>
           <div className="flex items-center gap-4 text-[11px] text-[#555555]">
             <span>● 2–5h Express Delivery in Lahore</span>
