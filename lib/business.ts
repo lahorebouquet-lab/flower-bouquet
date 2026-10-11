@@ -172,7 +172,7 @@ export function areaFloristSchema(areaName: string, pageUrl: string, fee?: strin
 
 /** ItemList JSON-LD for collection/category pages (SEO rich results). */
 export function itemListSchema(
-  products: Array<{ title: string; slug: string; price?: number; image?: string }>,
+  products: Array<{ title: string; slug: string; price?: number; image?: string; description?: string }>,
   listUrl: string,
   listName: string,
 ) {
@@ -190,9 +190,31 @@ export function itemListSchema(
         "@type": "Product",
         name: p.title,
         url: `${SITE_URL}/products/${p.slug}`,
+        ...(p.description
+          ? { description: p.description }
+          : { description: `${p.title} — fresh flowers with free same-day delivery across Lahore. Order online at Lahore Bouquet.` }),
+        brand: { "@type": "Brand", name: BUSINESS.name },
         ...(p.image ? { image: p.image.startsWith("http") ? p.image : `${SITE_URL}${p.image}` } : {}),
         ...(typeof p.price === "number"
-          ? { offers: { "@type": "Offer", priceCurrency: "PKR", price: p.price, availability: "https://schema.org/InStock" } }
+          ? {
+              offers: {
+                "@type": "Offer",
+                priceCurrency: "PKR",
+                price: p.price,
+                availability: "https://schema.org/InStock",
+                shippingDetails: {
+                  "@type": "OfferShippingDetails",
+                  shippingRate: { "@type": "MonetaryAmount", value: 0, currency: "PKR" },
+                  shippingDestination: { "@type": "DefinedRegion", addressCountry: "PK", addressRegion: "Lahore" },
+                },
+                hasMerchantReturnPolicy: {
+                  "@type": "MerchantReturnPolicy",
+                  applicableCountry: "PK",
+                  returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted",
+                  description: "Fresh flowers are perishable and cannot be returned. Damaged or wrong items are replaced or refunded — contact us on WhatsApp within 24 hours.",
+                },
+              },
+            }
           : {}),
       },
     })),
