@@ -105,6 +105,7 @@ export default function Footer() {
               <li><Link href="/occasions/anniversary" className="hover:text-[#C6A15B] transition-colors">Anniversary</Link></li>
               <li><Link href="/occasions/love-and-romance" className="hover:text-[#C6A15B] transition-colors">Love & Romance</Link></li>
               <li><Link href="/occasions/eid-gifts" className="hover:text-[#C6A15B] transition-colors">Eid Gifts</Link></li>
+              <li><Link href="/valentine-day-flowers-lahore" className="hover:text-[#C6A15B] transition-colors">Valentine&apos;s Day</Link></li>
             </ul>
           </div>
 

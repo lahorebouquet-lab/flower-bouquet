@@ -102,6 +102,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/flower-jewellery-lahore", file: "app/flower-jewellery-lahore/page.tsx" },
     { path: "/bridal-room-decoration-lahore", file: "app/bridal-room-decoration-lahore/page.tsx" },
     { path: "/wedding-car-decoration-lahore", file: "app/wedding-car-decoration-lahore/page.tsx" },
+    { path: "/valentine-day-flowers-lahore", file: "app/valentine-day-flowers-lahore/page.tsx" },
     { path: "/about", file: "app/about/page.tsx" },
     { path: "/contact", file: "app/contact/page.tsx" },
     { path: "/track-order", file: "app/track-order/page.tsx", noindex: true },

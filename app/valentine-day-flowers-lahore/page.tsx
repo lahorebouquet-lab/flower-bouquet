@@ -1,22 +1,21 @@
 import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Heart, Truck, Camera, MessageCircle, HelpCircle, Sparkles, Clock, MapPin, BadgeCheck } from "lucide-react";
-import { SITE_URL, serviceSchema } from "@/lib/business";
-import RelatedProducts from "../components/RelatedProducts";
+import { Heart, Truck, Camera, MessageCircle, HelpCircle, Sparkles, Clock, MapPin, BadgeCheck, ShoppingBag } from "lucide-react";
+import { SITE_URL, whatsappLink, serviceSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Valentine's Day Flowers in Lahore | Red Roses Delivery",
+    absolute: "Valentine's Day Flowers in Lahore | Order Red Rose Bouquets",
   },
-  description: "Order Valentine's Day flowers in Lahore — premium red rose bouquets, romantic gift boxes and midnight surprise delivery. Fresh roses from Rs. 2,600. Book early for Feb 14!",
+  description: "Order Valentine's Day flowers in Lahore — gift boxes, balloon flower boxes, heart cakes and romantic bedroom decor. Valentine's gifts from Rs. 6,500 with 2–5h express and midnight delivery. WhatsApp 0310-4225974.",
   alternates: {
     canonical: `${SITE_URL}/valentine-day-flowers-lahore`,
   },
   openGraph: {
-    title: "Valentine's Day Flowers in Lahore | Red Roses Delivery",
+    title: "Valentine's Day Flowers in Lahore | Order Red Rose Bouquets",
     description:
-      "Order Valentine's Day flowers in Lahore — premium red rose bouquets, romantic gift boxes and midnight surprise delivery. Fresh roses from Rs. 2,600.",
+      "Valentine's gift boxes, balloon flower boxes, heart cakes and romantic decor — from Rs. 6,500 with express and midnight delivery in Lahore.",
     url: `${SITE_URL}/valentine-day-flowers-lahore`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
@@ -26,28 +25,71 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Valentine's Day Flowers in Lahore | Red Roses Delivery",
+        alt: "Valentine's Day Flowers in Lahore | Order Red Rose Bouquets",
       },
     ],
   },
 };
 
+/**
+ * Real Valentine's products from the Sanity catalog.
+ * Prices verified from live product pages on 2026-10-11.
+ */
+const PRODUCTS = [
+  {
+    name: "Be My Valentine Box",
+    slug: "be-my-valentine-box",
+    price: 11499,
+    desc: "A romantic Valentine's gift box filled with fresh blooms — the classic Feb 14 surprise.",
+  },
+  {
+    name: "Deluxe Valentine's Box",
+    slug: "deluxe-valentine-s-box",
+    price: 24999,
+    desc: "Our deluxe Valentine's presentation — the grandest way to say it with flowers.",
+  },
+  {
+    name: "Valentine Heart Cake",
+    slug: "valentine-heart-cake",
+    price: 6500,
+    desc: "A heart-shaped Valentine's cake that pairs perfectly with any bouquet.",
+  },
+  {
+    name: "Romantic Balloon Flower Box – Red & Black",
+    slug: "romantic-balloon-flower-box-red-and-black-valentine-gift",
+    price: 13999,
+    desc: "Bold red-and-black balloon flower box — a dramatic Valentine's statement gift.",
+  },
+  {
+    name: "Valentine Balloon Flower Box – Red Roses",
+    slug: "valentine-balloon-flower-box-red-roses-gift-for-her",
+    price: 13999,
+    desc: "Red roses with romantic balloons in a luxury box — made for her on Feb 14.",
+  },
+  {
+    name: "Romantic Valentine's Day Bedroom Decor",
+    slug: "romantic-valentine-s-day-bedroom-decor",
+    price: 24999,
+    desc: "A full romantic bedroom surprise setup — roses, candles and decor for Valentine's night.",
+  },
+];
+
 const FAQS = [
   {
-    q: "How much do Valentine's Day roses cost in Lahore?",
-    a: "Valentine's red rose bouquets start from Rs. 2,600 for a dozen roses. Premium long-stem arrangements range from Rs. 4,500 to Rs. 7,499, and luxury 100-rose bouquets go up to Rs. 15,000. Prices rise closer to Feb 14, so book early on WhatsApp at +92 310 4225974 to lock your price.",
+    q: "How much do Valentine's Day flowers cost in Lahore?",
+    a: "Our Valentine's gifts range from Rs. 6,500 for the Valentine Heart Cake to Rs. 13,999 for balloon flower boxes and Rs. 24,999 for the Deluxe Valentine's Box or the full Romantic Bedroom Decor setup. Message us on WhatsApp at 0310-4225974 for exact quotes on any custom bouquet.",
   },
   {
     q: "Can I get same-day Valentine's delivery in Lahore?",
-    a: "Yes, we deliver Valentine's bouquets the same day across Lahore (2–5 hours) including DHA, Gulberg, Model Town, Johar Town and Bahria Town. For Feb 14 itself, we strongly recommend booking 2–3 days in advance as slots fill up fast.",
+    a: "Yes, we deliver Valentine's gifts the same day across Lahore in 2–5 hours — including DHA, Gulberg, Model Town, Johar Town and Bahria Town. For Feb 14 itself, book 2–3 days in advance as slots fill up fast.",
   },
   {
     q: "Do you offer midnight Valentine's surprise delivery?",
-    a: "Absolutely! Our midnight surprise slot (11:30 PM – 12:15 AM) is the most romantic way to start Valentine's Day. The bouquet arrives right at midnight with a personalised card. Book your midnight slot early — limited slots available on Feb 13 night.",
+    a: "Absolutely! Our midnight surprise slot (11:30 PM – 12:15 AM) is the most romantic way to start Valentine's Day. The gift arrives right at midnight with a personalised card. Book your midnight slot early — limited slots are available on Feb 13 night.",
   },
   {
     q: "What is the best Valentine's gift for her in Lahore?",
-    a: "A premium red rose bouquet (24–50 roses) paired with chocolates is the classic winner. For something unforgettable, add a 24K golden rose or a money bouquet. Message us on WhatsApp and we'll help you pick based on your budget.",
+    a: "A red rose balloon flower box (Rs. 13,999) or the Be My Valentine Box (Rs. 11,499) are our most-ordered Feb 14 picks. For a grand gesture, the Deluxe Valentine's Box at Rs. 24,999 never misses. Message us on WhatsApp and we'll help you pick based on your budget.",
   },
   {
     q: "Can I order Valentine's flowers from abroad for Lahore delivery?",
@@ -55,49 +97,17 @@ const FAQS = [
   },
   {
     q: "When should I order for Valentine's Day?",
-    a: "Order by Feb 10 for the best prices and guaranteed slots. Feb 11–13 orders are accepted but premium bouquets may sell out. We do not recommend waiting until Feb 14 morning — book ahead!",
+    a: "Order by Feb 10 for the best prices and guaranteed slots. Feb 11–13 orders are accepted but premium gifts may sell out. We do not recommend waiting until Feb 14 morning — book ahead!",
   },
   {
-    q: "Do Valentine's bouquets come with a card message?",
-    a: "Yes, every Valentine's bouquet includes a FREE personalised card. Write your message at checkout or on WhatsApp, and we'll handwrite it beautifully.",
+    q: "Do Valentine's gifts come with a card message?",
+    a: "Yes, every Valentine's gift includes a FREE personalised card. Write your message at checkout or on WhatsApp, and we'll handwrite it beautifully.",
   },
 ];
 
-const PACKAGES = [
-  {
-    name: "Classic Romance",
-    price: "Rs. 2,600",
-    features: [
-      "12 premium red roses",
-      "Elegant gift wrapping",
-      "FREE personalised card",
-      "Same-day delivery in Lahore",
-    ],
-  },
-  {
-    name: "Grand Gesture",
-    price: "Rs. 7,499",
-    features: [
-      "50 imported red roses",
-      "Luxury box presentation",
-      "Chocolates included",
-      "FREE personalised card",
-      "Midnight delivery available",
-    ],
-    highlight: true,
-  },
-  {
-    name: "Ultimate Surprise",
-    price: "Rs. 15,000",
-    features: [
-      "100 red roses grand bouquet",
-      "24K golden rose keepsake",
-      "Premium chocolates + teddy",
-      "Midnight surprise delivery",
-      "Real photo before dispatch",
-    ],
-  },
-];
+function formatPrice(n: number): string {
+  return `Rs. ${n.toLocaleString("en-PK")}`;
+}
 
 export default function ValentineDayFlowersLahorePage() {
   const breadcrumbSchema = {
@@ -122,14 +132,36 @@ export default function ValentineDayFlowersLahorePage() {
   const valentineServiceJsonLd = serviceSchema({
     name: "Valentine's Day Flowers in Lahore",
     url: `${SITE_URL}/valentine-day-flowers-lahore`,
-    description: "Valentine's Day flower delivery in Lahore: premium red rose bouquets, romantic gift boxes and midnight surprise delivery. From Rs. 2,600.",
+    description: "Valentine's Day flower delivery in Lahore: gift boxes, balloon flower boxes, heart cakes and romantic bedroom decor. Gifts from Rs. 6,500 with express and midnight delivery.",
   });
+
+  const productListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: PRODUCTS.map((p, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "Product",
+        name: p.name,
+        url: `${SITE_URL}/products/${p.slug}`,
+        offers: {
+          "@type": "Offer",
+          priceCurrency: "PKR",
+          price: p.price,
+          availability: "https://schema.org/InStock",
+          url: `${SITE_URL}/products/${p.slug}`,
+        },
+      },
+    })),
+  };
 
   return (
     <main className="max-w-6xl mx-auto px-4 sm:px-6 py-10 space-y-12 bg-[#F8F3EA] text-[#2A2A2A]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(valentineServiceJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productListSchema) }} />
 
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="text-xs text-[#777777] flex items-center gap-2">
@@ -148,56 +180,61 @@ export default function ValentineDayFlowersLahorePage() {
           Valentine&apos;s Day Flowers in Lahore
         </h1>
         <p className="text-sm sm:text-base leading-relaxed max-w-3xl">
-          Make this Valentine&apos;s Day unforgettable with <strong>premium red rose bouquets in Lahore</strong>.
-          From a classic dozen roses to grand 100-rose arrangements, every bouquet is hand-tied fresh
-          and delivered the <strong>same day</strong> across DHA, Gulberg, Model Town, Johar Town and
-          Bahria Town. Prices start from <strong>Rs. 2,600</strong> — book by Feb 10 for the best
-          prices and guaranteed midnight slots.
+          Make this Valentine&apos;s Day unforgettable with <strong>Valentine&apos;s gifts delivered in Lahore</strong> —
+          romantic gift boxes, balloon flower boxes, a heart-shaped cake and even a full romantic bedroom
+          surprise setup. Every order is prepared fresh and delivered the <strong>same day in 2–5 hours</strong>
+          across DHA, Gulberg, Model Town, Johar Town and Bahria Town — or right at <strong>midnight</strong>
+          for the ultimate surprise. Gifts start from <strong>Rs. 6,500</strong>, and every order includes a
+          FREE personalised card and a real photo of your gift on WhatsApp before dispatch. Book by Feb 10
+          for the best prices and guaranteed midnight slots.
         </p>
       </section>
 
-      {/* Packages */}
+      {/* Product grid — real Sanity products, real prices */}
       <section className="space-y-6">
-        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Valentine&apos;s Bouquets & Prices</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {PACKAGES.map((pkg) => (
-            <div
-              key={pkg.name}
-              className={`p-6 rounded-2xl border shadow-sm space-y-4 ${
-                pkg.highlight
-                  ? "bg-[#0B0B0B] border-[#C6A15B] text-white"
-                  : "bg-white border-[rgba(198,161,91,0.25)]"
-              }`}
+        <div className="flex items-center gap-2">
+          <ShoppingBag className="w-5 h-5 text-[#8B1E2D]" />
+          <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Valentine&apos;s Gifts You Can Order Now</h2>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {PRODUCTS.map((p) => (
+            <article
+              key={p.slug}
+              className="p-6 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] shadow-sm space-y-4 flex flex-col"
             >
-              <div className="flex items-center justify-between">
-                <h3 className={`font-playfair font-bold text-lg ${pkg.highlight ? "text-[#C6A15B]" : "text-[#0B0B0B]"}`}>
-                  {pkg.name}
-                </h3>
-                {pkg.highlight && (
-                  <span className="text-[10px] font-bold uppercase tracking-wider bg-[#C6A15B] text-[#0B0B0B] px-2 py-0.5 rounded-full">
-                    Most Loved
-                  </span>
-                )}
+              <div className="space-y-2 flex-1">
+                <h3 className="font-playfair font-bold text-lg text-[#0B0B0B]">{p.name}</h3>
+                <p className="text-xs text-[#555555] leading-relaxed">{p.desc}</p>
               </div>
-              <p className={`text-2xl font-bold ${pkg.highlight ? "text-white" : "text-[#8B1E2D]"}`}>{pkg.price}</p>
-              <ul className="space-y-2 text-xs leading-relaxed">
-                {pkg.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2">
-                    <BadgeCheck className={`w-4 h-4 shrink-0 mt-0.5 ${pkg.highlight ? "text-[#C6A15B]" : "text-[#8B1E2D]"}`} />
-                    <span className={pkg.highlight ? "text-[#BDBDBD]" : ""}>{f}</span>
-                  </li>
-                ))}
+              <p className="text-2xl font-bold text-[#8B1E2D]">{formatPrice(p.price)}</p>
+              <ul className="space-y-2 text-xs leading-relaxed text-[#555555]">
+                <li className="flex items-start gap-2">
+                  <BadgeCheck className="w-4 h-4 shrink-0 mt-0.5 text-[#8B1E2D]" />
+                  <span>Same-day 2–5h express delivery</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <BadgeCheck className="w-4 h-4 shrink-0 mt-0.5 text-[#8B1E2D]" />
+                  <span>Midnight surprise slot available</span>
+                </li>
               </ul>
-              <a
-                href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20want%20to%20order%20Valentine%27s%20Day%20flowers."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#8B1E2D] text-white text-xs font-semibold hover:bg-[#a32438] transition-colors"
-              >
-                <MessageCircle className="w-4 h-4" />
-                Order on WhatsApp
-              </a>
-            </div>
+              <div className="flex flex-wrap gap-2">
+                <Link
+                  href={`/products/${p.slug}`}
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#0B0B0B] text-white text-xs font-semibold hover:bg-[#8B1E2D] transition-colors"
+                >
+                  View & Order
+                </Link>
+                <a
+                  href={whatsappLink(`Hello Lahore Bouquet! I want to order "${p.name}" (${formatPrice(p.price)}) for Valentine's Day delivery in Lahore.`)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#8B1E2D] text-white text-xs font-semibold hover:bg-[#a32438] transition-colors"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  Order on WhatsApp
+                </a>
+              </div>
+            </article>
           ))}
         </div>
       </section>
@@ -207,13 +244,13 @@ export default function ValentineDayFlowersLahorePage() {
         <div className="p-6 sm:p-8 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] shadow-sm space-y-3">
           <div className="flex items-center gap-2 text-[#8B1E2D]">
             <Sparkles className="w-5 h-5" />
-            <h2 className="font-playfair text-xl font-bold text-[#0B0B0B]">Why Order Early?</h2>
+            <h2 className="font-playfair text-xl font-bold text-[#0B0B0B]">Why Order Early for Feb 14?</h2>
           </div>
           <p className="text-xs sm:text-sm leading-relaxed">
-            Rose prices rise every year as Feb 14 approaches, and premium bouquets sell out.
-            Ordering by <strong>Feb 10</strong> locks your price, guarantees your preferred bouquet,
-            and secures a midnight delivery slot. Last-minute orders on Feb 13–14 are accepted
-            but with limited designs.
+            Valentine&apos;s Day is the busiest flower day of the year in Lahore. Premium gifts sell out and
+            delivery slots — especially the midnight slot — fill up 3–5 days before Feb 14. Ordering by
+            <strong> Feb 10</strong> guarantees your preferred gift, locks the current price and secures your
+            midnight delivery window. Last-minute orders on Feb 13–14 are accepted but with limited options.
           </p>
         </div>
         <div className="p-6 sm:p-8 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] shadow-sm space-y-3">
@@ -222,10 +259,10 @@ export default function ValentineDayFlowersLahorePage() {
             <h2 className="font-playfair text-xl font-bold text-[#0B0B0B]">How Ordering Works</h2>
           </div>
           <ol className="text-xs sm:text-sm leading-relaxed space-y-2 list-decimal list-inside">
-            <li>Pick your bouquet or message us your budget on WhatsApp.</li>
-            <li>We confirm availability and your delivery slot.</li>
-            <li>Get a real photo of your bouquet before dispatch.</li>
-            <li>Surprise delivered — same-day or at midnight!</li>
+            <li>Pick a gift above or message us your budget on WhatsApp at 0310-4225974.</li>
+            <li>We confirm availability and your delivery slot — daytime or midnight.</li>
+            <li>Get a real photo of YOUR gift on WhatsApp before dispatch.</li>
+            <li>Surprise delivered — same-day or right at midnight!</li>
           </ol>
         </div>
       </section>
@@ -242,7 +279,7 @@ export default function ValentineDayFlowersLahorePage() {
         </p>
         <p className="text-xs text-[#BDBDBD] leading-relaxed flex items-start gap-2">
           <MapPin className="w-4 h-4 shrink-0 mt-0.5 text-[#C6A15B]" />
-          Same-day and midnight delivery across all of Lahore — FREE on Valentine&apos;s orders.
+          Same-day and midnight delivery across all of Lahore — FREE delivery on Valentine&apos;s orders.
         </p>
       </section>
 
@@ -258,8 +295,6 @@ export default function ValentineDayFlowersLahorePage() {
           Bestsellers →
         </Link>
       </section>
-
-      <RelatedProducts title="Romantic Bestsellers" categoryMatch="Roses" count={4} />
 
       <section className="bg-white p-8 sm:p-10 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-6">
         <div className="flex items-center gap-2 text-[#0B0B0B]">
@@ -280,17 +315,17 @@ export default function ValentineDayFlowersLahorePage() {
       <section className="text-center space-y-4 p-8 rounded-2xl bg-[#8B1E2D]/5 border border-[#8B1E2D]/20">
         <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Don&apos;t Wait Until Feb 14!</h2>
         <p className="text-sm text-[#555555] max-w-xl mx-auto">
-          Book your Valentine&apos;s bouquet today — lock your price and secure your midnight slot.
+          Book your Valentine&apos;s gift today — lock your price and secure your midnight slot.
         </p>
         <div className="flex flex-wrap justify-center gap-3">
           <a
-            href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20want%20Valentine%27s%20Day%20flowers%20in%20Lahore."
+            href={whatsappLink("Hello Lahore Bouquet! I want Valentine's Day flowers delivered in Lahore.")}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#25D366] text-white text-sm font-semibold hover:opacity-90 transition-opacity"
           >
             <MessageCircle className="w-4 h-4" />
-            WhatsApp Us Now
+            WhatsApp 0310-4225974
           </a>
           <Link
             href="/roses"
