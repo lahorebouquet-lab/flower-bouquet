@@ -12,7 +12,6 @@ import {
   Search, 
   HelpCircle, 
   Heart,
-  Star,
   MapPin,
   Gift,
   Layers,
@@ -129,10 +128,6 @@ export default function PricesClient() {
             <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/[0.06] border border-white/10">
               <ShieldCheck className="w-3.5 h-3.5 text-[#C6A15B]" />
               <span>100% Fresh Stems Guaranteed</span>
-            </div>
-            <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/[0.06] border border-white/10">
-              <Star className="w-3.5 h-3.5 text-[#C6A15B] fill-[#C6A15B]" />
-              <span>5,000+ Happy Customers (4.9★)</span>
             </div>
           </div>
 
