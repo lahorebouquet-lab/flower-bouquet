@@ -230,12 +230,12 @@ export default function CategorySection({ categories, products }: CategorySectio
     ? filteredDepts.slice(0, 8)
     : filteredDepts;
 
-  // Bestseller showcase: only products with explicit badgeType "bestseller" in Sanity, max 4 on homepage
+  // Bestseller showcase: only products with explicit badgeType "bestseller" in Sanity, max 12 on homepage
   const showcaseProducts = (() => {
     if (!products || products.length === 0) return [];
     return products
       .filter((p) => p.badgeType === "bestseller")
-      .slice(0, 4);
+      .slice(0, 12);
   })();
 
   // Showcase slider state & refs
