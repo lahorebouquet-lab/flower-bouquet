@@ -142,6 +142,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/birthday-decoration-iqbal-town-lahore", file: "app/birthday-decoration-iqbal-town-lahore/page.tsx" },
     { path: "/wedding-decoration-faisal-town-lahore", file: "app/wedding-decoration-faisal-town-lahore/page.tsx" },
     { path: "/birthday-decoration-faisal-town-lahore", file: "app/birthday-decoration-faisal-town-lahore/page.tsx" },
+    { path: "/blog/rose-bouquet-price-pakistan-2026", file: "app/blog/rose-bouquet-price-pakistan-2026/page.tsx" },
+    { path: "/blog/wedding-decoration-cost-lahore-2026", file: "app/blog/wedding-decoration-cost-lahore-2026/page.tsx" },
     { path: "/about", file: "app/about/page.tsx" },
     { path: "/contact", file: "app/contact/page.tsx" },
     { path: "/track-order", file: "app/track-order/page.tsx", noindex: true },
