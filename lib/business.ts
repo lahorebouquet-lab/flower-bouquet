@@ -194,7 +194,9 @@ export function itemListSchema(
           ? { description: p.description }
           : { description: `${p.title} — fresh flowers with free same-day delivery across Lahore. Order online at Lahore Bouquet.` }),
         brand: { "@type": "Brand", name: BUSINESS.name },
-        ...(p.image ? { image: p.image.startsWith("http") ? p.image : `${SITE_URL}${p.image}` } : {}),
+        image: p.image
+          ? (p.image.startsWith("http") ? p.image : `${SITE_URL}${p.image}`)
+          : `${SITE_URL}/og-image.jpg`,
         ...(typeof p.price === "number"
           ? {
               offers: {
