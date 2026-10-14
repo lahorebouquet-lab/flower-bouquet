@@ -5,7 +5,7 @@ import Link from "next/link";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { Sparkles, MessageCircle, Clock, ShieldCheck, HeartHandshake, CheckCircle2 } from "lucide-react";
-import { SITE_URL } from "@/lib/business";
+import { SITE_URL, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
@@ -118,29 +118,7 @@ export default async function FreshFlowerGajrayPage() {
     ]
   };
 
-  const itemListSchema = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: "Gajray & Garlands Mala Collection Lahore",
-    numberOfItems: gajrayProducts.length,
-    itemListElement: gajrayProducts.map((p, idx) => ({
-      "@type": "ListItem",
-      position: idx + 1,
-      item: {
-        "@type": "Product",
-        name: p.title,
-        url: `https://lahorebouquet.com/products/${p.slug}`,
-        image: `https://lahorebouquet.com${p.image}`,
-        description: p.desc,
-        offers: {
-          "@type": "Offer",
-          price: p.price,
-          priceCurrency: "PKR",
-          availability: "https://schema.org/InStock",
-        },
-      },
-    })),
-  };
+  const itemListJsonLd = itemListSchema(gajrayProducts, `${SITE_URL}/collections/fresh-flower-gajray`, "Gajray & Garlands Mala Collection Lahore");
 
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 py-10 space-y-12 bg-[#F8F3EA] text-[#2A2A2A]">
@@ -154,7 +132,7 @@ export default async function FreshFlowerGajrayPage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
 
       {/* Breadcrumb */}
