@@ -158,6 +158,11 @@ export default function ValentineDayFlowersLahorePage() {
             "@type": "OfferShippingDetails",
             shippingRate: { "@type": "MonetaryAmount", value: 0, currency: "PKR" },
             shippingDestination: { "@type": "DefinedRegion", addressCountry: "PK", addressRegion: "Lahore" },
+            deliveryTime: {
+              "@type": "ShippingDeliveryTime",
+              handlingTime: { "@type": "QuantitativeValue", minValue: 0, maxValue: 1, unitCode: "DAY" },
+              transitTime: { "@type": "QuantitativeValue", minValue: 0, maxValue: 1, unitCode: "DAY" },
+            },
           },
           hasMerchantReturnPolicy: {
             "@type": "MerchantReturnPolicy",
