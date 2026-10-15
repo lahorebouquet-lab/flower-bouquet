@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { MessageCircle, Phone, Clock, MapPin, Send, Mail } from "lucide-react";
+import { MessageCircle, Phone, Clock, MapPin, Send, Mail, Instagram } from "lucide-react";
 import { useCart } from "../context/CartContext";
 import Logo from "./Logo";
 import {
@@ -38,6 +38,18 @@ export default function Footer() {
             <p className="text-[#BDBDBD] text-xs max-w-md leading-relaxed">
               Lahore Bouquet is a flower shop in Lahore. We hand-tie fresh roses, make money bouquets for celebrations, and deliver across Lahore. Chat with us directly on WhatsApp.
             </p>
+            <div className="flex items-center gap-3 pt-1">
+              <a
+                href="https://www.instagram.com/lahorebouquet/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Lahore Bouquet on Instagram"
+                className="h-9 w-9 rounded-full flex items-center justify-center border border-white/10 bg-white/[0.04] text-white/80 hover:text-[#C6A15B] hover:border-[#C6A15B]/50 transition-all"
+              >
+                <Instagram className="w-4 h-4" />
+              </a>
+              <span className="text-[11px] text-[#777777]">Follow us on Instagram</span>
+            </div>
           </div>
 
           <div className="lg:col-span-6">
