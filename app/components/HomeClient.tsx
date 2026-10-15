@@ -158,7 +158,7 @@ export default function HomeClient({
             </h1>
 
             {/* Quick answer (AEO) */}
-            <p className="text-[#2A2A2A] text-xs sm:text-sm lg:text-base max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            <p className="hero-answer text-[#2A2A2A] text-xs sm:text-sm lg:text-base max-w-xl mx-auto lg:mx-0 leading-relaxed">
               <strong>Our catalog starts at Rs. 349, while hand-tied fresh bouquets start at Rs. 1,239 and arrive in 2–5 hours.</strong> Lahore Bouquet hand-ties fresh roses, sunflowers, lilies and money bouquets to order, sends you a photo and video on WhatsApp before dispatch, and delivers across DHA, Gulberg, Model Town, Bahria Town and Johar Town — with a midnight surprise slot for birthdays.
             </p>
 

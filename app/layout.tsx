@@ -105,6 +105,10 @@ export default function RootLayout({
     author: {
       "@id": `${SITE_URL}#florist`,
     },
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", ".hero-answer"],
+    },
     publisher: {
       "@id": `${SITE_URL}#florist`,
     },

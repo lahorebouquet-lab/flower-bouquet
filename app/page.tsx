@@ -72,6 +72,40 @@ export default async function HomePage() {
   const businessSchema = floristSchema();
   const orgSchema = organizationSchema();
 
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "How to Order Flowers Online in Lahore",
+    description: "Order fresh flower bouquets online from Lahore Bouquet with same-day delivery across Lahore in 3 simple steps.",
+    totalTime: "PT5M",
+    estimatedCost: {
+      "@type": "MonetaryAmount",
+      currency: "PKR",
+      value: "349",
+    },
+    step: [
+      {
+        "@type": "HowToStep",
+        position: 1,
+        name: "Pick your flowers",
+        text: "Choose a bouquet from our catalog starting at Rs. 349, or tell us your budget on WhatsApp at 0310-4225974. Add a complimentary handwritten wax-sealed card with your message.",
+        url: `${SITE_URL}/bouquets`,
+      },
+      {
+        "@type": "HowToStep",
+        position: 2,
+        name: "Approve photo and video on WhatsApp",
+        text: "Our florist hand-ties your bouquet fresh and shares a live photo and video with you on WhatsApp for approval. Nothing is dispatched until you confirm it looks perfect.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 3,
+        name: "We deliver in 2 to 5 hours",
+        text: "Bouquets travel in careful, climate-protected delivery so stems remain crisp in Lahore's weather. Free same-day delivery across DHA, Gulberg, Model Town, Bahria Town, Johar Town and all major Lahore areas.",
+      },
+    ],
+  };
+
   return (
     <>
       {/* Homepage-only LCP preload: hero image discovered before client hydration */}
@@ -95,6 +129,10 @@ export default async function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
 
       <HomeClient
