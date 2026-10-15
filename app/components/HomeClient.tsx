@@ -556,6 +556,11 @@ export default function HomeClient({
               </details>
             ))}
           </div>
+
+          {/* Author byline (E-E-A-T / GEO) */}
+          <p className="text-center text-[11px] text-[#777777] pt-2">
+            Written by the <span className="font-semibold text-[#8B1E2D]">Lahore Bouquet floral team</span> — Lahore-based florists hand-tying fresh bouquets daily since October 2026.
+          </p>
         </div>
       </section>
     </>

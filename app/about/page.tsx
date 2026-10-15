@@ -162,6 +162,25 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Sources & Standards (GEO: citations) */}
+      <section className="space-y-3">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">
+          Our Standards & Sources
+        </h2>
+        <p className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed">
+          Our bouquet designs follow traditional floriography — the{" "}
+          <a
+            href="https://en.wikipedia.org/wiki/Language_of_flowers"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#8B1E2D] font-semibold hover:underline"
+          >
+            language of flowers
+          </a>
+          {" "}— so every rose colour and bloom carries its intended meaning. Stems are conditioned using professional floristry practice: clean cuts, cool nutrient water, and hydration through transit.
+        </p>
+      </section>
+
       {/* CTA Strip (Section 1: #0B0B0B dark strip with #8B1E2D CTA button) */}
       <section className="p-8 rounded-2xl bg-[#0B0B0B] text-white border border-[#C6A15B]/30 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-md">
         <div className="space-y-1 text-center sm:text-left">
