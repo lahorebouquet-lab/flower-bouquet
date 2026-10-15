@@ -61,16 +61,16 @@ export const OCCASIONS_DATA = [
 ];
 
 export const LAHORE_DELIVERY_ZONES = [
-  "DHA Lahore (Phases 1 to 9 & Raya)",
-  "Gulberg (I, II, III, & Main Boulevard)",
-  "Bahria Town (All Sectors) & Bahria Orchard",
-  "Model Town & Garden Town",
-  "Johar Town & Faisal Town",
-  "Cantt, Cavalry Ground & Askari (1 to 11)",
-  "Wapda Town, PCSIR & Valencia",
-  "Lake City, Khayaban-e-Amin & Pine Avenue",
-  "Shadman, Jail Road & Mall Road",
-  "Allama Iqbal Town & Sabzazar",
+  { name: "DHA Lahore (Phases 1 to 9 & Raya)", href: "/delivery-areas/dha" },
+  { name: "Gulberg (I, II, III, & Main Boulevard)", href: "/delivery-areas/gulberg" },
+  { name: "Bahria Town (All Sectors) & Bahria Orchard", href: "/delivery-areas/bahria-town" },
+  { name: "Model Town & Garden Town", href: "/delivery-areas/model-town" },
+  { name: "Johar Town & Faisal Town", href: "/delivery-areas/johar-town" },
+  { name: "Cantt, Cavalry Ground & Askari (1 to 11)", href: "/delivery-areas/cantt" },
+  { name: "Wapda Town, PCSIR & Valencia", href: "/delivery-areas/wapda-town" },
+  { name: "Lake City, Khayaban-e-Amin & Pine Avenue", href: "/delivery-areas/lake-city" },
+  { name: "Shadman, Jail Road & Mall Road", href: "/delivery-areas" },
+  { name: "Allama Iqbal Town & Sabzazar", href: "/delivery-areas/iqbal-town" },
 ];
 
 export default function PricesClient() {
@@ -577,10 +577,10 @@ export default function PricesClient() {
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 text-xs">
           {LAHORE_DELIVERY_ZONES.map((zone, idx) => (
-            <div key={idx} className="p-3 rounded-xl bg-white border border-[#E5DED2] flex items-center gap-2 text-[#2A2A2A] shadow-sm">
+            <Link key={idx} href={zone.href} className="p-3 rounded-xl bg-white border border-[#E5DED2] flex items-center gap-2 text-[#2A2A2A] shadow-sm hover:border-[#C6A15B] hover:shadow-md transition-all">
               <span className="w-1.5 h-1.5 rounded-full bg-[#8B1E2D] shrink-0" />
-              <span className="line-clamp-1">{zone}</span>
-            </div>
+              <span className="line-clamp-1">{zone.name}</span>
+            </Link>
           ))}
         </div>
       </section>
