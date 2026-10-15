@@ -8,6 +8,7 @@ import {
   LAHORE_AREAS
 } from "../../data/products";
 import { getSanityProducts, getSanityProduct } from "@/sanity/lib/fetch";
+import ProductMainImage from "@/app/components/ProductMainImage";
 import { SITE_URL } from "@/lib/business";
 import ProductDetailActions from "../../components/ProductDetailActions";
 import ProductCard from "../../components/ProductCard";
@@ -302,14 +303,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           {/* Left Column: Product Image Gallery */}
           <div className="lg:col-span-6 space-y-4">
             <div className="relative aspect-[4/5] w-full rounded-2xl overflow-hidden bg-white border border-[rgba(198,161,91,0.25)] shadow-md">
-              <Image
-                src={product.image}
-                alt={product.title}
-                fill
-                priority
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-              />
+              <ProductMainImage src={product.image} alt={product.title} />
 
               {/* Badge Pill */}
               <div className="absolute top-4 left-4 z-10">
