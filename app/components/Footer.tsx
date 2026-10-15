@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { MessageCircle, Phone, Clock, MapPin, Send, Mail, Instagram } from "lucide-react";
+import { MessageCircle, Phone, Clock, MapPin, Send, Mail } from "lucide-react";
 import { useCart } from "../context/CartContext";
 import Logo from "./Logo";
 import {
@@ -46,7 +46,11 @@ export default function Footer() {
                 aria-label="Lahore Bouquet on Instagram"
                 className="h-9 w-9 rounded-full flex items-center justify-center border border-white/10 bg-white/[0.04] text-white/80 hover:text-[#C6A15B] hover:border-[#C6A15B]/50 transition-all"
               >
-                <Instagram className="w-4 h-4" />
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                </svg>
               </a>
               <span className="text-[11px] text-[#777777]">Follow us on Instagram</span>
             </div>
