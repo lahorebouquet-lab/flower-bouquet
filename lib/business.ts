@@ -99,7 +99,12 @@ export const SERVICE_AREAS = [
 
 /** Florist JSON-LD — shared @id so Organization can link to it. */
 export function floristSchema(url: string = SITE_URL) {
-  const sameAs = [BUSINESS.social.instagram, BUSINESS.social.facebook, BUSINESS.social.tiktok].filter(Boolean);
+  const sameAs = [
+    BUSINESS.social.instagram,
+    BUSINESS.social.facebook,
+    BUSINESS.social.tiktok,
+    "https://lahorebouquet-flowers.blogspot.com",
+  ].filter(Boolean);
   return {
     "@context": "https://schema.org",
     "@type": "Florist",
@@ -113,6 +118,7 @@ export function floristSchema(url: string = SITE_URL) {
     priceRange: BUSINESS.priceRange.display,
     currenciesAccepted: "PKR",
     paymentAccepted: "Cash, Bank Transfer, JazzCash, EasyPaisa",
+    foundingDate: "2026-10-09",
     address: {
       "@type": "PostalAddress",
       addressLocality: BUSINESS.address.locality,
@@ -248,7 +254,12 @@ export function serviceSchema(opts: {
   };
 }
 export function organizationSchema(url: string = SITE_URL) {
-  const sameAs = [BUSINESS.social.instagram, BUSINESS.social.facebook, BUSINESS.social.tiktok].filter(Boolean);
+  const sameAs = [
+    BUSINESS.social.instagram,
+    BUSINESS.social.facebook,
+    BUSINESS.social.tiktok,
+    "https://lahorebouquet-flowers.blogspot.com",
+  ].filter(Boolean);
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -256,6 +267,7 @@ export function organizationSchema(url: string = SITE_URL) {
     name: BUSINESS.name,
     url,
     logo: `${url}/icon.png`,
+    foundingDate: "2026-10-09",
     ...(sameAs.length > 0 ? { sameAs } : {}),
     contactPoint: {
       "@type": "ContactPoint",

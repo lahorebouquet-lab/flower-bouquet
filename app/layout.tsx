@@ -100,6 +100,11 @@ export default function RootLayout({
     url: SITE_URL,
     name: "Lahore Bouquet",
     inLanguage: "en-PK",
+    datePublished: "2026-10-09",
+    dateModified: "2026-10-15",
+    author: {
+      "@id": `${SITE_URL}#florist`,
+    },
     publisher: {
       "@id": `${SITE_URL}#florist`,
     },
