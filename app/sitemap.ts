@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { execSync } from "node:child_process";
 import { getSanityProducts, getSanityBlogPosts } from "@/sanity/lib/fetch";
 import { ALL_PRODUCTS } from "./data/products";
 import { SITE_URL } from "@/lib/business";
@@ -13,7 +14,6 @@ import { SITE_URL } from "@/lib/business";
 
 function gitLastModified(relativePath: string): Date | null {
   try {
-    const { execSync } = require("child_process") as typeof import("child_process");
     const out = execSync(`git log -1 --format=%cI -- "${relativePath}"`, {
       cwd: process.cwd(),
       stdio: ["ignore", "pipe", "ignore"],

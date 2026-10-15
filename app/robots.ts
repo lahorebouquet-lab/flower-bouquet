@@ -41,7 +41,17 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/studio", "/studio/", "/admin", "/presentation", "/cart", "/checkout", "/wishlist"],
+        disallow: [
+          "/api/",
+          "/_next/",
+          "/studio",
+          "/studio/",
+          "/admin",
+          "/presentation",
+          "/cart",
+          "/checkout",
+          "/wishlist",
+        ],
       },
       // AI crawlers are explicitly allowed (answer engines / GEO).
       {

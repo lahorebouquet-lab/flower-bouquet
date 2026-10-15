@@ -7,6 +7,12 @@ import type { NextRequest } from "next/server";
  */
 export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
+  const hostname = req.headers.get("host")?.split(":")[0].toLowerCase();
+  if (hostname === "www.lahorebouquet.com") {
+    const url = req.nextUrl.clone();
+    url.hostname = "lahorebouquet.com";
+    return NextResponse.redirect(url, 308);
+  }
   if (
     pathname.startsWith("/api/") ||
     pathname.startsWith("/studio") ||

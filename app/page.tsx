@@ -33,15 +33,15 @@ export const metadata: Metadata = {
     title: "Flower Shop in Lahore | Same-Day Delivery | Lahore Bouquet",
     description: "Looking for a flower shop near you in Lahore? Lahore Bouquet makes fresh bouquets to order and delivers across the city. Order online or call 0310-4225974.",
     url: `${SITE_URL}`,
-    type: "website",
-    locale: "en_PK",
-    images: [
-      {
-        url: `${SITE_URL}/images/hero-luxury-banner.webp`,
-        width: 1024,
-        height: 443,
-        alt: "Flower Shop in Lahore | Fresh Bouquets & Same-Day Delivery | Lahore Bouquet",
-      },
+      type: "website",
+      locale: "en_PK",
+      images: [
+        {
+          url: `${SITE_URL}/og-image.jpg`,
+          width: 1200,
+          height: 630,
+          alt: "Flower Shop in Lahore | Fresh Bouquets & Same-Day Delivery | Lahore Bouquet",
+        },
     ],
   }
 };

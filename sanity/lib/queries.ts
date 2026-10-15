@@ -14,7 +14,6 @@ export const ALL_PRODUCTS_QUERY = groq`
     badgeType,
     category,
     "image": image,
-    "gallery": gallery,
     desc,
     stems,
     occasion,

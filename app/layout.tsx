@@ -30,16 +30,13 @@ export async function generateMetadata(): Promise<Metadata> {
     description: "Send fresh handcrafted flower bouquets, imported roses, sunflowers, money bouquets, wedding decor & gift combos across Lahore. Express 2–5 hours and midnight delivery across all Lahore areas.",
     keywords: [
       "lahore bouquet",
-      "flower bouquet lahore",
       "flower delivery lahore",
       "send flowers to lahore",
       "rose bouquet lahore",
       "sunflower bouquet lahore",
       "money bouquet lahore",
-      "wedding room decor lahore",
-      "bridal canopy decor lahore",
-      "midnight flower delivery lahore",
-      "fresh flowers shop lahore"
+      "wedding decoration lahore",
+      "midnight flower delivery lahore"
     ],
     metadataBase: new URL(SITE_URL),
     manifest: "/manifest.webmanifest",
@@ -67,9 +64,9 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      // NOTE: title/description/images intentionally omitted — Twitter/X
-      // falls back to each page's own openGraph tags, so page-specific
-      // share images are never overridden by a generic one.
+      title: "Lahore Bouquet - Fresh Flowers Delivered in Lahore",
+      description: "Same-day 2–5 hour flower delivery across Lahore, with fresh bouquets, roses, gifts and wedding décor.",
+      images: [`${SITE_URL}/og-image.jpg`],
     },
     icons: {
       icon: [
