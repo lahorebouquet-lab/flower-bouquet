@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { useCart } from "../context/CartContext";
 import Logo from "./Logo";
 import AnnouncementBar from "./AnnouncementBar";
-import { Heart, ShoppingBag, Menu, X, ChevronDown, ChevronRight, Sparkles, MapPin } from "lucide-react";
+import { Heart, ShoppingBag, Menu, X, ChevronDown, ChevronRight, Sparkles, MapPin, Search } from "lucide-react";
 
 interface SubItem {
   name: string;
@@ -285,6 +285,15 @@ export default function Header() {
                 </svg>
                 <span className="hidden sm:inline">WhatsApp Order</span>
               </a>
+
+              {/* Search Button */}
+              <Link
+                href="/search"
+                aria-label="Search products"
+                className="relative h-9 w-9 rounded-full flex items-center justify-center border border-white/10 bg-white/[0.04] text-white/80 hover:text-[#C6A15B] hover:border-[#C6A15B]/50 hover:bg-white/10 transition-all duration-200 active:scale-95"
+              >
+                <Search className="w-4 h-4" strokeWidth={1.8} />
+              </Link>
 
               {/* Circular Wishlist Button */}
               <button
