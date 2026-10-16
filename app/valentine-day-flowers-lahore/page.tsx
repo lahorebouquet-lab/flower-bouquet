@@ -152,6 +152,7 @@ export default function ValentineDayFlowersLahorePage() {
           "@type": "Offer",
           priceCurrency: "PKR",
           price: p.price,
+          validFrom: "2026-10-09",
           availability: "https://schema.org/InStock",
           url: `${SITE_URL}/products/${p.slug}`,
           shippingDetails: {

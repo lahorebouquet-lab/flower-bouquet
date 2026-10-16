@@ -209,6 +209,7 @@ export function itemListSchema(
                 "@type": "Offer",
                 priceCurrency: "PKR",
                 price: p.price,
+                validFrom: "2026-10-09",
                 availability: "https://schema.org/InStock",
                 shippingDetails: {
                   "@type": "OfferShippingDetails",

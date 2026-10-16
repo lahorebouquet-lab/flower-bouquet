@@ -211,6 +211,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       "url": `${SITE_URL}/products/${product.slug}`,
       "priceCurrency": "PKR",
       "price": product.price,
+      "validFrom": "2026-10-09",
       "priceValidUntil": "2027-12-31",
       "availability": "https://schema.org/InStock",
       "itemCondition": "https://schema.org/NewCondition",
@@ -236,9 +237,9 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           },
           "transitTime": {
             "@type": "QuantitativeValue",
-            "minValue": 2,
-            "maxValue": 5,
-            "unitCode": "HUR"
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
           }
         }
       },
