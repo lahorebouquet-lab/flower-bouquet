@@ -88,6 +88,30 @@ export default async function CrochetBouquetsPage() {
           "@type": "Answer",
           text: "Tell us your colours on WhatsApp and we will let you know what is possible."
         }
+      },
+      {
+        "@type": "Question",
+        name: "How long do crochet flowers last?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Years. Crochet flowers never wilt — just dust them gently with a soft brush and keep them away from damp places, and they will look the same years from now."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Are crochet bouquets good for weddings?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. They are popular for bridal bouquets, nikkah gifts and anniversaries because the couple can keep them as a keepsake long after the event."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Do you deliver crochet bouquets across Lahore?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Popular in-stock styles are delivered same-day within 2 to 5 hours across Lahore with free delivery. Custom colour requests take 24 to 48 hours to handmake."
+        }
       }
     ]
   };
@@ -147,6 +171,22 @@ export default async function CrochetBouquetsPage() {
         </div>
       </section>
 
+      {/* About Crochet Bouquets */}
+      <section className="bg-white p-6 sm:p-10 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-4">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Flowers That Never Fade</h2>
+        <div className="text-sm text-[#2A2A2A] leading-relaxed space-y-3">
+          <p>
+            Every crochet bouquet is knitted entirely by hand, petal by petal — which means no two bouquets are exactly alike. Where fresh flowers fade within days, crochet sunflowers, roses and mixed posies stay perfect for years, making them a keepsake rather than just a gift.
+          </p>
+          <p>
+            In Lahore, crochet bouquets have become a favourite for anniversaries, graduations and new homes — occasions where people want the gift to be remembered. They are also popular as bridal bouquets for nikkah ceremonies, since the bride can keep hers forever. Custom colours are possible: tell us your palette on WhatsApp and we will confirm what can be handmade, usually within 24 to 48 hours.
+          </p>
+          <p>
+            Popular ready-made styles are in stock for same-day delivery across Lahore, usually within 2 to 5 hours, with free delivery and a WhatsApp photo approval before dispatch. They need no water and no sunlight — just an occasional gentle dusting.
+          </p>
+        </div>
+      </section>
+
       {/* Care Instructions */}
       <section className="bg-white p-6 sm:p-8 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-3">
         <h2 className="font-playfair text-xl font-bold text-[#0B0B0B]">Care</h2>
@@ -184,6 +224,18 @@ export default async function CrochetBouquetsPage() {
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Can I choose the colours?</h3>
             <p>Tell us your colours on WhatsApp and we will let you know what is possible.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">How long do crochet flowers last?</h3>
+            <p>Years. Crochet flowers never wilt — just dust them gently with a soft brush and keep them away from damp places, and they will look the same years from now.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Are crochet bouquets good for weddings?</h3>
+            <p>Yes. They are popular for bridal bouquets, nikkah gifts and anniversaries because the couple can keep them as a keepsake long after the event.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Do you deliver crochet bouquets across Lahore?</h3>
+            <p>Yes. Popular in-stock styles are delivered same-day within 2 to 5 hours across Lahore with free delivery. Custom colour requests take 24 to 48 hours to handmake.</p>
           </div>
         </div>
       </section>

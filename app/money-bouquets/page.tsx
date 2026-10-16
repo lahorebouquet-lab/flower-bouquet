@@ -83,6 +83,30 @@ export default async function MoneyBouquetsPage() {
           "@type": "Answer",
           text: "Yes, we use fresh, uncreased notes for our money bouquets."
         }
+      },
+      {
+        "@type": "Question",
+        name: "How much does a money bouquet cost in Lahore?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The design, fresh roses and wrap start from Rs. 4,500, and you add the cash amount of your choice on top. Tell us your total budget on WhatsApp and we will plan the denominations for you."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "How far in advance should I order a money bouquet?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Same-day delivery in 2 to 5 hours is possible for standard designs. For large cash amounts or fully custom designs, ordering a day ahead gives us time to arrange fresh notes in your chosen denominations."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Which occasions are money bouquets best for?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Weddings and salami, Eid, birthdays, graduations, a first salary celebration, and new-baby visits. They are the most popular premium gift for occasions where cash is the tradition."
+        }
       }
     ]
   };
@@ -162,6 +186,22 @@ export default async function MoneyBouquetsPage() {
         </div>
       </section>
 
+      {/* Why a Money Bouquet */}
+      <section className="bg-white p-6 sm:p-10 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-4">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">A Gift That Is Both Beautiful and Useful</h2>
+        <div className="text-sm text-[#2A2A2A] leading-relaxed space-y-3">
+          <p>
+            A money bouquet solves the oldest gifting dilemma in Pakistan: you want to give cash, but handing over an envelope feels plain. We hand-fold real PKR notes into fans and flower shapes, then set them among fresh red roses with premium wrapping — so the gift looks stunning in photos and the recipient still gets the full cash value.
+          </p>
+          <p>
+            Every bouquet is made to your budget. Choose the total cash amount and the denominations — Rs. 100, 500, 1,000 or 5,000 — and we arrange fresh, uncreased notes in a design that matches the occasion. The craftsmanship charge for the design, roses and wrap starts from Rs. 4,500, and the cash amount you choose is added on top at face value.
+          </p>
+          <p>
+            Money bouquets are our most requested premium gift for weddings and salami in Lahore, and they are equally popular for Eid, birthdays and graduations. We deliver across Lahore the same day, usually within 2 to 5 hours, with free delivery — and you approve a photo on WhatsApp before the bouquet leaves our studio.
+          </p>
+        </div>
+      </section>
+
       {/* Product Grid */}
       <section className="space-y-4">
         <div className="flex items-center justify-between text-xs text-[#2A2A2A]">
@@ -191,6 +231,18 @@ export default async function MoneyBouquetsPage() {
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Can I ask for new notes only?</h3>
             <p>Yes, we use fresh, uncreased notes for our money bouquets.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">How much does a money bouquet cost in Lahore?</h3>
+            <p>The design, fresh roses and wrap start from Rs. 4,500, and you add the cash amount of your choice on top. Tell us your total budget on WhatsApp and we will plan the denominations for you.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">How far in advance should I order a money bouquet?</h3>
+            <p>Same-day delivery in 2 to 5 hours is possible for standard designs. For large cash amounts or fully custom designs, ordering a day ahead gives us time to arrange fresh notes in your chosen denominations.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Which occasions are money bouquets best for?</h3>
+            <p>Weddings and salami, Eid, birthdays, graduations, a first salary celebration, and new-baby visits. They are the most popular premium gift for occasions where cash is the tradition.</p>
           </div>
         </div>
       </section>

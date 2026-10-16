@@ -58,6 +58,29 @@ export default function PrivacyPolicyPage() {
         </p>
       </section>
 
+      <section className="bg-[#F8F3EA] border border-[#E5DED2] rounded-2xl p-6 sm:p-8 space-y-3">
+        <h2 className="font-playfair text-xl font-bold text-[#0B0B0B]">Summary</h2>
+        <div className="text-sm text-[#2A2A2A] leading-relaxed space-y-2">
+          <p>
+            <strong>What we collect:</strong> only what we need to fulfil your order — your name, phone number, delivery address and recipient details, plus WhatsApp messages about your order and basic website analytics.
+          </p>
+          <p>
+            <strong>What we never do:</strong> we do not sell your personal information to anyone, and we never share it for marketing by third parties.
+          </p>
+          <p>
+            <strong>Who sees your data:</strong> only our own team and our delivery riders (who need the address to deliver your flowers). Payment screenshots are used solely to verify your payment.
+          </p>
+          <p>
+            <strong>Your control:</strong> you can ask us at any time what data we hold about you, ask us to correct it, or ask us to delete it — just message us on WhatsApp at{" "}
+            <a href="https://wa.me/923104225974" className="text-[#8B1E2D] font-semibold hover:underline">0310-4225974</a>{" "}
+            or email <a href="mailto:lahorebouquet@gmail.com" className="text-[#8B1E2D] font-semibold hover:underline">lahorebouquet@gmail.com</a>.
+          </p>
+          <p className="text-xs text-[#777777]">
+            The full details are in the sections below.
+          </p>
+        </div>
+      </section>
+
       <section className="space-y-3">
         <h2 className="font-playfair text-xl font-bold text-[#0B0B0B]">1. Information We Collect</h2>
         <ul className="list-disc pl-5 space-y-2 text-sm leading-relaxed">

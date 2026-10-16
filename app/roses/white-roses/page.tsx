@@ -93,6 +93,30 @@ export default async function WhiteRosesPage() {
           "@type": "Answer",
           text: "Yes. Our Duo Royale bouquet combines both."
         }
+      },
+      {
+        "@type": "Question",
+        name: "What do white roses symbolize?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "White roses symbolize purity, innocence, new beginnings and remembrance. They are the traditional choice for weddings, apologies and sympathy gestures."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "How long do white roses last?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "With fresh water and a cool spot away from direct sunlight, white roses typically stay fresh for 5 to 7 days. We deliver them farm-fresh so you get the maximum vase life."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Do you deliver white rose bouquets across Lahore?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. We deliver fresh white rose bouquets across Lahore the same day, usually within 2 to 5 hours, with free delivery and a WhatsApp photo before dispatch."
+        }
       }
     ]
   };
@@ -152,6 +176,22 @@ export default async function WhiteRosesPage() {
         </div>
       </section>
 
+      {/* About White Roses */}
+      <section className="bg-white p-6 sm:p-10 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-4">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">The Meaning Behind White Roses</h2>
+        <div className="text-sm text-[#2A2A2A] leading-relaxed space-y-3">
+          <p>
+            White roses have carried the same meaning for centuries: purity, innocence, new beginnings and sincere remembrance. That is why they appear at such different moments — a nikkah ceremony, an apology, a hospital visit, a graduation. The message is always calm and respectful, never loud.
+          </p>
+          <p>
+            Our white rose bouquets in Lahore come in single stems, classic dozens and grand 50-rose arrangements, styled with soft green fillers or baby&apos;s breath and wrapped in pink, cream or black paper to match the mood. For a striking contrast, the Duo Royale pairs white and red roses in a single bouquet — a popular pick for engagements.
+          </p>
+          <p>
+            Every bouquet is cut fresh and delivered across Lahore the same day, usually within 2 to 5 hours, with free delivery. You approve a photo on WhatsApp before it leaves our studio, so the roses that arrive are exactly the ones you chose. With fresh water and a cool spot, white roses stay beautiful for 5 to 7 days.
+          </p>
+        </div>
+      </section>
+
       {/* Good for section */}
       <section className="bg-white p-6 sm:p-8 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-3">
         <h2 className="font-playfair text-xl font-bold text-[#0B0B0B]">Good for</h2>
@@ -189,6 +229,18 @@ export default async function WhiteRosesPage() {
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Can I mix white and red roses?</h3>
             <p>Yes. Our Duo Royale bouquet combines both.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">What do white roses symbolize?</h3>
+            <p>White roses symbolize purity, innocence, new beginnings and remembrance. They are the traditional choice for weddings, apologies and sympathy gestures.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">How long do white roses last?</h3>
+            <p>With fresh water and a cool spot away from direct sunlight, white roses typically stay fresh for 5 to 7 days. We deliver them farm-fresh so you get the maximum vase life.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Do you deliver white rose bouquets across Lahore?</h3>
+            <p>Yes. We deliver fresh white rose bouquets across Lahore the same day, usually within 2 to 5 hours, with free delivery and a WhatsApp photo before dispatch.</p>
           </div>
         </div>
       </section>
