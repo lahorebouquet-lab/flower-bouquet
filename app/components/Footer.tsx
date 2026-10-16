@@ -52,7 +52,7 @@ export default function Footer() {
                   <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
                 </svg>
               </a>
-              <span className="text-[11px] text-[#777777]">Follow us on Instagram</span>
+              <span className="text-[11px] text-[#A8A8A8]">Follow us on Instagram</span>
             </div>
           </div>
 
