@@ -63,6 +63,19 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     if (lastSpace > maxNameLen * 0.6) shortName = shortName.slice(0, lastSpace);
     shortName = shortName.replace(/\s+(for|in|on|at|with|and|of|the|a|an)$/i, "").replace(/[:\-–—,.]+$/, "").trimEnd();
   }
+  // Pad short titles (< 30 chars) with category-aware keywords for SEO.
+  // Product H1 stays as the short name; only the meta title is enriched.
+  if (shortName.length < 30) {
+    const catLower = (product.category || "").toLowerCase();
+    const suffix = catLower.includes("cake") ? "Cake | Same-Day Delivery"
+      : catLower.includes("gajray") ? "Gajra | Fresh Flower Delivery"
+      : catLower.includes("chocolate") ? "Chocolate Bouquet | Gift Delivery"
+      : catLower.includes("perfume") || catLower.includes("scent") ? "Perfume Gift Set | Lahore"
+      : catLower.includes("money") ? "Money Bouquet | Same-Day Delivery"
+      : "Flower Bouquet | Same-Day Delivery";
+    const padded = `${shortName} ${suffix}`;
+    if (padded.length <= maxNameLen) shortName = padded;
+  }
 
   // Meta description: 120-160 chars, keyword + price + CTA early, no duplication.
   const priceStr = `Rs. ${product.price.toLocaleString()}`;
