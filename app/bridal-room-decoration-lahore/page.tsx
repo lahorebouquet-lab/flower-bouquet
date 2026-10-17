@@ -56,6 +56,14 @@ const FAQS = [
   {
     q: "How much does bridal room decoration in Lahore cost for a hotel suite?",
     a: "Hotel bridal room decoration in Lahore starts at Rs. 7,999 for our classic package — rose-petal bed styling, fairy lights and scented candles. Share your hotel name and check-in time on WhatsApp at 0310-4225974 and we'll send you an exact quote."
+  },
+  {
+    q: "What is wedding room decoration, and is it the same as bridal room decoration?",
+    a: "Yes — wedding room decoration is simply what many couples call bridal room decoration! When you book wedding room decoration with us, you get the full romantic setup: fresh rose-petal bed styling, fairy lights, scented candles and petal trails. Same service, same care — just the name most people search for."
+  },
+  {
+    q: "How much does wedding room decoration cost in Lahore?",
+    a: "Our wedding room decoration packages start at Rs. 7,999 for the classic look — rose petals, fairy lights and candles. Bigger setups with draped canopies or full floral walls are quoted on WhatsApp (0310-4225974) based on your room and theme. Every wedding room decoration we do uses fresh flowers, never plastic."
   }
 ];
 
