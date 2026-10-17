@@ -99,6 +99,30 @@ export default async function RosesPage() {
           "@type": "Answer",
           text: "Red roses are the most romantic choice for a wife or girlfriend, symbolising deep love. Pink roses are a softer alternative for admiration and affection."
         }
+      },
+      {
+        "@type": "Question",
+        name: "Where can I order a rose bouquet in Lahore?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You're in the right place! Every rose bouquet in Lahore we make is hand-tied fresh to order — from a single elegant stem at Rs. 1,239 to grand 50-rose arrangements. Browse this page, pick your favourite, or message us on WhatsApp (0310-4225974) and we'll deliver it the same day."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "How much does a rose bouquet in Lahore cost?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "If you're wondering what a rose bouquet in Lahore costs, ours start at Rs. 1,239 for a single rose. Dozens and 24-rose bouquets cost more depending on stem count — imported Dutch roses (Rs. 450–650 per stem) are pricier than fresh local ones, but the heads are bigger and they last longer."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Can I get a rose bouquet in Lahore delivered today?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Of course! A rose bouquet in Lahore ordered before 4:00 PM reaches you within 2 to 5 hours, anywhere in the city. And we always share a photo on WhatsApp before dispatch, so you approve the exact bouquet first."
+        }
       }
     ]
   };
@@ -279,6 +303,18 @@ export default async function RosesPage() {
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Which rose colour is best for my wife or girlfriend?</h3>
             <p>Red roses are the most romantic choice for a wife or girlfriend, symbolising deep love. Pink roses are a softer alternative for admiration and affection.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Where can I order a rose bouquet in Lahore?</h3>
+            <p>You're in the right place! Every rose bouquet in Lahore we make is hand-tied fresh to order — from a single elegant stem at Rs. 1,239 to grand 50-rose arrangements. Browse this page, pick your favourite, or message us on WhatsApp (0310-4225974) and we'll deliver it the same day.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">How much does a rose bouquet in Lahore cost?</h3>
+            <p>If you're wondering what a rose bouquet in Lahore costs, ours start at Rs. 1,239 for a single rose. Dozens and 24-rose bouquets cost more depending on stem count — imported Dutch roses (Rs. 450–650 per stem) are pricier than fresh local ones, but the heads are bigger and they last longer.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Can I get a rose bouquet in Lahore delivered today?</h3>
+            <p>Of course! A rose bouquet in Lahore ordered before 4:00 PM reaches you within 2 to 5 hours, anywhere in the city. And we always share a photo on WhatsApp before dispatch, so you approve the exact bouquet first.</p>
           </div>
         </div>
       </section>
