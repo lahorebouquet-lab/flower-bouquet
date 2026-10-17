@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: {
     absolute: "Chocolate Bouquet in Lahore | Price & Delivery",
   },
-  description: "Order a chocolate bouquet in Lahore: chocolates arranged like flowers. Chocolate bouquet price in Pakistan from Rs. 4,200. Delivery across the city.",
+  description: "Order a chocolate bouquet in Lahore: chocolates arranged like flowers. Chocolate bouquet price in Pakistan from Rs. 3,800. Delivery across the city.",
   alternates: {
     canonical: `${SITE_URL}/chocolate-bouquets-lahore`,
   },
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Chocolate Bouquet in Lahore | Price & Delivery",
-    description: "Order a chocolate bouquet in Lahore: chocolates arranged like flowers. Chocolate bouquet price in Pakistan from Rs. 4,200. Delivery across the city.",
+    description: "Order a chocolate bouquet in Lahore: chocolates arranged like flowers. Chocolate bouquet price in Pakistan from Rs. 3,800. Delivery across the city.",
     url: `${SITE_URL}/chocolate-bouquets-lahore`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
@@ -182,7 +182,7 @@ export default async function ChocolateBouquetsLahorePage() {
 
           {/* AEO / GEO Direct Answer Paragraph */}
           <p className="text-[#F8F3EA]/90 text-sm sm:text-base leading-relaxed font-light">
-            A chocolate bouquet is a gift that looks like flowers and tastes like dessert. Lahore Bouquet arranges premium <strong>Ferrero Rocher, Cadbury Dairy Milk, and KitKat</strong> chocolates with luxury satin ribbons, imported wrapping paper, and optional fresh Dutch roses. Prices start from <strong>Rs. 4,200</strong>, with same-day delivery across Lahore within 2 to 5 hours. Order online or call <a href="tel:+923104225974" className="text-[#C6A15B] font-semibold hover:underline">0310-4225974</a>.
+            A chocolate bouquet is a gift that looks like flowers and tastes like dessert. Lahore Bouquet arranges premium <strong>Ferrero Rocher, Cadbury Dairy Milk, and KitKat</strong> chocolates with luxury satin ribbons, imported wrapping paper, and optional fresh Dutch roses. Prices start from <strong>Rs. 3,800</strong>, with same-day delivery across Lahore within 2 to 5 hours. Order online or call <a href="tel:+923104225974" className="text-[#C6A15B] font-semibold hover:underline">0310-4225974</a>.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-3 text-xs text-white/80">
