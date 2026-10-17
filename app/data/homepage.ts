@@ -6,7 +6,7 @@ export interface FAQItem {
 export const HOMEPAGE_FAQS: FAQItem[] = [
   {
     q: "Where can I find a flower shop near me in Lahore?",
-    a: "If you're searching for a flower shop near me in Lahore, Lahore Bouquet delivers fresh bouquets to your doorstep across the entire city — DHA, Gulberg, Model Town, Johar Town, Bahria Town, Cantt, Wapda Town and more. Order online in minutes and get same-day delivery with free shipping."
+    a: "That's us! We're Lahore Bouquet, and we deliver fresh flowers all over Lahore — DHA, Gulberg, Model Town, Johar Town, Bahria Town, Cantt, you name it. Just order online and we'll bring beautiful fresh bouquets right to your door, the very same day, with free delivery."
   },
   {
     q: "How much does a flower bouquet cost in Lahore?",
