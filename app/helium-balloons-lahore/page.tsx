@@ -48,6 +48,18 @@ const FAQS = [
   {
     q: "What payment methods do you accept?",
     a: "Cash on Delivery (COD), JazzCash, EasyPaisa, bank transfer and international credit/debit cards — order easily from Pakistan or abroad (UK, USA, UAE)."
+  },
+  {
+    q: "Where can I buy helium balloons in Lahore?",
+    a: "Right here! If you're looking for helium balloons in Lahore, we inflate them fresh on the day of your event — latex from Rs. 199, metallic numbers and letters from Rs. 349, confetti from Rs. 299. Order on WhatsApp (0310-4225974) and we'll deliver them floating and fabulous."
+  },
+  {
+    q: "How much do helium balloons in Lahore cost?",
+    a: "Good news — helium balloons in Lahore don't have to be expensive! Singles start at Rs. 199, ready bunches of 10 are Rs. 1,799, and full birthday decoration packages start at Rs. 9,999. Message us your theme and we'll quote you exactly."
+  },
+  {
+    q: "Do you deliver helium balloons in Lahore on the same day?",
+    a: "Yes! Helium balloons in Lahore ordered before 4:00 PM are delivered the same day within 2–5 hours — inflated fresh 2–3 hours before your event so they look perfect when guests arrive. We cover DHA, Gulberg, Model Town, Johar Town, Bahria Town, Cantt and beyond."
   }
 ];
 
