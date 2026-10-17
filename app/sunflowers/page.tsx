@@ -89,6 +89,22 @@ export default async function SunflowersPage() {
           "@type": "Answer",
           text: "Usually about a week with fresh water."
         }
+      },
+      {
+        "@type": "Question",
+        name: "What is the sunflower bouquet price in Pakistan?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Fresh sunflower bouquets at Lahore Bouquet start at Rs. 1,590 with free delivery across Lahore. The final price depends on the number of stems and the wrapping style you choose."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "What is the sunflower price in Lahore?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "In Lahore, our sunflower bouquets start at Rs. 1,590. Prices can vary slightly with season and stem availability, and every order includes free delivery across the city."
+        }
       }
     ]
   };
@@ -177,6 +193,14 @@ export default async function SunflowersPage() {
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">How long do sunflowers last?</h3>
             <p>Usually about a week with fresh water.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">What is the sunflower bouquet price in Pakistan?</h3>
+            <p>Fresh sunflower bouquets at Lahore Bouquet start at Rs. 1,590 with free delivery across Lahore. The final price depends on the number of stems and the wrapping style you choose.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">What is the sunflower price in Lahore?</h3>
+            <p>In Lahore, our sunflower bouquets start at Rs. 1,590. Prices can vary slightly with season and stem availability, and every order includes free delivery across the city.</p>
           </div>
         </div>
       </section>
