@@ -115,7 +115,7 @@ export default function PricesClient() {
             </h1>
 
             <p className="text-[#F8F3EA]/90 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-              Flower bouquet prices in Lahore at Lahore Bouquet start from <strong>Rs. 1,239</strong> for a small single-stem bunch and go up to <strong>Rs. 8,900+</strong> for large premium arrangements. All bouquets are arranged fresh to order with same-day delivery across Lahore. <em>Last updated: October 2026</em>.
+              Wondering about the flower bouquet price in Lahore? At Lahore Bouquet, the flower bouquet price in Lahore starts from <strong>Rs. 1,239</strong> for a small single-stem bunch and goes up to <strong>Rs. 8,900+</strong> for large premium arrangements. All bouquets are arranged fresh to order with same-day delivery across Lahore. <em>Last updated: October 2026</em>.
             </p>
           </div>
 
@@ -666,6 +666,21 @@ export default function PricesClient() {
               <span>Browse Catalog</span>
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Flower bouquet price in Lahore — SEO content */}
+      <section className="w-full py-12 px-4 sm:px-6">
+        <div className="max-w-4xl mx-auto space-y-4 text-xs sm:text-sm text-[#2A2A2A] leading-relaxed">
+          <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">
+            Understanding the Flower Bouquet Price in Lahore
+          </h2>
+          <p>
+            If you're comparing the flower bouquet price in Lahore, here's what you should know. The flower bouquet price in Lahore varies mainly by flower type, stem count, and wrapping. A simple seasonal bouquet starts at Rs. 1,239, while the flower bouquet price in Lahore for premium imported roses can reach Rs. 8,900 or more for grand 50-stem arrangements.
+          </p>
+          <p>
+            When checking the flower bouquet price in Pakistan overall, remember that Lahore Bouquet includes free same-day delivery in every quote — no hidden charges at checkout. The flower bouquet price in Lahore you see on this page is the price you pay. For a custom design, just send us your budget on WhatsApp and we'll craft the most beautiful bouquet possible within it.
+          </p>
         </div>
       </section>
 

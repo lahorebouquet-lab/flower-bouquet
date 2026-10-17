@@ -339,4 +339,16 @@ export const FAQ_DATA = [
     q: "Do you offer same-day express delivery in Lahore, and what are delivery charges?",
     a: "Yes! We provide 2–5 hours same-day express delivery across DHA, Gulberg, Bahria Town, Model Town, Johar Town, Cantt, and all Lahore sectors. Standard delivery is free on qualifying orders, with nominal express slots (PKR 250–350) for midnight and guaranteed 2-hour rush slots.",
   },
+  {
+    q: "What is the flower bouquet price in Lahore?",
+    a: "The flower bouquet price in Lahore at Lahore Bouquet starts from Rs. 1,239 for a small single-stem bunch. Most of our popular bouquets fall between Rs. 1,500 and Rs. 5,500 — just pick the size and style you love, and we'll hand-tie it fresh on the day of delivery.",
+  },
+  {
+    q: "What is the flower bouquet price in Pakistan?",
+    a: "If you're comparing the flower bouquet price in Pakistan, our Lahore prices start at Rs. 1,239 with free same-day delivery across the city. Premium imported rose arrangements go up to Rs. 8,900+, and every bouquet is made fresh to order — never pre-made.",
+  },
+  {
+    q: "Why does the flower bouquet price in Lahore vary so much?",
+    a: "The flower bouquet price in Lahore depends on three things: the flower type (local roses cost less than imported Dutch roses), the stem count (a 12-stem bouquet vs a 50-stem showstopper), and the wrapping style. Tell us your budget on WhatsApp and our florists will craft the best-looking bouquet within it.",
+  },
 ];
