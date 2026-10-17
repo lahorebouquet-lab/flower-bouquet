@@ -56,6 +56,18 @@ const FAQS = [
     q: "What if nobody answers the door at midnight?",
     a: "Share the recipient's phone number when you order. Our rider calls a few minutes before arriving to coordinate. If plans change, message us on WhatsApp and we will reschedule the surprise.",
   },
+  {
+    q: "What is midnight flower delivery in Lahore?",
+    a: "Midnight flower delivery in Lahore is our special surprise service — we bring fresh bouquets, cakes and gifts to your loved one's doorstep right at 12 AM. It's the perfect way to be the very first to wish them on their birthday or anniversary.",
+  },
+  {
+    q: "Can I trust midnight flower delivery in Lahore to arrive on time?",
+    a: "Absolutely — that's the whole point! Our rider plans the route in advance and calls a few minutes before arriving, so your midnight flower delivery in Lahore lands right around 12 AM. Just share the recipient's phone number when you order and we'll coordinate everything.",
+  },
+  {
+    q: "What can I include in my midnight flower delivery in Lahore order?",
+    a: "Every midnight flower delivery in Lahore can include fresh flowers, a cake, chocolates, and a complimentary handwritten message card. Tell us your message on WhatsApp and we will handwrite it beautifully.",
+  },
 ];
 
 const faqSchema = {
@@ -87,8 +99,8 @@ export default function MidnightDeliveryPage() {
             Midnight Flower Delivery in Lahore
           </h1>
           <p className="text-[#BDBDBD] text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
-            Make birthdays, anniversaries and special nights unforgettable. Fresh bouquets,
-            cakes and gifts delivered right at <strong className="text-[#C6A15B]">12 AM</strong> —
+            Make birthdays, anniversaries and special nights unforgettable with midnight flower delivery in Lahore.
+            Fresh bouquets, cakes and gifts delivered right at <strong className="text-[#C6A15B]">12 AM</strong> —
             anywhere in Lahore.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2">
@@ -164,6 +176,27 @@ export default function MidnightDeliveryPage() {
               <p className="text-xs text-[#777777]">{item.d}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Why midnight flower delivery in Lahore — SEO content */}
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-12">
+        <div className="space-y-4 text-xs sm:text-sm text-[#2A2A2A] leading-relaxed">
+          <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#0B0B0B] text-center">
+            Why Choose Midnight Flower Delivery in Lahore
+          </h2>
+          <p>
+            There&apos;s something magical about a knock on the door at midnight. With midnight flower
+            delivery in Lahore, you get to be the first person to make them smile on their special day.
+            Our midnight flower delivery in Lahore service covers birthdays, anniversaries, New Year —
+            and those just-because moments that deserve something extraordinary.
+          </p>
+          <p>
+            Every midnight flower delivery in Lahore order is prepared fresh in the evening — never
+            pre-made. Our florists hand-tie your bouquet, we send you its real photo on WhatsApp for
+            approval, and then our rider heads out so everything arrives right around 12 AM. Book on
+            WhatsApp at +92 310 4225974 and let&apos;s plan your surprise together.
+          </p>
         </div>
       </section>
 
