@@ -170,6 +170,22 @@ export default async function BouquetsPage({
           "@type": "Answer",
           text: "Absolutely — that's our speciality! Order a flower bouquet in Lahore before 4:00 PM and we'll deliver it within 2 to 5 hours, anywhere in the city. Every bouquet goes out with a photo on WhatsApp first, so you can see exactly what your loved one will receive."
         }
+      },
+      {
+        "@type": "Question",
+        name: "What is the best flower bouquet for a birthday?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "For birthdays, you can't go wrong with a bright, cheerful flower bouquet — sunflowers, gerberas or mixed seasonal blooms always bring a smile. If it's for someone extra special, a classic red rose flower bouquet says it beautifully. Tell us the vibe on WhatsApp (0310-4225974) and we'll hand-tie the perfect one."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "How long does a fresh flower bouquet stay fresh?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A fresh flower bouquet from us typically stays beautiful for 5 to 7 days with simple care — trim the stems, change the water daily, and keep it away from direct sunlight. We hand-tie every flower bouquet on the morning of delivery, so yours arrives at peak freshness."
+        }
       }
     ]
   };
@@ -433,6 +449,14 @@ export default async function BouquetsPage({
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Can I get a flower bouquet in Lahore delivered today?</h3>
             <p>Absolutely — that's our speciality! Order a flower bouquet in Lahore before 4:00 PM and we'll deliver it within 2 to 5 hours, anywhere in the city. Every bouquet goes out with a photo on WhatsApp first, so you can see exactly what your loved one will receive.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">What is the best flower bouquet for a birthday?</h3>
+            <p>For birthdays, you can't go wrong with a bright, cheerful flower bouquet — sunflowers, gerberas or mixed seasonal blooms always bring a smile. If it's for someone extra special, a classic red rose flower bouquet says it beautifully. Tell us the vibe on WhatsApp (0310-4225974) and we'll hand-tie the perfect one.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">How long does a fresh flower bouquet stay fresh?</h3>
+            <p>A fresh flower bouquet from us typically stays beautiful for 5 to 7 days with simple care — trim the stems, change the water daily, and keep it away from direct sunlight. We hand-tie every flower bouquet on the morning of delivery, so yours arrives at peak freshness.</p>
           </div>
         </div>
       </section>
