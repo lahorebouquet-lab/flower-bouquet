@@ -87,5 +87,13 @@ export const HOMEPAGE_FAQS: FAQItem[] = [
   {
     q: "How do I track my flower order?",
     a: "Use our Track Order page — enter your Order ID (e.g. FLB-123456) and the phone number you ordered with to see live status: Order Received, Confirmed, Preparing, Out for Delivery, and Delivered. You also get WhatsApp updates at every step, including a bouquet photo for your approval before dispatch."
+  },
+  {
+    q: "What makes a good flower shop?",
+    a: "A good flower shop hand-ties every bouquet fresh on the day of delivery, never sells day-old arrangements, shows you a real photo before dispatch, and delivers the same day. That's exactly how we run things at Lahore Bouquet — when you choose a flower shop, those are the four things worth checking."
+  },
+  {
+    q: "Why buy from an online flower shop instead of a market stall?",
+    a: "An online flower shop saves you the trip, the haggling, and the guesswork. At our flower shop you browse real designs, pay securely, get a WhatsApp photo of your exact bouquet before it leaves, and enjoy free same-day delivery across Lahore — things a roadside stall simply can't offer."
   }
 ];
