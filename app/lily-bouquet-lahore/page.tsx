@@ -58,6 +58,18 @@ const FAQS = [
     q: "Do lilies have a strong fragrance?",
     a: "Oriental lilies (like Stargazer and Casablanca) are beautifully fragrant. If you prefer a milder scent — for hospitals or offices — ask for Asiatic lilies, which are nearly scent-free.",
   },
+  {
+    q: "Where can I buy a lily bouquet in Lahore?",
+    a: "From us! Every lily bouquet in Lahore we make is hand-tied fresh to order with elegant Oriental or Asiatic lilies. We even remove the pollen anthers before dispatch so the blooms stay pristine and won't stain. Message us on WhatsApp (0310-4225974) and we'll deliver the same day.",
+  },
+  {
+    q: "Is a lily bouquet in Lahore a good sympathy gift?",
+    a: "Absolutely — white lilies are the most requested condolence flower in the city. A lily bouquet in Lahore ordered from us reaches anywhere in the city within 2 to 5 hours, including same-day sympathy deliveries. Just tell us on WhatsApp and we'll handle it with care.",
+  },
+  {
+    q: "Which lily bouquet in Lahore is best for a hospital visit?",
+    a: "For hospitals, we'd suggest a lily bouquet in Lahore made with Asiatic lilies — they're nearly scent-free, unlike the beautifully fragrant Oriental ones. Gentle, elegant, and perfect get-well wishes. Order before 4:00 PM for same-day delivery.",
+  },
 ];
 
 export default async function LilyBouquetLahorePage() {
