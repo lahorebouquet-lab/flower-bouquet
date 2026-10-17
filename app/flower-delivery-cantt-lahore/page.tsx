@@ -22,7 +22,15 @@ const FAQS = [
   { q: "What is the price of a flower bouquet in Cantt?", a: "Our bouquets start at Rs. 349. Message us on WhatsApp (0310-4225974) for today's exact prices and availability." },
   { q: "Which areas of Cantt do you deliver to?", a: "We deliver across all blocks and sectors of Lahore Cantt. Same-day delivery, free of charge." },
   { q: "Can I send flowers to Cantt from abroad?", a: "Absolutely. Overseas Pakistanis in the UK, USA, UAE and Canada use us regularly. Pay by international card, approve the photo on WhatsApp, and we handle the Cantt delivery." },
-  { q: "Do you offer midnight delivery in Cantt?", a: "Yes — midnight surprise delivery is available in Lahore Cantt for birthdays and anniversaries. Book a day in advance on WhatsApp (0310-4225974)." }
+  { q: "Do you offer midnight delivery in Cantt?", a: "Yes — midnight surprise delivery is available in Lahore Cantt for birthdays and anniversaries. Book a day in advance on WhatsApp (0310-4225974)." },
+  {
+    q: "How do I order flower delivery in Cantt Lahore?",
+    a: "Ordering flower delivery in Cantt Lahore is easy — browse our bouquets, pick your favourite, and check out in under 2 minutes. We hand-tie your flowers fresh and deliver them the same day across Cantt Lahore with free shipping."
+  },
+  {
+    q: "Is flower delivery in Cantt Lahore really free?",
+    a: "Yes! Flower delivery in Cantt Lahore comes with free standard shipping on every order. No hidden charges, no minimum order — just fresh flowers delivered to your doorstep."
+  },
 ];
 
 const AREAS = ["Saddar", "Guldasht Town", "Askari Flats", "Cantt Station Area", "Shami Road", "Tufail Road"];

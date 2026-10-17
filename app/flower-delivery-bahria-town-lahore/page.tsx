@@ -22,7 +22,15 @@ const FAQS = [
   { q: "What is the price of a flower bouquet in Bahria Town?", a: "Our bouquets start at Rs. 349. Message us on WhatsApp (0310-4225974) for today's exact prices and availability." },
   { q: "Which Bahria Town sectors do you deliver to?", a: "We deliver to all Bahria Town sectors in Lahore — Sector A, B, C, D, E, F and surrounding blocks. Same-day delivery, free of charge." },
   { q: "Can I send flowers to Bahria Town from abroad?", a: "Absolutely. Overseas Pakistanis in the UK, USA, UAE and Canada use us regularly. Pay by international card, approve the photo on WhatsApp, and we handle the Bahria Town delivery." },
-  { q: "Do you offer midnight delivery in Bahria Town?", a: "Yes — midnight surprise delivery is available in Bahria Town for birthdays and anniversaries. Book a day in advance on WhatsApp (0310-4225974)." }
+  { q: "Do you offer midnight delivery in Bahria Town?", a: "Yes — midnight surprise delivery is available in Bahria Town for birthdays and anniversaries. Book a day in advance on WhatsApp (0310-4225974)." },
+  {
+    q: "How do I order flower delivery in Bahria Town Lahore?",
+    a: "Ordering flower delivery in Bahria Town Lahore is easy — browse our bouquets, pick your favourite, and check out in under 2 minutes. We hand-tie your flowers fresh and deliver them the same day across Bahria Town Lahore with free shipping."
+  },
+  {
+    q: "Is flower delivery in Bahria Town Lahore really free?",
+    a: "Yes! Flower delivery in Bahria Town Lahore comes with free standard shipping on every order. No hidden charges, no minimum order — just fresh flowers delivered to your doorstep."
+  },
 ];
 
 const AREAS = ["Sector A", "Sector B", "Sector C", "Sector D", "Sector E", "Sector F", "Bahria Orchard", "Iqbal Block", "Quaid Block"];

@@ -22,7 +22,15 @@ const FAQS = [
   { q: "What is the price of a flower bouquet in Askari?", a: "Our bouquets start at Rs. 349. Message us on WhatsApp (0310-4225974) for today's exact prices and availability." },
   { q: "Which areas of Askari do you deliver to?", a: "We deliver across all blocks and sectors of Askari Lahore. Same-day delivery, free of charge." },
   { q: "Can I send flowers to Askari from abroad?", a: "Absolutely. Overseas Pakistanis in the UK, USA, UAE and Canada use us regularly. Pay by international card, approve the photo on WhatsApp, and we handle the Askari delivery." },
-  { q: "Do you offer midnight delivery in Askari?", a: "Yes — midnight surprise delivery is available in Askari Lahore for birthdays and anniversaries. Book a day in advance on WhatsApp (0310-4225974)." }
+  { q: "Do you offer midnight delivery in Askari?", a: "Yes — midnight surprise delivery is available in Askari Lahore for birthdays and anniversaries. Book a day in advance on WhatsApp (0310-4225974)." },
+  {
+    q: "How do I order flower delivery in Askari Lahore?",
+    a: "Ordering flower delivery in Askari Lahore is easy — browse our bouquets, pick your favourite, and check out in under 2 minutes. We hand-tie your flowers fresh and deliver them the same day across Askari Lahore with free shipping."
+  },
+  {
+    q: "Is flower delivery in Askari Lahore really free?",
+    a: "Yes! Flower delivery in Askari Lahore comes with free standard shipping on every order. No hidden charges, no minimum order — just fresh flowers delivered to your doorstep."
+  },
 ];
 
 const AREAS = ["Askari 1", "Askari 2", "Askari 3", "Askari 4", "Askari 5", "Askari 11"];

@@ -22,7 +22,15 @@ const FAQS = [
   { q: "What is the price of a flower bouquet in Johar Town?", a: "Our bouquets start at Rs. 349. Message us on WhatsApp (0310-4225974) for today's exact prices and availability." },
   { q: "Which Johar Town blocks do you deliver to?", a: "We deliver to all Johar Town blocks — A through R, including Khokhar Chowk and surrounding areas. Same-day delivery, free of charge." },
   { q: "Can I send flowers to Johar Town from abroad?", a: "Absolutely. Overseas Pakistanis in the UK, USA, UAE and Canada use us regularly. Pay by international card, approve the photo on WhatsApp, and we handle the Johar Town delivery." },
-  { q: "Do you offer midnight delivery in Johar Town?", a: "Yes — midnight surprise delivery is available in Johar Town for birthdays and anniversaries. Book a day in advance on WhatsApp (0310-4225974)." }
+  { q: "Do you offer midnight delivery in Johar Town?", a: "Yes — midnight surprise delivery is available in Johar Town for birthdays and anniversaries. Book a day in advance on WhatsApp (0310-4225974)." },
+  {
+    q: "How do I order flower delivery in Johar Town Lahore?",
+    a: "Ordering flower delivery in Johar Town Lahore is easy — browse our bouquets, pick your favourite, and check out in under 2 minutes. We hand-tie your flowers fresh and deliver them the same day across Johar Town Lahore with free shipping."
+  },
+  {
+    q: "Is flower delivery in Johar Town Lahore really free?",
+    a: "Yes! Flower delivery in Johar Town Lahore comes with free standard shipping on every order. No hidden charges, no minimum order — just fresh flowers delivered to your doorstep."
+  },
 ];
 
 const AREAS = ["Block A", "Block B", "Block C", "Block D", "Block E", "Block F", "Block G", "Block H", "Block J", "Khokhar Chowk", "Wapda Town Adjacent"];

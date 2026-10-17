@@ -22,7 +22,15 @@ const FAQS = [
   { q: "What is the price of a flower bouquet in Gulberg?", a: "Our bouquets start at Rs. 349. Message us on WhatsApp (0310-4225974) for today's exact prices and availability." },
   { q: "Do you deliver to offices on Main Boulevard Gulberg?", a: "Yes — we regularly deliver to offices, banks and restaurants on Main Boulevard and MM Alam Road, including corporate event florals." },
   { q: "Can I send flowers to Gulberg from abroad?", a: "Absolutely. Overseas Pakistanis in the UK, USA, UAE and Canada use us regularly. Pay by international card, approve the photo on WhatsApp, and we handle the Gulberg delivery." },
-  { q: "Do you offer midnight delivery in Gulberg?", a: "Yes — midnight surprise delivery is available in Gulberg for birthdays and anniversaries. Book a day in advance on WhatsApp (0310-4225974)." }
+  { q: "Do you offer midnight delivery in Gulberg?", a: "Yes — midnight surprise delivery is available in Gulberg for birthdays and anniversaries. Book a day in advance on WhatsApp (0310-4225974)." },
+  {
+    q: "How do I order flower delivery in Gulberg Lahore?",
+    a: "Ordering flower delivery in Gulberg Lahore is easy — browse our bouquets, pick your favourite, and check out in under 2 minutes. We hand-tie your flowers fresh and deliver them the same day across Gulberg Lahore with free shipping."
+  },
+  {
+    q: "Is flower delivery in Gulberg Lahore really free?",
+    a: "Yes! Flower delivery in Gulberg Lahore comes with free standard shipping on every order. No hidden charges, no minimum order — just fresh flowers delivered to your doorstep."
+  },
 ];
 
 const AREAS = ["Gulberg I", "Gulberg II", "Gulberg III", "Main Boulevard", "MM Alam Road", "Gulberg Greens", "Noor Jahan Road"];

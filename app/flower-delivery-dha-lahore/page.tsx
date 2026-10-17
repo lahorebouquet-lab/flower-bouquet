@@ -48,7 +48,15 @@ const FAQS = [
   {
     q: "Do you offer midnight flower delivery in DHA?",
     a: "Yes — surprise midnight delivery is available in DHA Lahore for birthdays and anniversaries. Book at least a day in advance on WhatsApp (0310-4225974) to reserve your slot."
-  }
+  },
+  {
+    q: "How do I order flower delivery in DHA Lahore?",
+    a: "Ordering flower delivery in DHA Lahore is easy — browse our bouquets, pick your favourite, and check out in under 2 minutes. We hand-tie your flowers fresh and deliver them the same day across DHA Lahore with free shipping."
+  },
+  {
+    q: "Is flower delivery in DHA Lahore really free?",
+    a: "Yes! Flower delivery in DHA Lahore comes with free standard shipping on every order. No hidden charges, no minimum order — just fresh flowers delivered to your doorstep."
+  },
 ];
 
 const AREAS = [

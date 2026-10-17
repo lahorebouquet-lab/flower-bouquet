@@ -22,7 +22,15 @@ const FAQS = [
   { q: "What is the price of a flower bouquet in Faisal Town?", a: "Our bouquets start at Rs. 349. Message us on WhatsApp (0310-4225974) for today's exact prices and availability." },
   { q: "Which areas of Faisal Town do you deliver to?", a: "We deliver across all blocks and sectors of Faisal Town Lahore. Same-day delivery, free of charge." },
   { q: "Can I send flowers to Faisal Town from abroad?", a: "Absolutely. Overseas Pakistanis in the UK, USA, UAE and Canada use us regularly. Pay by international card, approve the photo on WhatsApp, and we handle the Faisal Town delivery." },
-  { q: "Do you offer midnight delivery in Faisal Town?", a: "Yes — midnight surprise delivery is available in Faisal Town Lahore for birthdays and anniversaries. Book a day in advance on WhatsApp (0310-4225974)." }
+  { q: "Do you offer midnight delivery in Faisal Town?", a: "Yes — midnight surprise delivery is available in Faisal Town Lahore for birthdays and anniversaries. Book a day in advance on WhatsApp (0310-4225974)." },
+  {
+    q: "How do I order flower delivery in Faisal Town Lahore?",
+    a: "Ordering flower delivery in Faisal Town Lahore is easy — browse our bouquets, pick your favourite, and check out in under 2 minutes. We hand-tie your flowers fresh and deliver them the same day across Faisal Town Lahore with free shipping."
+  },
+  {
+    q: "Is flower delivery in Faisal Town Lahore really free?",
+    a: "Yes! Flower delivery in Faisal Town Lahore comes with free standard shipping on every order. No hidden charges, no minimum order — just fresh flowers delivered to your doorstep."
+  },
 ];
 
 const AREAS = ["Block A", "Block B", "Block C", "Faisal Town Market"];
