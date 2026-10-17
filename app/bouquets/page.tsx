@@ -146,6 +146,30 @@ export default async function BouquetsPage({
           "@type": "Answer",
           text: "Yes! Many customers search for bookey, bukey, or bokay. Whatever spelling you use, we understand and craft fresh hand-tied flower bouquets delivered across Lahore."
         }
+      },
+      {
+        "@type": "Question",
+        name: "Where can I buy a fresh flower bouquet in Lahore?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Right here! We're Lahore Bouquet, and every flower bouquet in Lahore that leaves our studio is hand-tied fresh to order — roses, sunflowers, lilies, you name it. Just pick your favourite on this page or message us on WhatsApp (0310-4225974) and we'll have it at your doorstep the same day."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "How much does a flower bouquet in Lahore cost?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It really depends on the flowers and size you pick — a sweet little seasonal bunch starts around Rs. 500, while grand rose arrangements go higher. Check our prices page for the full list, or tell us your budget on WhatsApp and our florist will craft the best-looking flower bouquet in Lahore within it."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Can I get a flower bouquet in Lahore delivered today?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Absolutely — that's our speciality! Order a flower bouquet in Lahore before 4:00 PM and we'll deliver it within 2 to 5 hours, anywhere in the city. Every bouquet goes out with a photo on WhatsApp first, so you can see exactly what your loved one will receive."
+        }
       }
     ]
   };
@@ -397,6 +421,18 @@ export default async function BouquetsPage({
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Do you sell flower bookey or bokay?</h3>
             <p>Yes! Customers frequently spell it bookey, bukey, or bokay. We know exactly what you mean, and we make the freshest hand-tied bouquets in Lahore.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Where can I buy a fresh flower bouquet in Lahore?</h3>
+            <p>Right here! We're Lahore Bouquet, and every flower bouquet in Lahore that leaves our studio is hand-tied fresh to order — roses, sunflowers, lilies, you name it. Just pick your favourite on this page or message us on WhatsApp (0310-4225974) and we'll have it at your doorstep the same day.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">How much does a flower bouquet in Lahore cost?</h3>
+            <p>It really depends on the flowers and size you pick — a sweet little seasonal bunch starts around Rs. 500, while grand rose arrangements go higher. Check our prices page for the full list, or tell us your budget on WhatsApp and our florist will craft the best-looking flower bouquet in Lahore within it.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Can I get a flower bouquet in Lahore delivered today?</h3>
+            <p>Absolutely — that's our speciality! Order a flower bouquet in Lahore before 4:00 PM and we'll deliver it within 2 to 5 hours, anywhere in the city. Every bouquet goes out with a photo on WhatsApp first, so you can see exactly what your loved one will receive.</p>
           </div>
         </div>
       </section>
