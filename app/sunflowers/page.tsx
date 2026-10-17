@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: {
     absolute: "Sunflower Bouquets in Lahore | Shop Fresh Sunflowers",
   },
-  description: "Shop fresh sunflower bouquets in Lahore. Bright cheerful blooms, hand-tied daily. Prices from Rs. 1,590 with same-day delivery across the city.",
+  description: "Shop fresh sunflower bouquets in Lahore. Bright cheerful blooms, hand-tied daily. Prices from Rs. 1,699 with same-day delivery across the city.",
   alternates: {
     canonical: `${SITE_URL}/sunflowers`,
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Sunflower Bouquets in Lahore | Shop Fresh Sunflowers",
-    description: "Shop fresh sunflower bouquets in Lahore. Bright cheerful blooms, hand-tied daily. Prices from Rs. 1,590 with same-day delivery across the city.",
+    description: "Shop fresh sunflower bouquets in Lahore. Bright cheerful blooms, hand-tied daily. Prices from Rs. 1,699 with same-day delivery across the city.",
     url: `${SITE_URL}/sunflowers`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
@@ -95,7 +95,7 @@ export default async function SunflowersPage() {
         name: "What is the sunflower bouquet price in Pakistan?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Fresh sunflower bouquets at Lahore Bouquet start at Rs. 1,590 with free delivery across Lahore. The final price depends on the number of stems and the wrapping style you choose."
+          text: "Fresh sunflower bouquets at Lahore Bouquet start at Rs. 1,699 with free delivery across Lahore. The final price depends on the number of stems and the wrapping style you choose."
         }
       },
       {
@@ -103,7 +103,7 @@ export default async function SunflowersPage() {
         name: "What is the sunflower price in Lahore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "In Lahore, our sunflower bouquets start at Rs. 1,590. Prices can vary slightly with season and stem availability, and every order includes free delivery across the city."
+          text: "In Lahore, our sunflower bouquets start at Rs. 1,699. Prices can vary slightly with season and stem availability, and every order includes free delivery across the city."
         }
       }
     ]
@@ -146,7 +146,7 @@ export default async function SunflowersPage() {
           </h1>
 
           <p className="text-[#F8F3EA]/90 text-xs sm:text-sm leading-relaxed font-light">
-            A sunflower bouquet is the happiest gift you can send. Big, yellow, and impossible to ignore, it works for birthdays, graduations, thank-yous, and cheering someone up. Our fresh sunflower bouquets start at <strong>Rs. 1,590</strong> and are delivered fresh across Lahore in 2 to 5 hours with a photo on WhatsApp before dispatch.
+            A sunflower bouquet is the happiest gift you can send. Big, yellow, and impossible to ignore, it works for birthdays, graduations, thank-yous, and cheering someone up. Our fresh sunflower bouquets start at <strong>Rs. 1,699</strong> and are delivered fresh across Lahore in 2 to 5 hours with a photo on WhatsApp before dispatch.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-2 text-xs text-white/80">
@@ -196,11 +196,11 @@ export default async function SunflowersPage() {
           </div>
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">What is the sunflower bouquet price in Pakistan?</h3>
-            <p>Fresh sunflower bouquets at Lahore Bouquet start at Rs. 1,590 with free delivery across Lahore. The final price depends on the number of stems and the wrapping style you choose.</p>
+            <p>Fresh sunflower bouquets at Lahore Bouquet start at Rs. 1,699 with free delivery across Lahore. The final price depends on the number of stems and the wrapping style you choose.</p>
           </div>
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">What is the sunflower price in Lahore?</h3>
-            <p>In Lahore, our sunflower bouquets start at Rs. 1,590. Prices can vary slightly with season and stem availability, and every order includes free delivery across the city.</p>
+            <p>In Lahore, our sunflower bouquets start at Rs. 1,699. Prices can vary slightly with season and stem availability, and every order includes free delivery across the city.</p>
           </div>
         </div>
       </section>
