@@ -116,6 +116,22 @@ export default async function ChocolateBouquetsLahorePage() {
           "@type": "Answer",
           text: "Chocolate bouquets start from Rs. 3,800 to Rs. 4,200 depending on the confectionery selected."
         }
+      },
+      {
+        "@type": "Question",
+        name: "What is a chocolate bouquet?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A chocolate bouquet is a hand-arranged gift that combines premium chocolates like Ferrero Rocher, Dairy Milk, or KitKat with decorative wrapping and fresh flower accents, presented like a traditional flower bouquet."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "What is the chocolate bouquet price in Pakistan?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Chocolate bouquet prices in Pakistan at Lahore Bouquet start from Rs. 3,800. The final price depends on the chocolate brand, bouquet size, and wrapping style you choose."
+        }
       }
     ]
   };
@@ -303,6 +319,14 @@ export default async function ChocolateBouquetsLahorePage() {
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">What is the starting price?</h3>
             <p>Chocolate bouquets start from Rs. 3,800 to Rs. 4,200 depending on the confectionery selected.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">What is a chocolate bouquet?</h3>
+            <p>A chocolate bouquet is a hand-arranged gift that combines premium chocolates like Ferrero Rocher, Dairy Milk, or KitKat with decorative wrapping and fresh flower accents, presented like a traditional flower bouquet.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">What is the chocolate bouquet price in Pakistan?</h3>
+            <p>Chocolate bouquet prices in Pakistan at Lahore Bouquet start from Rs. 3,800. The final price depends on the chocolate brand, bouquet size, and wrapping style you choose.</p>
           </div>
         </div>
       </section>
