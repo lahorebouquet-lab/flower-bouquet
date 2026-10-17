@@ -84,7 +84,9 @@ export default function AboutPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm lg:text-base leading-relaxed max-w-3xl">
-          We are a Lahore-based floral atelier serving the whole city. Our florists tie every bouquet by hand, send you a photo before it leaves, and deliver it across Lahore so it arrives looking pristine.
+          As a florist in Lahore, we serve the whole city from our workshop. Our florists tie every
+          bouquet by hand, send you a photo before it leaves, and deliver it across Lahore so it
+          arrives looking pristine.
         </p>
       </section>
 
@@ -104,7 +106,7 @@ export default function AboutPage() {
             Freshness Tied by Hand Every Day
           </h2>
           <p>
-            Started from a passion for botanical artistry and memorable celebrations, <span className="text-[#8B1E2D] font-semibold">Lahore Bouquet</span> crafts floral tributes for life's defining moments — proposals, anniversaries, Eid greetings, bridal room decorations, and heartfelt apologies.
+            Started from a passion for botanical artistry and memorable celebrations, <span className="text-[#8B1E2D] font-semibold">Lahore Bouquet</span> has grown into a florist in Lahore that people trust for life&apos;s defining moments — proposals, anniversaries, Eid greetings, bridal room decorations, and heartfelt apologies.
           </p>
           <p>
             We curate flowers fresh each morning, inspect each stem, condition them in nutrient-rich cool water, and wrap them in recyclable paper and fabric instead of suffocating plastic sleeves.
@@ -177,14 +179,14 @@ export default function AboutPage() {
           >
             language of flowers
           </a>
-          {" "}— so every rose colour and bloom carries its intended meaning. Stems are conditioned using professional floristry practice: clean cuts, cool nutrient water, and hydration through transit.
+          {" "}— so every rose colour and bloom carries its intended meaning. Stems are conditioned using professional floristry practice: clean cuts, cool nutrient water, and hydration through transit. This is the standard we hold ourselves to as a florist in Lahore.
         </p>
       </section>
 
       {/* CTA Strip (Section 1: #0B0B0B dark strip with #8B1E2D CTA button) */}
       <section className="p-8 rounded-2xl bg-[#0B0B0B] text-white border border-[#C6A15B]/30 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-md">
         <div className="space-y-1 text-center sm:text-left">
-          <div className="text-base font-bold text-white">Visit our shop or order same-day online</div>
+          <div className="text-base font-bold text-white">Order online from your florist in Lahore</div>
           <div className="text-xs text-[#BDBDBD]">Lahore, Pakistan • Open 9:00 AM to 1:00 AM daily.</div>
         </div>
 
