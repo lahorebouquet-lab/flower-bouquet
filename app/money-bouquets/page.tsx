@@ -107,6 +107,30 @@ export default async function MoneyBouquetsPage() {
           "@type": "Answer",
           text: "Weddings and salami, Eid, birthdays, graduations, a first salary celebration, and new-baby visits. They are the most popular premium gift for occasions where cash is the tradition."
         }
+      },
+      {
+        "@type": "Question",
+        name: "Where can I order a money bouquet in Lahore?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "From us! Every money bouquet in Lahore we craft is made with real PKR notes — hand-folded into fans and flower shapes, then set among fresh red roses. You pick the cash amount and denominations (Rs. 100 to 5,000), and we handle the rest. Message us on WhatsApp (0310-4225974) to get started."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "How much does a money bouquet in Lahore cost?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The craftsmanship for a money bouquet in Lahore — design, fresh roses and wrap — starts from Rs. 4,500, and you add whatever cash amount you like on top at face value. Tell us your total budget on WhatsApp and we'll plan the denominations for you."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Can I get a money bouquet in Lahore delivered today?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes! A money bouquet in Lahore can be delivered the same day within 2 to 5 hours for standard designs. For big cash amounts or fully custom designs, ordering a day ahead is better — it gives us time to arrange fresh, crisp notes in your chosen denominations."
+        }
       }
     ]
   };
@@ -243,6 +267,18 @@ export default async function MoneyBouquetsPage() {
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Which occasions are money bouquets best for?</h3>
             <p>Weddings and salami, Eid, birthdays, graduations, a first salary celebration, and new-baby visits. They are the most popular premium gift for occasions where cash is the tradition.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Where can I order a money bouquet in Lahore?</h3>
+            <p>From us! Every money bouquet in Lahore we craft is made with real PKR notes — hand-folded into fans and flower shapes, then set among fresh red roses. You pick the cash amount and denominations (Rs. 100 to 5,000), and we handle the rest. Message us on WhatsApp (0310-4225974) to get started.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">How much does a money bouquet in Lahore cost?</h3>
+            <p>The craftsmanship for a money bouquet in Lahore — design, fresh roses and wrap — starts from Rs. 4,500, and you add whatever cash amount you like on top at face value. Tell us your total budget on WhatsApp and we'll plan the denominations for you.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Can I get a money bouquet in Lahore delivered today?</h3>
+            <p>Yes! A money bouquet in Lahore can be delivered the same day within 2 to 5 hours for standard designs. For big cash amounts or fully custom designs, ordering a day ahead is better — it gives us time to arrange fresh, crisp notes in your chosen denominations.</p>
           </div>
         </div>
       </section>
