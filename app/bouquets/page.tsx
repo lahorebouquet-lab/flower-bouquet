@@ -186,6 +186,22 @@ export default async function BouquetsPage({
           "@type": "Answer",
           text: "A fresh flower bouquet from us typically stays beautiful for 5 to 7 days with simple care — trim the stems, change the water daily, and keep it away from direct sunlight. We hand-tie every flower bouquet on the morning of delivery, so yours arrives at peak freshness."
         }
+      },
+      {
+        "@type": "Question",
+        name: "How long does a bouquet stay fresh?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A bouquet from Lahore Bouquet usually stays lovely for 5 to 7 days. Just trim the stems at an angle, pop it in clean water, and change the water every day or two. Because we tie each bouquet fresh on the morning of delivery, yours starts its vase life at the very best moment."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "What's the difference between a hand-tied bouquet and a boxed bouquet?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A hand-tied bouquet is wrapped in paper and ribbon — natural, romantic, and ready to drop straight into your favourite vase. A boxed bouquet arrives in a keepsake box with floral foam, so it stands on its own and makes a grander gift presentation. Both start at great prices; pick the bouquet style that suits the occasion."
+        }
       }
     ]
   };
@@ -457,6 +473,14 @@ export default async function BouquetsPage({
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">How long does a fresh flower bouquet stay fresh?</h3>
             <p>A fresh flower bouquet from us typically stays beautiful for 5 to 7 days with simple care — trim the stems, change the water daily, and keep it away from direct sunlight. We hand-tie every flower bouquet on the morning of delivery, so yours arrives at peak freshness.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">How long does a bouquet stay fresh?</h3>
+            <p>A bouquet from Lahore Bouquet usually stays lovely for 5 to 7 days. Just trim the stems at an angle, pop it in clean water, and change the water every day or two. Because we tie each bouquet fresh on the morning of delivery, yours starts its vase life at the very best moment.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">What's the difference between a hand-tied bouquet and a boxed bouquet?</h3>
+            <p>A hand-tied bouquet is wrapped in paper and ribbon — natural, romantic, and ready to drop straight into your favourite vase. A boxed bouquet arrives in a keepsake box with floral foam, so it stands on its own and makes a grander gift presentation. Both start at great prices; pick the bouquet style that suits the occasion.</p>
           </div>
         </div>
       </section>
