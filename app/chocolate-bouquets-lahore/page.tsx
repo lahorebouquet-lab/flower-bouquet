@@ -122,7 +122,7 @@ export default async function ChocolateBouquetsLahorePage() {
         name: "What is a chocolate bouquet?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Think of your favourite chocolates — Ferrero Rocher, Dairy Milk, KitKat — arranged beautifully like flowers in a bouquet, with pretty wrapping and sometimes fresh blooms tucked in. It's the perfect gift when flowers alone won't do!"
+          text: "A chocolate bouquet is what you get when your favourite chocolates — Ferrero Rocher, Dairy Milk, KitKat — are arranged beautifully like flowers, with pretty wrapping and sometimes fresh blooms tucked in. It's the perfect gift when flowers alone won't do!"
         }
       },
       {
@@ -130,7 +130,7 @@ export default async function ChocolateBouquetsLahorePage() {
         name: "What is the chocolate bouquet price in Pakistan?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Our chocolate bouquets start at Rs. 3,800. Fancier chocolates or bigger bouquets cost more — just tell us your budget on WhatsApp and we'll make something gorgeous within it."
+          text: "The chocolate bouquet price in Pakistan at Lahore Bouquet starts at Rs. 3,800. Fancier chocolates or bigger bouquets cost more — just tell us your budget on WhatsApp and we'll make something gorgeous within it."
         }
       }
     ]
@@ -322,11 +322,11 @@ export default async function ChocolateBouquetsLahorePage() {
           </div>
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">What is a chocolate bouquet?</h3>
-            <p>Think of your favourite chocolates — Ferrero Rocher, Dairy Milk, KitKat — arranged beautifully like flowers in a bouquet, with pretty wrapping and sometimes fresh blooms tucked in. It's the perfect gift when flowers alone won't do!</p>
+            <p>A chocolate bouquet is what you get when your favourite chocolates — Ferrero Rocher, Dairy Milk, KitKat — are arranged beautifully like flowers, with pretty wrapping and sometimes fresh blooms tucked in. It's the perfect gift when flowers alone won't do!</p>
           </div>
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">What is the chocolate bouquet price in Pakistan?</h3>
-            <p>Our chocolate bouquets start at Rs. 3,800. Fancier chocolates or bigger bouquets cost more — just tell us your budget on WhatsApp and we'll make something gorgeous within it.</p>
+            <p>The chocolate bouquet price in Pakistan at Lahore Bouquet starts at Rs. 3,800. Fancier chocolates or bigger bouquets cost more — just tell us your budget on WhatsApp and we'll make something gorgeous within it.</p>
           </div>
         </div>
       </section>
