@@ -103,6 +103,18 @@ const FAQS = [
     q: "Do Valentine's gifts come with a card message?",
     a: "Yes, every Valentine's gift includes a FREE personalised card. Write your message at checkout or on WhatsApp, and we'll handwrite it beautifully.",
   },
+  {
+    q: "Where can I order Valentine's Day flowers in Lahore?",
+    a: "Right here! Lahore Bouquet delivers Valentine's Day flowers in Lahore with same-day 2–5 hour delivery across DHA, Gulberg, Model Town and beyond. Gifts start from Rs. 6,500 — just pick one above or message us on WhatsApp at 0310-4225974.",
+  },
+  {
+    q: "What are the best Valentine's Day flowers in Lahore for her?",
+    a: "For her, our most-loved Valentine's Day flowers in Lahore are the red rose balloon flower box (Rs. 13,999) and the Be My Valentine Box (Rs. 11,499). Want to go big? The Deluxe Valentine's Box at Rs. 24,999 is the grandest Feb 14 gesture we offer.",
+  },
+  {
+    q: "Can I get Valentine's Day flowers in Lahore delivered at midnight?",
+    a: "Yes — and it's our most romantic option! Order Valentine's Day flowers in Lahore with our midnight surprise slot (11:30 PM – 12:15 AM) and your gift arrives right at 12 AM with a personalised card. Book by Feb 10 though — midnight slots on Feb 13 night sell out fast.",
+  },
 ];
 
 function formatPrice(n: number): string {
@@ -199,7 +211,7 @@ export default function ValentineDayFlowersLahorePage() {
           Valentine&apos;s Day Flowers in Lahore
         </h1>
         <p className="text-sm sm:text-base leading-relaxed max-w-3xl">
-          Make this Valentine&apos;s Day unforgettable with <strong>Valentine&apos;s gifts delivered in Lahore</strong> —
+          Make this Valentine&apos;s Day unforgettable with <strong>Valentine&apos;s Day flowers in Lahore</strong> —
           romantic gift boxes, balloon flower boxes, a heart-shaped cake and even a full romantic bedroom
           surprise setup. Every order is prepared fresh and delivered the <strong>same day in 2–5 hours</strong>
           across DHA, Gulberg, Model Town, Johar Town and Bahria Town — or right at <strong>midnight</strong>
@@ -313,6 +325,24 @@ export default function ValentineDayFlowersLahorePage() {
         <Link href="/bestsellers" className="px-4 py-2 rounded-full bg-white border border-[rgba(198,161,91,0.35)] hover:border-[#C6A15B] transition-colors font-semibold text-[#0B0B0B]">
           Bestsellers →
         </Link>
+      </section>
+
+      {/* Valentine's Day flowers in Lahore — SEO content */}
+      <section className="max-w-4xl mx-auto space-y-4 text-xs sm:text-sm text-[#2A2A2A] leading-relaxed">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B] text-center">
+          Valentine&apos;s Day Flowers in Lahore — Made for Feb 14
+        </h2>
+        <p>
+          Valentine&apos;s Day comes once a year, so it has to be perfect. Our Valentine&apos;s Day flowers
+          in Lahore are prepared fresh on the day — hand-tied red roses, luxury gift boxes, balloon flower
+          arrangements and heart-shaped cakes, all made to impress. When you order Valentine&apos;s Day flowers
+          in Lahore from us, you&apos;re not getting day-old stock; every gift is crafted after you order.
+        </p>
+        <p>
+          The best part? Ordering Valentine&apos;s Day flowers in Lahore takes two minutes. Pick a gift above,
+          message us on WhatsApp at 0310-4225974, approve the real photo we send you, and we&apos;ll handle
+          the rest — same-day delivery or a midnight surprise, your call.
+        </p>
       </section>
 
       <section className="bg-white p-8 sm:p-10 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-6">
