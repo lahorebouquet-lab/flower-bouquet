@@ -48,6 +48,14 @@ const FAQS = [
   {
     q: "How far in advance should I book bridal room decoration?",
     a: "Book 2–3 days ahead for standard packages so we can reserve fresh flowers. For wedding-season weekends (December–February), a week's notice is safer. Last-minute requests are often possible — just message us and we'll confirm availability."
+  },
+  {
+    q: "Why choose Lahore Bouquet for bridal room decoration in Lahore?",
+    a: "Because we treat your wedding night like it's our own family's celebration. Our bridal room decoration in Lahore uses only fresh roses and real candles — no plastic flowers, ever. We arrive hours early, set up everything perfectly, and leave the room photo-ready before your moment."
+  },
+  {
+    q: "How much does bridal room decoration in Lahore cost for a hotel suite?",
+    a: "Hotel bridal room decoration in Lahore starts at Rs. 7,999 for our classic package — rose-petal bed styling, fairy lights and scented candles. Share your hotel name and check-in time on WhatsApp at 0310-4225974 and we'll send you an exact quote."
   }
 ];
 
