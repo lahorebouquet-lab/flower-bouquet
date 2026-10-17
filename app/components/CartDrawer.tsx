@@ -80,10 +80,13 @@ export default function CartDrawer() {
 
   const handleStep2Continue = () => {
     setTriedContinue(true);
-    if (step2Valid) {
-      setTriedContinue(false);
-      setCheckoutStep(3);
+    if (!step2Valid) return;
+    if (!deliveryTimeSlot) {
+      showToast("Please select a delivery time slot");
+      return;
     }
+    setTriedContinue(false);
+    setCheckoutStep(3);
   };
 
   const inputCls = (hasError: boolean) =>
@@ -107,10 +110,9 @@ export default function CartDrawer() {
             <ShoppingBag className="w-5 h-5 text-[#C6A15B]" />
             <h2 className="font-playfair text-lg font-semibold text-white">
               {checkoutStep === 1 && `Your Bouquet Bag (${totalCartCount})`}
-              {checkoutStep === 2 && "Step 2: Delivery & Contact Details"}
-              {checkoutStep === 3 && "Step 3: Schedule & Greeting Card"}
-              {checkoutStep === 4 && "Step 4: Payment Method"}
-              {checkoutStep === 5 && "Order Successfully Placed! 🌸"}
+              {checkoutStep === 2 && "Step 2: Details & Schedule"}
+              {checkoutStep === 3 && "Step 3: Payment Method"}
+              {checkoutStep === 4 && "Order Successfully Placed! 🌸"}
             </h2>
           </div>
           <button 
@@ -123,15 +125,13 @@ export default function CartDrawer() {
         </div>
 
         {/* Stepper Indicator */}
-        {checkoutStep < 5 && (
+        {checkoutStep < 4 && (
           <div className="px-6 py-2.5 bg-white border-b border-[#E5DED2] flex items-center justify-between text-[11px]">
             <span className={checkoutStep === 1 ? "text-[#8B1E2D] font-bold" : "text-[#636363]"}>1. Bag</span>
             <span className="text-[#C6A15B]">→</span>
-            <span className={checkoutStep === 2 ? "text-[#8B1E2D] font-bold" : "text-[#636363]"}>2. Recipient</span>
+            <span className={checkoutStep === 2 ? "text-[#8B1E2D] font-bold" : "text-[#636363]"}>2. Details</span>
             <span className="text-[#C6A15B]">→</span>
-            <span className={checkoutStep === 3 ? "text-[#8B1E2D] font-bold" : "text-[#636363]"}>3. Schedule</span>
-            <span className="text-[#C6A15B]">→</span>
-            <span className={checkoutStep === 4 ? "text-[#8B1E2D] font-bold" : "text-[#636363]"}>4. Payment</span>
+            <span className={checkoutStep === 3 ? "text-[#8B1E2D] font-bold" : "text-[#636363]"}>3. Payment</span>
           </div>
         )}
 
@@ -207,7 +207,7 @@ export default function CartDrawer() {
                               type="button"
                               onClick={() => {
                                 loadCustomizationIntoCheckout(c);
-                                setCheckoutStep(3);
+                                setCheckoutStep(2);
                               }}
                               className="ml-1.5 inline-flex items-center gap-0.5 text-[#8B1E2D] font-semibold hover:underline cursor-pointer"
                             >
@@ -254,7 +254,7 @@ export default function CartDrawer() {
             </>
           )}
 
-          {/* ---------------- STEP 2: SENDER & RECIPIENT ---------------- */}
+          {/* ---------------- STEP 2: DETAILS & SCHEDULE ---------------- */}
           {checkoutStep === 2 && (
             <div className="space-y-4 text-xs">
               <div className="p-4 rounded-2xl bg-white border border-[#E5DED2] space-y-3 shadow-xs">
@@ -350,12 +350,7 @@ export default function CartDrawer() {
                   Your WhatsApp is required — we send bouquet photo/video proof and delivery tracking on it.
                 </p>
               </div>
-            </div>
-          )}
 
-          {/* ---------------- STEP 3: SCHEDULE & GREETING CARD ---------------- */}
-          {checkoutStep === 3 && (
-            <div className="space-y-4 text-xs">
               <div className="p-4 rounded-2xl bg-white border border-[#E5DED2] space-y-3 shadow-xs">
                 <span className="font-semibold text-[#8B1E2D] block text-[11px] uppercase tracking-wider">
                   Delivery Date & Time Slot
@@ -420,8 +415,8 @@ export default function CartDrawer() {
             </div>
           )}
 
-          {/* ---------------- STEP 4: PAYMENT ---------------- */}
-          {checkoutStep === 4 && (
+          {/* ---------------- STEP 3: PAYMENT ---------------- */}
+          {checkoutStep === 3 && (
             <div className="space-y-4 text-xs">
               <div className="p-4 rounded-2xl bg-white border border-[#E5DED2] space-y-3 shadow-xs">
                 <span className="font-semibold text-[#8B1E2D] block text-[11px] uppercase tracking-wider">
@@ -531,8 +526,8 @@ export default function CartDrawer() {
             </div>
           )}
 
-          {/* ---------------- STEP 5: ORDER SUCCESS (Section 16: Burgundy / Gold accents) ---------------- */}
-          {checkoutStep === 5 && (
+          {/* ---------------- STEP 4: ORDER SUCCESS (Section 16: Burgundy / Gold accents) ---------------- */}
+          {checkoutStep === 4 && (
             <div className="text-center py-6 space-y-4">
               <div className="w-16 h-16 rounded-full bg-[#8B1E2D]/15 border border-[#8B1E2D] mx-auto flex items-center justify-center text-[#8B1E2D] shadow-md">
                 <CheckCircle2 className="w-10 h-10 text-[#8B1E2D]" />
@@ -588,7 +583,7 @@ export default function CartDrawer() {
         </div>
 
         {/* Drawer Footer Actions (Section 16: Primary checkout button #8B1E2D, hover #C6A15B) */}
-        {checkoutStep < 5 && cart.length > 0 && (
+        {checkoutStep < 4 && cart.length > 0 && (
           <div className="p-4 sm:p-5 border-t border-[#E5DED2] bg-white space-y-3">
             <div className="flex items-center justify-between text-xs">
               <span className="text-[#636363]">Subtotal</span>
@@ -599,7 +594,7 @@ export default function CartDrawer() {
               {checkoutStep > 1 && (
                 <button
                   type="button"
-                  onClick={() => setCheckoutStep((checkoutStep - 1) as 1 | 2 | 3 | 4)}
+                  onClick={() => setCheckoutStep((checkoutStep - 1) as 1 | 2 | 3)}
                   className="px-4 py-2.5 rounded-full bg-[#F8F3EA] text-[#0B0B0B] border border-[#E5DED2] hover:border-[#0B0B0B] text-xs font-semibold transition-colors cursor-pointer"
                 >
                   Back
@@ -612,7 +607,7 @@ export default function CartDrawer() {
                   onClick={() => setCheckoutStep(2)}
                   className="flex-1 py-3.5 rounded-full bg-[#8B1E2D] hover:bg-[#C6A15B] text-white hover:text-[#0B0B0B] font-bold text-xs shadow-md transition-all text-center flex items-center justify-center gap-1.5 cursor-pointer active:scale-95"
                 >
-                  <span>Proceed to Recipient Details</span>
+                  <span>Proceed to Details</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </button>
               )}
@@ -623,30 +618,12 @@ export default function CartDrawer() {
                   onClick={handleStep2Continue}
                   className="flex-1 py-3.5 rounded-full bg-[#8B1E2D] hover:bg-[#C6A15B] text-white hover:text-[#0B0B0B] font-bold text-xs shadow-md transition-all text-center flex items-center justify-center gap-1.5 cursor-pointer active:scale-95"
                 >
-                  <span>Continue to Delivery Slot</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </button>
-              )}
-
-              {checkoutStep === 3 && (
-                <button
-                  type="button"
-                  onClick={() => {
-                    if (!deliveryTimeSlot) {
-                      setTriedContinue(true);
-                      showToast("Please select a delivery time slot");
-                      return;
-                    }
-                    setCheckoutStep(4);
-                  }}
-                  className="flex-1 py-3.5 rounded-full bg-[#8B1E2D] hover:bg-[#C6A15B] text-white hover:text-[#0B0B0B] font-bold text-xs shadow-md transition-all text-center flex items-center justify-center gap-1.5 cursor-pointer active:scale-95"
-                >
                   <span>Proceed to Payment</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </button>
               )}
 
-              {checkoutStep === 4 && (
+              {checkoutStep === 3 && (
                 <button
                   type="button"
                   onClick={handlePlaceOrder}

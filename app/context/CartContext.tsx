@@ -39,8 +39,8 @@ interface CartContextType {
   orderTotal: number;
   isCartOpen: boolean;
   setIsCartOpen: (open: boolean) => void;
-  checkoutStep: 1 | 2 | 3 | 4 | 5;
-  setCheckoutStep: (step: 1 | 2 | 3 | 4 | 5) => void;
+  checkoutStep: 1 | 2 | 3 | 4;
+  setCheckoutStep: (step: 1 | 2 | 3 | 4) => void;
   quickViewProduct: Product | null;
   setQuickViewProduct: (product: Product | null) => void;
   toastMessage: string | null;
@@ -124,7 +124,7 @@ function loadForm(): Partial<Record<string, string | boolean>> {
 export function CartProvider({ children }: { children: ReactNode }) {
   const [cart, setCart] = useState<CartItem[]>(() => loadCart());
   const [isCartOpen, setIsCartOpen] = useState(false);
-  const [checkoutStep, setCheckoutStep] = useState<1 | 2 | 3 | 4 | 5>(1);
+  const [checkoutStep, setCheckoutStep] = useState<1 | 2 | 3 | 4>(1);
   const [quickViewProduct, setQuickViewProduct] = useState<Product | null>(null);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
   const [wishlist, setWishlist] = useState<(number | string)[]>([]);
@@ -285,7 +285,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const handlePlaceOrder = () => {
     const randomId = `FLB-${Math.floor(100000 + Math.random() * 900000)}`;
     setPlacedOrderId(randomId);
-    setCheckoutStep(5);
+    setCheckoutStep(4);
     showToast(`Order Confirmed! ID: ${randomId}`);
     // Remember this order on the device so /track-order can pre-fill it later.
     try {
