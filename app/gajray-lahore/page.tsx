@@ -48,6 +48,18 @@ const FAQS = [
   {
     q: "Are your gajray made with real fresh flowers?",
     a: "Yes — 100% real fresh flowers, never artificial. We use fragrant motia (jasmine), desi red roses and baby's breath, hand-tied with soft thread so they're comfortable on the wrist for hours."
+  },
+  {
+    q: "Where can I buy fresh gajray in Lahore?",
+    a: "From us, of course! If you're hunting for fresh gajray in Lahore, Lahore Bouquet hand-ties them every morning — fragrant motia, desi red roses and baby's breath. A classic pair starts at just Rs. 370, and we deliver fresh across the whole city on the day of your event."
+  },
+  {
+    q: "What is the price of gajray in Lahore?",
+    a: "Wondering about gajray in Lahore and what they cost? Our classic red rose gajra pair starts at Rs. 370, bridal wrist cuffs are Rs. 2,499, and a white jasmine hand corsage is Rs. 2,999. Message us on WhatsApp (0310-4225974) and we'll quote you exactly for what you need."
+  },
+  {
+    q: "Do you make bridal gajray in Lahore for mehndi?",
+    a: "Yes, and brides love them! Our bridal gajray in Lahore include matching wrist cuffs, double gajray and floral chokers in motia or red rose — made fresh on the morning of your mehndi. Send your outfit colour on WhatsApp and we'll match the flowers to it."
   }
 ];
 
