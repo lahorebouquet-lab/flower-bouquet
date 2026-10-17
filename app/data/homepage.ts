@@ -5,6 +5,10 @@ export interface FAQItem {
 
 export const HOMEPAGE_FAQS: FAQItem[] = [
   {
+    q: "Why choose Lahore Bouquet as your flower shop in Lahore?",
+    a: "As a trusted flower shop in Lahore, we hand-tie every bouquet fresh to order, deliver the same day across the city, and share a photo on WhatsApp before dispatch. When you choose a flower shop in Lahore, you want freshness, reliability, and fair prices — that's exactly what Lahore Bouquet delivers every single day."
+  },
+  {
     q: "Where can I find a flower shop near me in Lahore?",
     a: "Looking for a flower shop near me in Lahore? That's us! We're Lahore Bouquet, and we deliver fresh flowers all over Lahore — DHA, Gulberg, Model Town, Johar Town, Bahria Town, Cantt, you name it. Just order online and we'll bring beautiful fresh bouquets right to your door, the very same day, with free delivery."
   },
