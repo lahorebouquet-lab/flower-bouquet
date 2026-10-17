@@ -60,6 +60,14 @@ const FAQS = [
   {
     q: "Do you make bridal gajray in Lahore for mehndi?",
     a: "Yes, and brides love them! Our bridal gajray in Lahore include matching wrist cuffs, double gajray and floral chokers in motia or red rose — made fresh on the morning of your mehndi. Send your outfit colour on WhatsApp and we'll match the flowers to it."
+  },
+  {
+    q: "What are gajray made of?",
+    a: "Traditional gajray are made of fresh fragrant flowers — we use motia (jasmine), desi red roses and baby's breath, hand-tied with soft thread so they're comfortable on the wrist for hours. No plastic, no artificial flowers — just real, fragrant gajray made fresh every morning."
+  },
+  {
+    q: "When do people wear gajray?",
+    a: "Gajray are a must-have for mehndi nights and weddings, but people wear gajray for Eid, dholkis and festive family dinners too — they're the simplest way to add a traditional touch to any outfit. Order a fresh pair from Rs. 370 and we'll deliver them on the day of your event."
   }
 ];
 
