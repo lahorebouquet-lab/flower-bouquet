@@ -58,6 +58,18 @@ const FAQS = [
     q: "Can I add a personal message card?",
     a: "Yes, every order includes a complimentary handwritten message card. Write your message at checkout or on WhatsApp and we will include it with the flowers.",
   },
+  {
+    q: "How can I send flowers to Lahore from the UK?",
+    a: "It's easy! When you send flowers to Lahore through Lahore Bouquet, just pick a bouquet on our website, pay with your UK card, and give us the Lahore delivery address. We'll hand-deliver everything fresh in 2 to 5 hours and send you a photo on WhatsApp first.",
+  },
+  {
+    q: "Is it safe to send flowers to Lahore online from abroad?",
+    a: "Completely. Thousands of overseas Pakistanis send flowers to Lahore with us every year. You pay securely with your international card, approve a real photo of your bouquet on WhatsApp before dispatch, and our rider delivers across Lahore the same day.",
+  },
+  {
+    q: "How long does it take to send flowers to Lahore from the USA?",
+    a: "Once you send flowers to Lahore with us, delivery takes just 2 to 5 hours after your order is confirmed — whether you're ordering from the USA, UK, UAE or anywhere else. For Eid or birthdays, you can also schedule the delivery days in advance.",
+  },
 ];
 
 export default function SendFromAbroadPage() {
@@ -121,8 +133,8 @@ export default function SendFromAbroadPage() {
           Send Flowers to Lahore from Abroad
         </h1>
         <p className="text-[#2A2A2A] text-sm sm:text-base leading-relaxed max-w-3xl">
-          Living in the <strong>UK, USA, UAE, Saudi Arabia, Canada or Australia</strong> and missing
-          your family in Lahore? Order fresh bouquets, cakes and gifts online in under 2 minutes.
+          Living in the <strong>UK, USA, UAE, Saudi Arabia, Canada or Australia</strong> and want to
+          send flowers to Lahore? Order fresh bouquets, cakes and gifts online in under 2 minutes.
           Pay with your international card, and we will hand-deliver everything in{" "}
           <strong>2 to 5 hours</strong> — with a real photo sent to you on WhatsApp before dispatch,
           so you see exactly what your loved ones receive.
@@ -198,6 +210,25 @@ export default function SendFromAbroadPage() {
             <p className="text-xs text-[#777777] mt-1">Flowers with cake and chocolates — complete celebration in one box.</p>
           </Link>
         </div>
+      </section>
+
+      {/* Send flowers to Lahore — SEO content */}
+      <section className="max-w-4xl space-y-4 text-xs sm:text-sm text-[#2A2A2A] leading-relaxed">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">
+          Send Flowers to Lahore — From Anywhere in the World
+        </h2>
+        <p>
+          Distance shouldn&apos;t stop you from celebrating with family. When you send flowers to Lahore
+          through Lahore Bouquet, you&apos;re choosing a team that treats every overseas order like
+          it&apos;s for our own family. We know how much it matters — that&apos;s why we send you a
+          real photo before dispatch and deliver fresh, on time, every time.
+        </p>
+        <p>
+          Ready to send flowers to Lahore? It takes under two minutes: choose your bouquet, pay with
+          your international card, and share the delivery address. We&apos;ll take care of everything
+          else — fresh flowers, careful wrapping, a handwritten card, and same-day delivery across
+          the city.
+        </p>
       </section>
 
       {/* FAQs */}
