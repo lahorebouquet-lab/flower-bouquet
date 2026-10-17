@@ -5,6 +5,10 @@ export interface FAQItem {
 
 export const HOMEPAGE_FAQS: FAQItem[] = [
   {
+    q: "Where can I find a flower shop near me in Lahore?",
+    a: "If you're searching for a flower shop near me in Lahore, Lahore Bouquet delivers fresh bouquets to your doorstep across the entire city — DHA, Gulberg, Model Town, Johar Town, Bahria Town, Cantt, Wapda Town and more. Order online in minutes and get same-day delivery with free shipping."
+  },
+  {
     q: "How much does a flower bouquet cost in Lahore?",
     a: "Bouquets at Lahore Bouquet start at Rs. 349. Medium rose bouquets range from Rs. 2,600 to Rs. 3,800, large signature rose arrangements are Rs. 7,499, and premium imported-flower designs go up to Rs. 150,000. Event decoration packages go higher. Our prices page has the complete rate list with per-stem and bouquet pricing."
   },
