@@ -91,11 +91,23 @@ const FAQS = [
 ];
 
 const AREAS = [
-  "F-6", "F-7", "F-8", "F-10", "F-11",
-  "G-6", "G-7", "G-9", "G-10",
-  "I-8", "I-9", "I-10",
-  "E-7", "E-11",
-  "Blue Area", "DHA Islamabad", "Bahria Town",
+  { label: "F-6", slug: "f-6-islamabad" },
+  { label: "F-7", slug: "f-7-islamabad" },
+  { label: "F-8", slug: "f-8-islamabad" },
+  { label: "F-10", slug: "f-10-islamabad" },
+  { label: "F-11", slug: "f-11-islamabad" },
+  { label: "G-6", slug: "g-6-islamabad" },
+  { label: "G-7", slug: "g-7-islamabad" },
+  { label: "G-9", slug: "g-9-islamabad" },
+  { label: "G-10", slug: "g-10-islamabad" },
+  { label: "I-8", slug: "i-8-islamabad" },
+  { label: "I-9", slug: "i-9-islamabad" },
+  { label: "I-10", slug: "i-10-islamabad" },
+  { label: "E-7", slug: "e-7-islamabad" },
+  { label: "E-11", slug: "e-11-islamabad" },
+  { label: "Blue Area", slug: "blue-area-islamabad" },
+  { label: "DHA Islamabad", slug: "dha-islamabad" },
+  { label: "Bahria Town", slug: "bahria-town-islamabad" },
 ];
 
 export default function FlowerDeliveryIslamabadPage() {
@@ -229,9 +241,13 @@ export default function FlowerDeliveryIslamabadPage() {
           </div>
           <div className="flex flex-wrap justify-center gap-2">
             {AREAS.map((area) => (
-              <span key={area} className="px-4 py-2 rounded-full bg-white border border-[rgba(198,161,91,0.25)] text-xs font-semibold text-[#0B0B0B]">
-                {area}
-              </span>
+              <Link
+                key={area.slug}
+                href={`/flower-delivery-islamabad/${area.slug}`}
+                className="px-4 py-2 rounded-full bg-white border border-[rgba(198,161,91,0.25)] text-xs font-semibold text-[#0B0B0B] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors"
+              >
+                {area.label}
+              </Link>
             ))}
           </div>
         </div>
