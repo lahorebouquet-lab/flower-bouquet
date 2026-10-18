@@ -95,9 +95,36 @@ export default function FlowerDeliveryIslamabadPage() {
     })),
   };
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${SITE_URL}/flower-delivery-islamabad#service`,
+    name: "Flower and Gift Delivery in Islamabad",
+    serviceType: "Flower and gift delivery",
+    description: "Order fresh flower bouquets and gifts in Islamabad with Lahore Bouquet. Roses, birthday flowers and anniversary gifts with local delivery.",
+    provider: {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      name: "Lahore Bouquet",
+      url: SITE_URL,
+      telephone: "+923104225974",
+      email: "lahorebouquet@gmail.com",
+    },
+    areaServed: {
+      "@type": "City",
+      name: "Islamabad",
+      containedInPlace: {
+        "@type": "AdministrativeArea",
+        name: "Islamabad Capital Territory, Pakistan",
+      },
+    },
+    url: `${SITE_URL}/flower-delivery-islamabad`,
+  };
+
   return (
     <main className="bg-[#F8F3EA] text-[#2A2A2A]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
 
       {/* Hero */}
       <section className="w-full py-16 px-4 sm:px-6 text-center border-b border-[#E5DED2]">
