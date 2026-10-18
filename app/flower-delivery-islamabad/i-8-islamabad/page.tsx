@@ -4,24 +4,24 @@ import Link from "next/link";
 import { SITE_URL, whatsappLink } from "@/lib/business";
 
 export const metadata: Metadata = {
-  title: { absolute: "Flower Delivery in I-8 Islamabad | Same-Day, Free Delivery" },
-  description: "Same-day flower delivery to I-8 Islamabad — I-8 Markaz, residential sectors in 2–5 hours. Free delivery, WhatsApp photo approval.",
+  title: { absolute: "Flower Delivery in I-8 Islamabad | Lahore Bouquet" },
+  description: "Send flowers to homes, offices and special occasions in I-8 Islamabad. Explore available bouquets and gifts from Lahore Bouquet and confirm delivery arrangements before ordering.",
   alternates: { canonical: `${SITE_URL}/flower-delivery-islamabad/i-8-islamabad` },
   openGraph: {
-    title: "Flower Delivery in I-8 Islamabad | Same-Day, Free Delivery",
-    description: "Same-day flower delivery to I-8 Islamabad — I-8 Markaz, residential sectors in 2–5 hours. Free delivery, WhatsApp photo approval.",
+    title: "Flower Delivery in I-8 Islamabad | Lahore Bouquet",
+    description: "Send flowers to homes, offices and special occasions in I-8 Islamabad. Explore available bouquets and gifts from Lahore Bouquet and confirm delivery arrangements before ordering.",
     url: `${SITE_URL}/flower-delivery-islamabad/i-8-islamabad`,
     type: "website",
-    images: [{ url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630, alt: "Flower Delivery in I-8 Islamabad | Same-Day, Free Delivery" }],
+    images: [{ url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630, alt: "Flower Delivery in I-8 Islamabad | Lahore Bouquet" }],
   }
 };
 
 const FAQS = [
-  { q: "How long does flower delivery to I-8 Islamabad take?", a: "Delivery to I-8 Islamabad takes 2 to 5 hours, 7 days a week. Order on WhatsApp (0310-4225974) — you approve by photo before the rider leaves." },
-  { q: "What is the delivery fee for I-8 Islamabad?", a: "Delivery to I-8 Islamabad is completely FREE. No hidden charges, no minimum order." },
-  { q: "Can I order birthday flowers for I-8 Islamabad?", a: "Yes! Birthday bouquets are our most popular I-8 Islamabad order. Add cake or balloons — delivered same-day within 2 to 5 hours." },
-  { q: "Do you deliver to offices in I-8 Islamabad?", a: "Absolutely. Homes, offices, shops across I-8 Islamabad — share the building name on WhatsApp." },
-  { q: "Can I order from abroad for I-8 Islamabad delivery?", a: "Yes! UK, USA, Dubai — pay by international card, approve by photo, we deliver to I-8 Islamabad." },
+  { q: "Where can I order flowers online in I-8 Islamabad?", a: "Browse available bouquets on LahoreBouquet.com and contact our team to arrange delivery in I-8 Islamabad. Confirm product availability and delivery charges before payment." },
+  { q: "Do you offer same-day delivery in I-8 Islamabad?", a: "Same-day delivery may be available depending on order time and address. Contact us before ordering to confirm the delivery slot." },
+  { q: "How much does delivery cost in I-8 Islamabad?", a: "Delivery charges depend on the location and order details. Our team confirms applicable charges before you complete your purchase." },
+  { q: "Can I order from abroad for I-8 Islamabad delivery?", a: "Yes. Contact Lahore Bouquet from anywhere — confirm payment options and delivery details with our team before ordering." },
+  { q: "Can I request a bouquet photo before delivery?", a: "Photo confirmation may be available depending on the order. Please request it when placing your order." },
 ];
 
 export default function Page() {
@@ -35,33 +35,19 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <section className="w-full py-16 px-4 sm:px-6 text-center border-b border-[#E5DED2]">
         <div className="max-w-3xl mx-auto space-y-4">
-          <span className="text-xs uppercase font-bold tracking-widest text-[#8B1E2D]">I-8 Markaz • Residential Sectors • Family Zone</span>
           <h1 className="font-playfair text-3xl sm:text-5xl font-bold text-[#101012] leading-tight">Flower Delivery in I-8 Islamabad</h1>
-          <p className="text-sm sm:text-base text-[#2A2A2A] leading-relaxed">I-8 is a well-established residential sector with strong community feel. Our partner delivers across I-8 within 2 to 5 hours. Birthday bouquets, anniversary roses, get-well flowers — free delivery and WhatsApp photo approval.</p>
+          <p className="text-sm sm:text-base text-[#2A2A2A] leading-relaxed">Looking for flowers in I-8 Islamabad for a birthday, anniversary, office celebration or personal surprise? Lahore Bouquet helps you arrange a floral gift for the occasion.</p>
+          <p className="text-sm sm:text-base text-[#2A2A2A] leading-relaxed">Explore our available bouquets and choose an arrangement that fits your needs. If you're sending flowers to an office, apartment or home in I-8, provide the full address and recipient contact details so delivery availability can be confirmed before payment.</p>
+          <p className="text-sm sm:text-base font-semibold text-[#0B0B0B]">Send flowers to I-8: Contact us to check available bouquets, charges and delivery timing.</p>
           <div className="flex flex-wrap justify-center gap-3 pt-2">
             <Link href="/bouquets" className="px-6 py-3 rounded-full bg-[#8B1E2D] text-white text-sm font-bold hover:bg-[#C6A15B] hover:text-[#0B0B0B] transition-colors">Shop Bouquets →</Link>
             <a href={whatsappLink("Hi Lahore Bouquet! I want flowers delivered to I-8 Islamabad.")} target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-full bg-[#25D366] text-white text-sm font-bold hover:opacity-90 transition-opacity">Order on WhatsApp</a>
           </div>
         </div>
       </section>
-      <section className="w-full py-12 px-4 sm:px-6 border-b border-[#E5DED2]">
-        <div className="max-w-3xl mx-auto space-y-4">
-          <h2 className="font-playfair text-2xl font-bold text-[#101012]">Areas we cover in I-8 Islamabad</h2>
-          <ul className="space-y-2 text-sm list-disc list-inside leading-relaxed">
-            <li>I-8 Markaz: local shops — commercial bouquets.</li>
-            <li>I-8 Residential (1, 2, 3, 4): family neighbourhoods — birthday and Eid flowers.</li>
-          </ul>
-        </div>
-      </section>
-      <section className="w-full py-12 px-4 sm:px-6 border-b border-[#E5DED2] bg-white">
-        <div className="max-w-3xl mx-auto space-y-4">
-          <h2 className="font-playfair text-2xl font-bold text-[#101012]">Popular occasions in I-8 Islamabad</h2>
-          <p className="text-sm leading-relaxed">I-8 families order for every occasion — birthdays, anniversaries, nikkah, Eid hampers, housewarmings. New-baby pastels are popular.</p>
-        </div>
-      </section>
       <section className="w-full py-12 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto space-y-6">
-          <h2 className="font-playfair text-2xl font-bold text-[#101012] text-center">I-8 Islamabad FAQs</h2>
+          <h2 className="font-playfair text-2xl font-bold text-[#101012] text-center">Frequently Asked Questions</h2>
           <div className="space-y-3">
             {FAQS.map((f, i) => (
               <details key={i} className="p-5 rounded-2xl bg-white border border-[#E5DED2] group">
