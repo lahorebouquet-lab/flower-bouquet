@@ -349,7 +349,8 @@ export function CartProvider({ children }: { children: ReactNode }) {
         const extra = c
           ? ` [${formatDeliveryDate(c.deliveryDate)}, ${TIME_SLOTS.find((s) => s.id === c.deliverySlot)?.label ?? c.deliverySlot}, ${c.area}]`
           : "";
-        return `• ${item.product.title.split("–")[0].trim()} (Qty: ${item.quantity}) - Rs. ${(item.product.price * item.quantity).toLocaleString()}${extra}`;
+        const productLink = item.product.slug ? `https://lahorebouquet.com/products/${item.product.slug}` : "";
+        return `• ${item.product.title.split("–")[0].trim()} (Qty: ${item.quantity}) - Rs. ${(item.product.price * item.quantity).toLocaleString()}${extra}${productLink ? `\n  Link: ${productLink}` : ""}`;
       })
       .join("\n");
 

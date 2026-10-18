@@ -83,6 +83,7 @@ export default function ProductDetailActions({ product }: { product: Product }) 
     if (cardMessage.trim()) {
       msg += `• *Greeting Card:* "${cardMessage.trim()}" (${cardOccasion})\n`;
     }
+    msg += `• *Product Link:* ${typeof window !== "undefined" ? window.location.href : `https://lahorebouquet.com/products/${product.slug}`}\n`;
     msg += `\nPlease confirm availability and payment details. Thank you!`;
 
     const encoded = encodeURIComponent(msg);

@@ -23,7 +23,8 @@ export default function FloatingWhatsApp({ productName }: { productName?: string
       ? "your homepage"
       : `the "${pathname.split("/").filter(Boolean).pop()?.replace(/-/g, " ")}" page`;
 
-  const text = `Hi Lahore Bouquet! I'm looking at ${pageLabel} and have a question.`;
+  const pageUrl = typeof window !== "undefined" ? window.location.href : `https://lahorebouquet.com${pathname}`;
+  const text = `Hi Lahore Bouquet! I'm looking at ${pageLabel} and have a question.\nPage: ${pageUrl}`;
   const href = `https://wa.me/${CONTACT_PHONE.whatsapp}?text=${encodeURIComponent(text)}`;
 
   return (
