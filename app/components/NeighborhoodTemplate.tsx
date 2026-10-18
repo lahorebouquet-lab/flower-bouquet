@@ -54,7 +54,7 @@ export default async function NeighborhoodTemplate({ data }: Props) {
       />
 
       {/* Breadcrumb */}
-      <nav aria-label="Breadcrumb" className="text-xs text-[#777777] flex items-center gap-2">
+      <nav aria-label="Breadcrumb" className="text-xs text-[#595959] flex items-center gap-2">
         <Link href="/" className="hover:text-[#0B0B0B] transition-colors">Home</Link>
         <span>/</span>
         <Link href="/delivery-areas" className="hover:text-[#0B0B0B] transition-colors">Delivery Areas</Link>

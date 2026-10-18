@@ -29,7 +29,7 @@ export default function Rating({ rating, reviewCount, className = "" }: RatingPr
         ))}
       </div>
       <span className="font-semibold text-[#0B0B0B]">{rating.toFixed(1)}</span>
-      <span className="text-[#777777]">
+      <span className="text-[#595959]">
         ({reviewCount} review{reviewCount === 1 ? "" : "s"})
       </span>
     </div>

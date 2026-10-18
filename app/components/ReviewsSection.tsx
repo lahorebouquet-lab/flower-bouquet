@@ -77,7 +77,7 @@ export default function ReviewsSection({ reviews }: ReviewsSectionProps) {
                       <BadgeCheck className="w-3.5 h-3.5 text-[#8B1E2D] shrink-0" role="img" aria-label="Verified order" />
                     )}
                   </div>
-                  <div className="text-[11px] text-[#777777] truncate">
+                  <div className="text-[11px] text-[#595959] truncate">
                     {review.location}
                     {review.item ? ` · ${review.item}` : ""}
                   </div>
