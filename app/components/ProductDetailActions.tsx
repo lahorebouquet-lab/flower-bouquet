@@ -136,6 +136,15 @@ export default function ProductDetailActions({ product }: { product: Product }) 
           )}
         </div>
 
+        <div className="pt-1 border-t border-[#E5DED2]">
+          <a
+            href="/flower-delivery-islamabad"
+            className="text-[11px] font-semibold text-[#8B1E2D] hover:text-[#101012] underline transition-colors"
+          >
+            🏙️ Also delivering in Islamabad — order here →
+          </a>
+        </div>
+
         {/* Delivery Date + Time Slots (with Lahore cutoff logic) */}
         <DeliverySchedulePicker
           date={selectedDate}
