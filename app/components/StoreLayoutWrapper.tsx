@@ -7,7 +7,6 @@ import Footer from "./Footer";
 import CartDrawer from "./CartDrawer";
 import QuickViewModal from "./QuickViewModal";
 import FloatingWhatsApp from "./FloatingWhatsApp";
-import OfferPopup from "./OfferPopup";
 import { Toast, StickyMobileBar } from "./Toast";
 
 export default function StoreLayoutWrapper({
@@ -34,7 +33,6 @@ export default function StoreLayoutWrapper({
       <Toast />
       <StickyMobileBar />
       <FloatingWhatsApp />
-      <OfferPopup />
     </>
   );
 }
