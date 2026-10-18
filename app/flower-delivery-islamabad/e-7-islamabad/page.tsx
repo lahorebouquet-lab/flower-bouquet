@@ -41,7 +41,7 @@ export default function Page() {
           <p className="text-sm sm:text-base font-semibold text-[#0B0B0B]">Order premium flowers for E-7: Contact us to explore available arrangements.</p>
           <div className="flex flex-wrap justify-center gap-3 pt-2">
             <Link href="/bouquets" className="px-6 py-3 rounded-full bg-[#8B1E2D] text-white text-sm font-bold hover:bg-[#C6A15B] hover:text-[#0B0B0B] transition-colors">Shop Bouquets →</Link>
-            <a href={whatsappLink("Hi Lahore Bouquet! I want flowers delivered to E-7 Islamabad.")} target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-full bg-[#25D366] text-white text-sm font-bold hover:opacity-90 transition-opacity">Order on WhatsApp</a>
+            <a href={whatsappLink("Hi Lahore Bouquet! I want flowers delivered to E-7 Islamabad.")} target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-full bg-[#128C7E] text-white text-sm font-bold hover:opacity-90 transition-opacity">Order on WhatsApp</a>
           </div>
         </div>
       </section>

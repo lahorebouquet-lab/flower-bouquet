@@ -128,7 +128,7 @@ export default function FlowerDeliveryIslamabadPage() {
               href={whatsappLink("Hi Lahore Bouquet! I want to order flowers for delivery in Islamabad.")}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 rounded-full bg-[#25D366] text-white text-sm font-bold hover:opacity-90 transition-opacity"
+              className="px-6 py-3 rounded-full bg-[#128C7E] text-white text-sm font-bold hover:opacity-90 transition-opacity"
             >
               Order on WhatsApp
             </a>
