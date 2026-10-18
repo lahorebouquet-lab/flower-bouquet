@@ -40,7 +40,7 @@ export default function ReviewsSection({ reviews }: ReviewsSectionProps) {
               key={review.id}
               className="p-6 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] shadow-xs space-y-3 flex flex-col"
             >
-              <div className="flex text-[#C6A15B]" aria-label={`Rated ${review.rating} out of 5`}>
+              <div className="flex text-[#C6A15B]" role="img" aria-label={`Rated ${review.rating} out of 5`}>
                 {[1, 2, 3, 4, 5].map((i) => (
                   <Star
                     key={i}
@@ -74,7 +74,7 @@ export default function ReviewsSection({ reviews }: ReviewsSectionProps) {
                   <div className="flex items-center gap-1 text-xs font-bold text-[#0B0B0B]">
                     <span className="truncate">{review.name}</span>
                     {review.verified !== false && (
-                      <BadgeCheck className="w-3.5 h-3.5 text-[#8B1E2D] shrink-0" aria-label="Verified order" />
+                      <BadgeCheck className="w-3.5 h-3.5 text-[#8B1E2D] shrink-0" role="img" aria-label="Verified order" />
                     )}
                   </div>
                   <div className="text-[11px] text-[#777777] truncate">
