@@ -38,11 +38,11 @@ const FAQS = [
   },
   {
     q: "Is same-day flower delivery available in Islamabad?",
-    a: "Yes, same-day delivery is available for orders placed before the daily cutoff. Delivery timing depends on your sector — our team confirms the exact slot on WhatsApp when you order."
+    a: "Yes! Order and your flowers are delivered the same day within 2 to 5 hours across Islamabad. Our local partner prepares every bouquet fresh — you approve by WhatsApp photo before dispatch."
   },
   {
     q: "What are the delivery charges for Islamabad?",
-    a: "Delivery charges vary by sector. Contact us on WhatsApp (0310-4225974) with your address for the exact delivery fee — many areas qualify for free delivery on orders above a minimum value."
+    a: "Delivery is free across Islamabad! Order on WhatsApp (0310-4225974) with your address and we will confirm your 2 to 5 hour delivery slot."
   },
   {
     q: "Can I order from abroad for delivery in Islamabad?",
@@ -145,7 +145,7 @@ export default function FlowerDeliveryIslamabadPage() {
             </div>
             <div className="p-6 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] space-y-2">
               <div className="font-bold text-[#8B1E2D]">3. Fast Delivery</div>
-              <p className="text-[#2A2A2A] leading-relaxed">Delivered to any Islamabad address. Same-day available for orders before cutoff.</p>
+              <p className="text-[#2A2A2A] leading-relaxed">Same-day delivery within 2 to 5 hours to any Islamabad address.</p>
             </div>
           </div>
         </div>
