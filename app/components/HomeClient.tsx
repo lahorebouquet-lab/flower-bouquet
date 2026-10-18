@@ -309,6 +309,50 @@ export default function HomeClient({
         </div>
       </section>
 
+      {/* 5B. SHOP BY OCCASION (Warm Ivory #F8F3EA background, White #FFFFFF cards) */}
+      <section className="w-full py-16 px-4 sm:px-6 border-b border-[#E5DED2] bg-[#F8F3EA] text-[#101012]">
+        <div className="max-w-7xl mx-auto space-y-10">
+          <div className="text-center max-w-2xl mx-auto space-y-2">
+            <span className="text-xs uppercase font-bold tracking-widest text-[#8B1E2D]">
+              Every Occasion Covered
+            </span>
+            <h2 className="font-playfair text-2xl sm:text-4xl font-bold text-[#101012]">
+              Flowers for Every Moment
+            </h2>
+            <p className="text-xs text-[#2A2A2A]">
+              Birthdays, anniversaries, weddings, or just because — pick the occasion and we&apos;ll handle the rest.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 text-xs">
+            <a href="/bouquets" className="p-6 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] hover:border-[#C6A15B] transition-all space-y-2 shadow-xs group">
+              <div className="text-[#8B1E2D] font-bold text-sm group-hover:text-[#C6A15B] transition-colors">Birthday Flowers</div>
+              <p className="text-[#2A2A2A] leading-relaxed">Bright, cheerful bouquets that make birthdays unforgettable.</p>
+            </a>
+            <a href="/roses" className="p-6 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] hover:border-[#C6A15B] transition-all space-y-2 shadow-xs group">
+              <div className="text-[#8B1E2D] font-bold text-sm group-hover:text-[#C6A15B] transition-colors">Anniversary Roses</div>
+              <p className="text-[#2A2A2A] leading-relaxed">Classic red roses and elegant arrangements for your special day.</p>
+            </a>
+            <a href="/wedding-car-decoration-lahore" className="p-6 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] hover:border-[#C6A15B] transition-all space-y-2 shadow-xs group">
+              <div className="text-[#8B1E2D] font-bold text-sm group-hover:text-[#C6A15B] transition-colors">Wedding &amp; Nikkah</div>
+              <p className="text-[#2A2A2A] leading-relaxed">Bridal bouquets, car decor, and full wedding flower styling.</p>
+            </a>
+            <a href="/bouquets" className="p-6 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] hover:border-[#C6A15B] transition-all space-y-2 shadow-xs group">
+              <div className="text-[#8B1E2D] font-bold text-sm group-hover:text-[#C6A15B] transition-colors">Get Well Soon</div>
+              <p className="text-[#2A2A2A] leading-relaxed">Cheerful blooms to brighten someone&apos;s recovery.</p>
+            </a>
+            <a href="/midnight-flower-delivery-lahore" className="p-6 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] hover:border-[#C6A15B] transition-all space-y-2 shadow-xs group">
+              <div className="text-[#8B1E2D] font-bold text-sm group-hover:text-[#C6A15B] transition-colors">Midnight Surprise</div>
+              <p className="text-[#2A2A2A] leading-relaxed">11:30 PM to 12:15 AM delivery slot for unforgettable surprises.</p>
+            </a>
+            <a href="/send-flowers-to-lahore-from-abroad" className="p-6 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] hover:border-[#C6A15B] transition-all space-y-2 shadow-xs group">
+              <div className="text-[#8B1E2D] font-bold text-sm group-hover:text-[#C6A15B] transition-colors">Send from Abroad</div>
+              <p className="text-[#2A2A2A] leading-relaxed">Ordering from the UK, USA, or Dubai? We deliver to your loved ones in Lahore.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* 6. HOW ORDERING WORKS (Clean Warm Ivory #F8F3EA background with pure White #FFFFFF cards) */}
       <section className="w-full py-16 px-4 sm:px-6 border-b border-[#E5DED2] bg-[#F8F3EA] text-[#101012]">
         <div className="max-w-7xl mx-auto space-y-12">
