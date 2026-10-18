@@ -548,7 +548,7 @@ export default function HomeClient({
             ))}
           </div>
 
-          <div className="pt-2">
+          <div className="pt-2 space-y-2">
             <a
               href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20Can%20you%20deliver%20to%20my%20area%20in%20Lahore?"
               target="_blank"
@@ -558,6 +558,14 @@ export default function HomeClient({
               <MessageCircle className="w-3.5 h-3.5 text-[#25D366]" />
               <span>Ask about delivery to your area on WhatsApp →</span>
             </a>
+            <div>
+              <a
+                href="/flower-delivery-islamabad"
+                className="inline-flex items-center gap-1 text-xs font-semibold text-[#8B1E2D] hover:text-[#101012] transition-colors underline"
+              >
+                <span>Now delivering in Islamabad →</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>

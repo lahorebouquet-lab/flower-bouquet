@@ -134,6 +134,7 @@ export default function Footer() {
               <li><Link href="/delivery-areas/bahria-town" className="hover:text-[#C6A15B] transition-colors">Bahria Town</Link></li>
               <li><Link href="/delivery-areas/model-town" className="hover:text-[#C6A15B] transition-colors">Model Town</Link></li>
               <li><Link href="/flower-delivery-in-lahore" className="hover:text-[#C6A15B] transition-colors">All Areas →</Link></li>
+              <li><Link href="/flower-delivery-islamabad" className="hover:text-[#C6A15B] transition-colors">Islamabad Delivery</Link></li>
             </ul>
           </div>
 

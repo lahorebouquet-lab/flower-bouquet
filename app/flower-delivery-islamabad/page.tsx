@@ -5,9 +5,9 @@ import { SITE_URL, BUSINESS, whatsappLink } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Flower Delivery in Islamabad | Lahore Bouquet",
+    absolute: "Flower Delivery in Islamabad | Same-Day Bouquets – Lahore Bouquet",
   },
-  description: "Order fresh flower bouquets and gifts in Islamabad from Lahore Bouquet. Explore rose bouquets, birthday flowers and anniversary gifts with convenient online ordering and local delivery.",
+  description: "Order fresh flower bouquets in Islamabad for birthdays, anniversaries and special occasions. Explore roses, gifts and local delivery options from Lahore Bouquet. Order online or via WhatsApp.",
   alternates: {
     canonical: `${SITE_URL}/flower-delivery-islamabad`,
   },
