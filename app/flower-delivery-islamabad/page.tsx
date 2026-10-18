@@ -76,6 +76,12 @@ const AREAS = [
   { label: "Blue Area", slug: "blue-area-islamabad" },
   { label: "DHA Islamabad", slug: "dha-islamabad" },
   { label: "Bahria Town", slug: "bahria-town-islamabad" },
+  { label: "G-11", slug: "g-11-islamabad" },
+  { label: "G-13", slug: "g-13-islamabad" },
+  { label: "D-12", slug: "d-12-islamabad" },
+  { label: "B-17", slug: "b-17-islamabad" },
+  { label: "Gulberg Greens", slug: "gulberg-greens-islamabad" },
+  { label: "Bahria Enclave", slug: "bahria-enclave-islamabad" },
 ];
 
 export default function FlowerDeliveryIslamabadPage() {
