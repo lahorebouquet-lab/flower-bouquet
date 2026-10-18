@@ -1,19 +1,19 @@
 import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { SITE_URL, BUSINESS, whatsappLink } from "@/lib/business";
+import { SITE_URL, whatsappLink } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Flower Delivery in Islamabad | Same-Day Bouquets – Lahore Bouquet",
+    absolute: "Flower Delivery in Islamabad | Bouquets & Gifts",
   },
-  description: "Order fresh flower bouquets in Islamabad for birthdays, anniversaries and special occasions. Explore roses, gifts and local delivery options from Lahore Bouquet. Order online or via WhatsApp.",
+  description: "Order fresh flower bouquets and gifts in Islamabad with Lahore Bouquet. Explore roses, birthday flowers and anniversary gifts. Check local delivery options and order online.",
   alternates: {
     canonical: `${SITE_URL}/flower-delivery-islamabad`,
   },
   openGraph: {
-    title: "Flower Delivery in Islamabad | Lahore Bouquet",
-    description: "Fresh flower bouquets and gifts delivered in Islamabad. Rose bouquets, birthday flowers, anniversary gifts — order online.",
+    title: "Flower Delivery in Islamabad | Bouquets & Gifts",
+    description: "Order fresh flower bouquets and gifts in Islamabad with Lahore Bouquet. Explore roses, birthday flowers and anniversary gifts.",
     url: `${SITE_URL}/flower-delivery-islamabad`,
     type: "website",
     images: [
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in Islamabad | Lahore Bouquet",
+        alt: "Flower Delivery in Islamabad | Bouquets & Gifts",
       },
     ],
   }
@@ -29,65 +29,33 @@ export const metadata: Metadata = {
 
 const FAQS = [
   {
-    q: "Do you deliver flowers in Islamabad?",
-    a: "Yes! Lahore Bouquet now delivers fresh flower bouquets across Islamabad through our trusted local partner. Order on WhatsApp (0310-4225974) and your flowers are prepared fresh and delivered to any Islamabad address."
+    q: "Where can I order flowers online in Islamabad?",
+    a: "You can browse available bouquets and gifts on LahoreBouquet.com and contact our team to arrange delivery in a covered area of Islamabad. Confirm product availability and delivery charges before payment."
   },
   {
-    q: "Which areas of Islamabad do you cover?",
-    a: "We deliver across all major Islamabad sectors: F-6, F-7, F-8, F-10, F-11, G-6, G-7, G-9, G-10, I-8, I-9, I-10, E-7, E-11, Blue Area, DHA Islamabad and Bahria Town. Message us on WhatsApp to confirm delivery to your specific address."
+    q: "Do you offer same-day flower delivery in Islamabad?",
+    a: "Same-day delivery may be available depending on the order time, bouquet availability and delivery address. Contact us before ordering to confirm the available delivery slot."
   },
   {
-    q: "Is same-day flower delivery available in Islamabad?",
-    a: "Yes! Order and your flowers are delivered the same day within 2 to 5 hours across Islamabad. Our local partner prepares every bouquet fresh — you approve by WhatsApp photo before dispatch."
+    q: "How much does flower delivery cost in Islamabad?",
+    a: "The delivery fee depends on the delivery location and order details. Our team can confirm the applicable charges before you complete your purchase."
   },
   {
-    q: "What are the delivery charges for Islamabad?",
-    a: "Delivery is free across Islamabad! Order on WhatsApp (0310-4225974) with your address and we will confirm your 2 to 5 hour delivery slot."
+    q: "Can I send flowers to Islamabad from another city or country?",
+    a: "Yes, you can contact Lahore Bouquet to arrange a gift for someone in Islamabad from another location. Available payment options and delivery details should be confirmed with our team before placing the order."
   },
   {
-    q: "Can I order from abroad for delivery in Islamabad?",
-    a: "Absolutely. If you live in the UK, USA, Dubai or anywhere outside Pakistan, message us on WhatsApp, pay by international card, approve the bouquet by photo, and we deliver fresh to your loved ones in Islamabad."
+    q: "Can I order red roses for an anniversary in Islamabad?",
+    a: "You can ask our team about the available red rose bouquets, sizes and prices. Once your selection and delivery address are confirmed, we'll guide you through the ordering process."
   },
   {
-    q: "How much do flower bouquets cost in Islamabad?",
-    a: "Our Islamabad prices match our Lahore menu: cheerful mixed bouquets from Rs. 1,699, premium red rose bouquets from Rs. 2,999, sunflower bunches from Rs. 1,699, and chocolate bouquets from Rs. 3,800. Message us on WhatsApp for the full catalogue with photos."
+    q: "Do you deliver to all sectors of Islamabad?",
+    a: "Delivery is available only in areas covered by our local delivery partner. Share the complete address with us to confirm service availability before payment."
   },
   {
-    q: "Do you deliver to offices and hospitals in Islamabad?",
-    a: "Yes! We deliver to homes, offices, hospitals, universities and hotels across Islamabad. Just share the complete address with building name, floor or room number on WhatsApp and we will handle the rest."
+    q: "Can I request a photo of my bouquet before delivery?",
+    a: "Bouquet photo confirmation may be available depending on the order and fulfilment process. Please request it when placing your order."
   },
-  {
-    q: "Can I get birthday flowers delivered in Islamabad?",
-    a: "Of course! Birthday bouquets are our most popular Islamabad order. Add a cake, helium balloons or a teddy bear for the complete surprise. Order a few hours ahead and we deliver the same day within 2 to 5 hours."
-  },
-  {
-    q: "Do you offer anniversary flowers in Islamabad?",
-    a: "Yes — red rose bouquets, elegant lily arrangements and romantic mixed bouquets for anniversaries, all delivered fresh across Islamabad with free delivery and WhatsApp photo approval."
-  },
-  {
-    q: "What makes Lahore Bouquet different from other Islamabad florists?",
-    a: "Three things: (1) WhatsApp photo approval — you see your exact bouquet before the rider leaves, (2) free delivery across all Islamabad sectors, and (3) same-day 2 to 5 hour delivery. No surprises, no hidden charges."
-  },
-  {
-    q: "Do you deliver on Sundays and public holidays in Islamabad?",
-    a: "Yes, we deliver 7 days a week including Sundays and public holidays. For Eid, Valentine's Day and Mother's Day, we recommend ordering 1–2 days ahead as these are our busiest days."
-  },
-  {
-    q: "Can I customize my bouquet for Islamabad delivery?",
-    a: "Yes! Tell us your budget, favourite colours and occasion on WhatsApp, and our florist will create a custom bouquet. You approve the final design by photo before it is dispatched."
-  },
-  {
-    q: "Do you deliver wedding flowers and bridal bouquets in Islamabad?",
-    a: "Yes! We create bridal bouquets, gajray, corsages and wedding car decoration for Islamabad weddings through our local partner. Share your event date on WhatsApp for a free quote — book 1–2 weeks ahead for weddings."
-  },
-  {
-    q: "What if the flowers arrive damaged?",
-    a: "Fresh flowers are perishable, but if your bouquet arrives damaged, share a photo on WhatsApp within 24 hours and we will replace it or refund your order. Your satisfaction is guaranteed."
-  },
-  {
-    q: "How do I pay for Islamabad flower delivery?",
-    a: "We accept bank transfer, JazzCash and EasyPaisa. For customers ordering from abroad (UK, USA, UAE), we accept international cards. Payment details are shared on WhatsApp after you confirm your order."
-  }
 ];
 
 const AREAS = [
@@ -128,22 +96,27 @@ export default function FlowerDeliveryIslamabadPage() {
       {/* Hero */}
       <section className="w-full py-16 px-4 sm:px-6 text-center border-b border-[#E5DED2]">
         <div className="max-w-3xl mx-auto space-y-4">
-          <span className="text-xs uppercase font-bold tracking-widest text-[#8B1E2D]">
-            Now Delivering in the Capital
-          </span>
           <h1 className="font-playfair text-3xl sm:text-5xl font-bold text-[#101012] leading-tight">
-            Flower Delivery in Islamabad — Fresh Bouquets & Gifts
+            Flower Delivery in Islamabad – Fresh Flowers & Gifts
           </h1>
           <p className="text-sm sm:text-base text-[#2A2A2A] leading-relaxed">
-            Lahore Bouquet now delivers fresh flowers across Islamabad through our trusted local partner.
-            Red roses, birthday bouquets, anniversary flowers and gift hampers — prepared fresh and delivered to your door.
+            Looking for beautiful flowers in Islamabad for someone special? Lahore Bouquet makes it easy to send flowers and thoughtful gifts for birthdays, anniversaries, romantic surprises and other memorable occasions.
+          </p>
+          <p className="text-sm sm:text-base text-[#2A2A2A] leading-relaxed">
+            Choose from our available rose bouquets, birthday flowers, sunflower arrangements, chocolate bouquets and gift hampers. Whether you want to surprise someone with a simple bouquet or celebrate a special day with a thoughtful gift, we&apos;re here to help you find the right option.
+          </p>
+          <p className="text-sm sm:text-base text-[#2A2A2A] leading-relaxed">
+            We arrange deliveries in selected areas of Islamabad through our local delivery partner. Browse our collection, share your delivery details and contact us to confirm availability, prices and delivery timing before placing your order.
+          </p>
+          <p className="text-sm sm:text-base font-semibold text-[#0B0B0B]">
+            Order flowers in Islamabad today and make someone&apos;s day a little more special.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2">
             <Link
               href="/bouquets"
               className="px-6 py-3 rounded-full bg-[#8B1E2D] text-white text-sm font-bold hover:bg-[#C6A15B] hover:text-[#0B0B0B] transition-colors"
             >
-              Shop Bouquets →
+              Shop Flowers
             </Link>
             <a
               href={whatsappLink("Hi Lahore Bouquet! I want to order flowers for delivery in Islamabad.")}
@@ -157,72 +130,47 @@ export default function FlowerDeliveryIslamabadPage() {
         </div>
       </section>
 
-      {/* Price Guide */}
+      {/* Online Flower Shop */}
       <section className="w-full py-16 px-4 sm:px-6 border-b border-[#E5DED2]">
         <div className="max-w-3xl mx-auto space-y-6">
-          <div className="text-center space-y-2">
-            <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012]">
-              Islamabad Flower Prices 2026
-            </h2>
-            <p className="text-sm text-[#2A2A2A]">
-              Same menu, same prices as Lahore — with free Islamabad delivery.
-            </p>
-          </div>
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm border-collapse">
-              <thead>
-                <tr className="bg-[#0B0B0B] text-white">
-                  <th className="p-3 text-left">Bouquet Type</th>
-                  <th className="p-3 text-left">Starting Price</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-b border-[#E5DED2]">
-                  <td className="p-3">Mixed seasonal bouquet</td>
-                  <td className="p-3 font-bold text-[#8B1E2D]">Rs. 1,699</td>
-                </tr>
-                <tr className="border-b border-[#E5DED2] bg-white">
-                  <td className="p-3">Red rose bouquet (24 roses)</td>
-                  <td className="p-3 font-bold text-[#8B1E2D]">Rs. 2,999</td>
-                </tr>
-                <tr className="border-b border-[#E5DED2]">
-                  <td className="p-3">Sunflower bunch</td>
-                  <td className="p-3 font-bold text-[#8B1E2D]">Rs. 1,699</td>
-                </tr>
-                <tr className="border-b border-[#E5DED2] bg-white">
-                  <td className="p-3">Chocolate bouquet</td>
-                  <td className="p-3 font-bold text-[#8B1E2D]">Rs. 3,800</td>
-                </tr>
-                <tr className="bg-white">
-                  <td className="p-3">Money bouquet</td>
-                  <td className="p-3 font-bold text-[#8B1E2D]">Rs. 4,999</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012] text-center">
+            Online Flower Shop in Islamabad
+          </h2>
+          <p className="text-sm sm:text-base leading-relaxed">
+            Sending flowers should be simple, even when you&apos;re ordering from another city or country. At Lahore Bouquet, you can explore available bouquets online and arrange delivery for someone in Islamabad without visiting a physical flower shop yourself.
+          </p>
+          <p className="text-sm sm:text-base leading-relaxed">
+            From classic red roses to colourful birthday bouquets and chocolate gifts, our collection offers options for different occasions and budgets. Product availability may vary, so contact us if you have a particular flower, colour or arrangement in mind.
+          </p>
         </div>
       </section>
 
-      {/* Why Choose Us */}
+      {/* Occasions */}
       <section className="w-full py-16 px-4 sm:px-6 border-b border-[#E5DED2] bg-white">
-        <div className="max-w-5xl mx-auto space-y-8">
-          <div className="text-center space-y-2">
-            <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012]">
-              Why Islamabad Chooses Lahore Bouquet
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
-            <div className="p-6 rounded-2xl bg-[#F8F3EA] border border-[rgba(198,161,91,0.25)] space-y-2">
-              <div className="font-bold text-[#8B1E2D]">📸 Photo Before Dispatch</div>
-              <p className="text-[#2A2A2A] leading-relaxed">You approve your exact bouquet on WhatsApp before our rider leaves. What you see is what they get — no surprises.</p>
+        <div className="max-w-3xl mx-auto space-y-6">
+          <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012] text-center">
+            Flowers and Gifts for Every Occasion
+          </h2>
+          <div className="space-y-4 text-sm sm:text-base leading-relaxed">
+            <div>
+              <h3 className="font-bold text-[#0B0B0B]">Birthday Flowers</h3>
+              <p>Make someone&apos;s birthday memorable with a fresh flower bouquet. Choose an arrangement that suits their personality and add a thoughtful message for a more personal surprise.</p>
             </div>
-            <div className="p-6 rounded-2xl bg-[#F8F3EA] border border-[rgba(198,161,91,0.25)] space-y-2">
-              <div className="font-bold text-[#8B1E2D]">🚚 Free Same-Day Delivery</div>
-              <p className="text-[#2A2A2A] leading-relaxed">Free delivery across all Islamabad sectors, delivered within 2 to 5 hours. No hidden charges, no minimum order games.</p>
+            <div>
+              <h3 className="font-bold text-[#0B0B0B]">Anniversary Flowers</h3>
+              <p>Celebrate your relationship with red roses or an elegant floral arrangement. Anniversary flowers are a lovely way to express your feelings, whether you&apos;re planning a surprise or sending a gift from afar.</p>
             </div>
-            <div className="p-6 rounded-2xl bg-[#F8F3EA] border border-[rgba(198,161,91,0.25)] space-y-2">
-              <div className="font-bold text-[#8B1E2D]">🌍 Order From Anywhere</div>
-              <p className="text-[#2A2A2A] leading-relaxed">Living in the UK, USA or Dubai? Pay by international card, approve by photo, and surprise your loved ones in Islamabad.</p>
+            <div>
+              <h3 className="font-bold text-[#0B0B0B]">Red Rose Bouquets</h3>
+              <p>Red roses remain a classic choice for romantic occasions, anniversaries and special surprises. Explore the available designs and confirm the bouquet size and price before ordering.</p>
+            </div>
+            <div>
+              <h3 className="font-bold text-[#0B0B0B]">Sunflower Bouquets</h3>
+              <p>Bright and cheerful sunflowers are a thoughtful choice for birthdays, congratulations and everyday surprises.</p>
+            </div>
+            <div>
+              <h3 className="font-bold text-[#0B0B0B]">Chocolate Bouquets and Gift Hampers</h3>
+              <p>Looking for something beyond traditional flowers? Explore our available chocolate bouquets and gift hampers for birthdays, celebrations and other special moments.</p>
             </div>
           </div>
         </div>
@@ -233,10 +181,13 @@ export default function FlowerDeliveryIslamabadPage() {
         <div className="max-w-5xl mx-auto space-y-8">
           <div className="text-center space-y-2">
             <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012]">
-              Islamabad Delivery Areas
+              Flower Delivery Areas in Islamabad
             </h2>
-            <p className="text-sm text-[#2A2A2A]">
-              We deliver to all major sectors — message us to confirm your address.
+            <p className="text-sm text-[#2A2A2A] max-w-2xl mx-auto leading-relaxed">
+              Lahore Bouquet arranges flower deliveries in selected areas of Islamabad through a local delivery partner. Delivery availability depends on your complete address, product selection and the requested delivery time.
+            </p>
+            <p className="text-sm text-[#2A2A2A] max-w-2xl mx-auto leading-relaxed">
+              If you&apos;re ordering for someone in Islamabad, send us the recipient&apos;s location before payment so we can confirm whether delivery is available.
             </p>
           </div>
           <div className="flex flex-wrap justify-center gap-2">
@@ -253,28 +204,49 @@ export default function FlowerDeliveryIslamabadPage() {
         </div>
       </section>
 
-      {/* How It Works */}
+      {/* How to Order */}
+      <section className="w-full py-16 px-4 sm:px-6 border-b border-[#E5DED2] bg-white">
+        <div className="max-w-3xl mx-auto space-y-6">
+          <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012] text-center">
+            How to Order Flowers in Islamabad
+          </h2>
+          <p className="text-sm sm:text-base leading-relaxed">Ordering flowers online is straightforward:</p>
+          <ol className="space-y-3 text-sm sm:text-base leading-relaxed list-decimal list-inside">
+            <li>Browse the available bouquets and gifts on LahoreBouquet.com.</li>
+            <li>Choose your preferred arrangement and confirm its price.</li>
+            <li>Share the recipient&apos;s name, contact number and complete delivery address.</li>
+            <li>Confirm the delivery charges, payment method and estimated arrival time with our team.</li>
+            <li>Finalise your order once the details have been confirmed.</li>
+          </ol>
+          <p className="text-sm sm:text-base leading-relaxed">
+            Where available, you can also request a bouquet photo before dispatch.
+          </p>
+          <p className="text-sm sm:text-base font-semibold">
+            Want to send flowers today? Contact our team on WhatsApp to check current availability and delivery options.
+          </p>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
       <section className="w-full py-16 px-4 sm:px-6 border-b border-[#E5DED2]">
-        <div className="max-w-5xl mx-auto space-y-8">
-          <div className="text-center space-y-2">
-            <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012]">
-              How Islamabad Delivery Works
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
-            <div className="p-6 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] space-y-2">
-              <div className="font-bold text-[#8B1E2D]">1. Choose & Order</div>
-              <p className="text-[#2A2A2A] leading-relaxed">Browse bouquets online or message us on WhatsApp (0310-4225974) with your choice.</p>
-            </div>
-            <div className="p-6 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] space-y-2">
-              <div className="font-bold text-[#8B1E2D]">2. Photo Approval</div>
-              <p className="text-[#2A2A2A] leading-relaxed">Our Islamabad partner prepares your bouquet fresh — you approve by WhatsApp photo.</p>
-            </div>
-            <div className="p-6 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] space-y-2">
-              <div className="font-bold text-[#8B1E2D]">3. Fast Delivery</div>
-              <p className="text-[#2A2A2A] leading-relaxed">Same-day delivery within 2 to 5 hours to any Islamabad address.</p>
-            </div>
-          </div>
+        <div className="max-w-3xl mx-auto space-y-6">
+          <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012] text-center">
+            Why Choose Lahore Bouquet?
+          </h2>
+          <p className="text-sm sm:text-base leading-relaxed">
+            We understand that when you send flowers to someone special, you want the gift to arrive as expected. That&apos;s why we encourage customers to confirm the bouquet details, delivery address and timing before finalising an order.
+          </p>
+          <ul className="space-y-2 text-sm sm:text-base list-disc list-inside leading-relaxed">
+            <li>Convenient online and WhatsApp ordering</li>
+            <li>Flower bouquets and gifts for different occasions</li>
+            <li>A local delivery partner serving selected Islamabad areas</li>
+            <li>Clear confirmation of product prices and delivery charges</li>
+            <li>Bouquet photo confirmation where available</li>
+            <li>Options for customers ordering from within Pakistan or abroad</li>
+          </ul>
+          <p className="text-sm sm:text-base leading-relaxed">
+            Our aim is to make sending flowers a simple and thoughtful experience, whether you&apos;re celebrating a birthday, remembering an anniversary or surprising someone just because.
+          </p>
         </div>
       </section>
 
@@ -282,7 +254,7 @@ export default function FlowerDeliveryIslamabadPage() {
       <section className="w-full py-16 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto space-y-6">
           <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012] text-center">
-            Islamabad Delivery FAQs
+            Frequently Asked Questions
           </h2>
           <div className="space-y-3">
             {FAQS.map((f, i) => (
@@ -295,9 +267,15 @@ export default function FlowerDeliveryIslamabadPage() {
               </details>
             ))}
           </div>
-          <div className="text-center pt-4">
-            <p className="text-sm text-[#2A2A2A]">
-              Also serving <Link href="/flower-delivery-in-lahore" className="text-[#8B1E2D] underline font-semibold">Lahore</Link> — our home city.
+          <div className="text-center pt-6 space-y-2">
+            <h3 className="font-playfair text-xl font-bold text-[#101012]">
+              Send Flowers in Islamabad with Lahore Bouquet
+            </h3>
+            <p className="text-sm leading-relaxed">
+              A thoughtful bouquet can make an ordinary day feel special. Explore our available flowers and gifts, choose an arrangement you love, and contact Lahore Bouquet to organise delivery in Islamabad.
+            </p>
+            <p className="text-sm font-semibold">
+              Browse our collection or message us on WhatsApp to confirm your order.
             </p>
           </div>
         </div>
