@@ -83,6 +83,12 @@ export default function PricesPage() {
   };
 
   // 3. JSON-LD WebPage & Product Catalog Schema
+  const categoryImages: Record<string, string> = {
+    bouquets: "https://lahorebouquet.com/images/categories/all_bouquets.webp",
+    decor: "https://lahorebouquet.com/images/categories/wedding_car.webp",
+    jewellery: "https://lahorebouquet.com/images/categories/roses_collection.webp",
+    gifts: "https://lahorebouquet.com/images/categories/gifts_cakes.webp",
+  };
   const catalogSchema = {
     "@context": "https://schema.org",
     "@type": "OfferCatalog",
@@ -96,6 +102,7 @@ export default function PricesPage() {
       price: typeof item.startingPrice === "number" ? item.startingPrice : 1000,
       availability: "https://schema.org/InStock",
       url: `https://lahorebouquet.com${item.href}`,
+      image: categoryImages[item.category] || "https://lahorebouquet.com/og-image.jpg",
     })),
   };
 
