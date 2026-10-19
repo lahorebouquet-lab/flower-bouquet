@@ -16,6 +16,91 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/flower-delivery-islamabad/f-10-islamabad",
+        destination: "/flower-delivery-islamabad",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-islamabad/f-11-islamabad",
+        destination: "/flower-delivery-islamabad",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-islamabad/g-6-islamabad",
+        destination: "/flower-delivery-islamabad",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-islamabad/g-7-islamabad",
+        destination: "/flower-delivery-islamabad",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-islamabad/g-9-islamabad",
+        destination: "/flower-delivery-islamabad",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-islamabad/g-10-islamabad",
+        destination: "/flower-delivery-islamabad",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-islamabad/g-13-islamabad",
+        destination: "/flower-delivery-islamabad",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-islamabad/i-8-islamabad",
+        destination: "/flower-delivery-islamabad",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-islamabad/i-9-islamabad",
+        destination: "/flower-delivery-islamabad",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-islamabad/i-10-islamabad",
+        destination: "/flower-delivery-islamabad",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-islamabad/e-7-islamabad",
+        destination: "/flower-delivery-islamabad",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-islamabad/e-11-islamabad",
+        destination: "/flower-delivery-islamabad",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-islamabad/d-12-islamabad",
+        destination: "/flower-delivery-islamabad",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-islamabad/b-17-islamabad",
+        destination: "/flower-delivery-islamabad",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-islamabad/blue-area-islamabad",
+        destination: "/flower-delivery-islamabad",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-islamabad/gulberg-greens-islamabad",
+        destination: "/flower-delivery-islamabad",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-islamabad/bahria-enclave-islamabad",
+        destination: "/flower-delivery-islamabad",
+        permanent: true,
+      },
+      {
         source: "/product-category/bouquets",
         destination: "/bouquets",
         permanent: true,

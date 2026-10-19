@@ -36,6 +36,7 @@ export default function Page() {
       <section className="w-full py-16 px-4 sm:px-6 text-center border-b border-[#E5DED2]">
         <div className="max-w-3xl mx-auto space-y-4">
           <h1 className="font-playfair text-3xl sm:text-5xl font-bold text-[#101012] leading-tight">Flower Delivery in G-11 Islamabad</h1>
+          <p className="text-xs text-[#636363]">Near G-11 Markaz. Delivery across G-11/1 to G-11/4. Same-day delivery in 2-5 hours.</p>
           <p className="text-sm sm:text-base text-[#2A2A2A] leading-relaxed">Need to send a bouquet to a friend, family member or someone special in G-11 Islamabad? Lahore Bouquet offers a convenient way to explore flowers and arrange a gift for a memorable occasion.</p>
           <p className="text-sm sm:text-base text-[#2A2A2A] leading-relaxed">From classic roses to colourful mixed bouquets, choose from the arrangements currently available. Share the recipient's complete address and preferred delivery time so we can check coverage and confirm the final order details.</p>
           <p className="text-sm sm:text-base font-semibold text-[#0B0B0B]">Order flowers for G-11 Islamabad: Browse available bouquets and arrange delivery with our team.</p>

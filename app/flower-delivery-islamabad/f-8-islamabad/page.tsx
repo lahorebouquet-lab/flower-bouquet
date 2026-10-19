@@ -36,6 +36,7 @@ export default function Page() {
       <section className="w-full py-16 px-4 sm:px-6 text-center border-b border-[#E5DED2]">
         <div className="max-w-3xl mx-auto space-y-4">
           <h1 className="font-playfair text-3xl sm:text-5xl font-bold text-[#101012] leading-tight">Flower Delivery in F-8 Islamabad</h1>
+          <p className="text-xs text-[#636363]">Near F-8 Markaz. Serving all F-8 sub-sectors. Same-day delivery in 2-5 hours.</p>
           <p className="text-sm sm:text-base text-[#2A2A2A] leading-relaxed">Need to send flowers to someone in F-8 Islamabad? Lahore Bouquet makes it convenient to arrange a bouquet for a birthday, anniversary, congratulations or a simple surprise.</p>
           <p className="text-sm sm:text-base text-[#2A2A2A] leading-relaxed">Explore our available floral arrangements and choose something that matches your recipient's style. Before placing your order, share the delivery address and preferred time so our team can confirm coverage, bouquet availability and applicable charges.</p>
           <p className="text-sm sm:text-base font-semibold text-[#0B0B0B]">Order flowers for F-8: Browse available bouquets and arrange delivery with our team.</p>

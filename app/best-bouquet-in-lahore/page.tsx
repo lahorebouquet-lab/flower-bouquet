@@ -306,6 +306,10 @@ export default function BestBouquetInLahorePage() {
                 <h3 className="font-semibold">Delivery Areas & Fees</h3>
                 <p className="text-sm text-[#2A2A2A] mt-1">Full list of areas with free delivery across Lahore.</p>
               </Link>
+              <Link href="/flower-delivery-islamabad" className="border border-[#E5DED2] rounded-xl p-5 hover:shadow-md transition block">
+                <h3 className="font-semibold">Flower Delivery in Islamabad</h3>
+                <p className="text-sm text-[#2A2A2A] mt-1">Same-day delivery in 2-5 hours across Islamabad sectors.</p>
+              </Link>
             </div>
           </div>
         </section>

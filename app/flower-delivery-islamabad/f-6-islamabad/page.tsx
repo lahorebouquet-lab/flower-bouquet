@@ -36,6 +36,7 @@ export default function Page() {
       <section className="w-full py-16 px-4 sm:px-6 text-center border-b border-[#E5DED2]">
         <div className="max-w-3xl mx-auto space-y-4">
           <h1 className="font-playfair text-3xl sm:text-5xl font-bold text-[#101012] leading-tight">Flower Delivery in F-6 Islamabad</h1>
+          <p className="text-xs text-[#636363]">Near Margalla Road and the diplomatic enclave. We deliver to homes and offices across F-6/1 to F-6/4. Same-day delivery in 2-5 hours.</p>
           <p className="text-sm sm:text-base text-[#2A2A2A] leading-relaxed">Looking for flower delivery in F-6 Islamabad? Lahore Bouquet helps you arrange thoughtful flower gifts for birthdays, anniversaries, romantic surprises and special occasions.</p>
           <p className="text-sm sm:text-base text-[#2A2A2A] leading-relaxed">Whether you're sending red roses, a colourful bouquet or a gift for someone special, explore our available collection and choose an arrangement that suits the occasion. Share the recipient's address in F-6 so our team can confirm product availability, delivery charges and the expected delivery time.</p>
           <p className="text-sm sm:text-base font-semibold text-[#0B0B0B]">Order flowers for F-6 Islamabad: Browse our collection or contact us on WhatsApp to arrange your order.</p>

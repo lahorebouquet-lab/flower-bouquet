@@ -171,6 +171,20 @@ export default function DeliveryAreasPage() {
         ))}
       </section>
 
+      {/* Islamabad Banner */}
+      <section className="p-6 rounded-2xl bg-[#8B1E2D] text-white space-y-3 shadow-sm text-center">
+        <h2 className="font-playfair text-xl font-bold">Now Delivering in Islamabad!</h2>
+        <p className="text-sm text-white/90">
+          Same-day flower delivery in 2-5 hours across F-6, F-7, F-8, G-11, DHA Islamabad, Bahria Town & more.
+        </p>
+        <Link
+          href="/flower-delivery-islamabad"
+          className="inline-block px-6 py-3 rounded-full bg-white text-[#8B1E2D] text-sm font-bold hover:bg-[#C6A15B] hover:text-[#0B0B0B] transition-colors"
+        >
+          View Islamabad Delivery →
+        </Link>
+      </section>
+
       {/* Not Listed Help Block */}
       <section className="p-6 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] space-y-3 shadow-sm">
         <h3 className="font-playfair text-lg font-bold text-[#0B0B0B]">Your area not listed?</h3>

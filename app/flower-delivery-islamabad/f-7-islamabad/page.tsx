@@ -36,6 +36,7 @@ export default function Page() {
       <section className="w-full py-16 px-4 sm:px-6 text-center border-b border-[#E5DED2]">
         <div className="max-w-3xl mx-auto space-y-4">
           <h1 className="font-playfair text-3xl sm:text-5xl font-bold text-[#101012] leading-tight">Flower Delivery in F-7 Islamabad</h1>
+          <p className="text-xs text-[#636363]">Near Jinnah Super Market. Covering F-7/1 to F-7/4 including areas around Jinnah Super. Same-day delivery in 2-5 hours.</p>
           <p className="text-sm sm:text-base text-[#2A2A2A] leading-relaxed">Make someone's day special with a flower bouquet delivered to F-7 Islamabad. Lahore Bouquet offers a convenient way to arrange flowers and gifts for birthdays, anniversaries and other memorable moments.</p>
           <p className="text-sm sm:text-base text-[#2A2A2A] leading-relaxed">Choose from available rose bouquets, mixed flowers and chocolate gifts. Whether the recipient lives near F-7 Markaz or in a residential street, send us the complete address so we can check coverage and confirm the delivery arrangements.</p>
           <p className="text-sm sm:text-base font-semibold text-[#0B0B0B]">Send flowers to F-7 Islamabad: Choose your preferred bouquet and confirm your order through our team.</p>

@@ -36,6 +36,7 @@ export default function Page() {
       <section className="w-full py-16 px-4 sm:px-6 text-center border-b border-[#E5DED2]">
         <div className="max-w-3xl mx-auto space-y-4">
           <h1 className="font-playfair text-3xl sm:text-5xl font-bold text-[#101012] leading-tight">Flower Delivery in DHA Islamabad</h1>
+          <p className="text-xs text-[#636363]">DHA Phase 1-5, near G.T. Road. Serving DHA Islamabad phases. Same-day delivery in 2-5 hours.</p>
           <p className="text-sm sm:text-base text-[#2A2A2A] leading-relaxed">Looking for flower delivery in DHA Islamabad? Lahore Bouquet helps you arrange bouquets and gifts for birthdays, anniversaries, romantic surprises and other special occasions.</p>
           <p className="text-sm sm:text-base text-[#2A2A2A] leading-relaxed">Explore available rose bouquets, mixed floral arrangements and gift options. As coverage can vary by phase and location, share the complete DHA phase, street and house number with our team before placing your order. We will confirm availability and the estimated delivery time.</p>
           <p className="text-sm sm:text-base font-semibold text-[#0B0B0B]">Order flowers for DHA Islamabad: Contact us with your phase and address to check delivery options.</p>

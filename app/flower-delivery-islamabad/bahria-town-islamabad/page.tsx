@@ -36,6 +36,7 @@ export default function Page() {
       <section className="w-full py-16 px-4 sm:px-6 text-center border-b border-[#E5DED2]">
         <div className="max-w-3xl mx-auto space-y-4">
           <h1 className="font-playfair text-3xl sm:text-5xl font-bold text-[#101012] leading-tight">Flower Delivery in Bahria Town Islamabad</h1>
+          <p className="text-xs text-[#636363]">Bahria Town, near Civic Centre. Delivery across Bahria Town sectors. Same-day delivery in 2-5 hours.</p>
           <p className="text-sm sm:text-base text-[#2A2A2A] leading-relaxed">Want to send a bouquet to a loved one in Bahria Town? Lahore Bouquet helps you arrange flowers and gifts for birthdays, anniversaries and other celebrations.</p>
           <p className="text-sm sm:text-base text-[#2A2A2A] leading-relaxed">Browse the available collection and tell us the recipient's complete address. Bahria Town delivery availability may depend on the specific phase and location, so confirm the route, charges and estimated delivery time with our team before payment.</p>
           <p className="text-sm sm:text-base font-semibold text-[#0B0B0B]">Send flowers to Bahria Town: Share the phase and address to confirm availability.</p>
