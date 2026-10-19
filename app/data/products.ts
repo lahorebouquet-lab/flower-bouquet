@@ -2188,10 +2188,17 @@ export const ALL_PRODUCTS: Product[] = [
   },
 ];
 
-import { DELIVERY_AREA_FEES, DELIVERY_SLOTS } from "@/lib/delivery";
+import { DELIVERY_AREA_FEES, DELIVERY_SLOTS, ISLAMABAD_AREA_FEES } from "@/lib/delivery";
 
 /** Lahore delivery areas — sourced from lib/delivery.ts (single source of truth). */
 export const LAHORE_AREAS = DELIVERY_AREA_FEES.map((a) => a.area);
+
+/** Islamabad delivery areas — sourced from lib/delivery.ts (single source of truth). */
+export const ISLAMABAD_AREAS = ISLAMABAD_AREA_FEES.map((a) => a.area);
+
+/** All delivery cities. */
+export const DELIVERY_CITIES = ["Lahore", "Islamabad"] as const;
+export type DeliveryCity = (typeof DELIVERY_CITIES)[number];
 
 /** Delivery time slots — sourced from lib/delivery.ts (includes cutoff info). */
 export const TIME_SLOTS = DELIVERY_SLOTS;

@@ -59,6 +59,8 @@ interface CartContextType {
   setRecipientPhone: (val: string) => void;
   selectedArea: string;
   setSelectedArea: (val: string) => void;
+  selectedCity: string;
+  setSelectedCity: (val: string) => void;
   streetAddress: string;
   setStreetAddress: (val: string) => void;
   deliveryDate: string; // YYYY-MM-DD
@@ -136,6 +138,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const [recipientName, setRecipientName] = useState(String(savedForm.recipientName ?? ""));
   const [recipientPhone, setRecipientPhone] = useState(String(savedForm.recipientPhone ?? ""));
   const [selectedArea, setSelectedArea] = useState(String(savedForm.selectedArea ?? ""));
+  const [selectedCity, setSelectedCity] = useState(String((savedForm as any).selectedCity ?? "Lahore"));
   const [streetAddress, setStreetAddress] = useState(String(savedForm.streetAddress ?? ""));
   const [deliveryDate, setDeliveryDate] = useState(String(savedForm.deliveryDate ?? getTodayISO()));
   const [deliveryTimeSlot, setDeliveryTimeSlot] = useState(
@@ -166,12 +169,12 @@ export function CartProvider({ children }: { children: ReactNode }) {
         FORM_KEY,
         JSON.stringify({
           senderName, senderPhone, recipientName, recipientPhone,
-          selectedArea, streetAddress, deliveryDate, deliveryTimeSlot,
+          selectedArea, selectedCity, streetAddress, deliveryDate, deliveryTimeSlot,
           cardOccasion, cardMessage, wantPhotoBeforeDispatch, paymentMethod,
         })
       );
     } catch { /* ignore */ }
-  }, [senderName, senderPhone, recipientName, recipientPhone, selectedArea, streetAddress, deliveryDate, deliveryTimeSlot, cardOccasion, cardMessage, wantPhotoBeforeDispatch, paymentMethod]);
+  }, [senderName, senderPhone, recipientName, recipientPhone, selectedArea, selectedCity, streetAddress, deliveryDate, deliveryTimeSlot, cardOccasion, cardMessage, wantPhotoBeforeDispatch, paymentMethod]);
 
   const showToast = (msg: string) => {
     setToastMessage(msg);
@@ -409,6 +412,8 @@ export function CartProvider({ children }: { children: ReactNode }) {
         setRecipientPhone,
         selectedArea,
         setSelectedArea,
+        selectedCity,
+        setSelectedCity,
         streetAddress,
         setStreetAddress,
         deliveryDate,

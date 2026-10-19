@@ -16,7 +16,7 @@ import {
   Pencil
 } from "lucide-react";
 import { useCart } from "../context/CartContext";
-import { LAHORE_AREAS, TIME_SLOTS, CARD_OCCASIONS } from "../data/products";
+import { LAHORE_AREAS, ISLAMABAD_AREAS, DELIVERY_CITIES, TIME_SLOTS, CARD_OCCASIONS } from "../data/products";
 import { getDeliveryFee, formatDeliveryDate, DELIVERY_POLICY_LINE } from "@/lib/delivery";
 import { normalizePakistaniPhone, CONTACT_PHONE, siteWhatsappLink } from "@/lib/site";
 import DeliverySchedulePicker from "./DeliverySchedulePicker";
@@ -45,6 +45,8 @@ export default function CartDrawer() {
     setRecipientPhone,
     selectedArea,
     setSelectedArea,
+    selectedCity,
+    setSelectedCity,
     streetAddress,
     setStreetAddress,
     deliveryDate,
@@ -201,7 +203,7 @@ export default function CartDrawer() {
                           <div className="mt-1 text-[10px] text-[#555555] leading-relaxed">
                             <span className="font-semibold text-[#0B0B0B]">{formatDeliveryDate(c.deliveryDate)}</span>
                             {" · "}{slotLabel}
-                            {" · "}{c.area.replace(", Lahore", "")}
+                            {" · "}{c.area.replace(", Lahore", "").replace(", Islamabad", "")}
                             {" · "}{c.cardOccasion.replace(/[\u{1F300}-\u{1FAFF}]/gu, "").trim() || c.cardOccasion}
                             <button
                               type="button"
@@ -287,14 +289,27 @@ export default function CartDrawer() {
                 </div>
 
                 <div>
-                  <label className="block text-[#2A2A2A] font-medium mb-1">Lahore Area / Sector *</label>
+                  <label className="block text-[#2A2A2A] font-medium mb-1">City *</label>
+                  <select
+                    value={selectedCity}
+                    onChange={(e) => { setSelectedCity(e.target.value); setSelectedArea(""); }}
+                    className="w-full px-3 py-2 bg-white border border-[#E5DED2] rounded-lg text-[#0B0B0B] outline-none"
+                  >
+                    {DELIVERY_CITIES.map((city) => (
+                      <option key={city} value={city} className="bg-white text-[#0B0B0B]">{city}</option>
+                    ))}
+                  </select>
+                </div>
+
+                <div>
+                  <label className="block text-[#2A2A2A] font-medium mb-1">{selectedCity} Area / Sector *</label>
                   <select 
                     value={selectedArea}
                     onChange={(e) => setSelectedArea(e.target.value)}
                     className="w-full px-3 py-2 bg-white border border-[#E5DED2] rounded-lg text-[#0B0B0B] outline-none"
                   >
                     <option value="" disabled>— Select your area —</option>
-                    {LAHORE_AREAS.map((area, aIdx) => {
+                    {(selectedCity === "Islamabad" ? ISLAMABAD_AREAS : LAHORE_AREAS).map((area, aIdx) => {
                       const fee = getDeliveryFee(area);
                       return (
                         <option key={aIdx} value={area} className="bg-white text-[#0B0B0B]">
@@ -509,7 +524,7 @@ export default function CartDrawer() {
                   <span className="font-semibold">Rs. {cartSubtotal.toLocaleString()}</span>
                 </div>
                 <div className="flex justify-between text-[#2A2A2A]">
-                  <span>Express Delivery ({selectedArea.replace(", Lahore", "")}):</span>
+                  <span>Express Delivery ({selectedArea.replace(", Lahore", "").replace(", Islamabad", "")}):</span>
                   <span className="text-[#8B1E2D] font-semibold">
                     {deliveryFee === null ? getDeliveryFee(selectedArea).label : deliveryFee === 0 ? "FREE (Rs. 0)" : `Rs. ${deliveryFee.toLocaleString()}`}
                   </span>

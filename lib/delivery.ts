@@ -35,11 +35,45 @@ export const DELIVERY_AREA_FEES: DeliveryAreaFee[] = [
   { area: "Other Lahore Area", fee: null },
 ];
 
+/** Islamabad delivery areas — vendor-confirmed same-day 2–5 hr delivery. */
+export const ISLAMABAD_AREA_FEES: DeliveryAreaFee[] = [
+  { area: "F-6, Islamabad", fee: 0 },
+  { area: "F-7, Islamabad", fee: 0 },
+  { area: "F-8, Islamabad", fee: 0 },
+  { area: "F-10, Islamabad", fee: 0 },
+  { area: "F-11, Islamabad", fee: 0 },
+  { area: "G-6, Islamabad", fee: 0 },
+  { area: "G-7, Islamabad", fee: 0 },
+  { area: "G-9, Islamabad", fee: 0 },
+  { area: "G-10, Islamabad", fee: 0 },
+  { area: "G-11, Islamabad", fee: 0 },
+  { area: "G-13, Islamabad", fee: 0 },
+  { area: "I-8, Islamabad", fee: 0 },
+  { area: "I-9, Islamabad", fee: 0 },
+  { area: "I-10, Islamabad", fee: 0 },
+  { area: "E-7, Islamabad", fee: 0 },
+  { area: "E-11, Islamabad", fee: 0 },
+  { area: "D-12, Islamabad", fee: 0 },
+  { area: "B-17, Islamabad", fee: 0 },
+  { area: "Blue Area, Islamabad", fee: 0 },
+  { area: "DHA, Islamabad", fee: 0 },
+  { area: "Bahria Town, Islamabad", fee: 0 },
+  { area: "Gulberg Greens, Islamabad", fee: 0 },
+  { area: "Bahria Enclave, Islamabad", fee: 0 },
+  { area: "Other Islamabad Area", fee: null },
+];
+
+/** All delivery areas across both cities. */
+export const ALL_DELIVERY_AREA_FEES: DeliveryAreaFee[] = [
+  ...DELIVERY_AREA_FEES,
+  ...ISLAMABAD_AREA_FEES,
+];
+
 /** Optional order-value threshold for free delivery. null = no threshold. */
 export const FREE_DELIVERY_THRESHOLD: number | null = null;
 
 export function getDeliveryFee(area: string): { fee: number | null; label: string } {
-  const found = DELIVERY_AREA_FEES.find((a) => a.area === area);
+  const found = ALL_DELIVERY_AREA_FEES.find((a) => a.area === area);
   if (!found || found.fee === null) {
     return { fee: null, label: "Fee confirmed on WhatsApp" };
   }
