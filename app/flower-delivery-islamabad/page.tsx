@@ -21,9 +21,9 @@ export const metadata: Metadata = {
     locale: "en_PK",
     images: [
       {
-        url: `${SITE_URL}/og-image.jpg`,
-        width: 1200,
-        height: 630,
+        url: `${SITE_URL}/images/valentine-2027/lahore-bouquet-sweet-love-deal-5000.webp`,
+        width: 1408,
+        height: 1760,
         alt: "Flower Delivery in Islamabad: Same-Day Bouquets | Lahore Bouquet",
       },
     ],
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Flower Delivery in Islamabad: Same-Day Bouquets | Lahore Bouquet",
     description: "Fresh flower bouquets delivered same-day in 2-5 hours across Islamabad. WhatsApp: 0310-4225974",
-    images: [`${SITE_URL}/og-image.jpg`],
+    images: [`${SITE_URL}/images/valentine-2027/lahore-bouquet-sweet-love-deal-5000.webp`],
   },
 };
 
@@ -68,6 +68,18 @@ const FAQS = [
   {
     q: "Do you offer midnight flower delivery in Islamabad?",
     a: "Yes. Midnight surprise delivery slot is 11:30 PM–12:15 AM — same as Lahore. Book early on WhatsApp (0310-4225974) to reserve your slot."
+  },
+  {
+    q: "What is the cheapest flower delivery option in Islamabad?",
+    a: "Hand-tied small bouquets start from Rs. 1,239 with free delivery in listed Islamabad sectors. Message us on WhatsApp (0310-4225974) with your budget and we'll suggest the best options."
+  },
+  {
+    q: "Can I order birthday flowers for same-day delivery in Islamabad?",
+    a: "Yes. Birthday bouquets are delivered same-day in 2 to 5 hours across covered Islamabad areas including F-6, F-7, DHA and Bahria Town. Order early in the day for the fastest delivery."
+  },
+  {
+    q: "Do you deliver flowers to DHA Islamabad and Bahria Town?",
+    a: "Yes. We deliver to DHA Islamabad (Phase 1-5) and Bahria Town with same-day 2-5 hour delivery and free delivery in listed sectors. Share the complete address on WhatsApp (0310-4225974) to confirm."
   },
 ];
 
@@ -237,6 +249,30 @@ export default function FlowerDeliveryIslamabadPage() {
                 <p className="text-xs text-[#636363] mt-1">{area.note}</p>
                 <p className="text-xs text-[#8B1E2D] font-semibold mt-2">View delivery info →</p>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Occasions */}
+      <section className="w-full py-16 px-4 sm:px-6 border-b border-[#E5DED2] bg-white">
+        <div className="max-w-3xl mx-auto space-y-6">
+          <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012] text-center">
+            Flowers for Every Occasion in Islamabad
+          </h2>
+          <p className="text-sm text-[#2A2A2A] text-center max-w-2xl mx-auto leading-relaxed">
+            Birthdays, anniversaries, weddings, or just because — order flowers for any occasion in Islamabad. Last updated: <strong>19 October 2026</strong>.
+          </p>
+          <div className="grid sm:grid-cols-3 gap-4">
+            {[
+              { title: "Birthday Flowers", desc: "Surprise them on their special day with fresh birthday bouquets delivered same-day." },
+              { title: "Anniversary Flowers", desc: "Romantic red roses and premium arrangements for anniversaries in Islamabad." },
+              { title: "Wedding Flowers", desc: "Bridal bouquets, car decoration and event flowers — enquire on WhatsApp." },
+            ].map((o, i) => (
+              <div key={i} className="p-5 rounded-2xl bg-[#F8F3EA] border border-[#E5DED2]">
+                <h3 className="font-bold text-[#0B0B0B] text-sm">{o.title}</h3>
+                <p className="text-xs text-[#636363] mt-1 leading-relaxed">{o.desc}</p>
+              </div>
             ))}
           </div>
         </div>
