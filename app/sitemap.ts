@@ -167,6 +167,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/flower-delivery-islamabad/g-11-islamabad", file: "app/flower-delivery-islamabad/g-11-islamabad/page.tsx" },
     { path: "/flower-delivery-islamabad/dha-islamabad", file: "app/flower-delivery-islamabad/dha-islamabad/page.tsx" },
     { path: "/flower-delivery-islamabad/bahria-town-islamabad", file: "app/flower-delivery-islamabad/bahria-town-islamabad/page.tsx" },
+    { path: "/islamabad/bouquets/", file: "app/islamabad/bouquets/page.tsx" },
+    { path: "/islamabad/birthday-flowers/", file: "app/islamabad/birthday-flowers/page.tsx" },
+    { path: "/islamabad/anniversary-flowers/", file: "app/islamabad/anniversary-flowers/page.tsx" },
+    { path: "/islamabad/flower-prices/", file: "app/islamabad/flower-prices/page.tsx" },
   ];
 
   const routes: MetadataRoute.Sitemap = staticRoutes

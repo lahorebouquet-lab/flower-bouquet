@@ -422,6 +422,21 @@ export default function FlowerDeliveryIslamabadPage() {
         </div>
       </section>
 
+      {/* Internal links */}
+      <section className="w-full py-12 px-4 sm:px-6 border-b border-[#E5DED2] bg-white">
+        <div className="max-w-3xl mx-auto text-center space-y-3">
+          <h2 className="font-playfair text-xl font-bold text-[#101012]">Explore Islamabad Flower Options</h2>
+          <div className="flex flex-wrap justify-center gap-2 text-sm">
+            <Link href="/islamabad/bouquets/" className="px-4 py-2 rounded-full border border-[#E5DED2] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Bouquets in Islamabad</Link>
+            <Link href="/islamabad/birthday-flowers/" className="px-4 py-2 rounded-full border border-[#E5DED2] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Birthday Flowers</Link>
+            <Link href="/islamabad/anniversary-flowers/" className="px-4 py-2 rounded-full border border-[#E5DED2] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Anniversary Flowers</Link>
+            <Link href="/islamabad/flower-prices/" className="px-4 py-2 rounded-full border border-[#E5DED2] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Price Guide</Link>
+            <Link href="/bouquets" className="px-4 py-2 rounded-full border border-[#E5DED2] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">All Bouquets</Link>
+            <Link href="/contact" className="px-4 py-2 rounded-full border border-[#E5DED2] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Contact Us</Link>
+          </div>
+        </div>
+      </section>
+
       {/* FAQs */}
       <section className="w-full py-16 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto space-y-6">
