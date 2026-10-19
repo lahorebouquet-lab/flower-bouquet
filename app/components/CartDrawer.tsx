@@ -621,6 +621,15 @@ export default function CartDrawer() {
               >
                 🔍 Track your order status online
               </a>
+
+              <a
+                href="https://g.page/r/CUmgyWPjM_pKEAI/review"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full py-2.5 rounded-full text-[#636363] hover:text-[#8B1E2D] text-xs transition-colors cursor-pointer"
+              >
+                ⭐ Loved your flowers? Leave us a Google review
+              </a>
             </div>
           )}
 

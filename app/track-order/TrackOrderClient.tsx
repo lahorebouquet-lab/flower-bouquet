@@ -197,6 +197,19 @@ export default function TrackOrderClient() {
               </div>
             </div>
 
+            {order.status === 'delivered' && (
+              <div className="text-center pt-2">
+                <a
+                  href="https://g.page/r/CUmgyWPjM_pKEAI/review"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#8B1E2D] text-white hover:bg-[#C6A15B] hover:text-[#0B0B0B] font-bold text-xs transition-all"
+                >
+                  ⭐ Loved your flowers? Leave us a Google review
+                </a>
+              </div>
+            )}
+
             <a
               href={`https://wa.me/923104225974?text=${encodeURIComponent(`Assalam-o-Alaikum! Mere order #${order.orderId} ke baare me maloom karna hai.`)}`}
               target="_blank"

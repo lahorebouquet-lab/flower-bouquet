@@ -19,7 +19,21 @@ export const metadata: Metadata = {
     siteName: "Lahore Bouquet",
     type: "website",
     locale: "en_PK",
-  }
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Best Bouquet in Lahore: Fresh, Same-Day Delivery | Lahore Bouquet",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Best Bouquet in Lahore: Fresh, Same-Day Delivery",
+    description: "Fresh hand-tied bouquets from Rs. 1,239, delivered in 2-5 hours across Lahore. Photo approval on WhatsApp before dispatch.",
+    images: [`${SITE_URL}/og-image.jpg`],
+  },
 };
 
 const BOUQUET_TYPES = [
@@ -31,7 +45,7 @@ const BOUQUET_TYPES = [
   {
     name: "Medium Rose Bouquets",
     price: "Rs. 2,600 – Rs. 3,800",
-    desc: "12 to 24 fresh roses in elegant wrap with a handwritten card. Our most popular choice for anniversaries and romantic gestures.",
+    desc: "Fresh roses in elegant wrap with a handwritten card. Our most popular choice for anniversaries and romantic gestures.",
   },
   {
     name: "Large Signature Rose Arrangement",
@@ -41,7 +55,7 @@ const BOUQUET_TYPES = [
   {
     name: "Imported Dutch Rose Bouquets",
     price: "From Rs. 4,800",
-    desc: "Rare imported varieties — Dutch roses, tulips and lilies — for when only something extraordinary will do.",
+    desc: "Rare imported Dutch roses for when only something extraordinary will do.",
   },
   {
     name: "Sunflower Bouquets",
@@ -128,7 +142,7 @@ export default function BestBouquetInLahorePage() {
               Best Bouquet in Lahore: Fresh, Same-Day Delivery
             </h1>
             <p className="text-sm sm:text-base text-[#2A2A2A] leading-relaxed max-w-2xl mx-auto">
-              <strong>Lahore Bouquet</strong> hand-ties the freshest bouquets in Lahore — from hand-tied small bouquets (Rs. 1,239–1,900) to grand Dutch rose arrangements (Rs. 7,499). Order before 4:00 PM for same-day delivery in 2 to 5 hours across DHA, Gulberg, Model Town, Johar Town, Bahria Town and all major areas. Every bouquet is photographed on WhatsApp for your approval before dispatch.
+              <strong>Lahore Bouquet</strong> hand-ties every bouquet fresh to order in Lahore — from hand-tied small bouquets (Rs. 1,239–1,900) to grand Dutch rose arrangements (Rs. 7,499). Order before 4:00 PM for same-day delivery in 2 to 5 hours across DHA, Gulberg, Model Town, Johar Town, Bahria Town and all major areas. Every bouquet is photographed on WhatsApp for your approval before dispatch.
             </p>
             <div className="flex flex-wrap gap-3 justify-center pt-2">
               <a
@@ -229,6 +243,69 @@ export default function BestBouquetInLahorePage() {
                   <p className="text-sm">{item.text}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Customer Reviews */}
+        <section className="w-full py-12 px-4 sm:px-6 bg-[#F8F3EA]">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-center mb-8">
+              Customer Reviews
+            </h2>
+            <div className="grid sm:grid-cols-3 gap-4">
+              {[
+                { name: "Tayyaba", text: "Thank you very much. Your service was professional, and reasonably priced. I truly appreciate your efficiency and customer care. Highly satisfied and would definitely recommend your services!" },
+                { name: "Mian Waiz", text: "Ordered a chocolate bouquet — excellent quality and beautiful presentation!" },
+                { name: "Shah Rajpoot", text: "I ordered a red rose bouquet today — honestly, I had a really good experience!" },
+              ].map((r) => (
+                <div key={r.name} className="bg-white border border-[#E5DED2] rounded-xl p-5">
+                  <div className="flex gap-0.5 mb-3" role="img" aria-label="5 out of 5 stars">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} size={16} className="fill-[#C6A15B] text-[#C6A15B]" />
+                    ))}
+                  </div>
+                  <p className="text-sm text-[#2A2A2A] leading-relaxed">"{r.text}"</p>
+                  <p className="text-xs font-semibold mt-3 text-[#8B1E2D]">— {r.name}</p>
+                </div>
+              ))}
+            </div>
+            <div className="text-center mt-6">
+              <a
+                href="https://g.page/r/CUmgyWPjM_pKEAI/review"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#8B1E2D] text-white hover:bg-[#C6A15B] hover:text-[#0B0B0B] font-bold text-xs uppercase tracking-wider transition-all"
+              >
+                <Star className="w-4 h-4" /> Leave a Google Review
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Related pages */}
+        <section className="w-full py-12 px-4 sm:px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-center mb-8">
+              Explore More
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link href="/prices" className="border border-[#E5DED2] rounded-xl p-5 hover:shadow-md transition block">
+                <h3 className="font-semibold">Lahore Flower Price Guide 2026</h3>
+                <p className="text-sm text-[#2A2A2A] mt-1">Complete transparent pricing for every bouquet and service.</p>
+              </Link>
+              <Link href="/flower-delivery-in-lahore" className="border border-[#E5DED2] rounded-xl p-5 hover:shadow-md transition block">
+                <h3 className="font-semibold">Same-Day Flower Delivery in Lahore</h3>
+                <p className="text-sm text-[#2A2A2A] mt-1">2–5 hour express delivery across all listed areas.</p>
+              </Link>
+              <Link href="/midnight-flower-delivery-lahore" className="border border-[#E5DED2] rounded-xl p-5 hover:shadow-md transition block">
+                <h3 className="font-semibold">Midnight Flower Delivery</h3>
+                <p className="text-sm text-[#2A2A2A] mt-1">Surprise birthdays with our 11:30 PM – 12:15 AM slot.</p>
+              </Link>
+              <Link href="/delivery-areas" className="border border-[#E5DED2] rounded-xl p-5 hover:shadow-md transition block">
+                <h3 className="font-semibold">Delivery Areas & Fees</h3>
+                <p className="text-sm text-[#2A2A2A] mt-1">Full list of areas with free delivery across Lahore.</p>
+              </Link>
             </div>
           </div>
         </section>
