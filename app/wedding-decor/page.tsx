@@ -15,16 +15,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_URL}/wedding-decor`,
   },
-  keywords: [
-    "wedding room decoration",
-    "masehri design",
-    "wedding car decoration",
-    "wedding car decoration lahore",
-    "bridal room decoration lahore",
-    "bridal bed decoration lahore",
-    "car decoration lahore",
-    "fresh flower car decoration lahore"
-  ],
   openGraph: {
     title: "Wedding Decoration in Lahore | Room & Car Décor",
     description: "Fresh flower wedding room decoration, traditional masehri design, and bridal car decoration in Lahore. On-site setup across all areas. Prices from Rs. 6,500.",

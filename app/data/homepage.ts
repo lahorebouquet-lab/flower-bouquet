@@ -5,8 +5,8 @@ export interface FAQItem {
 
 export const HOMEPAGE_FAQS: FAQItem[] = [
   {
-    q: "Why choose Lahore Bouquet as your flower shop in Lahore?",
-    a: "As a trusted flower shop in Lahore, we hand-tie every bouquet fresh to order, deliver the same day across the city, and share a photo on WhatsApp before dispatch. When you choose a flower shop in Lahore, you want freshness, reliability, and fair prices — that's exactly what Lahore Bouquet delivers every single day."
+    q: "Why choose Lahore Bouquet?",
+    a: "We hand-tie every bouquet fresh to order, deliver the same day across Lahore in 2 to 5 hours, and share a photo on WhatsApp before dispatch. You get freshness, reliability, and fair prices — hand-tied bouquets from Rs. 1,239 — every single day."
   },
   {
     q: "Where can I find a flower shop near me in Lahore?",
@@ -18,7 +18,7 @@ export const HOMEPAGE_FAQS: FAQItem[] = [
   },
   {
     q: "How much does a flower bouquet cost in Lahore?",
-    a: "Bouquets at Lahore Bouquet start at Rs. 349. Medium rose bouquets range from Rs. 2,600 to Rs. 3,800, large signature rose arrangements are Rs. 7,499, and premium imported-flower designs go up to Rs. 150,000. Event decoration packages go higher. Our prices page has the complete rate list with per-stem and bouquet pricing."
+    a: "Hand-tied small bouquets range from Rs. 1,239 to Rs. 1,900. Medium rose bouquets range from Rs. 2,600 to Rs. 3,800, large signature rose arrangements are Rs. 7,499, and premium imported-flower designs go higher. Our prices page has the complete rate list with per-stem and bouquet pricing."
   },
   {
     q: "How much does a gulab ka guldasta (rose bouquet) cost in Lahore?",
@@ -90,10 +90,10 @@ export const HOMEPAGE_FAQS: FAQItem[] = [
   },
   {
     q: "What makes a good flower shop?",
-    a: "A good flower shop hand-ties every bouquet fresh on the day of delivery, never sells day-old arrangements, shows you a real photo before dispatch, and delivers the same day. That's exactly how we run things at Lahore Bouquet — when you choose a flower shop, those are the four things worth checking."
+    a: "A good flower shop hand-ties every bouquet fresh on the day of delivery, never sells day-old arrangements, shows you a real photo before dispatch, and delivers the same day. That's exactly how we run things at Lahore Bouquet."
   },
   {
     q: "Why buy from an online flower shop instead of a market stall?",
-    a: "An online flower shop saves you the trip, the haggling, and the guesswork. At our flower shop you browse real designs, pay securely, get a WhatsApp photo of your exact bouquet before it leaves, and enjoy free same-day delivery across Lahore — things a roadside stall simply can't offer."
+    a: "Ordering online saves you the trip, the haggling, and the guesswork. At Lahore Bouquet you browse real designs, pay securely, get a WhatsApp photo of your exact bouquet before it leaves, and enjoy free same-day delivery across Lahore — things a roadside stall simply can't offer."
   }
 ];

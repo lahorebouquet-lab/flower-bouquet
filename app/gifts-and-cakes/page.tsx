@@ -12,21 +12,6 @@ export const metadata: Metadata = {
     absolute: "Cakes & Chocolates Delivery in Lahore | Same-Day & Midnight",
   },
   description: "Send original Layers Bakeshop cakes and imported chocolates in Lahore. Lotus Three Milk, Raffaello, Ferrero Rocher and more, paired with fresh flowers.",
-  keywords: [
-    "layers cakes lahore",
-    "layers bakeshop lahore delivery",
-    "cake delivery in lahore",
-    "same day cake delivery lahore",
-    "birthday cake delivery lahore",
-    "anniversary cake lahore",
-    "lotus three milk cake lahore",
-    "raffaello cake lahore",
-    "ferrero rocher gift box lahore",
-    "flowers and cake delivery lahore",
-    "midnight cake delivery lahore",
-    "imported chocolates lahore",
-    "lahore bouquet gifts"
-  ],
   alternates: {
     canonical: `${SITE_URL}/gifts-and-cakes`,
   },

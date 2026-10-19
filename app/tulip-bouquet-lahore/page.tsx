@@ -16,14 +16,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_URL}/tulip-bouquet-lahore`,
   },
-  keywords: [
-    "tulip bouquet",
-    "tulip flower price in pakistan",
-    "tulips in pakistan",
-    "tulip bouquet lahore",
-    "fresh tulips lahore",
-    "imported dutch tulips pakistan"
-  ],
   openGraph: {
     title: "Tulip Bouquet in Lahore | Fresh Tulips Delivered",
     description: "Buy a tulip bouquet in Lahore. Fresh tulips in pink, red, white and yellow, hand-tied and delivered. Tulip flower price from Rs. 4,800.",

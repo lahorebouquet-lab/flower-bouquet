@@ -15,18 +15,6 @@ export const BASE_METADATA: Metadata = {
   alternates: {
     canonical: `${SITE_URL}/bouquets`,
   },
-  keywords: [
-    "flower bouquet",
-    "bouquet",
-    "bouquet of flowers",
-    "birthday bouquet",
-    "small flower bouquet",
-    "gift bouquet",
-    "huge bouquet of flowers",
-    "flower bouquet lahore",
-    "flower bookey",
-    "flower bokay"
-  ],
   openGraph: {
     title: "Flower Bouquets in Lahore | Fresh, Hand-Tied, Delivered",
     description: "Browse fresh flower bouquets in Lahore: roses, sunflowers, tulips, lilies and mixed bouquets. Small to large sizes, with delivery across the city.",

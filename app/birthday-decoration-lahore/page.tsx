@@ -13,14 +13,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_URL}/birthday-decoration-lahore`,
   },
-  keywords: [
-    "birthday decoration in lahore",
-    "birthday decoration lahore",
-    "balloon decoration lahore",
-    "helium balloons lahore",
-    "birthday surprise decoration at home lahore",
-    "flower birthday backdrop lahore",
-  ],
   openGraph: {
     title: "Birthday Decoration in Lahore | Balloons & Flowers",
     description:

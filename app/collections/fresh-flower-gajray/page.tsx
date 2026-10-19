@@ -15,22 +15,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_URL}/collections/fresh-flower-gajray`,
   },
-  keywords: [
-    "gajray lahore",
-    "garlands mala lahore",
-    "fresh flower gajray",
-    "mehndi jewellery lahore",
-    "motia gajray lahore",
-    "rose gajray lahore",
-    "wedding garland lahore",
-    "wedding mala haar lahore",
-    "haath phool lahore",
-    "bridal floral jewellery lahore",
-    "4 hours delivery lahore",
-    "mehndi flower jewellery",
-    "nikah haar lahore",
-    "lahore bouquet gajray"
-  ],
   openGraph: {
     title: "Fresh Gajray in Lahore | Mehndi Jewellery | Lahore Bouquet",
     description: "Order fresh motia & red rose gajray, wedding garlands (mala/haar), haath phool, and handmade bridal mehndi jewellery in Lahore. 4 hours express delivery",

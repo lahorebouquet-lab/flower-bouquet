@@ -34,6 +34,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes: Array<{ path: string; file: string; noindex?: boolean }> = [
     { path: "", file: "app/page.tsx" },
     { path: "/flower-delivery-in-lahore", file: "app/flower-delivery-in-lahore/page.tsx" },
+    { path: "/best-bouquet-in-lahore", file: "app/best-bouquet-in-lahore/page.tsx" },
     { path: "/send-flowers-to-lahore-from-abroad", file: "app/send-flowers-to-lahore-from-abroad/page.tsx" },
     { path: "/birthday-decoration-lahore", file: "app/birthday-decoration-lahore/page.tsx" },
     { path: "/lily-bouquet-lahore", file: "app/lily-bouquet-lahore/page.tsx" },

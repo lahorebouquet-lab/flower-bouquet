@@ -15,14 +15,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_URL}/custom-bouquets-lahore`,
   },
-  keywords: [
-    "custom bouquet lahore",
-    "customized bouquet",
-    "design your own bouquet",
-    "personalized flower bouquet",
-    "custom flower arrangement lahore",
-    "bespoke bouquet pakistan",
-  ],
   openGraph: {
     title: "Custom Bouquets in Lahore | Design Your Own",
     description: "Design your own custom bouquet in Lahore — pick flowers, colours & wrapping. WhatsApp us your idea, approve the photo, get same-day delivery.",

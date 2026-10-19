@@ -14,13 +14,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_URL}/sunflowers`,
   },
-  keywords: [
-    "sunflower bouquet",
-    "sunflower price in pakistan",
-    "sunflower bouquet lahore",
-    "buy sunflowers lahore",
-    "fresh sunflower delivery lahore"
-  ],
   openGraph: {
     title: "Sunflower Bouquets in Lahore | Shop Fresh Sunflowers",
     description: "Shop fresh sunflower bouquets in Lahore. Bright cheerful blooms, hand-tied daily. Prices from Rs. 1,699 with same-day delivery across the city.",

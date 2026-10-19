@@ -27,6 +27,7 @@ const NAV_ITEMS: NavItem[] = [
     href: "/bouquets",
     children: [
       { name: "All Hand-Tied Bouquets", href: "/bouquets", desc: "Fresh seasonal florals tied daily" },
+      { name: "Best Bouquet in Lahore", href: "/best-bouquet-in-lahore", desc: "Top picks with prices & delivery info", badge: "Guide" },
       { name: "Imported Dutch Roses", href: "/roses", desc: "Long-stem premium roses", badge: "Hot" },
       { name: "Velvet Red Roses", href: "/roses/red-roses", desc: "12, 24, or 50 stem arrangements", badge: "Bestseller" },
       { name: "Pure White Roses", href: "/roses/white-roses", desc: "Elegant peace & sympathy roses" },

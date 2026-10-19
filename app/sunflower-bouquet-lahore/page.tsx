@@ -16,13 +16,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_URL}/sunflower-bouquet-lahore`,
   },
-  keywords: [
-    "sunflower bouquet",
-    "sunflower price in pakistan",
-    "sunflower bouquet lahore",
-    "buy sunflowers lahore",
-    "fresh sunflower delivery lahore"
-  ],
   openGraph: {
     title: "Send Sunflower Bouquet in Lahore | Same-Day Gift Delivery",
     description: "Send a sunflower bouquet in Lahore as a bright same-day gift. Fresh hand-tied sunflowers from Rs. 1,590 with 2–5 hour express delivery, 9 AM–1 AM.",

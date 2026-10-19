@@ -7,18 +7,6 @@ export const metadata: Metadata = {
   title: "Flower Bouquet Prices in Lahore",
   description:
     "See current flower bouquet prices in Lahore, from small bunches to large arrangements. Prices for roses, sunflowers, tulips and chocolate bouquets.",
-  keywords: [
-    "flower bouquet price in pakistan",
-    "flower bouquet price in lahore",
-    "bouquet price",
-    "flower bucket",
-    "large bouquet of flowers",
-    "rose bouquet price in lahore",
-    "sunflower price in pakistan",
-    "tulip flower price in pakistan",
-    "chocolate bouquet price in pakistan",
-    "lahore flower delivery prices",
-  ],
   alternates: {
     canonical: `${SITE_URL}/prices`,
   },

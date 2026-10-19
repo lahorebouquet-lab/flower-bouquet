@@ -11,24 +11,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_URL}`,
   },
-  keywords: [
-    "flower shop near me",
-    "flower shop",
-    "flowers near me",
-    "florist",
-    "bouquet shop near me",
-    "fresh flowers",
-    "florist near me",
-    "flower wala",
-    "flower delivery lahore",
-    "fresh bouquets lahore",
-    "red rose bouquet lahore",
-    "sunflower bouquet lahore",
-    "money bouquet lahore",
-    "bridal room decor lahore",
-    "wedding car decoration lahore",
-    "lahore bouquet"
-  ],
   openGraph: {
     title: "Flower Shop in Lahore | Same-Day Delivery | Lahore Bouquet",
     description: "Looking for a flower shop near you in Lahore? Lahore Bouquet makes fresh bouquets to order and delivers across the city. Order online or call 0310-4225974.",

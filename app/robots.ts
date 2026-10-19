@@ -55,7 +55,7 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
       },
       // AI crawlers are explicitly allowed (answer engines / GEO).
       {
-        userAgent: ["GPTBot", "ClaudeBot", "PerplexityBot", "Google-Extended", "OAI-SearchBot", "Bytespider"],
+        userAgent: ["GPTBot", "ChatGPT-User", "ClaudeBot", "PerplexityBot", "Google-Extended", "OAI-SearchBot", "Bytespider"],
         allow: "/",
       },
     ],

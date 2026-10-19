@@ -88,7 +88,7 @@ export default function ReviewsSection({ reviews }: ReviewsSectionProps) {
         </div>
 
         {GOOGLE_BUSINESS_URL && (
-          <div className="text-center">
+          <div className="text-center flex flex-wrap gap-3 justify-center">
             <a
               href={GOOGLE_BUSINESS_URL}
               target="_blank"
@@ -96,6 +96,14 @@ export default function ReviewsSection({ reviews }: ReviewsSectionProps) {
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white border border-[#0B0B0B] text-[#0B0B0B] hover:bg-[#0B0B0B] hover:text-white font-bold text-xs uppercase tracking-wider transition-all"
             >
               See us on Google
+            </a>
+            <a
+              href="https://g.page/r/CUmgyWPjM_pKEAI/review"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#8B1E2D] text-white hover:bg-[#C6A15B] hover:text-[#0B0B0B] font-bold text-xs uppercase tracking-wider transition-all"
+            >
+              <Star className="w-4 h-4" /> Leave a Google Review
             </a>
           </div>
         )}

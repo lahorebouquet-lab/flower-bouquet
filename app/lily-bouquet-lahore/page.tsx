@@ -16,13 +16,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_URL}/lily-bouquet-lahore`,
   },
-  keywords: [
-    "lily bouquet",
-    "lily bouquet lahore",
-    "white lily bouquet",
-    "oriental lilies pakistan",
-    "buy lilies online lahore",
-  ],
   openGraph: {
     title: "Lily Bouquet in Lahore | Fresh Oriental Lilies Delivery",
     description: "Order a fresh lily bouquet in Lahore. Elegant Oriental and Asiatic lilies — perfect for sympathy, get-well wishes and refined gifting.",

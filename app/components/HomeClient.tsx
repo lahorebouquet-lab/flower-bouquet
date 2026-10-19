@@ -159,7 +159,7 @@ export default function HomeClient({
 
             {/* Quick answer (AEO) */}
             <p className="hero-answer text-[#2A2A2A] text-xs sm:text-sm lg:text-base max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              <strong>Our catalog starts at Rs. 349, while hand-tied fresh bouquets start at Rs. 1,239 and arrive in 2–5 hours.</strong> As the flower shop in Lahore that customers trust for fresh roses, sunflowers, lilies and money bouquets, Lahore Bouquet hand-ties every order fresh, sends you a photo and video on WhatsApp before dispatch, and delivers across DHA, Gulberg, Model Town, Bahria Town and Johar Town — with a midnight surprise slot for birthdays.
+              <strong>Hand-tied fresh bouquets start at Rs. 1,239 and arrive in 2–5 hours.</strong> Lahore Bouquet hand-ties every order fresh — roses, sunflowers, lilies and money bouquets — sends you a photo and video on WhatsApp before dispatch, and delivers across DHA, Gulberg, Model Town, Bahria Town and Johar Town, with a midnight surprise slot for birthdays.
             </p>
 
             {/* Button System (Section 18):
@@ -320,7 +320,11 @@ export default function HomeClient({
               Flowers for Every Moment
             </h2>
             <p className="text-xs text-[#2A2A2A]">
-              Birthdays, anniversaries, weddings, or just because — pick the occasion and we&apos;ll handle the rest.
+              Birthdays, anniversaries, weddings, or just because — pick the occasion and we&apos;ll handle the rest.{" "}
+              <Link href="/best-bouquet-in-lahore" className="text-[#8B1E2D] font-semibold underline hover:no-underline">
+                See our guide to the best bouquet in Lahore
+              </Link>
+              .
             </p>
           </div>
 
@@ -616,21 +620,21 @@ export default function HomeClient({
         </div>
       </section>
 
-      {/* About our flower shop in Lahore (SEO) */}
+      {/* About Lahore Bouquet */}
       <section className="w-full py-16 px-4 sm:px-6 bg-[#F8F3EA] border-t border-[#E5DED2] text-[#101012]">
         <div className="max-w-4xl mx-auto space-y-6">
           <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012] text-center">
-            Your Trusted Flower Shop in Lahore
+            Fresh Flowers, Delivered Across Lahore
           </h2>
           <div className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed space-y-4">
             <p>
-              Looking for a flower shop in Lahore you can truly rely on? Lahore Bouquet is the flower shop in Lahore that hand-ties every bouquet fresh on the day of delivery. Unlike an ordinary flower shop in Lahore, we never sell pre-made or day-old arrangements — our florists start work only after you place your order.
+              Lahore Bouquet hand-ties every bouquet fresh on the day of delivery. We never sell pre-made or day-old arrangements — our florists start work only after you place your order, using fresh roses, sunflowers, lilies and seasonal blooms.
             </p>
             <p>
-              What makes our flower shop in Lahore different? First, honest pricing with no hidden charges — our catalog starts at just Rs. 349. Second, same-day delivery across every corner of the city, from DHA and Gulberg to Bahria Town and Model Town. Third, we send you a photo on WhatsApp before dispatch, so you always know exactly what your loved one will receive. Few flower shops in Lahore offer this level of care.
+              Three things set us apart. First, honest pricing with no hidden charges — hand-tied bouquets start at Rs. 1,239, and our full catalog starts at Rs. 349. Second, same-day delivery across every corner of the city, from DHA and Gulberg to Bahria Town and Model Town, arriving in 2 to 5 hours. Third, we send you a photo on WhatsApp before dispatch, so you always know exactly what your loved one will receive.
             </p>
             <p>
-              Whether you need a romantic rose bouquet, cheerful sunflowers, an elegant lily arrangement, or a fun chocolate bouquet, our flower shop in Lahore has something for every occasion and every budget. Birthdays, anniversaries, weddings, get-well-soon wishes, or just because — when Lahore thinks of fresh flowers, they think of the flower shop in Lahore that delivers happiness daily: Lahore Bouquet.
+              Whether you need a romantic rose bouquet, cheerful sunflowers, an elegant lily arrangement, or a fun chocolate bouquet, we have something for every occasion and every budget. Birthdays, anniversaries, weddings, get-well-soon wishes, or just because — Lahore Bouquet delivers happiness daily.
             </p>
           </div>
         </div>

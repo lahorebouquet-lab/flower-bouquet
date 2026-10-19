@@ -15,14 +15,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_URL}/custom-cakes-lahore`,
   },
-  keywords: [
-    "custom cake lahore",
-    "customized cake",
-    "birthday cake design lahore",
-    "photo cake lahore",
-    "custom cake order online",
-    "designer cake pakistan",
-  ],
   openGraph: {
     title: "Custom Cakes in Lahore | Design & Order",
     description: "Order a customized cake in Lahore — your design, flavour & message. Photo approval before dispatch, same-day delivery with fresh flowers.",

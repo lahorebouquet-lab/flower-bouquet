@@ -105,6 +105,7 @@ export default function Footer() {
             <h3 className="font-semibold text-white tracking-wide text-sm">Events & Décor</h3>
             <ul className="space-y-2 text-[#BDBDBD]">
               <li><Link href="/prices" className="hover:text-[#C6A15B] text-white font-medium transition-colors">★ Lahore Price Guide 2026</Link></li>
+              <li><Link href="/best-bouquet-in-lahore" className="hover:text-[#C6A15B] transition-colors">Best Bouquet in Lahore</Link></li>
               <li><Link href="/flower-delivery-in-lahore" className="hover:text-[#C6A15B] transition-colors">Express Same-Day Delivery</Link></li>
               <li><Link href="/birthday-decoration-lahore" className="hover:text-[#C6A15B] transition-colors">Birthday Decoration</Link></li>
               <li><Link href="/wedding-decor" className="hover:text-[#C6A15B] transition-colors">Wedding Décor</Link></li>

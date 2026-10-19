@@ -99,15 +99,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   return {
     title: shortName,
     description: metaDesc,
-    keywords: [
-      product.title.toLowerCase(),
-      `${product.category.toLowerCase()} lahore`,
-      "send flowers lahore",
-      "fresh rose bouquet pakistan",
-      "flower delivery lahore",
-      "express bouquet delivery lahore"
-    ],
-    alternates: {
+      alternates: {
       canonical: `${SITE_URL}/products/${product.slug}`,
     },
     openGraph: {

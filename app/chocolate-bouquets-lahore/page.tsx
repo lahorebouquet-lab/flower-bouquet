@@ -15,14 +15,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_URL}/chocolate-bouquets-lahore`,
   },
-  keywords: [
-    "chocolate bouquet",
-    "chocolate flower bouquet",
-    "chocolate bouquet price in pakistan",
-    "chocolate bouquet near me",
-    "ferrero rocher bouquet lahore",
-    "chocolate bouquets lahore"
-  ],
   openGraph: {
     title: "Chocolate Bouquet in Lahore | Price & Delivery",
     description: "Order a chocolate bouquet in Lahore: chocolates arranged like flowers. Chocolate bouquet price in Pakistan from Rs. 3,800. Delivery across the city.",

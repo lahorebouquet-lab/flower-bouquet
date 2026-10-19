@@ -15,14 +15,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_URL}/flower-delivery-in-lahore`,
   },
-  keywords: [
-    "flower delivery in lahore",
-    "flower bouquet lahore",
-    "flowers in lahore",
-    "online flower delivery lahore",
-    "flower delivery near me",
-    "same day flower delivery lahore"
-  ],
   openGraph: {
     title: "Flower Delivery in Lahore | Same-Day Bouquets, Order Online",
     description: "Order flowers online for delivery anywhere in Lahore. Same-day bouquets, photo before dispatch, and card messages. Order before 4 PM for same-day delivery.",
