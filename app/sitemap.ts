@@ -155,6 +155,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/blog/custom-bouquet-guide-lahore", file: "app/blog/custom-bouquet-guide-lahore/page.tsx" },
     { path: "/blog/custom-cake-order-guide-lahore", file: "app/blog/custom-cake-order-guide-lahore/page.tsx" },
     { path: "/policies", file: "app/policies/page.tsx" },
+    { path: "/midnight-flower-delivery-lahore", file: "app/midnight-flower-delivery-lahore/page.tsx" },
+    { path: "/umrah-hajj-mubarak-flowers-lahore", file: "app/umrah-hajj-mubarak-flowers-lahore/page.tsx" },
     // Islamabad delivery pages
     { path: "/flower-delivery-islamabad", file: "app/flower-delivery-islamabad/page.tsx" },
     { path: "/flower-delivery-islamabad/f-6-islamabad", file: "app/flower-delivery-islamabad/f-6-islamabad/page.tsx" },
