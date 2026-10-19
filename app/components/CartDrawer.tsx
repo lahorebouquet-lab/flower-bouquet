@@ -471,11 +471,21 @@ export default function CartDrawer() {
                       />
                       <div>
                         <div className="font-bold text-[#0B0B0B]">Direct Bank Transfer</div>
-                        <div className="text-[10px] text-[#555555]">Meezan Bank, HBL or Bank Alfalah</div>
+                        <div className="text-[10px] text-[#555555]">Allied Bank — pay now, send screenshot on WhatsApp</div>
                       </div>
                     </div>
                     <span className="text-lg">🏦</span>
                   </label>
+
+                  {paymentMethod === "bank" && (
+                    <div className="p-4 rounded-xl bg-white border border-[#8B1E2D]/30 text-xs space-y-2">
+                      <p className="font-bold text-[#0B0B0B]">Pay to Allied Bank:</p>
+                      <div className="flex justify-between"><span className="text-[#636363]">Account Title:</span> <span className="font-semibold">Muhammad Nadeem Ali Asif Pasha</span></div>
+                      <div className="flex justify-between"><span className="text-[#636363]">Account Number:</span> <span className="font-semibold">05490010114503780026</span></div>
+                      <div className="flex justify-between"><span className="text-[#636363]">IBAN:</span> <span className="font-semibold">PK08ABPA0010114503780026</span></div>
+                      <p className="text-[#8B1E2D] font-semibold pt-1">📸 After payment, send the screenshot on WhatsApp (0310-4225974)</p>
+                    </div>
+                  )}
 
                   <label className={`flex items-center justify-between p-3 rounded-xl border cursor-pointer transition-all ${
                     paymentMethod === "wallet" ? "bg-[#8B1E2D]/10 border-[#8B1E2D]" : "bg-[#F8F3EA] border-[#E5DED2] hover:border-[#C6A15B]"
@@ -562,6 +572,16 @@ export default function CartDrawer() {
                 <div className="flex justify-between"><span className="text-[#636363]">Time Slot:</span> <span className="font-semibold text-[#0B0B0B]">{deliveryTimeSlot.toUpperCase()}</span></div>
                 <div className="flex justify-between"><span className="text-[#636363]">Total Payable:</span> <span className="font-bold text-[#8B1E2D]">Rs. {orderTotal.toLocaleString()}</span></div>
               </div>
+
+              {paymentMethod === "bank" && (
+                <div className="p-4 rounded-2xl bg-[#F8F3EA] border border-[#8B1E2D]/30 text-left text-xs space-y-2">
+                  <p className="font-bold text-[#0B0B0B]">🏦 Pay to Allied Bank:</p>
+                  <div className="flex justify-between"><span className="text-[#636363]">Account Title:</span> <span className="font-semibold">Muhammad Nadeem Ali Asif Pasha</span></div>
+                  <div className="flex justify-between"><span className="text-[#636363]">Account Number:</span> <span className="font-semibold">05490010114503780026</span></div>
+                  <div className="flex justify-between"><span className="text-[#636363]">IBAN:</span> <span className="font-semibold">PK08ABPA0010114503780026</span></div>
+                  <p className="text-[#8B1E2D] font-semibold">📸 After payment, send the screenshot on WhatsApp</p>
+                </div>
+              )}
 
               {/* Send to WhatsApp Button */}
               <a
