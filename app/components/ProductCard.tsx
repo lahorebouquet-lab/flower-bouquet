@@ -1,11 +1,11 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { Heart, Eye, ArrowUpRight } from "lucide-react";
 import { Product } from "../data/products";
 import { useCart } from "../context/CartContext";
+import { sanityDirectUrl, sanitySrcSet } from "@/lib/sanityImage";
 
 export default function ProductCard({ product }: { product: Product }) {
   const { addToCart, directOrderNow, wishlist, toggleWishlist, setQuickViewProduct } = useCart();
@@ -19,12 +19,16 @@ export default function ProductCard({ product }: { product: Product }) {
       {/* Top Image & Badges (Section 8: subtle zoom, soft shadow, gold icon on hover) */}
       <div className="relative aspect-[4/5] w-full bg-[#F8F3EA] overflow-hidden">
         <Link href={productHref} className="block w-full h-full">
-          <Image 
-            src={product.image}
-            alt={product.title}
-            fill
+          {/* Direct Sanity CDN — bypasses /_next/image for faster loading */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={sanityDirectUrl(product.image, 640)}
+            srcSet={sanitySrcSet(product.image) || undefined}
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            className="object-cover transition-transform duration-700 group-hover:scale-105"
+            alt={product.title}
+            loading="lazy"
+            decoding="async"
+            className="object-cover absolute inset-0 h-full w-full transition-transform duration-700 group-hover:scale-105"
           />
         </Link>
 
