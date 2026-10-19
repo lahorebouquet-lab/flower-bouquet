@@ -104,6 +104,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/bridal-room-decoration-lahore", file: "app/bridal-room-decoration-lahore/page.tsx" },
     { path: "/wedding-car-decoration-lahore", file: "app/wedding-car-decoration-lahore/page.tsx" },
     { path: "/valentine-day-flowers-lahore", file: "app/valentine-day-flowers-lahore/page.tsx" },
+    { path: "/valentines-day-2027", file: "app/valentines-day-2027/page.tsx" },
     { path: "/flower-delivery-dha-lahore", file: "app/flower-delivery-dha-lahore/page.tsx" },
     { path: "/flower-delivery-gulberg-lahore", file: "app/flower-delivery-gulberg-lahore/page.tsx" },
     { path: "/flower-delivery-bahria-town-lahore", file: "app/flower-delivery-bahria-town-lahore/page.tsx" },
