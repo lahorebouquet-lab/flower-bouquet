@@ -7,9 +7,9 @@ import RelatedProducts from "../components/RelatedProducts";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Helium Balloons in Lahore | Birthday Decor | Lahore Bouquet",
+    absolute: "Buy Helium Balloons in Lahore from Rs. 199 | Same-Day Delivery",
   },
-  description: "Helium balloons in Lahore from Rs. 199/balloon — latex, metallic & confetti balloons, garlands, arches & full birthday decoration. Same-day delivery",
+  description: "Order helium balloons online in Lahore — latex, metallic & confetti from Rs. 199/balloon. Birthday garlands, arches & party decoration with same-day delivery.",
   alternates: {
     canonical: `${SITE_URL}/helium-balloons-lahore`,
   },

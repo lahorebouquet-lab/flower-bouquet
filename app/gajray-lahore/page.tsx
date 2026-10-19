@@ -7,9 +7,9 @@ import RelatedProducts from "../components/RelatedProducts";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Fresh Gajray in Lahore | Motia & Rose Gajray Delivery",
+    absolute: "Buy Fresh Gajray in Lahore from Rs. 370 | Motia & Rose Gajray",
   },
-  description: "Order fresh gajray in Lahore — fragrant motia & red rose gajray from Rs. 370. Bridal wrist cuffs, hand corsages & gajra sets with same-day delivery.",
+  description: "Order fresh gajray online in Lahore — fragrant motia & red rose gajray from Rs. 370. Bridal wrist cuffs, gajra sets with same-day delivery. WhatsApp: 0310-4225974",
   alternates: {
     canonical: `${SITE_URL}/gajray-lahore`,
   },

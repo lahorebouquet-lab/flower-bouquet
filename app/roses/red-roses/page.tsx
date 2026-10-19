@@ -8,9 +8,9 @@ import { SITE_URL, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Red Rose Bouquet Lahore | Imported Dutch Red Roses",
+    absolute: "Buy Red Rose Bouquet in Lahore | Imported Dutch Roses, Same-Day",
   },
-  description: "Send imported red roses in Lahore. 1, 12, 24 or 50 stems in black or cream wrap, with a handwritten card. Delivered in 2 to 5 hours.",
+  description: "Order red rose bouquets online in Lahore — imported Dutch roses, 12/24/50 stems with handwritten card. Same-day delivery in 2-5 hrs. WhatsApp: 0310-4225974",
   alternates: {
     canonical: `${SITE_URL}/roses/red-roses`,
   },

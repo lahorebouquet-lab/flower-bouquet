@@ -9,9 +9,9 @@ import { SITE_URL } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Flower Delivery in Lahore | Same-Day Bouquets, Order Online",
+    absolute: "Order Flowers Online in Lahore | Same-Day Delivery from Rs. 349",
   },
-  description: "Order flowers online for delivery anywhere in Lahore. Same-day bouquets, photo before dispatch, and card messages. Order before 4 PM for same-day delivery.",
+  description: "Buy fresh flower bouquets online in Lahore from Rs. 349. Same-day delivery in 2-5 hours, WhatsApp photo approval, midnight delivery. Order now: 0310-4225974",
   alternates: {
     canonical: `${SITE_URL}/flower-delivery-in-lahore`,
   },
