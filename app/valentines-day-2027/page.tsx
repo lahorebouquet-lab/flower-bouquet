@@ -1,39 +1,38 @@
 import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { Heart, Truck, Camera, MessageCircle, HelpCircle, Sparkles, Clock, MapPin, BadgeCheck, ShoppingBag } from "lucide-react";
 import { SITE_URL, whatsappLink } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Valentine's Day 2027 Flowers & Gifts in Lahore | 7 Luxury Deals from Rs. 5,000",
+    absolute: "Valentine's Day Gifts in Lahore & Islamabad | Lahore Bouquet",
   },
-  description: "Shop Valentine's Day 2027 rose bouquets, teddy bears, chocolates & luxury gift deals from Lahore Bouquet. 7 premium packages from Rs. 5,000 to Rs. 100,000. Same-day delivery in Lahore & Islamabad. WhatsApp: 0310-4225974",
+  description: "Shop Valentine's Day 2027 flower bouquets, teddy bears, chocolates, cakes and luxury gift deals from Rs. 5,000 to Rs. 100,000 at Lahore Bouquet. Enquire about delivery in Lahore and Islamabad.",
   alternates: {
     canonical: `${SITE_URL}/valentines-day-2027`,
   },
   openGraph: {
-    title: "Valentine's Day 2027 Flowers & Gifts | 7 Luxury Deals | Lahore Bouquet",
-    description: "7 premium Valentine's packages from Rs. 5,000 to Rs. 100,000. Roses, teddy bears, cakes, chocolates. Same-day delivery Lahore & Islamabad.",
+    title: "Valentine's Day Gifts in Lahore & Islamabad | Lahore Bouquet",
+    description: "Shop Valentine's Day 2027 flower bouquets, teddy bears, chocolates, cakes and luxury gift deals from Rs. 5,000 to Rs. 100,000. Enquire about delivery in Lahore and Islamabad.",
     url: `${SITE_URL}/valentines-day-2027`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
     type: "website",
     images: [
       {
-        url: `${SITE_URL}/og-image.jpg`,
-        width: 1200,
-        height: 630,
-        alt: "Valentine's Day 2027 Flowers & Gifts | Lahore Bouquet",
+        url: `${SITE_URL}/images/valentine-2027/lahore-bouquet-sweet-love-deal-5000.webp`,
+        width: 1408,
+        height: 1760,
+        alt: "Valentine's Day Gifts in Lahore & Islamabad | Lahore Bouquet",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Valentine's Day 2027 Flowers & Gifts | 7 Luxury Deals | Lahore Bouquet",
-    description: "7 premium Valentine's packages Rs. 5,000–100,000. Same-day delivery Lahore & Islamabad. WhatsApp: 0310-4225974",
-    images: [`${SITE_URL}/og-image.jpg`],
+    title: "Valentine's Day Gifts in Lahore & Islamabad | Lahore Bouquet",
+    description: "Valentine's Day 2027 deals Rs. 5,000–100,000. Enquire about delivery in Lahore and Islamabad. WhatsApp: 0310-4225974",
+    images: [`${SITE_URL}/images/valentine-2027/lahore-bouquet-sweet-love-deal-5000.webp`],
   },
 };
 
@@ -150,7 +149,7 @@ function formatPrice(n: number) {
 }
 
 function orderLink(deal: typeof DEALS[0]) {
-  const msg = `Hi Lahore Bouquet! I want to order the ${deal.name} (${deal.code}) for ${formatPrice(deal.price)}. Delivery city: _____. Date: _____. Time: _____.`;
+  const msg = `Hi Lahore Bouquet, I'm interested in the ${deal.name} for Rs. ${deal.price.toLocaleString("en-PK")}, product code ${deal.code}, for Valentine's Day 2027. Please confirm availability, delivery charges, delivery area, and delivery timing.`;
   return `https://wa.me/923104225974?text=${encodeURIComponent(msg)}`;
 }
 
@@ -215,11 +214,17 @@ export default function ValentinesDay2027Page() {
             Valentine's Day Flowers &amp; Gifts in Lahore
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-2xl mx-auto">
-            <strong className="text-white">7 luxury Valentine's packages from Rs. 5,000 to Rs. 100,000</strong> — hand-tied red roses, teddy bears, chocolates, cakes &amp; premium gift hampers. Same-day delivery in <strong className="text-white">Lahore &amp; Islamabad</strong> in 2–5 hours. Midnight surprise delivery available.
+            Make 14 February 2027 unforgettable with romantic rose bouquets, chocolate gifts, teddy bears, cakes and luxury Valentine's packages from Lahore Bouquet.
+          </p>
+          <p className="text-[#C6A15B] font-bold text-base sm:text-lg">
+            Valentine's Day gift deals from Rs. 5,000 to Rs. 100,000
+          </p>
+          <p className="text-xs text-white/60 max-w-xl mx-auto">
+            Enquire about delivery in Lahore and Islamabad — confirm availability, delivery charges and timing on WhatsApp before ordering.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2">
             <a href="#deals" className="px-8 py-3.5 rounded-full bg-[#8B1E2D] text-white text-sm font-bold hover:bg-[#C6A15B] hover:text-[#0B0B0B] transition-colors">
-              View 7 Deals
+              Explore Valentine's Deals
             </a>
             <a
               href={whatsappLink("Hi Lahore Bouquet! I want to order a Valentine's Day 2027 gift.")}
@@ -266,12 +271,14 @@ export default function ValentinesDay2027Page() {
             {DEALS.map((deal) => (
               <article key={deal.code} id={deal.code} className="bg-white rounded-3xl overflow-hidden border border-[#E5DED2] shadow-sm hover:shadow-lg transition-shadow flex flex-col">
                 <div className="relative aspect-[4/5] bg-[#F8F3EA]">
-                  <Image
+                  {/* Direct img (not next/image): the _next/image optimizer returns 402 to crawlers */}
+                  <img
                     src={deal.image}
                     alt={deal.alt}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    width={1408}
+                    height={1760}
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6 flex flex-col gap-3 grow">
@@ -319,6 +326,21 @@ export default function ValentinesDay2027Page() {
             <li><strong>Approve the photo</strong> — we send a real photo before dispatch.</li>
             <li><strong>Receive &amp; surprise</strong> — same-day in 2–5 hours, or midnight 11:30 PM–12:15 AM.</li>
           </ol>
+        </div>
+      </section>
+
+      {/* Internal links */}
+      <section className="w-full py-12 px-4 sm:px-6 border-t border-[#E5DED2] bg-white">
+        <div className="max-w-3xl mx-auto text-center space-y-3">
+          <h2 className="font-playfair text-xl font-bold text-[#101012]">Explore More from Lahore Bouquet</h2>
+          <div className="flex flex-wrap justify-center gap-2 text-sm">
+            <Link href="/" className="px-4 py-2 rounded-full border border-[#E5DED2] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Home</Link>
+            <Link href="/flower-delivery-in-lahore" className="px-4 py-2 rounded-full border border-[#E5DED2] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Flower Delivery in Lahore</Link>
+            <Link href="/flower-delivery-islamabad" className="px-4 py-2 rounded-full border border-[#E5DED2] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Flower Delivery in Islamabad</Link>
+            <Link href="/delivery-areas" className="px-4 py-2 rounded-full border border-[#E5DED2] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Delivery Areas</Link>
+            <Link href="/bouquets" className="px-4 py-2 rounded-full border border-[#E5DED2] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">All Bouquets</Link>
+            <Link href="/contact" className="px-4 py-2 rounded-full border border-[#E5DED2] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Contact Us</Link>
+          </div>
         </div>
       </section>
 
