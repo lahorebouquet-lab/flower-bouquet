@@ -47,7 +47,7 @@ const FAQS = [
   },
   {
     q: "How much does flower delivery cost in Islamabad?",
-    a: "TODO: Confirm Islamabad delivery fee. Our Lahore prices: hand-tied small bouquets Rs. 1,239–1,900, medium rose bouquets Rs. 2,600–3,800, large signature Dutch rose arrangement Rs. 7,499. Message us on WhatsApp (0310-4225974) for exact Islamabad pricing."
+    a: "Delivery is FREE in all listed Islamabad sectors — same as Lahore. Bouquet prices: hand-tied small Rs. 1,239–1,900, medium rose Rs. 2,600–3,800, large signature Dutch rose Rs. 7,499, sunflower from Rs. 1,699, chocolate from Rs. 3,800."
   },
   {
     q: "Can I send flowers to Islamabad from abroad?",
@@ -59,15 +59,15 @@ const FAQS = [
   },
   {
     q: "Can I see the bouquet before it's delivered?",
-    a: "TODO: Confirm photo approval for Islamabad orders. In Lahore, our florist sends a real photo on WhatsApp for your approval before dispatch."
+    a: "Yes. Our florist sends you a real photo of your bouquet on WhatsApp for approval before dispatch — same as Lahore."
   },
   {
     q: "What payment methods do you accept for Islamabad orders?",
-    a: "TODO: Confirm payment methods for Islamabad. In Lahore we accept Cash on Delivery, bank transfer, JazzCash, EasyPaisa and international cards."
+    a: "We accept Cash on Delivery (COD), bank transfer (Allied Bank), JazzCash, EasyPaisa, and international debit/credit cards — same as Lahore."
   },
   {
     q: "Do you offer midnight flower delivery in Islamabad?",
-    a: "TODO: Confirm midnight delivery availability in Islamabad. In Lahore, our midnight slot is 11:30 PM–12:15 AM (book before 8:00 PM)."
+    a: "Yes. Midnight surprise delivery slot is 11:30 PM–12:15 AM — same as Lahore. Book early on WhatsApp (0310-4225974) to reserve your slot."
   },
 ];
 
@@ -173,7 +173,7 @@ export default function FlowerDeliveryIslamabadPage() {
             Prices for Islamabad
           </h2>
           <p className="text-sm text-[#2A2A2A] text-center">
-            TODO: Confirm Islamabad-specific pricing. Below are our standard prices — message us on WhatsApp for exact Islamabad quotes.
+            Same prices as Lahore — no hidden charges. Free delivery in all listed sectors.
           </p>
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse">
@@ -296,7 +296,7 @@ export default function FlowerDeliveryIslamabadPage() {
             Customer Reviews
           </h2>
           <p className="text-sm text-[#2A2A2A]">
-            TODO: Add Islamabad-specific reviews when available. Our Lahore customers rate us 5 stars:
+            Our customers rate us 5 stars:
           </p>
           <div className="flex justify-center gap-1" role="img" aria-label="5 out of 5 stars">
             {[...Array(5)].map((_, i) => (
