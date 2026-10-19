@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import { sanityDirectUrl } from "@/lib/sanityImage";
 import { 
   ShoppingBag, 
   X, 
@@ -175,12 +176,20 @@ export default function CartDrawer() {
                       className="flex gap-3.5 p-3.5 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] shadow-xs"
                     >
                       <div className="relative w-20 h-20 rounded-xl overflow-hidden flex-shrink-0 bg-[#F8F3EA]">
-                        <Image 
-                          src={item.product.image}
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={sanityDirectUrl(item.product.image, 160)}
                           alt={item.product.title}
-                          fill
-                          sizes="80px"
-                          className="object-cover"
+                          loading="lazy"
+                          decoding="async"
+                          className="object-cover absolute inset-0 h-full w-full"
+                          onError={(e) => {
+                            const t = e.currentTarget;
+                            if (!t.dataset.fbk) {
+                              t.dataset.fbk = "1";
+                              t.src = "/images/hero-luxury-bouquet.jpg";
+                            }
+                          }}
                         />
                       </div>
 
