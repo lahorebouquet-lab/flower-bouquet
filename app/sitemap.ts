@@ -171,6 +171,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/islamabad/birthday-flowers/", file: "app/islamabad/birthday-flowers/page.tsx" },
     { path: "/islamabad/anniversary-flowers/", file: "app/islamabad/anniversary-flowers/page.tsx" },
     { path: "/islamabad/flower-prices/", file: "app/islamabad/flower-prices/page.tsx" },
+    { path: "/islamabad/rose-bouquets/", file: "app/islamabad/rose-bouquets/page.tsx" },
+    { path: "/islamabad/sunflower-bouquets/", file: "app/islamabad/sunflower-bouquets/page.tsx" },
+    { path: "/islamabad/chocolate-bouquets/", file: "app/islamabad/chocolate-bouquets/page.tsx" },
+    { path: "/islamabad/gifts-and-cakes/", file: "app/islamabad/gifts-and-cakes/page.tsx" },
+    { path: "/islamabad/valentines-day/", file: "app/islamabad/valentines-day/page.tsx" },
+    { path: "/islamabad/wedding-flowers/", file: "app/islamabad/wedding-flowers/page.tsx" },
   ];
 
   const routes: MetadataRoute.Sitemap = staticRoutes
