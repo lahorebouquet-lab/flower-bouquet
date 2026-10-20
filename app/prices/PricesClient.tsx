@@ -101,7 +101,7 @@ export default function PricesClient() {
           <nav aria-label="Breadcrumb" className="inline-flex items-center gap-2 text-xs text-white/60">
             <Link href="/" className="hover:text-[#C6A15B] transition-colors">Home</Link>
             <span>/</span>
-            <span className="text-[#C6A15B] font-medium">Price Guide</span>
+            <span className="text-[#C6A15B] font-medium">Prices</span>
           </nav>
 
           <div className="space-y-3">

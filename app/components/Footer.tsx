@@ -104,7 +104,7 @@ export default function Footer() {
           <div className="space-y-3">
             <h3 className="font-semibold text-white tracking-wide text-sm">Events & Décor</h3>
             <ul className="space-y-2 text-[#BDBDBD]">
-              <li><Link href="/prices" className="hover:text-[#C6A15B] text-white font-medium transition-colors">★ Lahore Price Guide 2026</Link></li>
+              <li><Link href="/prices" className="hover:text-[#C6A15B] text-white font-medium transition-colors">★ Lahore Prices 2026</Link></li>
               <li><Link href="/best-bouquet-in-lahore" className="hover:text-[#C6A15B] transition-colors">Best Bouquet in Lahore</Link></li>
               <li><Link href="/flower-delivery-in-lahore" className="hover:text-[#C6A15B] transition-colors">Express Same-Day Delivery</Link></li>
               <li><Link href="/birthday-decoration-lahore" className="hover:text-[#C6A15B] transition-colors">Birthday Decoration</Link></li>
@@ -185,7 +185,7 @@ export default function Footer() {
             <Link href="/track-order" className="hover:text-[#C6A15B] transition-colors underline">Track Order</Link>
             <Link href="/gift-reminders" className="hover:text-[#C6A15B] transition-colors underline">Gift Reminders</Link>
             <Link href="/policies" className="hover:text-[#C6A15B] transition-colors underline">Store Policies</Link>
-            <Link href="/prices" className="hover:text-[#C6A15B] transition-colors underline">Price Guide</Link>
+            <Link href="/prices" className="hover:text-[#C6A15B] transition-colors underline">Prices</Link>
             <Link href="/privacy-policy" className="hover:text-[#C6A15B] transition-colors underline">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-[#C6A15B] transition-colors underline">Terms of Service</Link>
           </div>
