@@ -5,15 +5,15 @@ import { HOMEPAGE_FAQS } from "./data/homepage";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Flower Shop in Lahore | Same-Day Delivery | Lahore Bouquet",
+    absolute: "Flower Delivery in Lahore | Free Same-Day Delivery",
   },
-  description: "Looking for a flower shop near you in Lahore? Lahore Bouquet makes fresh bouquets to order and delivers across the city. Order online or call 0310-4225974.",
+  description: "Fresh flower delivery in Lahore with FREE same-day delivery. Hand-tied bouquets from Rs. 1,239 — roses, sunflowers & chocolate bouquets. Order online or WhatsApp.",
   alternates: {
     canonical: `${SITE_URL}`,
   },
   openGraph: {
-    title: "Flower Shop in Lahore | Same-Day Delivery | Lahore Bouquet",
-    description: "Looking for a flower shop near you in Lahore? Lahore Bouquet makes fresh bouquets to order and delivers across the city. Order online or call 0310-4225974.",
+    title: "Flower Delivery in Lahore | Free Same-Day Delivery",
+    description: "Fresh flower delivery in Lahore with FREE same-day delivery. Hand-tied bouquets from Rs. 1,239 — roses, sunflowers & chocolate bouquets. Order online or WhatsApp.",
     url: `${SITE_URL}`,
       type: "website",
       locale: "en_PK",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
           url: `${SITE_URL}/og-image.jpg`,
           width: 1200,
           height: 630,
-          alt: "Flower Shop in Lahore | Fresh Bouquets & Same-Day Delivery | Lahore Bouquet",
+          alt: "Flower Delivery in Lahore | Fresh Bouquets & Free Same-Day Delivery | Lahore Bouquet",
         },
     ],
   }
