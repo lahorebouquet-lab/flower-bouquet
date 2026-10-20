@@ -87,6 +87,8 @@ export default function ProductDetailActions({ product }: { product: Product }) 
     msg += `\nPlease confirm availability and payment details. Thank you!`;
 
     const encoded = encodeURIComponent(msg);
+    const w = window as unknown as { gtag?: (...args: unknown[]) => void };
+    w.gtag?.("event", "whatsapp_click", { page_path: window.location.pathname, button: "product" });
     window.open(`https://wa.me/${CONTACT_PHONE.whatsapp}?text=${encoded}`, "_blank");
     showToast("Opening WhatsApp with your order details...");
     setTimeout(() => setIsOrdering(false), 1000);

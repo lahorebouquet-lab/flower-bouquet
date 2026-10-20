@@ -27,9 +27,15 @@ export default function FloatingWhatsApp({ productName }: { productName?: string
   const text = `Hi Lahore Bouquet! I'm looking at ${pageLabel} and have a question.\nPage: ${pageUrl}`;
   const href = `https://wa.me/${CONTACT_PHONE.whatsapp}?text=${encodeURIComponent(text)}`;
 
+  const trackWhatsAppClick = () => {
+    const w = window as unknown as { gtag?: (...args: unknown[]) => void };
+    w.gtag?.("event", "whatsapp_click", { page_path: pathname, button: "floating" });
+  };
+
   return (
     <a
       href={href}
+      onClick={trackWhatsAppClick}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with Lahore Bouquet on WhatsApp"
