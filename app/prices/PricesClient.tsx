@@ -111,7 +111,7 @@ export default function PricesClient() {
             </div>
 
             <h1 className="font-playfair text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
-              Flower Bouquet Prices in Lahore
+              Flower Bouquet Price in Lahore
             </h1>
 
             <p className="text-[#F8F3EA]/90 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">

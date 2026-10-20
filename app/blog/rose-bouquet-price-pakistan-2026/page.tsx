@@ -141,6 +141,10 @@ export default function RoseBouquetPriceBlogPage() {
           Prices are indicative for Lahore 2026 and vary by season, rose variety and arrangement style. Contact us on WhatsApp (0310-4225974) for today's exact quote.
         </p>
 
+        <p className="text-sm sm:text-base leading-relaxed">
+          Shopping for more than roses? Compare the complete <Link href="/prices" className="text-[#8B1E2D] underline">flower bouquet price in Lahore</Link> — every bouquet type, décor package and gift combo in one list.
+        </p>
+
         <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B] pt-4">Local vs Imported Roses: Which to Choose?</h2>
 
         <p className="text-sm sm:text-base leading-relaxed">

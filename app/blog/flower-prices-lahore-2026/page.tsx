@@ -84,7 +84,7 @@ export default function FlowerPricesBlogPage() {
         </h1>
         <p className="text-sm text-[#777777]">By Lahore Bouquet Florist Team • Updated 6 October 2026 • 5 min read</p>
         <p className="text-sm sm:text-base leading-relaxed">
-          <strong>Quick answer:</strong> In Lahore, a fresh flower bouquet costs from <strong>Rs. 1,239</strong>. Imported rose bouquets run Rs. 2,500–Rs. 12,000, sunflowers Rs. 1,500–Rs. 5,000, and money bouquets from Rs. 2,500 plus cash value. Prices below are what Lahore Bouquet actually charges in October 2026.
+          <strong>Quick answer:</strong> In Lahore, a fresh flower bouquet costs from <strong>Rs. 1,239</strong>. Imported rose bouquets run Rs. 2,500–Rs. 12,000, sunflowers Rs. 1,500–Rs. 5,000, and money bouquets from Rs. 2,500 plus cash value. Prices below are what Lahore Bouquet actually charges in October 2026. You can also browse the complete <Link href="/prices" className="text-[#8B1E2D] underline font-semibold">flower bouquet price in Lahore</Link> list, covering every category we deliver.
         </p>
       </header>
 
