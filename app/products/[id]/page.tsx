@@ -309,7 +309,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           {/* Left Column: Product Image Gallery */}
           <div className="lg:col-span-6 space-y-4">
             <div className="relative aspect-[4/5] w-full rounded-2xl overflow-hidden bg-white border border-[rgba(198,161,91,0.25)] shadow-md">
-              <ProductMainImage src={product.image} alt={product.title} />
+              <ProductMainImage src={product.image} alt={`${product.title} — buy fresh flowers online in Lahore with same-day delivery`} />
 
               {/* Badge Pill */}
               <div className="absolute top-4 left-4 z-10">

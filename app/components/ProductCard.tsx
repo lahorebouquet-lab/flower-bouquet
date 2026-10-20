@@ -25,7 +25,7 @@ export default function ProductCard({ product }: { product: Product }) {
             src={sanityDirectUrl(product.image, 640)}
             srcSet={sanitySrcSet(product.image) || undefined}
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            alt={product.title}
+            alt={`${product.title} — fresh flower bouquet, same-day delivery in Lahore`}
             loading="lazy"
             decoding="async"
             className="object-cover absolute inset-0 h-full w-full transition-transform duration-700 group-hover:scale-105"
