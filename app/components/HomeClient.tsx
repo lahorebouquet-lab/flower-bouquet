@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { 
@@ -47,6 +47,26 @@ export default function HomeClient({
 }) {
   const products = (initialProducts && initialProducts.length > 0) ? initialProducts : ALL_PRODUCTS;
 
+  // Background full-catalog load: server only sends the first 16 products to keep
+  // initial HTML small; the rest loads silently from /api/products after mount.
+  const [allProducts, setAllProducts] = useState<Product[]>(products);
+  useEffect(() => {
+    if (products.length > 16) return; // already full
+    let cancelled = false;
+    fetch("/api/products", { credentials: "same-origin" })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data) => {
+        if (!cancelled && Array.isArray(data) && data.length > allProducts.length) {
+          setAllProducts(data);
+        }
+      })
+      .catch(() => {});
+    return () => { cancelled = true; };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const activeProducts = allProducts.length > products.length ? allProducts : products;
+
   const [activeFilter, setActiveFilter] = useState<string>("All");
   const [visibleCount, setVisibleCount] = useState<number>(8);
 
@@ -67,7 +87,7 @@ export default function HomeClient({
   const displayedProducts = useMemo(() => {
     // Exclude showcase products so the carousel and grid never repeat the same items
     const showcaseSlugs = new Set(SHOWCASE_SLUGS);
-    const pool = products.filter(p => !showcaseSlugs.has(p.slug || String(p.id)));
+    const pool = activeProducts.filter(p => !showcaseSlugs.has(p.slug || String(p.id)));
     if (activeFilter === "All") {
       // Balanced curation across all florist & gift departments
       const roses = pool.filter(p => p.category === "Roses" || p.category === "Velvet Red Roses" || p.category === "Pure White Roses");
@@ -121,8 +141,8 @@ export default function HomeClient({
       }
       return result;
     }
-    return products.filter(p => p.category === activeFilter);
-  }, [activeFilter, products]);
+    return activeProducts.filter(p => p.category === activeFilter);
+  }, [activeFilter, activeProducts]);
 
   return (
     <>

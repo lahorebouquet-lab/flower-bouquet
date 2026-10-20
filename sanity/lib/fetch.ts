@@ -34,10 +34,11 @@ function normalizeProductImages<T extends { image?: any; gallery?: any }>(p: T):
   };
 }
 
-export async function getSanityProducts(): Promise<Product[]> {
+export async function getSanityProducts(limit?: number): Promise<Product[]> {
   try {
+    const query = limit ? `${ALL_PRODUCTS_QUERY}[0...${limit}]` : ALL_PRODUCTS_QUERY;
     const products = await client.fetch<Product[]>(
-      ALL_PRODUCTS_QUERY,
+      query,
       {},
       { next: { revalidate: 60 } }
     )

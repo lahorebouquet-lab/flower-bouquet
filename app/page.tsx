@@ -33,7 +33,7 @@ import { floristSchema, organizationSchema, SITE_URL } from "@/lib/business";
 
 export default async function HomePage() {
   const [products, categories, reviews] = await Promise.all([
-    getSanityProducts(),
+    getSanityProducts(16),
     getSanityCategories(),
     getSanityReviews(),
   ]);
