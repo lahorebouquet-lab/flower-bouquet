@@ -152,9 +152,10 @@ export default function HomeClient({
         <div className="absolute inset-0 z-0 overflow-hidden">
           <img
             src="/images/hero-blush-elegance-banner.webp"
+            srcSet="/images/hero-blush-elegance-banner-mobile.webp 800w, /images/hero-blush-elegance-banner.webp 1600w"
+            sizes="100vw"
             alt="Elegant blush pink rose and lily bouquet in a gold vase for flower delivery in Lahore | Lahore Bouquet"
             fetchPriority="high"
-            decoding="async"
             className="absolute inset-0 w-full h-full object-cover object-[70%_center] sm:object-center"
           />
 
