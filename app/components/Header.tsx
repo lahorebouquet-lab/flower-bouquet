@@ -87,10 +87,10 @@ const NAV_ITEMS: NavItem[] = [
     ],
   },
   {
-    name: "Price Guide",
+    name: "Prices",
     href: "/prices",
     children: [
-      { name: "Lahore Price Guide 2026", href: "/prices", desc: "Transparent stem and bouquet pricing" },
+      { name: "Lahore Prices 2026", href: "/prices", desc: "Transparent stem and bouquet pricing" },
       { name: "Wedding & Car Décor", href: "/wedding-decor", desc: "Bridal stages, canopies and car styling" },
       { name: "Floral Care & Blog", href: "/blog", desc: "Expert tips to make flowers last longer" },
     ],

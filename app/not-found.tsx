@@ -18,7 +18,7 @@ export default function NotFound() {
     { name: "Custom Money Bouquets", href: "/money-bouquets", desc: "Currency notes with fresh roses", icon: Sparkles },
     { name: "Birthday Surprises", href: "/birthday-surprises", desc: "Midnight delivery & cake combos", icon: Gift },
     { name: "Lahore Delivery Zones", href: "/delivery-areas", desc: "Gulberg, DHA, Bahria & Cantt", icon: Truck },
-    { name: "Transparent Price Guide", href: "/prices", desc: "Real starting stem & bouquet rates", icon: Compass },
+    { name: "Transparent Prices", href: "/prices", desc: "Real starting stem & bouquet rates", icon: Compass },
   ];
 
   return (
