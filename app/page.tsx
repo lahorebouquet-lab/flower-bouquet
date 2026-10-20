@@ -95,8 +95,8 @@ export default async function HomePage() {
         rel="preload"
         as="image"
         href="/images/hero-blush-elegance-banner.webp"
-        srcSet="/images/hero-blush-elegance-banner-mobile.webp 800w, /images/hero-blush-elegance-banner.webp 1600w"
-        sizes="100vw"
+        imageSrcSet="/images/hero-blush-elegance-banner-mobile.webp 800w, /images/hero-blush-elegance-banner.webp 1600w"
+        imageSizes="100vw"
         type="image/webp"
         fetchPriority="high"
       />
