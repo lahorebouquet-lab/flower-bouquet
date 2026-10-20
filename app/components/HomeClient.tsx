@@ -175,7 +175,7 @@ export default function HomeClient({
 
             {/* Main Heading: dark with burgundy accent */}
             <h1 className="font-playfair text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-[#0B0B0B] leading-tight">
-              Fresh Flower Bouquets in Lahore, <span className="text-[#8B1E2D]">Delivered to Your Door</span>
+              Fresh Flowers Delivered in Lahore — <span className="text-[#8B1E2D]">Same Day, Free Delivery</span>
             </h1>
 
             {/* Quick answer (AEO) */}
@@ -230,7 +230,7 @@ export default function HomeClient({
             </div>
             <div>
               <p className="font-bold text-[#101012] text-xs sm:text-sm">Delivery in 2 to 5 hours</p>
-              <p className="text-xs text-[#2A2A2A]">Across all areas of Lahore</p>
+              <p className="text-xs text-[#2A2A2A]">Free delivery across Lahore</p>
             </div>
           </div>
 
@@ -262,6 +262,61 @@ export default function HomeClient({
               <p className="font-bold text-[#101012] text-xs sm:text-sm">Flexible Payment Options</p>
               <p className="text-xs text-[#2A2A2A]">COD, Bank transfer, JazzCash, EasyPaisa</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 2B. SHOP BY PRICE (Price shortcuts) */}
+      <section className="w-full border-b border-[#E5DED2] bg-white py-10 px-4 sm:px-6 text-[#101012]">
+        <div className="max-w-7xl mx-auto space-y-5">
+          <div className="text-center space-y-1">
+            <span className="text-xs uppercase font-bold tracking-widest text-[#8B1E2D]">
+              Shop by Price
+            </span>
+            <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012]">
+              Bouquets for Every Budget
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-6">
+            <Link
+              href="/bouquets?max=2000"
+              className="p-5 rounded-2xl bg-[#F8F3EA] border border-[rgba(198,161,91,0.25)] hover:border-[#C6A15B] transition-all shadow-xs flex items-center gap-4 group"
+            >
+              <div className="w-11 h-11 rounded-xl bg-white border border-[rgba(198,161,91,0.25)] flex items-center justify-center text-[#8B1E2D] shrink-0">
+                <Banknote className="w-5 h-5" />
+              </div>
+              <div className="flex-1">
+                <p className="font-bold text-sm sm:text-base text-[#101012]">Under Rs. 2,000</p>
+                <p className="text-xs text-[#2A2A2A]">Hand-tied bouquets from Rs. 1,239</p>
+              </div>
+              <ArrowRight className="w-4 h-4 text-[#8B1E2D] group-hover:translate-x-1 transition-transform" />
+            </Link>
+            <Link
+              href="/bouquets?max=3500"
+              className="p-5 rounded-2xl bg-[#F8F3EA] border border-[rgba(198,161,91,0.25)] hover:border-[#C6A15B] transition-all shadow-xs flex items-center gap-4 group"
+            >
+              <div className="w-11 h-11 rounded-xl bg-white border border-[rgba(198,161,91,0.25)] flex items-center justify-center text-[#8B1E2D] shrink-0">
+                <Banknote className="w-5 h-5" />
+              </div>
+              <div className="flex-1">
+                <p className="font-bold text-sm sm:text-base text-[#101012]">Under Rs. 3,500</p>
+                <p className="text-xs text-[#2A2A2A]">Rose &amp; mixed bouquets for every occasion</p>
+              </div>
+              <ArrowRight className="w-4 h-4 text-[#8B1E2D] group-hover:translate-x-1 transition-transform" />
+            </Link>
+            <Link
+              href="/bouquets?min=5000"
+              className="p-5 rounded-2xl bg-[#F8F3EA] border border-[rgba(198,161,91,0.25)] hover:border-[#C6A15B] transition-all shadow-xs flex items-center gap-4 group"
+            >
+              <div className="w-11 h-11 rounded-xl bg-white border border-[rgba(198,161,91,0.25)] flex items-center justify-center text-[#8B1E2D] shrink-0">
+                <Sparkles className="w-5 h-5" />
+              </div>
+              <div className="flex-1">
+                <p className="font-bold text-sm sm:text-base text-[#101012]">Premium</p>
+                <p className="text-xs text-[#2A2A2A]">Signature roses &amp; grand designs, Rs. 5,000+</p>
+              </div>
+              <ArrowRight className="w-4 h-4 text-[#8B1E2D] group-hover:translate-x-1 transition-transform" />
+            </Link>
           </div>
         </div>
       </section>

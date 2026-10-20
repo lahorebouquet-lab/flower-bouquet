@@ -36,12 +36,12 @@ export const BASE_METADATA: Metadata = {
 export async function generateMetadata({
   searchParams,
 }: {
-  searchParams: Promise<{ q?: string }>;
+  searchParams: Promise<{ q?: string; max?: string; min?: string }>;
 }): Promise<Metadata> {
   const params = await searchParams;
   const query = (params.q || "").trim();
   // Search result pages should not be indexed — canonical page is /bouquets
-  if (query) {
+  if (query || params.max || params.min) {
     return {
       ...BASE_METADATA,
       robots: { index: false, follow: true },
@@ -54,7 +54,7 @@ export async function generateMetadata({
 export default async function BouquetsPage({
   searchParams,
 }: {
-  searchParams: Promise<{ q?: string }>;
+  searchParams: Promise<{ q?: string; max?: string; min?: string }>;
 }) {
   const sanityProducts = await getSanityProducts();
   const allProducts = sanityProducts.length > 0 ? sanityProducts : ALL_PRODUCTS;
@@ -77,6 +77,25 @@ export default async function BouquetsPage({
       p.desc?.toLowerCase().includes(query)
     );
   }
+
+  // Price-band filtering (homepage "Shop by Price" shortcuts: ?max=2000, ?max=3500, ?min=5000)
+  const maxPrice = Number(params.max);
+  const minPrice = Number(params.min);
+  const hasMax = Number.isFinite(maxPrice) && maxPrice > 0;
+  const hasMin = Number.isFinite(minPrice) && minPrice > 0;
+  if (hasMax) {
+    bouquets = bouquets.filter(p => typeof p.price === "number" && p.price <= maxPrice);
+  }
+  if (hasMin) {
+    bouquets = bouquets.filter(p => typeof p.price === "number" && p.price >= minPrice);
+  }
+  const priceLabel = hasMax && hasMin
+    ? `Rs. ${minPrice.toLocaleString("en-PK")} – Rs. ${maxPrice.toLocaleString("en-PK")}`
+    : hasMax
+      ? `Under Rs. ${maxPrice.toLocaleString("en-PK")}`
+      : hasMin
+        ? `Rs. ${minPrice.toLocaleString("en-PK")} & above`
+        : "";
 
   const itemListJsonLd = itemListSchema(bouquets, `${SITE_URL}/bouquets`, "Flower Bouquets in Lahore");
 
@@ -285,6 +304,8 @@ export default async function BouquetsPage({
           <span>
             {query ? (
               <>Search results for <strong className="text-[#0B0B0B]">“{(await searchParams).q?.trim()}”</strong> — {bouquets.length} found</>
+            ) : priceLabel ? (
+              <>Bouquets <strong className="text-[#0B0B0B]">{priceLabel}</strong> — {bouquets.length} found</>
             ) : (
               <>Showing {bouquets.length} hand-tied bouquets in Lahore</>
             )}
@@ -292,7 +313,7 @@ export default async function BouquetsPage({
           <span className="text-[#8B1E2D] font-semibold">Same-day express delivery active</span>
         </div>
 
-        {query && bouquets.length === 0 && (
+        {(query || priceLabel) && bouquets.length === 0 && (
           <div className="bg-white p-10 rounded-2xl border border-[#E5DED2] text-center">
             <p className="text-sm font-semibold text-[#0B0B0B]">No bouquets match your search.</p>
             <p className="text-xs text-[#636363] mt-1">Try “rose”, “sunflower”, or “chocolate”.</p>
