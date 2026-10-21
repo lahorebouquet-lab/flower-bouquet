@@ -40,7 +40,7 @@ export async function getSanityProducts(limit?: number): Promise<Product[]> {
     const products = await client.fetch<Product[]>(
       query,
       {},
-      { next: { revalidate: 60 } }
+      { next: { revalidate: 3600 } }
     )
     if (products && products.length > 0) {
       return products.map(normalizeProductImages)
@@ -56,7 +56,7 @@ export async function getSanityProduct(slugOrId: string): Promise<Product | null
     const product = await client.fetch<Product | null>(
       PRODUCT_BY_SLUG_OR_ID_QUERY,
       { slugOrId },
-      { next: { revalidate: 60 } }
+      { next: { revalidate: 3600 } }
     )
     return product ? normalizeProductImages(product) : null
   } catch (err) {
@@ -86,7 +86,7 @@ export async function getSanityCategories(): Promise<SanityCategory[]> {
     const categories = await client.fetch<SanityCategory[]>(
       CATEGORIES_QUERY,
       {},
-      { next: { revalidate: 60 } }
+      { next: { revalidate: 3600 } }
     )
     if (categories && categories.length > 0) {
       return categories
@@ -114,7 +114,7 @@ export async function getSanityReviews(): Promise<SanityReview[]> {
     const reviews = await client.fetch<SanityReview[]>(
       REVIEWS_QUERY,
       {},
-      { next: { revalidate: 60 } }
+      { next: { revalidate: 3600 } }
     )
     if (reviews && reviews.length > 0) {
       return reviews
@@ -148,7 +148,7 @@ export async function getSanityBlogPosts(): Promise<SanityBlogPost[]> {
     const posts = await client.fetch<SanityBlogPost[]>(
       BLOG_POSTS_QUERY,
       {},
-      { next: { revalidate: 60 } }
+      { next: { revalidate: 3600 } }
     )
     if (posts && posts.length > 0) {
       return posts
@@ -164,7 +164,7 @@ export async function getSanityBlogPost(slug: string): Promise<SanityBlogPost | 
     const post = await client.fetch<SanityBlogPost | null>(
       BLOG_POST_BY_SLUG_QUERY,
       { slug },
-      { next: { revalidate: 60 } }
+      { next: { revalidate: 3600 } }
     )
     return post
   } catch (err) {
@@ -194,7 +194,7 @@ export async function getSanityAreaPage(slug: string): Promise<SanityAreaPage | 
     const page = await client.fetch<SanityAreaPage | null>(
       AREA_PAGE_BY_SLUG_QUERY,
       { slug },
-      { next: { revalidate: 60 } }
+      { next: { revalidate: 3600 } }
     )
     return page
   } catch (err) {
