@@ -7,7 +7,8 @@ import {
   Product, 
   LAHORE_AREAS
 } from "../../data/products";
-import { getSanityProducts, getSanityProduct } from "@/sanity/lib/fetch";
+import { getSanityProducts, getSanityProduct, getSanityReviews } from "@/sanity/lib/fetch";
+import ReviewsSection from "../../components/ReviewsSection";
 import ProductMainImage from "@/app/components/ProductMainImage";
 import { SITE_URL } from "@/lib/business";
 import ProductDetailActions from "../../components/ProductDetailActions";
@@ -111,7 +112,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
           url: product.image?.startsWith("http") ? product.image : `${SITE_URL}${product.image}`,
           width: 800,
           height: 1000,
-          alt: product.title,
+          alt: `${product.title} — buy fresh flowers online in Lahore with same-day delivery`,
         }
       ],
       type: "website"
@@ -128,6 +129,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 export default async function ProductDetailPage({ params }: ProductPageProps) {
   const { id } = await params;
   const sanityProducts = await getSanityProducts();
+  const reviews = await getSanityReviews();
 
   const product = sanityProducts.find(p => String(p.id) === id || p.slug === id || p._id === id)
     || await getSanityProduct(id)
@@ -408,6 +410,26 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               )}
             </div>
 
+            {/* Good to Know — product details template (verified facts only) */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+              <div className="p-3.5 rounded-2xl bg-white border border-[#E5DED2] shadow-xs">
+                <span className="font-semibold text-[#0B0B0B] block">Wrapping</span>
+                <span className="text-[#2A2A2A]">Eco-friendly paper &amp; fabric wrap, hand-tied to order</span>
+              </div>
+              <div className="p-3.5 rounded-2xl bg-white border border-[#E5DED2] shadow-xs">
+                <span className="font-semibold text-[#0B0B0B] block">Delivery</span>
+                <span className="text-[#2A2A2A]">FREE same-day delivery in Lahore (2–5 hours) · Midnight slot 11:30 PM–12:15 AM</span>
+              </div>
+              <div className="p-3.5 rounded-2xl bg-white border border-[#E5DED2] shadow-xs">
+                <span className="font-semibold text-[#0B0B0B] block">Freshness &amp; Photo Proof</span>
+                <span className="text-[#2A2A2A]">Made fresh on the day of delivery — photo sent on WhatsApp before dispatch</span>
+              </div>
+              <div className="p-3.5 rounded-2xl bg-white border border-[#E5DED2] shadow-xs">
+                <span className="font-semibold text-[#0B0B0B] block">Payment</span>
+                <span className="text-[#2A2A2A]">Cash on Delivery, bank transfer, JazzCash, EasyPaisa &amp; cards</span>
+              </div>
+            </div>
+
             {/* Interactive Actions Component */}
             <ProductDetailActions product={product} />
 
@@ -452,6 +474,9 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
 
         </div>
       </section>
+
+      {/* Customer Reviews — the 3 genuine Sanity reviews (section hides itself when empty) */}
+      <ReviewsSection reviews={reviews} />
 
       {/* Related Products Carousel / Grid */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-16 border-t border-[#E5DED2] space-y-8">
