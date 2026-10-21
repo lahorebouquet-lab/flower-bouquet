@@ -9,15 +9,15 @@ import { SITE_URL, itemListSchema } from "@/lib/business";
 
 export const BASE_METADATA: Metadata = {
   title: {
-    absolute: "Flower Bouquets in Lahore | Fresh, Hand-Tied, Delivered",
+    absolute: "Bouquet Delivery in Lahore | Fresh Bouquets from Rs. 1,239",
   },
-  description: "Browse fresh flower bouquets in Lahore: roses, sunflowers, tulips, lilies and mixed bouquets. Small to large sizes, with delivery across the city.",
+  description: "Fresh bouquets in Lahore from Rs. 1,239 — roses, sunflowers, chocolate & money bouquets. FREE same-day delivery in 2–5 hours. Order online or on WhatsApp.",
   alternates: {
     canonical: `${SITE_URL}/bouquets`,
   },
   openGraph: {
-    title: "Flower Bouquets in Lahore | Fresh, Hand-Tied, Delivered",
-    description: "Browse fresh flower bouquets in Lahore: roses, sunflowers, tulips, lilies and mixed bouquets. Small to large sizes, with delivery across the city.",
+    title: "Bouquet Delivery in Lahore | Fresh Bouquets from Rs. 1,239",
+    description: "Fresh bouquets in Lahore from Rs. 1,239 — roses, sunflowers, chocolate & money bouquets. FREE same-day delivery in 2–5 hours. Order online or on WhatsApp.",
     url: `${SITE_URL}/bouquets`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
@@ -27,7 +27,7 @@ export const BASE_METADATA: Metadata = {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Bouquets in Lahore | Fresh, Hand-Tied, Delivered",
+        alt: "Bouquet Delivery in Lahore | Fresh Bouquets from Rs. 1,239",
       },
     ],
   },
@@ -209,6 +209,54 @@ export default async function BouquetsPage({
           "@type": "Answer",
           text: "A hand-tied bouquet is wrapped in paper and ribbon — natural, romantic, and ready to drop straight into your favourite vase. A boxed bouquet arrives in a keepsake box with floral foam, so it stands on its own and makes a grander gift presentation. Both start at great prices; pick the bouquet style that suits the occasion."
         }
+      },
+      {
+        "@type": "Question",
+        name: "What is the price of a rose bouquet in Lahore?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A medium rose bouquet costs Rs. 2,600–3,800. A large signature rose bouquet is Rs. 7,499, and small hand-tied rose bunches start from Rs. 1,239."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Can I get a bouquet delivered today in Lahore?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Order before 4:00 PM and your bouquet arrives the same day within 2–5 hours, with free delivery across Lahore. A midnight slot (11:30 PM–12:15 AM) is also available for birthdays."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Do you sell sunflower and chocolate bouquets?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Sunflower bouquets start at Rs. 1,699 and chocolate bouquets at Rs. 3,800 — both hand-made to order and delivered the same day."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Can I add a cake or gift with my bouquet?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. You can add celebration cakes, soft toys, greeting cards and gift hampers with your flowers — popular for birthdays, anniversaries and midnight surprises."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "How do I order a bouquet on WhatsApp?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Message us at 0310-4225974 with the bouquet you like and the delivery address. We confirm your order, send a photo of your bouquet before dispatch, and deliver the same day."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Do you have crochet bouquets?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Our handmade crochet bouquets are a lasting gift that never wilts — available in the Crochet section of this page, delivered across Lahore like our fresh bouquets."
+        }
       }
     ]
   };
@@ -244,7 +292,7 @@ export default async function BouquetsPage({
           </div>
 
           <h1 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
-            Flower Bouquets in Lahore
+            Flower Bouquets in Lahore — Hand-Tied, Delivered Today
           </h1>
 
           {/* AEO / GEO Direct Answer */}
@@ -439,6 +487,26 @@ export default async function BouquetsPage({
         </div>
       </section>
 
+      {/* Order Bouquets Online in Lahore — bottom SEO content */}
+      <section className="bg-white p-8 sm:p-10 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-4">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Order Bouquets Online in Lahore</h2>
+        <p className="text-xs sm:text-sm text-[#555555] leading-relaxed">
+          Every bouquet at Lahore Bouquet is hand-tied to order on the day of delivery — never pre-made, never taken from a shelf. Our collection covers the bouquets Lahore actually orders: classic red rose bouquets for romance and anniversaries, cheerful sunflower bouquets that brighten any room, mixed seasonal bunches for everyday gestures, chocolate bouquets for birthdays, money bouquets for weddings and mehndis, and handmade crochet bouquets that never wilt.
+        </p>
+        <p className="text-xs sm:text-sm text-[#555555] leading-relaxed">
+          Prices stay clear and honest. Hand-tied bouquets start at Rs. 1,239 and go up to Rs. 1,900 for small bunches. Medium rose bouquets — our most ordered size — are Rs. 2,600 to Rs. 3,800, while a large signature rose bouquet is Rs. 7,499. Sunflower bouquets start at Rs. 1,699 and chocolate bouquets at Rs. 3,800. The sizes table above shows every band, and our <Link href="/prices" className="text-[#8B1E2D] underline font-semibold">prices page</Link> carries the complete rate list.
+        </p>
+        <p className="text-xs sm:text-sm text-[#555555] leading-relaxed">
+          Not sure which bouquet fits your occasion? For birthdays, sunflowers, gerberas and bright mixed bouquets are the happiest choice. For anniversaries, red and pink roses say it best. A gulab ka bouquet remains the classic gift for someone special, while white lilies and soft mixed arrangements suit get-well wishes and condolences. If you want something personal, tell us the colours and budget on WhatsApp and our florist will build a custom bouquet for you.
+        </p>
+        <p className="text-xs sm:text-sm text-[#555555] leading-relaxed">
+          Ordering is simple. Add your bouquet to the bag, choose your delivery area, date and time slot, and pay by cash on delivery, bank transfer, JazzCash, EasyPaisa or card — or order directly on WhatsApp at 0310-4225974. Before your bouquet leaves, we send you a photo of the actual arrangement on WhatsApp for your approval.
+        </p>
+        <p className="text-xs sm:text-sm text-[#555555] leading-relaxed">
+          Delivery is free across Lahore — DHA, Gulberg, Johar Town, Bahria Town, Model Town, Cantt, Wapda Town and Township — and same-day orders placed before 4:00 PM arrive within 2 to 5 hours. Need a birthday surprise at midnight? Our 11:30 PM to 12:15 AM midnight slot has you covered. We are open every day from 9:00 AM to 1:00 AM, so a fresh bouquet is never far away.
+        </p>
+      </section>
+
       {/* FAQs */}
       <section className="bg-white p-8 sm:p-10 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-6">
         <div className="flex items-center gap-2 text-[#0B0B0B]">
@@ -490,6 +558,30 @@ export default async function BouquetsPage({
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">What's the difference between a hand-tied bouquet and a boxed bouquet?</h3>
             <p>A hand-tied bouquet is wrapped in paper and ribbon — natural, romantic, and ready to drop straight into your favourite vase. A boxed bouquet arrives in a keepsake box with floral foam, so it stands on its own and makes a grander gift presentation. Both start at great prices; pick the bouquet style that suits the occasion.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">What is the price of a rose bouquet in Lahore?</h3>
+            <p>A medium rose bouquet costs Rs. 2,600–3,800. A large signature rose bouquet is Rs. 7,499, and small hand-tied rose bunches start from Rs. 1,239.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Can I get a bouquet delivered today in Lahore?</h3>
+            <p>Yes. Order before 4:00 PM and your bouquet arrives the same day within 2–5 hours, with free delivery across Lahore. A midnight slot (11:30 PM–12:15 AM) is also available for birthdays.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Do you sell sunflower and chocolate bouquets?</h3>
+            <p>Yes. Sunflower bouquets start at Rs. 1,699 and chocolate bouquets at Rs. 3,800 — both hand-made to order and delivered the same day.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Can I add a cake or gift with my bouquet?</h3>
+            <p>Yes. You can add celebration cakes, soft toys, greeting cards and gift hampers with your flowers — popular for birthdays, anniversaries and midnight surprises.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">How do I order a bouquet on WhatsApp?</h3>
+            <p>Message us at 0310-4225974 with the bouquet you like and the delivery address. We confirm your order, send a photo of your bouquet before dispatch, and deliver the same day.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Do you have crochet bouquets?</h3>
+            <p>Yes. Our handmade crochet bouquets are a lasting gift that never wilts — available in the Crochet section of this page, delivered across Lahore like our fresh bouquets.</p>
           </div>
         </div>
       </section>
