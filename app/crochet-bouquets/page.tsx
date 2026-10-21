@@ -9,15 +9,15 @@ import { SITE_URL, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Handmade Crochet Flower Bouquets in Lahore",
+    absolute: "Crochet Bouquets in Lahore | Handmade, Never Wilts — from Rs. 999",
   },
-  description: "Crochet flower bouquets in Lahore that never wilt. Handmade sunflower and rose bouquets, a gift that lasts for years.",
+  description: "Handmade crochet bouquets in Lahore from Rs. 999 — roses, sunflowers, lavender & peonies that never wilt. A keepsake gift, delivered same-day. Order on WhatsApp.",
   alternates: {
     canonical: `${SITE_URL}/crochet-bouquets`,
   },
   openGraph: {
-    title: "Handmade Crochet Flower Bouquets in Lahore",
-    description: "Crochet flower bouquets in Lahore that never wilt. Handmade sunflower and rose bouquets, a gift that lasts for years.",
+    title: "Crochet Bouquets in Lahore | Handmade, Never Wilts — from Rs. 999",
+    description: "Handmade crochet bouquets in Lahore from Rs. 999 — roses, sunflowers, lavender & peonies that never wilt. A keepsake gift, delivered same-day. Order on WhatsApp.",
     url: `${SITE_URL}/crochet-bouquets`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Handmade Crochet Flower Bouquets in Lahore",
+        alt: "Crochet Bouquets in Lahore | Handmade, Never Wilts — from Rs. 999",
       },
     ],
   },
@@ -73,6 +73,14 @@ export default async function CrochetBouquetsPage() {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: [
+      {
+        "@type": "Question",
+        name: "How much does a crochet bouquet cost in Lahore?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Our handmade crochet bouquets start at Rs. 999 (Crochet Lavender) and go up to Rs. 3,200 for the Crochet Sunflower, with most designs between Rs. 999 and Rs. 2,299."
+        }
+      },
       {
         "@type": "Question",
         name: "How long does a crochet bouquet take to make?",
@@ -149,11 +157,11 @@ export default async function CrochetBouquetsPage() {
           </span>
 
           <h1 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
-            Crochet Flower Bouquets in Lahore
+            Crochet Flower Bouquets in Lahore — Handmade &amp; Everlasting
           </h1>
 
           <p className="text-[#F8F3EA]/85 text-xs sm:text-sm leading-relaxed font-light">
-            Fresh flowers fade. Crochet flowers stay. Every bouquet is knitted by hand, so no two are exactly alike. They make lovely gifts for people who keep things: for an anniversary, a graduation, or a new home. No watering, no wilting.
+            A crochet bouquet is the flower gift that never wilts. Every design at Lahore Bouquet is handmade stitch by stitch — crochet roses, sunflowers, lavender and peonies in soft yarn that keeps its colour and shape for years. Prices start at just Rs. 999, making crochet bouquets a thoughtful, lasting gift for birthdays, anniversaries, graduations and farewell presents. Choose from ready designs below, or ask on WhatsApp for custom colours — delivery is same-day across Lahore, with a photo of your bouquet before dispatch.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-2 text-xs text-white/80">
@@ -217,6 +225,10 @@ export default async function CrochetBouquetsPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs text-[#2A2A2A] leading-relaxed">
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">How much does a crochet bouquet cost in Lahore?</h3>
+            <p>Our handmade crochet bouquets start at Rs. 999 (Crochet Lavender) and go up to Rs. 3,200 for the Crochet Sunflower, with most designs between Rs. 999 and Rs. 2,299.</p>
+          </div>
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">How long does a crochet bouquet take to make?</h3>
             <p>Popular styles are in stock for same-day delivery, while custom colour requests take 24 to 48 hours.</p>

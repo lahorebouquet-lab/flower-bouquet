@@ -10,15 +10,15 @@ import { SITE_URL, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Tulip Bouquet in Lahore | Fresh Tulips Delivered",
+    absolute: "Tulip Bouquet in Lahore | Seasonal Tulips, Made to Order",
   },
-  description: "Buy a tulip bouquet in Lahore. Fresh tulips in pink, red, white and yellow, hand-tied and delivered. Tulip flower price from Rs. 4,800.",
+  description: "Tulip bouquets in Lahore — a seasonal favourite in pink, red, white and yellow. Availability is limited, so confirm on WhatsApp and we hand-tie yours fresh.",
   alternates: {
     canonical: `${SITE_URL}/tulip-bouquet-lahore`,
   },
   openGraph: {
-    title: "Tulip Bouquet in Lahore | Fresh Tulips Delivered",
-    description: "Buy a tulip bouquet in Lahore. Fresh tulips in pink, red, white and yellow, hand-tied and delivered. Tulip flower price from Rs. 4,800.",
+    title: "Tulip Bouquet in Lahore | Seasonal Tulips, Made to Order",
+    description: "Tulip bouquets in Lahore — a seasonal favourite in pink, red, white and yellow. Availability is limited, so confirm on WhatsApp and we hand-tie yours fresh.",
     url: `${SITE_URL}/tulip-bouquet-lahore`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Tulip Bouquet in Lahore | Fresh Tulips, Delivered",
+        alt: "Tulip Bouquet in Lahore | Seasonal Tulips, Made to Order",
       },
     ],
   },
@@ -76,18 +76,26 @@ export default async function TulipBouquetLahorePage() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "Are tulips available all year in Lahore?",
+        name: "When are tulips available in Lahore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "They are cold-season imports from the Netherlands (primarily November to April). During other months, availability is limited and requires advance inquiry."
+          text: "Tulips are seasonal and arrive in limited quantities in the cool months. Message us on WhatsApp (0310-4225974) to check this week's availability."
         }
       },
       {
         "@type": "Question",
-        name: "How much does a tulip bouquet cost in Pakistan?",
+        name: "What is the tulip bouquet price in Lahore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Prices start from Rs. 4,800 for 10-12 stems, depending on current Dutch air-freight rates and seasonal availability."
+          text: "It depends on the week's stem prices, so we confirm the exact price on WhatsApp before you order — honestly, rather than quoting a fixed rate that may not hold."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Can I get a tulip bouquet delivered today?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "If tulips are in stock that day, yes — same-day delivery across Lahore with a photo on WhatsApp before dispatch."
         }
       },
       {
@@ -95,7 +103,7 @@ export default async function TulipBouquetLahorePage() {
         name: "Can I mix tulips with roses?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. We can create bespoke mixed arrangements pairing Dutch tulips with spray roses or baby's breath."
+          text: "Yes — when tulips are in stock, we can create bespoke mixed arrangements pairing tulips with roses or baby's breath."
         }
       },
       {
@@ -103,7 +111,7 @@ export default async function TulipBouquetLahorePage() {
         name: "Do you send a picture before dispatch?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. You will receive a WhatsApp photo of your handcrafted tulip bouquet before our air-conditioned van departs."
+          text: "Yes. You will receive a WhatsApp photo of your actual bouquet before dispatch — our standard practice for every order."
         }
       }
     ]
@@ -138,22 +146,22 @@ export default async function TulipBouquetLahorePage() {
         <div className="max-w-3xl relative z-10 space-y-5">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#8B1E2D]/20 text-[#C6A15B] border border-[#8B1E2D] text-xs font-bold uppercase tracking-wider">
             <Snowflake className="w-3.5 h-3.5" />
-            Imported Dutch Floral Royalty
+            Seasonal &amp; Made to Order
           </div>
 
           <h1 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
-            Tulip Bouquet in Lahore
+            Tulip Bouquet in Lahore — Seasonal &amp; Made to Order
           </h1>
 
           {/* AEO / GEO Direct Answer Paragraph */}
           <p className="text-[#F8F3EA]/90 text-sm sm:text-base leading-relaxed font-light">
-            Tulips are not an everyday flower in Pakistan, and that is part of their rare elegance. A tulip bouquet feels soft, modern, and extraordinarily special. Lahore Bouquet offers fresh imported seasonal Dutch tulips starting from <strong>Rs. 4,800</strong>, hand-tied in minimalist matte wrap and delivered across Lahore in <strong>2 to 5 hours</strong>. Due to seasonal imports, please confirm color availability on WhatsApp at <a href="tel:+923104225974" className="text-[#C6A15B] font-semibold hover:underline">0310-4225974</a> before booking.
+            Tulips are Lahore&apos;s most asked-for seasonal flower — soft, modern and loved in pink, red, white and yellow. Tulips only reach Lahore in limited quantities during the cool season, so we prepare tulip bouquets to order: message us on WhatsApp at <a href="tel:+923104225974" className="text-[#C6A15B] font-semibold hover:underline">0310-4225974</a>, we confirm what colours and stems are available that week, and hand-tie your bouquet fresh with a photo on WhatsApp before dispatch. Outside tulip season, our rose and sunflower bouquets deliver the same bright, cheerful look — available every day.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-3 text-xs text-white/80">
             <span className="flex items-center gap-1.5"><Truck className="w-4 h-4 text-[#C6A15B]" /> Delivery in 2 to 5 hours</span>
             <span className="flex items-center gap-1.5"><Camera className="w-4 h-4 text-[#C6A15B]" /> Photo sent on WhatsApp first</span>
-            <span className="flex items-center gap-1.5"><Droplets className="w-4 h-4 text-[#C6A15B]" /> Cold water vial hydration</span>
+            <span className="flex items-center gap-1.5"><Droplets className="w-4 h-4 text-[#C6A15B]" /> Seasonal — confirm stock on WhatsApp</span>
           </div>
 
           <div className="pt-2 flex flex-wrap gap-3">
@@ -177,7 +185,7 @@ export default async function TulipBouquetLahorePage() {
             <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#0B0B0B]">
               Seasonal Tulips & Exotic Blooms
             </h2>
-            <p className="text-xs text-[#555555] mt-1">Air-freighted directly from the Netherlands</p>
+            <p className="text-xs text-[#555555] mt-1">Limited seasonal availability — confirm this week&apos;s stock on WhatsApp</p>
           </div>
           <span className="text-xs text-[#8B1E2D] font-bold">Limited Seasonal Availability</span>
         </div>
@@ -192,7 +200,7 @@ export default async function TulipBouquetLahorePage() {
       {/* Colors & Pricing Guide */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="p-6 sm:p-8 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] space-y-4">
-          <h3 className="font-playfair text-xl font-bold text-[#0B0B0B]">Available Tulip Colors</h3>
+          <h3 className="font-playfair text-xl font-bold text-[#0B0B0B]">Tulip Colours &amp; What They Mean</h3>
           <ul className="space-y-3 text-xs text-[#555555]">
             <li className="flex items-start gap-2">
               <span className="w-3 h-3 rounded-full bg-[#F4A7B9] mt-0.5 shrink-0 border border-[#D88A9C]" />
@@ -245,20 +253,24 @@ export default async function TulipBouquetLahorePage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs text-[#2A2A2A] leading-relaxed">
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
-            <h3 className="font-semibold text-[#0B0B0B] text-sm">Are tulips available all year in Lahore?</h3>
-            <p>They are cold-season imports from the Netherlands (primarily November to April). During other months, availability is limited and requires advance inquiry.</p>
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">When are tulips available in Lahore?</h3>
+            <p>Tulips are seasonal and arrive in limited quantities in the cool months. Message us on WhatsApp (0310-4225974) to check this week&apos;s availability.</p>
           </div>
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
-            <h3 className="font-semibold text-[#0B0B0B] text-sm">How much does a tulip bouquet cost in Pakistan?</h3>
-            <p>Prices start from Rs. 4,800 for 10-12 stems, depending on current Dutch air-freight rates and seasonal availability.</p>
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">What is the tulip bouquet price in Lahore?</h3>
+            <p>It depends on the week&apos;s stem prices, so we confirm the exact price on WhatsApp before you order — honestly, rather than quoting a fixed rate that may not hold.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Can I get a tulip bouquet delivered today?</h3>
+            <p>If tulips are in stock that day, yes — same-day delivery across Lahore with a photo on WhatsApp before dispatch.</p>
           </div>
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Can I mix tulips with roses?</h3>
-            <p>Yes. We can create bespoke mixed arrangements pairing Dutch tulips with spray roses or baby&apos;s breath.</p>
+            <p>Yes — when tulips are in stock, we can create bespoke mixed arrangements pairing tulips with roses or baby&apos;s breath.</p>
           </div>
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Do you send a picture before dispatch?</h3>
-            <p>Yes. You will receive a WhatsApp photo of your handcrafted tulip bouquet before our air-conditioned van departs.</p>
+            <p>Yes. You will receive a WhatsApp photo of your actual bouquet before dispatch — our standard practice for every order.</p>
           </div>
         </div>
       </section>

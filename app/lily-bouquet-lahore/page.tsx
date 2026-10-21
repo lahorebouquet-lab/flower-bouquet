@@ -10,15 +10,15 @@ import { SITE_URL, itemListSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Lily Bouquet in Lahore | Fresh Oriental Lilies Delivery",
+    absolute: "Lily Bouquet in Lahore | Elegant Lilies, Made to Order",
   },
-  description: "Order a fresh lily bouquet in Lahore. Elegant Oriental and Asiatic lilies — perfect for sympathy, get-well wishes and refined gifting. Delivery in 2–5 hours.",
+  description: "Lily bouquets in Lahore for sympathy, get-well wishes and elegant gifting. Made to order — confirm today's lily availability on WhatsApp and we hand-tie it fresh.",
   alternates: {
     canonical: `${SITE_URL}/lily-bouquet-lahore`,
   },
   openGraph: {
-    title: "Lily Bouquet in Lahore | Fresh Oriental Lilies Delivery",
-    description: "Order a fresh lily bouquet in Lahore. Elegant Oriental and Asiatic lilies — perfect for sympathy, get-well wishes and refined gifting.",
+    title: "Lily Bouquet in Lahore | Elegant Lilies, Made to Order",
+    description: "Lily bouquets in Lahore for sympathy, get-well wishes and elegant gifting. Made to order — confirm today's lily availability on WhatsApp and we hand-tie it fresh.",
     url: `${SITE_URL}/lily-bouquet-lahore`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Lily Bouquet in Lahore | Fresh Oriental Lilies Delivery",
+        alt: "Lily Bouquet in Lahore | Elegant Lilies, Made to Order",
       },
     ],
   },
@@ -36,32 +36,28 @@ export const metadata: Metadata = {
 
 const FAQS = [
   {
+    q: "Do you deliver lily bouquets the same day in Lahore?",
+    a: "Yes, whenever lilies are in stock — we make them to order, so please confirm availability on WhatsApp (0310-4225974) first and we will hand-tie and deliver the same day.",
+  },
+  {
+    q: "What is the price of a lily bouquet in Lahore?",
+    a: "Lily prices depend on the season and stem availability, so we quote the exact price on WhatsApp before you order — no surprises.",
+  },
+  {
     q: "What do lilies symbolize when gifted?",
     a: "White lilies symbolize purity, sympathy and remembrance — making them the traditional choice for condolences and get-well wishes. Pink lilies express admiration and prosperity, while orange lilies convey passion and confidence.",
   },
   {
-    q: "How long do lily bouquets last?",
-    a: "Fresh lily bouquets last 7 to 10 days with fresh water and trimmed stems. We remove the pollen anthers before dispatch so the blooms stay pristine and won't stain clothes or furniture.",
-  },
-  {
     q: "Are lilies good for condolence flowers in Lahore?",
-    a: "Yes — white lilies are the most requested condolence flower in Lahore. We deliver sympathy lily arrangements across the city in 2 to 5 hours, including same-day service.",
+    a: "Yes — white lilies are the classic condolence flower. Message us on WhatsApp and we will prepare a sympathy lily arrangement with care; same-day delivery is available whenever lilies are in stock.",
   },
   {
     q: "Do lilies have a strong fragrance?",
     a: "Oriental lilies (like Stargazer and Casablanca) are beautifully fragrant. If you prefer a milder scent — for hospitals or offices — ask for Asiatic lilies, which are nearly scent-free.",
   },
   {
-    q: "Where can I buy a lily bouquet in Lahore?",
-    a: "From us! Every lily bouquet in Lahore we make is hand-tied fresh to order with elegant Oriental or Asiatic lilies. We even remove the pollen anthers before dispatch so the blooms stay pristine and won't stain. Message us on WhatsApp (0310-4225974) and we'll deliver the same day.",
-  },
-  {
-    q: "Is a lily bouquet in Lahore a good sympathy gift?",
-    a: "Absolutely — white lilies are the most requested condolence flower in the city. A lily bouquet in Lahore ordered from us reaches anywhere in the city within 2 to 5 hours, including same-day sympathy deliveries. Just tell us on WhatsApp and we'll handle it with care.",
-  },
-  {
-    q: "Which lily bouquet in Lahore is best for a hospital visit?",
-    a: "For hospitals, we'd suggest a lily bouquet in Lahore made with Asiatic lilies — they're nearly scent-free, unlike the beautifully fragrant Oriental ones. Gentle, elegant, and perfect get-well wishes. Order before 4:00 PM for same-day delivery.",
+    q: "How long do lily bouquets last?",
+    a: "Fresh lilies typically last 7 to 10 days. Trim stems at an angle, change the water every 2 days, keep them away from direct sunlight and ripening fruit, and remove spent blooms so the buds below keep opening.",
   },
 ];
 
@@ -124,20 +120,21 @@ export default async function LilyBouquetLahorePage() {
             Elegant & Fragrant
           </div>
           <h1 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
-            Lily Bouquet in Lahore
+            Lily Bouquet in Lahore — Elegant &amp; Made to Order
           </h1>
           <p className="text-[#F8F3EA]/90 text-sm sm:text-base leading-relaxed font-light">
-            A lily bouquet is the most graceful gift you can send — tall, fragrant and quietly luxurious.
-            White lilies are Lahore&apos;s classic choice for <strong>sympathy and get-well wishes</strong>, while
-            pink and Stargazer lilies suit birthdays and anniversaries. Lahore Bouquet hand-ties fresh
-            Oriental and Asiatic lilies on the morning of dispatch and delivers anywhere in Lahore in{" "}
-            <strong>2 to 5 hours</strong>, with a live photo sent on WhatsApp before our rider departs.
-            Order online or call <a href="tel:+923104225974" className="text-[#C6A15B] font-semibold hover:underline">0310-4225974</a>.
+            Lilies are the flower of quiet elegance — chosen for <strong>sympathy, get-well wishes</strong>, and refined celebrations.
+            Because lilies are a premium, short-season stem in Lahore, we prepare lily bouquets <strong>to order</strong> rather than
+            holding old stock: message us on WhatsApp, we confirm today&apos;s availability and price, hand-tie your bouquet fresh,
+            and send you a photo of the actual arrangement before dispatch. Same-day delivery is available across Lahore whenever
+            lilies are in stock. Prefer something ready right now? Our white rose and mixed seasonal bouquets carry the same soft,
+            elegant feel and are available today. Order on{" "}
+            <a href="tel:+923104225974" className="text-[#C6A15B] font-semibold hover:underline">0310-4225974</a>.
           </p>
           <div className="flex flex-wrap gap-4 pt-3 text-xs text-white/80">
             <span className="flex items-center gap-1.5"><Truck className="w-4 h-4 text-[#C6A15B]" /> Delivery in 2 to 5 hours</span>
             <span className="flex items-center gap-1.5"><Camera className="w-4 h-4 text-[#C6A15B]" /> Live WhatsApp photo before dispatch</span>
-            <span className="flex items-center gap-1.5"><Droplets className="w-4 h-4 text-[#C6A15B]" /> Pollen removed for stain-free blooms</span>
+            <span className="flex items-center gap-1.5"><Droplets className="w-4 h-4 text-[#C6A15B]" /> Made to order — fresh stems only</span>
           </div>
           <div className="pt-2 flex flex-wrap gap-3">
             <a
@@ -168,7 +165,7 @@ export default async function LilyBouquetLahorePage() {
         </div>
         {lilyProducts.length === 0 && (
           <p className="text-xs text-[#777777]">
-            New lily arrangements arrive weekly — message us on WhatsApp for today&apos;s fresh lily selection.
+            Lily bouquets are made to order — message us on WhatsApp to confirm today&apos;s availability and price.
           </p>
         )}
       </section>
@@ -196,7 +193,7 @@ export default async function LilyBouquetLahorePage() {
             <li>Trim stems at an angle and change water every 2 days.</li>
             <li>Keep away from direct sunlight and ripening fruit.</li>
             <li>Remove spent blooms so buds below keep opening.</li>
-            <li>We pre-remove pollen anthers — blooms stay clean and stain-free.</li>
+            <li>Tip: gently remove the pollen anthers — blooms stay clean and stain-free.</li>
           </ul>
         </div>
       </section>
