@@ -90,7 +90,16 @@ export default async function HomePage() {
 
   return (
     <>
-      {/* Hero LCP preload is emitted by next/image `preload` on the hero in HomeClient */}
+      {/* Homepage-only LCP preload: hero image discovered before client hydration */}
+      <link
+        rel="preload"
+        as="image"
+        href="/images/hero-blush-elegance-banner.webp"
+        imageSrcSet="/images/hero-blush-elegance-banner-mobile.webp 800w, /images/hero-blush-elegance-banner.webp 1600w"
+        imageSizes="100vw"
+        type="image/webp"
+        fetchPriority="high"
+      />
     <main className="min-h-screen bg-[#F8F3EA] text-[#101012]">
       {/* Schema.org Microdata */}
       <script
