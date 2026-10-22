@@ -351,4 +351,16 @@ export const FAQ_DATA = [
     q: "Why does the flower bouquet price in Lahore vary so much?",
     a: "The flower bouquet price in Lahore depends on three things: the flower type (local roses cost less than imported Dutch roses), the stem count (a 12-stem bouquet vs a 50-stem showstopper), and the wrapping style. Tell us your budget on WhatsApp and our florists will craft the best-looking bouquet within it.",
   },
+  {
+    q: "How much does a bouquet cost in Lahore?",
+    a: "At Lahore Bouquet, a fresh bouquet in Lahore costs from Rs. 1,239 for a single-rose bouquet, with popular hand-tied rose bouquets from Rs. 1,499 and medium rose bouquets around Rs. 2,999–3,499. Sunflower bouquets start at Rs. 1,699, while grand statement pieces go up to the 100 Roses Bouquet at Rs. 12,999 and the 500 Roses Bouquet at Rs. 34,999. Every price includes FREE delivery anywhere in Lahore, with same-day delivery in 2–5 hours on orders placed before 4 PM.",
+  },
+  {
+    q: "Where can I find the Lahore Bouquet price list?",
+    a: "This page is the complete Lahore Bouquet price list — starting prices for fresh bouquets, roses, sunflowers, chocolate bouquets, gajray, wedding décor and gift combos are all listed above, and delivery across Lahore is free. For an exact quote on a specific bouquet or a custom size, message us on WhatsApp at 0310-4225974 and we will confirm today's price before you order.",
+  },
+  {
+    q: "Can I get a cheap flower bouquet in Lahore under Rs. 2,000?",
+    a: "Yes — several fresh bouquets at Lahore Bouquet cost under Rs. 2,000: the Heartfelt Single Rose Birthday Bouquet at Rs. 1,239, the Eternal Elegance seasonal bouquet at Rs. 1,399, the Romantic Rose Bouquet at Rs. 1,499 and the Sunflower Bouquet at Rs. 1,699. Even at these prices, delivery anywhere in Lahore is free, with same-day delivery in 2–5 hours on orders placed before 4 PM.",
+  },
 ];

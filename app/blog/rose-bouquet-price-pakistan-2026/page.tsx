@@ -47,6 +47,18 @@ const FAQS = [
   {
     q: "Where can I buy fresh rose bouquets online in Lahore?",
     a: "Lahore Bouquet delivers fresh rose bouquets across Lahore with same-day delivery in 2–5 hours. Every bouquet is photographed for your WhatsApp approval before dispatch. Order on WhatsApp at 0310-4225974."
+  },
+  {
+    q: "How much do 12 flowers cost?",
+    a: "It depends on the flower you choose. At Lahore Bouquet, a bouquet of exactly 12 roses — the Native Red bouquet, with 12 red roses and baby's breath — costs Rs. 7,249, while smaller fresh bunches start from just Rs. 1,239. If you want 12 stems of a specific flower or colour, we make it to order: WhatsApp us on 0310-4225974 and we will confirm the exact price before you order."
+  },
+  {
+    q: "How much will 12 roses cost?",
+    a: "At Lahore Bouquet, bouquets with exactly 12 roses include the Native Red bouquet (12 red roses with baby's breath) for Rs. 7,249, the Queen's Aura bouquet (12 imported roses with 10 Ferrero Rocher) for Rs. 10,599, and Blushing Midnight Roses (12 fresh pink and white-edged roses) for Rs. 17,499. All three include FREE delivery in Lahore, with same-day delivery in 2–5 hours on orders placed before 4 PM."
+  },
+  {
+    q: "How much does a 500 roses bouquet cost in Pakistan?",
+    a: "At Lahore Bouquet, the 500 Roses Bouquet — 500 fresh roses arranged as one grand statement piece — costs Rs. 34,999, with FREE delivery in Lahore. For a slightly smaller grand gesture, the 100 Roses Bouquet costs Rs. 12,999. Because of their size, it is best to order grand bouquets a little early so we can prepare them fresh for you."
   }
 ];
 
@@ -59,7 +71,7 @@ export default function RoseBouquetPriceBlogPage() {
     author: { "@type": "Organization", name: "Lahore Bouquet Florist Team", url: `${SITE_URL}` },
     publisher: { "@type": "Organization", name: "Lahore Bouquet", url: `${SITE_URL}` },
     datePublished: "2026-10-12",
-    dateModified: "2026-10-12",
+    dateModified: "2026-10-22",
   };
 
   const faqSchema = {
