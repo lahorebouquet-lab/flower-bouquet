@@ -21,6 +21,7 @@ import { LAHORE_AREAS, ISLAMABAD_AREAS, DELIVERY_CITIES, TIME_SLOTS, CARD_OCCASI
 import { getDeliveryFee, formatDeliveryDate, DELIVERY_POLICY_LINE } from "@/lib/delivery";
 import { normalizePakistaniPhone, CONTACT_PHONE, siteWhatsappLink } from "@/lib/site";
 import DeliverySchedulePicker from "./DeliverySchedulePicker";
+import { trackGaEvent, gaItemsFromCart } from "@/lib/analytics";
 
 export default function CartDrawer() {
   const {
@@ -657,7 +658,15 @@ export default function CartDrawer() {
               {checkoutStep === 1 && (
                 <button
                   type="button"
-                  onClick={() => setCheckoutStep(2)}
+                  onClick={() => {
+                    // GA4: customer starts checkout from the bag
+                    trackGaEvent("begin_checkout", {
+                      currency: "PKR",
+                      value: cartSubtotal,
+                      items: gaItemsFromCart(cart),
+                    });
+                    setCheckoutStep(2);
+                  }}
                   className="flex-1 py-3.5 rounded-full bg-[#8B1E2D] hover:bg-[#C6A15B] text-white hover:text-[#0B0B0B] font-bold text-xs shadow-md transition-all text-center flex items-center justify-center gap-1.5 cursor-pointer active:scale-95"
                 >
                   <span>Proceed to Details</span>

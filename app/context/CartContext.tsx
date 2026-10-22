@@ -9,6 +9,7 @@ import {
   getDeliveryFee,
 } from "@/lib/delivery";
 import { normalizePakistaniPhone, CONTACT_PHONE } from "@/lib/site";
+import { trackGaEvent, gaItem, gaItemsFromCart, cartValue } from "@/lib/analytics";
 
 /** Per-item delivery/card choices captured on the product page. */
 export interface CartItemCustomization {
@@ -208,6 +209,12 @@ export function CartProvider({ children }: { children: ReactNode }) {
       }
       return [...prev, { product, quantity, customization: custom }];
     });
+    // GA4: item added to the bag
+    trackGaEvent("add_to_cart", {
+      currency: "PKR",
+      value: product.price * quantity,
+      items: [gaItem(product, quantity)],
+    });
     // Carry product-page choices into the checkout form
     if (customization) {
       loadCustomizationIntoCheckout(customization);
@@ -218,6 +225,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const directOrderNow = (product: Product, e?: React.MouseEvent, customization?: CartItemCustomization) => {
     if (e) e.stopPropagation();
     const custom = customization ?? defaultCustomization();
+    const alreadyInCart = cart.some((item) => String(item.product.id) === String(product.id));
     setCart((prev) => {
       const existing = prev.find((item) => String(item.product.id) === String(product.id));
       if (existing) {
@@ -232,6 +240,21 @@ export function CartProvider({ children }: { children: ReactNode }) {
     if (customization) {
       loadCustomizationIntoCheckout(customization);
     }
+    // GA4: "Order Now" adds the item (when new) and goes straight into
+    // checkout (step 2), so it counts as both add_to_cart and begin_checkout.
+    if (!alreadyInCart) {
+      trackGaEvent("add_to_cart", {
+        currency: "PKR",
+        value: product.price,
+        items: [gaItem(product, 1)],
+      });
+    }
+    const checkoutLines = alreadyInCart ? cart : [...cart, { product, quantity: 1, customization: custom }];
+    trackGaEvent("begin_checkout", {
+      currency: "PKR",
+      value: cartValue(checkoutLines),
+      items: gaItemsFromCart(checkoutLines),
+    });
     setIsCartOpen(true);
     setCheckoutStep(2);
   };
@@ -287,6 +310,15 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   const handlePlaceOrder = () => {
     const randomId = `FLB-${Math.floor(100000 + Math.random() * 900000)}`;
+    // GA4: the order is placed at this point — an order ID is created, the
+    // confirmation (step 4) is shown and the order is saved to Sanity below.
+    // Fire `purchase` here only: never on page load, never on a failed save.
+    trackGaEvent("purchase", {
+      transaction_id: randomId,
+      currency: "PKR",
+      value: orderTotal,
+      items: gaItemsFromCart(cart),
+    });
     setPlacedOrderId(randomId);
     setCheckoutStep(4);
     showToast(`Order Confirmed! ID: ${randomId}`);
