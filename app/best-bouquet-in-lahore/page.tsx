@@ -1,20 +1,25 @@
+export const revalidate = 3600;
 import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Phone, MessageCircle, Truck, Clock, Camera, ShieldCheck, MapPin, Star, HelpCircle } from "lucide-react";
-import { SITE_URL, BUSINESS, whatsappLink } from "@/lib/business";
+import Image from "next/image";
+import { Phone, MessageCircle, Truck, Clock, Camera, MapPin, HelpCircle, ClipboardCheck, Wallet, Heart, Gift, Sun, Flower2 } from "lucide-react";
+import { SITE_URL, BUSINESS, whatsappLink, itemListSchema } from "@/lib/business";
+import { getSanityProducts, getSanityReviews } from "@/sanity/lib/fetch";
+import ReviewsSection from "../components/ReviewsSection";
+import type { Product } from "@/app/data/products";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Best Bouquet in Lahore: Fresh Flowers, Same-Day Delivery | Lahore Bouquet",
+    absolute: "Best Bouquet in Lahore: How to Choose the Right One | Lahore Bouquet",
   },
-  description: "Looking for the best bouquet in Lahore? Lahore Bouquet hand-ties fresh bouquets from Rs. 1,239 with same-day delivery in 2-5 hours across DHA, Gulberg, Model Town & more. WhatsApp: 0310-4225974",
+  description: "A practical guide to choosing the best bouquet in Lahore — what fresh really means, picks by occasion and budget (Rs. 1,239–7,499), and the photo check to ask any florist before you pay.",
   alternates: {
     canonical: `${SITE_URL}/best-bouquet-in-lahore`,
   },
   openGraph: {
-    title: "Best Bouquet in Lahore: Fresh, Same-Day Delivery",
-    description: "Fresh hand-tied bouquets from Rs. 1,239, delivered in 2-5 hours across Lahore. Photo approval on WhatsApp before dispatch.",
+    title: "Best Bouquet in Lahore: How to Choose the Right One",
+    description: "What makes a bouquet the best choice in Lahore — freshness, occasion fit and honest price bands from Rs. 1,239, with a photo of your actual bouquet before dispatch.",
     url: `${SITE_URL}/best-bouquet-in-lahore`,
     siteName: "Lahore Bouquet",
     type: "website",
@@ -24,92 +29,109 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Best Bouquet in Lahore: Fresh, Same-Day Delivery | Lahore Bouquet",
+        alt: "Best Bouquet in Lahore: How to Choose the Right One | Lahore Bouquet",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Bouquet in Lahore: Fresh, Same-Day Delivery",
-    description: "Fresh hand-tied bouquets from Rs. 1,239, delivered in 2-5 hours across Lahore. Photo approval on WhatsApp before dispatch.",
+    title: "Best Bouquet in Lahore: How to Choose the Right One",
+    description: "A buyer's guide to bouquets in Lahore — picks by occasion and budget, plus the freshness checks that actually matter.",
     images: [`${SITE_URL}/og-image.jpg`],
   },
 };
 
-const BOUQUET_TYPES = [
+/** Real products featured in this guide — pulled live from Sanity by slug. */
+const FEATURED: { slug: string; occasion: string; note: string }[] = [
   {
-    name: "Hand-Tied Small Bouquets",
-    price: "Rs. 1,239 – Rs. 1,900",
-    desc: "Fresh seasonal blooms hand-tied the morning of delivery. Perfect for birthdays, thank-yous and everyday surprises.",
+    slug: "heartfelt-single-rose-birthday-bouquet",
+    occasion: "First gifts & small birthdays",
+    note: "A single rose, simply presented — the easiest first gift, and proof that a small budget can still look thoughtful.",
   },
   {
-    name: "Medium Rose Bouquets",
-    price: "Rs. 2,600 – Rs. 3,800",
-    desc: "Fresh roses in elegant wrap with a handwritten card. Our most popular choice for anniversaries and romantic gestures.",
+    slug: "sunflower-bouquet",
+    occasion: "Thank-yous & get-well wishes",
+    note: "Bright and hard to get wrong. Sunflowers say cheerful better than any card — for birthdays, thank-yous and hospital-room pick-me-ups.",
   },
   {
-    name: "Large Signature Rose Arrangement",
-    price: "Rs. 7,499",
-    desc: "A grand statement piece with premium Dutch roses, designed for proposals, weddings and milestone celebrations.",
+    slug: "affordable-rose-bouquet",
+    occasion: "Anniversaries & romance",
+    note: "A medium rose bouquet inside the Rs. 2,600–3,800 band where most anniversary orders land — classic, romantic, sensibly priced.",
   },
   {
-    name: "Imported Dutch Rose Bouquets",
-    price: "From Rs. 4,800",
-    desc: "Rare imported Dutch roses for when only something extraordinary will do.",
+    slug: "chocolate-rose-bouquet",
+    occasion: "When flowers alone are not enough",
+    note: "Roses and chocolate in one gift. A safe upgrade for birthdays and romantic surprises when you want a little extra.",
   },
   {
-    name: "Sunflower Bouquets",
-    price: "From Rs. 1,699",
-    desc: "Big, cheerful sunflowers that brighten any room. Great for birthdays, graduations and get-well wishes.",
+    slug: "crochet-sunflower",
+    occasion: "Keepsakes that never wilt",
+    note: "Handmade crochet that keeps its colour for years — the farewell, graduation or long-distance gift they can actually keep.",
   },
   {
-    name: "Chocolate Bouquets",
-    price: "From Rs. 3,800",
-    desc: "Premium chocolates arranged with fresh flowers — the gift that combines the best of both worlds.",
+    slug: "heartfelt-moments-bouquet",
+    occasion: "Grand gestures",
+    note: "Our Rs. 7,499 statement arrangement — for proposals, milestone anniversaries and moments that call for the biggest gesture in the range.",
   },
 ];
 
-const DELIVERY_AREAS = [
-  "DHA (all phases)", "Gulberg", "Model Town", "Johar Town", "Bahria Town",
-  "Cantt", "Wapda Town", "Askari", "Valencia", "EME", "Lake City", "Fazaia",
+const BUDGET_BANDS = [
+  {
+    band: "Rs. 1,239 – Rs. 1,900",
+    title: "Small hand-tied bouquets",
+    desc: "Single roses and small hand-tied arrangements. Right for first gifts, apologies, thank-yous and everyday surprises where the gesture matters more than the size.",
+  },
+  {
+    band: "From Rs. 1,699",
+    title: "Sunflower bouquets",
+    desc: "The cheerful end of the range. Sunflowers photograph beautifully, suit almost every occasion and are a reliable birthday and get-well choice.",
+  },
+  {
+    band: "Rs. 2,600 – Rs. 3,800",
+    title: "Medium rose bouquets",
+    desc: "The anniversary and romance sweet spot. A full, well-wrapped rose bouquet that looks generous without going over the top.",
+  },
+  {
+    band: "Rs. 7,499",
+    title: "Large signature arrangements",
+    desc: "Statement pieces for proposals, milestone celebrations and grand romantic gestures — the top of the everyday range.",
+  },
 ];
 
 const FAQS = [
   {
-    q: "What is the best bouquet to order in Lahore?",
-    a: "It depends on the occasion. For romance, our medium red rose bouquets (Rs. 2,600–3,800) are the most ordered. For birthdays, sunflower or mixed seasonal bouquets (from Rs. 1,239) work beautifully. For grand gestures, the large signature Dutch rose arrangement (Rs. 7,499) makes a statement. Message us on WhatsApp and we'll recommend based on your budget.",
+    q: "What is the best bouquet for a first gift?",
+    a: "Keep it simple and cheerful. A sunflower bouquet (from Rs. 1,699) or a small hand-tied bouquet (Rs. 1,239–1,900) is friendly without sending the wrong signal. A single rose — like our Heartfelt Single Rose Birthday Bouquet at Rs. 1,239 — is a classic low-pressure choice. Save the big red-rose arrangements for when you know the relationship is ready for them.",
   },
   {
-    q: "How much does a good bouquet cost in Lahore?",
-    a: "Hand-tied small bouquets range from Rs. 1,239 to Rs. 1,900. Medium rose bouquets are Rs. 2,600 to Rs. 3,800, and our large signature rose arrangement is Rs. 7,499. Every price includes same-day delivery across listed Lahore areas.",
+    q: "How big should an anniversary bouquet be?",
+    a: "Most anniversary orders in Lahore fall in the medium rose band, Rs. 2,600–3,800 — full enough to feel special, wrapped elegantly and with a handwritten card. For milestone years (first, tenth, twenty-fifth) or a proposal, step up to a large signature arrangement at Rs. 7,499. If you are unsure, send us your budget on WhatsApp and we will show you real photos of what it buys.",
   },
   {
-    q: "How fast can you deliver a bouquet in Lahore?",
-    a: "Order before 4:00 PM and your bouquet arrives the same day in 2 to 5 hours. We also offer a midnight delivery slot (11:30 PM–12:15 AM) for surprise birthdays — book before 8:00 PM.",
+    q: "Fresh flowers or a crochet bouquet — which is the better gift?",
+    a: "They do different jobs. Fresh flowers are for the moment: the scent, the surprise, the photo today. A crochet bouquet (from Rs. 999) never wilts, so it suits farewells, graduations, long-distance gifts and anyone who keeps mementos. Many customers send fresh for the day and crochet for keeps.",
   },
   {
-    q: "Can I see the bouquet before it's delivered?",
-    a: "Yes. Every bouquet is hand-tied fresh to order, and our florist sends you a real photo on WhatsApp for approval before dispatch. Nothing leaves until you say it looks perfect.",
+    q: "How can I be sure the bouquet looks good before it is delivered?",
+    a: "Ask the florist to send a photo of your actual bouquet before dispatch — not a catalogue picture. At Lahore Bouquet this is standard on every order: your bouquet is hand-tied to order, photographed, sent to you on WhatsApp for approval, and only then delivered.",
   },
   {
-    q: "Do you deliver bouquets outside Lahore?",
-    a: "We deliver across Lahore and also serve Islamabad (selected areas, same-day 2–5 hours). For other cities, message us on WhatsApp and we'll confirm.",
+    q: "How do I make a bouquet last longer at home?",
+    a: "Trim the stems at an angle under running water, use a clean vase with fresh water, and keep the bouquet away from direct sunlight and ripening fruit. Change the water every two days and remove any leaf that falls below the waterline. Most fresh bouquets then stay presentable for the better part of a week.",
   },
   {
-    q: "What if the flowers arrive damaged?",
-    a: "Every stem is hydrated for transit and hand-checked before dispatch. If flowers arrive damaged, we replace or refund them — that's our freshness promise.",
-  },
-  {
-    q: "Can I order a bouquet from abroad for someone in Lahore?",
-    a: "Yes. Order online in under 5 minutes and pay with any international debit/credit card. We deliver fresh flowers the same day with photo proof on WhatsApp.",
-  },
-  {
-    q: "Do you include a card message with the bouquet?",
-    a: "Yes, every bouquet comes with a complimentary handwritten card. Add your personal message at checkout or on WhatsApp.",
+    q: "When should I order for same-day or midnight delivery in Lahore?",
+    a: "For same-day delivery, order before 4:00 PM and your bouquet arrives within 2 to 5 hours. For a midnight birthday surprise, the slot is 11:30 PM–12:15 AM and must be booked before 8:00 PM. Delivery is free across listed Lahore areas, including DHA, Gulberg, Model Town, Johar Town and Bahria Town.",
   },
 ];
 
-export default function BestBouquetInLahorePage() {
+export default async function BestBouquetInLahorePage() {
+  const [allProducts, reviews] = await Promise.all([getSanityProducts(), getSanityReviews()]);
+  const bySlug = new Map(allProducts.map((p) => [p.slug, p]));
+  const picks: { product: Product; occasion: string; note: string }[] = FEATURED
+    .map((f) => ({ product: bySlug.get(f.slug), occasion: f.occasion, note: f.note }))
+    .filter((x): x is { product: Product; occasion: string; note: string } => Boolean(x.product));
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -129,196 +151,219 @@ export default function BestBouquetInLahorePage() {
     ],
   };
 
+  const itemListJsonLd = picks.length
+    ? itemListSchema(picks.map((x) => x.product), `${SITE_URL}/best-bouquet-in-lahore`, "Guide Picks: Best Bouquets in Lahore")
+    : null;
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      {itemListJsonLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
+      )}
 
       <main className="w-full bg-white text-[#101012]">
         {/* Hero */}
         <section className="w-full py-12 px-4 sm:px-6 bg-[#F8F3EA]">
           <div className="max-w-4xl mx-auto text-center space-y-4">
             <h1 className="font-playfair text-3xl sm:text-4xl font-bold">
-              Best Bouquet in Lahore: Fresh, Same-Day Delivery
+              Best Bouquet in Lahore: How to Choose One They&apos;ll Actually Love
             </h1>
             <p className="text-sm sm:text-base text-[#2A2A2A] leading-relaxed max-w-2xl mx-auto">
-              <strong>Lahore Bouquet</strong> hand-ties every bouquet fresh to order in Lahore — from hand-tied small bouquets (Rs. 1,239–1,900) to grand Dutch rose arrangements (Rs. 7,499). Order before 4:00 PM for same-day delivery in 2 to 5 hours across DHA, Gulberg, Model Town, Johar Town, Bahria Town and all major areas. Every bouquet is photographed on WhatsApp for your approval before dispatch.
+              &ldquo;Best&rdquo; is not the biggest bunch or the highest price. In Lahore, the best bouquet is the one that arrives fresh, suits the occasion, and looks like the photo you were promised. This guide explains how to judge a bouquet before you pay — what to check, what each budget honestly buys, and our real picks for the occasions that matter.
             </p>
             <div className="flex flex-wrap gap-3 justify-center pt-2">
               <a
-                href={whatsappLink("Hi! I want to order a bouquet in Lahore")}
+                href={whatsappLink("Hi! I need help choosing a bouquet in Lahore")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#128C7E] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#0d6b5e] transition"
               >
-                <MessageCircle size={18} /> Order on WhatsApp
+                <MessageCircle size={18} /> Ask on WhatsApp
               </a>
-              <a
-                href="tel:+923104225974"
+              <Link
+                href="/bouquets"
                 className="inline-flex items-center gap-2 border-2 border-[#8B1E2D] text-[#8B1E2D] px-6 py-3 rounded-full font-semibold hover:bg-[#8B1E2D] hover:text-white transition"
               >
-                <Phone size={18} /> 0310-4225974
-              </a>
+                <Flower2 size={18} /> Browse All Bouquets
+              </Link>
             </div>
           </div>
         </section>
 
-        {/* Bouquet types with prices */}
+        {/* What "best" actually means */}
         <section className="w-full py-12 px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-center mb-8">
-              Bouquet Types & Prices
+            <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-center mb-4">
+              What &ldquo;Best&rdquo; Actually Means
             </h2>
+            <p className="text-center text-sm text-[#2A2A2A] mb-8 max-w-2xl mx-auto leading-relaxed">
+              Four things separate a bouquet that delights from one that disappoints — and none of them is the price tag.
+            </p>
             <div className="grid sm:grid-cols-2 gap-4">
-              {BOUQUET_TYPES.map((b) => (
-                <div key={b.name} className="border border-[#E5DED2] rounded-xl p-5 bg-white hover:shadow-md transition">
-                  <h3 className="font-semibold text-lg">{b.name}</h3>
-                  <p className="text-[#8B1E2D] font-bold mt-1">{b.price}</p>
+              {[
+                {
+                  icon: <Flower2 size={20} />,
+                  title: "Tied to order, not grabbed from a shelf",
+                  text: "A bouquet arranged after you order lasts longer than one sitting pre-wrapped in a fridge. Every Lahore Bouquet order is hand-tied fresh, only when the order comes in.",
+                },
+                {
+                  icon: <Camera size={20} />,
+                  title: "You see your actual bouquet first",
+                  text: "Catalogue photos are edited best-cases. Ask for a photo of the exact bouquet being sent — we send one on WhatsApp for your approval before dispatch, every time.",
+                },
+                {
+                  icon: <Clock size={20} />,
+                  title: "Short time between tying and doorstep",
+                  text: "Flowers fade by the hour once cut. Order before 4:00 PM and your bouquet is delivered the same day within 2 to 5 hours — not carried over to tomorrow.",
+                },
+                {
+                  icon: <Wallet size={20} />,
+                  title: "The size matches the occasion",
+                  text: "A Rs. 1,239 single rose can be the perfect first gift; a Rs. 7,499 arrangement would be too much. The guide below matches size to moment, so you spend where it counts.",
+                },
+              ].map((item, i) => (
+                <div key={i} className="flex items-start gap-3 bg-white rounded-xl p-5 border border-[#E5DED2]">
+                  <span className="text-[#8B1E2D] mt-0.5">{item.icon}</span>
+                  <div>
+                    <h3 className="font-semibold text-sm">{item.title}</h3>
+                    <p className="text-sm text-[#2A2A2A] mt-1 leading-relaxed">{item.text}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Choose by occasion + featured picks */}
+        <section className="w-full py-12 px-4 sm:px-6 bg-[#F8F3EA]">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-center mb-4">
+              Choose by Occasion: Our Real Picks
+            </h2>
+            <p className="text-center text-sm text-[#2A2A2A] mb-8 max-w-2xl mx-auto leading-relaxed">
+              Start from the moment, not the flower. Each pick below is a real product from our current catalogue, at its real price.
+            </p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {picks.map(({ product, occasion, note }) => (
+                <Link
+                  key={product.slug}
+                  href={`/products/${product.slug}`}
+                  className="bg-white border border-[#E5DED2] rounded-xl overflow-hidden hover:shadow-md transition block"
+                >
+                  <div className="relative w-full aspect-[4/3] bg-[#F8F3EA]">
+                    <Image
+                      src={product.image}
+                      alt={`${product.title} — bouquet available with same-day delivery in Lahore`}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <p className="text-[11px] font-bold uppercase tracking-wider text-[#8B1E2D]">{occasion}</p>
+                    <h3 className="font-semibold mt-1">{product.title}</h3>
+                    <p className="text-[#8B1E2D] font-bold mt-1">Rs. {product.price.toLocaleString()}</p>
+                    <p className="text-sm text-[#2A2A2A] mt-2 leading-relaxed">{note}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+            <div className="text-center mt-8 space-y-2">
+              <p className="text-sm text-[#2A2A2A]">
+                <Gift className="inline w-4 h-4 text-[#8B1E2D] mr-1" />
+                Planning a birthday? See our <Link href="/birthday-surprises" className="text-[#8B1E2D] font-semibold hover:underline">birthday surprises</Link> for flowers with cakes and gifts.
+              </p>
+              <p className="text-sm text-[#2A2A2A]">
+                <Heart className="inline w-4 h-4 text-[#8B1E2D] mr-1" />
+                Roses specifically? Browse the full <Link href="/roses" className="text-[#8B1E2D] font-semibold hover:underline">rose bouquet collection</Link>.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Budget guide */}
+        <section className="w-full py-12 px-4 sm:px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-center mb-4">
+              What Each Budget Honestly Buys
+            </h2>
+            <p className="text-center text-sm text-[#2A2A2A] mb-8 max-w-2xl mx-auto leading-relaxed">
+              No inflated promises — these are the real bands across our catalogue. Every order includes free delivery in listed Lahore areas and a WhatsApp photo before dispatch.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {BUDGET_BANDS.map((b) => (
+                <div key={b.title} className="border border-[#E5DED2] rounded-xl p-5 bg-white hover:shadow-md transition">
+                  <h3 className="font-semibold text-lg">{b.title}</h3>
+                  <p className="text-[#8B1E2D] font-bold mt-1">{b.band}</p>
                   <p className="text-sm text-[#2A2A2A] mt-2 leading-relaxed">{b.desc}</p>
                 </div>
               ))}
             </div>
+            <p className="text-center text-sm text-[#2A2A2A] mt-6">
+              Adding chocolate? Chocolate bouquets start with the Chocolate Rose Bouquet at Rs. 2,999. For the complete list, see our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">Lahore flower price guide</Link>.
+            </p>
           </div>
         </section>
 
-        {/* Delivery areas */}
+        {/* Freshness checklist */}
         <section className="w-full py-12 px-4 sm:px-6 bg-[#F8F3EA]">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-center mb-4">
-              Delivery Areas
+              The Freshness Checklist — Ask Any Florist
             </h2>
-            <p className="text-center text-sm text-[#2A2A2A] mb-6">
-              Free same-day delivery across all listed areas. Delivery fee for unlisted areas is confirmed on WhatsApp before you order.
+            <p className="text-center text-sm text-[#2A2A2A] mb-8 max-w-2xl mx-auto leading-relaxed">
+              Whoever you order from in Lahore, ask these five questions first. Our own answers are alongside, so you can compare.
             </p>
-            <div className="flex flex-wrap gap-2 justify-center">
-              {DELIVERY_AREAS.map((area) => (
-                <span key={area} className="inline-flex items-center gap-1 bg-white border border-[#E5DED2] rounded-full px-4 py-2 text-sm">
-                  <MapPin size={14} className="text-[#8B1E2D]" /> {area}
-                </span>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* How ordering works */}
-        <section className="w-full py-12 px-4 sm:px-6">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-center mb-8">
-              How Ordering Works
-            </h2>
-            <div className="grid sm:grid-cols-4 gap-4">
+            <div className="space-y-3 max-w-3xl mx-auto">
               {[
-                { icon: <MessageCircle size={24} />, title: "1. Choose", desc: "Browse bouquets online or message us on WhatsApp with your budget and occasion." },
-                { icon: <Camera size={24} />, title: "2. Approve", desc: "Our florist hand-ties your bouquet fresh and sends a real photo for your approval." },
-                { icon: <Truck size={24} />, title: "3. We Deliver", desc: "Same-day delivery in 2–5 hours across Lahore. Midnight slot available for surprises." },
-                { icon: <Star size={24} />, title: "4. They Smile", desc: "Your loved one receives fresh flowers with a handwritten card message." },
-              ].map((s) => (
-                <div key={s.title} className="text-center p-4">
-                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-[#F8F3EA] text-[#8B1E2D] mb-3">
-                    {s.icon}
-                  </div>
-                  <h3 className="font-semibold">{s.title}</h3>
-                  <p className="text-sm text-[#2A2A2A] mt-2">{s.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Why choose us */}
-        <section className="w-full py-12 px-4 sm:px-6 bg-[#F8F3EA]">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-center mb-8">
-              Why Customers Choose Lahore Bouquet
-            </h2>
-            <div className="grid sm:grid-cols-2 gap-4">
-              {[
-                { icon: <Camera size={20} />, text: "WhatsApp photo approval before dispatch — you see the exact bouquet" },
-                { icon: <Clock size={20} />, text: "Same-day delivery in 2–5 hours for orders before 4:00 PM" },
-                { icon: <Truck size={20} />, text: "Free delivery across all listed Lahore areas, no hidden charges" },
-                { icon: <ShieldCheck size={20} />, text: "Freshness promise — damaged flowers replaced or refunded" },
+                {
+                  q: "Is the bouquet tied after I order, or pre-made?",
+                  a: "Ours is hand-tied to order — nothing is pulled pre-wrapped from a shelf.",
+                },
+                {
+                  q: "Can I see a photo of my actual bouquet before it leaves?",
+                  a: "Yes — a real photo is sent on WhatsApp for your approval before dispatch, on every order.",
+                },
+                {
+                  q: "How fast will it reach them, and what is the cut-off?",
+                  a: "Order before 4:00 PM for same-day delivery in 2 to 5 hours. Midnight surprises (11:30 PM–12:15 AM) are booked before 8:00 PM.",
+                },
+                {
+                  q: "Is delivery free in my area?",
+                  a: "Free across all listed Lahore areas — DHA, Gulberg, Model Town, Johar Town, Bahria Town, Cantt and more. For unlisted areas, the fee is confirmed on WhatsApp before you order.",
+                },
+                {
+                  q: "How can I pay?",
+                  a: "Cash on delivery, bank transfer, JazzCash, EasyPaisa or international cards — whatever suits you.",
+                },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3 bg-white rounded-xl p-4 border border-[#E5DED2]">
-                  <span className="text-[#8B1E2D] mt-0.5">{item.icon}</span>
-                  <p className="text-sm">{item.text}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Customer Reviews */}
-        <section className="w-full py-12 px-4 sm:px-6 bg-[#F8F3EA]">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-center mb-8">
-              Customer Reviews
-            </h2>
-            <div className="grid sm:grid-cols-3 gap-4">
-              {[
-                { name: "Tayyaba", text: "Thank you very much. Your service was professional, and reasonably priced. I truly appreciate your efficiency and customer care. Highly satisfied and would definitely recommend your services!" },
-                { name: "Mian Waiz", text: "Ordered a chocolate bouquet — excellent quality and beautiful presentation!" },
-                { name: "Shah Rajpoot", text: "I ordered a red rose bouquet today — honestly, I had a really good experience!" },
-              ].map((r) => (
-                <div key={r.name} className="bg-white border border-[#E5DED2] rounded-xl p-5">
-                  <div className="flex gap-0.5 mb-3" role="img" aria-label="5 out of 5 stars">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} size={16} className="fill-[#C6A15B] text-[#C6A15B]" />
-                    ))}
+                  <ClipboardCheck size={20} className="text-[#8B1E2D] shrink-0 mt-0.5" />
+                  <div>
+                    <h3 className="font-semibold text-sm">{item.q}</h3>
+                    <p className="text-sm text-[#2A2A2A] mt-1 leading-relaxed">{item.a}</p>
                   </div>
-                  <p className="text-sm text-[#2A2A2A] leading-relaxed">"{r.text}"</p>
-                  <p className="text-xs font-semibold mt-3 text-[#8B1E2D]">— {r.name}</p>
                 </div>
               ))}
             </div>
-            <div className="text-center mt-6">
-              <a
-                href="https://g.page/r/CUmgyWPjM_pKEAI/review"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#8B1E2D] text-white hover:bg-[#C6A15B] hover:text-[#0B0B0B] font-bold text-xs uppercase tracking-wider transition-all"
-              >
-                <Star className="w-4 h-4" /> Leave a Google Review
-              </a>
-            </div>
+            <p className="text-center text-sm text-[#2A2A2A] mt-8 max-w-2xl mx-auto leading-relaxed">
+              <Sun className="inline w-4 h-4 text-[#C6A15B] mr-1" />
+              Once it arrives: trim the stems at an angle, use a clean vase with fresh water, and keep it out of direct sunlight — most bouquets then stay presentable for the better part of a week.
+            </p>
           </div>
         </section>
 
-        {/* Related pages */}
-        <section className="w-full py-12 px-4 sm:px-6">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-center mb-8">
-              Explore More
-            </h2>
-            <div className="grid sm:grid-cols-2 gap-4">
-              <Link href="/prices" className="border border-[#E5DED2] rounded-xl p-5 hover:shadow-md transition block">
-                <h3 className="font-semibold">Lahore Flower Price Guide 2026</h3>
-                <p className="text-sm text-[#2A2A2A] mt-1">Complete transparent pricing for every bouquet and service.</p>
-              </Link>
-              <Link href="/flower-delivery-in-lahore" className="border border-[#E5DED2] rounded-xl p-5 hover:shadow-md transition block">
-                <h3 className="font-semibold">Same-Day Flower Delivery in Lahore</h3>
-                <p className="text-sm text-[#2A2A2A] mt-1">2–5 hour express delivery across all listed areas.</p>
-              </Link>
-              <Link href="/midnight-flower-delivery-lahore" className="border border-[#E5DED2] rounded-xl p-5 hover:shadow-md transition block">
-                <h3 className="font-semibold">Midnight Flower Delivery</h3>
-                <p className="text-sm text-[#2A2A2A] mt-1">Surprise birthdays with our 11:30 PM – 12:15 AM slot.</p>
-              </Link>
-              <Link href="/delivery-areas" className="border border-[#E5DED2] rounded-xl p-5 hover:shadow-md transition block">
-                <h3 className="font-semibold">Delivery Areas & Fees</h3>
-                <p className="text-sm text-[#2A2A2A] mt-1">Full list of areas with free delivery across Lahore.</p>
-              </Link>
-              <Link href="/flower-delivery-islamabad" className="border border-[#E5DED2] rounded-xl p-5 hover:shadow-md transition block">
-                <h3 className="font-semibold">Flower Delivery in Islamabad</h3>
-                <p className="text-sm text-[#2A2A2A] mt-1">Same-day delivery in 2-5 hours across Islamabad sectors.</p>
-              </Link>
-            </div>
-          </div>
-        </section>
+        {/* Customer Reviews (real Sanity reviews, self-hides when empty) */}
+        <ReviewsSection reviews={reviews} />
 
         {/* FAQ */}
         <section className="w-full py-12 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
             <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-center mb-8">
-              Frequently Asked Questions
+              Choosing a Bouquet: Questions People Ask
             </h2>
             <div className="space-y-4">
               {FAQS.map((f) => (
@@ -333,18 +378,45 @@ export default function BestBouquetInLahorePage() {
           </div>
         </section>
 
-        {/* Contact */}
+        {/* Keep exploring */}
+        <section className="w-full py-12 px-4 sm:px-6 bg-[#F8F3EA]">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-center mb-8">
+              Ready to Order?
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link href="/bouquets" className="border border-[#E5DED2] rounded-xl p-5 bg-white hover:shadow-md transition block">
+                <h3 className="font-semibold">All Bouquets</h3>
+                <p className="text-sm text-[#2A2A2A] mt-1">The full catalogue — filter by price and find the one that fits.</p>
+              </Link>
+              <Link href="/prices" className="border border-[#E5DED2] rounded-xl p-5 bg-white hover:shadow-md transition block">
+                <h3 className="font-semibold">Lahore Flower Price Guide 2026</h3>
+                <p className="text-sm text-[#2A2A2A] mt-1">Complete transparent pricing for every bouquet and service.</p>
+              </Link>
+              <Link href="/roses" className="border border-[#E5DED2] rounded-xl p-5 bg-white hover:shadow-md transition block">
+                <h3 className="font-semibold">Rose Bouquets</h3>
+                <p className="text-sm text-[#2A2A2A] mt-1">Red, pink and mixed rose bouquets for romantic occasions.</p>
+              </Link>
+              <Link href="/birthday-surprises" className="border border-[#E5DED2] rounded-xl p-5 bg-white hover:shadow-md transition block">
+                <h3 className="font-semibold">Birthday Surprises</h3>
+                <p className="text-sm text-[#2A2A2A] mt-1">Bouquets with cakes, gifts and midnight delivery for birthdays.</p>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact CTA */}
         <section className="w-full py-12 px-4 sm:px-6 bg-[#8B1E2D] text-white">
           <div className="max-w-4xl mx-auto text-center space-y-4">
             <h2 className="font-playfair text-2xl sm:text-3xl font-bold">
-              Order Your Bouquet Today
+              Still Deciding? Tell Us the Occasion
             </h2>
-            <p className="text-white/90">
-              WhatsApp us now for same-day delivery across Lahore
+            <p className="text-white/90 max-w-xl mx-auto">
+              Message us the occasion and your budget on WhatsApp — we will suggest two or three real options with photos, and deliver today if you order before 4:00 PM.
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
               <a
-                href={whatsappLink("Hi! I want to order the best bouquet in Lahore")}
+                href={whatsappLink("Hi! I need help choosing a bouquet in Lahore")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-white text-[#8B1E2D] px-6 py-3 rounded-full font-semibold hover:bg-[#F8F3EA] transition"
@@ -358,8 +430,15 @@ export default function BestBouquetInLahorePage() {
                 <Phone size={18} /> Call Now
               </a>
             </div>
+            <p className="text-sm text-white/70 flex items-center justify-center gap-2">
+              <Truck size={14} /> Same-day delivery in 2–5 hours
+              <span aria-hidden="true">·</span>
+              <MapPin size={14} /> Across Lahore
+              <span aria-hidden="true">·</span>
+              Open daily 9:00 AM – 1:00 AM
+            </p>
             <p className="text-sm text-white/70">
-              Email: {BUSINESS.email} | Open daily 9:00 AM – 1:00 AM
+              Email: {BUSINESS.email}
             </p>
             <p className="text-sm">
               <Link href="/" className="underline hover:no-underline">← Back to Homepage</Link>
