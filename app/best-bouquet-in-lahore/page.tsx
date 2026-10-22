@@ -2,7 +2,6 @@ export const revalidate = 3600;
 import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { Phone, MessageCircle, Truck, Clock, Camera, MapPin, HelpCircle, ClipboardCheck, Wallet, Heart, Gift, Sun, Flower2 } from "lucide-react";
 import { SITE_URL, BUSINESS, whatsappLink, itemListSchema } from "@/lib/business";
 import { getSanityProducts, getSanityReviews } from "@/sanity/lib/fetch";
@@ -40,6 +39,18 @@ export const metadata: Metadata = {
     images: [`${SITE_URL}/og-image.jpg`],
   },
 };
+
+/**
+ * Direct Sanity CDN URL with Sanity-side transforms for this page's featured
+ * picks. Deliberately bypasses next/image (/_next/image) so the guide's
+ * product photos never depend on the Vercel image-optimization quota.
+ * Non-Sanity sources (e.g. the local fallback image) are returned unchanged.
+ */
+function directCdnUrl(src: string, w = 800, h = 600): string {
+  if (!src.includes("cdn.sanity.io")) return src;
+  const base = src.split("?")[0];
+  return `${base}?w=${w}&h=${h}&fit=crop&auto=format`;
+}
 
 /** Real products featured in this guide — pulled live from Sanity by slug. */
 const FEATURED: { slug: string; occasion: string; note: string }[] = [
@@ -253,12 +264,13 @@ export default async function BestBouquetInLahorePage() {
                   className="bg-white border border-[#E5DED2] rounded-xl overflow-hidden hover:shadow-md transition block"
                 >
                   <div className="relative w-full aspect-[4/3] bg-[#F8F3EA]">
-                    <Image
-                      src={product.image}
+                    {/* Plain <img> on a direct Sanity CDN URL — see directCdnUrl above. */}
+                    <img
+                      src={directCdnUrl(product.image)}
                       alt={`${product.title} — bouquet available with same-day delivery in Lahore`}
-                      fill
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className="object-cover"
+                      width={800}
+                      height={600}
+                      className="absolute inset-0 w-full h-full object-cover"
                       loading="lazy"
                     />
                   </div>
