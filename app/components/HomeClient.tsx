@@ -175,12 +175,12 @@ export default function HomeClient({
 
             {/* Main Heading: dark with burgundy accent */}
             <h1 className="font-playfair text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-[#0B0B0B] leading-tight">
-              Fresh Flowers Delivered in Lahore — <span className="text-[#8B1E2D]">Same Day, Free Delivery</span>
+              Lahore Bouquet — Fresh Flowers Delivered in Lahore, <span className="text-[#8B1E2D]">Same Day &amp; Free</span>
             </h1>
 
-            {/* Quick answer (AEO) */}
+            {/* Tagline / hero supporting line */}
             <p className="hero-answer text-[#2A2A2A] text-xs sm:text-sm lg:text-base max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              <strong>Hand-tied fresh bouquets start at Rs. 1,239 and arrive in 2–5 hours.</strong> Lahore Bouquet hand-ties every order fresh — roses, sunflowers, lilies and money bouquets — sends you a photo and video on WhatsApp before dispatch, and delivers across DHA, Gulberg, Model Town, Bahria Town and Johar Town, with a midnight surprise slot for birthdays.
+              Fresh, hand-tied bouquets delivered FREE across Lahore in 2–5 hours — with a photo on WhatsApp before dispatch.
             </p>
 
             {/* Button System (Section 18):
