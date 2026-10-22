@@ -5,14 +5,14 @@ import { HOMEPAGE_FAQS } from "./data/homepage";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Flower Delivery in Lahore | Free Same-Day Delivery",
+    absolute: "Flower Delivery in Lahore | Free Same-Day Delivery — Lahore Bouquet",
   },
   description: "Fresh flower delivery in Lahore with FREE same-day delivery. Hand-tied bouquets from Rs. 1,239 — roses, sunflowers & chocolate bouquets. Order online or WhatsApp.",
   alternates: {
     canonical: `${SITE_URL}`,
   },
   openGraph: {
-    title: "Flower Delivery in Lahore | Free Same-Day Delivery",
+    title: "Flower Delivery in Lahore | Free Same-Day Delivery — Lahore Bouquet",
     description: "Fresh flower delivery in Lahore with FREE same-day delivery. Hand-tied bouquets from Rs. 1,239 — roses, sunflowers & chocolate bouquets. Order online or WhatsApp.",
     url: `${SITE_URL}`,
       type: "website",
