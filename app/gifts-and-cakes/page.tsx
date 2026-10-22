@@ -43,14 +43,13 @@ export default async function GiftsAndCakesPage({
   const params = await searchParams;
   const urlFilter = params.filter || params.category || "";
 
+  // Gifts section = gift-type products only, by category (no title-keyword mixing,
+  // so bouquets never leak in and every gift item is listed).
   const giftProducts = allProducts.filter(
     (p) =>
       p.category === "Gifts & Cakes" ||
-      p.category === "Chocolate Bouquets" ||
       p.category === "Birthday Cakes" ||
-      p.title.toLowerCase().includes("cake") ||
-      p.title.toLowerCase().includes("chocolate") ||
-      p.title.toLowerCase().includes("ferrero")
+      p.category === "Scents & Perfumes"
   );
 
   const itemListJsonLd = itemListSchema(giftProducts, `${SITE_URL}/gifts-and-cakes`, "Gifts & Cakes in Lahore");

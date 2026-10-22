@@ -69,6 +69,7 @@ export const productType = defineType({
           { title: 'Dried (Everlasting Florals)', value: 'Dried' },
           { title: 'Flower Boxes & Baskets', value: 'Flower Boxes' },
           { title: 'Chocolate Bouquets', value: 'Chocolate Bouquets' },
+          { title: 'Balloons (Helium Balloons & Balloon Gifts)', value: 'Balloons' },
           { title: 'Wedding Décor (Car & Room Decor)', value: 'Wedding Décor' },
           { title: 'Gifts & Cakes (Bakery & Combos)', value: 'Gifts & Cakes' },
           { title: 'Birthday Cakes', value: 'Birthday Cakes' },

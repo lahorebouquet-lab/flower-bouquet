@@ -4,6 +4,9 @@ import Link from "next/link";
 import { PartyPopper, CircleDot, Rainbow, MessageCircle, Truck, Camera, Sparkles, BadgeCheck } from "lucide-react";
 import { SITE_URL, whatsappLink } from "@/lib/business";
 import RelatedProducts from "../components/RelatedProducts";
+import ProductCard from "../components/ProductCard";
+import { getSanityProducts } from "@/sanity/lib/fetch";
+import { ALL_PRODUCTS } from "../data/products";
 
 export const metadata: Metadata = {
   title: {
@@ -102,7 +105,11 @@ const PRODUCTS = [
   },
 ];
 
-export default function HeliumBalloonsLahorePage() {
+export default async function HeliumBalloonsLahorePage() {
+  const sanityProducts = await getSanityProducts();
+  const allProducts = sanityProducts.length > 0 ? sanityProducts : ALL_PRODUCTS;
+  const balloonProducts = allProducts.filter((p) => p.category === "Balloons");
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -178,6 +185,21 @@ export default function HeliumBalloonsLahorePage() {
           ))}
         </div>
       </section>
+
+      {/* Shop balloon products (Sanity "Balloons" category) */}
+      {balloonProducts.length > 0 && (
+        <section className="space-y-4">
+          <div className="flex items-center gap-2">
+            <PartyPopper className="w-5 h-5 text-[#8B1E2D]" />
+            <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Shop Balloon Gifts &amp; Sets</h2>
+          </div>
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
+            {balloonProducts.map((p) => (
+              <ProductCard key={`balloon-${p.id}`} product={p} />
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Decoration services */}
       <section className="p-6 sm:p-8 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] shadow-sm space-y-4">

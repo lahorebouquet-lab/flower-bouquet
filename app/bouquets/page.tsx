@@ -64,7 +64,11 @@ export default async function BouquetsPage({
   let bouquets = allProducts.filter(p =>
     p.category === "Bouquets" ||
     p.category === "Roses" ||
+    p.category === "Velvet Red Roses" ||
+    p.category === "Pure White Roses" ||
     p.category === "Sunflowers" ||
+    p.category === "Flower Boxes" ||
+    p.category === "Chocolate Bouquets" ||
     p.category === "Crochet" ||
     p.category === "Dried"
   );
