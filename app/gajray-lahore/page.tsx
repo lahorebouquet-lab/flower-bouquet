@@ -68,6 +68,14 @@ const FAQS = [
   {
     q: "When do people wear gajray?",
     a: "Gajray are a must-have for mehndi nights and weddings, but people wear gajray for Eid, dholkis and festive family dinners too — they're the simplest way to add a traditional touch to any outfit. Order a fresh pair from Rs. 370 and we'll deliver them on the day of your event."
+  },
+  {
+    q: "What is Gajra Day 2026?",
+    a: "Gajra Day is a celebration of the traditional gajra, marked by wearing and gifting fresh flower gajray. Our gajray are hand-tied fresh for the day — a classic pair starts at Rs. 370 — and we deliver across Lahore, so you can join the celebration without visiting a market. Send us your outfit colour on WhatsApp (0310-4225974) and we'll match the flowers."
+  },
+  {
+    q: "Can I get gajray delivered in Lahore on Gajra Day 2026?",
+    a: "Yes. Order on WhatsApp (0310-4225974) — for Gajra Day, booking a day ahead is best, and orders placed before 4:00 PM are still delivered the same day within 2–5 hours with FREE delivery. We photograph your actual gajray for WhatsApp approval before dispatch, and you can pay by Cash on Delivery, bank transfer, JazzCash, EasyPaisa or card."
   }
 ];
 
