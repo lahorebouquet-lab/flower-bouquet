@@ -551,9 +551,6 @@ export default function HomeClient({
         </div>
       </section>
 
-      {/* 8. CUSTOMER REVIEWS (only renders when Sanity reviews exist) */}
-      <ReviewsSection reviews={initialReviews ?? []} />
-
       {/* 9. BRAND STORY / ABOUT TEASER (#F8F3EA background, #101012 heading, #2A2A2A body, #C6A15B line, #8B1E2D words) */}
       <section className="w-full py-16 px-4 sm:px-6 bg-[#F8F3EA] border-b border-[#E5DED2] text-[#101012]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
@@ -715,6 +712,10 @@ export default function HomeClient({
           </div>
         </div>
       </section>
+
+      {/* 12. CUSTOMER REVIEWS — bottom of homepage, above the footer
+          (zerelle-style carousel + write-a-review form; approved Sanity reviews only) */}
+      <ReviewsSection reviews={initialReviews ?? []} />
     </>
   );
 }

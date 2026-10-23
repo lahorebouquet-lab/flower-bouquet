@@ -41,6 +41,40 @@ export const reviewType = defineType({
       initialValue: true,
     }),
     defineField({
+      name: 'status',
+      title: 'Status',
+      description:
+        'Only "Approved" reviews appear on the website. Website form submissions arrive as "Pending" — check them, then approve to publish.',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'Pending (not on website)', value: 'pending' },
+          { title: 'Approved (shown on website)', value: 'approved' },
+        ],
+        layout: 'radio',
+      },
+      initialValue: 'pending',
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'source',
+      title: 'Source',
+      description: 'Where this review came from (website form, Google, added manually).',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'Website form', value: 'website' },
+          { title: 'Google', value: 'google' },
+          { title: 'Added manually', value: 'manual' },
+        ],
+      },
+    }),
+    defineField({
+      name: 'reviewDate',
+      title: 'Review Date (optional, shown on website)',
+      type: 'date',
+    }),
+    defineField({
       name: 'photo',
       title: 'Customer Photo (optional)',
       type: 'image',
@@ -53,10 +87,12 @@ export const reviewType = defineType({
       rating: 'rating',
       location: 'location',
       bouquet: 'bouquet',
+      status: 'status',
     },
-    prepare({ title, rating, location, bouquet }) {
+    prepare({ title, rating, location, bouquet, status }) {
       const stars = '★'.repeat(rating || 5);
-      const sub = [location, bouquet].filter(Boolean).join(' • ');
+      const state = status === 'approved' ? '✅ Approved' : '⏳ Pending';
+      const sub = [state, location, bouquet].filter(Boolean).join(' • ');
       return {
         title: `${title} (${stars})`,
         subtitle: sub,

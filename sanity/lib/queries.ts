@@ -61,9 +61,10 @@ export const CATEGORIES_QUERY = groq`
   }
 `
 
-// Query all reviews (currently unused — all review docs removed as unverified)
+// Query APPROVED reviews only — pending website submissions stay hidden
+// until the owner approves them in Sanity Studio.
 export const REVIEWS_QUERY = groq`
-  *[_type == "review"] | order(_createdAt desc) {
+  *[_type == "review" && status == "approved"] | order(_createdAt desc) {
     "id": _id,
     _id,
     name,
@@ -74,6 +75,7 @@ export const REVIEWS_QUERY = groq`
     "item": bouquet,
     bouquet,
     verified,
+    "date": reviewDate,
     "photo": photo.asset->url
   }
 `

@@ -106,6 +106,7 @@ export interface SanityReview {
   quote: string
   item?: string
   verified?: boolean
+  date?: string
   photo?: string
 }
 
