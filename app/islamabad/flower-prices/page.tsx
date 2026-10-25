@@ -11,12 +11,12 @@ export const metadata: Metadata = withSeo("/islamabad/flower-prices", {
   },
   description: "Transparent flower prices in Islamabad — hand-tied bouquets from Rs. 1,239, roses Rs. 2,600–3,800, free delivery in listed sectors. Last updated October 2026.",
   alternates: {
-    canonical: `${SITE_URL}/islamabad/flower-prices/`,
+    canonical: `${SITE_URL}/islamabad/flower-prices`,
   },
   openGraph: {
     title: "Flower Delivery Prices in Islamabad | Lahore Bouquet",
     description: "Transparent Islamabad flower prices. Bouquets from Rs. 1,239, free delivery in listed sectors.",
-    url: `${SITE_URL}/islamabad/flower-prices/`,
+    url: `${SITE_URL}/islamabad/flower-prices`,
     siteName: "Lahore Bouquet",
     type: "website",
     locale: "en_PK",
@@ -72,7 +72,7 @@ export default function IslamabadPricesPage() {
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}` },
       { "@type": "ListItem", position: 2, name: "Flower Delivery in Islamabad", item: `${SITE_URL}/flower-delivery-islamabad` },
-      { "@type": "ListItem", position: 3, name: "Flower Prices in Islamabad", item: `${SITE_URL}/islamabad/flower-prices/` },
+      { "@type": "ListItem", position: 3, name: "Flower Prices in Islamabad", item: `${SITE_URL}/islamabad/flower-prices` },
     ],
   };
 
@@ -119,7 +119,7 @@ export default function IslamabadPricesPage() {
           </div>
           <div className="text-center space-y-3 pt-2">
             <p className="text-sm"><strong>Delivery:</strong> FREE in listed sectors | <strong>Timing:</strong> Same-day 2–5 hours</p>
-            <Link href="/islamabad/bouquets/" className="inline-block px-6 py-3 rounded-full bg-[#8B1E2D] text-white text-sm font-bold hover:bg-[#C6A15B] hover:text-[#0B0B0B] transition-colors">
+            <Link href="/islamabad/bouquets" className="inline-block px-6 py-3 rounded-full bg-[#8B1E2D] text-white text-sm font-bold hover:bg-[#C6A15B] hover:text-[#0B0B0B] transition-colors">
               Shop Bouquets
             </Link>
           </div>

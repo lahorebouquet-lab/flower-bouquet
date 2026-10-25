@@ -63,6 +63,20 @@ const KIND_COPY = {
     care: "Every item is checked and packed on the day of delivery. Add fresh flowers or a cake from the same page to make it a complete surprise.",
     related: "More Gifts You May Like",
   },
+  perfume: {
+    noun: "order", badgeTitle: "Gift-Wrapped", badgeSub: "Sealed & Genuine",
+    stemsLabel: "Fragrance Notes:", wrapping: "Gift box with ribbon and a handwritten message card",
+    careTitle: "About This Fragrance",
+    care: "Each bottle is sealed and checked before it is gift-wrapped. Store away from heat and direct sunlight to keep the scent at its best.",
+    related: "More Fragrances You May Like",
+  },
+  decor: {
+    noun: "setup", badgeTitle: "Set Up On Site", badgeSub: "Fresh Flowers",
+    stemsLabel: "What's Included:", wrapping: "Installed by our team at your home, hall or marquee",
+    careTitle: "Booking & Setup",
+    care: "Share the venue, date and colour theme on WhatsApp for a free quote. Book 1–2 weeks ahead in wedding season; our team sets up on the day and clears flowers afterwards on request.",
+    related: "More Décor Ideas",
+  },
   jewellery: {
     noun: "order", badgeTitle: "Made Same Day", badgeSub: "Fresh Blooms",
     stemsLabel: "Flowers Used:", wrapping: "Packed in a chilled box to keep the flowers fresh",
@@ -105,7 +119,9 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   const tail: Record<ProductKind, string> = {
     cake: "baked to order and delivered fresh in Lahore today. Add your message, flowers or balloons.",
     gift: "gift-wrapped and delivered in Lahore today, with a photo before dispatch. Add flowers or a cake.",
+    perfume: "gift-wrapped perfume delivered in Lahore today. Add a bouquet or a cake to make it a surprise.",
     jewellery: "fresh floral jewellery for mehndi and nikkah, made on the day and delivered across Lahore.",
+    decor: "set up at your home, hall or marquee in Lahore. Free quote and design on WhatsApp.",
     bouquet: "hand-tied fresh and delivered across Lahore in 2–5 hours, with a photo before dispatch.",
   };
   let metaDesc = `${product.title}, ${priceStr}: ${tail[kind]}`;
@@ -197,6 +213,12 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       case "Fresh Flower Gajray": return "/gajray-lahore";
       case "Crochet": return "/crochet-bouquets";
       case "Dried": return "/dried-flowers";
+      case "Birthday Cakes": return "/gifts-and-cakes";
+      case "Scents & Perfumes": return "/collections/scents-and-perfumes";
+      case "Velvet Red Roses": return "/roses/red-roses";
+      case "Pure White Roses": return "/roses/white-roses";
+      case "Chocolate Bouquets": return "/chocolate-bouquets-lahore";
+      case "Balloons": return "/helium-balloons-lahore";
       default: return "/bouquets";
     }
   };

@@ -11,12 +11,12 @@ export const metadata: Metadata = withSeo("/islamabad/bouquets", {
   },
   description: "Order fresh flower bouquets in Islamabad — roses, sunflowers, lilies & mixed bouquets with same-day delivery. From Rs. 1,239. WhatsApp: 0310-4225974",
   alternates: {
-    canonical: `${SITE_URL}/islamabad/bouquets/`,
+    canonical: `${SITE_URL}/islamabad/bouquets`,
   },
   openGraph: {
     title: "Flower Bouquets in Islamabad | Lahore Bouquet",
     description: "Fresh bouquets delivered same-day in Islamabad. Roses, sunflowers & more from Rs. 1,239.",
-    url: `${SITE_URL}/islamabad/bouquets/`,
+    url: `${SITE_URL}/islamabad/bouquets`,
     siteName: "Lahore Bouquet",
     type: "website",
     locale: "en_PK",
@@ -73,7 +73,7 @@ export default function IslamabadBouquetsPage() {
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}` },
       { "@type": "ListItem", position: 2, name: "Flower Delivery in Islamabad", item: `${SITE_URL}/flower-delivery-islamabad` },
-      { "@type": "ListItem", position: 3, name: "Bouquets in Islamabad", item: `${SITE_URL}/islamabad/bouquets/` },
+      { "@type": "ListItem", position: 3, name: "Bouquets in Islamabad", item: `${SITE_URL}/islamabad/bouquets` },
     ],
   };
 

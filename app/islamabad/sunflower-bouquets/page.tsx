@@ -10,11 +10,11 @@ export const metadata: Metadata = withSeo("/islamabad/sunflower-bouquets", {
     absolute: "Sunflower Bouquets in Islamabad | Bright & Fresh | Lahore Bouquet",
   },
   description: "Order bright sunflower bouquets in Islamabad with same-day delivery in 2-5 hours. From Rs. 1,699. Fresh hand-tied sunflowers. WhatsApp: 0310-4225974",
-  alternates: { canonical: `${SITE_URL}/islamabad/sunflower-bouquets/` },
+  alternates: { canonical: `${SITE_URL}/islamabad/sunflower-bouquets` },
   openGraph: {
     title: "Sunflower Bouquets in Islamabad | Lahore Bouquet",
     description: "Bright sunflower bouquets, same-day Islamabad. From Rs. 1,699.",
-    url: `${SITE_URL}/islamabad/sunflower-bouquets/`,
+    url: `${SITE_URL}/islamabad/sunflower-bouquets`,
     siteName: "Lahore Bouquet",
     type: "website",
     locale: "en_PK",
@@ -37,7 +37,7 @@ export default function Page() {
   const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}` },
     { "@type": "ListItem", position: 2, name: "Flower Delivery in Islamabad", item: `${SITE_URL}/flower-delivery-islamabad` },
-    { "@type": "ListItem", position: 3, name: "Sunflower Bouquets in Islamabad", item: `${SITE_URL}/islamabad/sunflower-bouquets/` },
+    { "@type": "ListItem", position: 3, name: "Sunflower Bouquets in Islamabad", item: `${SITE_URL}/islamabad/sunflower-bouquets` },
   ]};
   return (
     <main className="bg-[#F8F3EA] text-[#2A2A2A]">

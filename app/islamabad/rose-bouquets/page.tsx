@@ -10,11 +10,11 @@ export const metadata: Metadata = withSeo("/islamabad/rose-bouquets", {
     absolute: "Red Rose Bouquets in Islamabad | Fresh Roses Delivery | Lahore Bouquet",
   },
   description: "Order red rose bouquets in Islamabad — fresh hand-tied roses delivered same-day in 2-5 hours. From Rs. 1,499. WhatsApp: 0310-4225974",
-  alternates: { canonical: `${SITE_URL}/islamabad/rose-bouquets/` },
+  alternates: { canonical: `${SITE_URL}/islamabad/rose-bouquets` },
   openGraph: {
     title: "Red Rose Bouquets in Islamabad | Lahore Bouquet",
     description: "Fresh red roses delivered same-day in Islamabad. From Rs. 1,499.",
-    url: `${SITE_URL}/islamabad/rose-bouquets/`,
+    url: `${SITE_URL}/islamabad/rose-bouquets`,
     siteName: "Lahore Bouquet",
     type: "website",
     locale: "en_PK",
@@ -44,7 +44,7 @@ export default function Page() {
   const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}` },
     { "@type": "ListItem", position: 2, name: "Flower Delivery in Islamabad", item: `${SITE_URL}/flower-delivery-islamabad` },
-    { "@type": "ListItem", position: 3, name: "Rose Bouquets in Islamabad", item: `${SITE_URL}/islamabad/rose-bouquets/` },
+    { "@type": "ListItem", position: 3, name: "Rose Bouquets in Islamabad", item: `${SITE_URL}/islamabad/rose-bouquets` },
   ]};
   return (
     <main className="bg-[#F8F3EA] text-[#2A2A2A]">
@@ -56,7 +56,7 @@ export default function Page() {
           <p className="text-sm sm:text-base leading-relaxed"><strong>Fresh red rose bouquets delivered in Islamabad</strong> — hand-tied roses for anniversaries, proposals and romantic surprises. <strong>From Rs. 1,499</strong>, same-day delivery in 2–5 hours. WhatsApp: <strong>0310-4225974</strong>.</p>
           <div className="flex flex-wrap justify-center gap-3 pt-2">
             <a href={whatsappLink("Hi Lahore Bouquet! I want to order red roses for delivery in Islamabad.")} target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-full bg-[#128C7E] text-white text-sm font-bold hover:opacity-90 transition-opacity">Order Red Roses</a>
-            <Link href="/islamabad/bouquets/" className="px-6 py-3 rounded-full border border-[#8B1E2D] text-[#8B1E2D] text-sm font-bold hover:bg-[#8B1E2D] hover:text-white transition-colors">All Bouquets</Link>
+            <Link href="/islamabad/bouquets" className="px-6 py-3 rounded-full border border-[#8B1E2D] text-[#8B1E2D] text-sm font-bold hover:bg-[#8B1E2D] hover:text-white transition-colors">All Bouquets</Link>
           </div>
         </div>
       </section>

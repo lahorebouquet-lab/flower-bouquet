@@ -10,11 +10,11 @@ export const metadata: Metadata = withSeo("/islamabad/valentines-day", {
     absolute: "Valentine's Day Flowers in Islamabad 2027 | Romantic Gifts | Lahore Bouquet",
   },
   description: "Valentine's Day 2027 flowers in Islamabad — romantic rose bouquets, luxury deals from Rs. 5,000 to Rs. 100,000. Enquire about Islamabad delivery. WhatsApp: 0310-4225974",
-  alternates: { canonical: `${SITE_URL}/islamabad/valentines-day/` },
+  alternates: { canonical: `${SITE_URL}/islamabad/valentines-day` },
   openGraph: {
     title: "Valentine's Day Flowers in Islamabad 2027 | Lahore Bouquet",
     description: "Valentine's deals Rs. 5,000–100,000. Enquire about Islamabad delivery.",
-    url: `${SITE_URL}/islamabad/valentines-day/`,
+    url: `${SITE_URL}/islamabad/valentines-day`,
     siteName: "Lahore Bouquet",
     type: "website",
     locale: "en_PK",
@@ -37,7 +37,7 @@ export default function Page() {
   const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}` },
     { "@type": "ListItem", position: 2, name: "Flower Delivery in Islamabad", item: `${SITE_URL}/flower-delivery-islamabad` },
-    { "@type": "ListItem", position: 3, name: "Valentine's Day in Islamabad", item: `${SITE_URL}/islamabad/valentines-day/` },
+    { "@type": "ListItem", position: 3, name: "Valentine's Day in Islamabad", item: `${SITE_URL}/islamabad/valentines-day` },
   ]};
   return (
     <main className="bg-[#0B0B0B] text-white">

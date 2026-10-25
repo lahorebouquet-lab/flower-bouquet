@@ -11,12 +11,12 @@ export const metadata: Metadata = withSeo("/islamabad/anniversary-flowers", {
   },
   description: "Celebrate anniversaries in Islamabad with romantic rose bouquets delivered same-day in 2-5 hours. From Rs. 1,499. Order on WhatsApp: 0310-4225974",
   alternates: {
-    canonical: `${SITE_URL}/islamabad/anniversary-flowers/`,
+    canonical: `${SITE_URL}/islamabad/anniversary-flowers`,
   },
   openGraph: {
     title: "Anniversary Flowers in Islamabad | Lahore Bouquet",
     description: "Romantic anniversary bouquets delivered same-day in Islamabad. From Rs. 1,499.",
-    url: `${SITE_URL}/islamabad/anniversary-flowers/`,
+    url: `${SITE_URL}/islamabad/anniversary-flowers`,
     siteName: "Lahore Bouquet",
     type: "website",
     locale: "en_PK",
@@ -71,7 +71,7 @@ export default function IslamabadAnniversaryPage() {
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}` },
       { "@type": "ListItem", position: 2, name: "Flower Delivery in Islamabad", item: `${SITE_URL}/flower-delivery-islamabad` },
-      { "@type": "ListItem", position: 3, name: "Anniversary Flowers in Islamabad", item: `${SITE_URL}/islamabad/anniversary-flowers/` },
+      { "@type": "ListItem", position: 3, name: "Anniversary Flowers in Islamabad", item: `${SITE_URL}/islamabad/anniversary-flowers` },
     ],
   };
 
@@ -92,7 +92,7 @@ export default function IslamabadAnniversaryPage() {
             <a href={whatsappLink("Hi Lahore Bouquet! I want to order anniversary flowers for delivery in Islamabad.")} target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-full bg-[#128C7E] text-white text-sm font-bold hover:opacity-90 transition-opacity">
               Order Anniversary Flowers
             </a>
-            <Link href="/islamabad/bouquets/" className="px-6 py-3 rounded-full border border-[#8B1E2D] text-[#8B1E2D] text-sm font-bold hover:bg-[#8B1E2D] hover:text-white transition-colors">
+            <Link href="/islamabad/bouquets" className="px-6 py-3 rounded-full border border-[#8B1E2D] text-[#8B1E2D] text-sm font-bold hover:bg-[#8B1E2D] hover:text-white transition-colors">
               All Bouquets
             </Link>
           </div>
