@@ -83,7 +83,7 @@ export default async function GiftsAndCakesPage({
         name: "Are the cakes authentic from Layers Bakeshop?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. All cakes are picked up fresh from official Layers Bakeshop outlets on Lahore and DHA Lahore immediately prior to dispatch."
+          text: "Yes. All cakes are picked up fresh from official Layers Bakeshop outlets in Lahore just before dispatch."
         }
       },
       {
@@ -99,7 +99,7 @@ export default async function GiftsAndCakesPage({
         name: "Do you offer midnight surprise cake delivery?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes! We deliver between 11:30 PM and 12:15 AM so your loved ones are surprised right when the clock strikes 12 on their birthday or anniversary."
+          text: "Yes! We deliver between 11:30 PM and 12:15 AM so your loved ones are surprised around midnight on their birthday or anniversary."
         }
       },
       {
@@ -153,7 +153,7 @@ export default async function GiftsAndCakesPage({
 
           <div className="flex flex-wrap gap-4 pt-2 text-xs text-white/80">
             <span className="flex items-center gap-1.5">
-              <Truck className="w-4 h-4 text-[#C6A15B]" /> Express 2–4 Hours Across Lahore
+              <Truck className="w-4 h-4 text-[#C6A15B]" /> Express 2–5 Hours Across Lahore
             </span>
             <span className="flex items-center gap-1.5">
               <Camera className="w-4 h-4 text-[#C6A15B]" /> Live WhatsApp Photo Proof
@@ -215,7 +215,7 @@ export default async function GiftsAndCakesPage({
             Premium Cake & Chocolate Delivery Service in Lahore
           </h2>
           <p className="text-xs sm:text-sm text-[#444444] leading-relaxed">
-            Finding a reliable cake delivery service in Lahore that delivers on time, in pristine condition, and with genuine bakery quality can often be stressful. At Lahore Bouquet, we bridge that gap by partnering with Lahore’s favorite bakeshop, <strong>Layers Bakeshop</strong>, alongside providing imported confectionery like <strong>Ferrero Rocher, Nestle KitKat, Snickers, Mars, Bounty, Twix, and MrBeast Feastables</strong>.
+            Finding a reliable cake delivery service in Lahore that delivers on time, in pristine condition, and with genuine bakery quality can often be stressful. At Lahore Bouquet, we bridge that gap by partnering with Lahore’s favourite bakeshop, <strong>Layers Bakeshop</strong>, alongside providing imported confectionery like <strong>Ferrero Rocher, Nestle KitKat, Snickers, Mars, Bounty, Twix, and MrBeast Feastables</strong>.
           </p>
           <p className="text-xs sm:text-sm text-[#444444] leading-relaxed">
             Whether you want to send a decadent <em>Lotus Three Milk Cake</em> to DHA Phase 5, a romantic <em>Red Velvet Anniversary Cake</em> with 24 red roses to Gulberg, or a midnight birthday package to Bahria Town or Johar Town, our trained riders handle your orders with extreme care. Every cake is transported in upright secure cartons, protecting the delicate piping and toppings throughout Lahore's traffic.
@@ -237,7 +237,24 @@ export default async function GiftsAndCakesPage({
             <div className="p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2] space-y-1.5">
               <h3 className="font-bold text-sm text-[#0B0B0B]">All Lahore Sectors</h3>
               <p className="text-xs text-[#555555]">
-                Fast delivery across Gulberg, DHA, Bahria Town, Johar Town, Model Town, Cantt, Askari, Wapda Town, Faisal Town, and Mall Road.
+                Fast delivery across{" "}
+                {[
+                  ["Gulberg", "gulberg"],
+                  ["DHA", "dha"],
+                  ["Bahria Town", "bahria-town"],
+                  ["Johar Town", "johar-town"],
+                  ["Model Town", "model-town"],
+                  ["Cantt", "cantt"],
+                  ["Askari", "askari"],
+                  ["Wapda Town", "wapda-town"],
+                  ["Faisal Town", "faisal-town"],
+                ].map(([name, slug]) => (
+                  <React.Fragment key={slug}>
+                    <Link href={`/delivery-areas/${slug}`} className="text-[#8B1E2D] hover:underline">{name}</Link>
+                    {", "}
+                  </React.Fragment>
+                ))}
+                and <Link href="/delivery-areas" className="text-[#8B1E2D] hover:underline">all other areas of Lahore</Link>.
               </p>
             </div>
           </div>
@@ -254,7 +271,7 @@ export default async function GiftsAndCakesPage({
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 text-xs text-[#2A2A2A] leading-relaxed">
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Are the cakes authentic from Layers Bakeshop?</h3>
-            <p>Yes. All cakes are picked up fresh from official Layers Bakeshop outlets on Lahore and DHA Lahore immediately prior to dispatch.</p>
+            <p>Yes. All cakes are picked up fresh from official Layers Bakeshop outlets in Lahore just before dispatch.</p>
           </div>
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">How fast is the delivery in Lahore?</h3>
@@ -262,7 +279,7 @@ export default async function GiftsAndCakesPage({
           </div>
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Do you offer midnight surprise cake delivery?</h3>
-            <p>Yes! We deliver between 11:30 PM and 12:15 AM so your loved ones are surprised right when the clock strikes 12 on their birthday or anniversary.</p>
+            <p>Yes! We deliver between 11:30 PM and 12:15 AM so your loved ones are surprised around midnight on their birthday or anniversary.</p>
           </div>
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Can I add custom wording or candles?</h3>
