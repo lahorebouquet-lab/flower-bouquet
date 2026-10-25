@@ -34,6 +34,12 @@ function normalizeProductImages<T extends { image?: any; gallery?: any }>(p: T):
   };
 }
 
+/**
+ * Products that stay in Sanity but are hidden from every listing on the site
+ * (their product URLs redirect in next.config.ts). Not something we sell.
+ */
+export const HIDDEN_PRODUCT_SLUGS = new Set(["hova-hair-volume-powder"]);
+
 export async function getSanityProducts(limit?: number): Promise<Product[]> {
   try {
     const query = limit ? `${ALL_PRODUCTS_QUERY}[0...${limit}]` : ALL_PRODUCTS_QUERY;
@@ -43,7 +49,9 @@ export async function getSanityProducts(limit?: number): Promise<Product[]> {
       { next: { revalidate: 3600 } }
     )
     if (products && products.length > 0) {
-      return products.map(normalizeProductImages)
+      return products
+        .filter((p) => !HIDDEN_PRODUCT_SLUGS.has(p.slug ?? ""))
+        .map(normalizeProductImages)
     }
   } catch (err) {
     console.error('Error fetching Sanity products:', err)
