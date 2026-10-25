@@ -6,8 +6,9 @@ import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../components/ProductCard";
 import { Truck, Camera, MessageCircle, HelpCircle, Heart } from "lucide-react";
 import { SITE_URL, itemListSchema } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/crochet-bouquets", {
   title: {
     absolute: "Crochet Bouquets in Lahore | Handmade, Never Wilts — from Rs. 999",
   },
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+});
 
 export default async function CrochetBouquetsPage() {
   const allProducts = await getSanityProducts();

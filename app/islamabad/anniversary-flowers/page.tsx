@@ -3,8 +3,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, whatsappLink } from "@/lib/business";
 import { Heart, Clock, Truck, MessageCircle, HelpCircle } from "lucide-react";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/islamabad/anniversary-flowers", {
   title: {
     absolute: "Anniversary Flowers in Islamabad | Romantic Bouquets | Lahore Bouquet",
   },
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     title: "Anniversary Flowers in Islamabad | Lahore Bouquet",
     description: "Romantic bouquets, same-day Islamabad. From Rs. 1,499. WhatsApp: 0310-4225974",
   },
-};
+});
 
 const FAQS = [
   {

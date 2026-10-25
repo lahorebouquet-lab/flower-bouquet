@@ -3,8 +3,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, whatsappLink } from "@/lib/business";
 import { MessageCircle, HelpCircle, Candy } from "lucide-react";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/islamabad/chocolate-bouquets", {
   title: {
     absolute: "Chocolate Bouquets in Islamabad | Sweet Gift Delivery | Lahore Bouquet",
   },
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     title: "Chocolate Bouquets in Islamabad | Lahore Bouquet",
     description: "Chocolate bouquets, same-day Islamabad. From Rs. 3,800.",
   },
-};
+});
 
 const FAQS = [
   { q: "What chocolates are used in the bouquets?", a: "We use quality branded chocolates. Ask on WhatsApp (0310-4225974) about current chocolate options and customization." },

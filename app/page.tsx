@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import HomeClient from "./components/HomeClient";
 import { HOMEPAGE_FAQS } from "./data/homepage";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/", {
   title: {
     absolute: "Flower Delivery in Lahore | Free Same-Day Delivery — Lahore Bouquet",
   },
@@ -26,10 +26,11 @@ export const metadata: Metadata = {
         },
     ],
   }
-};
+});
 
 import { getSanityProducts, getSanityCategories, getSanityReviews } from "@/sanity/lib/fetch";
 import { floristSchema, organizationSchema, SITE_URL } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
 export default async function HomePage() {
   const [products, categories, reviews] = await Promise.all([

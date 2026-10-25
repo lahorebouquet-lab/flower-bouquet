@@ -5,8 +5,9 @@ import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { Clock, Truck, MessageCircle, AlertCircle, ShieldCheck, Wallet, Gift, HelpCircle, Navigation, Package } from "lucide-react";
 import { SITE_URL, areaFloristSchema } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/delivery-areas/bahria-town", {
   title: {
     absolute: "Flower Delivery in Bahria Town Lahore | FREE delivery, 2.5–4 hrs",
   },
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
       },
     ],
   }
-};
+});
 
 export default async function BahriaTownDeliveryPage() {
   const allProducts = await getSanityProducts();

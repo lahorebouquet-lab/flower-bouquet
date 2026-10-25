@@ -6,8 +6,9 @@ import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../components/ProductCard";
 import { Truck, Camera, MessageCircle, HelpCircle, Leaf } from "lucide-react";
 import { SITE_URL, itemListSchema } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/dried-flowers", {
   title: {
     absolute: "Dried Flower Bouquets in Lahore | Preserved Flowers",
   },
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+});
 
 export default async function DriedFlowersPage() {
   const allProducts = await getSanityProducts();

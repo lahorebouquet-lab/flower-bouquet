@@ -4,8 +4,9 @@ import Link from "next/link";
 import { PartyPopper, Truck, Camera, MessageCircle, HelpCircle, Sparkles, Clock, MapPin, BadgeCheck } from "lucide-react";
 import { SITE_URL, serviceSchema } from "@/lib/business";
 import RelatedProducts from "../components/RelatedProducts";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/birthday-decoration-lahore", {
   title: {
     absolute: "Birthday Decoration in Lahore | Balloons & Flowers",
   },
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+});
 
 const FAQS = [
   {

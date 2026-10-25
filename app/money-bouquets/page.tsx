@@ -6,8 +6,9 @@ import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../components/ProductCard";
 import { Banknote, Truck, Camera, MessageCircle, HelpCircle } from "lucide-react";
 import { SITE_URL, itemListSchema } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/money-bouquets", {
   title: {
     absolute: "Money Bouquet in Lahore | Custom Cash Gift Bouquets",
   },
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+});
 
 export default async function MoneyBouquetsPage() {
   const allProducts = await getSanityProducts();

@@ -3,8 +3,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, whatsappLink } from "@/lib/business";
 import { MessageCircle, HelpCircle, Flower2 } from "lucide-react";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/islamabad/rose-bouquets", {
   title: {
     absolute: "Red Rose Bouquets in Islamabad | Fresh Roses Delivery | Lahore Bouquet",
   },
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     title: "Red Rose Bouquets in Islamabad | Lahore Bouquet",
     description: "Fresh red roses, same-day Islamabad. From Rs. 1,499.",
   },
-};
+});
 
 const FAQS = [
   { q: "How fresh are the roses delivered in Islamabad?", a: "Our roses are hand-tied fresh on the day of delivery. We use quality red roses and wrap them in premium packaging." },

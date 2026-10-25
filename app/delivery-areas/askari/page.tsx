@@ -5,8 +5,9 @@ import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { MapPin, Clock, Camera, MessageCircle, ShieldCheck, Wallet, Gift, HelpCircle, Navigation, Package } from "lucide-react";
 import { SITE_URL, areaFloristSchema } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/delivery-areas/askari", {
   title: {
     absolute: "Flower Delivery in Askari Lahore | FREE delivery, 2–3 hrs",
   },
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
       },
     ],
   }
-};
+});
 
 export default async function AskariDeliveryPage() {
   const allProducts = await getSanityProducts();

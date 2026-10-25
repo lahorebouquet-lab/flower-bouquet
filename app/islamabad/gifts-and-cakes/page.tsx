@@ -3,8 +3,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, whatsappLink } from "@/lib/business";
 import { MessageCircle, HelpCircle, Gift } from "lucide-react";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/islamabad/gifts-and-cakes", {
   title: {
     absolute: "Gifts & Cakes Delivery in Islamabad | Combos & Hampers | Lahore Bouquet",
   },
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     title: "Gifts & Cakes Delivery in Islamabad | Lahore Bouquet",
     description: "Gift combos, same-day Islamabad delivery.",
   },
-};
+});
 
 const FAQS = [
   { q: "Can I order flowers with cake in Islamabad?", a: "Yes. Flower + cake combos are available for birthdays and celebrations. Message us on WhatsApp (0310-4225974) for today's cake options and combo prices." },

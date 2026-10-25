@@ -3,8 +3,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Heart, Truck, Camera, MessageCircle, HelpCircle, Flower2 } from "lucide-react";
 import { SITE_URL } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/umrah-hajj-mubarak-flowers-lahore", {
   title: {
     absolute: "Umrah & Hajj Mubarak Flowers Lahore | Welcome Home Bouquets",
   },
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+});
 
 const FAQS = [
   {

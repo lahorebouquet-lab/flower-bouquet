@@ -3,8 +3,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, whatsappLink } from "@/lib/business";
 import { MessageCircle, HelpCircle, Sun } from "lucide-react";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/islamabad/sunflower-bouquets", {
   title: {
     absolute: "Sunflower Bouquets in Islamabad | Bright & Fresh | Lahore Bouquet",
   },
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     title: "Sunflower Bouquets in Islamabad | Lahore Bouquet",
     description: "Sunflower bouquets, same-day Islamabad. From Rs. 1,699.",
   },
-};
+});
 
 const FAQS = [
   { q: "Are sunflower bouquets available in Islamabad?", a: "Yes, subject to seasonal availability. Our Sunflower Bouquet starts from Rs. 1,699. Message us on WhatsApp to check today's availability." },

@@ -7,8 +7,9 @@ import { ALL_PRODUCTS } from "../data/products";
 import ProductCard from "../components/ProductCard";
 import { Flame, Truck, Camera, MessageCircle } from "lucide-react";
 import { itemListSchema, SITE_URL } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/bestsellers", {
   title: "Bestselling Bouquets in Lahore | Most Loved Flowers",
   description:
     "Shop Lahore's bestselling flower bouquets — signature roses, sunflowers and luxury arrangements customers reorder. Same-day delivery across Lahore.",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+});
 
 export default async function BestsellersPage() {
   const sanityProducts = await getSanityProducts();

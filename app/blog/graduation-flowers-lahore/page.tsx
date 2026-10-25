@@ -2,8 +2,9 @@ import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, BUSINESS, whatsappLink } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/blog/graduation-flowers-lahore", {
   title: {
     absolute: "Graduation Flowers in Lahore 2026 | Convocation Bouquets",
   },
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
       },
     ],
   }
-};
+});
 
 const FAQS = [
   {

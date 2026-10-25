@@ -5,8 +5,9 @@ import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { MapPin, Clock, Camera, MessageCircle, Wallet, Gift, HelpCircle, Navigation, AlertCircle, Package } from "lucide-react";
 import { SITE_URL, areaFloristSchema } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/delivery-areas/dha", {
   title: {
     absolute: "Flower Delivery in DHA Lahore | FREE delivery, 2–3 hrs",
   },
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
       },
     ],
   }
-};
+});
 
 const dhaBreadcrumbSchema = {
   "@context": "https://schema.org",

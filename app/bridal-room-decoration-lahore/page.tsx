@@ -4,8 +4,9 @@ import Link from "next/link";
 import { BedDouble, Sparkles, MoonStar, MessageCircle, Truck, Camera, Heart, Flower2 } from "lucide-react";
 import { SITE_URL, whatsappLink } from "@/lib/business";
 import RelatedProducts from "../components/RelatedProducts";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/bridal-room-decoration-lahore", {
   title: {
     absolute: "Bridal Room Decoration in Lahore | Same-Day Setup",
   },
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
       },
     ],
   }
-};
+});
 
 const FAQS = [
   {

@@ -3,8 +3,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Moon, Clock, Camera, MessageCircle, HelpCircle, Sparkles } from "lucide-react";
 import { SITE_URL } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/midnight-flower-delivery-lahore", {
   title: {
     absolute: "Midnight Flower Delivery Lahore | Surprise at 12 AM",
   },
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+});
 
 const FAQS = [
   {

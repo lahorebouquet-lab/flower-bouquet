@@ -6,8 +6,9 @@ import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../components/ProductCard";
 import { Sparkles, Camera, MessageCircle, HelpCircle, Calendar, ShieldCheck } from "lucide-react";
 import { SITE_URL, serviceSchema, itemListSchema } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/wedding-decor", {
   title: {
     absolute: "Wedding Decoration in Lahore | Room & Car Décor",
   },
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+});
 
 export default async function WeddingDecorPage() {
   const allProducts = await getSanityProducts();

@@ -4,8 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { ShieldCheck, Sparkles, Truck, Heart, Camera, MessageCircle, MapPin, CheckCircle2 } from "lucide-react";
 import { SITE_URL, BUSINESS } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/about", {
   title: {
     absolute: "About Lahore Bouquet | Florist in Lahore",
   },
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
       },
     ],
   }
-};
+});
 
 const aboutSchema = {
   "@context": "https://schema.org",

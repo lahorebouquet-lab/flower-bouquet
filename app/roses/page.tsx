@@ -6,8 +6,9 @@ import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../components/ProductCard";
 import { Heart, Truck, Camera, MessageCircle, HelpCircle } from "lucide-react";
 import { SITE_URL, itemListSchema } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/roses", {
   title: {
     absolute: "Rose Bouquets in Lahore | Red & White Roses Delivery",
   },
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+});
 
 export default async function RosesPage() {
   const allProducts = await getSanityProducts();
@@ -223,7 +224,7 @@ export default async function RosesPage() {
         <Link href="/roses/white-roses" className="px-4 py-2 rounded-full bg-white text-[#2A2A2A] hover:bg-[#F8F3EA] whitespace-nowrap border border-[#E5DED2]">
           White Roses
         </Link>
-        <Link href="/sunflowers" className="px-4 py-2 rounded-full bg-white text-[#2A2A2A] hover:bg-[#F8F3EA] whitespace-nowrap border border-[#E5DED2]">
+        <Link href="/sunflower-bouquet-lahore" className="px-4 py-2 rounded-full bg-white text-[#2A2A2A] hover:bg-[#F8F3EA] whitespace-nowrap border border-[#E5DED2]">
           Sunflowers
         </Link>
         <Link href="/money-bouquets" className="px-4 py-2 rounded-full bg-white text-[#2A2A2A] hover:bg-[#F8F3EA] whitespace-nowrap border border-[#E5DED2]">

@@ -53,7 +53,7 @@ export const OCCASIONS_DATA = [
   { name: "Birthdays", href: "/occasions/birthday", tag: "From PKR 1,239" },
   { name: "Eid Celebrations", href: "/bouquets", tag: "From PKR 1,500" },
   { name: "Father's Day", href: "/gifts-and-cakes", tag: "From PKR 1,800" },
-  { name: "Get Well Soon", href: "/sunflowers", tag: "From PKR 500" },
+  { name: "Get Well Soon", href: "/sunflower-bouquet-lahore", tag: "From PKR 500" },
   { name: "Graduation Days", href: "/bouquets", tag: "From PKR 1,200" },
   { name: "Mother's Day", href: "/roses", tag: "From PKR 1,900" },
   { name: "Valentine's Day", href: "/roses", tag: "From PKR 1,900" },
@@ -300,7 +300,7 @@ export default function PricesClient() {
                 <span className="text-xs font-bold text-[#8B1E2D]">Sunflower Bouquets</span>
                 <div className="text-base font-bold text-[#0B0B0B]">From PKR 500</div>
                 <p className="text-[11px] text-[#2A2A2A]">Bright, cheerful golden blooms for birthdays, graduations, and get-well wishes.</p>
-                <Link href="/sunflowers" className="text-[11px] text-[#8B1E2D] font-semibold flex items-center gap-1 pt-1 hover:text-[#C6A15B]">
+                <Link href="/sunflower-bouquet-lahore" className="text-[11px] text-[#8B1E2D] font-semibold flex items-center gap-1 pt-1 hover:text-[#C6A15B]">
                   <span>Explore Sunflowers</span> →
                 </Link>
               </div>

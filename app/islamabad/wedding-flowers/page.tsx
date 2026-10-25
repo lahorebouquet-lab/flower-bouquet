@@ -3,8 +3,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, whatsappLink } from "@/lib/business";
 import { MessageCircle, HelpCircle, Sparkles } from "lucide-react";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/islamabad/wedding-flowers", {
   title: {
     absolute: "Wedding Flowers in Islamabad | Bridal Bouquets & Decor | Lahore Bouquet",
   },
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     title: "Wedding Flowers in Islamabad | Lahore Bouquet",
     description: "Wedding florals Islamabad. Enquire: 0310-4225974",
   },
-};
+});
 
 const FAQS = [
   { q: "Do you provide bridal bouquets in Islamabad?", a: "Yes. Bridal bouquets can be arranged for Islamabad weddings. Message us on WhatsApp (0310-4225974) with your wedding date for availability and pricing." },

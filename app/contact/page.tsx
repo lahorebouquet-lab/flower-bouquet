@@ -18,8 +18,9 @@ import {
 import { LAHORE_AREAS } from "../data/products";
 import { SITE_URL } from "@/lib/business";
 import { CONTACT_EMAIL, CONTACT_PHONE } from "@/lib/site";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/contact", {
   title: {
     absolute: "Contact Lahore Bouquet | WhatsApp & Phone",
   },
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_URL}/contact`,
   }
-};
+});
 
 export default function ContactPage() {
   const jsonLd = {

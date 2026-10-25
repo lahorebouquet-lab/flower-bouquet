@@ -3,8 +3,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Heart, Truck, Camera, MessageCircle, HelpCircle, Sparkles, Clock, MapPin, BadgeCheck, ShoppingBag } from "lucide-react";
 import { SITE_URL, whatsappLink, serviceSchema } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/valentine-day-flowers-lahore", {
   title: {
     absolute: "Valentine's Day Flowers in Lahore | Order Red Rose Bouquets",
   },
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+});
 
 /**
  * Real Valentine's products from the Sanity catalog.

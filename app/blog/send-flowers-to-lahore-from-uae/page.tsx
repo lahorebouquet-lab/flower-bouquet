@@ -2,8 +2,9 @@ import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, BUSINESS, whatsappLink } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/blog/send-flowers-to-lahore-from-uae", {
   title: {
     absolute: "Send Flowers to Lahore from the UAE | Same-Day Delivery",
   },
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
       },
     ],
   }
-};
+});
 
 const FAQS = [
   {
@@ -180,7 +181,7 @@ export default function SendFlowersFromUAEPage() {
       </section>
 
       <section className="text-xs text-[#777777] space-y-2">
-        <p>Also read: <Link href="/blog/send-flowers-to-lahore-from-abroad" className="text-[#8B1E2D] underline">general overseas ordering guide</Link> • <Link href="/blog/send-flowers-to-lahore-from-uk" className="text-[#8B1E2D] underline">sending from the UK</Link> • <Link href="/blog/send-flowers-to-lahore-from-usa" className="text-[#8B1E2D] underline">sending from the USA</Link></p>
+        <p>Also read: <Link href="/send-flowers-to-lahore-from-abroad" className="text-[#8B1E2D] underline">general overseas ordering guide</Link> • <Link href="/blog/send-flowers-to-lahore-from-uk" className="text-[#8B1E2D] underline">sending from the UK</Link> • <Link href="/blog/send-flowers-to-lahore-from-usa" className="text-[#8B1E2D] underline">sending from the USA</Link></p>
       </section>
     </article>
   );

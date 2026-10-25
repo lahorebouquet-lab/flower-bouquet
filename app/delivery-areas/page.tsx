@@ -5,8 +5,9 @@ import { Truck, MessageCircle, ArrowRight, CheckCircle2 } from "lucide-react";
 import { SITE_URL } from "@/lib/business";
 import { DELIVERY_AREA_FEES, DELIVERY_POLICY_LINE } from "@/lib/delivery";
 import { siteWhatsappLink } from "@/lib/site";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/delivery-areas", {
   title: {
     absolute: "Flower Delivery Areas in Lahore | DHA, Gulberg, Bahria",
   },
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
       },
     ],
   }
-};
+});
 
 export const LAHORE_ZONES = [
   { name: "DHA Lahore (Phases 1 to 9)", time: "2 to 3 hours", slug: "/delivery-areas/dha", highlight: "Phases 1–9, Sector Y, Raya, Phase 5 Commercial" },

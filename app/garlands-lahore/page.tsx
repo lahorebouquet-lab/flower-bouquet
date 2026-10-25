@@ -4,8 +4,9 @@ import Link from "next/link";
 import { Flower2, Users, Church, MessageCircle, Truck, Camera, Sparkles, Leaf } from "lucide-react";
 import { SITE_URL, whatsappLink } from "@/lib/business";
 import RelatedProducts from "../components/RelatedProducts";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/garlands-lahore", {
   title: {
     absolute: "Fresh Flower Garlands (Haar) in Lahore | Lahore Bouquet",
   },
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
       },
     ],
   }
-};
+});
 
 const FAQS = [
   {
@@ -265,7 +266,7 @@ export default function GarlandsLahorePage() {
       </section>
 
       <section className="text-xs text-[#777777]">
-        <p>Related: <Link href="/wedding-decor" className="text-[#8B1E2D] underline">wedding décor in Lahore</Link> • <Link href="/wedding-room-decoration-lahore" className="text-[#8B1E2D] underline">bridal room decoration</Link> • <Link href="/collections/fresh-flower-gajray" className="text-[#8B1E2D] underline">fresh flower gajray</Link> • <Link href="/prices" className="text-[#8B1E2D] underline">price list</Link></p>
+        <p>Related: <Link href="/wedding-decor" className="text-[#8B1E2D] underline">wedding décor in Lahore</Link> • <Link href="/wedding-room-decoration-lahore" className="text-[#8B1E2D] underline">bridal room decoration</Link> • <Link href="/gajray-lahore" className="text-[#8B1E2D] underline">fresh flower gajray</Link> • <Link href="/prices" className="text-[#8B1E2D] underline">price list</Link></p>
       </section>
     </main>
   );

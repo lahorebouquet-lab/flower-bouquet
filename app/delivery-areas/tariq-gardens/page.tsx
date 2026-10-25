@@ -6,8 +6,9 @@ import ProductCard from "../../components/ProductCard";
 import NeighborhoodTemplate from "../../components/NeighborhoodTemplate";
 import { MapPin, Clock, Camera, MessageCircle, Wallet, Gift, HelpCircle, Navigation, AlertCircle, Package } from "lucide-react";
 import { SITE_URL, areaFloristSchema } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/delivery-areas/tariq-gardens", {
   title: {
     absolute: "Flower Delivery Tariq Gardens Lahore | FREE delivery, 2.5–3.5 hrs",
   },
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
       },
     ],
   }
-};
+});
 
 const tariqGardensBreadcrumbSchema = {
   "@context": "https://schema.org",

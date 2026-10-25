@@ -3,8 +3,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Globe2, CreditCard, Camera, Clock, MessageCircle, HelpCircle, Plane } from "lucide-react";
 import { SITE_URL } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/send-flowers-to-lahore-from-abroad", {
   title: {
     absolute: "Send Flowers to Lahore from Abroad | UK, USA, UAE, Saudi",
   },
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+});
 
 const FAQS = [
   {

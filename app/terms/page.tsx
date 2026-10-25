@@ -2,8 +2,9 @@ import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/terms", {
   title: {
     absolute: "Terms of Service | Lahore Bouquet",
   },
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     description: "The terms governing orders, delivery, payments and returns at Lahore Bouquet.",
     url: `${SITE_URL}/terms`,
   }
-};
+});
 
 const termsSchema = {
   "@context": "https://schema.org",

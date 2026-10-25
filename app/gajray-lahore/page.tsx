@@ -4,8 +4,9 @@ import Link from "next/link";
 import { Flower2, Sparkles, MoonStar, MessageCircle, Truck, Camera, Heart, Hand } from "lucide-react";
 import { SITE_URL, whatsappLink } from "@/lib/business";
 import RelatedProducts from "../components/RelatedProducts";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/gajray-lahore", {
   title: {
     absolute: "Buy Fresh Gajray in Lahore from Rs. 370 | Motia & Rose Gajray",
   },
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
       },
     ],
   }
-};
+});
 
 const FAQS = [
   {
@@ -204,7 +205,7 @@ export default function GajrayLahorePage() {
           <li><strong>Eid & Festive wear:</strong> simple red rose gajra pairs that go with everything.</li>
         </ul>
         <p className="text-xs text-[#2A2A2A] leading-relaxed">
-          Pair your gajray with <Link href="/flower-jewellery-lahore" className="text-[#8B1E2D] underline">fresh flower jewellery</Link> for a complete mehndi look, or browse real designs in our <Link href="/collections/fresh-flower-gajray" className="text-[#8B1E2D] underline">fresh gajray collection</Link>.
+          Pair your gajray with <Link href="/flower-jewellery-lahore" className="text-[#8B1E2D] underline">fresh flower jewellery</Link> for a complete mehndi look, or browse real designs in our <Link href="/gajray-lahore" className="text-[#8B1E2D] underline">fresh gajray collection</Link>.
         </p>
       </section>
 
@@ -270,7 +271,7 @@ export default function GajrayLahorePage() {
       </section>
 
       <section className="text-xs text-[#777777]">
-        <p>Related: <Link href="/collections/fresh-flower-gajray" className="text-[#8B1E2D] underline">fresh gajray collection</Link> • <Link href="/flower-jewellery-lahore" className="text-[#8B1E2D] underline">flower jewellery</Link> • <Link href="/prices" className="text-[#8B1E2D] underline">price list</Link> • <Link href="/delivery-areas" className="text-[#8B1E2D] underline">delivery areas & fees</Link></p>
+        <p>Related: <Link href="/gajray-lahore" className="text-[#8B1E2D] underline">fresh gajray collection</Link> • <Link href="/flower-jewellery-lahore" className="text-[#8B1E2D] underline">flower jewellery</Link> • <Link href="/prices" className="text-[#8B1E2D] underline">price list</Link> • <Link href="/delivery-areas" className="text-[#8B1E2D] underline">delivery areas & fees</Link></p>
       </section>
     </main>
   );

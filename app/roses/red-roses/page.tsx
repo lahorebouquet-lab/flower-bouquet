@@ -5,8 +5,9 @@ import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { Heart, Truck, Camera, MessageCircle, HelpCircle } from "lucide-react";
 import { SITE_URL, itemListSchema } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/roses/red-roses", {
   title: {
     absolute: "Buy Red Rose Bouquet in Lahore | Imported Dutch Roses, Same-Day",
   },
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+});
 
 export default async function RedRosesPage() {
   const allProducts = await getSanityProducts();

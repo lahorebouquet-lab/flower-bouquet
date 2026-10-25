@@ -28,16 +28,6 @@ export async function generateMetadata(): Promise<Metadata> {
       default: "Lahore Bouquet - Fresh Handcrafted Bouquets & Flower Delivery in Lahore",
     },
     description: "Send fresh handcrafted flower bouquets, imported roses, sunflowers, money bouquets, wedding decor & gift combos across Lahore. Express 2–5 hours and midnight delivery across all Lahore areas.",
-    keywords: [
-      "lahore bouquet",
-      "flower delivery lahore",
-      "send flowers to lahore",
-      "rose bouquet lahore",
-      "sunflower bouquet lahore",
-      "money bouquet lahore",
-      "wedding decoration lahore",
-      "midnight flower delivery lahore"
-    ],
     metadataBase: new URL(SITE_URL),
     manifest: "/manifest.webmanifest",
     themeColor: "#8B1E2D",
@@ -84,7 +74,6 @@ export async function generateMetadata(): Promise<Metadata> {
 export const viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 5,
   themeColor: "#8B1E2D",
 };
 

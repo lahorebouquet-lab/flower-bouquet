@@ -5,8 +5,9 @@ import Image from "next/image";
 import { BookOpen, Calendar, ArrowRight, Clock } from "lucide-react";
 import { getSanityBlogPosts } from "@/sanity/lib/fetch";
 import { SITE_URL } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/blog", {
   title: {
     absolute: "Flower Care & Gifting Guides Lahore | Florist Blog",
   },
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
       },
     ],
   }
-};
+});
 
 export const BLOG_POSTS = [
   {

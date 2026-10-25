@@ -5,8 +5,9 @@ import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { MapPin, Clock, Camera, MessageCircle, ShieldCheck, ShieldAlert, Wallet, Gift, HelpCircle, Navigation, Package } from "lucide-react";
 import { SITE_URL, areaFloristSchema } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/delivery-areas/cantt", {
   title: {
     absolute: "Flower Delivery Lahore Cantt | FREE delivery, 2–2.5 hrs",
   },
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
       },
     ],
   }
-};
+});
 
 export default async function CanttDeliveryPage() {
   const allProducts = await getSanityProducts();

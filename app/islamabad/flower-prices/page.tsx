@@ -3,8 +3,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, whatsappLink } from "@/lib/business";
 import { Tag, MessageCircle, HelpCircle } from "lucide-react";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/islamabad/flower-prices", {
   title: {
     absolute: "Flower Delivery Prices in Islamabad | Price Guide | Lahore Bouquet",
   },
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     title: "Flower Delivery Prices in Islamabad | Lahore Bouquet",
     description: "Islamabad flower prices from Rs. 1,239. Free delivery in listed sectors.",
   },
-};
+});
 
 const PRICE_ROWS = [
   { type: "Hand-tied small bouquets", price: "Rs. 1,239 – 1,900", note: "Single roses, small mixed" },

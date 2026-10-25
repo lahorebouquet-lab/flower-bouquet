@@ -2,8 +2,9 @@ import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, whatsappLink } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/flower-delivery-islamabad/f-6-islamabad", {
   title: { absolute: "Flower Delivery in F-6 Islamabad | Lahore Bouquet" },
   description: "Send beautiful flower bouquets to F-6 Islamabad with Lahore Bouquet. Explore roses, birthday flowers and thoughtful gifts, with local delivery availability confirmed before ordering.",
   alternates: { canonical: `${SITE_URL}/flower-delivery-islamabad/f-6-islamabad` },
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [{ url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630, alt: "Flower Delivery in F-6 Islamabad | Lahore Bouquet" }],
   }
-};
+});
 
 const FAQS = [
   { q: "Where can I order flowers online in F-6 Islamabad?", a: "Browse available bouquets on LahoreBouquet.com and contact our team to arrange delivery in F-6 Islamabad. Confirm product availability and delivery charges before payment." },
