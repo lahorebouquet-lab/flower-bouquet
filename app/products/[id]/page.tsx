@@ -86,6 +86,16 @@ const KIND_COPY = {
   },
 } as const;
 
+/** Cut text to at most `max` characters at a word boundary, dropping a dangling separator. */
+function shortenAtWord(text: string, max: number): string {
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max + 1);
+  const end = cut.lastIndexOf(" ");
+  return (end > max * 0.5 ? cut.slice(0, end) : text.slice(0, max))
+    .replace(/[\s:\-–—,.&|(]+$/, "")
+    .trimEnd();
+}
+
 export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
   const { id } = await params;
   const sanityProducts = await getSanityProducts();
@@ -111,7 +121,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
       `${product.title} | ${KIND_LABEL[kind]}`,
       `${product.title} | Lahore Bouquet`,
     ];
-    title = candidates.find((t) => t.length <= 60) ?? product.title.slice(0, 60);
+    title = candidates.find((t) => t.length <= 60) ?? shortenAtWord(product.title, 60);
   }
 
   // Description: name + real price + what makes this kind of item different.
@@ -121,12 +131,20 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     gift: "gift-wrapped and delivered in Lahore today, with a photo before dispatch. Add flowers or a cake.",
     perfume: "gift-wrapped perfume delivered in Lahore today. Add a bouquet or a cake to make it a surprise.",
     jewellery: "fresh floral jewellery for mehndi and nikkah, made on the day and delivered across Lahore.",
-    decor: "set up at your home, hall or marquee in Lahore. Free quote and design on WhatsApp.",
+    decor: "set up by our team at your home, venue or car in Lahore. Free quote and design on WhatsApp.",
     bouquet: "hand-tied fresh and delivered across Lahore in 2–5 hours, with a photo before dispatch.",
   };
+  const shortTail: Record<ProductKind, string> = {
+    cake: "Baked to order, delivered today in Lahore.",
+    gift: "Gift-wrapped, delivered today in Lahore.",
+    perfume: "Gift-wrapped, delivered today in Lahore.",
+    jewellery: "Made fresh on the day in Lahore.",
+    decor: "Set up at your venue in Lahore; free quote on WhatsApp.",
+    bouquet: "Hand-tied fresh, delivered in Lahore in 2–5 hours.",
+  };
   let metaDesc = `${product.title}, ${priceStr}: ${tail[kind]}`;
-  if (metaDesc.length > 155) metaDesc = `${product.title}, ${priceStr}. Same-day delivery in Lahore with a photo before dispatch.`;
-  if (metaDesc.length > 155) metaDesc = metaDesc.slice(0, 154).replace(/\s+\S*$/, "") + "…";
+  if (metaDesc.length > 155) metaDesc = `${product.title}, ${priceStr}. ${shortTail[kind]}`;
+  if (metaDesc.length > 155) metaDesc = `${shortenAtWord(product.title, 155 - priceStr.length - shortTail[kind].length - 4)}, ${priceStr}. ${shortTail[kind]}`;
 
   const imageUrl = product.image?.startsWith("http") ? product.image : `${SITE_URL}${product.image}`;
 
