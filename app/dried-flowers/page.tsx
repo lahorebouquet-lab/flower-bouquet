@@ -7,6 +7,7 @@ import ProductCard from "../components/ProductCard";
 import { Truck, Camera, MessageCircle, HelpCircle, Leaf } from "lucide-react";
 import { SITE_URL, itemListSchema } from "@/lib/business";
 import { withSeo } from "@/lib/seo";
+import ExploreLinks from "../components/ExploreLinks";
 
 export const metadata: Metadata = withSeo("/dried-flowers", {
   title: {
@@ -242,6 +243,7 @@ export default async function DriedFlowersPage() {
           </div>
         </div>
       </section>
+      <ExploreLinks groups={["types","occasions"]} exclude="/dried-flowers" />
     </main>
   );
 }

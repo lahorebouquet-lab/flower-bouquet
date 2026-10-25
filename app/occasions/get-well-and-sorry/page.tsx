@@ -6,6 +6,7 @@ import ProductCard from "../../components/ProductCard";
 import { Truck, Camera, MessageCircle, HeartHandshake, AlertCircle } from "lucide-react";
 import { SITE_URL } from "@/lib/business";
 import { withSeo } from "@/lib/seo";
+import ExploreLinks from "../../components/ExploreLinks";
 
 export const metadata: Metadata = withSeo("/occasions/get-well-and-sorry", {
   title: {
@@ -127,6 +128,7 @@ export default async function GetWellAndSorryPage() {
           ))}
         </div>
       </section>
+      <ExploreLinks groups={["occasions","types"]} exclude="/occasions/get-well-and-sorry" />
     </main>
   );
 }

@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, BUSINESS } from "@/lib/business";
 import { withSeo } from "@/lib/seo";
+import BreadcrumbSchema from "../../components/BreadcrumbSchema";
+import ExploreLinks from "../../components/ExploreLinks";
 
 export const metadata: Metadata = withSeo("/blog/best-flowers-birthday-anniversary-get-well-pakistan", {
   title: {
@@ -68,6 +70,7 @@ export default function OccasionFlowersBlogPage() {
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 py-10 space-y-10 bg-[#F8F3EA] text-[#2A2A2A]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <BreadcrumbSchema path="/blog/best-flowers-birthday-anniversary-get-well-pakistan" name="Best Flowers for Birthday, Anniversary and Get-Well in Pakistan" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <nav aria-label="Breadcrumb" className="text-xs text-[#777777] flex items-center gap-2">
@@ -137,6 +140,7 @@ export default function OccasionFlowersBlogPage() {
           </div>
         ))}
       </section>
+      <ExploreLinks groups={["guides","occasions"]} exclude="/blog/best-flowers-birthday-anniversary-get-well-pakistan" />
     </article>
   );
 }

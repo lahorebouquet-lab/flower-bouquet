@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, whatsappLink } from "@/lib/business";
 import { withSeo } from "@/lib/seo";
+import IslamabadDetails from "../../components/IslamabadDetails";
 
 export const metadata: Metadata = withSeo("/flower-delivery-islamabad/bahria-town-islamabad", {
   title: { absolute: "Flower Delivery in Bahria Town Islamabad | Lahore Bouquet" },
@@ -63,6 +64,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <IslamabadDetails path="/flower-delivery-islamabad/bahria-town-islamabad" />
     </main>
   );
 }

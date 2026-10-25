@@ -4,6 +4,7 @@ import Link from "next/link";
 import { SITE_URL, whatsappLink } from "@/lib/business";
 import { Tag, MessageCircle, HelpCircle } from "lucide-react";
 import { withSeo } from "@/lib/seo";
+import IslamabadDetails from "../../components/IslamabadDetails";
 
 export const metadata: Metadata = withSeo("/islamabad/flower-prices", {
   title: {
@@ -149,6 +150,7 @@ export default function IslamabadPricesPage() {
           </div>
         </div>
       </section>
+      <IslamabadDetails path="/islamabad/flower-prices" />
     </main>
   );
 }

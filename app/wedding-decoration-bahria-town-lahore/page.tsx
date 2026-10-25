@@ -4,6 +4,7 @@ import Link from "next/link";
 import { MessageCircle, Truck, Camera, Heart, MapPin, Sparkles } from "lucide-react";
 import { SITE_URL, whatsappLink } from "@/lib/business";
 import RelatedProducts from "../components/RelatedProducts";
+import DecorationAreaDetails from "../components/DecorationAreaDetails";
 import { withSeo } from "@/lib/seo";
 
 export const metadata: Metadata = withSeo("/wedding-decoration-bahria-town-lahore", {
@@ -82,6 +83,7 @@ export default function Page() {
           <MessageCircle className="w-4 h-4" /> Get Free Quote on WhatsApp
         </a>
       </section>
+      <DecorationAreaDetails area="bahria-town" kind="wedding" />
       <RelatedProducts title="Add Fresh Flowers to Your Event" count={4} />
       <section className="space-y-4">
         <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">FAQs</h2>

@@ -6,6 +6,7 @@ import ProductCard from "../../components/ProductCard";
 import { Heart, Truck, Camera, MessageCircle, HelpCircle } from "lucide-react";
 import { SITE_URL, itemListSchema } from "@/lib/business";
 import { withSeo } from "@/lib/seo";
+import ExploreLinks from "../../components/ExploreLinks";
 
 export const metadata: Metadata = withSeo("/roses/red-roses", {
   title: {
@@ -191,6 +192,21 @@ export default async function RedRosesPage() {
         </div>
       </section>
 
+      <section className="p-6 sm:p-8 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] shadow-sm space-y-4 text-sm leading-relaxed">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Choosing the right red rose bouquet</h2>
+        <p>
+          <strong>How many roses?</strong> A single long-stem rose is a simple "thinking of you". Twelve roses is the classic anniversary and proposal bouquet. Twenty-four or fifty roses make a statement for milestone anniversaries, Valentine's Day or a big apology.
+        </p>
+        <p>
+          <strong>Wrapping and fillers:</strong> matte black paper gives a modern, luxury look; cream or kraft paper feels softer and more classic. Baby's breath adds a light, airy finish, while eucalyptus gives a greener, fuller shape. Tell us your preference when you order.
+        </p>
+        <p>
+          <strong>Keeping them fresh:</strong> trim the stems at an angle, use clean, cool water and keep the bouquet away from direct sun and AC vents. Imported Dutch roses usually last 5 to 7 days with daily water changes.
+        </p>
+        <p>
+          Pair your roses with <Link href="/chocolate-bouquets-lahore" className="text-[#8B1E2D] underline">chocolates</Link> or a <Link href="/gifts-and-cakes" className="text-[#8B1E2D] underline">cake</Link>, or read what each colour means in our <Link href="/blog/rose-color-meanings-pakistan" className="text-[#8B1E2D] underline">rose colour guide</Link>. For a late surprise, book our <Link href="/midnight-flower-delivery-lahore" className="text-[#8B1E2D] underline">midnight delivery</Link> slot.
+        </p>
+      </section>
       {/* Category FAQ */}
       <section className="bg-white p-8 sm:p-10 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-6">
         <div className="flex items-center gap-2 text-[#0B0B0B]">
@@ -209,6 +225,7 @@ export default async function RedRosesPage() {
           </div>
         </div>
       </section>
+      <ExploreLinks groups={["types","occasions"]} exclude="/roses/red-roses" />
     </main>
   );
 }

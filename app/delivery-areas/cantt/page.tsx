@@ -6,6 +6,7 @@ import ProductCard from "../../components/ProductCard";
 import { MapPin, Clock, Camera, MessageCircle, ShieldCheck, ShieldAlert, Wallet, Gift, HelpCircle, Navigation, Package } from "lucide-react";
 import { SITE_URL, areaFloristSchema } from "@/lib/business";
 import { withSeo } from "@/lib/seo";
+import { AreaDecorLinks } from "../../components/DecorationAreaDetails";
 
 export const metadata: Metadata = withSeo("/delivery-areas/cantt", {
   title: {
@@ -280,6 +281,7 @@ export default async function CanttDeliveryPage() {
           </Link>
         </div>
       </section>
+      <AreaDecorLinks area="cantt" />
     </main>
   );
 }

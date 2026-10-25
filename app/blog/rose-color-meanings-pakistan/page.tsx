@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, BUSINESS, whatsappLink } from "@/lib/business";
 import { withSeo } from "@/lib/seo";
+import BreadcrumbSchema from "../../components/BreadcrumbSchema";
+import ExploreLinks from "../../components/ExploreLinks";
 
 export const metadata: Metadata = withSeo("/blog/rose-color-meanings-pakistan", {
   title: {
@@ -84,6 +86,7 @@ export default function RoseMeaningsPage() {
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 py-10 space-y-10 bg-[#F8F3EA] text-[#2A2A2A]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <BreadcrumbSchema path="/blog/rose-color-meanings-pakistan" name="Rose Color Meanings: What Each Rose Says in Pakistan" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <nav aria-label="Breadcrumb" className="text-xs text-[#777777] flex items-center gap-2">
         <Link href="/" className="hover:text-[#0B0B0B]">Home</Link><span>/</span>
@@ -141,6 +144,7 @@ export default function RoseMeaningsPage() {
           ))}
         </div>
       </section>
+      <ExploreLinks groups={["guides","occasions"]} exclude="/blog/rose-color-meanings-pakistan" />
     </article>
   );
 }

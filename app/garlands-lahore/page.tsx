@@ -5,6 +5,7 @@ import { Flower2, Users, Church, MessageCircle, Truck, Camera, Sparkles, Leaf } 
 import { SITE_URL, whatsappLink } from "@/lib/business";
 import RelatedProducts from "../components/RelatedProducts";
 import { withSeo } from "@/lib/seo";
+import ExploreLinks from "../components/ExploreLinks";
 
 export const metadata: Metadata = withSeo("/garlands-lahore", {
   title: {
@@ -268,6 +269,7 @@ export default function GarlandsLahorePage() {
       <section className="text-xs text-[#777777]">
         <p>Related: <Link href="/wedding-decor" className="text-[#8B1E2D] underline">wedding décor in Lahore</Link> • <Link href="/wedding-room-decoration-lahore" className="text-[#8B1E2D] underline">bridal room decoration</Link> • <Link href="/gajray-lahore" className="text-[#8B1E2D] underline">fresh flower gajray</Link> • <Link href="/prices" className="text-[#8B1E2D] underline">price list</Link></p>
       </section>
+      <ExploreLinks groups={["occasions","types"]} exclude="/garlands-lahore" />
     </main>
   );
 }

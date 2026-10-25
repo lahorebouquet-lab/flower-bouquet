@@ -50,7 +50,7 @@ export const COST_FACTORS = [
 
 export const OCCASIONS_DATA = [
   { name: "Anniversaries", href: "/occasions/anniversary", tag: "From PKR 1,900" },
-  { name: "Birthdays", href: "/occasions/birthday", tag: "From PKR 1,239" },
+  { name: "Birthdays", href: "/birthday-surprises", tag: "From PKR 1,239" },
   { name: "Eid Celebrations", href: "/bouquets", tag: "From PKR 1,500" },
   { name: "Father's Day", href: "/gifts-and-cakes", tag: "From PKR 1,800" },
   { name: "Get Well Soon", href: "/sunflower-bouquet-lahore", tag: "From PKR 500" },

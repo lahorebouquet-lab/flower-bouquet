@@ -6,6 +6,7 @@ import ProductCard from "../../components/ProductCard";
 import { Sparkles, Truck, Camera, MessageCircle, HelpCircle } from "lucide-react";
 import { SITE_URL, itemListSchema } from "@/lib/business";
 import { withSeo } from "@/lib/seo";
+import ExploreLinks from "../../components/ExploreLinks";
 
 export const metadata: Metadata = withSeo("/roses/white-roses", {
   title: {
@@ -245,6 +246,7 @@ export default async function WhiteRosesPage() {
           </div>
         </div>
       </section>
+      <ExploreLinks groups={["types","occasions"]} exclude="/roses/white-roses" />
     </main>
   );
 }

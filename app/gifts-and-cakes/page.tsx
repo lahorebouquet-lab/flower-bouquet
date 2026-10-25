@@ -7,6 +7,7 @@ import GiftsAndCakesClient from "./GiftsAndCakesClient";
 import { Gift, Truck, Camera, MessageCircle, HelpCircle, ShieldCheck, Clock, Heart } from "lucide-react";
 import { SITE_URL, itemListSchema } from "@/lib/business";
 import { withSeo } from "@/lib/seo";
+import ExploreLinks from "../components/ExploreLinks";
 
 export const metadata: Metadata = withSeo("/gifts-and-cakes", {
   title: {
@@ -294,6 +295,7 @@ export default async function GiftsAndCakesPage({
         <Link href="/custom-cakes-lahore" className="text-[#8B1E2D] underline font-semibold">Design a Custom Cake</Link>
         <Link href="/custom-bouquets-lahore" className="text-[#8B1E2D] underline font-semibold">Design a Custom Bouquet</Link>
       </section>
+      <ExploreLinks groups={["occasions","types"]} exclude="/gifts-and-cakes" />
     </main>
   );
 }

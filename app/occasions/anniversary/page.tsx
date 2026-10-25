@@ -6,6 +6,7 @@ import ProductCard from "../../components/ProductCard";
 import { Heart, Truck, Camera, MessageCircle, HelpCircle } from "lucide-react";
 import { SITE_URL } from "@/lib/business";
 import { withSeo } from "@/lib/seo";
+import ExploreLinks from "../../components/ExploreLinks";
 
 export const metadata: Metadata = withSeo("/occasions/anniversary", {
   title: {
@@ -145,6 +146,7 @@ export default async function AnniversaryOccasionPage() {
           </div>
         </div>
       </section>
+      <ExploreLinks groups={["occasions","types"]} exclude="/occasions/anniversary" />
     </main>
   );
 }

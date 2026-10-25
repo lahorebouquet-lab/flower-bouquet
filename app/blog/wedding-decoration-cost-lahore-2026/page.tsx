@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, BUSINESS } from "@/lib/business";
 import { withSeo } from "@/lib/seo";
+import ExploreLinks from "../../components/ExploreLinks";
+import BreadcrumbSchema from "../../components/BreadcrumbSchema";
 
 export const metadata: Metadata = withSeo("/blog/wedding-decoration-cost-lahore-2026", {
   title: {
@@ -76,6 +78,7 @@ export default function WeddingDecorationCostBlogPage() {
   return (
     <main className="max-w-3xl mx-auto px-4 sm:px-6 py-10 bg-[#F8F3EA] text-[#2A2A2A]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <BreadcrumbSchema path="/blog/wedding-decoration-cost-lahore-2026" name="Wedding Decoration Cost in Lahore 2026: Complete Price Guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <nav aria-label="Breadcrumb" className="text-xs text-[#777777] flex items-center gap-2 mb-6">
@@ -189,6 +192,7 @@ export default function WeddingDecorationCostBlogPage() {
           <p>Related: <Link href="/blog/flower-prices-lahore-2026" className="text-[#8B1E2D] underline">flower prices Lahore 2026</Link> • <Link href="/wedding-decor" className="text-[#8B1E2D] underline">wedding decor</Link> • <Link href="/wedding-decoration-dha-lahore" className="text-[#8B1E2D] underline">wedding decoration DHA</Link></p>
         </section>
       </article>
+      <ExploreLinks groups={["guides","occasions"]} exclude="/blog/wedding-decoration-cost-lahore-2026" />
     </main>
   );
 }

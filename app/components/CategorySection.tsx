@@ -84,7 +84,7 @@ export const ALL_DEPARTMENTS: DepartmentItem[] = [
     name: "Birthday Surprises",
     type: "occasions",
     tagline: "Bouquets, cakes & midnight delivery",
-    href: "/occasions/birthday",
+    href: "/birthday-surprises",
     badge: "Midnight",
     image: "/images/categories/birthday_surprises.webp",
   },

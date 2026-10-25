@@ -7,6 +7,7 @@ import { Sparkles, Truck, Camera, MessageCircle, HelpCircle, Heart, Droplets, Ch
 import { ALL_PRODUCTS } from "../data/products";
 import { SITE_URL, itemListSchema } from "@/lib/business";
 import { withSeo } from "@/lib/seo";
+import ExploreLinks from "../components/ExploreLinks";
 
 export const BASE_METADATA: Metadata = withSeo("/bouquets", {
   title: {
@@ -597,6 +598,7 @@ export default async function BouquetsPage({
         <Link href="/custom-bouquets-lahore" className="text-[#8B1E2D] underline font-semibold">Design a Custom Bouquet</Link>
         <Link href="/custom-cakes-lahore" className="text-[#8B1E2D] underline font-semibold">Design a Custom Cake</Link>
       </section>
+      <ExploreLinks groups={["types","occasions","guides"]} exclude="/bouquets" />
     </main>
   );
 }

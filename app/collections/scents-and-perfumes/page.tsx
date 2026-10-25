@@ -30,7 +30,7 @@ export const metadata: Metadata = withSeo("/collections/scents-and-perfumes", {
   }
 });
 
-export const FRAGRANCE_ITEMS = [
+const FRAGRANCE_ITEMS = [
   {
     name: "Royal Arabian Oud & Velvet Red Roses Hamper",
     price: 6800,
@@ -77,7 +77,7 @@ export default async function ScentsAndPerfumesPage() {
         "@type": "ListItem",
         position: 2,
         name: "Collections",
-        item: `${SITE_URL}/collections/bouquets`,
+        item: `${SITE_URL}/bouquets`,
       },
       {
         "@type": "ListItem",

@@ -6,6 +6,7 @@ import ProductCard from "../../components/ProductCard";
 import { Moon, Truck, Camera, MessageCircle } from "lucide-react";
 import { SITE_URL } from "@/lib/business";
 import { withSeo } from "@/lib/seo";
+import ExploreLinks from "../../components/ExploreLinks";
 
 export const metadata: Metadata = withSeo("/occasions/eid-gifts", {
   title: {
@@ -119,6 +120,19 @@ export default async function EidGiftsPage() {
           ))}
         </div>
       </section>
+      <section className="p-6 sm:p-8 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] shadow-sm space-y-4 text-sm leading-relaxed">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Eid gifting in Lahore: what to send and when</h2>
+        <p>
+          <strong>Chaand Raat</strong> is the busiest night of the year for Eid orders. Book a midnight slot (11:30 PM to 12:15 AM) a few days ahead so the bouquet arrives as Eid begins. For <strong>Eid morning</strong> deliveries, order by the evening before; riders start early so flowers reach before family visits.
+        </p>
+        <p>
+          The most popular Eid gifts are a <Link href="/money-bouquets" className="text-[#8B1E2D] underline">money bouquet with crisp Eidi notes</Link>, a fresh rose bouquet for elders, and <Link href="/chocolate-bouquets-lahore" className="text-[#8B1E2D] underline">flowers with chocolates</Link> or a <Link href="/gifts-and-cakes" className="text-[#8B1E2D] underline">cake</Link> for the family table. For mehndi on Chaand Raat, add <Link href="/gajray-lahore" className="text-[#8B1E2D] underline">fresh gajray</Link>.
+        </p>
+        <p>
+          Sending from abroad? Pay by international card and pick the Lahore delivery time; see how it works on our <Link href="/send-flowers-to-lahore-from-abroad" className="text-[#8B1E2D] underline">send flowers to Lahore from abroad</Link> page. Every order is photographed on WhatsApp before it leaves, so you see exactly what your family receives.
+        </p>
+      </section>
+      <ExploreLinks groups={["occasions","types"]} exclude="/occasions/eid-gifts" />
     </main>
   );
 }

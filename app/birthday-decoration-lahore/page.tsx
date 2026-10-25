@@ -5,6 +5,7 @@ import { PartyPopper, Truck, Camera, MessageCircle, HelpCircle, Sparkles, Clock,
 import { SITE_URL, serviceSchema } from "@/lib/business";
 import RelatedProducts from "../components/RelatedProducts";
 import { withSeo } from "@/lib/seo";
+import { DecorationAreaLinks } from "../components/DecorationAreaDetails";
 
 export const metadata: Metadata = withSeo("/birthday-decoration-lahore", {
   title: {
@@ -318,6 +319,7 @@ export default function BirthdayDecorationLahorePage() {
           </Link>
         </div>
       </section>
+      <DecorationAreaLinks kind="birthday" />
     </main>
   );
 }

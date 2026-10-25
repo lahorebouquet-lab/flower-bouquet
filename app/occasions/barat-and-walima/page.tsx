@@ -6,6 +6,7 @@ import ProductCard from "../../components/ProductCard";
 import { Sparkles, Truck, Camera, MessageCircle, HelpCircle, Calendar } from "lucide-react";
 import { SITE_URL } from "@/lib/business";
 import { withSeo } from "@/lib/seo";
+import ExploreLinks from "../../components/ExploreLinks";
 
 export const metadata: Metadata = withSeo("/occasions/barat-and-walima", {
   title: {
@@ -149,6 +150,7 @@ export default async function BaratAndWalimaPage() {
           </div>
         </div>
       </section>
+      <ExploreLinks groups={["occasions","types"]} exclude="/occasions/barat-and-walima" />
     </main>
   );
 }
