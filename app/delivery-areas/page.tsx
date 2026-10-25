@@ -30,7 +30,7 @@ export const metadata: Metadata = withSeo("/delivery-areas", {
   }
 });
 
-export const LAHORE_ZONES = [
+const LAHORE_ZONES = [
   { name: "DHA Lahore (Phases 1 to 9)", time: "2 to 3 hours", slug: "/delivery-areas/dha", highlight: "Phases 1–9, Sector Y, Raya, Phase 5 Commercial" },
   { name: "Gulberg (I, II & III)", time: "30 to 90 mins", slug: "/delivery-areas/gulberg", highlight: "MM Alam Road, Main Boulevard, Mini Market, Liberty" },
   { name: "Bahria Town & Lake City", time: "2.5 to 4 hours", slug: "/delivery-areas/bahria-town", highlight: "Sectors A–F, Safari Villas, Lake City Ring Road" },

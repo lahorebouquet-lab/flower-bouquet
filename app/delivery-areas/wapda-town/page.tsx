@@ -6,6 +6,7 @@ import ProductCard from "../../components/ProductCard";
 import { MapPin, Clock, Camera, MessageCircle, Wallet, Gift, HelpCircle, Navigation, Package } from "lucide-react";
 import { SITE_URL, areaFloristSchema } from "@/lib/business";
 import { withSeo } from "@/lib/seo";
+import { AreaDecorLinks } from "../../components/DecorationAreaDetails";
 
 export const metadata: Metadata = withSeo("/delivery-areas/wapda-town", {
   title: {
@@ -280,6 +281,7 @@ export default async function WapdaTownDeliveryPage() {
           </Link>
         </div>
       </section>
+      <AreaDecorLinks area="wapda-town" />
     </main>
   );
 }

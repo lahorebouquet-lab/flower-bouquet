@@ -56,7 +56,7 @@ const NAV_ITEMS: NavItem[] = [
     children: [
       { name: "All Cakes & Gift Combos", href: "/gifts-and-cakes", desc: "Flowers paired with cakes & sweets" },
       { name: "Fresh Bakery Cakes", href: "/gifts-and-cakes?filter=layers-cakes", desc: "Fudge, red velvet & lotus cakes" },
-      { name: "Gourmet Chocolates & Mithai", href: "/gifts-and-cakes?filter=chocolates", desc: "Ferrero Rocher & artisan hampers" },
+      { name: "Imported Chocolates", href: "/gifts-and-cakes?filter=chocolates", desc: "Ferrero Rocher, Snickers & more" },
       { name: "Fresh Flower Gajray", href: "/gajray-lahore", desc: "Motia & rose wrist cuffs", badge: "Handmade" },
       { name: "Cash Money Bouquets", href: "/money-bouquets", desc: "Crisp State Bank currency bouquets" },
     ],

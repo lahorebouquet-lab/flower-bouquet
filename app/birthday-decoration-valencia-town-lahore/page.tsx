@@ -4,6 +4,7 @@ import Link from "next/link";
 import { MessageCircle, Truck, Camera, Heart, MapPin, Sparkles } from "lucide-react";
 import { SITE_URL, whatsappLink } from "@/lib/business";
 import RelatedProducts from "../components/RelatedProducts";
+import DecorationAreaDetails from "../components/DecorationAreaDetails";
 import { withSeo } from "@/lib/seo";
 
 export const metadata: Metadata = withSeo("/birthday-decoration-valencia-town-lahore", {
@@ -20,7 +21,7 @@ export const metadata: Metadata = withSeo("/birthday-decoration-valencia-town-la
 
 const FAQS = [
   { q: "What is the price of birthday decoration in Valencia Town Lahore?", a: "Prices depend on the venue size and flower selection. Message us on WhatsApp (0310-4225974) with your event date and venue in Valencia Town Lahore for a free instant quote." },
-  { q: "How early should I book birthday decoration in Valencia Town Lahore?", a: "We recommend booking 1–2 weeks in advance for Valencia Town Lahore, especially during wedding season (Nov–Feb). Last-minute bookings are sometimes possible — ask on WhatsApp." },
+  { q: "How early should I book birthday decoration in Valencia Town Lahore?", a: "We recommend booking 1–2 weeks in advance for Valencia Town Lahore, or 2–3 days ahead for a home or surprise setup. Last-minute bookings are sometimes possible — ask on WhatsApp." },
   { q: "Do you provide fresh flowers for the decoration?", a: "Yes — 100% fresh flowers, arranged on the day of your event. We send setup photos on WhatsApp for your approval." },
   { q: "Which venues in Valencia Town Lahore have you decorated?", a: "We decorate homes, farmhouses, marquees, hotels and event halls across Valencia Town Lahore. Share your venue name on WhatsApp and we'll plan the setup." },
   { q: "Can I customize the colour theme?", a: "Absolutely. Share your outfit or theme colours on WhatsApp (0310-4225974) and our team matches the flowers and drapes to your theme." }
@@ -49,7 +50,7 @@ export default function Page() {
           Planning birthday decoration in <strong>Valencia Town Lahore</strong>? Lahore Bouquet creates elegant stage backdrops, fresh floral arches and entrance florals for Valencia Town wedding venues, farmhouses and marquees. Every setup uses <strong>100% fresh flowers</strong>, arranged on the day of your event — and we send you setup photos on WhatsApp for approval.
         </p>
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          From intimate home functions to grand marquee events, our decoration team handles everything: fresh floral arrangements, balloon garlands, backdrop draping and table centerpieces. We serve homes, farmhouses, hotels and event venues across Valencia Town Lahore, with free quotes and flexible slots — even during peak wedding season.
+          From a surprise bedroom setup to a full party at home, our decoration team handles everything: fresh floral arrangements, balloon garlands, backdrop draping and table centerpieces. We serve homes, farmhouses, hotels and event venues across Valencia Town Lahore, with free quotes and flexible slots — including same-week and midnight surprise slots.
         </p>
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
           <span className="flex items-center gap-1.5"><Sparkles className="w-4 h-4 text-[#8B1E2D]" /> 100% fresh flowers</span>
@@ -61,13 +62,13 @@ export default function Page() {
         <div className="flex items-center gap-2"><Heart className="w-5 h-5 text-[#8B1E2D]" />
           <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">What's Included</h2></div>
         <ul className="space-y-2 text-xs sm:text-sm text-[#2A2A2A] list-disc list-inside leading-relaxed">
-          <li><strong>Fresh floral arrangements</strong> — roses, lilies, carnations and seasonal blooms in your theme colours.</li>
-          <li><strong>Backdrop & stage styling</strong> — drapes, fairy lights and floral walls.</li>
-          <li><strong>Table centerpieces</strong> — elegant fresh-flower arrangements for guest tables.</li>
-          <li><strong>Entrance decor</strong> — welcoming floral arches and signage styling.</li>
+          <li><strong>Balloon garlands & arches</strong> — chrome, pastel or theme-colour balloons with name and age lettering.</li>
+          <li><strong>Fresh flowers</strong> — roses and seasonal blooms woven into the backdrop and the cake table.</li>
+          <li><strong>Cake table & photo corner</strong> — a styled table, fairy lights and a backdrop for photos.</li>
+          <li><strong>Room surprise extras</strong> — rose petals, candles and a heart-shaped balloon set for a surprise reveal.</li>
         </ul>
         <p className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed">
-          Also see our <Link href="/wedding-room-decoration-lahore" className="text-[#8B1E2D] underline">wedding room decoration</Link>, <Link href="/wedding-car-decoration-lahore" className="text-[#8B1E2D] underline">wedding car decoration</Link> and <Link href="/gajray-lahore" className="text-[#8B1E2D] underline">fresh gajray</Link> services.
+          Add <Link href="/helium-balloons-lahore" className="text-[#8B1E2D] underline">helium balloons</Link>, a <Link href="/teddy-bears-lahore" className="text-[#8B1E2D] underline">teddy bear</Link> or a <Link href="/birthday-surprises" className="text-[#8B1E2D] underline">birthday bouquet and cake</Link> to the setup.
         </p>
       </section>
       <section className="p-6 sm:p-8 rounded-2xl bg-[#0B0B0B] border border-[rgba(198,161,91,0.25)] shadow-sm space-y-4">
@@ -82,6 +83,7 @@ export default function Page() {
           <MessageCircle className="w-4 h-4" /> Get Free Quote on WhatsApp
         </a>
       </section>
+      <DecorationAreaDetails area="valencia-town" kind="birthday" />
       <RelatedProducts title="Add Fresh Flowers to Your Event" count={4} />
       <section className="space-y-4">
         <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">FAQs</h2>
@@ -94,7 +96,7 @@ export default function Page() {
         </div>
       </section>
       <section className="text-xs text-[#777777]">
-        <p>Related: <Link href="/delivery-areas/valencia-town" className="text-[#8B1E2D] underline">flower delivery Valencia Town Lahore</Link> • <Link href="/wedding-decor" className="text-[#8B1E2D] underline">wedding decor</Link> • <Link href="/prices" className="text-[#8B1E2D] underline">price list</Link></p>
+        <p>Related: <Link href="/delivery-areas/valencia-town" className="text-[#8B1E2D] underline">flower delivery Valencia Town Lahore</Link> • <Link href="/birthday-decoration-lahore" className="text-[#8B1E2D] underline">birthday decoration Lahore</Link> • <Link href="/prices" className="text-[#8B1E2D] underline">price list</Link></p>
       </section>
     </main>
   );

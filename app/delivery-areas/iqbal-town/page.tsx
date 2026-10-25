@@ -7,6 +7,7 @@ import NeighborhoodTemplate from "../../components/NeighborhoodTemplate";
 import { MapPin, Clock, Camera, MessageCircle, Wallet, Gift, HelpCircle, Navigation, AlertCircle, Package } from "lucide-react";
 import { SITE_URL, areaFloristSchema } from "@/lib/business";
 import { withSeo } from "@/lib/seo";
+import { AreaDecorLinks } from "../../components/DecorationAreaDetails";
 
 export const metadata: Metadata = withSeo("/delivery-areas/iqbal-town", {
   title: {
@@ -292,6 +293,7 @@ export default async function IqbalTownDeliveryPage() {
           </Link>
         </div>
       </section>
+      <AreaDecorLinks area="iqbal-town" />
     </main>
   );
 }

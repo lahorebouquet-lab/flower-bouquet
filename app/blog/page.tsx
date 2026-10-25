@@ -30,7 +30,7 @@ export const metadata: Metadata = withSeo("/blog", {
   }
 });
 
-export const BLOG_POSTS = [
+const BLOG_POSTS = [
   {
     slug: "how-to-keep-flowers-fresh-in-lahore",
     title: "How to Keep Flower Bouquets Fresh in Lahore Heat (Florist Care Guide)",
@@ -83,15 +83,6 @@ export const BLOG_POSTS = [
     date: "October 2026",
     readTime: "5 min read",
     tag: "Price Guide",
-    image: "/images/hero-luxury-bouquet.jpg",
-  },
-  {
-    slug: "send-flowers-to-lahore-from-abroad",
-    title: "How to Send Flowers to Lahore from UK, USA & UAE (2026 Guide)",
-    excerpt: "Overseas Pakistani? Order on WhatsApp, pay by bank transfer, and get same-day 2–5 hour delivery across Lahore with photo confirmation.",
-    date: "October 2026",
-    readTime: "4 min read",
-    tag: "Overseas Guide",
     image: "/images/hero-luxury-bouquet.jpg",
   },
   {
@@ -174,13 +165,44 @@ export const BLOG_POSTS = [
     readTime: "4 min read",
     tag: "Occasions Guide",
     image: "/images/hero-luxury-bouquet.jpg",
+  },
+  {
+    slug: "rose-bouquet-price-pakistan-2026",
+    title: "Rose Bouquet Price in Pakistan 2026: Complete Guide",
+    excerpt: "From Rs. 1,239 for a single rose to imported Dutch rose bouquets — real 2026 rose bouquet rates and buying tips.",
+    date: "October 2026",
+    readTime: "6 min read",
+    tag: "Price Guide",
+    image: "/images/hero-luxury-bouquet.jpg",
+  },
+  {
+    slug: "wedding-decoration-cost-lahore-2026",
+    title: "Wedding Decoration Cost in Lahore 2026: Complete Price Guide",
+    excerpt: "What stage décor, floral arrangements, bridal room and car decoration really cost in Lahore in 2026.",
+    date: "October 2026",
+    readTime: "5 min read",
+    tag: "Wedding Guide",
+    image: "/images/hero-luxury-bouquet.jpg",
+  },
+  {
+    slug: "birthday-flower-delivery-lahore-2026",
+    title: "Birthday Flower Delivery in Lahore 2026: Prices & Ideas",
+    excerpt: "Birthday bouquets, cakes, balloons and midnight surprises in Lahore — real 2026 prices and same-day delivery tips.",
+    date: "October 2026",
+    readTime: "5 min read",
+    tag: "Occasions Guide",
+    image: "/images/hero-luxury-bouquet.jpg",
   },];
 
 export default async function BlogIndexPage() {
   const sanityPosts = await getSanityBlogPosts();
   // Merge: show Sanity CMS posts first, then static guides (dedupe by slug)
   const sanitySlugs = new Set((sanityPosts || []).map((p: { slug: string }) => p.slug));
-  const posts = [...(sanityPosts || []), ...BLOG_POSTS.filter((p) => !sanitySlugs.has(p.slug))];
+  // Slugs that now redirect to a main page (see next.config.ts) are left out of the list.
+  const REDIRECTED = new Set(["send-flowers-to-lahore-from-abroad"]);
+  const posts = [...(sanityPosts || []), ...BLOG_POSTS.filter((p) => !sanitySlugs.has(p.slug))].filter(
+    (p: { slug: string }) => !REDIRECTED.has(p.slug),
+  );
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",

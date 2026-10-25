@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, BUSINESS } from "@/lib/business";
 import { withSeo } from "@/lib/seo";
+import ExploreLinks from "../../components/ExploreLinks";
+import BreadcrumbSchema from "../../components/BreadcrumbSchema";
 
 export const metadata: Metadata = withSeo("/blog/birthday-flower-delivery-lahore-2026", {
   title: {
@@ -76,6 +78,7 @@ export default function BirthdayFlowerDeliveryBlogPage() {
   return (
     <main className="max-w-3xl mx-auto px-4 sm:px-6 py-10 bg-[#F8F3EA] text-[#2A2A2A]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <BreadcrumbSchema path="/blog/birthday-flower-delivery-lahore-2026" name="birthday-flower-delivery-lahore-2026" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <nav aria-label="Breadcrumb" className="text-xs text-[#777777] flex items-center gap-2 mb-6">
@@ -198,6 +201,7 @@ export default function BirthdayFlowerDeliveryBlogPage() {
           <p>Related: <Link href="/blog/flower-prices-lahore-2026" className="text-[#8B1E2D] underline">flower prices Lahore 2026</Link> • <Link href="/midnight-flower-delivery-lahore" className="text-[#8B1E2D] underline">midnight delivery</Link> • <Link href="/helium-balloons-lahore" className="text-[#8B1E2D] underline">helium balloons</Link></p>
         </section>
       </article>
+      <ExploreLinks groups={["guides","occasions"]} exclude="/blog/birthday-flower-delivery-lahore-2026" />
     </main>
   );
 }

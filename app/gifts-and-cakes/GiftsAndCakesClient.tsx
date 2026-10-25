@@ -15,9 +15,28 @@ function getFilterFromParam(urlFilter: string | undefined): string {
   const lower = urlFilter.toLowerCase();
   if (lower.includes("cake")) return "layers-cakes";
   if (lower.includes("choc") || lower.includes("mithai")) return "chocolates";
+  if (lower.includes("perfume") || lower.includes("scent")) return "perfumes";
+  if (lower.includes("gift") || lower.includes("box") || lower.includes("hamper")) return "gift-boxes";
   if (lower.includes("2500") || lower.includes("budget")) return "under-2500";
   return "all";
 }
+
+// One rule per tab, used for both the list and the count, so the number on
+// each tab always matches what it shows.
+const CHOCOLATE_RE = /\b(chocolates?|ferrero|snickers|kit ?kat|mars|bounty|twix|feastables|toblerone|dairy milk|cadbury)\b/;
+const isCake = (p: Product) => p.category === "Birthday Cakes" || /\bcakes?\b/.test(p.title.toLowerCase());
+const isPerfume = (p: Product) => p.category === "Scents & Perfumes";
+const isChocolate = (p: Product) =>
+  !isPerfume(p) && !isCake(p) && CHOCOLATE_RE.test(p.title.toLowerCase());
+const isGiftBox = (p: Product) => p.category === "Gifts & Cakes" && !isCake(p) && !isChocolate(p);
+
+const TABS: { id: string; label: string; test: (p: Product) => boolean }[] = [
+  { id: "layers-cakes", label: "Fresh Bakery Cakes", test: isCake },
+  { id: "chocolates", label: "Imported Chocolates", test: isChocolate },
+  { id: "gift-boxes", label: "Gift Boxes & Hampers", test: isGiftBox },
+  { id: "perfumes", label: "Perfumes", test: isPerfume },
+  { id: "under-2500", label: "Under Rs. 2,500", test: (p) => p.price <= 2500 },
+];
 
 function GiftsAndCakesInner({ initialProducts, initialFilter }: Props) {
   const [activeFilter, setActiveFilter] = useState<string>(() => getFilterFromParam(initialFilter));
@@ -28,32 +47,8 @@ function GiftsAndCakesInner({ initialProducts, initialFilter }: Props) {
     let list = [...initialProducts];
 
     // Filter by tab
-    if (activeFilter === "layers-cakes") {
-      list = list.filter((p) => 
-        p.title.toLowerCase().includes("cake") || 
-        p.desc?.toLowerCase().includes("cake") ||
-        p.desc?.toLowerCase().includes("layers")
-      );
-    } else if (activeFilter === "chocolates") {
-      list = list.filter((p) => 
-        p.title.toLowerCase().includes("chocolate") ||
-        p.title.toLowerCase().includes("ferrero") ||
-        p.title.toLowerCase().includes("snickers") ||
-        p.title.toLowerCase().includes("kitkat") ||
-        p.title.toLowerCase().includes("mars") ||
-        p.title.toLowerCase().includes("bounty") ||
-        p.title.toLowerCase().includes("twix") ||
-        p.title.toLowerCase().includes("feastables") ||
-        p.title.toLowerCase().includes("mithai") ||
-        p.title.toLowerCase().includes("ladoo") ||
-        p.title.toLowerCase().includes("jamun") ||
-        p.desc?.toLowerCase().includes("mithai") ||
-        p.desc?.toLowerCase().includes("chocolate") ||
-        p.badge?.toLowerCase().includes("mithai")
-      );
-    } else if (activeFilter === "under-2500") {
-      list = list.filter((p) => p.price <= 2500);
-    }
+    const tab = TABS.find((t) => t.id === activeFilter);
+    if (tab) list = list.filter(tab.test);
 
     // Search query
     if (searchQuery.trim()) {
@@ -78,31 +73,11 @@ function GiftsAndCakesInner({ initialProducts, initialFilter }: Props) {
     return list;
   }, [initialProducts, activeFilter, searchQuery, sortBy]);
 
-  const layersCount = useMemo(() => {
-    return initialProducts.filter((p) => 
-      p.title.toLowerCase().includes("cake") || 
-      p.desc?.toLowerCase().includes("cake") ||
-      p.desc?.toLowerCase().includes("layers")
-    ).length;
-  }, [initialProducts]);
-
-  const chocolateCount = useMemo(() => {
-    return initialProducts.filter((p) => 
-      p.title.toLowerCase().includes("chocolate") ||
-      p.title.toLowerCase().includes("ferrero") ||
-      p.title.toLowerCase().includes("snickers") ||
-      p.title.toLowerCase().includes("kitkat") ||
-      p.title.toLowerCase().includes("mars") ||
-      p.title.toLowerCase().includes("bounty") ||
-      p.title.toLowerCase().includes("twix") ||
-      p.title.toLowerCase().includes("feastables") ||
-      p.title.toLowerCase().includes("mithai") ||
-      p.title.toLowerCase().includes("ladoo") ||
-      p.title.toLowerCase().includes("jamun") ||
-      p.desc?.toLowerCase().includes("mithai") ||
-      p.badge?.toLowerCase().includes("mithai")
-    ).length;
-  }, [initialProducts]);
+  const counts = useMemo(
+    () => Object.fromEntries(TABS.map((t) => [t.id, initialProducts.filter(t.test).length])),
+    [initialProducts],
+  );
+  const activeLabel = TABS.find((t) => t.id === activeFilter)?.label ?? "All Gifts & Cakes";
 
   return (
     <div className="space-y-6">
@@ -114,7 +89,7 @@ function GiftsAndCakesInner({ initialProducts, initialFilter }: Props) {
             <Search className="w-4 h-4 text-[#8B1E2D] absolute left-3.5 top-1/2 -translate-y-1/2" />
             <input
               type="text"
-              placeholder="Search Lotus, Raffaello, Nutella, Mithai, Ferrero, Snickers..."
+              placeholder="Search Lotus, Raffaello, Nutella, Ferrero, Snickers, perfume..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-9 pr-4 py-2 bg-[#F8F3EA] border border-[#E5DED2] rounded-xl text-xs sm:text-sm text-[#0B0B0B] placeholder-[#777777] outline-none focus:border-[#8B1E2D] transition-colors"
@@ -150,40 +125,21 @@ function GiftsAndCakesInner({ initialProducts, initialFilter }: Props) {
             All Items ({initialProducts.length})
           </button>
 
-          <button
-            onClick={() => setActiveFilter("layers-cakes")}
-            className={`px-3.5 py-1.5 rounded-full text-xs font-semibold flex items-center gap-1.5 transition-all duration-200 cursor-pointer ${
-              activeFilter === "layers-cakes"
-                ? "bg-[#8B1E2D] text-white shadow-xs"
-                : "bg-[#F8F3EA] text-[#2A2A2A] hover:bg-[#E5DED2]"
-            }`}
-          >
-            <Cake className="w-3.5 h-3.5 text-[#C6A15B]" />
-            Fresh Bakery Cakes ({layersCount})
-          </button>
-
-          <button
-            onClick={() => setActiveFilter("chocolates")}
-            className={`px-3.5 py-1.5 rounded-full text-xs font-semibold flex items-center gap-1.5 transition-all duration-200 cursor-pointer ${
-              activeFilter === "chocolates"
-                ? "bg-[#8B1E2D] text-white shadow-xs"
-                : "bg-[#F8F3EA] text-[#2A2A2A] hover:bg-[#E5DED2]"
-            }`}
-          >
-            <Gift className="w-3.5 h-3.5 text-[#C6A15B]" />
-            Gourmet Chocolates & Mithai ({chocolateCount})
-          </button>
-
-          <button
-            onClick={() => setActiveFilter("under-2500")}
-            className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all duration-200 cursor-pointer ${
-              activeFilter === "under-2500"
-                ? "bg-[#8B1E2D] text-white shadow-xs"
-                : "bg-[#F8F3EA] text-[#2A2A2A] hover:bg-[#E5DED2]"
-            }`}
-          >
-            Under Rs. 2,500
-          </button>
+          {TABS.map((t) => (
+            <button
+              key={t.id}
+              onClick={() => setActiveFilter(t.id)}
+              className={`px-3.5 py-1.5 rounded-full text-xs font-semibold flex items-center gap-1.5 transition-all duration-200 cursor-pointer ${
+                activeFilter === t.id
+                  ? "bg-[#8B1E2D] text-white shadow-xs"
+                  : "bg-[#F8F3EA] text-[#2A2A2A] hover:bg-[#E5DED2]"
+              }`}
+            >
+              {t.id === "layers-cakes" && <Cake className="w-3.5 h-3.5 text-[#C6A15B]" />}
+              {(t.id === "chocolates" || t.id === "gift-boxes") && <Gift className="w-3.5 h-3.5 text-[#C6A15B]" />}
+              {t.label} ({counts[t.id]})
+            </button>
+          ))}
         </div>
       </div>
 
@@ -191,15 +147,7 @@ function GiftsAndCakesInner({ initialProducts, initialFilter }: Props) {
       <div className="flex items-center justify-between text-xs text-[#2A2A2A] px-1">
         <span>
           Showing <strong className="text-[#0B0B0B]">{filteredProducts.length}</strong> items in{" "}
-          <span className="text-[#8B1E2D] font-bold">
-            {activeFilter === "all"
-              ? "All Combos"
-              : activeFilter === "layers-cakes"
-              ? "Fresh Bakery Cakes"
-              : activeFilter === "chocolates"
-              ? "Gourmet Chocolates & Mithai"
-              : "Under Rs. 2,500"}
-          </span>
+          <span className="text-[#8B1E2D] font-bold">{activeLabel}</span>
         </span>
         <span className="text-[#8B1E2D] font-semibold flex items-center gap-1">
           <Sparkles className="w-3.5 h-3.5 text-[#C6A15B]" />

@@ -6,6 +6,7 @@ import ProductCard from "../../components/ProductCard";
 import { MapPin, Clock, Camera, MessageCircle, Wallet, Gift, HelpCircle, Navigation, AlertCircle, Package } from "lucide-react";
 import { SITE_URL, areaFloristSchema } from "@/lib/business";
 import { withSeo } from "@/lib/seo";
+import { AreaDecorLinks } from "../../components/DecorationAreaDetails";
 
 export const metadata: Metadata = withSeo("/delivery-areas/dha", {
   title: {
@@ -285,6 +286,7 @@ export default async function DHADeliveryPage() {
           </Link>
         </div>
       </section>
+      <AreaDecorLinks area="dha" />
     </main>
   );
 }

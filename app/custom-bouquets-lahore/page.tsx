@@ -7,6 +7,7 @@ import { ALL_PRODUCTS } from "../data/products";
 import ProductCard from "../components/ProductCard";
 import { SITE_URL, itemListSchema } from "@/lib/business";
 import { withSeo } from "@/lib/seo";
+import ExploreLinks from "../components/ExploreLinks";
 
 export const metadata: Metadata = withSeo("/custom-bouquets-lahore", {
   title: {
@@ -210,6 +211,7 @@ export default async function CustomBouquetsLahorePage() {
         <Link href="/bouquets" className="text-[#8B1E2D] underline">All Bouquets</Link>
         <Link href="/gifts-and-cakes" className="text-[#8B1E2D] underline">Gifts & Cakes</Link>
       </section>
+      <ExploreLinks groups={["types","occasions"]} exclude="/custom-bouquets-lahore" />
     </main>
   );
 }

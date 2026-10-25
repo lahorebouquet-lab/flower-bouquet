@@ -7,6 +7,7 @@ import ProductCard from "../components/ProductCard";
 import { Sparkles, Camera, MessageCircle, HelpCircle, Calendar, ShieldCheck } from "lucide-react";
 import { SITE_URL, serviceSchema, itemListSchema } from "@/lib/business";
 import { withSeo } from "@/lib/seo";
+import { DecorationAreaLinks } from "../components/DecorationAreaDetails";
 
 export const metadata: Metadata = withSeo("/wedding-decor", {
   title: {
@@ -275,6 +276,7 @@ export default async function WeddingDecorPage() {
           </div>
         </div>
       </section>
+      <DecorationAreaLinks kind="wedding" />
     </main>
   );
 }

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Moon, Clock, Camera, MessageCircle, HelpCircle, Sparkles } from "lucide-react";
 import { SITE_URL } from "@/lib/business";
 import { withSeo } from "@/lib/seo";
+import ExploreLinks from "../components/ExploreLinks";
 
 export const metadata: Metadata = withSeo("/midnight-flower-delivery-lahore", {
   title: {
@@ -218,6 +219,7 @@ export default function MidnightDeliveryPage() {
           </div>
         </div>
       </section>
+      <ExploreLinks groups={["occasions","types"]} exclude="/midnight-flower-delivery-lahore" />
     </main>
   );
 }

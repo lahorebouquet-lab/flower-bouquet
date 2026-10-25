@@ -6,6 +6,7 @@ import ProductCard from "../../app/components/ProductCard";
 import { Briefcase, Building, Clock, ShieldCheck, MessageCircle, FileText, CalendarCheck, Sparkles } from "lucide-react";
 import { SITE_URL, whatsappLink } from "@/lib/business";
 import { withSeo } from "@/lib/seo";
+import ExploreLinks from "../components/ExploreLinks";
 
 export const metadata: Metadata = withSeo("/corporate", {
   title: {
@@ -266,6 +267,7 @@ export default async function CorporatePage() {
           ))}
         </div>
       </section>
+      <ExploreLinks groups={["occasions","types"]} exclude="/corporate" />
     </main>
   );
 }

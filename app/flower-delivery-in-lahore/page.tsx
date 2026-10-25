@@ -7,6 +7,7 @@ import { ALL_PRODUCTS, LAHORE_AREAS } from "../data/products";
 import ProductCard from "../components/ProductCard";
 import { SITE_URL } from "@/lib/business";
 import { withSeo } from "@/lib/seo";
+import ExploreLinks from "../components/ExploreLinks";
 
 export const metadata: Metadata = withSeo("/flower-delivery-in-lahore", {
   title: {
@@ -348,6 +349,7 @@ export default async function FlowerDeliveryLahorePage() {
           </div>
         </div>
       </section>
+      <ExploreLinks groups={["types","occasions","guides"]} exclude="/flower-delivery-in-lahore" />
     </main>
   );
 }

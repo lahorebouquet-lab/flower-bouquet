@@ -21,7 +21,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     description: "Simple fresh flower bouquets with seasonal blooms and elegant paper wrap.",
     popularFor: "Everyday gifting, congratulations, birthdays",
     badge: "Budget Friendly",
-    href: "/collections/bouquets",
+    href: "/bouquets",
   },
   {
     id: "single-rose",
@@ -32,7 +32,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     description: "Single long-stem rose beautifully wrapped — a minimal yet striking gesture.",
     popularFor: "Minimalist romance, subtle appreciation",
     badge: "Bestseller",
-    href: "/collections/roses",
+    href: "/roses",
   },
   {
     id: "sunflower-bouquets",
@@ -43,7 +43,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     description: "Bright golden sunflowers paired with ruby spray roses and eucalyptus foliage.",
     popularFor: "Birthdays, get well soon, graduation",
     badge: "Trending",
-    href: "/collections/sunflowers",
+    href: "/sunflower-bouquet-lahore",
   },
   {
     id: "classic-rose-bouquets",
@@ -54,7 +54,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     description: "Imported Dutch velvet red roses with baby's breath and ribbon accents.",
     popularFor: "Anniversaries, proposals, Valentine's Day",
     badge: "Most Popular",
-    href: "/collections/roses",
+    href: "/roses",
   },
   {
     id: "chocolate-bouquets",
@@ -65,7 +65,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     description: "Handcrafted Ferrero Rocher, Dairy Milk & KitKat bouquets nestled in florals.",
     popularFor: "Sweet celebrations, birthday surprises",
     badge: "Luxury Gifting",
-    href: "/collections/gifts-cakes",
+    href: "/chocolate-bouquets-lahore",
   },
   {
     id: "lily-bouquets",
@@ -76,7 +76,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     description: "Fragrant Casablanca lilies with luxury dual-tone wraps and satin ties.",
     popularFor: "High-end corporate gifting, VIP events",
     badge: "Grand Luxury",
-    href: "/collections/bouquets",
+    href: "/lily-bouquet-lahore",
   },
   {
     id: "crochet-bouquets",
@@ -87,7 +87,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     description: "100% yarn-knitted floral blooms that never wilt or fade — an eternal memory.",
     popularFor: "Keepsake gifting, room decor",
     badge: "Everlasting",
-    href: "/collections/bouquets",
+    href: "/crochet-bouquets",
   },
   {
     id: "artificial-bouquets",
@@ -97,7 +97,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     priceLabel: "From PKR 800",
     description: "High-grade silk and velvet faux flowers for permanent display.",
     popularFor: "Office styling, long-term home aesthetics",
-    href: "/collections/bouquets",
+    href: "/bouquets",
   },
   {
     id: "tulip-bouquets",
@@ -108,7 +108,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     description: "Direct-import Holland fresh tulips in crisp pastel tones.",
     popularFor: "Sophisticated luxury, Spring celebrations",
     badge: "Imported",
-    href: "/collections/bouquets",
+    href: "/tulip-bouquet-lahore",
   },
   {
     id: "money-bouquets",
@@ -119,7 +119,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     description: "Crisp PKR bank notes artistically folded into roses with fresh blooms.",
     popularFor: "Weddings, Eid salami, graduation gifts",
     badge: "Custom Made",
-    href: "/collections/money-bouquets",
+    href: "/money-bouquets",
   },
 
   // Wedding & Event Décor
@@ -132,7 +132,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     description: "Simple satin ribbon styling up to full fresh Dutch rose bonnet cascades and handles.",
     popularFor: "Barat cars, bridal departure, groom cars",
     badge: "Express Setup",
-    href: "/collections/wedding-decor",
+    href: "/wedding-car-decoration-lahore",
   },
   {
     id: "wedding-room-decor",
@@ -143,7 +143,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     description: "Canopy bed styling, red rose petal carpets, fairy lights, and scented candles.",
     popularFor: "Suhag raat, newlywed bridal rooms",
     badge: "Signature",
-    href: "/collections/wedding-decor",
+    href: "/bridal-room-decoration-lahore",
   },
   {
     id: "mayon-decor",
@@ -153,7 +153,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     priceLabel: "From PKR 10,000",
     description: "Traditional golden-yellow marigold and sunflower backdrops with festive cushions.",
     popularFor: "Home mayon functions, intimate gatherings",
-    href: "/collections/wedding-decor",
+    href: "/wedding-decor",
   },
   {
     id: "mehndi-decor",
@@ -164,7 +164,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     description: "Vibrant festive stage setups, floral arches, hanging kaliras, and low dholki seating.",
     popularFor: "Mehndi nights, musical evenings",
     badge: "Custom Quote",
-    href: "/collections/wedding-decor",
+    href: "/wedding-decor",
   },
   {
     id: "nikah-decor",
@@ -175,7 +175,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     description: "Serene white and pastel floral backdrops, mirror tables, and signature floral curtains.",
     popularFor: "Formal nikah ceremonies, mosque setups",
     badge: "Premium",
-    href: "/collections/wedding-decor",
+    href: "/wedding-decor",
   },
   {
     id: "wedding-lights",
@@ -185,7 +185,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     priceLabel: "From PKR 6,000",
     description: "Warm-white exterior roofline and garden string illumination for shaadi homes.",
     popularFor: "Wedding week home ambiance",
-    href: "/collections/wedding-decor",
+    href: "/wedding-decor",
   },
   {
     id: "birthday-room-decor",
@@ -196,7 +196,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     description: "Helium balloon ceiling cascades, LED number lights, flower petals & backdrop rings.",
     popularFor: "Midnight birthday surprises, spouse celebrations",
     badge: "Surprise Ready",
-    href: "/occasions/birthday",
+    href: "/birthday-decoration-lahore",
   },
   {
     id: "walima-decor",
@@ -206,7 +206,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     priceLabel: "Custom Quote",
     description: "Grand imported floral installations, crystal chandeliers, and catwalk styling.",
     popularFor: "Grand reception banquets",
-    href: "/collections/wedding-decor",
+    href: "/occasions/barat-and-walima",
   },
 
   // Floral Jewellery & Gajray
@@ -219,7 +219,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     description: "Fresh fragrant motia (jasmine) or red rose petal gajray tied with soft thread.",
     popularFor: "Mehndi, dholki, weddings, casual wear",
     badge: "Fresh Daily",
-    href: "/collections/wedding-decor",
+    href: "/gajray-lahore",
   },
   {
     id: "garlands-haar",
@@ -229,7 +229,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     priceLabel: "From PKR 300",
     description: "Traditional welcoming and wedding garlands in rose, motia, and marigold.",
     popularFor: "Groom haar, guest welcoming, VIP honors",
-    href: "/collections/wedding-decor",
+    href: "/garlands-lahore",
   },
   {
     id: "mehndi-jewellery-set",
@@ -239,7 +239,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     priceLabel: "From PKR 650",
     description: "Individual fresh flower earrings, matha patti, and wrist corsages for bridesmaids.",
     popularFor: "Dholki accessories, bridesmaid styling",
-    href: "/collections/wedding-decor",
+    href: "/flower-jewellery-lahore",
   },
   {
     id: "bridal-jewellery-set",
@@ -250,7 +250,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     description: "Full coordinated bridal set including matha patti, earrings, necklace & double gajray.",
     popularFor: "Mehndi brides, mayon brides",
     badge: "Handcrafted",
-    href: "/collections/wedding-decor",
+    href: "/flower-jewellery-lahore",
   },
 
   // Gifts & Celebration Combos
@@ -262,7 +262,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     priceLabel: "From PKR 200 / pc",
     description: "Floating metallic chrome balloons, heart foils, and personalized letter sets.",
     popularFor: "Surprise bouquet add-ons, room ceilings",
-    href: "/collections/gifts-cakes",
+    href: "/helium-balloons-lahore",
   },
   {
     id: "teddy-bears",
@@ -272,7 +272,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     priceLabel: "From PKR 1,200",
     description: "Premium plush teddy bears from 1ft up to 4ft giant huggable sizes.",
     popularFor: "Romantic surprises, birthday gifts",
-    href: "/collections/gifts-cakes",
+    href: "/teddy-bears-lahore",
   },
   {
     id: "gift-baskets",
@@ -283,7 +283,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     description: "Wicker and cane baskets filled with chocolates, snacks, and fresh blooms.",
     popularFor: "Eid Mubarak, corporate gifts, family visits",
     badge: "Curated",
-    href: "/collections/gifts-cakes",
+    href: "/gifts-and-cakes",
   },
   {
     id: "cake-flowers-combo",
@@ -294,7 +294,7 @@ export const SNAPSHOT_PRICES: PriceItem[] = [
     description: "Artisanal bakery chocolate fudge cake (2 lbs) paired with 12 fresh red roses.",
     popularFor: "Midnight birthdays, anniversaries",
     badge: "Top Rated",
-    href: "/collections/gifts-cakes",
+    href: "/gifts-and-cakes",
   },
 ];
 

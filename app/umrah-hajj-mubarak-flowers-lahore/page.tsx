@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Heart, Truck, Camera, MessageCircle, HelpCircle, Flower2 } from "lucide-react";
 import { SITE_URL } from "@/lib/business";
 import { withSeo } from "@/lib/seo";
+import ExploreLinks from "../components/ExploreLinks";
 
 export const metadata: Metadata = withSeo("/umrah-hajj-mubarak-flowers-lahore", {
   title: {
@@ -197,6 +198,7 @@ export default function UmrahHajjFlowersPage() {
           </div>
         </div>
       </section>
+      <ExploreLinks groups={["occasions","types"]} exclude="/umrah-hajj-mubarak-flowers-lahore" />
     </main>
   );
 }

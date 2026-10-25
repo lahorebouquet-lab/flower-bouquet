@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   }
 };
 
-export const PRICE_TABLE_ITEMS = [
+const PRICE_TABLE_ITEMS = [
   { item: "Single long-stem rose (red or white)", price: "Rs. 1,239", link: "/roses/red-roses" },
   { item: "Two sunflowers with baby's breath", price: "Rs. 1,590", link: "/sunflower-bouquet-lahore" },
   { item: "12 to 15 red roses with baby's breath", price: "Rs. 1,900", link: "/roses/red-roses" },
