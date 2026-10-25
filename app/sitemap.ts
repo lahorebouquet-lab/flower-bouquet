@@ -43,14 +43,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/roses", file: "app/roses/page.tsx" },
     { path: "/roses/red-roses", file: "app/roses/red-roses/page.tsx" },
     { path: "/roses/white-roses", file: "app/roses/white-roses/page.tsx" },
-    { path: "/sunflowers", file: "app/sunflowers/page.tsx" },
     { path: "/sunflower-bouquet-lahore", file: "app/sunflower-bouquet-lahore/page.tsx" },
     { path: "/chocolate-bouquets-lahore", file: "app/chocolate-bouquets-lahore/page.tsx" },
     { path: "/tulip-bouquet-lahore", file: "app/tulip-bouquet-lahore/page.tsx" },
     { path: "/money-bouquets", file: "app/money-bouquets/page.tsx" },
     { path: "/wedding-decor", file: "app/wedding-decor/page.tsx" },
     { path: "/gifts-and-cakes", file: "app/gifts-and-cakes/page.tsx" },
-    { path: "/collections/fresh-flower-gajray", file: "app/collections/fresh-flower-gajray/page.tsx" },
     { path: "/collections/scents-and-perfumes", file: "app/collections/scents-and-perfumes/page.tsx" },
     { path: "/crochet-bouquets", file: "app/crochet-bouquets/page.tsx" },
     { path: "/dried-flowers", file: "app/dried-flowers/page.tsx" },
@@ -86,7 +84,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/delivery-areas/faisal-town", file: "app/delivery-areas/faisal-town/page.tsx" },
     { path: "/blog", file: "app/blog/page.tsx" },
     { path: "/blog/flower-prices-lahore-2026", file: "app/blog/flower-prices-lahore-2026/page.tsx" },
-    { path: "/blog/send-flowers-to-lahore-from-abroad", file: "app/blog/send-flowers-to-lahore-from-abroad/page.tsx" },
     { path: "/blog/midnight-flower-cake-delivery-lahore", file: "app/blog/midnight-flower-cake-delivery-lahore/page.tsx" },
     { path: "/blog/best-flowers-birthday-anniversary-get-well-pakistan", file: "app/blog/best-flowers-birthday-anniversary-get-well-pakistan/page.tsx" },
     { path: "/blog/send-flowers-to-lahore-from-uk", file: "app/blog/send-flowers-to-lahore-from-uk/page.tsx" },
@@ -104,20 +101,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/bridal-room-decoration-lahore", file: "app/bridal-room-decoration-lahore/page.tsx" },
     { path: "/wedding-car-decoration-lahore", file: "app/wedding-car-decoration-lahore/page.tsx" },
     { path: "/valentine-day-flowers-lahore", file: "app/valentine-day-flowers-lahore/page.tsx" },
-    { path: "/valentines-day-2027", file: "app/valentines-day-2027/page.tsx" },
-    { path: "/flower-delivery-dha-lahore", file: "app/flower-delivery-dha-lahore/page.tsx" },
-    { path: "/flower-delivery-gulberg-lahore", file: "app/flower-delivery-gulberg-lahore/page.tsx" },
-    { path: "/flower-delivery-bahria-town-lahore", file: "app/flower-delivery-bahria-town-lahore/page.tsx" },
-    { path: "/flower-delivery-model-town-lahore", file: "app/flower-delivery-model-town-lahore/page.tsx" },
-    { path: "/flower-delivery-johar-town-lahore", file: "app/flower-delivery-johar-town-lahore/page.tsx" },
-    { path: "/flower-delivery-cantt-lahore", file: "app/flower-delivery-cantt-lahore/page.tsx" },
-    { path: "/flower-delivery-wapda-town-lahore", file: "app/flower-delivery-wapda-town-lahore/page.tsx" },
-    { path: "/flower-delivery-valencia-town-lahore", file: "app/flower-delivery-valencia-town-lahore/page.tsx" },
-    { path: "/flower-delivery-lake-city-lahore", file: "app/flower-delivery-lake-city-lahore/page.tsx" },
-    { path: "/flower-delivery-askari-lahore", file: "app/flower-delivery-askari-lahore/page.tsx" },
-    { path: "/flower-delivery-eme-society-lahore", file: "app/flower-delivery-eme-society-lahore/page.tsx" },
-    { path: "/flower-delivery-iqbal-town-lahore", file: "app/flower-delivery-iqbal-town-lahore/page.tsx" },
-    { path: "/flower-delivery-faisal-town-lahore", file: "app/flower-delivery-faisal-town-lahore/page.tsx" },
     { path: "/wedding-decoration-dha-lahore", file: "app/wedding-decoration-dha-lahore/page.tsx" },
     { path: "/birthday-decoration-dha-lahore", file: "app/birthday-decoration-dha-lahore/page.tsx" },
     { path: "/wedding-decoration-gulberg-lahore", file: "app/wedding-decoration-gulberg-lahore/page.tsx" },
@@ -167,16 +150,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/flower-delivery-islamabad/g-11-islamabad", file: "app/flower-delivery-islamabad/g-11-islamabad/page.tsx" },
     { path: "/flower-delivery-islamabad/dha-islamabad", file: "app/flower-delivery-islamabad/dha-islamabad/page.tsx" },
     { path: "/flower-delivery-islamabad/bahria-town-islamabad", file: "app/flower-delivery-islamabad/bahria-town-islamabad/page.tsx" },
-    { path: "/islamabad/bouquets/", file: "app/islamabad/bouquets/page.tsx" },
-    { path: "/islamabad/birthday-flowers/", file: "app/islamabad/birthday-flowers/page.tsx" },
-    { path: "/islamabad/anniversary-flowers/", file: "app/islamabad/anniversary-flowers/page.tsx" },
-    { path: "/islamabad/flower-prices/", file: "app/islamabad/flower-prices/page.tsx" },
-    { path: "/islamabad/rose-bouquets/", file: "app/islamabad/rose-bouquets/page.tsx" },
-    { path: "/islamabad/sunflower-bouquets/", file: "app/islamabad/sunflower-bouquets/page.tsx" },
-    { path: "/islamabad/chocolate-bouquets/", file: "app/islamabad/chocolate-bouquets/page.tsx" },
-    { path: "/islamabad/gifts-and-cakes/", file: "app/islamabad/gifts-and-cakes/page.tsx" },
-    { path: "/islamabad/valentines-day/", file: "app/islamabad/valentines-day/page.tsx" },
-    { path: "/islamabad/wedding-flowers/", file: "app/islamabad/wedding-flowers/page.tsx" },
+    { path: "/islamabad/bouquets", file: "app/islamabad/bouquets/page.tsx" },
+    { path: "/islamabad/birthday-flowers", file: "app/islamabad/birthday-flowers/page.tsx" },
+    { path: "/islamabad/anniversary-flowers", file: "app/islamabad/anniversary-flowers/page.tsx" },
+    { path: "/islamabad/flower-prices", file: "app/islamabad/flower-prices/page.tsx" },
+    { path: "/islamabad/rose-bouquets", file: "app/islamabad/rose-bouquets/page.tsx" },
+    { path: "/islamabad/sunflower-bouquets", file: "app/islamabad/sunflower-bouquets/page.tsx" },
+    { path: "/islamabad/chocolate-bouquets", file: "app/islamabad/chocolate-bouquets/page.tsx" },
+    { path: "/islamabad/gifts-and-cakes", file: "app/islamabad/gifts-and-cakes/page.tsx" },
+    { path: "/islamabad/valentines-day", file: "app/islamabad/valentines-day/page.tsx" },
+    { path: "/islamabad/wedding-flowers", file: "app/islamabad/wedding-flowers/page.tsx" },
   ];
 
   const routes: MetadataRoute.Sitemap = staticRoutes
@@ -189,7 +172,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Dynamic Sanity Products (real _updatedAt, with image entries)
   const sanityProducts = await getSanityProducts();
   const products = sanityProducts.length > 0 ? sanityProducts : ALL_PRODUCTS;
+  // Products that now redirect elsewhere (see next.config.ts)
+  const REDIRECTED_PRODUCTS = new Set(["hova-hair-volume-powder"]);
   for (const product of products) {
+    if (REDIRECTED_PRODUCTS.has(product.slug)) continue;
     const lastMod = product._updatedAt ? new Date(product._updatedAt) : baseline;
     const imgUrl = product.image
       ? product.image.startsWith("http")
@@ -210,6 +196,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       .filter((r) => r.path.startsWith("/blog/"))
       .map((r) => r.path.replace("/blog/", ""))
   );
+  // Redirected to /send-flowers-to-lahore-from-abroad (see next.config.ts)
+  seenBlogSlugs.add("send-flowers-to-lahore-from-abroad");
   const sanityBlogs = await getSanityBlogPosts();
   for (const post of sanityBlogs) {
     if (seenBlogSlugs.has(post.slug)) continue;

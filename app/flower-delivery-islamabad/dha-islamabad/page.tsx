@@ -2,8 +2,9 @@ import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, whatsappLink } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/flower-delivery-islamabad/dha-islamabad", {
   title: { absolute: "Flower Delivery in DHA Islamabad | Bouquets & Gifts" },
   description: "Send elegant flower bouquets and gifts to covered areas of DHA Islamabad. Explore Lahore Bouquet's available collection and confirm your phase, address and delivery charges.",
   alternates: { canonical: `${SITE_URL}/flower-delivery-islamabad/dha-islamabad` },
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [{ url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630, alt: "Flower Delivery in DHA Islamabad | Bouquets & Gifts" }],
   }
-};
+});
 
 const FAQS = [
   { q: "Where can I order flowers online in DHA Islamabad?", a: "Browse available bouquets on LahoreBouquet.com and contact our team to arrange delivery in DHA Islamabad. Confirm product availability and delivery charges before payment." },

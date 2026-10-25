@@ -4,8 +4,9 @@ import Link from "next/link";
 import { Gift, Ruler, MoonStar, MessageCircle, Truck, Camera, Sparkles, Heart } from "lucide-react";
 import { SITE_URL, whatsappLink } from "@/lib/business";
 import RelatedProducts from "../components/RelatedProducts";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/teddy-bears-lahore", {
   title: {
     absolute: "Giant Teddy Bears in Lahore | Same-Day Delivery",
   },
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
       },
     ],
   }
-};
+});
 
 const FAQS = [
   {
@@ -240,7 +241,7 @@ export default function TeddyBearsLahorePage() {
             <span className="text-sm font-semibold text-[#0B0B0B]">Birthday Flower Delivery in Lahore</span>
             <span className="text-[#8B1E2D] ml-2">→</span>
           </Link>
-          <Link href="/blog/send-flowers-to-lahore-from-abroad" className="block p-4 rounded-xl bg-white border border-[#E5DED2] hover:border-[#8B1E2D] transition-colors">
+          <Link href="/send-flowers-to-lahore-from-abroad" className="block p-4 rounded-xl bg-white border border-[#E5DED2] hover:border-[#8B1E2D] transition-colors">
             <span className="text-sm font-semibold text-[#0B0B0B]">Send Flowers to Lahore from Abroad</span>
             <span className="text-[#8B1E2D] ml-2">→</span>
           </Link>

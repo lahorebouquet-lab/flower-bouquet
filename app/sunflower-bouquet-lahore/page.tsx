@@ -7,8 +7,9 @@ import { getSanityProducts } from "@/sanity/lib/fetch";
 import { ALL_PRODUCTS } from "../data/products";
 import ProductCard from "../components/ProductCard";
 import { SITE_URL, itemListSchema } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/sunflower-bouquet-lahore", {
   title: {
     absolute: "Send Sunflower Bouquet in Lahore | Same-Day Gift Delivery",
   },
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+});
 
 export default async function SunflowerBouquetLahorePage() {
   const sanityProducts = await getSanityProducts();

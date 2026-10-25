@@ -2,8 +2,9 @@ import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, BUSINESS } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/blog/best-flowers-birthday-anniversary-get-well-pakistan", {
   title: {
     absolute: "Best Flowers for Birthday & Anniversary in Pakistan (2026)",
   },
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
       },
     ],
   }
-};
+});
 
 const FAQS = [
   {

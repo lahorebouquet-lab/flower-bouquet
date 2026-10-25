@@ -49,7 +49,7 @@ export const ALL_DEPARTMENTS: DepartmentItem[] = [
     name: "Sunflowers & Mixed Blooms",
     type: "bouquets",
     tagline: "Vibrant golden sunflowers & lilies",
-    href: "/sunflowers",
+    href: "/sunflower-bouquet-lahore",
     image: "/images/categories/sunflowers.webp",
   },
   {
@@ -162,7 +162,7 @@ export const ALL_DEPARTMENTS: DepartmentItem[] = [
     name: "Fresh Flower Gajray",
     type: "gifts",
     tagline: "Motia & rose handcrafted wrist cuffs",
-    href: "/collections/fresh-flower-gajray",
+    href: "/gajray-lahore",
     image: "/images/gajray/complete-fresh-flower-gajra-set-lahore.webp",
     badge: "Handmade",
   },

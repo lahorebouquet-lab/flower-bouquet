@@ -2,8 +2,9 @@ import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, BUSINESS, whatsappLink } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/blog/nikkah-flowers-guide-lahore", {
   title: {
     absolute: "Nikkah Flowers Lahore 2026 | Bridal Bouquet Guide",
   },
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
       },
     ],
   }
-};
+});
 
 const FAQS = [
   {
@@ -97,7 +98,7 @@ export default function NikkahFlowersGuidePage() {
 
       <section className="space-y-4">
         <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">2. Fresh Gajray (Flower Jewellery)</h2>
-        <p className="text-sm leading-relaxed">No nikkah is complete without gajray. Our fresh jasmine-and-rose gajray start at <strong>Rs. 1,200 per pair</strong>, with bridal sets (gajray + tikka strands + hathphool) from Rs. 2,500. See our <Link href="/collections/fresh-flower-gajray" className="text-[#8B1E2D] underline">fresh gajray collection</Link>. For mehndi nights, ask about <strong>floral jewellery sets</strong> — maang tikka, earrings and bracelets in fresh flowers (from Rs. 3,500).</p>
+        <p className="text-sm leading-relaxed">No nikkah is complete without gajray. Our fresh jasmine-and-rose gajray start at <strong>Rs. 1,200 per pair</strong>, with bridal sets (gajray + tikka strands + hathphool) from Rs. 2,500. See our <Link href="/gajray-lahore" className="text-[#8B1E2D] underline">fresh gajray collection</Link>. For mehndi nights, ask about <strong>floral jewellery sets</strong> — maang tikka, earrings and bracelets in fresh flowers (from Rs. 3,500).</p>
       </section>
 
       <section className="space-y-4">

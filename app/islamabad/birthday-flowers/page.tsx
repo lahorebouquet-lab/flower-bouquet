@@ -3,19 +3,20 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, whatsappLink } from "@/lib/business";
 import { Cake, Clock, Truck, MessageCircle, HelpCircle, Gift } from "lucide-react";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/islamabad/birthday-flowers", {
   title: {
     absolute: "Birthday Flower Delivery in Islamabad | Same-Day | Lahore Bouquet",
   },
   description: "Send birthday flowers in Islamabad with same-day delivery in 2-5 hours. Birthday bouquets from Rs. 1,239. Order on WhatsApp: 0310-4225974",
   alternates: {
-    canonical: `${SITE_URL}/islamabad/birthday-flowers/`,
+    canonical: `${SITE_URL}/islamabad/birthday-flowers`,
   },
   openGraph: {
     title: "Birthday Flower Delivery in Islamabad | Lahore Bouquet",
     description: "Birthday bouquets delivered same-day in Islamabad. From Rs. 1,239.",
-    url: `${SITE_URL}/islamabad/birthday-flowers/`,
+    url: `${SITE_URL}/islamabad/birthday-flowers`,
     siteName: "Lahore Bouquet",
     type: "website",
     locale: "en_PK",
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     title: "Birthday Flower Delivery in Islamabad | Lahore Bouquet",
     description: "Same-day birthday bouquets Islamabad. From Rs. 1,239. WhatsApp: 0310-4225974",
   },
-};
+});
 
 const FAQS = [
   {
@@ -70,7 +71,7 @@ export default function IslamabadBirthdayPage() {
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}` },
       { "@type": "ListItem", position: 2, name: "Flower Delivery in Islamabad", item: `${SITE_URL}/flower-delivery-islamabad` },
-      { "@type": "ListItem", position: 3, name: "Birthday Flowers in Islamabad", item: `${SITE_URL}/islamabad/birthday-flowers/` },
+      { "@type": "ListItem", position: 3, name: "Birthday Flowers in Islamabad", item: `${SITE_URL}/islamabad/birthday-flowers` },
     ],
   };
 
@@ -91,7 +92,7 @@ export default function IslamabadBirthdayPage() {
             <a href={whatsappLink("Hi Lahore Bouquet! I want to order birthday flowers for delivery in Islamabad.")} target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-full bg-[#128C7E] text-white text-sm font-bold hover:opacity-90 transition-opacity">
               Order Birthday Flowers
             </a>
-            <Link href="/islamabad/bouquets/" className="px-6 py-3 rounded-full border border-[#8B1E2D] text-[#8B1E2D] text-sm font-bold hover:bg-[#8B1E2D] hover:text-white transition-colors">
+            <Link href="/islamabad/bouquets" className="px-6 py-3 rounded-full border border-[#8B1E2D] text-[#8B1E2D] text-sm font-bold hover:bg-[#8B1E2D] hover:text-white transition-colors">
               All Bouquets
             </Link>
           </div>

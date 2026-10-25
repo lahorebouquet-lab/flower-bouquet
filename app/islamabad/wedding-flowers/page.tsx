@@ -3,17 +3,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, whatsappLink } from "@/lib/business";
 import { MessageCircle, HelpCircle, Sparkles } from "lucide-react";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/islamabad/wedding-flowers", {
   title: {
     absolute: "Wedding Flowers in Islamabad | Bridal Bouquets & Decor | Lahore Bouquet",
   },
   description: "Wedding flowers in Islamabad — bridal bouquets, event decoration & floral arrangements. Enquire about packages and availability on WhatsApp: 0310-4225974",
-  alternates: { canonical: `${SITE_URL}/islamabad/wedding-flowers/` },
+  alternates: { canonical: `${SITE_URL}/islamabad/wedding-flowers` },
   openGraph: {
     title: "Wedding Flowers in Islamabad | Lahore Bouquet",
     description: "Bridal bouquets and wedding floral decoration in Islamabad. Enquire now.",
-    url: `${SITE_URL}/islamabad/wedding-flowers/`,
+    url: `${SITE_URL}/islamabad/wedding-flowers`,
     siteName: "Lahore Bouquet",
     type: "website",
     locale: "en_PK",
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     title: "Wedding Flowers in Islamabad | Lahore Bouquet",
     description: "Wedding florals Islamabad. Enquire: 0310-4225974",
   },
-};
+});
 
 const FAQS = [
   { q: "Do you provide bridal bouquets in Islamabad?", a: "Yes. Bridal bouquets can be arranged for Islamabad weddings. Message us on WhatsApp (0310-4225974) with your wedding date for availability and pricing." },
@@ -36,7 +37,7 @@ export default function Page() {
   const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}` },
     { "@type": "ListItem", position: 2, name: "Flower Delivery in Islamabad", item: `${SITE_URL}/flower-delivery-islamabad` },
-    { "@type": "ListItem", position: 3, name: "Wedding Flowers in Islamabad", item: `${SITE_URL}/islamabad/wedding-flowers/` },
+    { "@type": "ListItem", position: 3, name: "Wedding Flowers in Islamabad", item: `${SITE_URL}/islamabad/wedding-flowers` },
   ]};
   return (
     <main className="bg-[#F8F3EA] text-[#2A2A2A]">
@@ -48,7 +49,7 @@ export default function Page() {
           <p className="text-sm sm:text-base leading-relaxed"><strong>Bridal bouquets, wedding arrangements and event florals in Islamabad</strong> — elegant flowers for your special day. Enquire about packages, availability and custom quotes on WhatsApp: <strong>0310-4225974</strong>.</p>
           <div className="flex flex-wrap justify-center gap-3 pt-2">
             <a href={whatsappLink("Hi Lahore Bouquet! I need wedding flowers in Islamabad. My event date is: ___")} target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-full bg-[#128C7E] text-white text-sm font-bold hover:opacity-90 transition-opacity">Enquire for Wedding</a>
-            <Link href="/islamabad/bouquets/" className="px-6 py-3 rounded-full border border-[#8B1E2D] text-[#8B1E2D] text-sm font-bold hover:bg-[#8B1E2D] hover:text-white transition-colors">View Bouquets</Link>
+            <Link href="/islamabad/bouquets" className="px-6 py-3 rounded-full border border-[#8B1E2D] text-[#8B1E2D] text-sm font-bold hover:bg-[#8B1E2D] hover:text-white transition-colors">View Bouquets</Link>
           </div>
         </div>
       </section>

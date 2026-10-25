@@ -4,8 +4,9 @@ import Link from "next/link";
 import { MessageCircle, Truck, Camera, Heart, MapPin, Sparkles } from "lucide-react";
 import { SITE_URL, whatsappLink } from "@/lib/business";
 import RelatedProducts from "../components/RelatedProducts";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/wedding-decoration-model-town-lahore", {
   title: { absolute: "Wedding Decoration in Model Town Lahore | Book Online" },
   description: "Book wedding decoration in Model Town Lahore — Elegant stage backdrops. Free quote on WhatsApp, same-week slots available.",
   alternates: { canonical: `${SITE_URL}/wedding-decoration-model-town-lahore` },
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/wedding-decoration-model-town-lahore`,
     images: [{ url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630, alt: "Wedding Decoration in Model Town Lahore" }],
   }
-};
+});
 
 const FAQS = [
   { q: "What is the price of wedding decoration in Model Town Lahore?", a: "Prices depend on the venue size and flower selection. Message us on WhatsApp (0310-4225974) with your event date and venue in Model Town Lahore for a free instant quote." },
@@ -93,7 +94,7 @@ export default function Page() {
         </div>
       </section>
       <section className="text-xs text-[#777777]">
-        <p>Related: <Link href="/flower-delivery-model-town-lahore" className="text-[#8B1E2D] underline">flower delivery Model Town Lahore</Link> • <Link href="/wedding-decor" className="text-[#8B1E2D] underline">wedding decor</Link> • <Link href="/prices" className="text-[#8B1E2D] underline">price list</Link></p>
+        <p>Related: <Link href="/delivery-areas/model-town" className="text-[#8B1E2D] underline">flower delivery Model Town Lahore</Link> • <Link href="/wedding-decor" className="text-[#8B1E2D] underline">wedding decor</Link> • <Link href="/prices" className="text-[#8B1E2D] underline">price list</Link></p>
       </section>
     </main>
   );

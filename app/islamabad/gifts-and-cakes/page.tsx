@@ -3,17 +3,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, whatsappLink } from "@/lib/business";
 import { MessageCircle, HelpCircle, Gift } from "lucide-react";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/islamabad/gifts-and-cakes", {
   title: {
     absolute: "Gifts & Cakes Delivery in Islamabad | Combos & Hampers | Lahore Bouquet",
   },
   description: "Order gifts, cakes and flower combos in Islamabad — birthday combos, anniversary hampers & celebration packages with same-day delivery. WhatsApp: 0310-4225974",
-  alternates: { canonical: `${SITE_URL}/islamabad/gifts-and-cakes/` },
+  alternates: { canonical: `${SITE_URL}/islamabad/gifts-and-cakes` },
   openGraph: {
     title: "Gifts & Cakes Delivery in Islamabad | Lahore Bouquet",
     description: "Gift combos and cakes delivered same-day in Islamabad.",
-    url: `${SITE_URL}/islamabad/gifts-and-cakes/`,
+    url: `${SITE_URL}/islamabad/gifts-and-cakes`,
     siteName: "Lahore Bouquet",
     type: "website",
     locale: "en_PK",
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     title: "Gifts & Cakes Delivery in Islamabad | Lahore Bouquet",
     description: "Gift combos, same-day Islamabad delivery.",
   },
-};
+});
 
 const FAQS = [
   { q: "Can I order flowers with cake in Islamabad?", a: "Yes. Flower + cake combos are available for birthdays and celebrations. Message us on WhatsApp (0310-4225974) for today's cake options and combo prices." },
@@ -36,7 +37,7 @@ export default function Page() {
   const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}` },
     { "@type": "ListItem", position: 2, name: "Flower Delivery in Islamabad", item: `${SITE_URL}/flower-delivery-islamabad` },
-    { "@type": "ListItem", position: 3, name: "Gifts & Cakes in Islamabad", item: `${SITE_URL}/islamabad/gifts-and-cakes/` },
+    { "@type": "ListItem", position: 3, name: "Gifts & Cakes in Islamabad", item: `${SITE_URL}/islamabad/gifts-and-cakes` },
   ]};
   return (
     <main className="bg-[#F8F3EA] text-[#2A2A2A]">
@@ -48,7 +49,7 @@ export default function Page() {
           <p className="text-sm sm:text-base leading-relaxed"><strong>Complete celebration packages in Islamabad</strong> — flowers with cakes, chocolates, teddy bears and gift hampers. Perfect for birthdays and anniversaries. Same-day delivery. WhatsApp: <strong>0310-4225974</strong>.</p>
           <div className="flex flex-wrap justify-center gap-3 pt-2">
             <a href={whatsappLink("Hi Lahore Bouquet! I want a gift + cake combo for delivery in Islamabad.")} target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-full bg-[#128C7E] text-white text-sm font-bold hover:opacity-90 transition-opacity">Order Gift Combo</a>
-            <Link href="/islamabad/birthday-flowers/" className="px-6 py-3 rounded-full border border-[#8B1E2D] text-[#8B1E2D] text-sm font-bold hover:bg-[#8B1E2D] hover:text-white transition-colors">Birthday Flowers</Link>
+            <Link href="/islamabad/birthday-flowers" className="px-6 py-3 rounded-full border border-[#8B1E2D] text-[#8B1E2D] text-sm font-bold hover:bg-[#8B1E2D] hover:text-white transition-colors">Birthday Flowers</Link>
           </div>
         </div>
       </section>

@@ -7,8 +7,9 @@ import { getSanityProducts } from "@/sanity/lib/fetch";
 import { ALL_PRODUCTS } from "../data/products";
 import ProductCard from "../components/ProductCard";
 import { SITE_URL, itemListSchema } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/tulip-bouquet-lahore", {
   title: {
     absolute: "Tulip Bouquet in Lahore | Seasonal Tulips, Made to Order",
   },
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+});
 
 export default async function TulipBouquetLahorePage() {
   const sanityProducts = await getSanityProducts();

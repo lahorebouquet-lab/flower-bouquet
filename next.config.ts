@@ -117,7 +117,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/collections/sunflowers",
-        destination: "/sunflowers",
+        destination: "/sunflower-bouquet-lahore",
         permanent: true,
       },
       {
@@ -147,12 +147,103 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/collections/beautiful-gajray-garlands-mala-lahore",
-        destination: "/collections/fresh-flower-gajray",
+        destination: "/gajray-lahore",
         permanent: true,
       },
       {
         source: "/collections/gajray-garlands-mala-lahore",
-        destination: "/collections/fresh-flower-gajray",
+        destination: "/gajray-lahore",
+        permanent: true,
+      },
+      // SEO audit Oct 2026: merge duplicate pages into one URL each
+      {
+        source: "/flower-delivery-dha-lahore",
+        destination: "/delivery-areas/dha",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-gulberg-lahore",
+        destination: "/delivery-areas/gulberg",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-bahria-town-lahore",
+        destination: "/delivery-areas/bahria-town",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-model-town-lahore",
+        destination: "/delivery-areas/model-town",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-johar-town-lahore",
+        destination: "/delivery-areas/johar-town",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-cantt-lahore",
+        destination: "/delivery-areas/cantt",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-wapda-town-lahore",
+        destination: "/delivery-areas/wapda-town",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-valencia-town-lahore",
+        destination: "/delivery-areas/valencia-town",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-lake-city-lahore",
+        destination: "/delivery-areas/lake-city",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-askari-lahore",
+        destination: "/delivery-areas/askari",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-eme-society-lahore",
+        destination: "/delivery-areas/eme-society",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-iqbal-town-lahore",
+        destination: "/delivery-areas/iqbal-town",
+        permanent: true,
+      },
+      {
+        source: "/flower-delivery-faisal-town-lahore",
+        destination: "/delivery-areas/faisal-town",
+        permanent: true,
+      },
+      {
+        source: "/sunflowers",
+        destination: "/sunflower-bouquet-lahore",
+        permanent: true,
+      },
+      {
+        source: "/blog/send-flowers-to-lahore-from-abroad",
+        destination: "/send-flowers-to-lahore-from-abroad",
+        permanent: true,
+      },
+      {
+        source: "/valentines-day-2027",
+        destination: "/valentine-day-flowers-lahore",
+        permanent: true,
+      },
+      {
+        source: "/collections/fresh-flower-gajray",
+        destination: "/gajray-lahore",
+        permanent: true,
+      },
+      {
+        source: "/products/hova-hair-volume-powder",
+        destination: "/gifts-and-cakes",
         permanent: true,
       },
     ];

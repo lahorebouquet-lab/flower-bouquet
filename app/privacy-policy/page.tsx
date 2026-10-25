@@ -2,8 +2,9 @@ import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/privacy-policy", {
   title: {
     absolute: "Privacy Policy | Lahore Bouquet",
   },
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     description: "How Lahore Bouquet collects, uses and protects your personal information.",
     url: `${SITE_URL}/privacy-policy`,
   }
-};
+});
 
 const privacySchema = {
   "@context": "https://schema.org",

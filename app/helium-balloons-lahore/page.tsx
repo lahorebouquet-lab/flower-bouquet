@@ -7,8 +7,9 @@ import RelatedProducts from "../components/RelatedProducts";
 import ProductCard from "../components/ProductCard";
 import { getSanityProducts } from "@/sanity/lib/fetch";
 import { ALL_PRODUCTS } from "../data/products";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/helium-balloons-lahore", {
   title: {
     absolute: "Buy Helium Balloons in Lahore from Rs. 199 | Same-Day Delivery",
   },
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
       },
     ],
   }
-};
+});
 
 const FAQS = [
   {

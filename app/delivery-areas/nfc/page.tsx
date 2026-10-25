@@ -6,8 +6,9 @@ import ProductCard from "../../components/ProductCard";
 import NeighborhoodTemplate from "../../components/NeighborhoodTemplate";
 import { MapPin, Clock, Camera, MessageCircle, Wallet, Gift, HelpCircle, Navigation, AlertCircle, Package } from "lucide-react";
 import { SITE_URL, areaFloristSchema } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/delivery-areas/nfc", {
   title: {
     absolute: "Flower Delivery in NFC Society Lahore | FREE delivery, 2.5–3.5 hrs",
   },
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
       },
     ],
   }
-};
+});
 
 const nfcBreadcrumbSchema = {
   "@context": "https://schema.org",

@@ -5,8 +5,9 @@ import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../app/components/ProductCard";
 import { Briefcase, Building, Clock, ShieldCheck, MessageCircle, FileText, CalendarCheck, Sparkles } from "lucide-react";
 import { SITE_URL, whatsappLink } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/corporate", {
   title: {
     absolute: "Corporate Flower Delivery Lahore | Office & Event Plans",
   },
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
       },
     ],
   }
-};
+});
 
 const FAQS = [
   {

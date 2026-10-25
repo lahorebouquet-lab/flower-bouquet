@@ -7,8 +7,9 @@ import { SITE_URL, BUSINESS, whatsappLink, itemListSchema } from "@/lib/business
 import { getSanityProducts, getSanityReviews } from "@/sanity/lib/fetch";
 import ReviewsSection from "../components/ReviewsSection";
 import type { Product } from "@/app/data/products";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/best-bouquet-in-lahore", {
   title: {
     absolute: "Best Bouquet in Lahore: How to Choose the Right One | Lahore Bouquet",
   },
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
     description: "A buyer's guide to bouquets in Lahore — picks by occasion and budget, plus the freshness checks that actually matter.",
     images: [`${SITE_URL}/og-image.jpg`],
   },
-};
+});
 
 /**
  * Direct Sanity CDN URL with Sanity-side transforms for this page's featured

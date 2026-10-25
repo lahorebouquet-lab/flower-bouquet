@@ -6,8 +6,9 @@ import ProductCard from "../components/ProductCard";
 import { Sparkles, Truck, Camera, MessageCircle, HelpCircle, Heart, Droplets, CheckCircle2 } from "lucide-react";
 import { ALL_PRODUCTS } from "../data/products";
 import { SITE_URL, itemListSchema } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const BASE_METADATA: Metadata = {
+export const BASE_METADATA: Metadata = withSeo("/bouquets", {
   title: {
     absolute: "Bouquet Delivery in Lahore | Fresh Bouquets from Rs. 1,239",
   },
@@ -31,7 +32,7 @@ export const BASE_METADATA: Metadata = {
       },
     ],
   },
-};
+});
 
 export async function generateMetadata({
   searchParams,
@@ -333,7 +334,7 @@ export default async function BouquetsPage({
         <Link href="/roses/white-roses" className="px-4.5 py-2 rounded-full bg-white text-[#2A2A2A] hover:text-[#0B0B0B] border border-[#E5DED2] hover:border-[#C6A15B] whitespace-nowrap transition-colors">
           White Roses
         </Link>
-        <Link href="/sunflowers" className="px-4.5 py-2 rounded-full bg-white text-[#2A2A2A] hover:text-[#0B0B0B] border border-[#E5DED2] hover:border-[#C6A15B] whitespace-nowrap transition-colors">
+        <Link href="/sunflower-bouquet-lahore" className="px-4.5 py-2 rounded-full bg-white text-[#2A2A2A] hover:text-[#0B0B0B] border border-[#E5DED2] hover:border-[#C6A15B] whitespace-nowrap transition-colors">
           Sunflowers
         </Link>
         <Link href="/chocolate-bouquets-lahore" className="px-4.5 py-2 rounded-full bg-white text-[#2A2A2A] hover:text-[#0B0B0B] border border-[#E5DED2] hover:border-[#C6A15B] whitespace-nowrap transition-colors">

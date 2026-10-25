@@ -5,8 +5,9 @@ import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { Moon, Truck, Camera, MessageCircle } from "lucide-react";
 import { SITE_URL } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/occasions/eid-gifts", {
   title: {
     absolute: "Eid Gifts & Flower Delivery in Lahore | Eid ul Fitr & Adha",
   },
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
       },
     ],
   }
-};
+});
 
 export default async function EidGiftsPage() {
   const allProducts = await getSanityProducts();

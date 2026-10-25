@@ -2,8 +2,9 @@ import { Metadata } from "next";
 import PricesClient from "./PricesClient";
 import { FAQ_DATA, SNAPSHOT_PRICES } from "./data";
 import { SITE_URL } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/prices", {
   title: "Flower Bouquet Price in Lahore | Complete Price List 2026",
   description:
     "See current flower bouquet prices in Lahore, from small bunches to large arrangements. Prices for roses, sunflowers, tulips and chocolate bouquets.",
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
       "Bouquet prices in Lahore from PKR 1,239, gajray from PKR 370. Compare real starting prices for chocolate bouquets, wedding décor, car decoration & gifts.",
     images: ["/images/product_1_eucalyptus_rose.jpg"],
   },
-};
+});
 
 export default function PricesPage() {
   // 1. JSON-LD BreadcrumbList Schema

@@ -3,17 +3,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, whatsappLink } from "@/lib/business";
 import { MessageCircle, HelpCircle, Candy } from "lucide-react";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/islamabad/chocolate-bouquets", {
   title: {
     absolute: "Chocolate Bouquets in Islamabad | Sweet Gift Delivery | Lahore Bouquet",
   },
   description: "Order chocolate bouquets in Islamabad — premium chocolates arranged as beautiful bouquets. From Rs. 3,800, same-day delivery. WhatsApp: 0310-4225974",
-  alternates: { canonical: `${SITE_URL}/islamabad/chocolate-bouquets/` },
+  alternates: { canonical: `${SITE_URL}/islamabad/chocolate-bouquets` },
   openGraph: {
     title: "Chocolate Bouquets in Islamabad | Lahore Bouquet",
     description: "Chocolate bouquets delivered same-day in Islamabad. From Rs. 3,800.",
-    url: `${SITE_URL}/islamabad/chocolate-bouquets/`,
+    url: `${SITE_URL}/islamabad/chocolate-bouquets`,
     siteName: "Lahore Bouquet",
     type: "website",
     locale: "en_PK",
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     title: "Chocolate Bouquets in Islamabad | Lahore Bouquet",
     description: "Chocolate bouquets, same-day Islamabad. From Rs. 3,800.",
   },
-};
+});
 
 const FAQS = [
   { q: "What chocolates are used in the bouquets?", a: "We use quality branded chocolates. Ask on WhatsApp (0310-4225974) about current chocolate options and customization." },
@@ -37,7 +38,7 @@ export default function Page() {
   const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}` },
     { "@type": "ListItem", position: 2, name: "Flower Delivery in Islamabad", item: `${SITE_URL}/flower-delivery-islamabad` },
-    { "@type": "ListItem", position: 3, name: "Chocolate Bouquets in Islamabad", item: `${SITE_URL}/islamabad/chocolate-bouquets/` },
+    { "@type": "ListItem", position: 3, name: "Chocolate Bouquets in Islamabad", item: `${SITE_URL}/islamabad/chocolate-bouquets` },
   ]};
   return (
     <main className="bg-[#F8F3EA] text-[#2A2A2A]">
@@ -49,7 +50,7 @@ export default function Page() {
           <p className="text-sm sm:text-base leading-relaxed"><strong>Delicious chocolate bouquets delivered in Islamabad</strong> — premium chocolates beautifully arranged, perfect for birthdays, anniversaries and sweet surprises. <strong>From Rs. 3,800</strong>, same-day delivery. WhatsApp: <strong>0310-4225974</strong>.</p>
           <div className="flex flex-wrap justify-center gap-3 pt-2">
             <a href={whatsappLink("Hi Lahore Bouquet! I want a chocolate bouquet for delivery in Islamabad.")} target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-full bg-[#128C7E] text-white text-sm font-bold hover:opacity-90 transition-opacity">Order Chocolate Bouquet</a>
-            <Link href="/islamabad/bouquets/" className="px-6 py-3 rounded-full border border-[#8B1E2D] text-[#8B1E2D] text-sm font-bold hover:bg-[#8B1E2D] hover:text-white transition-colors">Flower Bouquets</Link>
+            <Link href="/islamabad/bouquets" className="px-6 py-3 rounded-full border border-[#8B1E2D] text-[#8B1E2D] text-sm font-bold hover:bg-[#8B1E2D] hover:text-white transition-colors">Flower Bouquets</Link>
           </div>
         </div>
       </section>

@@ -4,8 +4,9 @@ import Link from "next/link";
 import { MessageCircle, Truck, Camera, Heart, MapPin, Sparkles } from "lucide-react";
 import { SITE_URL, whatsappLink } from "@/lib/business";
 import RelatedProducts from "../components/RelatedProducts";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/birthday-decoration-cantt-lahore", {
   title: { absolute: "Birthday Decoration in Lahore Cantt | Book Online" },
   description: "Book birthday decoration in Lahore Cantt — Vibrant balloon garlands and fresh flower setups. Free quote on WhatsApp, same-week slots available.",
   alternates: { canonical: `${SITE_URL}/birthday-decoration-cantt-lahore` },
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/birthday-decoration-cantt-lahore`,
     images: [{ url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630, alt: "Birthday Decoration in Lahore Cantt" }],
   }
-};
+});
 
 const FAQS = [
   { q: "What is the price of birthday decoration in Lahore Cantt?", a: "Prices depend on the venue size and flower selection. Message us on WhatsApp (0310-4225974) with your event date and venue in Lahore Cantt for a free instant quote." },
@@ -93,7 +94,7 @@ export default function Page() {
         </div>
       </section>
       <section className="text-xs text-[#777777]">
-        <p>Related: <Link href="/flower-delivery-cantt-lahore" className="text-[#8B1E2D] underline">flower delivery Lahore Cantt</Link> • <Link href="/wedding-decor" className="text-[#8B1E2D] underline">wedding decor</Link> • <Link href="/prices" className="text-[#8B1E2D] underline">price list</Link></p>
+        <p>Related: <Link href="/delivery-areas/cantt" className="text-[#8B1E2D] underline">flower delivery Lahore Cantt</Link> • <Link href="/wedding-decor" className="text-[#8B1E2D] underline">wedding decor</Link> • <Link href="/prices" className="text-[#8B1E2D] underline">price list</Link></p>
       </section>
     </main>
   );

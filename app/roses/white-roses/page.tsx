@@ -5,8 +5,9 @@ import { getSanityProducts } from "@/sanity/lib/fetch";
 import ProductCard from "../../components/ProductCard";
 import { Sparkles, Truck, Camera, MessageCircle, HelpCircle } from "lucide-react";
 import { SITE_URL, itemListSchema } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/roses/white-roses", {
   title: {
     absolute: "White Rose Bouquet in Lahore | Fresh White Roses",
   },
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+});
 
 export default async function WhiteRosesPage() {
   const allProducts = await getSanityProducts();

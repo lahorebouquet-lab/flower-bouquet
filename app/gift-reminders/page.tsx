@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/business";
 import GiftReminderForm from "./GiftReminderForm";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/gift-reminders", {
   title: { absolute: "Gift Reminders | Never Miss a Birthday | Lahore Bouquet" },
   description:
     "Save birthdays & anniversaries — we'll remind you on WhatsApp 2 days before, with bouquet suggestions. Free gift reminder service in Lahore.",
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [{ url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630, alt: "Gift Reminders" }],
   },
-};
+});
 
 export default function GiftRemindersPage() {
   return (

@@ -6,6 +6,7 @@ import { Heart, Eye, ArrowUpRight } from "lucide-react";
 import { Product } from "../data/products";
 import { useCart } from "../context/CartContext";
 import { sanityDirectUrl, sanitySrcSet } from "@/lib/sanityImage";
+import { productAlt } from "@/lib/productKind";
 
 export default function ProductCard({ product }: { product: Product }) {
   const { addToCart, directOrderNow, wishlist, toggleWishlist, setQuickViewProduct } = useCart();
@@ -25,7 +26,7 @@ export default function ProductCard({ product }: { product: Product }) {
             src={sanityDirectUrl(product.image, 640)}
             srcSet={sanitySrcSet(product.image) || undefined}
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            alt={`${product.title} — fresh flower bouquet, same-day delivery in Lahore`}
+            alt={productAlt(product.title, product.category)}
             loading="lazy"
             decoding="async"
             className="object-cover absolute inset-0 h-full w-full transition-transform duration-700 group-hover:scale-105"

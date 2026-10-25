@@ -6,8 +6,9 @@ import { ALL_PRODUCTS } from "../data/products";
 import GiftsAndCakesClient from "./GiftsAndCakesClient";
 import { Gift, Truck, Camera, MessageCircle, HelpCircle, ShieldCheck, Clock, Heart } from "lucide-react";
 import { SITE_URL, itemListSchema } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/gifts-and-cakes", {
   title: {
     absolute: "Cakes & Chocolates Delivery in Lahore | Same-Day & Midnight",
   },
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+});
 
 export default async function GiftsAndCakesPage({
   searchParams,

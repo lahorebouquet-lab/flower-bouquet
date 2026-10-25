@@ -25,11 +25,11 @@ export const metadata: Metadata = {
 
 export const PRICE_TABLE_ITEMS = [
   { item: "Single long-stem rose (red or white)", price: "Rs. 1,239", link: "/roses/red-roses" },
-  { item: "Two sunflowers with baby's breath", price: "Rs. 1,590", link: "/sunflowers" },
+  { item: "Two sunflowers with baby's breath", price: "Rs. 1,590", link: "/sunflower-bouquet-lahore" },
   { item: "12 to 15 red roses with baby's breath", price: "Rs. 1,900", link: "/roses/red-roses" },
   { item: "12 white roses with baby's breath", price: "Rs. 2,200", link: "/roses/white-roses" },
   { item: "Handmade crochet sunflower bouquet", price: "Rs. 2,400", link: "/crochet-bouquets" },
-  { item: "Sunflower and rose mix", price: "Rs. 2,650", link: "/sunflowers" },
+  { item: "Sunflower and rose mix", price: "Rs. 2,650", link: "/sunflower-bouquet-lahore" },
   { item: "Ferrero Rocher and rose bouquet", price: "Rs. 3,900", link: "/gifts-and-cakes" },
   { item: "Money bouquet with roses", price: "Rs. 4,500", link: "/money-bouquets" },
   { item: "Mehndi fresh flower jewellery set", price: "Rs. 4,500", link: "/wedding-decor" },

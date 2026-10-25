@@ -6,8 +6,9 @@ import { getSanityProducts } from "@/sanity/lib/fetch";
 import { ALL_PRODUCTS, LAHORE_AREAS } from "../data/products";
 import ProductCard from "../components/ProductCard";
 import { SITE_URL } from "@/lib/business";
+import { withSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSeo("/flower-delivery-in-lahore", {
   title: {
     absolute: "Order Flowers Online in Lahore | Same-Day Delivery from Rs. 349",
   },
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+});
 
 export default async function FlowerDeliveryLahorePage() {
   const sanityProducts = await getSanityProducts();

@@ -25,6 +25,8 @@ import {
   HelpCircle,
   ChevronRight
 } from "lucide-react";
+import { getSeo } from "@/lib/seo";
+import { productKind, productAlt, KIND_LABEL, type ProductKind } from "@/lib/productKind";
 
 interface ProductPageProps {
   params: Promise<{ id: string }>;
@@ -37,6 +39,61 @@ export async function generateStaticParams() {
     { id: String(p.id) },
     { id: p.slug }
   ]);
+}
+
+const KIND_COPY = {
+  bouquet: {
+    noun: "bouquet", badgeTitle: "7-Day Freshness", badgeSub: "Cold-Chain Stems",
+    stemsLabel: "Artisan Stem Composition:", wrapping: "Eco-friendly paper & fabric wrap, hand-tied to order",
+    careTitle: "Florist Care & Vase Life",
+    care: "Upon receiving, trim 1–2 cm from stem bases at a 45-degree angle under cool water. Place in a clean vase with cold water. Keep away from direct sunlight, air-conditioner drafts, and ripening fruit to maintain peak bloom vitality for 7–12 days.",
+    related: "Similar Handcrafted Arrangements",
+  },
+  cake: {
+    noun: "cake", badgeTitle: "Baked to Order", badgeSub: "Fresh on Delivery Day",
+    stemsLabel: "What's Included:", wrapping: "Boxed and sealed, with your message on the cake or a card",
+    careTitle: "Storage & Serving",
+    care: "Refrigerate within an hour of delivery and keep the box closed. Take the cake out about 20 minutes before serving. Cream and mousse cakes are best eaten within 2 days.",
+    related: "More Cakes You May Like",
+  },
+  gift: {
+    noun: "gift", badgeTitle: "Gift-Wrapped", badgeSub: "Ready to Hand Over",
+    stemsLabel: "What's Inside:", wrapping: "Gift box with ribbon and a handwritten message card",
+    careTitle: "What's in the Box",
+    care: "Every item is checked and packed on the day of delivery. Add fresh flowers or a cake from the same page to make it a complete surprise.",
+    related: "More Gifts You May Like",
+  },
+  perfume: {
+    noun: "order", badgeTitle: "Gift-Wrapped", badgeSub: "Sealed & Genuine",
+    stemsLabel: "Fragrance Notes:", wrapping: "Gift box with ribbon and a handwritten message card",
+    careTitle: "About This Fragrance",
+    care: "Each bottle is sealed and checked before it is gift-wrapped. Store away from heat and direct sunlight to keep the scent at its best.",
+    related: "More Fragrances You May Like",
+  },
+  decor: {
+    noun: "setup", badgeTitle: "Set Up On Site", badgeSub: "Fresh Flowers",
+    stemsLabel: "What's Included:", wrapping: "Installed by our team at your home, hall or marquee",
+    careTitle: "Booking & Setup",
+    care: "Share the venue, date and colour theme on WhatsApp for a free quote. Book 1–2 weeks ahead in wedding season; our team sets up on the day and clears flowers afterwards on request.",
+    related: "More Décor Ideas",
+  },
+  jewellery: {
+    noun: "order", badgeTitle: "Made Same Day", badgeSub: "Fresh Blooms",
+    stemsLabel: "Flowers Used:", wrapping: "Packed in a chilled box to keep the flowers fresh",
+    careTitle: "Keeping It Fresh",
+    care: "Keep the box in the fridge (not the freezer) until an hour before wearing, and mist the flowers lightly with water. Fresh floral jewellery looks its best for about 24 hours.",
+    related: "More Floral Jewellery",
+  },
+} as const;
+
+/** Cut text to at most `max` characters at a word boundary, dropping a dangling separator. */
+function shortenAtWord(text: string, max: number): string {
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max + 1);
+  const end = cut.lastIndexOf(" ");
+  return (end > max * 0.5 ? cut.slice(0, end) : text.slice(0, max))
+    .replace(/[\s:\-–—,.&|(]+$/, "")
+    .trimEnd();
 }
 
 export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
@@ -53,76 +110,66 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     };
   }
 
-  // Template appends " | Lahore Bouquet" (17 chars) — keep total under 60.
-  // Truncate at word boundaries so titles never cut mid-word.
-  // Strip trailing prepositions/punctuation (e.g. "for", "in", ":") left by the cut.
-  const maxNameLen = 60 - " | Lahore Bouquet".length;
-  let shortName = product.title;
-  if (shortName.length > maxNameLen) {
-    shortName = shortName.slice(0, maxNameLen).trimEnd();
-    const lastSpace = shortName.lastIndexOf(" ");
-    if (lastSpace > maxNameLen * 0.6) shortName = shortName.slice(0, lastSpace);
-    shortName = shortName.replace(/\s+(for|in|on|at|with|and|of|the|a|an)$/i, "").replace(/[:\-–—,.]+$/, "").trimEnd();
-  }
-  // Pad short titles (< 30 chars) with category-aware keywords for SEO.
-  // Product H1 stays as the short name; only the meta title is enriched.
-  if (shortName.length < 30) {
-    const catLower = (product.category || "").toLowerCase();
-    const suffix = catLower.includes("cake") ? "Cake | Same-Day Delivery"
-      : catLower.includes("gajray") ? "Gajra | Fresh Flower Delivery"
-      : catLower.includes("chocolate") ? "Chocolate Bouquet | Gift Delivery"
-      : catLower.includes("perfume") || catLower.includes("scent") ? "Perfume Gift Set | Lahore"
-      : catLower.includes("money") ? "Money Bouquet | Same-Day Delivery"
-      : "Flower Bouquet | Same-Day Delivery";
-    const padded = `${shortName} ${suffix}`;
-    if (padded.length <= maxNameLen) shortName = padded;
+  // Titles come from lib/seo-map.json (unique per product); products added
+  // later fall back to a category-aware "{Name} | {Type}, Lahore" pattern.
+  const kind = productKind(product.title, product.category);
+  const mapped = getSeo(`/products/${product.slug}`);
+  let title = mapped?.title;
+  if (!title) {
+    const candidates = [
+      `${product.title} | ${KIND_LABEL[kind]} | Lahore Bouquet`,
+      `${product.title} | ${KIND_LABEL[kind]}`,
+      `${product.title} | Lahore Bouquet`,
+    ];
+    title = candidates.find((t) => t.length <= 60) ?? shortenAtWord(product.title, 60);
   }
 
-  // Meta description: 120-160 chars, keyword + price + CTA early, no duplication.
+  // Description: name + real price + what makes this kind of item different.
   const priceStr = `Rs. ${product.price.toLocaleString()}`;
-  let metaDesc = `Buy ${product.title} in Lahore for ${priceStr}. Same-day 2–5h express & midnight delivery with WhatsApp photo proof.`;
-  if (metaDesc.length > 160) {
-    metaDesc = metaDesc.slice(0, 157).trimEnd();
-    const ls = metaDesc.lastIndexOf(" ");
-    if (ls > 100) metaDesc = metaDesc.slice(0, ls);
-    metaDesc += "…";
-  }
+  const tail: Record<ProductKind, string> = {
+    cake: "baked to order and delivered fresh in Lahore today. Add your message, flowers or balloons.",
+    gift: "gift-wrapped and delivered in Lahore today, with a photo before dispatch. Add flowers or a cake.",
+    perfume: "gift-wrapped perfume delivered in Lahore today. Add a bouquet or a cake to make it a surprise.",
+    jewellery: "fresh floral jewellery for mehndi and nikkah, made on the day and delivered across Lahore.",
+    decor: "set up by our team at your home, venue or car in Lahore. Free quote and design on WhatsApp.",
+    bouquet: "hand-tied fresh and delivered across Lahore in 2–5 hours, with a photo before dispatch.",
+  };
+  const shortTail: Record<ProductKind, string> = {
+    cake: "Baked to order, delivered today in Lahore.",
+    gift: "Gift-wrapped, delivered today in Lahore.",
+    perfume: "Gift-wrapped, delivered today in Lahore.",
+    jewellery: "Made fresh on the day in Lahore.",
+    decor: "Set up at your venue in Lahore; free quote on WhatsApp.",
+    bouquet: "Hand-tied fresh, delivered in Lahore in 2–5 hours.",
+  };
+  let metaDesc = `${product.title}, ${priceStr}: ${tail[kind]}`;
+  if (metaDesc.length > 155) metaDesc = `${product.title}, ${priceStr}. ${shortTail[kind]}`;
+  if (metaDesc.length > 155) metaDesc = `${shortenAtWord(product.title, 155 - priceStr.length - shortTail[kind].length - 4)}, ${priceStr}. ${shortTail[kind]}`;
 
-  // OG description: category-aware (cake/gajray shouldn't say "bouquet").
-  const catLower = (product.category || "").toLowerCase();
-  const itemWord = catLower.includes("cake") ? "cake"
-    : catLower.includes("gajray") ? "gajray pair"
-    : catLower.includes("chocolate") ? "chocolate bouquet"
-    : catLower.includes("perfume") || catLower.includes("scent") ? "gift set"
-    : "bouquet";
-  const ogDesc = `${priceStr}. Fresh hand-tied ${itemWord} delivered across Lahore within 2–5 hours.`;
+  const imageUrl = product.image?.startsWith("http") ? product.image : `${SITE_URL}${product.image}`;
 
   return {
-    title: shortName,
+    title: { absolute: title },
     description: metaDesc,
-      alternates: {
+    keywords: null,
+    alternates: {
       canonical: `${SITE_URL}/products/${product.slug}`,
     },
     openGraph: {
-      title: `${shortName} | Lahore Bouquet`,
-      description: ogDesc,
+      title,
+      description: metaDesc,
       url: `${SITE_URL}/products/${product.slug}`,
-      images: [
-        {
-          url: product.image?.startsWith("http") ? product.image : `${SITE_URL}${product.image}`,
-          width: 800,
-          height: 1000,
-          alt: `${product.title} — buy fresh flowers online in Lahore with same-day delivery`,
-        }
-      ],
-      type: "website"
+      // No width/height: product photos come in several sizes, and a wrong
+      // declared size is worse than none.
+      images: [{ url: imageUrl, alt: `${product.title} – ${KIND_LABEL[kind].toLowerCase()} from Lahore Bouquet` }],
+      type: "website",
     },
     twitter: {
       card: "summary_large_image",
-      title: `${shortName} | Lahore Bouquet`,
-      description: ogDesc,
-      images: [product.image?.startsWith("http") ? product.image : `${SITE_URL}${product.image}`],
-    }
+      title,
+      description: metaDesc,
+      images: [imageUrl],
+    },
   };
 }
 
@@ -177,10 +224,19 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
     switch (cat) {
       case "Bouquets": return "/bouquets";
       case "Roses": return "/roses";
-      case "Sunflowers": return "/sunflowers";
+      case "Sunflowers": return "/sunflower-bouquet-lahore";
       case "Money Bouquets": return "/money-bouquets";
       case "Wedding Décor": return "/wedding-decor";
       case "Gifts & Cakes": return "/gifts-and-cakes";
+      case "Fresh Flower Gajray": return "/gajray-lahore";
+      case "Crochet": return "/crochet-bouquets";
+      case "Dried": return "/dried-flowers";
+      case "Birthday Cakes": return "/gifts-and-cakes";
+      case "Scents & Perfumes": return "/collections/scents-and-perfumes";
+      case "Velvet Red Roses": return "/roses/red-roses";
+      case "Pure White Roses": return "/roses/white-roses";
+      case "Chocolate Bouquets": return "/chocolate-bouquets-lahore";
+      case "Balloons": return "/helium-balloons-lahore";
       default: return "/bouquets";
     }
   };
@@ -271,6 +327,9 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
     ]
   };
 
+  const kind = productKind(product.title, product.category);
+  const copy = KIND_COPY[kind];
+
   const isGoldBadge = product.badgeType === "hot" || product.badge?.toLowerCase().includes("premium") || product.badge?.toLowerCase().includes("new") || product.badge?.toLowerCase().includes("trending");
 
   return (
@@ -311,7 +370,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           {/* Left Column: Product Image Gallery */}
           <div className="lg:col-span-6 space-y-4">
             <div className="relative aspect-[4/5] w-full rounded-2xl overflow-hidden bg-white border border-[rgba(198,161,91,0.25)] shadow-md">
-              <ProductMainImage src={product.image} alt={`${product.title} — buy fresh flowers online in Lahore with same-day delivery`} />
+              <ProductMainImage src={product.image} alt={productAlt(product.title, product.category)} />
 
               {/* Badge Pill */}
               <div className="absolute top-4 left-4 z-10">
@@ -347,8 +406,8 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               </div>
               <div className="p-3 rounded-2xl bg-white border border-[#E5DED2] space-y-1 shadow-xs">
                 <Sparkles className="w-4 h-4 text-[#C6A15B] mx-auto" />
-                <span className="font-semibold text-[#0B0B0B] block text-[11px]">7-Day Freshness</span>
-                <span className="text-[10px] text-[#777777] block">Cold-Chain Stems</span>
+                <span className="font-semibold text-[#0B0B0B] block text-[11px]">{copy.badgeTitle}</span>
+                <span className="text-[10px] text-[#777777] block">{copy.badgeSub}</span>
               </div>
             </div>
           </div>
@@ -403,7 +462,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                 <div className="p-3.5 rounded-2xl bg-white border border-[#E5DED2] flex items-start gap-2.5 shadow-xs">
                   <Leaf className="w-4 h-4 text-[#8B1E2D] shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-semibold text-[#0B0B0B] text-xs block">Artisan Stem Composition:</span>
+                    <span className="font-semibold text-[#0B0B0B] text-xs block">{copy.stemsLabel}</span>
                     <span className="text-xs text-[#2A2A2A]">{product.stems}</span>
                   </div>
                 </div>
@@ -414,7 +473,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
               <div className="p-3.5 rounded-2xl bg-white border border-[#E5DED2] shadow-xs">
                 <span className="font-semibold text-[#0B0B0B] block">Wrapping</span>
-                <span className="text-[#2A2A2A]">Eco-friendly paper &amp; fabric wrap, hand-tied to order</span>
+                <span className="text-[#2A2A2A]">{copy.wrapping}</span>
               </div>
               <div className="p-3.5 rounded-2xl bg-white border border-[#E5DED2] shadow-xs">
                 <span className="font-semibold text-[#0B0B0B] block">Delivery</span>
@@ -445,10 +504,10 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           <div className="p-6 rounded-2xl bg-white border border-[#E5DED2] space-y-3 shadow-xs">
             <h2 className="font-playfair text-lg font-bold text-[#0B0B0B] flex items-center gap-2">
               <Leaf className="w-4 h-4 text-[#8B1E2D]" />
-              Florist Care & Vase Life
+              {copy.careTitle}
             </h2>
             <p className="text-[#2A2A2A] leading-relaxed">
-              Upon receiving, trim 1–2 cm from stem bases at a 45-degree angle under cool water. Place in a clean vase with cold water. Keep away from direct sunlight, air-conditioner drafts, and ripening fruit to maintain peak bloom vitality for 7–12 days.
+              {copy.care}
             </p>
           </div>
 
@@ -468,7 +527,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               Zero-Risk Guarantee
             </h2>
             <p className="text-[#2A2A2A] leading-relaxed">
-              If your bouquet arrives damaged or wilted due to transit, we&apos;ll replace it or refund you — just WhatsApp us a photo within 3 hours of delivery.
+              If your {copy.noun} arrives damaged{kind === "bouquet" ? " or wilted" : ""} due to transit, we&apos;ll replace it or refund you — just WhatsApp us a photo within 3 hours of delivery.
             </p>
           </div>
 
@@ -484,7 +543,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           <div>
             <span className="text-xs uppercase font-bold tracking-widest text-[#8B1E2D]">You May Also Adore</span>
             <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#0B0B0B] mt-1">
-              Similar Handcrafted Arrangements
+              {copy.related}
             </h2>
           </div>
           <Link
