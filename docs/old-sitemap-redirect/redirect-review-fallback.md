@@ -1,0 +1,27 @@
+# Category-fallback product redirects — review by hand
+
+- `classic-24-red-rose-bouquet` — Classic 24 Red Rose Bouquet (Rs.3999) → `/roses/red-roses` — best candidate charming-red-rose-bouquet score only 0.65
+- `single-long-stem-red-rose-sleeve` — Single Long Stem Red Rose Sleeve (Rs.1299) → `/roses/red-roses` — best candidate single-red-rose-bouquet score only 0.50
+- `the-midnight-bloom` — The Midnight Bloom (Rs.4499) → `/bouquets` — best candidate midnight-love score only 0.48
+- `50-red-roses-grand-bouquet` — 50 Red Roses Grand Bouquet (Rs.7499) → `/roses/red-roses` — best candidate 500-roses-bouquet score only 0.47
+- `pink-rose-gypsophila-bouquet` — Pink Rose & Gypsophila Bouquet (Rs.4299) → `/roses` — best candidate delicate-pink-rose-bouquet score only 0.64
+- `babys-breath-cloud-bouquet` — Baby's Breath Cloud Bouquet (Rs.2999) → `/bouquets` — best candidate luxury-red-roses-with-babys-breath-premium-bouquet score only 0.56
+- `black-heart-faux-fur-cushion-pillow` — Black Heart Faux Fur Cushion Pillow (Rs.1499) → `/gifts-and-cakes` — best candidate velvet-heart score only 0.34
+- `bridal-handheld-white-rose-bouquet` — Bridal Handheld White Rose Bouquet (Rs.11499) → `/roses/white-roses` — best candidate elegant-white-rose-bouquet score only 0.59
+- `buy-chocolate-congratulations-cake` — Buy Chocolate Congratulations Cake (Rs.5999) → `/gifts-and-cakes?filter=chocolates` — best candidate chocolate-congrats-cake score only 0.69
+- `cheers-to-11-years-anniversary-cake` — Cheers To 11 Years Anniversary Cake (Rs.5999) → `/gifts-and-cakes?filter=layers-cakes` — best candidate heart-anniversary-cake score only 0.58
+- `graduation-sunflower-statice-bouquet` — Graduation Sunflower & Statice Bouquet (Rs.3899) → `/sunflower-bouquet-lahore` — best candidate sunflower-bouquet score only 0.54
+- `imported-dutch-hydrangea-calla-lilies` — Imported Dutch Hydrangea & Calla Lilies (Rs.8999) → `/lily-bouquet-lahore` — best candidate imported-rose-duo-collection score only 0.25
+- `jlal-sons-classic-taiwan-chocolate-cake` — Jlal Sons Classic Taiwan Chocolate Cake (Rs.2499) → `/gifts-and-cakes?filter=chocolates` — best candidate classic-taiwa-choc-cake score only 0.56
+- `kitchen-cuisine-carrot-cake` — Kitchen Cuisine Carrot Cake (Rs.3999) → `/gifts-and-cakes?filter=layers-cakes` — best candidate carrot-cake score only 0.67
+- `midnight-birthday-surprise-cake-flowers` — Midnight Birthday Surprise Cake & Flowers (Rs.8499) → `/gifts-and-cakes?filter=layers-cakes` — best candidate birthday-cake score only 0.43
+- `minimal-bride-groom-engagement-cake` — Minimal Bride Groom Engagement Cake (Rs.5999) → `/gifts-and-cakes?filter=layers-cakes` — best candidate proposal-engagement-cake score only 0.58
+- `mixed-pastel-asiatic-lilies-roses-bouquet` — Mixed Pastel Asiatic Lilies & Roses (Rs.4999) → `/lily-bouquet-lahore` — best candidate mixed-floral-wedding-garland-with-red-roses-and-white-babys-breath score only 0.33
+- `mothers-day-pink-carnations-roses-bouquet` — Mother’s Day Pink Carnations & Roses (Rs.4799) → `/roses` — best candidate mother-s-day-combo-30-35-red-roses-chocolate-cake-greeting-card score only 0.41
+- `pocket-friendly-rose-bunch` — Pocket-Friendly 12 Fresh Roses Bunch (Rs.2499) → `/roses` — best candidate sunflower-and-white-roses-black-wrap score only 0.35
+- `red-hearts-congratulations-cake` — Red Hearts Congratulations Cake (Rs.5999) → `/gifts-and-cakes?filter=layers-cakes` — best candidate red-hearts-congrats score only 0.68
+- `romantic-couple-anniversary-cake` — Romantic Couple Anniversary Cake (Rs.5999) → `/gifts-and-cakes?filter=layers-cakes` — best candidate chocolate-anniversary-cake score only 0.68
+- `romantic-red-heart-engagement-cake` — Romantic Red Heart Engagement Cake (Rs.5999) → `/gifts-and-cakes?filter=layers-cakes` — best candidate proposal-engagement-cake score only 0.59
+- `romantic-will-you-marry-me-cake` — Romantic Will You Marry Me Cake (Rs.5999) → `/gifts-and-cakes?filter=layers-cakes` — best candidate romantic-proposal-cake score only 0.53
+- `white-rose-elegance-20-stems` — White Rose Elegance (20 Stems) (Rs.4499) → `/roses/white-roses` — best candidate blush-rose-elegance score only 0.49
+- `will-you-marry-me-proposal-cake` — Will You Marry Me Proposal Cake (Rs.5999) → `/gifts-and-cakes?filter=layers-cakes` — best candidate romantic-proposal-cake score only 0.55

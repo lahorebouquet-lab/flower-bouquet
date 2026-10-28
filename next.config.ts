@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { OLD_SITEMAP_REDIRECTS } from "./lib/old-sitemap-redirects";
 
 const nextConfig: NextConfig = {
   images: {
@@ -246,6 +247,14 @@ const nextConfig: NextConfig = {
         destination: "/gifts-and-cakes",
         permanent: true,
       },
+      // Old Pasha-style sitemap URLs (563) that 404 on this site.
+      // Full map + match evidence: lib/old-sitemap-redirects.ts and
+      // docs/old-sitemap-redirect/. Verified: single 301 -> 200, no chains.
+      ...OLD_SITEMAP_REDIRECTS.map((r) => ({
+        source: r.source,
+        destination: r.destination,
+        permanent: true,
+      })),
     ];
   },
   async headers() {
