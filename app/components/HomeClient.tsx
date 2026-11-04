@@ -180,7 +180,7 @@ export default function HomeClient({
 
             {/* Quick answer (AEO) */}
             <p className="hero-answer text-[#2A2A2A] text-xs sm:text-sm lg:text-base max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              <strong>Hand-tied fresh bouquets start at Rs. 1,239 and arrive in 2–5 hours.</strong> Lahore Bouquet hand-ties every order fresh — roses, sunflowers, lilies and money bouquets — sends you a photo and video on WhatsApp before dispatch, and delivers across DHA, Gulberg, Model Town, Bahria Town and Johar Town, with a midnight surprise slot for birthdays.
+              <strong>Hand-tied fresh bouquets start at Rs. 1,239 and arrive in 2–5 hours.</strong> Lahore Bouquet is a flower shop in Lahore offering flower delivery in Lahore — order a flower bouquet in Lahore online for same-day bouquet delivery, hand-tied fresh (roses, sunflowers, lilies and money bouquets), with a photo and video on WhatsApp before dispatch, across DHA, Gulberg, Model Town, Bahria Town and Johar Town, plus a midnight surprise slot for birthdays.
             </p>
 
             {/* Button System (Section 18):

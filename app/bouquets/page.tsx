@@ -297,12 +297,12 @@ export default async function BouquetsPage({
           </div>
 
           <h1 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
-            Flower Bouquets in Lahore — Hand-Tied, Delivered Today
+            Fresh Flowers in Lahore — Hand-Tied Bouquets, Delivered Today
           </h1>
 
           {/* AEO / GEO Direct Answer */}
           <p className="text-[#F8F3EA]/90 text-sm sm:text-base leading-relaxed font-light">
-            A flower bouquet is the easiest way to say congratulations, sorry, I love you, or get well soon without needing the right words. Here you will find fresh bouquets made by hand in Lahore, in sizes from a small gift bunch to a big statement arrangement that fills a room. Every stem is inspected daily and delivered in <strong>2 to 5 hours</strong> with a photo and video on WhatsApp before dispatch.
+            A flower bouquet is the easiest way to say congratulations, sorry, I love you, or get well soon without needing the right words. Here you will find fresh flowers in Lahore, hand-tied into bouquets in sizes from a small gift bunch to a big statement arrangement that fills a room. Every stem is inspected daily and delivered in <strong>2 to 5 hours</strong> with a photo and video on WhatsApp before dispatch.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#BDBDBD]">
@@ -499,7 +499,7 @@ export default async function BouquetsPage({
           Every bouquet at Lahore Bouquet is hand-tied to order on the day of delivery — never pre-made, never taken from a shelf. Our collection covers the bouquets Lahore actually orders: classic red rose bouquets for romance and anniversaries, cheerful sunflower bouquets that brighten any room, mixed seasonal bunches for everyday gestures, chocolate bouquets for birthdays, money bouquets for weddings and mehndis, and handmade crochet bouquets that never wilt.
         </p>
         <p className="text-xs sm:text-sm text-[#555555] leading-relaxed">
-          Prices stay clear and honest. Hand-tied bouquets start at Rs. 1,239 and go up to Rs. 1,900 for small bunches. Medium rose bouquets — our most ordered size — are Rs. 2,600 to Rs. 3,800, while a large signature rose bouquet is Rs. 7,499. Sunflower bouquets start at Rs. 1,699 and chocolate bouquets at Rs. 3,800. The sizes table above shows every band, and our <Link href="/prices" className="text-[#8B1E2D] underline font-semibold">prices page</Link> carries the complete rate list.
+          Prices stay clear and honest. Hand-tied bouquets start at Rs. 1,239 and go up to Rs. 1,900 for small bunches. Medium rose bouquets — our most ordered size — are Rs. 2,600 to Rs. 3,800, while a large signature rose bouquet is Rs. 7,499. Sunflower bouquets start at Rs. 1,699 and chocolate bouquets at Rs. 3,800. The sizes table above shows every band, and our <Link href="/prices" className="text-[#8B1E2D] underline font-semibold">flower bouquet prices in Lahore</Link> carry the complete rate list.
         </p>
         <p className="text-xs sm:text-sm text-[#555555] leading-relaxed">
           Not sure which bouquet fits your occasion? For birthdays, sunflowers, gerberas and bright mixed bouquets are the happiest choice. For anniversaries, red and pink roses say it best. A gulab ka bouquet remains the classic gift for someone special, while white lilies and soft mixed arrangements suit get-well wishes and condolences. If you want something personal, tell us the colours and budget on WhatsApp and our florist will build a custom bouquet for you.
@@ -508,7 +508,7 @@ export default async function BouquetsPage({
           Ordering is simple. Add your bouquet to the bag, choose your delivery area, date and time slot, and pay by cash on delivery, bank transfer, JazzCash, EasyPaisa or card — or order directly on WhatsApp at 0310-4225974. Before your bouquet leaves, we send you a photo of the actual arrangement on WhatsApp for your approval.
         </p>
         <p className="text-xs sm:text-sm text-[#555555] leading-relaxed">
-          Delivery is free across Lahore — DHA, Gulberg, Johar Town, Bahria Town, Model Town, Cantt, Wapda Town and Township — and same-day orders placed before 4:00 PM arrive within 2 to 5 hours. Need a birthday surprise at midnight? Our 11:30 PM to 12:15 AM midnight slot has you covered. We are open every day from 9:00 AM to 1:00 AM, so a fresh bouquet is never far away.
+          Delivery is free across Lahore — DHA, Gulberg, Johar Town, Bahria Town, Model Town, Cantt, Wapda Town and Township — and same-day orders placed before 4:00 PM arrive within 2 to 5 hours. Need a birthday surprise at midnight? Our 11:30 PM to 12:15 AM midnight slot has you covered. We are open every day from 9:00 AM to 1:00 AM, so a fresh bouquet is never far away. Sending flowers to someone in Lahore from another city or from abroad? Read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] underline font-semibold">how to send flowers to Lahore</Link>.
         </p>
       </section>
 
