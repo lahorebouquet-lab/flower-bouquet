@@ -81,10 +81,10 @@ export default async function BahriaTownDeliveryPage() {
       },
       {
         "@type": "Question",
-        name: "Why is the Bahria Town delivery FREE delivery?",
+        name: "Is there any extra charge for Bahria Town delivery?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Bahria Town is our longest route — the rider travels via the Lahore Ring Road and your bouquet rides in an air-conditioned van so the flowers arrive fresh, not wilted. The Rs. 400 fee covers that distance and climate-controlled transit, with no other hidden charges.",
+          text: "No — delivery to Bahria Town is free, with no hidden charges. The longer route is covered by our climate-controlled vans at no extra cost, so your bouquet arrives fresh, not wilted.",
         },
       },
       {
@@ -92,7 +92,7 @@ export default async function BahriaTownDeliveryPage() {
         name: "Is midnight flower delivery available in Bahria Town?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Our midnight slot covers Bahria Town, Safari Villas and Lake City 7 days a week. Because of the longer route, please book by 8:00 PM so our evening Ring Road dispatch can be scheduled smoothly.",
+          text: "Yes. Our midnight slot (11:30 PM–12:15 AM) covers Bahria Town, Safari Villas and Lake City 7 days a week. Because of the longer route, please book by 8:00 PM so our evening Ring Road dispatch can be scheduled smoothly.",
         },
       },
       {
@@ -138,7 +138,7 @@ export default async function BahriaTownDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Sending flowers to Bahria Town requires careful temperature control during transit. From Lahore, our climate-controlled courier vans navigate via the Lahore Ring Road to reach Sectors A through F, Safari Villas, and Lake City within 2.5 to 4 hours with free delivery. You receive a photo of your hand-tied bouquet on WhatsApp before our rider departs. To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your sector, street and house number — approve the bouquet photo we send, then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
+          Sending flowers to Bahria Town requires careful temperature control during transit. From Lahore, our climate-controlled courier vans navigate via the Lahore Ring Road to reach Sectors A through F, Safari Villas, and Lake City within 2.5 to 4 hours with free delivery. You receive a photo of your hand-tied bouquet on WhatsApp before our rider departs. To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your sector, street and house number — approve the bouquet photo we send, then pay by COD, JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
@@ -164,7 +164,7 @@ export default async function BahriaTownDeliveryPage() {
         <ul className="space-y-2 text-xs text-[#2A2A2A] list-disc list-inside leading-relaxed">
           <li><strong>Delivery fee: FREE</strong> — across Bahria Town Sectors A to F, Safari Villas, Sector Jasmine and Lake City. Covers the Ring Road distance and air-conditioned transit.</li>
           <li><strong>Delivery time: 2.5 to 4 hours</strong>, 7 days a week, from 9 AM to 1 AM, via the Lahore Ring Road.</li>
-          <li><strong>Midnight slot:</strong> available every night — please book by 8:00 PM so our evening Ring Road dispatch can be scheduled smoothly.</li>
+          <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM, 7 days a week — book by 8:00 PM so our evening Ring Road dispatch can be scheduled smoothly.</li>
           <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
           <li><strong>Prices start at Rs. 1,239.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
         </ul>
@@ -193,7 +193,7 @@ export default async function BahriaTownDeliveryPage() {
           <h2 className="font-playfair text-xl font-bold">Occasions we deliver for in Bahria Town</h2>
         </div>
         <p className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed">
-          Bahria Town loves a grand gesture — nikkah-stage flowers and bridal bouquets around the Grand Mosque, housewarming arrangements for new Safari Villas homes, and milestone birthdays with imported rose bouquets. “Bahria Town Sector C me walima ke liye stage decoration ke phool” — aise event orders ke liye hum venue ke time ke hisaab se delivery schedule karte hain. Corporate clients in Bahria&apos;s commercial boulevards order inauguration stands and client thank-yous. Because of the long southern run, every bouquet travels hydrated in an air-conditioned van, and you approve a WhatsApp photo before dispatch — with a free handwritten message card in every order.
+          Bahria Town loves a grand gesture — nikkah-stage flowers and bridal bouquets around the Grand Mosque, housewarming arrangements for new Safari Villas homes, and milestone birthdays with imported rose bouquets. For walima stage-decoration flower orders in Bahria Town Sector C, we schedule delivery around the venue timings. Corporate clients in Bahria&apos;s commercial boulevards order inauguration stands and client thank-yous. Because of the long southern run, every bouquet travels hydrated in an air-conditioned van, and you approve a WhatsApp photo before dispatch — with a free handwritten message card in every order.
         </p>
       </section>
 
@@ -213,12 +213,12 @@ export default async function BahriaTownDeliveryPage() {
             <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes, our southern delivery route covers Bahria Town Sectors A through F, Safari Villas, Sector Jasmine, and Lake City with same-day and midnight slots at the same FREE fee.</p>
           </div>
           <div className="py-3 space-y-1">
-            <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Why is the Bahria Town delivery FREE delivery?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Bahria Town is our longest route — the rider travels via the Lahore Ring Road and your bouquet rides in an air-conditioned van so the flowers arrive fresh, not wilted. The Rs. 400 fee covers that distance and climate-controlled transit, with no other hidden charges.</p>
+            <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Is there any extra charge for Bahria Town delivery?</h3>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">No — delivery to Bahria Town is free, with no hidden charges. The longer route is covered by our climate-controlled vans at no extra cost, so your bouquet arrives fresh, not wilted.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Is midnight flower delivery available in Bahria Town?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes. Our midnight slot covers Bahria Town, Safari Villas and Lake City 7 days a week. Because of the longer route, please book by 8:00 PM so our evening Ring Road dispatch can be scheduled smoothly.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes. Our midnight slot (11:30 PM–12:15 AM) covers Bahria Town, Safari Villas and Lake City 7 days a week. Because of the longer route, please book by 8:00 PM so our evening Ring Road dispatch can be scheduled smoothly.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Do you deliver flowers to the Grand Mosque area for nikkah events?</h3>

@@ -138,7 +138,7 @@ export default async function JoharTownDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          We provide fresh flower bouquet delivery across Johar Town Phases 1 and 2, Faisal Town, and adjacent commercial hubs — all with free delivery. Whether you need a celebration bouquet delivered near Emporium Mall, an anniversary surprise in Block J or R, or get-well flowers delivered to Shaukat Khanum Hospital or Doctors Hospital, our florists guarantee rapid dispatch and live WhatsApp photo proof before the rider leaves. To order, message 0310-4225974 on WhatsApp any time between 9 AM and 1 AM with your block and street — approve the bouquet photo, then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
+          We provide fresh flower bouquet delivery across Johar Town Phases 1 and 2, Faisal Town, and adjacent commercial hubs — all with free delivery. Whether you need a celebration bouquet delivered near Emporium Mall, an anniversary surprise in Block J or R, or get-well flowers delivered to Shaukat Khanum Hospital or Doctors Hospital, our florists arrange fast dispatch with live WhatsApp photo proof before the rider leaves. To order, message 0310-4225974 on WhatsApp any time between 9 AM and 1 AM with your block and street — approve the bouquet photo, then pay by COD, JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
@@ -164,7 +164,7 @@ export default async function JoharTownDeliveryPage() {
         <ul className="space-y-2 text-xs text-[#2A2A2A] list-disc list-inside leading-relaxed">
           <li><strong>Delivery fee: FREE</strong> — across Johar Town Phases 1 & 2, Faisal Town, the Emporium corridor and Khayaban-e-Firdousi. No hidden charges.</li>
           <li><strong>Delivery time: 2 to 3 hours</strong>, 7 days a week, from 9 AM to 1 AM, via Canal Road and Khayaban-e-Firdousi.</li>
-          <li><strong>Midnight slot:</strong> available every night — message us on WhatsApp by the evening to reserve it.</li>
+          <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM, 7 days a week — book before 8 PM on WhatsApp.</li>
           <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
           <li><strong>Prices start at Rs. 1,239.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
         </ul>
@@ -193,7 +193,7 @@ export default async function JoharTownDeliveryPage() {
           <h2 className="font-playfair text-xl font-bold">Occasions we deliver for in Johar Town</h2>
         </div>
         <p className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed">
-          Johar Town keeps us busiest with get-well flowers — Shaukat Khanum and Doctors Hospital are on our daily route, and we handle the reception handover with the patient&apos;s name and ward details. Birthdays near Emporium Mall and G1 Market run a close second, followed by UMT convocation bouquets and anniversary surprises in the residential blocks. Bohut se log WhatsApp par likhte hain: “Shaukat Khanum me ami ke liye get-well-soon ka guldasta bhej dein” — hum mareez ka naam aur ward le kar seedha reception par pohcha dete hain. Corporate clients around Expo Centre order event flowers and client thank-yous, and every order carries a free handwritten message card plus WhatsApp photo approval before dispatch.
+          Johar Town keeps us busiest with get-well flowers — Shaukat Khanum and Doctors Hospital are on our daily route, and we handle the reception handover with the patient&apos;s name and ward details. Birthdays near Emporium Mall and G1 Market run a close second, followed by UMT convocation bouquets and anniversary surprises in the residential blocks. Many customers message us on WhatsApp asking for a get-well bouquet for their mother at Shaukat Khanum — we take the patient's name and ward and deliver it straight to reception. Corporate clients around Expo Centre order event flowers and client thank-yous, and every order carries a free handwritten message card plus WhatsApp photo approval before dispatch.
         </p>
       </section>
 

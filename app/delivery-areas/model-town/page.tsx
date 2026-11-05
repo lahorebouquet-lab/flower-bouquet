@@ -138,7 +138,7 @@ export default async function ModelTownDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Located just minutes from our Lahore workshop via Kalma Chowk, Model Town is one of our quickest delivery zones — and delivery here is completely FREE. We deliver fresh Dutch roses, sunflower arrangements, money bouquets and celebration cakes across Blocks A through M, Circular Road and Model Town Link Road within 1.5 to 2.5 hours, with a WhatsApp photo of your bouquet before the rider leaves. Ordering is simple: message 0310-4225974 on WhatsApp any time between 9 AM and 1 AM, approve the photo of your bouquet, and pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
+          Located just minutes from our Lahore workshop via Kalma Chowk, Model Town is one of our quickest delivery zones — and delivery here is completely FREE. We deliver fresh Dutch roses, sunflower arrangements, money bouquets and celebration cakes across Blocks A through M, Circular Road and Model Town Link Road within 1.5 to 2.5 hours, with a WhatsApp photo of your bouquet before the rider leaves. Ordering is simple: message 0310-4225974 on WhatsApp any time between 9 AM and 1 AM, approve the photo of your bouquet, and pay by COD, JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
@@ -164,7 +164,7 @@ export default async function ModelTownDeliveryPage() {
         <ul className="space-y-2 text-xs text-[#2A2A2A] list-disc list-inside leading-relaxed">
           <li><strong>Delivery fee: FREE (Rs. 0)</strong> — across Model Town Blocks A to M, Model Town Link Road, Garden Town and Barkat Market. No minimum order.</li>
           <li><strong>Delivery time: 1.5 to 2.5 hours</strong>, 7 days a week, from 9 AM to 1 AM, via Ferozepur Road or the Kalma Chowk underpass.</li>
-          <li><strong>Midnight slot:</strong> available every night — message us on WhatsApp by the evening to reserve it.</li>
+          <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM, 7 days a week — book before 8 PM on WhatsApp.</li>
           <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
           <li><strong>Prices start at Rs. 1,239.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
         </ul>
@@ -193,7 +193,7 @@ export default async function ModelTownDeliveryPage() {
           <h2 className="font-playfair text-xl font-bold">Occasions we deliver for in Model Town</h2>
         </div>
         <p className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed">
-          Model Town is a family neighbourhood, and our orders here reflect that — birthdays in Blocks C and D, nikkah functions in home marquees, shop-opening bouquets on Link Road and Barkat Market, and get-well flowers for Hameed Latif Hospital. Bohut se customers WhatsApp par seedha likhte hain: “Barkat Market ke qareeb ami ki birthday ke liye gulab ka guldasta bhej dein” — aur hum usi din photo bhej kar phool pohcha dete hain. Corporate clients on Link Road use us for office arrangements and client thank-yous, delivered to reception with a free handwritten card. Every bouquet is photographed on WhatsApp before dispatch, so what arrives is exactly what you approved.
+          Model Town is a family neighbourhood, and our orders here reflect that — birthdays in Blocks C and D, nikkah functions in home marquees, shop-opening bouquets on Link Road and Barkat Market, and get-well flowers for Hameed Latif Hospital. Many customers message us on WhatsApp asking for a rose bouquet for their mother's birthday near Barkat Market — and we send the photo and deliver the flowers the same day. Corporate clients on Link Road use us for office arrangements and client thank-yous, delivered to reception with a free handwritten card. Every bouquet is photographed on WhatsApp before dispatch, so what arrives is exactly what you approved.
         </p>
       </section>
 

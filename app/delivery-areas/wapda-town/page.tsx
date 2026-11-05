@@ -84,15 +84,15 @@ export default async function WapdaTownDeliveryPage() {
         name: "Is midnight flower delivery available in Wapda Town?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Our midnight slot covers Wapda Town and the surrounding societies 7 days a week. Message us on WhatsApp by the evening to reserve it and we will confirm your delivery window.",
+          text: "Yes. Our midnight slot (11:30 PM–12:15 AM) covers Wapda Town and the surrounding societies 7 days a week. Book before 8 PM on WhatsApp to reserve it and we will confirm your delivery window.",
         },
       },
       {
         "@type": "Question",
-        name: "Cake ke saath phool bhi bhej sakte hain?",
+        name: "Can I send flowers with a cake?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Ji haan! Wapda Town me hum aksar 'cake ke saath gulab ka guldasta' ka combo bhejte hain — birthday ka mukammal surprise ek hi rider ke saath pohchta hai. Order ke waqt WhatsApp par cake ka flavour aur phoolon ka rang bata dein, hum photo bhej kar confirm karenge.",
+          text: "Yes — in Wapda Town we often send a rose bouquet with a cake as one complete birthday surprise, delivered by a single rider. When you order on WhatsApp, tell us the cake flavour and the flower colours and we will send a photo to confirm.",
         },
       },
       {
@@ -134,11 +134,11 @@ export default async function WapdaTownDeliveryPage() {
         </span>
 
         <h1 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0B0B0B] leading-tight">
-          Flower Delivery in Wapda Town & Township
+          Flower Delivery in Wapda Town Lahore
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          We deliver fresh imported roses, money bouquets, celebration cakes and gift hampers to Wapda Town, PIA Housing Society, Valencia Town and Township Lahore — in 2.5 to 3.5 hours with free delivery. Every order is hydrated for transit and dispatched in air-conditioned courier vans, with photo proof sent on WhatsApp before our rider leaves. To order, message 0310-4225974 on WhatsApp any time between 9 AM and 1 AM with your society and street — approve the bouquet photo, then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
+          We deliver fresh imported roses, money bouquets, celebration cakes and gift hampers to Wapda Town, PIA Housing Society, Valencia Town and Township Lahore — in 2.5 to 3.5 hours with free delivery. Every order is hydrated for transit and dispatched in air-conditioned courier vans, with photo proof sent on WhatsApp before our rider leaves. To order, message 0310-4225974 on WhatsApp any time between 9 AM and 1 AM with your society and street — approve the bouquet photo, then pay by COD, JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
@@ -164,7 +164,7 @@ export default async function WapdaTownDeliveryPage() {
         <ul className="space-y-2 text-xs text-[#2A2A2A] list-disc list-inside leading-relaxed">
           <li><strong>Delivery fee: FREE</strong> — across Wapda Town, PIA Housing Society, Valencia Town, NFC Society and Township. No hidden charges.</li>
           <li><strong>Delivery time: 2.5 to 3.5 hours</strong>, 7 days a week, from 9 AM to 1 AM, via the College Road southern route in AC vans.</li>
-          <li><strong>Midnight slot:</strong> available every night — message us on WhatsApp by the evening to reserve it.</li>
+          <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM, 7 days a week — book before 8 PM on WhatsApp.</li>
           <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
           <li><strong>Prices start at Rs. 1,239.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
         </ul>
@@ -193,7 +193,7 @@ export default async function WapdaTownDeliveryPage() {
           <h2 className="font-playfair text-xl font-bold">Occasions we deliver for in Wapda Town</h2>
         </div>
         <p className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed">
-          Wapda Town orders are warm family affairs — birthdays with cake-and-bouquet combos, nikkah functions in home marquees, Eid gift hampers for relatives, and housewarming flowers for new Valencia homes. College Road&apos;s schools and academies order teacher-appreciation bouquets, while Township markets see a steady stream of shop-opening congratulations. Because this is our longest southern run, every bouquet is hydrated and travels in an air-conditioned van — and you approve a WhatsApp photo before dispatch, with a free handwritten message card in every order. Midnight surprises are available every night — just message us on WhatsApp by the evening and our rider will time the delivery for the celebration.
+          Wapda Town orders are warm family affairs — birthdays with cake-and-bouquet combos, nikkah functions in home marquees, Eid gift hampers for relatives, and housewarming flowers for new Valencia homes. College Road&apos;s schools and academies order teacher-appreciation bouquets, while Township markets see a steady stream of shop-opening congratulations. Because this is our longest southern run, every bouquet is hydrated and travels in an air-conditioned van — and you approve a WhatsApp photo before dispatch, with a free handwritten message card in every order. Midnight surprises (11:30 PM–12:15 AM) are available every night — just book before 8 PM on WhatsApp and our rider will time the delivery for the celebration.
         </p>
       </section>
 
@@ -214,11 +214,11 @@ export default async function WapdaTownDeliveryPage() {
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Is midnight flower delivery available in Wapda Town?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes. Our midnight slot covers Wapda Town and the surrounding societies 7 days a week. Message us on WhatsApp by the evening to reserve it and we will confirm your delivery window.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes. Our midnight slot (11:30 PM–12:15 AM) covers Wapda Town and the surrounding societies 7 days a week. Book before 8 PM on WhatsApp to reserve it and we will confirm your delivery window.</p>
           </div>
           <div className="py-3 space-y-1">
-            <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Cake ke saath phool bhi bhej sakte hain?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Ji haan! Wapda Town me hum aksar “cake ke saath gulab ka guldasta” ka combo bhejte hain — birthday ka mukammal surprise ek hi rider ke saath pohchta hai. Order ke waqt WhatsApp par cake ka flavour aur phoolon ka rang bata dein, hum photo bhej kar confirm karenge.</p>
+            <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Can I send flowers with a cake?</h3>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes — in Wapda Town we often send a rose bouquet with a cake as one complete birthday surprise, delivered by a single rider. When you order on WhatsApp, tell us the cake flavour and the flower colours and we will send a photo to confirm.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Can I pay cash on delivery in Wapda Town?</h3>

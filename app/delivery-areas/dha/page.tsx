@@ -93,10 +93,10 @@ const dhaFaqSchema = {
     },
     {
       "@type": "Question",
-      name: "WhatsApp par DHA ke liye order kaise karun?",
+      name: "How do I order flowers to DHA on WhatsApp?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "0310-4225974 par likhein — masalan 'DHA Phase 6 me anniversary ke liye 50 surkh gulab ka guldasta aur cake chahiye, shaam 7 baje tak.' Hum apko WhatsApp par phoolon ki photo bhej kar confirm karenge, phir rider rawana hoga. Cash on delivery, JazzCash, EasyPaisa, bank transfer aur international cards sab chalte hain.",
+        text: "Message 0310-4225974 on WhatsApp — for example, 'I need a 50 red rose bouquet with a cake for an anniversary in DHA Phase 6, by 7 PM.' We will send you a photo of the flowers on WhatsApp to confirm, then the rider leaves. Cash on delivery, JazzCash, EasyPaisa, bank transfer and international cards are all accepted.",
       },
     },
   ],
@@ -143,7 +143,7 @@ export default async function DHADeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          DHA is one of our busiest delivery zones, and our riders know its phases, blocks and commercial strips street by street. Most orders reach Phases 1 to 5 within about 2 to 3 hours; for Phases 6 to 9, Defence Raya and Sector Y, allow the full window. Delivery anywhere in DHA costs a flat Rs. 250. Our florists send you a photo on WhatsApp before your bouquet leaves, and we deliver to homes, offices, and to Combined Military Hospital (CMH). To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your phase and street details — approve the bouquet photo we send, then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
+          Flower delivery in DHA Lahore is free across Phases 1 to 9, Defence Raya and Sector Y, and our riders know its phases, blocks and commercial strips street by street. Most orders reach Phases 1 to 5 within about 2 to 3 hours; for Phases 6 to 9, Defence Raya and Sector Y, allow the full window. Our florists send you a photo on WhatsApp before your bouquet leaves, and we deliver to homes, offices, and to Combined Military Hospital (CMH). To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your phase and street details — approve the bouquet photo we send, then pay by COD, JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
@@ -169,7 +169,7 @@ export default async function DHADeliveryPage() {
         <ul className="space-y-2 text-xs text-[#2A2A2A] list-disc list-inside leading-relaxed">
           <li><strong>Delivery fee: FREE</strong> — across DHA Phases 1 to 9, DHA Phase 9 Town, Defence Raya and Sector Y. No hidden charges.</li>
           <li><strong>Delivery time: 2 to 3 hours</strong>, 7 days a week, from 9 AM to 1 AM. Phases 1–5 are usually fastest; Phases 6–9 and Raya take the full window in peak traffic.</li>
-          <li><strong>Midnight slot:</strong> available every night — message us on WhatsApp by the evening to reserve it.</li>
+          <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM, 7 days a week — book before 8 PM on WhatsApp.</li>
           <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
           <li><strong>Prices start at Rs. 1,239.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
         </ul>
@@ -226,8 +226,8 @@ export default async function DHADeliveryPage() {
             <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes, we regularly deliver fresh get-well flowers and hampers to Combined Military Hospital (CMH) Lahore. Please provide the patient&apos;s name along with the ward and room number.</p>
           </div>
           <div className="py-3 space-y-1">
-            <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">WhatsApp par DHA ke liye order kaise karun?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">0310-4225974 par likhein — masalan “DHA Phase 6 me anniversary ke liye 50 surkh gulab ka guldasta aur cake chahiye, shaam 7 baje tak.” Hum apko WhatsApp par phoolon ki photo bhej kar confirm karenge, phir rider rawana hoga. Cash on delivery, JazzCash, EasyPaisa, bank transfer aur international cards sab chalte hain.</p>
+            <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How do I order flowers to DHA on WhatsApp?</h3>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Message 0310-4225974 on WhatsApp — for example, 'I need a 50 red rose bouquet with a cake for an anniversary in DHA Phase 6, by 7 PM.' We will send you a photo of the flowers on WhatsApp to confirm, then the rider leaves. Cash on delivery, JazzCash, EasyPaisa, bank transfer and international cards are all accepted.</p>
           </div>
         </div>
       </section>
