@@ -160,6 +160,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/islamabad/gifts-and-cakes", file: "app/islamabad/gifts-and-cakes/page.tsx" },
     { path: "/islamabad/valentines-day", file: "app/islamabad/valentines-day/page.tsx" },
     { path: "/islamabad/wedding-flowers", file: "app/islamabad/wedding-flowers/page.tsx" },
+    // Send flowers to Lahore from abroad (country landing pages)
+    { path: "/send-flowers-to-lahore-from-uk", file: "app/send-flowers-to-lahore-from-uk/page.tsx" },
+    { path: "/send-flowers-to-lahore-from-usa", file: "app/send-flowers-to-lahore-from-usa/page.tsx" },
+    { path: "/send-flowers-to-lahore-from-uae", file: "app/send-flowers-to-lahore-from-uae/page.tsx" },
+    // Flowers by recipient
+    { path: "/flowers-for-mother-in-lahore", file: "app/flowers-for-mother-in-lahore/page.tsx" },
+    { path: "/flowers-for-wife-in-lahore", file: "app/flowers-for-wife-in-lahore/page.tsx" },
+    { path: "/flowers-for-husband-in-lahore", file: "app/flowers-for-husband-in-lahore/page.tsx" },
+    { path: "/flowers-for-father-in-lahore", file: "app/flowers-for-father-in-lahore/page.tsx" },
+    // Budget listing
+    { path: "/bouquets-under-2000", file: "app/bouquets-under-2000/page.tsx" },
   ];
 
   const routes: MetadataRoute.Sitemap = staticRoutes
