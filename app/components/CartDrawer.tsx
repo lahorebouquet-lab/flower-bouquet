@@ -450,25 +450,6 @@ export default function CartDrawer() {
 
                 <div className="space-y-2">
                   <label className={`flex items-center justify-between p-3 rounded-xl border cursor-pointer transition-all ${
-                    paymentMethod === "cod" ? "bg-[#8B1E2D]/10 border-[#8B1E2D]" : "bg-[#F8F3EA] border-[#E5DED2] hover:border-[#C6A15B]"
-                  }`}>
-                    <div className="flex items-center gap-3">
-                      <input 
-                        type="radio" 
-                        name="payment" 
-                        checked={paymentMethod === "cod"} 
-                        onChange={() => setPaymentMethod("cod")}
-                        className="text-[#8B1E2D]"
-                      />
-                      <div>
-                        <div className="font-bold text-[#0B0B0B]">Cash on Delivery (COD)</div>
-                        <div className="text-[10px] text-[#555555]">Pay in cash when rider delivers to your doorstep in Lahore</div>
-                      </div>
-                    </div>
-                    <span className="text-lg">💵</span>
-                  </label>
-
-                  <label className={`flex items-center justify-between p-3 rounded-xl border cursor-pointer transition-all ${
                     paymentMethod === "bank" ? "bg-[#8B1E2D]/10 border-[#8B1E2D]" : "bg-[#F8F3EA] border-[#E5DED2] hover:border-[#C6A15B]"
                   }`}>
                     <div className="flex items-center gap-3">

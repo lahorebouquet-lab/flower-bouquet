@@ -74,8 +74,8 @@ interface CartContextType {
   setCardMessage: (val: string) => void;
   wantPhotoBeforeDispatch: boolean;
   setWantPhotoBeforeDispatch: (val: boolean) => void;
-  paymentMethod: "cod" | "bank" | "wallet" | "whatsapp";
-  setPaymentMethod: (val: "cod" | "bank" | "wallet" | "whatsapp") => void;
+  paymentMethod: "bank" | "wallet" | "whatsapp";
+  setPaymentMethod: (val: "bank" | "wallet" | "whatsapp") => void;
   placedOrderId: string;
   handlePlaceOrder: () => void;
   generateWhatsAppMessage: () => string;
@@ -152,8 +152,10 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const [wantPhotoBeforeDispatch, setWantPhotoBeforeDispatch] = useState(
     savedForm.wantPhotoBeforeDispatch !== false
   );
-  const [paymentMethod, setPaymentMethod] = useState<"cod" | "bank" | "wallet" | "whatsapp">(
-    (savedForm.paymentMethod as "cod" | "bank" | "wallet" | "whatsapp") || "cod"
+  const [paymentMethod, setPaymentMethod] = useState<"bank" | "wallet" | "whatsapp">(
+    (["bank", "wallet", "whatsapp"].includes(String(savedForm.paymentMethod))
+      ? savedForm.paymentMethod
+      : "bank") as "bank" | "wallet" | "whatsapp"
   );
   const [placedOrderId, setPlacedOrderId] = useState("");
 
