@@ -220,7 +220,7 @@ export default function FlowerJewelleryLahorePage() {
         <ol className="space-y-3 text-xs sm:text-sm text-[#E5DED2] leading-relaxed list-decimal list-inside">
           <li><strong className="text-white">WhatsApp us:</strong> message <strong className="text-[#C6A15B]">0310-4225974</strong> with your outfit photo (for colour matching) plus the delivery address in Lahore.</li>
           <li><strong className="text-white">Approve the photo:</strong> we send a real photo of your jewellery set before dispatch — nothing leaves until you approve.</li>
-          <li><strong className="text-white">Pay & receive:</strong> pay by COD, JazzCash, EasyPaisa, bank transfer or international card. Same-day delivery in 2–5 hours.</li>
+          <li><strong className="text-white">Pay & receive:</strong> pay by JazzCash, EasyPaisa, bank transfer or international card. Same-day delivery in 2–5 hours.</li>
         </ol>
         <a
           href={whatsappLink("Hello Lahore Bouquet! I want to order fresh flower jewellery in Lahore.")}

@@ -96,7 +96,7 @@ const dhaFaqSchema = {
       name: "How do I order flowers to DHA on WhatsApp?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Message 0310-4225974 on WhatsApp — for example, 'I need a 50 red rose bouquet with a cake for an anniversary in DHA Phase 6, by 7 PM.' We will send you a photo of the flowers on WhatsApp to confirm, then the rider leaves. Cash on delivery, JazzCash, EasyPaisa, bank transfer and international cards are all accepted.",
+        text: "Message 0310-4225974 on WhatsApp — for example, 'I need a 50 red rose bouquet with a cake for an anniversary in DHA Phase 6, by 7 PM.' We will send you a photo of the flowers on WhatsApp to confirm, then the rider leaves. JazzCash, EasyPaisa, bank transfer and international cards are all accepted.",
       },
     },
   ],
@@ -143,7 +143,7 @@ export default async function DHADeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Flower delivery in DHA Lahore is free across Phases 1 to 9, Defence Raya and Sector Y, and our riders know its phases, blocks and commercial strips street by street. Most orders reach Phases 1 to 5 within about 2 to 3 hours; for Phases 6 to 9, Defence Raya and Sector Y, allow the full window. Our florists send you a photo on WhatsApp before your bouquet leaves, and we deliver to homes, offices, and to Combined Military Hospital (CMH). To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your phase and street details — approve the bouquet photo we send, then pay by COD, JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
+          Flower delivery in DHA Lahore is free across Phases 1 to 9, Defence Raya and Sector Y, and our riders know its phases, blocks and commercial strips street by street. Most orders reach Phases 1 to 5 within about 2 to 3 hours; for Phases 6 to 9, Defence Raya and Sector Y, allow the full window. Our florists send you a photo on WhatsApp before your bouquet leaves, and we deliver to homes, offices, and to Combined Military Hospital (CMH). To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your phase and street details — approve the bouquet photo we send, then pay by JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
@@ -170,7 +170,7 @@ export default async function DHADeliveryPage() {
           <li><strong>Delivery fee: FREE</strong> — across DHA Phases 1 to 9, DHA Phase 9 Town, Defence Raya and Sector Y. No hidden charges.</li>
           <li><strong>Delivery time: 2 to 3 hours</strong>, 7 days a week, from 9 AM to 1 AM. Phases 1–5 are usually fastest; Phases 6–9 and Raya take the full window in peak traffic.</li>
           <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM, 7 days a week — book before 8 PM on WhatsApp.</li>
-          <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
+          <li><strong>Payments:</strong> JazzCash, EasyPaisa, bank transfer and international cards.</li>
           <li><strong>Prices start at Rs. 1,239.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
         </ul>
       </section>
@@ -227,7 +227,7 @@ export default async function DHADeliveryPage() {
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How do I order flowers to DHA on WhatsApp?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Message 0310-4225974 on WhatsApp — for example, 'I need a 50 red rose bouquet with a cake for an anniversary in DHA Phase 6, by 7 PM.' We will send you a photo of the flowers on WhatsApp to confirm, then the rider leaves. Cash on delivery, JazzCash, EasyPaisa, bank transfer and international cards are all accepted.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Message 0310-4225974 on WhatsApp — for example, 'I need a 50 red rose bouquet with a cake for an anniversary in DHA Phase 6, by 7 PM.' We will send you a photo of the flowers on WhatsApp to confirm, then the rider leaves. JazzCash, EasyPaisa, bank transfer and international cards are all accepted.</p>
           </div>
         </div>
       </section>
@@ -244,7 +244,7 @@ export default async function DHADeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your DHA phase, street and house number, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,239 — including which roses and seasonal flowers arrived today.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh and send you a photo on WhatsApp before the rider leaves. Nothing ships until you reply that it looks perfect — ask for tweaks and we redo it.</li>
-          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your DHA phase within 2–3 hours for the FREE fee — or in the midnight slot.</li>
+          <li><strong>Pay your way and receive.</strong> Pay by JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your DHA phase within 2–3 hours for the FREE fee — or in the midnight slot.</li>
         </ol>
       </section>
 

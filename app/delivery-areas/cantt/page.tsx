@@ -138,7 +138,7 @@ export default async function CanttDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Lahore Cantonment and Cavalry Ground need couriers who understand gate security protocols and military checkpoint navigation. From Lahore, we cross into Cantt via Sherpao Bridge or the Cavalry Underpass within minutes, delivering handcrafted bouquets in 2 to 2.5 hours with free delivery — with live WhatsApp photo proof before the rider leaves. To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your colony and street details for gate clearance — approve the bouquet photo, then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
+          Lahore Cantonment and Cavalry Ground need couriers who understand gate security protocols and military checkpoint navigation. From Lahore, we cross into Cantt via Sherpao Bridge or the Cavalry Underpass within minutes, delivering handcrafted bouquets in 2 to 2.5 hours with free delivery — with live WhatsApp photo proof before the rider leaves. To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your colony and street details for gate clearance — approve the bouquet photo, then pay by JazzCash, EasyPaisa, bank transfer or international card.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
@@ -165,7 +165,7 @@ export default async function CanttDeliveryPage() {
           <li><strong>Delivery fee: FREE</strong> — across Saddar, Cavalry Ground, PAF Colony, Falcon Complex, Fortress commercial and CMH. No hidden charges.</li>
           <li><strong>Delivery time: 2 to 2.5 hours</strong>, 7 days a week, from 9 AM to 1 AM, via Sherpao Bridge or the Cavalry Underpass.</li>
           <li><strong>Midnight slot:</strong> available every night — message us on WhatsApp by the evening to reserve it.</li>
-          <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
+          <li><strong>Payments:</strong> JazzCash, EasyPaisa, bank transfer and international cards.</li>
           <li><strong>Prices start at Rs. 1,239.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
         </ul>
       </section>
@@ -239,7 +239,7 @@ export default async function CanttDeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your Cantt colony, street and a guard contact number, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,239 — including which roses and seasonal flowers arrived today.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh and send you a photo on WhatsApp before the rider leaves — along with the rider&apos;s name and number so your gate clears entry in minutes.</li>
-          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider clears your colony gate and reaches your doorstep within 2–2.5 hours with free delivery — midnight slot available.</li>
+          <li><strong>Pay your way and receive.</strong> Pay by JazzCash, EasyPaisa, bank transfer or an international card. The rider clears your colony gate and reaches your doorstep within 2–2.5 hours with free delivery — midnight slot available.</li>
         </ol>
       </section>
 

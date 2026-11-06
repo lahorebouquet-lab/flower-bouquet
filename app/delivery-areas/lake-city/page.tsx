@@ -97,7 +97,7 @@ const lakeCityFaqSchema = {
       name: "WhatsApp par Lake City ke liye order kaise karun?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "0310-4225974 par likhein — masalan 'Lake City golf villas me birthday ke liye 30 imported gulab aur cake chahiye, dopehar 3 baje tak.' Hum apko WhatsApp par phoolon ki photo bhej kar confirm karenge, phir rider rawana hoga. Cash on delivery, JazzCash, EasyPaisa, bank transfer aur international cards sab chalte hain.",
+        text: "0310-4225974 par likhein — masalan 'Lake City golf villas me birthday ke liye 30 imported gulab aur cake chahiye, dopehar 3 baje tak.' Hum apko WhatsApp par phoolon ki photo bhej kar confirm karenge, phir rider rawana hoga. JazzCash, EasyPaisa, bank transfer aur international cards sab chalte hain.",
       },
     },
   ],
@@ -150,7 +150,7 @@ export default async function LakeCityDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Lake City sits at the far end of the Raiwind Road corridor, and reaching its golf-course villas, the Downtown commercial strip and the sectors by the Lake City Ring Road interchange takes real road time — which is why delivery here takes 3 to 4 hours with a flat Rs. 500 fee. Our riders handle the gated entrances with CNIC clearance and know their way around the community&apos;s sectors and the Downtown commercial strip. Every bouquet is photographed on WhatsApp before the rider leaves, so you approve exactly what arrives. To order, message 0310-4225974 any time between 9 AM and 1 AM with your sector, street and house number — then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
+          Lake City sits at the far end of the Raiwind Road corridor, and reaching its golf-course villas, the Downtown commercial strip and the sectors by the Lake City Ring Road interchange takes real road time — which is why delivery here takes 3 to 4 hours with a flat Rs. 500 fee. Our riders handle the gated entrances with CNIC clearance and know their way around the community&apos;s sectors and the Downtown commercial strip. Every bouquet is photographed on WhatsApp before the rider leaves, so you approve exactly what arrives. To order, message 0310-4225974 any time between 9 AM and 1 AM with your sector, street and house number — then pay by JazzCash, EasyPaisa, bank transfer or international card.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
@@ -177,7 +177,7 @@ export default async function LakeCityDeliveryPage() {
           <li><strong>Delivery fee: FREE</strong> — across Lake City&apos;s golf-course villas, Downtown commercial and the sectors near the Ring Road interchange. No hidden charges.</li>
           <li><strong>Delivery time: 3 to 4 hours</strong>, 7 days a week, from 9 AM to 1 AM. Allow the full window for golf-course villas and during evening traffic on the Raiwind Road corridor.</li>
           <li><strong>Midnight slot:</strong> available every night from 11:30 PM to 12:15 AM with free delivery — message us on WhatsApp by the evening to reserve it.</li>
-          <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
+          <li><strong>Payments:</strong> JazzCash, EasyPaisa, bank transfer and international cards.</li>
           <li><strong>Prices start at Rs. 1,239.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
         </ul>
       </section>
@@ -234,7 +234,7 @@ export default async function LakeCityDeliveryPage() {
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">WhatsApp par Lake City ke liye order kaise karun?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">0310-4225974 par likhein — masalan “Lake City golf villas me birthday ke liye 30 imported gulab aur cake chahiye, dopehar 3 baje tak.” Hum apko WhatsApp par phoolon ki photo bhej kar confirm karenge, phir rider rawana hoga. Cash on delivery, JazzCash, EasyPaisa, bank transfer aur international cards sab chalte hain.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">0310-4225974 par likhein — masalan “Lake City golf villas me birthday ke liye 30 imported gulab aur cake chahiye, dopehar 3 baje tak.” Hum apko WhatsApp par phoolon ki photo bhej kar confirm karenge, phir rider rawana hoga. JazzCash, EasyPaisa, bank transfer aur international cards sab chalte hain.</p>
           </div>
         </div>
       </section>
@@ -251,7 +251,7 @@ export default async function LakeCityDeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your sector, street and house number, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,239 — including which roses and seasonal flowers arrived today. For the golf-course villas, also share your gate&apos;s guard number for smooth entry.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh and send you a photo on WhatsApp before the rider leaves. Nothing ships until you reply that it looks perfect — ask for tweaks and we redo it.</li>
-          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your Lake City address within 3–4 hours with FREE delivery — midnight slot 11:30 PM to 12:15 AM also available.</li>
+          <li><strong>Pay your way and receive.</strong> Pay by JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your Lake City address within 3–4 hours with FREE delivery — midnight slot 11:30 PM to 12:15 AM also available.</li>
         </ol>
       </section>
 

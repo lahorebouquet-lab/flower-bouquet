@@ -97,7 +97,7 @@ const bahriaOrchardFaqSchema = {
       name: "WhatsApp par Bahria Orchard ke liye order kaise karun?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "0310-4225974 par likhein — masalan 'Bahria Orchard Phase 3 me anniversary ke liye 50 surkh gulab ka guldasta chahiye, shaam 7 baje tak.' Hum WhatsApp par phoolon ki photo bhej kar confirm karenge, phir rider rawana hoga. COD, JazzCash, EasyPaisa, bank transfer aur international cards sab chalte hain.",
+        text: "0310-4225974 par likhein — masalan 'Bahria Orchard Phase 3 me anniversary ke liye 50 surkh gulab ka guldasta chahiye, shaam 7 baje tak.' Hum WhatsApp par phoolon ki photo bhej kar confirm karenge, phir rider rawana hoga. JazzCash, EasyPaisa, bank transfer aur international cards sab chalte hain.",
       },
     },
   ],
@@ -150,7 +150,7 @@ export default async function BahriaOrchardDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Bahria Orchard spreads across Phases 1 to 4 near Raiwind Road, and our riders run these phases daily. Most orders arrive within 3 to 4 hours for a flat free delivery. Because Bahria security runs strict gate checks, share your phase, block and house number exactly, and pre-inform your guard. Our florists send you a photo on WhatsApp before your bouquet leaves. Order on WhatsApp at 0310-4225974 (9 AM–1 AM), then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
+          Bahria Orchard spreads across Phases 1 to 4 near Raiwind Road, and our riders run these phases daily. Most orders arrive within 3 to 4 hours for a flat free delivery. Because Bahria security runs strict gate checks, share your phase, block and house number exactly, and pre-inform your guard. Our florists send you a photo on WhatsApp before your bouquet leaves. Order on WhatsApp at 0310-4225974 (9 AM–1 AM), then pay by JazzCash, EasyPaisa, bank transfer or international card.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
@@ -177,7 +177,7 @@ export default async function BahriaOrchardDeliveryPage() {
           <li><strong>Delivery fee: FREE</strong> — across Bahria Orchard Phases 1 to 4 and the commercial areas.</li>
           <li><strong>Delivery time: 3 to 4 hours</strong>, 7 days a week, 9 AM to 1 AM. Phase 1–2 orders are usually fastest; Phases 3–4 take the full window in peak traffic.</li>
           <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM, with free delivery. Reserve on WhatsApp by the evening so we can coordinate gate entry.</li>
-          <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
+          <li><strong>Payments:</strong> JazzCash, EasyPaisa, bank transfer and international cards.</li>
           <li><strong>Prices start at Rs. 1,239.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our florists will confirm your slot instantly.</li>
         </ul>
       </section>
@@ -232,7 +232,7 @@ export default async function BahriaOrchardDeliveryPage() {
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">WhatsApp par Bahria Orchard ke liye order kaise karun?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">0310-4225974 par likhein — masalan “Bahria Orchard Phase 3 me anniversary ke liye 50 surkh gulab ka guldasta chahiye, shaam 7 baje tak.” Hum WhatsApp par phoolon ki photo bhej kar confirm karenge, phir rider rawana hoga. COD, JazzCash, EasyPaisa, bank transfer aur international cards sab chalte hain.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">0310-4225974 par likhein — masalan “Bahria Orchard Phase 3 me anniversary ke liye 50 surkh gulab ka guldasta chahiye, shaam 7 baje tak.” Hum WhatsApp par phoolon ki photo bhej kar confirm karenge, phir rider rawana hoga. JazzCash, EasyPaisa, bank transfer aur international cards sab chalte hain.</p>
           </div>
         </div>
       </section>
@@ -246,7 +246,7 @@ export default async function BahriaOrchardDeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your phase, block, house number, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,239.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh and send you a photo on WhatsApp before the rider leaves. Nothing ships until you reply it looks perfect — ask for tweaks and we redo it.</li>
-          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your phase within 3–4 hours for the FREE fee — or in the midnight slot.</li>
+          <li><strong>Pay your way and receive.</strong> Pay by JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your phase within 3–4 hours for the FREE fee — or in the midnight slot.</li>
         </ol>
       </section>
 

@@ -54,7 +54,7 @@ export const HOMEPAGE_FAQS: FAQItem[] = [
   },
   {
     q: "What payment methods do you accept?",
-    a: "We accept Cash on Delivery (COD), online bank transfer, JazzCash, EasyPaisa, and international credit/debit cards — so customers ordering from the UK, USA, UAE and elsewhere can pay easily."
+    a: "We accept online bank transfer, JazzCash, EasyPaisa, and international credit/debit cards — so customers ordering from the UK, USA, UAE and elsewhere can pay easily."
   },
   {
     q: "Do you sell flowers if I just need a single bunch or small bouquet?",

@@ -100,7 +100,7 @@ export default async function GulbergDeliveryPage() {
         name: "Can I order on WhatsApp in Roman Urdu?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes — message 0310-4225974 on WhatsApp in Roman Urdu or English, for example asking for a red rose bouquet for a birthday in Gulberg II. Our team will reply right away and confirm your order. Cash on delivery, JazzCash, EasyPaisa, bank transfer and international cards are all accepted.",
+          text: "Yes — message 0310-4225974 on WhatsApp in Roman Urdu or English, for example asking for a red rose bouquet for a birthday in Gulberg II. Our team will reply right away and confirm your order. JazzCash, EasyPaisa, bank transfer and international cards are all accepted.",
         },
       },
     ],
@@ -138,7 +138,7 @@ export default async function GulbergDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Gulberg is our home turf and our fastest delivery zone. Our Lahore workshop ties every bouquet fresh and dispatches riders within minutes — and delivery anywhere inside Gulberg is completely FREE, with no minimum order. Whether you are sending roses to an office on Main Boulevard, surprising someone at a café on MM Alam Road, or ordering a midnight bouquet to Gulberg II, our florists send you a live photo on WhatsApp before the rider leaves, so what arrives is exactly what you approved. Ordering is simple: WhatsApp us at 0310-4225974 any time between 9 AM and 1 AM, approve the bouquet photo we send back, and pay cash on delivery, JazzCash, EasyPaisa, bank transfer or card — our riders handle the rest. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
+          Gulberg is our home turf and our fastest delivery zone. Our Lahore workshop ties every bouquet fresh and dispatches riders within minutes — and delivery anywhere inside Gulberg is completely FREE, with no minimum order. Whether you are sending roses to an office on Main Boulevard, surprising someone at a café on MM Alam Road, or ordering a midnight bouquet to Gulberg II, our florists send you a live photo on WhatsApp before the rider leaves, so what arrives is exactly what you approved. Ordering is simple: WhatsApp us at 0310-4225974 any time between 9 AM and 1 AM, approve the bouquet photo we send back, and pay by JazzCash, EasyPaisa, bank transfer or card — our riders handle the rest. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
@@ -165,7 +165,7 @@ export default async function GulbergDeliveryPage() {
           <li><strong>Delivery fee: FREE (Rs. 0)</strong> — across Gulberg I, II & III, Liberty Market, MM Alam Road, Kasuri Road, Main Boulevard and the Jail Road corridor. No minimum order.</li>
           <li><strong>Delivery time: 30 to 90 minutes</strong>, 7 days a week, from 9 AM to 1 AM.</li>
           <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM, 7 days a week — book before 8 PM on WhatsApp.</li>
-          <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
+          <li><strong>Payments:</strong> JazzCash, EasyPaisa, bank transfer and international cards.</li>
           <li><strong>Prices start at Rs. 1,239.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
         </ul>
       </section>
@@ -222,7 +222,7 @@ export default async function GulbergDeliveryPage() {
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Can I order on WhatsApp in Roman Urdu?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes — message 0310-4225974 on WhatsApp in Roman Urdu or English, for example asking for a red rose bouquet for a birthday in Gulberg II. Our team will reply right away and confirm your order. Cash on delivery, JazzCash, EasyPaisa, bank transfer and international cards are all accepted.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes — message 0310-4225974 on WhatsApp in Roman Urdu or English, for example asking for a red rose bouquet for a birthday in Gulberg II. Our team will reply right away and confirm your order. JazzCash, EasyPaisa, bank transfer and international cards are all accepted.</p>
           </div>
         </div>
       </section>
@@ -239,7 +239,7 @@ export default async function GulbergDeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your Gulberg address, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,239 — including which roses and seasonal flowers arrived today.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh and send you a photo on WhatsApp before the rider leaves. Nothing ships until you reply that it looks perfect — ask for tweaks and we redo it.</li>
-          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your Gulberg doorstep within 30–90 minutes — or in the midnight slot for the evening surprise.</li>
+          <li><strong>Pay your way and receive.</strong> Pay by JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your Gulberg doorstep within 30–90 minutes — or in the midnight slot for the evening surprise.</li>
         </ol>
       </section>
 

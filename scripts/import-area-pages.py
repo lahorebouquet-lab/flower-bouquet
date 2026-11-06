@@ -122,7 +122,7 @@ def doc(a):
             {'_type': 'object', '_key': 'f4', 'question': f"Do you do event and decoration flowers in {a['name']}?",
              'answer': a['event']},
             {'_type': 'object', '_key': 'f5', 'question': f"WhatsApp par {a['name']} ke liye order kaise karun?",
-             'answer': f"0310-4225974 par likhein \u2014 masalan \u2018{a['name']} me birthday ke liye gulab ka bouquet chahiye.\u2019 Hum apko WhatsApp par phoolon ki photo aur video bhej kar confirm karenge, phir rider rawana hoga. Cash on delivery, JazzCash, EasyPaisa, bank transfer aur international cards sab chalte hain."},
+             'answer': f"0310-4225974 par likhein \u2014 masalan \u2018{a['name']} me birthday ke liye gulab ka bouquet chahiye.\u2019 Hum apko WhatsApp par phoolon ki photo aur video bhej kar confirm karenge, phir rider rawana hoga. JazzCash, EasyPaisa, bank transfer aur international cards sab chalte hain."},
         ],
         'nearbyAreas': [{'_type': 'object', '_key': f"n{i}", 'name': n, 'slug': s} for i, (n, s) in enumerate(a['nearby'])],
         'seoTitle': f"Flower Delivery in {a['name']} Lahore | {a['fee']}, {a['time']}",

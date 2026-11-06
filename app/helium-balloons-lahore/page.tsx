@@ -51,7 +51,7 @@ const FAQS = [
   },
   {
     q: "What payment methods do you accept?",
-    a: "Cash on Delivery (COD), JazzCash, EasyPaisa, bank transfer and international credit/debit cards — order easily from Pakistan or abroad (UK, USA, UAE)."
+    a: "JazzCash, EasyPaisa, bank transfer and international credit/debit cards — order easily from Pakistan or abroad (UK, USA, UAE)."
   },
   {
     q: "Where can I buy helium balloons in Lahore?",
@@ -75,7 +75,7 @@ const FAQS = [
   },
   {
     q: "Is delivery free on helium balloons in Lahore?",
-    a: "Yes — delivery is FREE across Lahore on helium balloons and balloon bunches. Order before 4:00 PM for same-day delivery within 2–5 hours, and pay by Cash on Delivery, bank transfer, JazzCash, EasyPaisa or card."
+    a: "Yes — delivery is FREE across Lahore on helium balloons and balloon bunches. Order before 4:00 PM for same-day delivery within 2–5 hours, and pay by bank transfer, JazzCash, EasyPaisa or card."
   }
 ];
 
@@ -260,7 +260,7 @@ export default async function HeliumBalloonsLahorePage() {
         <h2 className="font-playfair text-2xl font-bold text-white">How to Order in 3 Steps</h2>
         <ol className="space-y-3 text-xs sm:text-sm text-[#E5DED2] leading-relaxed list-decimal list-inside">
           <li><strong className="text-white">WhatsApp your theme:</strong> message <strong className="text-[#C6A15B]">0310-4225974</strong> with colours, numbers/letters and quantity — or just say "birthday balloons for a 5-year-old".</li>
-          <li><strong className="text-white">Approve & pay:</strong> we confirm the design and price; pay by COD, JazzCash, EasyPaisa, bank transfer or international card.</li>
+          <li><strong className="text-white">Approve & pay:</strong> we confirm the design and price; pay by JazzCash, EasyPaisa, bank transfer or international card.</li>
           <li><strong className="text-white">Fresh inflation & delivery:</strong> balloons are inflated just before the rider leaves and arrive floating — same-day in 2–5 hours.</li>
         </ol>
         <p className="text-xs sm:text-sm text-[#E5DED2] leading-relaxed">

@@ -220,7 +220,7 @@ export default function WeddingCarDecorationLahorePage() {
         <ol className="space-y-3 text-xs sm:text-sm text-[#E5DED2] leading-relaxed list-decimal list-inside">
           <li><strong className="text-white">WhatsApp us:</strong> message <strong className="text-[#C6A15B]">0310-4225974</strong> with your car make, model and colour, plus the date and location.</li>
           <li><strong className="text-white">Confirm the quote:</strong> we send a transparent package quote — no hidden charges, ever.</li>
-          <li><strong className="text-white">We decorate:</strong> our team arrives 2–3 hours before the barat and finishes on-site. Pay by COD, JazzCash, EasyPaisa, bank transfer or international card.</li>
+          <li><strong className="text-white">We decorate:</strong> our team arrives 2–3 hours before the barat and finishes on-site. Pay by JazzCash, EasyPaisa, bank transfer or international card.</li>
         </ol>
         <a
           href={whatsappLink("Hello Lahore Bouquet! I want to book wedding car decoration in Lahore.")}

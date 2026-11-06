@@ -11,13 +11,13 @@ export const metadata: Metadata = withSeo("/delivery-areas/bahria-town", {
   title: {
     absolute: "Flower Delivery in Bahria Town Lahore | FREE delivery, 2.5–4 hrs",
   },
-  description: "Same-day flower delivery to Bahria Town Sectors A–F, Safari Villas & Lake City in 2.5–4 hours. FREE delivery. AC-van transit, WhatsApp photo proof, COD",
+  description: "Same-day flower delivery to Bahria Town Sectors A–F, Safari Villas & Lake City in 2.5–4 hours. FREE delivery. AC-van transit, WhatsApp photo proof",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/bahria-town`,
   },
   openGraph: {
     title: "Flower Delivery in Bahria Town Lahore | FREE delivery, 2.5–4 hrs",
-    description: "Same-day flower delivery to Bahria Town Sectors A–F, Safari Villas & Lake City in 2.5–4 hours. FREE delivery. AC-van transit, WhatsApp photo proof, COD",
+    description: "Same-day flower delivery to Bahria Town Sectors A–F, Safari Villas & Lake City in 2.5–4 hours. FREE delivery. AC-van transit, WhatsApp photo proof",
     url: `${SITE_URL}/delivery-areas/bahria-town`,
     images: [
       {
@@ -138,7 +138,7 @@ export default async function BahriaTownDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Sending flowers to Bahria Town requires careful temperature control during transit. From Lahore, our climate-controlled courier vans navigate via the Lahore Ring Road to reach Sectors A through F, Safari Villas, and Lake City within 2.5 to 4 hours with free delivery. You receive a photo of your hand-tied bouquet on WhatsApp before our rider departs. To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your sector, street and house number — approve the bouquet photo we send, then pay by COD, JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
+          Sending flowers to Bahria Town requires careful temperature control during transit. From Lahore, our climate-controlled courier vans navigate via the Lahore Ring Road to reach Sectors A through F, Safari Villas, and Lake City within 2.5 to 4 hours with free delivery. You receive a photo of your hand-tied bouquet on WhatsApp before our rider departs. To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your sector, street and house number — approve the bouquet photo we send, then pay by JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
@@ -165,7 +165,7 @@ export default async function BahriaTownDeliveryPage() {
           <li><strong>Delivery fee: FREE</strong> — across Bahria Town Sectors A to F, Safari Villas, Sector Jasmine and Lake City. Covers the Ring Road distance and air-conditioned transit.</li>
           <li><strong>Delivery time: 2.5 to 4 hours</strong>, 7 days a week, from 9 AM to 1 AM, via the Lahore Ring Road.</li>
           <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM, 7 days a week — book by 8:00 PM so our evening Ring Road dispatch can be scheduled smoothly.</li>
-          <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
+          <li><strong>Payments:</strong> JazzCash, EasyPaisa, bank transfer and international cards.</li>
           <li><strong>Prices start at Rs. 1,239.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
         </ul>
       </section>
@@ -239,7 +239,7 @@ export default async function BahriaTownDeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your Bahria sector, street and house number, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,239 — including which roses and seasonal flowers arrived today.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh, hydrate it for the long southern run, and send you a photo on WhatsApp before the rider leaves. Nothing ships until you reply that it looks perfect.</li>
-          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider travels by AC van via the Ring Road and reaches your sector within 2.5–4 hours with free delivery — midnight slot available (book by 8 PM).</li>
+          <li><strong>Pay your way and receive.</strong> Pay by JazzCash, EasyPaisa, bank transfer or an international card. The rider travels by AC van via the Ring Road and reaches your sector within 2.5–4 hours with free delivery — midnight slot available (book by 8 PM).</li>
         </ol>
       </section>
 

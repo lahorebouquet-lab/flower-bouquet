@@ -97,7 +97,7 @@ const alKabirTownFaqSchema = {
       name: "WhatsApp par Al Kabir Town ke liye order kaise karun?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "0310-4225974 par likhein — masalan 'Al Kabir Town Phase 2 me birthday ke liye lal gulab ka bouquet chahiye, shaam 6 baje tak.' Hum WhatsApp par phoolon ki photo bhej kar confirm karenge, phir rider rawana hoga. COD, JazzCash, EasyPaisa, bank transfer aur international cards sab chalte hain.",
+        text: "0310-4225974 par likhein — masalan 'Al Kabir Town Phase 2 me birthday ke liye lal gulab ka bouquet chahiye, shaam 6 baje tak.' Hum WhatsApp par phoolon ki photo bhej kar confirm karenge, phir rider rawana hoga. JazzCash, EasyPaisa, bank transfer aur international cards sab chalte hain.",
       },
     },
   ],
@@ -150,7 +150,7 @@ export default async function AlKabirTownDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Al Kabir Town sits just off Raiwind Road near Bahria Orchard, and our riders cover Phase 1 and Phase 2 daily along with the commercial area. Most orders arrive within 3 to 4 hours for a flat free delivery. Share your exact phase, block and house number — a location pin on WhatsApp saves the rider a detour. Our florists send you a photo on WhatsApp before your bouquet leaves. Order on WhatsApp at 0310-4225974 (9 AM–1 AM), then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
+          Al Kabir Town sits just off Raiwind Road near Bahria Orchard, and our riders cover Phase 1 and Phase 2 daily along with the commercial area. Most orders arrive within 3 to 4 hours for a flat free delivery. Share your exact phase, block and house number — a location pin on WhatsApp saves the rider a detour. Our florists send you a photo on WhatsApp before your bouquet leaves. Order on WhatsApp at 0310-4225974 (9 AM–1 AM), then pay by JazzCash, EasyPaisa, bank transfer or international card.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
@@ -177,7 +177,7 @@ export default async function AlKabirTownDeliveryPage() {
           <li><strong>Delivery fee: FREE</strong> — across Al Kabir Town Phase 1 and Phase 2, including the commercial area.</li>
           <li><strong>Delivery time: 3 to 4 hours</strong>, 7 days a week, 9 AM to 1 AM. Morning and early-afternoon orders usually arrive fastest.</li>
           <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM, with free delivery. Reserve on WhatsApp by the evening.</li>
-          <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
+          <li><strong>Payments:</strong> JazzCash, EasyPaisa, bank transfer and international cards.</li>
           <li><strong>Prices start at Rs. 1,239.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our florists will confirm your slot instantly.</li>
         </ul>
       </section>
@@ -232,7 +232,7 @@ export default async function AlKabirTownDeliveryPage() {
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">WhatsApp par Al Kabir Town ke liye order kaise karun?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">0310-4225974 par likhein — masalan “Al Kabir Town Phase 2 me birthday ke liye lal gulab ka bouquet chahiye, shaam 6 baje tak.” Hum WhatsApp par phoolon ki photo bhej kar confirm karenge, phir rider rawana hoga. COD, JazzCash, EasyPaisa, bank transfer aur international cards sab chalte hain.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">0310-4225974 par likhein — masalan “Al Kabir Town Phase 2 me birthday ke liye lal gulab ka bouquet chahiye, shaam 6 baje tak.” Hum WhatsApp par phoolon ki photo bhej kar confirm karenge, phir rider rawana hoga. JazzCash, EasyPaisa, bank transfer aur international cards sab chalte hain.</p>
           </div>
         </div>
       </section>
@@ -246,7 +246,7 @@ export default async function AlKabirTownDeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your phase, block, house number, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,239.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh and send you a photo on WhatsApp before the rider leaves. Nothing ships until you reply it looks perfect — ask for tweaks and we redo it.</li>
-          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your block within 3–4 hours for the FREE fee — or in the midnight slot.</li>
+          <li><strong>Pay your way and receive.</strong> Pay by JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your block within 3–4 hours for the FREE fee — or in the midnight slot.</li>
         </ol>
       </section>
 

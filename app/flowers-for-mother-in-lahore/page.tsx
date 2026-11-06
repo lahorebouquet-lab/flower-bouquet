@@ -297,7 +297,7 @@ export default function FlowersForMotherInLahorePage() {
             <li><strong>Choose your bouquet</strong> — browse the picks above or message us on WhatsApp with your budget.</li>
             <li><strong>Share the delivery details</strong> — recipient's name, phone number and complete Lahore address.</li>
             <li><strong>We confirm</strong> — availability, exact price and delivery time (2–5 hours).</li>
-            <li><strong>Pay & receive</strong> — pay by cash on delivery, bank transfer, JazzCash, EasyPaisa or card; your flowers arrive fresh the same day.</li>
+            <li><strong>Pay & receive</strong> — pay by bank transfer, JazzCash, EasyPaisa or card; your flowers arrive fresh the same day.</li>
           </ol>
           <div className="text-center pt-2">
             <a
@@ -329,7 +329,7 @@ export default function FlowersForMotherInLahorePage() {
             </div>
             <div className="p-5 rounded-2xl bg-[#F8F3EA] border border-[#E5DED2]">
               <h3 className="font-bold text-[#0B0B0B] text-sm flex items-center gap-2"><MessageCircle size={16} className="text-[#8B1E2D]" /> Payment</h3>
-              <p className="text-xs text-[#2A2A2A] mt-2 leading-relaxed">COD, bank transfer, JazzCash, EasyPaisa, and international debit/credit cards accepted.</p>
+              <p className="text-xs text-[#2A2A2A] mt-2 leading-relaxed">Bank transfer, JazzCash, EasyPaisa, and international debit/credit cards accepted.</p>
             </div>
           </div>
         </div>

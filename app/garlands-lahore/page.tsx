@@ -48,7 +48,7 @@ const FAQS = [
   },
   {
     q: "What payment methods do you accept?",
-    a: "Cash on Delivery (COD), JazzCash, EasyPaisa, bank transfer and international credit/debit cards — convenient whether you're ordering from Lahore or from abroad (UK, USA, UAE)."
+    a: "JazzCash, EasyPaisa, bank transfer and international credit/debit cards — convenient whether you're ordering from Lahore or from abroad (UK, USA, UAE)."
   }
 ];
 
@@ -216,7 +216,7 @@ export default function GarlandsLahorePage() {
         <h2 className="font-playfair text-2xl font-bold text-white">How to Order in 3 Steps</h2>
         <ol className="space-y-3 text-xs sm:text-sm text-[#E5DED2] leading-relaxed list-decimal list-inside">
           <li><strong className="text-white">WhatsApp your need:</strong> message <strong className="text-[#C6A15B]">0310-4225974</strong> with garland type, quantity and event date — or send a reference photo.</li>
-          <li><strong className="text-white">Confirm & pay:</strong> we confirm availability and price; pay by COD, JazzCash, EasyPaisa, bank transfer or international card.</li>
+          <li><strong className="text-white">Confirm & pay:</strong> we confirm availability and price; pay by JazzCash, EasyPaisa, bank transfer or international card.</li>
           <li><strong className="text-white">Fresh delivery:</strong> garlands are strung the same morning and delivered misted and packed — same-day in 2–5 hours.</li>
         </ol>
         <p className="text-xs sm:text-sm text-[#E5DED2] leading-relaxed">

@@ -75,7 +75,7 @@ export default function TermsPage() {
       <section className="space-y-3">
         <h2 className="font-playfair text-xl font-bold text-[#0B0B0B]">3. Payments</h2>
         <p className="text-sm leading-relaxed">
-          We accept Cash on Delivery, bank transfer, JazzCash, EasyPaisa and international cards. For bank/e-wallet payments, please share your payment screenshot on WhatsApp so we can verify and dispatch your order without delay.
+          We accept bank transfer, JazzCash, EasyPaisa and international cards. For bank/e-wallet payments, please share your payment screenshot on WhatsApp so we can verify and dispatch your order without delay.
         </p>
       </section>
 

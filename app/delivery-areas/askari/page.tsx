@@ -11,13 +11,13 @@ export const metadata: Metadata = withSeo("/delivery-areas/askari", {
   title: {
     absolute: "Flower Delivery in Askari Lahore | FREE delivery, 2–3 hrs",
   },
-  description: "Same-day flower delivery to Askari 1, 5, 9, 10 & 11 (Bedian Road) Lahore in 2–3 hours. FREE delivery. Gated-community protocol, WhatsApp photo proof, COD",
+  description: "Same-day flower delivery to Askari 1, 5, 9, 10 & 11 (Bedian Road) Lahore in 2–3 hours. FREE delivery. Gated-community protocol, WhatsApp photo proof",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/askari`,
   },
   openGraph: {
     title: "Flower Delivery in Askari Lahore | FREE delivery, 2–3 hrs",
-    description: "Same-day flower delivery to Askari 1, 5, 9, 10 & 11 (Bedian Road) Lahore in 2–3 hours. FREE delivery. Gated-community protocol, WhatsApp photo proof, COD",
+    description: "Same-day flower delivery to Askari 1, 5, 9, 10 & 11 (Bedian Road) Lahore in 2–3 hours. FREE delivery. Gated-community protocol, WhatsApp photo proof",
     url: `${SITE_URL}/delivery-areas/askari`,
     images: [
       {
@@ -100,7 +100,7 @@ export default async function AskariDeliveryPage() {
         name: "Can family abroad pay for a flower delivery to Askari?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. We accept international cards and bank transfer, so family in the UK, USA, UAE or anywhere else can pay directly for a delivery to Askari. We also accept cash on delivery, JazzCash and EasyPaisa locally. Every order gets a WhatsApp photo approval before dispatch.",
+          text: "Yes. We accept international cards and bank transfer, so family in the UK, USA, UAE or anywhere else can pay directly for a delivery to Askari. We also accept JazzCash and EasyPaisa locally. Every order gets a WhatsApp photo approval before dispatch.",
         },
       },
     ],
@@ -138,7 +138,7 @@ export default async function AskariDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          We service all Askari communities across Lahore, including Askari 1 (Sarwar Road), Askari 5, Askari 9, Askari 10 (Airport Road), and Askari 11 (Bedian Road) — delivered in 2 to 3 hours with free delivery. Our couriers carry valid identification for gated security clearance, and every hand-tied bouquet is photographed on WhatsApp before dispatch so you approve exactly what arrives. To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your Askari sector and street — approve the bouquet photo we send, then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
+          We service all Askari communities across Lahore, including Askari 1 (Sarwar Road), Askari 5, Askari 9, Askari 10 (Airport Road), and Askari 11 (Bedian Road) — delivered in 2 to 3 hours with free delivery. Our couriers carry valid identification for gated security clearance, and every hand-tied bouquet is photographed on WhatsApp before dispatch so you approve exactly what arrives. To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your Askari sector and street — approve the bouquet photo we send, then pay by JazzCash, EasyPaisa, bank transfer or international card.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
@@ -165,7 +165,7 @@ export default async function AskariDeliveryPage() {
           <li><strong>Delivery fee: FREE</strong> — across Askari 1 to 11, including Bedian Road sectors. No hidden charges.</li>
           <li><strong>Delivery time: 2 to 3 hours</strong>, 7 days a week, from 9 AM to 1 AM, via the Ring Road and Bedian Road corridor.</li>
           <li><strong>Midnight slot:</strong> available every night — message us on WhatsApp by the evening to reserve it.</li>
-          <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
+          <li><strong>Payments:</strong> JazzCash, EasyPaisa, bank transfer and international cards.</li>
           <li><strong>Prices start at Rs. 1,239.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
         </ul>
       </section>
@@ -222,7 +222,7 @@ export default async function AskariDeliveryPage() {
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Can family abroad pay for a flower delivery to Askari?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes. We accept international cards and bank transfer, so family in the UK, USA, UAE or anywhere else can pay directly for a delivery to Askari. We also accept cash on delivery, JazzCash and EasyPaisa locally. Every order gets a WhatsApp photo approval before dispatch.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes. We accept international cards and bank transfer, so family in the UK, USA, UAE or anywhere else can pay directly for a delivery to Askari. We also accept JazzCash and EasyPaisa locally. Every order gets a WhatsApp photo approval before dispatch.</p>
           </div>
         </div>
       </section>
@@ -239,7 +239,7 @@ export default async function AskariDeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your Askari sector, street and a guard contact number, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,239 — including which roses and seasonal flowers arrived today.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh and send you a photo on WhatsApp before the rider leaves — along with the rider&apos;s name and number so your sector gate clears entry in minutes.</li>
-          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider clears your sector gate and reaches your doorstep within 2–3 hours with free delivery — midnight slot available.</li>
+          <li><strong>Pay your way and receive.</strong> Pay by JazzCash, EasyPaisa, bank transfer or an international card. The rider clears your sector gate and reaches your doorstep within 2–3 hours with free delivery — midnight slot available.</li>
         </ol>
       </section>
 

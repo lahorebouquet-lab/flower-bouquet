@@ -44,7 +44,7 @@ const FAQS = [
   },
   {
     q: "What payment methods do you accept for teddy bear orders?",
-    a: "We accept Cash on Delivery (COD), JazzCash, EasyPaisa, bank transfer and international credit/debit cards — so you can order from anywhere in Pakistan or abroad (UK, USA, UAE)."
+    a: "We accept JazzCash, EasyPaisa, bank transfer and international credit/debit cards — so you can order from anywhere in Pakistan or abroad (UK, USA, UAE)."
   },
   {
     q: "How do I know the teddy bear will look good before delivery?",
@@ -220,7 +220,7 @@ export default function TeddyBearsLahorePage() {
         <ol className="space-y-3 text-xs sm:text-sm text-[#E5DED2] leading-relaxed list-decimal list-inside">
           <li><strong className="text-white">WhatsApp us:</strong> message <strong className="text-[#C6A15B]">0310-4225974</strong> with the size you want (or send a reference photo) plus the delivery address in Lahore.</li>
           <li><strong className="text-white">Approve the photo:</strong> we send a real photo of your teddy (and combo items) before dispatch — nothing leaves until you approve.</li>
-          <li><strong className="text-white">Pay & receive:</strong> pay by COD, JazzCash, EasyPaisa, bank transfer or international card. Same-day delivery in 2–5 hours; midnight slot on request.</li>
+          <li><strong className="text-white">Pay & receive:</strong> pay by JazzCash, EasyPaisa, bank transfer or international card. Same-day delivery in 2–5 hours; midnight slot on request.</li>
         </ol>
         <a
           href={whatsappLink("Hello Lahore Bouquet! I want to order a teddy bear in Lahore.")}

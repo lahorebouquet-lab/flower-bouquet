@@ -97,7 +97,7 @@ export default function MidnightDeliveryBlogPage() {
         <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">How the Midnight Slot Works</h2>
         <ol className="space-y-3 text-sm leading-relaxed list-decimal pl-5">
           <li><strong>Book ahead:</strong> Message us on WhatsApp by evening (ideally a day before) with the bouquet, cake flavour and the exact address in Lahore.</li>
-          <li><strong>We confirm:</strong> You get your total (bouquet + cake + night surcharge) and pay by bank transfer, JazzCash, EasyPaisa or COD.</li>
+          <li><strong>We confirm:</strong> You get your total (bouquet + cake + night surcharge) and pay by bank transfer, JazzCash or EasyPaisa.</li>
           <li><strong>We prepare fresh:</strong> The bouquet is hand-tied that evening; the cake is baked fresh by our bakery partner.</li>
           <li><strong>12 AM surprise:</strong> Our rider arrives between 11:30 PM and 12:15 AM. You get a delivery confirmation the moment it lands.</li>
         </ol>

@@ -76,7 +76,7 @@ const FAQS = [
   },
   {
     q: "Can I get gajray delivered in Lahore on Gajra Day 2026?",
-    a: "Yes. Order on WhatsApp (0310-4225974) — for Gajra Day, booking a day ahead is best, and orders placed before 4:00 PM are still delivered the same day within 2–5 hours with FREE delivery. We photograph your actual gajray for WhatsApp approval before dispatch, and you can pay by Cash on Delivery, bank transfer, JazzCash, EasyPaisa or card."
+    a: "Yes. Order on WhatsApp (0310-4225974) — for Gajra Day, booking a day ahead is best, and orders placed before 4:00 PM are still delivered the same day within 2–5 hours with FREE delivery. We photograph your actual gajray for WhatsApp approval before dispatch, and you can pay by bank transfer, JazzCash, EasyPaisa or card."
   }
 ];
 
@@ -226,7 +226,7 @@ export default function GajrayLahorePage() {
         <ol className="space-y-3 text-xs sm:text-sm text-[#E5DED2] leading-relaxed list-decimal list-inside">
           <li><strong className="text-white">WhatsApp us:</strong> message <strong className="text-[#C6A15B]">0310-4225974</strong> with the gajra style you want (or your outfit photo for colour matching) plus the delivery address in Lahore.</li>
           <li><strong className="text-white">Approve the photo:</strong> we send a real photo of your fresh gajray before dispatch — nothing leaves until you approve.</li>
-          <li><strong className="text-white">Pay & receive:</strong> pay by COD, JazzCash, EasyPaisa, bank transfer or international card. Same-day delivery in 2–5 hours.</li>
+          <li><strong className="text-white">Pay & receive:</strong> pay by JazzCash, EasyPaisa, bank transfer or international card. Same-day delivery in 2–5 hours.</li>
         </ol>
         <a
           href={whatsappLink("Hello Lahore Bouquet! I want to order fresh gajray in Lahore.")}

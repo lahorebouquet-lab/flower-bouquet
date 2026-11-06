@@ -117,7 +117,7 @@ export function floristSchema(url: string = SITE_URL) {
     email: BUSINESS.email,
     priceRange: BUSINESS.priceRange.display,
     currenciesAccepted: "PKR",
-    paymentAccepted: "Cash, Bank Transfer, JazzCash, EasyPaisa",
+    paymentAccepted: "Bank Transfer, JazzCash, EasyPaisa",
     foundingDate: "2026-10-09",
     address: {
       "@type": "PostalAddress",

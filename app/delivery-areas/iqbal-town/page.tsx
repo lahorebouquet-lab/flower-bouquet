@@ -97,7 +97,7 @@ const iqbalTownFaqSchema = {
       name: "WhatsApp par Iqbal Town ke liye order kaise karun?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "0310-4225974 par likhein — masalan 'Iqbal Town Karim Block me birthday ke liye imported gulab ka guldasta aur cake chahiye, shaam 5 baje tak.' Hum apko WhatsApp par phoolon ki photo bhej kar confirm karenge, phir rider rawana hoga. Cash on delivery, JazzCash, EasyPaisa, bank transfer aur international cards sab chalte hain.",
+        text: "0310-4225974 par likhein — masalan 'Iqbal Town Karim Block me birthday ke liye imported gulab ka guldasta aur cake chahiye, shaam 5 baje tak.' Hum apko WhatsApp par phoolon ki photo bhej kar confirm karenge, phir rider rawana hoga. JazzCash, EasyPaisa, bank transfer aur international cards sab chalte hain.",
       },
     },
   ],
@@ -150,7 +150,7 @@ export default async function IqbalTownDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Allama Iqbal Town is one of Lahore&apos;s oldest and busiest residential schemes, and our riders run its blocks daily — from the famous Moon Market shopping area to the quieter residential streets near Multan Road. Delivery takes 2 to 3 hours with free delivery. Our florists send you a photo on WhatsApp before your bouquet leaves, and we deliver to homes, Moon Market shops and offices across the town. To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your block and street details — approve the bouquet photo we send, then pay by COD, JazzCash, EasyPaisa, bank transfer or international card.
+          Allama Iqbal Town is one of Lahore&apos;s oldest and busiest residential schemes, and our riders run its blocks daily — from the famous Moon Market shopping area to the quieter residential streets near Multan Road. Delivery takes 2 to 3 hours with free delivery. Our florists send you a photo on WhatsApp before your bouquet leaves, and we deliver to homes, Moon Market shops and offices across the town. To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your block and street details — approve the bouquet photo we send, then pay by JazzCash, EasyPaisa, bank transfer or international card.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
@@ -177,7 +177,7 @@ export default async function IqbalTownDeliveryPage() {
           <li><strong>Delivery fee: FREE</strong> — across all blocks of Allama Iqbal Town, Moon Market and the Multan Road side. No hidden charges.</li>
           <li><strong>Delivery time: 2 to 3 hours</strong>, 7 days a week, from 9 AM to 1 AM. Blocks near Moon Market and Multan Road are usually fastest; deeper blocks take the full window.</li>
           <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM every night with free delivery — message us on WhatsApp by the evening to reserve it.</li>
-          <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
+          <li><strong>Payments:</strong> JazzCash, EasyPaisa, bank transfer and international cards.</li>
           <li><strong>Prices start at Rs. 1,239.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
         </ul>
       </section>
@@ -234,7 +234,7 @@ export default async function IqbalTownDeliveryPage() {
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">WhatsApp par Iqbal Town ke liye order kaise karun?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">0310-4225974 par likhein — masalan “Iqbal Town Karim Block me birthday ke liye imported gulab ka guldasta aur cake chahiye, shaam 5 baje tak.” Hum apko WhatsApp par phoolon ki photo bhej kar confirm karenge, phir rider rawana hoga. Cash on delivery, JazzCash, EasyPaisa, bank transfer aur international cards sab chalte hain.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">0310-4225974 par likhein — masalan “Iqbal Town Karim Block me birthday ke liye imported gulab ka guldasta aur cake chahiye, shaam 5 baje tak.” Hum apko WhatsApp par phoolon ki photo bhej kar confirm karenge, phir rider rawana hoga. JazzCash, EasyPaisa, bank transfer aur international cards sab chalte hain.</p>
           </div>
         </div>
       </section>
@@ -251,7 +251,7 @@ export default async function IqbalTownDeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your block, street and house number — or your Moon Market shop details — plus the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,239.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh and send you a photo on WhatsApp before the rider leaves. Nothing ships until you reply that it looks perfect — ask for tweaks and we redo it.</li>
-          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your Iqbal Town address within 2–3 hours for the FREE fee — or in the midnight slot.</li>
+          <li><strong>Pay your way and receive.</strong> Pay by JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your Iqbal Town address within 2–3 hours for the FREE fee — or in the midnight slot.</li>
         </ol>
       </section>
 

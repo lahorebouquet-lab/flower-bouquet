@@ -350,7 +350,7 @@ export default async function BestBouquetInLahorePage() {
                 },
                 {
                   q: "How can I pay?",
-                  a: "Cash on delivery, bank transfer, JazzCash, EasyPaisa or international cards — whatever suits you.",
+                  a: "Bank transfer, JazzCash, EasyPaisa or international cards — whatever suits you.",
                 },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3 bg-white rounded-xl p-4 border border-[#E5DED2]">

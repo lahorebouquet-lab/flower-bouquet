@@ -138,7 +138,7 @@ export default async function ModelTownDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Located just minutes from our Lahore workshop via Kalma Chowk, Model Town is one of our quickest delivery zones — and delivery here is completely FREE. We deliver fresh Dutch roses, sunflower arrangements, money bouquets and celebration cakes across Blocks A through M, Circular Road and Model Town Link Road within 1.5 to 2.5 hours, with a WhatsApp photo of your bouquet before the rider leaves. Ordering is simple: message 0310-4225974 on WhatsApp any time between 9 AM and 1 AM, approve the photo of your bouquet, and pay by COD, JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
+          Located just minutes from our Lahore workshop via Kalma Chowk, Model Town is one of our quickest delivery zones — and delivery here is completely FREE. We deliver fresh Dutch roses, sunflower arrangements, money bouquets and celebration cakes across Blocks A through M, Circular Road and Model Town Link Road within 1.5 to 2.5 hours, with a WhatsApp photo of your bouquet before the rider leaves. Ordering is simple: message 0310-4225974 on WhatsApp any time between 9 AM and 1 AM, approve the photo of your bouquet, and pay by JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
@@ -165,7 +165,7 @@ export default async function ModelTownDeliveryPage() {
           <li><strong>Delivery fee: FREE (Rs. 0)</strong> — across Model Town Blocks A to M, Model Town Link Road, Garden Town and Barkat Market. No minimum order.</li>
           <li><strong>Delivery time: 1.5 to 2.5 hours</strong>, 7 days a week, from 9 AM to 1 AM, via Ferozepur Road or the Kalma Chowk underpass.</li>
           <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM, 7 days a week — book before 8 PM on WhatsApp.</li>
-          <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
+          <li><strong>Payments:</strong> JazzCash, EasyPaisa, bank transfer and international cards.</li>
           <li><strong>Prices start at Rs. 1,239.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
         </ul>
       </section>
@@ -239,7 +239,7 @@ export default async function ModelTownDeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your Model Town block and street, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,239 — including which roses and seasonal flowers arrived today.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh and send you a photo on WhatsApp before the rider leaves. Nothing ships until you reply that it looks perfect — ask for tweaks and we redo it.</li>
-          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your Model Town doorstep within 1.5–2.5 hours — midnight slot included.</li>
+          <li><strong>Pay your way and receive.</strong> Pay by JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your Model Town doorstep within 1.5–2.5 hours — midnight slot included.</li>
         </ol>
       </section>
 

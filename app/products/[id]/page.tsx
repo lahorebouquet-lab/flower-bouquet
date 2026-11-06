@@ -485,7 +485,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               </div>
               <div className="p-3.5 rounded-2xl bg-white border border-[#E5DED2] shadow-xs">
                 <span className="font-semibold text-[#0B0B0B] block">Payment</span>
-                <span className="text-[#2A2A2A]">Cash on Delivery, bank transfer, JazzCash, EasyPaisa &amp; cards</span>
+                <span className="text-[#2A2A2A]">Bank transfer, JazzCash, EasyPaisa &amp; cards</span>
               </div>
             </div>
 

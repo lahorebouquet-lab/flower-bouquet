@@ -69,7 +69,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "How do I pay for a bouquet under Rs. 2,000?",
-    a: "Cash on delivery, bank transfer, JazzCash, EasyPaisa or international debit/credit card. Order on WhatsApp at 0310-4225974 or add your bouquet to the bag here.",
+    a: "Bank transfer, JazzCash, EasyPaisa or international debit/credit card. Order on WhatsApp at 0310-4225974 or add your bouquet to the bag here.",
   },
 ];
 
@@ -238,7 +238,7 @@ export default async function BouquetsUnder2000Page() {
       <section className="bg-white p-8 sm:p-10 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-4">
         <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">How to Order a Bouquet Under Rs. 2,000</h2>
         <p className="text-xs sm:text-sm text-[#555555] leading-relaxed">
-          Pick a bouquet above, add it to the bag, choose your delivery area, date and time slot, and pay by cash on delivery, bank transfer, JazzCash, EasyPaisa or card — or order directly on WhatsApp at 0310-4225974. Before your bouquet leaves, we send you a photo of the actual arrangement on WhatsApp for your approval.
+          Pick a bouquet above, add it to the bag, choose your delivery area, date and time slot, and pay by bank transfer, JazzCash, EasyPaisa or card — or order directly on WhatsApp at 0310-4225974. Before your bouquet leaves, we send you a photo of the actual arrangement on WhatsApp for your approval.
         </p>
         <p className="text-xs sm:text-sm text-[#555555] leading-relaxed">
           Delivery is free across Lahore — DHA, Gulberg, Johar Town, Bahria Town, Model Town, Cantt, Wapda Town and Township — and same-day orders placed before 4:00 PM arrive within 2 to 5 hours. Need a birthday surprise at midnight? Our 11:30 PM to 12:15 AM midnight slot has you covered — book before 8:00 PM. We are open every day from 9:00 AM to 1:00 AM. Sending flowers to someone in Lahore from another city or from abroad? Read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] underline font-semibold">how to send flowers to Lahore</Link>.

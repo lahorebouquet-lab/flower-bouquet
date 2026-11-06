@@ -64,7 +64,7 @@ const FAQS = [
   },
   {
     q: "What payment methods do you accept for Islamabad orders?",
-    a: "We accept Cash on Delivery (COD), bank transfer (Allied Bank), JazzCash, EasyPaisa, and international debit/credit cards — same as Lahore."
+    a: "We accept bank transfer (Allied Bank), JazzCash, EasyPaisa, and international debit/credit cards — same as Lahore."
   },
   {
     q: "Do you offer midnight flower delivery in Islamabad?",
@@ -342,7 +342,7 @@ export default function FlowerDeliveryIslamabadPage() {
             </div>
             <div className="p-5 rounded-2xl bg-[#F8F3EA] border border-[#E5DED2]">
               <h3 className="font-bold text-[#0B0B0B] text-sm flex items-center gap-2"><MessageCircle size={16} className="text-[#8B1E2D]" /> Payment</h3>
-              <p className="text-xs text-[#2A2A2A] mt-2 leading-relaxed">COD, Allied Bank transfer, JazzCash, EasyPaisa, and international cards accepted.</p>
+              <p className="text-xs text-[#2A2A2A] mt-2 leading-relaxed">Allied Bank transfer, JazzCash, EasyPaisa, and international cards accepted.</p>
             </div>
           </div>
         </div>

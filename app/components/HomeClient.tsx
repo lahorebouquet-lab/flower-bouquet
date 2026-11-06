@@ -260,7 +260,7 @@ export default function HomeClient({
             </div>
             <div>
               <p className="font-bold text-[#101012] text-xs sm:text-sm">Flexible Payment Options</p>
-              <p className="text-xs text-[#2A2A2A]">COD, Bank transfer, JazzCash, EasyPaisa</p>
+              <p className="text-xs text-[#2A2A2A]">Bank transfer, JazzCash, EasyPaisa</p>
             </div>
           </div>
         </div>

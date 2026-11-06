@@ -95,14 +95,6 @@ export default async function JoharTownDeliveryPage() {
           text: "Yes. We deliver corporate bouquets, stage flowers and event arrangements to offices and venues around Expo Centre and Khayaban-e-Firdousi. For bulk or event orders, message us on WhatsApp a day ahead so we can schedule the delivery around your program.",
         },
       },
-      {
-        "@type": "Question",
-        name: "Can I pay cash on delivery in Johar Town?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes — cash on delivery is available across Johar Town. We also accept JazzCash, EasyPaisa, bank transfer and international cards, so family abroad can pay for a Johar Town delivery directly.",
-        },
-      },
     ],
   };
 
@@ -138,7 +130,7 @@ export default async function JoharTownDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          We provide fresh flower bouquet delivery across Johar Town Phases 1 and 2, Faisal Town, and adjacent commercial hubs — all with free delivery. Whether you need a celebration bouquet delivered near Emporium Mall, an anniversary surprise in Block J or R, or get-well flowers delivered to Shaukat Khanum Hospital or Doctors Hospital, our florists arrange fast dispatch with live WhatsApp photo proof before the rider leaves. To order, message 0310-4225974 on WhatsApp any time between 9 AM and 1 AM with your block and street — approve the bouquet photo, then pay by COD, JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
+          We provide fresh flower bouquet delivery across Johar Town Phases 1 and 2, Faisal Town, and adjacent commercial hubs — all with free delivery. Whether you need a celebration bouquet delivered near Emporium Mall, an anniversary surprise in Block J or R, or get-well flowers delivered to Shaukat Khanum Hospital or Doctors Hospital, our florists arrange fast dispatch with live WhatsApp photo proof before the rider leaves. To order, message 0310-4225974 on WhatsApp any time between 9 AM and 1 AM with your block and street — approve the bouquet photo, then pay by JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
@@ -165,7 +157,7 @@ export default async function JoharTownDeliveryPage() {
           <li><strong>Delivery fee: FREE</strong> — across Johar Town Phases 1 & 2, Faisal Town, the Emporium corridor and Khayaban-e-Firdousi. No hidden charges.</li>
           <li><strong>Delivery time: 2 to 3 hours</strong>, 7 days a week, from 9 AM to 1 AM, via Canal Road and Khayaban-e-Firdousi.</li>
           <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM, 7 days a week — book before 8 PM on WhatsApp.</li>
-          <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
+          <li><strong>Payments:</strong> JazzCash, EasyPaisa, bank transfer and international cards.</li>
           <li><strong>Prices start at Rs. 1,239.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
         </ul>
       </section>
@@ -220,10 +212,6 @@ export default async function JoharTownDeliveryPage() {
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Do you deliver flowers to offices and events near Expo Centre?</h3>
             <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes. We deliver corporate bouquets, stage flowers and event arrangements to offices and venues around Expo Centre and Khayaban-e-Firdousi. For bulk or event orders, message us on WhatsApp a day ahead so we can schedule the delivery around your program.</p>
           </div>
-          <div className="py-3 space-y-1">
-            <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Can I pay cash on delivery in Johar Town?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes — cash on delivery is available across Johar Town. We also accept JazzCash, EasyPaisa, bank transfer and international cards, so family abroad can pay for a Johar Town delivery directly.</p>
-          </div>
         </div>
       </section>
 
@@ -239,7 +227,7 @@ export default async function JoharTownDeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your Johar Town block and street, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,239 — including which roses and seasonal flowers arrived today.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh and send you a photo on WhatsApp before the rider leaves. Nothing ships until you reply that it looks perfect — ask for tweaks and we redo it.</li>
-          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your Johar Town block within 2–3 hours with free delivery — or in the midnight slot.</li>
+          <li><strong>Pay your way and receive.</strong> Pay by JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your Johar Town block within 2–3 hours with free delivery — or in the midnight slot.</li>
         </ol>
       </section>
 

@@ -95,14 +95,6 @@ export default async function WapdaTownDeliveryPage() {
           text: "Yes — in Wapda Town we often send a rose bouquet with a cake as one complete birthday surprise, delivered by a single rider. When you order on WhatsApp, tell us the cake flavour and the flower colours and we will send a photo to confirm.",
         },
       },
-      {
-        "@type": "Question",
-        name: "Can I pay cash on delivery in Wapda Town?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes — cash on delivery is available across Wapda Town, Valencia, PIA Society and Township. We also accept JazzCash, EasyPaisa, bank transfer and international cards.",
-        },
-      },
     ],
   };
 
@@ -138,7 +130,7 @@ export default async function WapdaTownDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          We deliver fresh imported roses, money bouquets, celebration cakes and gift hampers to Wapda Town, PIA Housing Society, Valencia Town and Township Lahore — in 2.5 to 3.5 hours with free delivery. Every order is hydrated for transit and dispatched in air-conditioned courier vans, with photo proof sent on WhatsApp before our rider leaves. To order, message 0310-4225974 on WhatsApp any time between 9 AM and 1 AM with your society and street — approve the bouquet photo, then pay by COD, JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
+          We deliver fresh imported roses, money bouquets, celebration cakes and gift hampers to Wapda Town, PIA Housing Society, Valencia Town and Township Lahore — in 2.5 to 3.5 hours with free delivery. Every order is hydrated for transit and dispatched in air-conditioned courier vans, with photo proof sent on WhatsApp before our rider leaves. To order, message 0310-4225974 on WhatsApp any time between 9 AM and 1 AM with your society and street — approve the bouquet photo, then pay by JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
@@ -165,7 +157,7 @@ export default async function WapdaTownDeliveryPage() {
           <li><strong>Delivery fee: FREE</strong> — across Wapda Town, PIA Housing Society, Valencia Town, NFC Society and Township. No hidden charges.</li>
           <li><strong>Delivery time: 2.5 to 3.5 hours</strong>, 7 days a week, from 9 AM to 1 AM, via the College Road southern route in AC vans.</li>
           <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM, 7 days a week — book before 8 PM on WhatsApp.</li>
-          <li><strong>Payments:</strong> cash on delivery (COD), JazzCash, EasyPaisa, bank transfer and international cards.</li>
+          <li><strong>Payments:</strong> JazzCash, EasyPaisa, bank transfer and international cards.</li>
           <li><strong>Prices start at Rs. 1,239.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
         </ul>
       </section>
@@ -220,10 +212,6 @@ export default async function WapdaTownDeliveryPage() {
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Can I send flowers with a cake?</h3>
             <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes — in Wapda Town we often send a rose bouquet with a cake as one complete birthday surprise, delivered by a single rider. When you order on WhatsApp, tell us the cake flavour and the flower colours and we will send a photo to confirm.</p>
           </div>
-          <div className="py-3 space-y-1">
-            <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Can I pay cash on delivery in Wapda Town?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes — cash on delivery is available across Wapda Town, Valencia, PIA Society and Township. We also accept JazzCash, EasyPaisa, bank transfer and international cards.</p>
-          </div>
         </div>
       </section>
 
@@ -239,7 +227,7 @@ export default async function WapdaTownDeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your society and street, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,239 — including which roses and seasonal flowers arrived today.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh, hydrate it for the southern run, and send you a photo on WhatsApp before the rider leaves. Nothing ships until you reply that it looks perfect.</li>
-          <li><strong>Pay your way and receive.</strong> Pay cash on delivery, JazzCash, EasyPaisa, bank transfer or an international card. The rider travels by AC van down College Road and reaches your society within 2.5–3.5 hours with free delivery — midnight slot available.</li>
+          <li><strong>Pay your way and receive.</strong> Pay by JazzCash, EasyPaisa, bank transfer or an international card. The rider travels by AC van down College Road and reaches your society within 2.5–3.5 hours with free delivery — midnight slot available.</li>
         </ol>
       </section>
 

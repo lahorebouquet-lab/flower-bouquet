@@ -191,7 +191,6 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center gap-4 text-[#BDBDBD]">
-            <span>💵 Cash on Delivery</span>
             <span>🏦 Bank Transfer</span>
             <span>📱 JazzCash / EasyPaisa</span>
             <span className="text-[#C6A15B]">🔒 100% Encrypted</span>

@@ -236,7 +236,7 @@ export default function BridalRoomDecorationLahorePage() {
         <ol className="space-y-3 text-xs sm:text-sm text-[#E5DED2] leading-relaxed list-decimal list-inside">
           <li><strong className="text-white">WhatsApp us:</strong> message <strong className="text-[#C6A15B]">0310-4225974</strong> with your date, venue (home/hotel + area) and theme or reference photos.</li>
           <li><strong className="text-white">Confirm the quote:</strong> we send a transparent package quote — no hidden charges, ever.</li>
-          <li><strong className="text-white">We set up:</strong> our team arrives 3–4 hours early and finishes before your moment. Pay by COD, JazzCash, EasyPaisa, bank transfer or international card.</li>
+          <li><strong className="text-white">We set up:</strong> our team arrives 3–4 hours early and finishes before your moment. Pay by JazzCash, EasyPaisa, bank transfer or international card.</li>
         </ol>
         <a
           href={whatsappLink("Hello Lahore Bouquet! I want to book bridal room decoration in Lahore.")}
