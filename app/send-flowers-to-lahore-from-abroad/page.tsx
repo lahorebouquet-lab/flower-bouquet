@@ -134,7 +134,7 @@ export default function SendFromAbroadPage() {
           Send Flowers to Lahore from Abroad
         </h1>
         <p className="text-[#2A2A2A] text-sm sm:text-base leading-relaxed max-w-3xl">
-          Living in the <strong>UK, USA, UAE, Saudi Arabia, Canada or Australia</strong> and want to
+          Living in the <strong><Link href="/send-flowers-to-lahore-from-uk" className="text-[#8B1E2D] underline">UK</Link>, <Link href="/send-flowers-to-lahore-from-usa" className="text-[#8B1E2D] underline">USA</Link>, <Link href="/send-flowers-to-lahore-from-uae" className="text-[#8B1E2D] underline">UAE</Link>, Saudi Arabia, Canada or Australia</strong> and want to
           send flowers to Lahore? Order fresh bouquets, cakes and gifts online in under 2 minutes.
           Pay with your international card, and we will hand-deliver everything in{" "}
           <strong>2 to 5 hours</strong> — with a real photo sent to you on WhatsApp before dispatch,

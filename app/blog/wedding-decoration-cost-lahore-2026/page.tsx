@@ -186,7 +186,7 @@ export default function WeddingDecorationCostBlogPage() {
         </section>
 
         <section className="text-xs text-[#777777] pt-4">
-          <p>Related: <Link href="/blog/flower-prices-lahore-2026" className="text-[#8B1E2D] underline">flower prices Lahore 2026</Link> • <Link href="/wedding-decor" className="text-[#8B1E2D] underline">wedding decor</Link> • <Link href="/wedding-decoration-dha-lahore" className="text-[#8B1E2D] underline">wedding decoration DHA</Link></p>
+          <p>Related: <Link href="/blog/flower-prices-lahore-2026" className="text-[#8B1E2D] underline">flower prices Lahore 2026</Link> • <Link href="/wedding-decor" className="text-[#8B1E2D] underline">wedding decor</Link> • <Link href="/wedding-decoration-dha-lahore" className="text-[#8B1E2D] underline">wedding decoration DHA</Link> • <Link href="/blog/wedding-car-decoration-lahore-guide" className="text-[#8B1E2D] underline">wedding car decoration guide</Link></p>
         </section>
       </article>
     </main>

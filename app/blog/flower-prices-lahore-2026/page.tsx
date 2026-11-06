@@ -85,7 +85,7 @@ export default function FlowerPricesBlogPage() {
         </h1>
         <p className="text-sm text-[#777777]">By Lahore Bouquet Florist Team • Updated 6 October 2026 • 5 min read</p>
         <p className="text-sm sm:text-base leading-relaxed">
-          <strong>Quick answer:</strong> In Lahore, a fresh flower bouquet costs from <strong>Rs. 1,239</strong>. Imported rose bouquets run Rs. 2,500–Rs. 12,000, sunflowers Rs. 1,500–Rs. 5,000, and money bouquets from Rs. 2,500 plus cash value. Prices below are what Lahore Bouquet actually charges in October 2026. You can also browse the complete <Link href="/prices" className="text-[#8B1E2D] underline font-semibold">flower bouquet price in Lahore</Link> list, covering every category we deliver.
+          <strong>Quick answer:</strong> In Lahore, a fresh flower bouquet costs from <strong>Rs. 1,239</strong>. Imported rose bouquets run Rs. 2,500–Rs. 12,000, sunflowers Rs. 1,500–Rs. 5,000, and money bouquets from Rs. 2,500 plus cash value. Prices below are what Lahore Bouquet actually charges in October 2026. You can also browse the complete <Link href="/prices" className="text-[#8B1E2D] underline font-semibold">flower bouquet price in Lahore</Link> list, covering every category we deliver. Wondering how the flower market sets its prices? Read our <Link href="/blog/phool-mandi-lahore-flower-prices-2026" className="text-[#8B1E2D] underline font-semibold">Phool Mandi flower price guide</Link>.
         </p>
       </header>
 
@@ -140,6 +140,10 @@ export default function FlowerPricesBlogPage() {
           <Link href="/wedding-decor" className="p-5 rounded-2xl bg-white border border-[#E5DED2] hover:border-[#C6A15B] transition-colors">
             <div className="font-bold text-[#0B0B0B]">Wedding Décor</div>
             <div className="text-xs text-[#777777]">packages from Rs. 8,000</div>
+          </Link>
+          <Link href="/bouquets-under-2000" className="p-5 rounded-2xl bg-white border border-[#E5DED2] hover:border-[#C6A15B] transition-colors">
+            <div className="font-bold text-[#0B0B0B]">Bouquets under Rs. 2,000</div>
+            <div className="text-xs text-[#777777]">from Rs. 1,239</div>
           </Link>
         </div>
       </section>

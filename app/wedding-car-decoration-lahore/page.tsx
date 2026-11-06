@@ -244,6 +244,10 @@ export default function WeddingCarDecorationLahorePage() {
             <span className="text-sm font-semibold text-[#0B0B0B]">Wedding Decoration in Lahore</span>
             <span className="text-[#8B1E2D] ml-2">→</span>
           </Link>
+          <Link href="/blog/wedding-car-decoration-lahore-guide" className="block p-4 rounded-xl bg-white border border-[#E5DED2] hover:border-[#8B1E2D] transition-colors">
+            <span className="text-sm font-semibold text-[#0B0B0B]">Wedding Car Decoration Guide</span>
+            <span className="text-[#8B1E2D] ml-2">→</span>
+          </Link>
         </div>
       </section>
 

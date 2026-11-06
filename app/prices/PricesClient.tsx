@@ -115,7 +115,7 @@ export default function PricesClient() {
             </h1>
 
             <p className="text-[#F8F3EA]/90 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-              Looking for <Link href="/bouquets" className="underline font-semibold">bouquets in Lahore</Link>? At Lahore Bouquet, the flower bouquet price in Lahore starts from <strong>Rs. 1,239</strong> for a small hand-tied bunch, with medium rose bouquets at <strong>Rs. 2,600–3,800</strong> and a large signature rose bouquet at <strong>Rs. 7,499</strong>. Sunflower bouquets start at Rs. 1,699 and chocolate bouquets at Rs. 3,800. All bouquets are arranged fresh to order with same-day delivery across Lahore. <em>Last updated: November 2026</em>.
+              Looking for <Link href="/bouquets" className="underline font-semibold">bouquets in Lahore</Link>? At Lahore Bouquet, the flower bouquet price in Lahore starts from <strong>Rs. 1,239</strong> for a small hand-tied bunch, with medium rose bouquets at <strong>Rs. 2,600–3,800</strong> and a large signature rose bouquet at <strong>Rs. 7,499</strong>. Sunflower bouquets start at Rs. 1,699 and chocolate bouquets at Rs. 3,800. All bouquets are arranged fresh to order with same-day delivery across Lahore. Want to understand how the flower market sets its prices? Read our <Link href="/blog/phool-mandi-lahore-flower-prices-2026" className="underline font-semibold">Phool Mandi flower price guide</Link>. Shopping on a budget? See <Link href="/bouquets-under-2000" className="underline font-semibold">bouquets under Rs. 2,000</Link>. <em>Last updated: November 2026</em>.
             </p>
           </div>
 
