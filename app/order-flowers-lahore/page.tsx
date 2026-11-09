@@ -21,6 +21,20 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_URL}/order-flowers-lahore`,
   },
+  // Override the layout's site-wide OG/Twitter descriptions, which carry
+  // same-day/delivery wording — this page must not mention delivery at all.
+  openGraph: {
+    title: "Fresh Flower Bouquets in Lahore | Lahore Bouquet",
+    description: "Fresh hand-tied bouquets from Rs. 1,239.",
+    url: `${SITE_URL}/order-flowers-lahore`,
+    siteName: "Lahore Bouquet",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fresh Flower Bouquets in Lahore | Lahore Bouquet",
+    description: "Fresh hand-tied bouquets from Rs. 1,239.",
+  },
 };
 
 const WA_NUMBER = "923104225974";
