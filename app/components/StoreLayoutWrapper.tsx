@@ -16,8 +16,11 @@ export default function StoreLayoutWrapper({
 }) {
   const pathname = usePathname();
   const isStudio = pathname?.startsWith("/studio");
+  // Google Ads landing page: no header/footer, no site-wide WhatsApp
+  // widgets or cart — the page renders its own sticky WhatsApp button.
+  const isAdsLanding = pathname === "/order-flowers-lahore";
 
-  if (isStudio) {
+  if (isStudio || isAdsLanding) {
     return <main className="min-h-screen w-full">{children}</main>;
   }
 
