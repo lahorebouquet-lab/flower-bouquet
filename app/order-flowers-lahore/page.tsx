@@ -8,32 +8,36 @@ import {
   Star,
   Flower2,
   Check,
+  Truck,
+  Clock,
+  Banknote,
 } from "lucide-react";
 import { SITE_URL } from "@/lib/business";
 import WhatsAppButton from "./WhatsAppButton";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Fresh Flower Bouquets in Lahore | Lahore Bouquet",
+    absolute: "Same-Day Flower Delivery in Lahore | Lahore Bouquet",
   },
-  description: "Fresh hand-tied bouquets from Rs. 1,239.",
+  description:
+    "Fresh hand-tied bouquets from Rs. 1,239. Free delivery in 2–5 hours.",
   robots: { index: false, follow: false },
   alternates: {
     canonical: `${SITE_URL}/order-flowers-lahore`,
   },
-  // Override the layout's site-wide OG/Twitter descriptions, which carry
-  // same-day/delivery wording — this page must not mention delivery at all.
   openGraph: {
-    title: "Fresh Flower Bouquets in Lahore | Lahore Bouquet",
-    description: "Fresh hand-tied bouquets from Rs. 1,239.",
+    title: "Same-Day Flower Delivery in Lahore | Lahore Bouquet",
+    description:
+      "Fresh hand-tied bouquets from Rs. 1,239. Free delivery in 2–5 hours.",
     url: `${SITE_URL}/order-flowers-lahore`,
     siteName: "Lahore Bouquet",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fresh Flower Bouquets in Lahore | Lahore Bouquet",
-    description: "Fresh hand-tied bouquets from Rs. 1,239.",
+    title: "Same-Day Flower Delivery in Lahore | Lahore Bouquet",
+    description:
+      "Fresh hand-tied bouquets from Rs. 1,239. Free delivery in 2–5 hours.",
   },
 };
 
@@ -48,21 +52,27 @@ const BESTSELLERS = [
     name: "Aesthetic Bloom",
     detail: "7 fresh roses",
     price: "Rs. 6,499",
+    // Owner will send the real photo — save it as this compressed WebP
+    // and swap the placeholder below for the <Image> slot.
+    image: "/images/bestsellers/aesthetic-bloom.webp",
   },
   {
     name: "Mint Oasis",
     detail: "white blooms",
     price: "Rs. 8,999",
+    image: "/images/bestsellers/mint-oasis.webp",
   },
   {
     name: "Velvet Crush",
     detail: "red roses",
     price: "Rs. 9,999",
+    image: "/images/bestsellers/velvet-crush.webp",
   },
   {
     name: "Ivory Aura",
     detail: "white roses & chrysanthemums",
     price: "Rs. 10,499",
+    image: "/images/bestsellers/ivory-aura.webp",
   },
 ];
 
@@ -72,7 +82,40 @@ const BUDGETS = [
   { label: "Premium Rs. 5,000+", message: "I want a premium bouquet (Rs. 5,000+)." },
 ];
 
-const OCCASIONS = ["Birthday", "Anniversary", "Midnight Surprise", "Get Well Soon"];
+const OCCASIONS = [
+  {
+    label: "Birthday",
+    message: "Hi Lahore Bouquet! I want flowers for a Birthday. (From Google Ad)",
+  },
+  {
+    label: "Anniversary",
+    message:
+      "Hi Lahore Bouquet! I want flowers for an Anniversary. (From Google Ad)",
+  },
+  {
+    label: "Midnight Surprise",
+    message:
+      "Hi Lahore Bouquet! I want flowers for a Midnight Surprise. (From Google Ad)",
+  },
+  {
+    label: "Get Well Soon",
+    message:
+      "Hi Lahore Bouquet! I want Get Well Soon flowers. (From Google Ad)",
+  },
+];
+
+const DELIVERY_AREAS = [
+  "DHA Phases 1–9",
+  "Gulberg",
+  "Bahria Town",
+  "Model Town",
+  "Johar Town",
+  "Cantt",
+  "Askari",
+  "Wapda Town",
+  "Township",
+  "Faisal Town",
+];
 
 const REVIEWS = [
   {
@@ -94,8 +137,20 @@ const REVIEWS = [
 
 const FAQS = [
   {
+    q: "How fast is delivery?",
+    a: "Same day in 2–5 hours. Order before 4 PM.",
+  },
+  {
+    q: "Is delivery free?",
+    a: "Yes, free across all listed Lahore areas.",
+  },
+  {
     q: "How can I pay?",
-    a: "Pay by bank transfer, JazzCash, EasyPaisa or international cards.",
+    a: "Cash on Delivery, bank transfer, JazzCash, EasyPaisa or international cards.",
+  },
+  {
+    q: "Do you deliver at midnight?",
+    a: "Yes, 11:30 PM–12:15 AM. Book before 8 PM.",
   },
 ];
 
@@ -129,10 +184,11 @@ export default function OrderFlowersLahorePage() {
         </p>
 
         <h1 className="font-playfair mx-auto mt-6 max-w-md text-4xl font-bold leading-tight text-[#1d1d1f]">
-          Fresh Flower Bouquets in Lahore
+          Same-Day Flower Delivery in Lahore
         </h1>
         <p className="mx-auto mt-3 max-w-md text-base leading-relaxed text-[#55555a]">
-          Fresh hand-tied bouquets from Rs. 1,239.
+          Fresh hand-tied bouquets from Rs. 1,239. Free delivery in 2–5
+          hours.
         </p>
 
         <div className="mt-6">
@@ -161,17 +217,41 @@ export default function OrderFlowersLahorePage() {
         </div>
       </header>
 
-      {/* ---------- 2. TRUST LINE ---------- */}
+      {/* ---------- 2. TRUST STRIP ---------- */}
       <section
         aria-label="Why order with Lahore Bouquet"
-        className="border-y border-[#F3D9DE] bg-white px-5 py-4"
+        className="border-y border-[#F3D9DE] bg-white px-5 py-5"
       >
-        <p className="mx-auto flex max-w-lg items-center justify-center gap-2.5 text-center text-sm font-semibold">
-          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#FDF2F4] text-[#8B1E2D]">
-            <Camera className="h-5 w-5" aria-hidden="true" />
-          </span>
-          Photo on WhatsApp before dispatch
-        </p>
+        <div className="mx-auto grid max-w-lg grid-cols-2 gap-x-3 gap-y-4">
+          {[
+            {
+              icon: Truck,
+              text: "Free delivery across Lahore",
+            },
+            {
+              icon: Camera,
+              text: "Photo on WhatsApp before dispatch",
+            },
+            {
+              icon: Clock,
+              text: "Midnight delivery 11:30 PM–12:15 AM",
+            },
+            {
+              icon: Banknote,
+              text: "Cash on Delivery",
+            },
+          ].map((item) => (
+            <p
+              key={item.text}
+              className="flex items-center gap-2.5 text-[13px] font-semibold leading-snug"
+            >
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#FDF2F4] text-[#8B1E2D]">
+                <item.icon className="h-5 w-5" aria-hidden="true" />
+              </span>
+              {item.text}
+            </p>
+          ))}
+        </div>
       </section>
 
       {/* ---------- 3. BESTSELLERS ---------- */}
@@ -189,7 +269,18 @@ export default function OrderFlowersLahorePage() {
               key={item.name}
               className="flex flex-col overflow-hidden rounded-2xl border border-[#F3D9DE] bg-white shadow-sm"
             >
-              {/* Photo placeholder — owner will add real photos */}
+              {/* Photo placeholder — owner will send the real photo.
+                  Save it as item.image (compressed WebP) and replace this
+                  div with the lazy-loaded slot below:
+                  <Image
+                    src={item.image}
+                    alt={`${item.name} bouquet from Lahore Bouquet`}
+                    width={600}
+                    height={750}
+                    loading="lazy"
+                    sizes="(max-width: 768px) 50vw, 320px"
+                    className="h-auto w-full object-cover"
+                  /> */}
               <div className="flex aspect-[4/5] flex-col items-center justify-center gap-2 bg-[#FDF2F4] px-3 text-center">
                 <Flower2
                   className="h-10 w-10 text-[#8B1E2D]/40"
@@ -275,6 +366,11 @@ export default function OrderFlowersLahorePage() {
               title: "We send a photo for approval",
               text: "We hand-tie your bouquet fresh and send you its photo on WhatsApp before dispatch.",
             },
+            {
+              step: "3",
+              title: "Delivered in 2–5 hours",
+              text: "Free delivery anywhere in Lahore — your bouquet arrives fresh and on time.",
+            },
           ].map((item) => (
             <li key={item.step} className="flex gap-4">
               <span className="font-playfair flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#8B1E2D] text-lg font-bold text-white">
@@ -302,15 +398,13 @@ export default function OrderFlowersLahorePage() {
           <div className="mt-6 grid grid-cols-2 gap-3">
             {OCCASIONS.map((occasion) => (
               <WhatsAppButton
-                key={occasion}
-                href={waLink(
-                  `Hi Lahore Bouquet! I want flowers for a ${occasion}. (From Google Ad)`
-                )}
-                label={`Order flowers for ${occasion}`}
+                key={occasion.label}
+                href={waLink(occasion.message)}
+                label={`Order flowers for ${occasion.label}`}
                 className="rounded-2xl border border-[#F3D9DE] bg-white px-4 py-5 text-center shadow-sm transition active:scale-[0.98]"
               >
                 <span className="font-playfair block text-lg font-bold text-[#8B1E2D]">
-                  {occasion}
+                  {occasion.label}
                 </span>
                 <span className="mt-1 block text-xs font-semibold text-[#25D366]">
                   Order on WhatsApp →
@@ -355,7 +449,29 @@ export default function OrderFlowersLahorePage() {
         </div>
       </section>
 
-      {/* ---------- 8. FAQ ---------- */}
+      {/* ---------- 8. DELIVERY AREAS ---------- */}
+      <section className="bg-[#FDF2F4] px-5 py-10">
+        <div className="mx-auto max-w-2xl">
+          <h2 className="font-playfair text-center text-3xl font-bold text-[#8B1E2D]">
+            We Deliver Across Lahore
+          </h2>
+          <p className="mt-2 text-center text-sm text-[#55555a]">
+            Free delivery in all listed areas — same day in 2–5 hours.
+          </p>
+          <div className="mt-6 flex flex-wrap justify-center gap-2">
+            {DELIVERY_AREAS.map((area) => (
+              <span
+                key={area}
+                className="rounded-full border border-[#F3D9DE] bg-white px-4 py-2 text-[13px] font-semibold text-[#8B1E2D]"
+              >
+                {area}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ---------- 9. FAQ ---------- */}
       <section className="mx-auto max-w-2xl px-5 py-10">
         <h2 className="font-playfair text-center text-3xl font-bold text-[#8B1E2D]">
           Quick Answers
