@@ -184,8 +184,10 @@ export default function OrderFlowersLahorePage() {
           }
         `}
       </Script>
-      <Script
-        id="landing-jsonld"
+      {/* Plain <script> tag, not next/script: this site's established
+          JSON-LD pattern (see app/page.tsx, blog pages). next/script drops
+          inline JSON-LD from the SSR HTML. */}
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON_LD }}
       />
