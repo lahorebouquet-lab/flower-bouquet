@@ -85,7 +85,7 @@ export const LANDING_CSS = `
 .hero-image-wrap { position: absolute; inset: 0 16px 0 30px; overflow: hidden; border-radius: 180px 180px 20px 20px; background: var(--blush); box-shadow: 0 24px 55px rgba(74,21,42,.13); }
 .hero-image-wrap::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(74,21,42,.12), transparent 52%); pointer-events: none; }
 .hero-image-wrap img { width: 100%; height: 100%; display: block; object-fit: cover; }
-.hero-image-stamp { position: absolute; z-index: 1; top: 28px; left: 28px; display: flex; align-items: center; gap: 10px; color: white; text-transform: uppercase; letter-spacing: .1em; text-shadow: 0 1px 8px rgba(0,0,0,.55); }
+.hero-image-stamp { position: absolute; z-index: 1; top: 28px; left: 28px; display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 12px; background: rgba(51,19,31,.62); color: white; text-transform: uppercase; letter-spacing: .1em; }
 .hero-image-stamp span { display: grid; place-items: center; width: 29px; height: 29px; border: 1px solid rgba(255,255,255,.8); border-radius: 50%; font: 12px Georgia, serif; }
 .hero-image-stamp small { font-size: 9px; line-height: 1.3; }
 .floating-card { position: absolute; z-index: 3; display: flex; align-items: center; gap: 9px; border: 1px solid rgba(234,223,216,.9); background: rgba(255,253,249,.94); box-shadow: 0 17px 35px rgba(74,21,42,.12); }
