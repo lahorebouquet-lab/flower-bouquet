@@ -23,6 +23,20 @@ export const LANDING_CSS = `
 .lb-site { margin: 0; background: var(--paper); color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
 .lb-site button, .lb-site input, .lb-site select { font: inherit; }
 .lb-site a { color: inherit; text-decoration: none; }
+/* Button/link colours must beat the inherit above: `.lb-site a` (0,1,1)
+ * outranks a plain class (0,1,0), which rendered black text on the
+ * maroon hero pills, black text on the green product buttons, and white
+ * text on the white pills in the dark sections (invisible). Prefixing
+ * with .lb-site (0,2,0) restores the intended colours. */
+.lb-site a.button-primary { color: white; }
+.lb-site a.button-ghost, .lb-site a.text-link, .lb-site a.header-call { color: var(--burgundy); }
+.lb-site a.button-light { color: var(--burgundy-deep); }
+.lb-site a.product-order { color: #fff; }
+.lb-site a.final-phone { color: #f5cbd0; }
+.lb-site a.wordmark { color: var(--burgundy); }
+.lb-site a.wordmark-footer { color: #fbe8e4; }
+.lb-site a.occasion-card { color: #fffaf4; }
+.lb-site .mobile-sticky-cta a { color: white; }
 .lb-site button { border: 0; }
 
 .lb-site { overflow: hidden; }
@@ -71,7 +85,7 @@ export const LANDING_CSS = `
 .hero-image-wrap { position: absolute; inset: 0 16px 0 30px; overflow: hidden; border-radius: 180px 180px 20px 20px; background: var(--blush); box-shadow: 0 24px 55px rgba(74,21,42,.13); }
 .hero-image-wrap::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(74,21,42,.12), transparent 52%); pointer-events: none; }
 .hero-image-wrap img { width: 100%; height: 100%; display: block; object-fit: cover; }
-.hero-image-stamp { position: absolute; z-index: 1; top: 28px; left: 28px; display: flex; align-items: center; gap: 10px; color: white; text-transform: uppercase; letter-spacing: .1em; }
+.hero-image-stamp { position: absolute; z-index: 1; top: 28px; left: 28px; display: flex; align-items: center; gap: 10px; color: white; text-transform: uppercase; letter-spacing: .1em; text-shadow: 0 1px 8px rgba(0,0,0,.55); }
 .hero-image-stamp span { display: grid; place-items: center; width: 29px; height: 29px; border: 1px solid rgba(255,255,255,.8); border-radius: 50%; font: 12px Georgia, serif; }
 .hero-image-stamp small { font-size: 9px; line-height: 1.3; }
 .floating-card { position: absolute; z-index: 3; display: flex; align-items: center; gap: 9px; border: 1px solid rgba(234,223,216,.9); background: rgba(255,253,249,.94); box-shadow: 0 17px 35px rgba(74,21,42,.12); }
