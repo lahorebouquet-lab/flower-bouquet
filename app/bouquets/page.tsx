@@ -172,7 +172,7 @@ export default async function BouquetsPage({
         name: "How much does a flower bouquet in Lahore cost?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "It really depends on the flowers and size you pick — a sweet little seasonal bunch starts around Rs. 500, while grand rose arrangements go higher. Check our prices page for the full list, or tell us your budget on WhatsApp and our florist will craft the best-looking flower bouquet in Lahore within it."
+          text: "Hand-tied bouquets start at Rs. 1,239–1,900, medium rose bouquets at Rs. 2,600–3,800, and large signature roses at Rs. 7,499+. All prices are confirmed on WhatsApp before dispatch — check our prices page for the full list."
         }
       },
       {
@@ -262,6 +262,30 @@ export default async function BouquetsPage({
           "@type": "Answer",
           text: "Yes. Our handmade crochet bouquets are a lasting gift that never wilts — available in the Crochet section of this page, delivered across Lahore like our fresh bouquets."
         }
+      },
+      {
+        "@type": "Question",
+        name: "Can I get midnight bouquet delivery in Lahore?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — midnight delivery runs 11:30 PM–12:15 AM across Lahore. Book before 8:00 PM and we deliver the bouquet at midnight with a photo on WhatsApp first."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "What payment methods do you accept?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "We accept bank transfer, JazzCash, EasyPaisa and international debit/credit cards. Cash on Delivery is not available."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Can I send a bouquet to Lahore from the UK, USA or UAE?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — order online in under 5 minutes and pay by international card. We deliver the same day in Lahore with a WhatsApp photo before dispatch."
+        }
       }
     ]
   };
@@ -302,7 +326,7 @@ export default async function BouquetsPage({
 
           {/* AEO / GEO Direct Answer */}
           <p className="text-[#F8F3EA]/90 text-sm sm:text-base leading-relaxed font-light">
-            A flower bouquet is the easiest way to say congratulations, sorry, I love you, or get well soon without needing the right words. Here you will find fresh flowers in Lahore, hand-tied into bouquets in sizes from a small gift bunch to a big statement arrangement that fills a room. Every stem is inspected daily and delivered in <strong>2 to 5 hours</strong> with a photo and video on WhatsApp before dispatch.
+            Fresh flower bouquets in Lahore start from Rs. 1,239, hand-tied to order and delivered in <strong>2 to 5 hours</strong> across DHA, Gulberg, Bahria Town, Johar Town, Model Town and every listed Lahore area. Here you will find bouquets in sizes from a small gift bunch to a big statement arrangement that fills a room — the easiest way to say congratulations, sorry, I love you, or get well soon. Every stem is inspected daily and delivered with a photo on WhatsApp before dispatch.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#BDBDBD]">
@@ -542,7 +566,7 @@ export default async function BouquetsPage({
           </div>
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">How much does a flower bouquet in Lahore cost?</h3>
-            <p>It really depends on the flowers and size you pick — a sweet little seasonal bunch starts around Rs. 500, while grand rose arrangements go higher. Check our prices page for the full list, or tell us your budget on WhatsApp and our florist will craft the best-looking flower bouquet in Lahore within it.</p>
+            <p>Hand-tied bouquets start at Rs. 1,239–1,900, medium rose bouquets at Rs. 2,600–3,800, and large signature roses at Rs. 7,499+. All prices are confirmed on WhatsApp before dispatch — check our prices page for the full list.</p>
           </div>
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Can I get a flower bouquet in Lahore delivered today?</h3>
@@ -587,6 +611,18 @@ export default async function BouquetsPage({
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Do you have crochet bouquets?</h3>
             <p>Yes. Our handmade crochet bouquets are a lasting gift that never wilts — available in the Crochet section of this page, delivered across Lahore like our fresh bouquets.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Can I get midnight bouquet delivery in Lahore?</h3>
+            <p>Yes — midnight delivery runs 11:30 PM–12:15 AM across Lahore. Book before 8:00 PM and we deliver the bouquet at midnight with a photo on WhatsApp first.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">What payment methods do you accept?</h3>
+            <p>We accept bank transfer, JazzCash, EasyPaisa and international debit/credit cards. Cash on Delivery is not available.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Can I send a bouquet to Lahore from the UK, USA or UAE?</h3>
+            <p>Yes — order online in under 5 minutes and pay by international card. We deliver the same day in Lahore with a WhatsApp photo before dispatch.</p>
           </div>
         </div>
       </section>

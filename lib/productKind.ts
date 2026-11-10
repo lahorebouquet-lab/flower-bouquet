@@ -37,6 +37,7 @@ export function productKind(title: string, category = ""): ProductKind {
   if (/\bcake\b/.test(name)) return "cake";
   if (/gajr|floral set|floral crown|boutonniere|jewell?ery/.test(name)) return "jewellery";
   if (/\b(perfume|fragrance|attar|\d+\s?ml)\b/.test(name)) return "perfume";
+  if (/janamaz|prayer\s*mat/.test(name)) return "gift";
   if (category === "Gifts & Cakes") return "gift";
   if (/\b(box|set|hamper|frame|mug|necklace|gift)\b/.test(name) && !/bouquet|rose|bloom|flower/.test(name)) {
     return "gift";

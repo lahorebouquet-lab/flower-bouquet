@@ -519,6 +519,15 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
             <p className="text-[#2A2A2A] leading-relaxed">
               Delivered exclusively via careful, climate-protected delivery. Midnight deliveries run between 11:30 PM – 12:15 AM. Senders receive a high-resolution photo proof of their prepared bouquet on WhatsApp before courier handover.
             </p>
+            <p className="text-[#2A2A2A] leading-relaxed">
+              We deliver to{" "}
+              <Link href="/delivery-areas/dha" className="text-[#8B1E2D] underline font-semibold">DHA</Link>,{" "}
+              <Link href="/delivery-areas/gulberg" className="text-[#8B1E2D] underline font-semibold">Gulberg</Link>,{" "}
+              <Link href="/delivery-areas/johar-town" className="text-[#8B1E2D] underline font-semibold">Johar Town</Link>,{" "}
+              <Link href="/delivery-areas/bahria-town" className="text-[#8B1E2D] underline font-semibold">Bahria Town</Link>,{" "}
+              <Link href="/delivery-areas/model-town" className="text-[#8B1E2D] underline font-semibold">Model Town</Link> and{" "}
+              <Link href="/delivery-areas/wapda-town" className="text-[#8B1E2D] underline font-semibold">Wapda Town</Link> — and every listed area in Lahore.
+            </p>
           </div>
 
           <div className="p-6 rounded-2xl bg-white border border-[#E5DED2] space-y-3 shadow-xs">

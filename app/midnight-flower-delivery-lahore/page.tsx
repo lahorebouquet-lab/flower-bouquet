@@ -39,7 +39,7 @@ const FAQS = [
   },
   {
     q: "How early should I book a midnight delivery?",
-    a: "We recommend booking at least 4–6 hours before midnight so our florists can prepare everything fresh. For Valentine's Day, New Year and Eid nights, book 2–3 days early — midnight slots fill up fast.",
+    a: "Book before 8:00 PM on the day so our florists can prepare everything fresh and our rider can reach your address by midnight. For Valentine's Day, New Year and Eid nights, book 2–3 days early — midnight slots fill up fast.",
   },
   {
     q: "Which areas of Lahore do you cover for midnight delivery?",
@@ -68,6 +68,18 @@ const FAQS = [
   {
     q: "What can I include in my midnight flower delivery in Lahore order?",
     a: "Every midnight flower delivery in Lahore can include fresh flowers, a cake, chocolates, and a complimentary handwritten message card. Tell us your message on WhatsApp and we will handwrite it beautifully.",
+  },
+  {
+    q: "How much does midnight flower delivery cost in Lahore?",
+    a: "Midnight delivery is free in listed Lahore areas. Hand-tied bouquets start at Rs. 1,239–1,900, medium rose bouquets at Rs. 2,600–3,800 — all prices are confirmed on WhatsApp before dispatch.",
+  },
+  {
+    q: "What payment methods do you accept for midnight delivery?",
+    a: "We accept bank transfer, JazzCash, EasyPaisa and international debit/credit cards. Cash on Delivery is not available.",
+  },
+  {
+    q: "Can I book a midnight surprise from the UK, USA or UAE?",
+    a: "Yes — order online in under 5 minutes and pay by international card. We deliver at midnight in Lahore with a WhatsApp photo before dispatch.",
   },
 ];
 

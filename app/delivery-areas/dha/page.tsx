@@ -64,7 +64,7 @@ const dhaFaqSchema = {
       name: "How long does flower delivery to DHA Lahore take, and what is the fee?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Delivery to DHA Lahore takes 2 to 3 hours with free delivery. Orders to Phases 1 to 5 usually arrive at the faster end of the window; Phases 6 to 9, Defence Raya and Sector Y take the full window during peak traffic.",
+        text: "Delivery to DHA Lahore takes 2 to 3 hours with free delivery. Orders to Phases 1 to 5 usually arrive at the faster end of the window; Phases 6 to 9, Defence Raya and Sector Y take the full window during peak traffic. DHA Rahbar takes 3 to 4 hours.",
       },
     },
     {
@@ -72,7 +72,7 @@ const dhaFaqSchema = {
       name: "Which DHA phases and sectors do you deliver to?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "We cover DHA Phases 1 through 9, DHA Phase 9 Town, Defence Raya and Sector Y commercial. Sharing your exact phase, street and house number helps our rider reach you without delay — many DHA blocks look alike.",
+        text: "We cover DHA Phases 1 through 9, DHA Phase 9 Town, Defence Raya, Sector Y commercial and DHA Rahbar. Sharing your exact phase, street and house number helps our rider reach you without delay — many DHA blocks look alike.",
       },
     },
     {
@@ -97,6 +97,30 @@ const dhaFaqSchema = {
       acceptedAnswer: {
         "@type": "Answer",
         text: "Message 0310-4225974 on WhatsApp — for example, 'I need a 50 red rose bouquet with a cake for an anniversary in DHA Phase 6, by 7 PM.' We will send you a photo of the flowers on WhatsApp to confirm, then the rider leaves. JazzCash, EasyPaisa, bank transfer and international cards are all accepted.",
+      },
+    },,
+    {
+      "@type": "Question",
+      name: "How much does a flower bouquet cost in DHA?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Hand-tied bouquets start at Rs. 1,239–1,900, medium rose bouquets at Rs. 2,600–3,800, and large signature roses at Rs. 7,499+. All prices are confirmed on WhatsApp before dispatch.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How do I pay for flower delivery in DHA?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We accept bank transfer, JazzCash, EasyPaisa and international debit/credit cards. Cash on Delivery is not available. Payment is confirmed on WhatsApp before dispatch.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can I get midnight flower delivery in DHA?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes — midnight delivery runs 11:30 PM–12:15 AM in DHA. Book before 8:00 PM and we deliver the bouquet at midnight with a photo on WhatsApp first.",
       },
     },
   ],
@@ -135,7 +159,7 @@ export default async function DHADeliveryPage() {
       <section className="space-y-4">
         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#8B1E2D]/20 text-[#C6A15B] border border-[#8B1E2D] text-xs font-bold uppercase tracking-wider">
           <MapPin className="w-3.5 h-3.5 text-[#C6A15B]" />
-          Phases 1 to 9 • Defence Raya • Sector Y
+          Phases 1 to 9 • Defence Raya • Sector Y • DHA Rahbar
         </span>
 
         <h1 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0B0B0B] leading-tight">
@@ -143,7 +167,7 @@ export default async function DHADeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Flower delivery in DHA Lahore is free across Phases 1 to 9, Defence Raya and Sector Y, and our riders know its phases, blocks and commercial strips street by street. Most orders reach Phases 1 to 5 within about 2 to 3 hours; for Phases 6 to 9, Defence Raya and Sector Y, allow the full window. Our florists send you a photo on WhatsApp before your bouquet leaves, and we deliver to homes, offices, and to Combined Military Hospital (CMH). To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your phase and street details — approve the bouquet photo we send, then pay by JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
+          Flower delivery in DHA Lahore is free across Phases 1 to 9, Defence Raya, Sector Y and DHA Rahbar, with bouquets from Rs. 1,239. Most orders reach Phases 1 to 5 within about 2 to 3 hours; for Phases 6 to 9, Defence Raya and Sector Y, allow the full window, and DHA Rahbar takes 3 to 4 hours. Our florists send you a photo on WhatsApp before your bouquet leaves, and we deliver to homes, offices, and to Combined Military Hospital (CMH). To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your phase and street details — approve the bouquet photo we send, then pay by JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
@@ -160,15 +184,26 @@ export default async function DHADeliveryPage() {
         </div>
       </section>
 
-      {/* Delivery Time & Fee */}
+            {/* Shop by category */}
+      <section aria-label="Shop by category" className="rounded-2xl border border-[rgba(198,161,91,0.25)] bg-white p-4 sm:p-5 shadow-sm">
+        <div className="flex flex-wrap gap-2 text-xs">
+          <span className="font-semibold text-[#0B0B0B] self-center mr-1">Shop by category:</span>
+          <Link href="/roses" className="px-3 py-1.5 rounded-full bg-[#F8F3EA] border border-[#E5DED2] text-[#8B1E2D] font-semibold">Roses</Link>
+          <Link href="/bouquets" className="px-3 py-1.5 rounded-full bg-[#F8F3EA] border border-[#E5DED2] text-[#8B1E2D] font-semibold">Bouquets</Link>
+          <Link href="/gifts-and-cakes" className="px-3 py-1.5 rounded-full bg-[#F8F3EA] border border-[#E5DED2] text-[#8B1E2D] font-semibold">Flowers &amp; Cakes</Link>
+          <Link href="/midnight-flower-delivery-lahore" className="px-3 py-1.5 rounded-full bg-[#F8F3EA] border border-[#E5DED2] text-[#8B1E2D] font-semibold">Midnight Delivery</Link>
+        </div>
+      </section>
+
+{/* Delivery Time & Fee */}
       <section className="bg-white p-6 sm:p-8 rounded-2xl border border-[rgba(198,161,91,0.25)] space-y-3 shadow-sm">
         <div className="flex items-center gap-2 text-[#0B0B0B]">
           <Wallet className="w-5 h-5 text-[#8B1E2D]" />
           <h2 className="font-playfair text-xl font-bold">Delivery time & fee — DHA Lahore</h2>
         </div>
         <ul className="space-y-2 text-xs text-[#2A2A2A] list-disc list-inside leading-relaxed">
-          <li><strong>Delivery fee: FREE</strong> — across DHA Phases 1 to 9, DHA Phase 9 Town, Defence Raya and Sector Y. No hidden charges.</li>
-          <li><strong>Delivery time: 2 to 3 hours</strong>, 7 days a week, from 9 AM to 1 AM. Phases 1–5 are usually fastest; Phases 6–9 and Raya take the full window in peak traffic.</li>
+          <li><strong>Delivery fee: FREE</strong> — across DHA Phases 1 to 9, DHA Phase 9 Town, Defence Raya, Sector Y and DHA Rahbar. No hidden charges.</li>
+          <li><strong>Delivery time: 2 to 3 hours</strong>, 7 days a week, from 9 AM to 1 AM. Phases 1–5 are usually fastest; Phases 6–9 and Raya take the full window in peak traffic. DHA Rahbar takes 3 to 4 hours.</li>
           <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM, 7 days a week — book before 8 PM on WhatsApp.</li>
           <li><strong>Payments:</strong> JazzCash, EasyPaisa, bank transfer and international cards.</li>
           <li><strong>Prices start at Rs. 1,239.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
@@ -187,6 +222,7 @@ export default async function DHADeliveryPage() {
           <li><strong>DHA Phases 6, 7 & 8:</strong> villas, farmhouses and new developments — allow the full 3-hour window during evening traffic.</li>
           <li><strong>DHA Phase 9 & Phase 9 Town:</strong> the newest sectors; share your street number exactly as many blocks are still being mapped.</li>
           <li><strong>Defence Raya & Sector Y:</strong> commercial boulevards, Raya Fairways offices and Sector Y markets — corporate gifting and shop-opening flowers.</li>
+          <li><strong>DHA Rahbar:</strong> DHA&apos;s growing extension near Valencia Town — sectors off Defence Road, delivered in 3 to 4 hours with free delivery. Share your exact sector and street, as new blocks are still being mapped.</li>
           <li><strong>CMH Lahore:</strong> get-well flowers and hampers delivered to Combined Military Hospital — share the patient&apos;s ward and room number.</li>
         </ul>
       </section>
@@ -211,11 +247,11 @@ export default async function DHADeliveryPage() {
         <div className="divide-y divide-[rgba(198,161,91,0.25)]">
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How long does flower delivery to DHA Lahore take, and what is the fee?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery to DHA Lahore takes 2 to 3 hours with free delivery. Orders to Phases 1 to 5 usually arrive at the faster end of the window; Phases 6 to 9, Defence Raya and Sector Y take the full window during peak traffic.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery to DHA Lahore takes 2 to 3 hours with free delivery. Orders to Phases 1 to 5 usually arrive at the faster end of the window; Phases 6 to 9, Defence Raya and Sector Y take the full window during peak traffic. DHA Rahbar takes 3 to 4 hours.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Which DHA phases and sectors do you deliver to?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">We cover DHA Phases 1 through 9, DHA Phase 9 Town, Defence Raya and Sector Y commercial. Sharing your exact phase, street and house number helps our rider reach you without delay — many DHA blocks look alike.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">We cover DHA Phases 1 through 9, DHA Phase 9 Town, Defence Raya, Sector Y commercial and DHA Rahbar. Sharing your exact phase, street and house number helps our rider reach you without delay — many DHA blocks look alike.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">My DHA street is gated — how will the rider get in?</h3>
@@ -228,6 +264,18 @@ export default async function DHADeliveryPage() {
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How do I order flowers to DHA on WhatsApp?</h3>
             <p className="text-xs text-[#2A2A2A] leading-relaxed">Message 0310-4225974 on WhatsApp — for example, 'I need a 50 red rose bouquet with a cake for an anniversary in DHA Phase 6, by 7 PM.' We will send you a photo of the flowers on WhatsApp to confirm, then the rider leaves. JazzCash, EasyPaisa, bank transfer and international cards are all accepted.</p>
+          </div>
+          <div className="py-3 space-y-1">
+            <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How much does a flower bouquet cost in DHA?</h3>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Hand-tied bouquets start at Rs. 1,239–1,900, medium rose bouquets at Rs. 2,600–3,800, and large signature roses at Rs. 7,499+. All prices are confirmed on WhatsApp before dispatch.</p>
+          </div>
+          <div className="py-3 space-y-1">
+            <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How do I pay for flower delivery in DHA?</h3>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">We accept bank transfer, JazzCash, EasyPaisa and international debit/credit cards. Cash on Delivery is not available. Payment is confirmed on WhatsApp before dispatch.</p>
+          </div>
+          <div className="py-3 space-y-1">
+            <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Can I get midnight flower delivery in DHA?</h3>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes — midnight delivery runs 11:30 PM–12:15 AM in DHA. Book before 8:00 PM and we deliver the bouquet at midnight with a photo on WhatsApp first.</p>
           </div>
         </div>
       </section>

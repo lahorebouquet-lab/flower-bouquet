@@ -29,7 +29,7 @@ export const metadata: Metadata = withSeo("/", {
 });
 
 import { getSanityProducts, getSanityCategories, getSanityReviews } from "@/sanity/lib/fetch";
-import { floristSchema, organizationSchema, SITE_URL } from "@/lib/business";
+import { floristSchema, SITE_URL } from "@/lib/business";
 import { withSeo } from "@/lib/seo";
 
 export default async function HomePage() {
@@ -53,7 +53,6 @@ export default async function HomePage() {
   };
 
   const businessSchema = floristSchema();
-  const orgSchema = organizationSchema();
 
   const howToSchema = {
     "@context": "https://schema.org",
@@ -110,10 +109,6 @@ export default async function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
       />
       <script
         type="application/ld+json"

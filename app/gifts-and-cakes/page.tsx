@@ -109,6 +109,30 @@ export default async function GiftsAndCakesPage({
           "@type": "Answer",
           text: "Yes, complimentary greeting cards and celebration candles are included with every cake. Enter your message at checkout or via WhatsApp."
         }
+      },
+      {
+        "@type": "Question",
+        name: "How much do flowers and cakes cost in Lahore?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Flowers and cakes start from Rs. 349, with hand-tied bouquets from Rs. 1,239. All prices are confirmed on WhatsApp before dispatch — see our prices page for the complete rate list."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "What payment methods do you accept?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "We accept bank transfer, JazzCash, EasyPaisa and international debit/credit cards. Cash on Delivery is not available."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Can I send flowers and cake to Lahore from the UK, USA or UAE?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — order online in under 5 minutes and pay by international card. We deliver the same day in Lahore with a WhatsApp photo before dispatch."
+        }
       }
     ]
   };
@@ -148,7 +172,7 @@ export default async function GiftsAndCakesPage({
           </h1>
 
           <p className="text-[#F8F3EA]/85 text-xs sm:text-sm leading-relaxed font-light">
-            Celebrate birthdays, anniversaries, and milestones with authentic bakery cakes from Layers Bakeshop and imported chocolates. Pair your favourite Lotus Three Milk, Raffaello, Ferrero Classic, or Belgian Malt with hand-tied Dutch roses. We pick up fresh, package securely, and send you a live WhatsApp photograph before dispatch.
+            Celebrate birthdays, anniversaries, and milestones with authentic bakery cakes from Layers Bakeshop and imported chocolates — from Rs. 349, delivered in 2–5 hours across DHA, Gulberg, Bahria Town, Johar Town, Model Town and every listed Lahore area. Pair your favourite Lotus Three Milk, Raffaello, Ferrero Classic, or Belgian Malt with hand-tied Dutch roses. We pick up fresh, package securely, and send you a live WhatsApp photograph before dispatch.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-2 text-xs text-white/80">
@@ -267,6 +291,18 @@ export default async function GiftsAndCakesPage({
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Can I add custom wording or candles?</h3>
             <p>Yes, complimentary greeting cards and celebration candles are included with every cake. Enter your message at checkout or via WhatsApp.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">How much do flowers and cakes cost in Lahore?</h3>
+            <p>Flowers and cakes start from Rs. 349, with hand-tied bouquets from Rs. 1,239. All prices are confirmed on WhatsApp before dispatch — see our prices page for the complete rate list.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">What payment methods do you accept?</h3>
+            <p>We accept bank transfer, JazzCash, EasyPaisa and international debit/credit cards. Cash on Delivery is not available.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Can I send flowers and cake to Lahore from the UK, USA or UAE?</h3>
+            <p>Yes — order online in under 5 minutes and pay by international card. We deliver the same day in Lahore with a WhatsApp photo before dispatch.</p>
           </div>
         </div>
       </section>

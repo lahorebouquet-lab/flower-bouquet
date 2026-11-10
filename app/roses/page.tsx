@@ -124,6 +124,30 @@ export default async function RosesPage() {
           "@type": "Answer",
           text: "Of course! A rose bouquet in Lahore ordered before 4:00 PM reaches you within 2 to 5 hours, anywhere in the city. And we always share a photo on WhatsApp before dispatch, so you approve the exact bouquet first."
         }
+      },
+      {
+        "@type": "Question",
+        name: "Can I get midnight rose delivery in Lahore?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — midnight delivery runs 11:30 PM–12:15 AM across Lahore. Book before 8:00 PM and we deliver the rose bouquet at midnight with a photo on WhatsApp first."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "What payment methods do you accept for rose bouquets?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "We accept bank transfer, JazzCash, EasyPaisa and international debit/credit cards. Cash on Delivery is not available."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Can I send a rose bouquet to Lahore from the UK, USA or UAE?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — order online in under 5 minutes and pay by international card. We deliver the same day in Lahore with a WhatsApp photo before dispatch."
+        }
       }
     ]
   };
@@ -165,7 +189,7 @@ export default async function RosesPage() {
           </h1>
 
           <p className="text-[#F8F3EA]/85 text-xs sm:text-sm leading-relaxed font-light">
-            <strong className="text-white">Rose bouquets in Lahore start from Rs. 1,239 with same-day delivery in 2–5 hours.</strong> Roses say what you cannot say out loud. We use imported Dutch roses for our main bouquets because the heads are bigger, the stems are longer, and they last longer in a vase once you trim them. A single rose in black wrapping is enough for some people. Others want 50.
+            <strong className="text-white">Rose bouquets in Lahore start from Rs. 1,239 with same-day delivery in 2–5 hours across DHA, Gulberg, Bahria Town, Johar Town, Model Town and every listed Lahore area.</strong> Roses say what you cannot say out loud. We use imported Dutch roses for our main bouquets because the heads are bigger, the stems are longer, and they last longer in a vase once you trim them. A single rose in black wrapping is enough for some people. Others want 50.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-2 text-xs text-white/80">
@@ -281,6 +305,14 @@ export default async function RosesPage() {
         </div>
       </section>
 
+      {/* Black Roses */}
+      <section className="bg-white p-8 sm:p-10 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-4">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Black Roses</h2>
+        <p className="text-xs text-[#2A2A2A] leading-relaxed">
+          Black roses are the boldest choice in our rose collection — deep, dramatic blooms for midnight surprises, anniversaries and occasions where red roses are not enough. Our <Link href="/products/elegant-midnight-black-rose" className="text-[#8B1E2D] underline font-semibold">Elegant Midnight Black Rose</Link> bouquet is Rs. 13,999, hand-tied fresh to order and delivered the same day across Lahore, with a photo on WhatsApp before dispatch. Order on WhatsApp (0310-4225974).
+        </p>
+      </section>
+
       {/* Category FAQ */}
       <section className="bg-white p-8 sm:p-10 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-6">
         <div className="flex items-center gap-2 text-[#0B0B0B]">
@@ -316,6 +348,18 @@ export default async function RosesPage() {
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Can I get a rose bouquet in Lahore delivered today?</h3>
             <p>Of course! A rose bouquet in Lahore ordered before 4:00 PM reaches you within 2 to 5 hours, anywhere in the city. And we always share a photo on WhatsApp before dispatch, so you approve the exact bouquet first.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Can I get midnight rose delivery in Lahore?</h3>
+            <p>Yes — midnight delivery runs 11:30 PM–12:15 AM across Lahore. Book before 8:00 PM and we deliver the rose bouquet at midnight with a photo on WhatsApp first.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">What payment methods do you accept for rose bouquets?</h3>
+            <p>We accept bank transfer, JazzCash, EasyPaisa and international debit/credit cards. Cash on Delivery is not available.</p>
+          </div>
+          <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
+            <h3 className="font-semibold text-[#0B0B0B] text-sm">Can I send a rose bouquet to Lahore from the UK, USA or UAE?</h3>
+            <p>Yes — order online in under 5 minutes and pay by international card. We deliver the same day in Lahore with a WhatsApp photo before dispatch.</p>
           </div>
         </div>
       </section>

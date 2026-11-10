@@ -102,6 +102,30 @@ export default async function ModelTownDeliveryPage() {
           "@type": "Answer",
           text: "Yes. Hameed Latif Hospital in Garden Town is on our daily route. Share the patient's name and ward or room number and our rider will deliver to the reception or visitor desk the same day.",
         },
+      },,
+      {
+        "@type": "Question",
+        name: "How much does a flower bouquet cost in Model Town?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Hand-tied bouquets start at Rs. 1,239–1,900, medium rose bouquets at Rs. 2,600–3,800, and large signature roses at Rs. 7,499+. All prices are confirmed on WhatsApp before dispatch.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I pay for flower delivery in Model Town?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "We accept bank transfer, JazzCash, EasyPaisa and international debit/credit cards. Cash on Delivery is not available. Payment is confirmed on WhatsApp before dispatch.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I get midnight flower delivery in Model Town?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — midnight delivery runs 11:30 PM–12:15 AM in Model Town. Book before 8:00 PM and we deliver the bouquet at midnight with a photo on WhatsApp first.",
+        },
       },
     ],
   };
@@ -138,7 +162,7 @@ export default async function ModelTownDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Located just minutes from our Lahore workshop via Kalma Chowk, Model Town is one of our quickest delivery zones — and delivery here is completely FREE. We deliver fresh Dutch roses, sunflower arrangements, money bouquets and celebration cakes across Blocks A through M, Circular Road and Model Town Link Road within 1.5 to 2.5 hours, with a WhatsApp photo of your bouquet before the rider leaves. Ordering is simple: message 0310-4225974 on WhatsApp any time between 9 AM and 1 AM, approve the photo of your bouquet, and pay by JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
+          Located just minutes from our Lahore workshop via Kalma Chowk, Model Town is one of our quickest delivery zones — and delivery here is completely FREE, with bouquets from Rs. 1,239. We deliver fresh Dutch roses, sunflower arrangements, money bouquets and celebration cakes across Blocks A through M, Circular Road and Model Town Link Road within 1.5 to 2.5 hours, with a WhatsApp photo of your bouquet before the rider leaves. Ordering is simple: message 0310-4225974 on WhatsApp any time between 9 AM and 1 AM, approve the photo of your bouquet, and pay by JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
@@ -155,7 +179,18 @@ export default async function ModelTownDeliveryPage() {
         </div>
       </section>
 
-      {/* Delivery Time & Fee */}
+            {/* Shop by category */}
+      <section aria-label="Shop by category" className="rounded-2xl border border-[rgba(198,161,91,0.25)] bg-white p-4 sm:p-5 shadow-sm">
+        <div className="flex flex-wrap gap-2 text-xs">
+          <span className="font-semibold text-[#0B0B0B] self-center mr-1">Shop by category:</span>
+          <Link href="/roses" className="px-3 py-1.5 rounded-full bg-[#F8F3EA] border border-[#E5DED2] text-[#8B1E2D] font-semibold">Roses</Link>
+          <Link href="/bouquets" className="px-3 py-1.5 rounded-full bg-[#F8F3EA] border border-[#E5DED2] text-[#8B1E2D] font-semibold">Bouquets</Link>
+          <Link href="/gifts-and-cakes" className="px-3 py-1.5 rounded-full bg-[#F8F3EA] border border-[#E5DED2] text-[#8B1E2D] font-semibold">Flowers &amp; Cakes</Link>
+          <Link href="/midnight-flower-delivery-lahore" className="px-3 py-1.5 rounded-full bg-[#F8F3EA] border border-[#E5DED2] text-[#8B1E2D] font-semibold">Midnight Delivery</Link>
+        </div>
+      </section>
+
+{/* Delivery Time & Fee */}
       <section className="bg-white p-6 sm:p-8 rounded-2xl border border-[rgba(198,161,91,0.25)] space-y-3 shadow-sm">
         <div className="flex items-center gap-2 text-[#0B0B0B]">
           <Wallet className="w-5 h-5 text-[#8B1E2D]" />
@@ -223,6 +258,18 @@ export default async function ModelTownDeliveryPage() {
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Do you deliver get-well flowers to Hameed Latif Hospital?</h3>
             <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes. Hameed Latif Hospital in Garden Town is on our daily route. Share the patient’s name and ward or room number and our rider will deliver to the reception or visitor desk the same day.</p>
+          </div>
+          <div className="py-3 space-y-1">
+            <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How much does a flower bouquet cost in Model Town?</h3>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Hand-tied bouquets start at Rs. 1,239–1,900, medium rose bouquets at Rs. 2,600–3,800, and large signature roses at Rs. 7,499+. All prices are confirmed on WhatsApp before dispatch.</p>
+          </div>
+          <div className="py-3 space-y-1">
+            <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How do I pay for flower delivery in Model Town?</h3>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">We accept bank transfer, JazzCash, EasyPaisa and international debit/credit cards. Cash on Delivery is not available. Payment is confirmed on WhatsApp before dispatch.</p>
+          </div>
+          <div className="py-3 space-y-1">
+            <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Can I get midnight flower delivery in Model Town?</h3>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes — midnight delivery runs 11:30 PM–12:15 AM in Model Town. Book before 8:00 PM and we deliver the bouquet at midnight with a photo on WhatsApp first.</p>
           </div>
         </div>
       </section>

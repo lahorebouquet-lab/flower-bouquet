@@ -94,6 +94,30 @@ export default async function JoharTownDeliveryPage() {
           "@type": "Answer",
           text: "Yes. We deliver corporate bouquets, stage flowers and event arrangements to offices and venues around Expo Centre and Khayaban-e-Firdousi. For bulk or event orders, message us on WhatsApp a day ahead so we can schedule the delivery around your program.",
         },
+      },,
+      {
+        "@type": "Question",
+        name: "How much does a flower bouquet cost in Johar Town?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Hand-tied bouquets start at Rs. 1,239–1,900, medium rose bouquets at Rs. 2,600–3,800, and large signature roses at Rs. 7,499+. All prices are confirmed on WhatsApp before dispatch.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I pay for flower delivery in Johar Town?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "We accept bank transfer, JazzCash, EasyPaisa and international debit/credit cards. Cash on Delivery is not available. Payment is confirmed on WhatsApp before dispatch.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I get midnight flower delivery in Johar Town?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — midnight delivery runs 11:30 PM–12:15 AM in Johar Town. Book before 8:00 PM and we deliver the bouquet at midnight with a photo on WhatsApp first.",
+        },
       },
     ],
   };
@@ -130,7 +154,7 @@ export default async function JoharTownDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          We provide fresh flower bouquet delivery across Johar Town Phases 1 and 2, Faisal Town, and adjacent commercial hubs — all with free delivery. Whether you need a celebration bouquet delivered near Emporium Mall, an anniversary surprise in Block J or R, or get-well flowers delivered to Shaukat Khanum Hospital or Doctors Hospital, our florists arrange fast dispatch with live WhatsApp photo proof before the rider leaves. To order, message 0310-4225974 on WhatsApp any time between 9 AM and 1 AM with your block and street — approve the bouquet photo, then pay by JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
+          We provide fresh flower bouquet delivery across Johar Town Phases 1 and 2, Faisal Town, and adjacent commercial hubs — all with free delivery, from Rs. 1,239, in 2–3 hours. Whether you need a celebration bouquet delivered near Emporium Mall, an anniversary surprise in Block J or R, or get-well flowers delivered to Shaukat Khanum Hospital or Doctors Hospital, our florists arrange fast dispatch with live WhatsApp photo proof before the rider leaves. To order, message 0310-4225974 on WhatsApp any time between 9 AM and 1 AM with your block and street — approve the bouquet photo, then pay by JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
@@ -147,7 +171,18 @@ export default async function JoharTownDeliveryPage() {
         </div>
       </section>
 
-      {/* Delivery Time & Fee */}
+            {/* Shop by category */}
+      <section aria-label="Shop by category" className="rounded-2xl border border-[rgba(198,161,91,0.25)] bg-white p-4 sm:p-5 shadow-sm">
+        <div className="flex flex-wrap gap-2 text-xs">
+          <span className="font-semibold text-[#0B0B0B] self-center mr-1">Shop by category:</span>
+          <Link href="/roses" className="px-3 py-1.5 rounded-full bg-[#F8F3EA] border border-[#E5DED2] text-[#8B1E2D] font-semibold">Roses</Link>
+          <Link href="/bouquets" className="px-3 py-1.5 rounded-full bg-[#F8F3EA] border border-[#E5DED2] text-[#8B1E2D] font-semibold">Bouquets</Link>
+          <Link href="/gifts-and-cakes" className="px-3 py-1.5 rounded-full bg-[#F8F3EA] border border-[#E5DED2] text-[#8B1E2D] font-semibold">Flowers &amp; Cakes</Link>
+          <Link href="/midnight-flower-delivery-lahore" className="px-3 py-1.5 rounded-full bg-[#F8F3EA] border border-[#E5DED2] text-[#8B1E2D] font-semibold">Midnight Delivery</Link>
+        </div>
+      </section>
+
+{/* Delivery Time & Fee */}
       <section className="bg-white p-6 sm:p-8 rounded-2xl border border-[rgba(198,161,91,0.25)] space-y-3 shadow-sm">
         <div className="flex items-center gap-2 text-[#0B0B0B]">
           <Wallet className="w-5 h-5 text-[#8B1E2D]" />
@@ -211,6 +246,18 @@ export default async function JoharTownDeliveryPage() {
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Do you deliver flowers to offices and events near Expo Centre?</h3>
             <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes. We deliver corporate bouquets, stage flowers and event arrangements to offices and venues around Expo Centre and Khayaban-e-Firdousi. For bulk or event orders, message us on WhatsApp a day ahead so we can schedule the delivery around your program.</p>
+          </div>
+          <div className="py-3 space-y-1">
+            <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How much does a flower bouquet cost in Johar Town?</h3>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Hand-tied bouquets start at Rs. 1,239–1,900, medium rose bouquets at Rs. 2,600–3,800, and large signature roses at Rs. 7,499+. All prices are confirmed on WhatsApp before dispatch.</p>
+          </div>
+          <div className="py-3 space-y-1">
+            <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How do I pay for flower delivery in Johar Town?</h3>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">We accept bank transfer, JazzCash, EasyPaisa and international debit/credit cards. Cash on Delivery is not available. Payment is confirmed on WhatsApp before dispatch.</p>
+          </div>
+          <div className="py-3 space-y-1">
+            <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Can I get midnight flower delivery in Johar Town?</h3>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes — midnight delivery runs 11:30 PM–12:15 AM in Johar Town. Book before 8:00 PM and we deliver the bouquet at midnight with a photo on WhatsApp first.</p>
           </div>
         </div>
       </section>

@@ -63,7 +63,7 @@ export const BUSINESS = {
   },
 
   social: {
-    instagram: "",
+    instagram: "https://www.instagram.com/lahorebouquet/",
     facebook: "",
     tiktok: "",
     googleMaps: "",
@@ -97,14 +97,14 @@ export const SERVICE_AREAS = [
   "Lake City",
 ] as const;
 
-/** Florist JSON-LD — shared @id so Organization can link to it. */
+/**
+ * Florist JSON-LD — the single business entity for the homepage.
+ * Structure follows the 2026-11-10 SEO/GEO/AEO audit. priceRange is the REAL
+ * catalog range (min Rs. 349, max Rs. 500,000 verified against live Sanity
+ * 2026-11-10 — the audit's "Rs. 50,000" top end is wrong). No GBP/Facebook
+ * URLs: no verified GBP profile URL or Lahore Bouquet Facebook page exists.
+ */
 export function floristSchema(url: string = SITE_URL) {
-  const sameAs = [
-    BUSINESS.social.instagram,
-    BUSINESS.social.facebook,
-    BUSINESS.social.tiktok,
-    "https://lahorebouquet-flowers.blogspot.com",
-  ].filter(Boolean);
   return {
     "@context": "https://schema.org",
     "@type": "Florist",
@@ -113,12 +113,13 @@ export function floristSchema(url: string = SITE_URL) {
     url,
     image: `${url}/og-image.jpg`,
     logo: `${url}/icon.png`,
+    description:
+      "Same-day flower delivery in Lahore. Fresh hand-tied bouquets from Rs. 1,239, delivered free in 2-5 hours, with a WhatsApp photo before dispatch.",
     telephone: BUSINESS.phone.e164,
     email: BUSINESS.email,
     priceRange: BUSINESS.priceRange.display,
     currenciesAccepted: "PKR",
-    paymentAccepted: "Bank Transfer, JazzCash, EasyPaisa",
-    foundingDate: "2026-10-09",
+    paymentAccepted: "Bank Transfer, JazzCash, EasyPaisa, Credit Card, Debit Card",
     address: {
       "@type": "PostalAddress",
       addressLocality: BUSINESS.address.locality,
@@ -130,18 +131,31 @@ export function floristSchema(url: string = SITE_URL) {
       latitude: BUSINESS.geo.latitude,
       longitude: BUSINESS.geo.longitude,
     },
-    openingHoursSpecification: BUSINESS.openingHours.days.map((day) => ({
+    openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: day,
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
       opens: BUSINESS.openingHours.opens,
-      /* closes after midnight: schema allows 01:00 on the same spec */
       closes: BUSINESS.openingHours.closes,
-    })),
-    areaServed: SERVICE_AREAS.map((area) => ({
-      "@type": "City",
-      name: `${area}, Lahore`,
-    })),
-    ...(sameAs.length > 0 ? { sameAs } : {}),
+    },
+    areaServed: [
+      { "@type": "City", name: "Lahore" },
+      ...SERVICE_AREAS.map((area) => ({
+        "@type": "Place",
+        name: `${area === "Valencia" ? "Valencia Town" : area}, Lahore`,
+      })),
+    ],
+    knowsAbout: [
+      "Same-day flower delivery",
+      "Midnight flower delivery",
+      "Rose bouquets",
+      "Money bouquets",
+      "Fresh gajray",
+      "Wedding flower decor",
+    ],
+    sameAs: [
+      BUSINESS.social.instagram,
+      "https://lahorebouquet-flowers.blogspot.com",
+    ],
   };
 }
 
@@ -253,31 +267,5 @@ export function serviceSchema(opts: {
     provider: { "@id": `${SITE_URL}#florist` },
     areaServed: SERVICE_AREAS.map((a) => ({ "@type": "City", name: `${a}, Lahore` })),
     ...(opts.priceRange ? { offers: { "@type": "Offer", priceCurrency: "PKR", price: opts.priceRange } } : {}),
-  };
-}
-export function organizationSchema(url: string = SITE_URL) {
-  const sameAs = [
-    BUSINESS.social.instagram,
-    BUSINESS.social.facebook,
-    BUSINESS.social.tiktok,
-    "https://lahorebouquet-flowers.blogspot.com",
-  ].filter(Boolean);
-  return {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "@id": `${url}#organization`,
-    name: BUSINESS.name,
-    url,
-    logo: `${url}/icon.png`,
-    foundingDate: "2026-10-09",
-    ...(sameAs.length > 0 ? { sameAs } : {}),
-    contactPoint: {
-      "@type": "ContactPoint",
-      telephone: BUSINESS.phone.e164,
-      contactType: "customer service",
-      availableLanguage: ["en", "ur"],
-      areaServed: "PK",
-    },
-    parentOrganization: { "@id": `${url}#florist` },
   };
 }

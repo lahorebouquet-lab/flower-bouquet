@@ -154,7 +154,7 @@ export default function GajrayLahorePage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Looking for <strong>fresh gajray in Lahore</strong>? Lahore Bouquet hand-ties fragrant <strong>motia (jasmine) and red rose gajray</strong> every morning — from a classic Rs. 370 gajra pair to bridal wrist cuffs and complete matching gajra sets. Delivered fresh across DHA, Gulberg, Model Town, Johar Town, Bahria Town, Cantt and Wapda Town, in time for your mehndi, dholki or shaadi. Every gajra is made with real flowers and photographed for your WhatsApp approval before dispatch.
+          Looking for <strong>fresh gajray in Lahore</strong>? Lahore Bouquet hand-ties fragrant <strong>motia (jasmine) and red rose gajray</strong> every morning — from a classic Rs. 370 gajra pair to bridal wrist cuffs and complete matching gajra sets. Delivered fresh in 2–5 hours across DHA, Gulberg, Model Town, Johar Town, Bahria Town, Cantt and Wapda Town, in time for your mehndi, dholki or shaadi. Every gajra is made with real flowers and photographed for your WhatsApp approval before dispatch.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">

@@ -49,14 +49,14 @@ export const COST_FACTORS = [
 ];
 
 export const OCCASIONS_DATA = [
-  { name: "Anniversaries", href: "/occasions/anniversary", tag: "From PKR 1,900" },
+  { name: "Anniversaries", href: "/occasions/anniversary", tag: "From PKR 1,239" },
   { name: "Birthdays", href: "/occasions/birthday", tag: "From PKR 1,239" },
   { name: "Eid Celebrations", href: "/bouquets", tag: "From PKR 1,500" },
   { name: "Father's Day", href: "/gifts-and-cakes", tag: "From PKR 1,800" },
   { name: "Get Well Soon", href: "/sunflower-bouquet-lahore", tag: "From PKR 500" },
   { name: "Graduation Days", href: "/bouquets", tag: "From PKR 1,200" },
-  { name: "Mother's Day", href: "/roses", tag: "From PKR 1,900" },
-  { name: "Valentine's Day", href: "/roses", tag: "From PKR 1,900" },
+  { name: "Mother's Day", href: "/roses", tag: "From PKR 1,239" },
+  { name: "Valentine's Day", href: "/roses", tag: "From PKR 1,239" },
   { name: "Send from Abroad (Overseas Pakistanis)", href: "/bouquets", tag: "Worldwide Cards Accepted" },
 ];
 
