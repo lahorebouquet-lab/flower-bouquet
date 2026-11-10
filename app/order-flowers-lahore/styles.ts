@@ -23,7 +23,7 @@ export const LANDING_CSS = `
 .lb-site { margin: 0; background: var(--paper); color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
 .lb-site button, .lb-site input, .lb-site select { font: inherit; }
 .lb-site a { color: inherit; text-decoration: none; }
-/* Button/link colours must beat the inherit above: `.lb-site a` (0,1,1)
+/* Button/link colours must beat the inherit above: ".lb-site a" (0,1,1)
  * outranks a plain class (0,1,0), which rendered black text on the
  * maroon hero pills, black text on the green product buttons, and white
  * text on the white pills in the dark sections (invisible). Prefixing
