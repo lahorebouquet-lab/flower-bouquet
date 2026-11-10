@@ -5,7 +5,6 @@ import {
   ArrowRight,
   ArrowUpRight,
   Banknote,
-  CakeSlice,
   Camera,
   Check,
   ChevronDown,
@@ -17,7 +16,6 @@ import {
   MessageCircle,
   Phone,
   ShieldCheck,
-  Sparkles,
   Star,
   Truck,
 } from "lucide-react";
@@ -65,6 +63,38 @@ const benefits = [
 
 const products = [
   {
+    file: "95adad1469c2b03043496407aa0470fefd6493fa-500x500.webp",
+    label: "Bestseller",
+    title: "Aesthetic Bloom",
+    copy: "7 fresh roses in kraft wrapping",
+    price: "Rs. 6,499",
+    slug: "aesthetic-bloom",
+  },
+  {
+    file: "d657217e903efba8ff17084c93c7ec8b90ff522a-500x500.webp",
+    label: "White blooms",
+    title: "Mint Oasis",
+    copy: "Fresh white blooms",
+    price: "Rs. 8,999",
+    slug: "mint-oasis",
+  },
+  {
+    file: "3011d2b3d8f90ef88c22743ae39085f53e693bb3-500x500.webp",
+    label: "Bestseller",
+    title: "Velvet Crush",
+    copy: "Fresh red roses with baby's breath",
+    price: "Rs. 9,999",
+    slug: "velvet-crush",
+  },
+  {
+    file: "dc37f13d76e597bf80f239c8212d2210ae462814-500x500.webp",
+    label: "White roses",
+    title: "Ivory Aura",
+    copy: "White roses & chrysanthemums",
+    price: "Rs. 10,499",
+    slug: "ivory-aura",
+  },
+  {
     file: "a0f7eb9d029c45030daf06ac89ce96d1d6fb2fd6-4030x4076.webp",
     label: "Best value",
     title: "Sweetheart Bloom",
@@ -79,54 +109,6 @@ const products = [
     copy: "Fresh red roses with green fillers",
     price: "Rs. 2,499",
     slug: "midnight-romance",
-  },
-  {
-    file: "95adad1469c2b03043496407aa0470fefd6493fa-500x500.webp",
-    label: "Bestseller",
-    title: "Aesthetic Bloom",
-    copy: "7 fresh roses in kraft wrapping",
-    price: "Rs. 6,499",
-    slug: "aesthetic-bloom",
-  },
-  {
-    file: "faca8c5b4a089fa86fd2c739f636f25d59f242b6-500x500.webp",
-    label: "Sunflowers",
-    title: "Bold Harmony",
-    copy: "6 fresh sunflowers with gypsophila",
-    price: "Rs. 6,499",
-    slug: "bold-harmony",
-  },
-  {
-    file: "f6aabc596dbf6bdc7310a5de88fbb442acc27490-500x500.webp",
-    label: "Red & pink",
-    title: "Blush Aura",
-    copy: "Fresh red and pink roses",
-    price: "Rs. 7,499",
-    slug: "blush-aura",
-  },
-  {
-    file: "3011d2b3d8f90ef88c22743ae39085f53e693bb3-500x500.webp",
-    label: "Bestseller",
-    title: "Velvet Crush",
-    copy: "Fresh red roses with baby's breath",
-    price: "Rs. 9,999",
-    slug: "velvet-crush",
-  },
-  {
-    file: "3caa000f4c26cbb8a14064cdc6fffe3b4e66401a-2480x2508.webp",
-    label: "With chocolates",
-    title: "Golden Glow",
-    copy: "Fresh sunflowers with premium chocolates",
-    price: "Rs. 9,949",
-    slug: "golden-glow",
-  },
-  {
-    file: "4848235cc0ed0cb24eb55b51a46350ed09a6f1d0-4030x4076.webp",
-    label: "Midnight favourite",
-    title: "Midnight Love",
-    copy: "Fresh red roses with a heart balloon",
-    price: "Rs. 12,499",
-    slug: "midnight-love",
   },
 ];
 
@@ -155,69 +137,45 @@ const occasions = [
     icon: Gift,
     title: "Birthday",
     copy: "A beautiful surprise they will remember.",
+    message: "Hello Lahore Bouquet! I want to order flowers for a Birthday.",
   },
   {
     icon: Heart,
     title: "Anniversary",
     copy: "Say it with flowers, even from far away.",
-  },
-  {
-    icon: Sparkles,
-    title: "Proposal",
-    copy: "Set the scene with something unforgettable.",
-  },
-  {
-    icon: Flower2,
-    title: "Apology",
-    copy: "A thoughtful way to start the conversation.",
-  },
-  {
-    icon: CakeSlice,
-    title: "Congratulations",
-    copy: "Celebrate their next big milestone.",
+    message: "Hello Lahore Bouquet! I want to order flowers for an Anniversary.",
   },
   {
     icon: Clock3,
-    title: "Midnight surprise",
+    title: "Midnight Surprise",
     copy: "Be the first to make their day special.",
+    message: "Hello Lahore Bouquet! I want to order flowers for a Midnight Surprise.",
+  },
+  {
+    icon: Flower2,
+    title: "Get Well Soon",
+    copy: "Send comfort and care with fresh flowers.",
+    message: "Hello Lahore Bouquet! I want to order Get Well Soon flowers.",
   },
 ];
 
 const faqs = [
   {
-    question: "How quickly can you deliver flowers in Lahore?",
-    answer:
-      "Same-day delivery is available, usually within 2–5 hours, depending on the area and order time.",
+    question: "How fast is delivery?",
+    answer: "Same day in 2–5 hours. Order before 4 PM.",
   },
   {
-    question: "Do you offer free delivery?",
-    answer:
-      "Yes. Free delivery is available across the listed Lahore delivery areas. If you are outside them, message us and we will confirm availability.",
-  },
-  {
-    question: "Can I see the bouquet before delivery?",
-    answer:
-      "Yes. We share a photo of your finished bouquet on WhatsApp before dispatch so you can approve it.",
-  },
-  {
-    question: "Do you deliver at midnight?",
-    answer:
-      "Yes. Our midnight surprise slot runs from 11:30 PM to 12:15 AM. Book before 8 PM.",
+    question: "Is delivery free?",
+    answer: "Yes, free across all listed Lahore areas.",
   },
   {
     question: "How can I pay?",
     answer:
-      "Cash on Delivery, bank transfer, JazzCash, EasyPaisa, or any international debit/credit card.",
+      "Bank transfer, JazzCash, EasyPaisa or international cards. Payment is confirmed on WhatsApp before dispatch.",
   },
   {
-    question: "What is the starting price?",
-    answer:
-      "Hand-tied bouquets start from Rs. 1,239. Your final price depends on the flowers, size and extras you choose.",
-  },
-  {
-    question: "Can customers from overseas order flowers?",
-    answer:
-      "Yes. Customers in the UK, USA, UAE and elsewhere can order for delivery to someone in Lahore and pay by card.",
+    question: "Do you deliver at midnight?",
+    answer: "Yes, 11:30 PM–12:15 AM. Book before 8 PM.",
   },
 ];
 
@@ -306,6 +264,12 @@ export default function LandingPage() {
       action: "order_form_submit",
       occasion: form.occasion,
     });
+    /* The form opens WhatsApp, so this counts as a WhatsApp click too —
+     * the Ads conversion is based on the whatsapp_click event. */
+    track("whatsapp_click", {
+      placement: "order_form",
+      occasion: form.occasion,
+    });
     setSubmitted(true);
     window.location.href = whatsappLink(orderMessage);
   };
@@ -356,12 +320,10 @@ export default function LandingPage() {
               <p className="kicker">
                 <span /> Lahore’s fresh flower delivery studio
               </p>
-              <h1>
-                Send fresh flowers across Lahore <i>— same day.</i>
-              </h1>
+              <h1>Same-Day Flower Delivery in Lahore</h1>
               <p className="hero-lede">
-                Hand-tied bouquets, cakes and gifts delivered in 2–5 hours —
-                with a photo on WhatsApp before dispatch.
+                Fresh hand-tied bouquets from Rs. 1,239. Free delivery in
+                2–5 hours.
               </p>
               <div className="hero-actions">
                 <WhatsAppButton
@@ -375,6 +337,16 @@ export default function LandingPage() {
                   <MessageCircle size={18} /> Order on WhatsApp{" "}
                   <ArrowUpRight size={17} />
                 </WhatsAppButton>
+                <WhatsAppButton
+                  href={whatsappLink(
+                    "Hello Lahore Bouquet! I want to order flowers now."
+                  )}
+                  label="WhatsApp Now"
+                  eventParams={{ placement: "whatsapp_now" }}
+                  className="button button-primary"
+                >
+                  <MessageCircle size={18} /> WhatsApp Now
+                </WhatsAppButton>
                 <button className="button button-ghost" onClick={scrollToBouquets}>
                   See bouquets &amp; prices <ArrowRight size={17} />
                 </button>
@@ -385,13 +357,16 @@ export default function LandingPage() {
               </p>
               <div className="hero-trust">
                 <span>
-                  <Check size={14} /> Free delivery in Lahore
+                  <Truck size={14} /> Free delivery across Lahore
                 </span>
                 <span>
-                  <Check size={14} /> Photo before dispatch
+                  <Camera size={14} /> Photo on WhatsApp before dispatch
                 </span>
                 <span>
-                  <Check size={14} /> Cash on Delivery
+                  <Clock3 size={14} /> Midnight delivery 11:30 PM–12:15 AM
+                </span>
+                <span>
+                  <Banknote size={14} /> Pay by JazzCash, EasyPaisa or card
                 </span>
               </div>
             </div>
@@ -455,8 +430,8 @@ export default function LandingPage() {
             <div>
               <Banknote size={22} />
               <span>
-                <b>Cash on Delivery</b>
-                <small>JazzCash, EasyPaisa, cards</small>
+                <b>Pay by JazzCash, EasyPaisa or card</b>
+                <small>Bank transfer also accepted</small>
               </span>
             </div>
           </div>
@@ -651,11 +626,8 @@ export default function LandingPage() {
                   >
                     <option>Birthday</option>
                     <option>Anniversary</option>
-                    <option>Proposal</option>
-                    <option>Apology</option>
-                    <option>Congratulations</option>
-                    <option>Just because</option>
-                    <option>Wedding</option>
+                    <option>Midnight Surprise</option>
+                    <option>Get Well Soon</option>
                   </select>
                 </label>
                 <label>
@@ -743,8 +715,8 @@ export default function LandingPage() {
                 <i>saying too much.</i>
               </h2>
               <p>
-                From a quiet apology to a midnight celebration, choose the
-                feeling and we’ll help you send it beautifully.
+                From a birthday to a midnight celebration, choose the feeling
+                and we’ll help you send it beautifully.
               </p>
               <WhatsAppButton
                 href={whatsappLink(
@@ -758,12 +730,10 @@ export default function LandingPage() {
               </WhatsAppButton>
             </div>
             <div className="occasion-grid">
-              {occasions.map(({ icon: Icon, title, copy }) => (
+              {occasions.map(({ icon: Icon, title, copy, message }) => (
                 <WhatsAppButton
                   key={title}
-                  href={whatsappLink(
-                    `Hello Lahore Bouquet! I need flowers for this occasion: ${title}.`
-                  )}
+                  href={whatsappLink(message)}
                   label={`Order flowers for ${title}`}
                   eventParams={{ placement: "occasion", occasion: title }}
                   className="occasion-card"
@@ -802,9 +772,7 @@ export default function LandingPage() {
                 <span /> Made in Lahore, sent with heart
               </p>
               <h2>
-                Beautifully delivered
-                <br />
-                <i>across the city.</i>
+                We Deliver Across <i>Lahore</i>
               </h2>
               <p>
                 We deliver across DHA Phases 1–9, Gulberg I–III, Bahria Town,
@@ -870,6 +838,11 @@ export default function LandingPage() {
                   We send a photo of the finished bouquet, then deliver it
                   with care.
                 </p>
+              </div>
+              <div>
+                <span className="process-number">04</span>
+                <h3>Delivered in 2–5 hours</h3>
+                <p>Free delivery anywhere in Lahore.</p>
               </div>
             </div>
           </div>

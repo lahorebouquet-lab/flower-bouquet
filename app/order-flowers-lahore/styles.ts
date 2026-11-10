@@ -164,7 +164,7 @@ export const LANDING_CSS = `
 .button-light { background: #fffaf4; color: var(--burgundy-deep); }
 .button-light:hover { background: #f6dfe0; }
 .occasion-intro .button { margin-top: 20px; }
-.occasion-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.occasion-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
 .occasion-card { position: relative; display: flex; flex-direction: column; min-height: 148px; padding: 19px; border: 1px solid rgba(255,250,244,.16); background: rgba(255,255,255,.04); transition: border-color .2s ease, background .2s ease, transform .2s ease; }
 .occasion-card:hover { transform: translateY(-3px); border-color: rgba(245,203,208,.6); background: rgba(255,255,255,.09); }
 .occasion-card > span { display: grid; place-items: center; width: 34px; height: 34px; margin-bottom: 21px; color: #f5cbd0; border: 1px solid rgba(245,203,208,.38); border-radius: 50%; }
@@ -187,7 +187,7 @@ export const LANDING_CSS = `
 .delivery-points svg { color: var(--burgundy-soft); }
 
 .process-section { padding-bottom: 120px; }
-.process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 55px; margin-top: 58px; }
+.process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; margin-top: 58px; }
 .process-grid > div { position: relative; padding-top: 23px; border-top: 1px solid var(--burgundy-soft); }
 .process-number { color: var(--burgundy-soft); font: 20px Georgia, serif; }
 .process-grid h3 { margin-top: 18px; margin-bottom: 8px; }
@@ -232,6 +232,7 @@ export const LANDING_CSS = `
   .order-grid, .occasion-layout, .delivery-grid, .faq-layout { gap: 55px; }
   .benefit-grid { grid-template-columns: repeat(2, 1fr); }
   .product-grid { grid-template-columns: repeat(3, 1fr); }
+  .process-grid { grid-template-columns: repeat(2, 1fr); gap: 33px; }
 }
 
 @media (max-width: 720px) {

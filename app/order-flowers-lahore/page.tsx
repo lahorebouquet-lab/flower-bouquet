@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     absolute: "Same-Day Flower Delivery in Lahore | Lahore Bouquet",
   },
   description:
-    "Fresh bouquets, cakes and gifts delivered across Lahore in 2–5 hours. Order on WhatsApp today.",
+    "Fresh hand-tied bouquets from Rs. 1,239. Free delivery in 2–5 hours.",
   robots: { index: false, follow: false },
   alternates: {
     canonical: `${SITE_URL}/order-flowers-lahore`,
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Same-Day Flower Delivery in Lahore | Lahore Bouquet",
     description:
-      "Fresh hand-tied bouquets, cakes and gifts delivered across Lahore. Order on WhatsApp.",
+      "Fresh hand-tied bouquets from Rs. 1,239. Free delivery in 2–5 hours.",
     url: `${SITE_URL}/order-flowers-lahore`,
     siteName: "Lahore Bouquet",
     type: "website",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Same-Day Flower Delivery in Lahore | Lahore Bouquet",
     description:
-      "Fresh hand-tied bouquets, cakes and gifts delivered across Lahore. Order on WhatsApp.",
+      "Fresh hand-tied bouquets from Rs. 1,239. Free delivery in 2–5 hours.",
   },
 };
 
