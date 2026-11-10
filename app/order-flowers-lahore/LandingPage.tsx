@@ -5,6 +5,7 @@ import {
   ArrowRight,
   ArrowUpRight,
   Banknote,
+  CakeSlice,
   Camera,
   Check,
   ChevronDown,
@@ -16,6 +17,7 @@ import {
   MessageCircle,
   Phone,
   ShieldCheck,
+  Sparkles,
   Star,
   Truck,
 } from "lucide-react";
@@ -132,50 +134,85 @@ const reviews = [
   },
 ];
 
+/* Occasions from the owner-supplied SEO/AEO/GEO update (6). The earlier
+ * 4-occasion set (Birthday / Anniversary / Midnight Surprise / Get Well
+ * Soon) was replaced by the owner's approval of this update. */
 const occasions = [
   {
     icon: Gift,
     title: "Birthday",
     copy: "A beautiful surprise they will remember.",
-    message: "Hello Lahore Bouquet! I want to order flowers for a Birthday.",
+    message: "Hello Lahore Bouquet! I need flowers for this occasion: Birthday.",
   },
   {
     icon: Heart,
     title: "Anniversary",
     copy: "Say it with flowers, even from far away.",
-    message: "Hello Lahore Bouquet! I want to order flowers for an Anniversary.",
+    message: "Hello Lahore Bouquet! I need flowers for this occasion: Anniversary.",
   },
   {
-    icon: Clock3,
-    title: "Midnight Surprise",
-    copy: "Be the first to make their day special.",
-    message: "Hello Lahore Bouquet! I want to order flowers for a Midnight Surprise.",
+    icon: Sparkles,
+    title: "Proposal",
+    copy: "Set the scene with something unforgettable.",
+    message: "Hello Lahore Bouquet! I need flowers for this occasion: Proposal.",
   },
   {
     icon: Flower2,
-    title: "Get Well Soon",
-    copy: "Send comfort and care with fresh flowers.",
-    message: "Hello Lahore Bouquet! I want to order Get Well Soon flowers.",
+    title: "Apology",
+    copy: "A thoughtful way to start the conversation.",
+    message: "Hello Lahore Bouquet! I need flowers for this occasion: Apology.",
+  },
+  {
+    icon: CakeSlice,
+    title: "Congratulations",
+    copy: "Celebrate their next big milestone.",
+    message: "Hello Lahore Bouquet! I need flowers for this occasion: Congratulations.",
+  },
+  {
+    icon: Clock3,
+    title: "Midnight surprise",
+    copy: "Be the first to make their day special.",
+    message: "Hello Lahore Bouquet! I need flowers for this occasion: Midnight surprise.",
   },
 ];
 
+/* FAQs from the owner-supplied SEO/AEO/GEO update (7). The earlier 4-FAQ
+ * set was replaced by the owner's approval of this update. */
 const faqs = [
   {
-    question: "How fast is delivery?",
-    answer: "Same day in 2–5 hours. Order before 4 PM.",
+    question: "How quickly can you deliver flowers in Lahore?",
+    answer:
+      "Same-day delivery is available, usually within 2–5 hours, depending on the area and order time.",
   },
   {
-    question: "Is delivery free?",
-    answer: "Yes, free across all listed Lahore areas.",
+    question: "Do you offer free delivery?",
+    answer:
+      "Yes. Free delivery is available across the listed Lahore delivery areas. If you are outside them, message us and we will confirm availability.",
+  },
+  {
+    question: "Can I see the bouquet before delivery?",
+    answer:
+      "Yes. We share a photo of your finished bouquet on WhatsApp before dispatch so you can approve it.",
+  },
+  {
+    question: "Do you deliver at midnight?",
+    answer:
+      "Yes. Our midnight surprise slot runs from 11:30 PM to 12:15 AM. Advance booking is recommended.",
   },
   {
     question: "How can I pay?",
     answer:
-      "Bank transfer, JazzCash, EasyPaisa or international cards. Payment is confirmed on WhatsApp before dispatch.",
+      "Bank transfer, JazzCash, EasyPaisa, or any international debit/credit card. Payment is confirmed on WhatsApp before dispatch.",
   },
   {
-    question: "Do you deliver at midnight?",
-    answer: "Yes, 11:30 PM–12:15 AM. Book before 8 PM.",
+    question: "What is the starting price?",
+    answer:
+      "Hand-tied bouquets start from Rs. 1,239. Your final price depends on the flowers, size and extras you choose.",
+  },
+  {
+    question: "Can customers from overseas order flowers?",
+    answer:
+      "Yes. Customers in the UK, USA, UAE and elsewhere can order for delivery to someone in Lahore and pay by card.",
   },
 ];
 
@@ -226,15 +263,16 @@ export default function LandingPage() {
   // Default ref line (also the SSR value) — corrected after mount so the
   // first client render matches the server render (no hydration mismatch).
   const [adRef, setAdRef] = useState("Ads landing page");
+  /* Quick-order form from the owner-supplied SEO/AEO/GEO update: 5 fields
+   * (name, WhatsApp number, delivery area, occasion, optional details).
+   * The earlier 8-field form (recipient, preferred time, request, budget)
+   * was replaced by the owner's approval of this update. */
   const [form, setForm] = useState({
     name: "",
     phone: "",
-    recipient: "",
     area: "",
     occasion: "Birthday",
-    time: "",
-    request: "",
-    budget: "",
+    details: "",
   });
 
   useEffect(() => {
@@ -253,12 +291,9 @@ export default function LandingPage() {
       "Hello Lahore Bouquet! I want to place an order.",
       `My name: ${form.name}`,
       `My WhatsApp number: ${form.phone}`,
-      `Recipient: ${form.recipient}`,
       `Delivery area: ${form.area}`,
       `Occasion: ${form.occasion}`,
-      `Preferred delivery time: ${form.time || "Please advise"}`,
-      `Bouquet / gift request: ${form.request || "Please suggest something beautiful"}`,
-      `Budget: ${form.budget || "Please suggest options"}`,
+      `Bouquet, budget or delivery details: ${form.details || "Please suggest suitable options."}`,
     ].join("\n");
     track("generate_lead", {
       action: "order_form_submit",
@@ -318,12 +353,13 @@ export default function LandingPage() {
           <div className="lb-container hero-grid">
             <div className="hero-copy">
               <p className="kicker">
-                <span /> Lahore’s fresh flower delivery studio
+                <span /> Online flower shop in Lahore
               </p>
               <h1>Same-Day Flower Delivery in Lahore</h1>
               <p className="hero-lede">
-                Fresh hand-tied bouquets from Rs. 1,239. Free delivery in
-                2–5 hours.
+                Order beautiful flower bouquets in Lahore for birthdays,
+                anniversaries and romantic surprises. Choose from our real
+                bouquet photos, then confirm your order on WhatsApp.
               </p>
               <div className="hero-actions">
                 <WhatsAppButton
@@ -357,16 +393,13 @@ export default function LandingPage() {
               </p>
               <div className="hero-trust">
                 <span>
-                  <Truck size={14} /> Free delivery across Lahore
+                  <Check size={14} /> Free delivery in listed areas
                 </span>
                 <span>
-                  <Camera size={14} /> Photo on WhatsApp before dispatch
+                  <Check size={14} /> Photo before dispatch
                 </span>
                 <span>
-                  <Clock3 size={14} /> Midnight delivery 11:30 PM–12:15 AM
-                </span>
-                <span>
-                  <Banknote size={14} /> Pay by JazzCash, EasyPaisa or card
+                  <Check size={14} /> Same-day delivery
                 </span>
               </div>
             </div>
@@ -374,7 +407,8 @@ export default function LandingPage() {
               <div className="hero-image-wrap">
                 <img
                   src={HERO_IMAGE}
-                  alt="Hand-tied red and blush rose bouquet prepared for delivery in Lahore"
+                  alt="Lahore Bouquet hand-tied rose bouquet available for flower delivery in Lahore"
+                  fetchPriority="high"
                 />
                 <div className="hero-image-stamp">
                   <span>01</span>
@@ -430,8 +464,8 @@ export default function LandingPage() {
             <div>
               <Banknote size={22} />
               <span>
-                <b>Pay by JazzCash, EasyPaisa or card</b>
-                <small>Bank transfer also accepted</small>
+                <b>Easy payment</b>
+                <small>JazzCash, EasyPaisa, bank, cards</small>
               </span>
             </div>
           </div>
@@ -442,16 +476,16 @@ export default function LandingPage() {
             <div className="section-heading-row">
               <div>
                 <p className="kicker">
-                  <span /> Our bouquets, real photos
+                  <span /> Real bouquet photos
                 </p>
                 <h2>
-                  Pick a bouquet,
+                  Shop flower bouquets
                   <br />
-                  <i>we deliver today.</i>
+                  <i>in Lahore.</i>
                 </h2>
               </div>
               <a href="/bouquets" className="text-link" target="_blank" rel="noreferrer">
-                See all bouquets <ArrowUpRight size={16} />
+                Browse all bouquets <ArrowUpRight size={16} />
               </a>
             </div>
             <div className="product-grid">
@@ -462,7 +496,7 @@ export default function LandingPage() {
                       src={photo(product.file)}
                       srcSet={`${photo(product.file, 400)} 400w, ${photo(product.file, 640)} 640w`}
                       sizes="(max-width: 720px) 50vw, 25vw"
-                      alt={`${product.title}: ${product.copy.toLowerCase()}, hand-tied by Lahore Bouquet`}
+                      alt={`${product.title} flower bouquet by Lahore Bouquet: ${product.copy}. Available for delivery in Lahore.`}
                       width={640}
                       height={640}
                       loading={index < 2 ? "eager" : "lazy"}
@@ -565,7 +599,7 @@ export default function LandingPage() {
             <form className="order-form" onSubmit={handleOrderSubmit}>
               <div className="form-heading">
                 <span>Quick order</span>
-                <small>Usually replied to within minutes</small>
+                <small>Quick details · Opens WhatsApp</small>
               </div>
               <div className="form-row">
                 <label>
@@ -577,32 +611,25 @@ export default function LandingPage() {
                       setForm({ ...form, name: e.target.value })
                     }
                     placeholder="e.g. Ayesha"
+                    autoComplete="name"
                   />
                 </label>
                 <label>
                   WhatsApp number
                   <input
                     required
+                    type="tel"
+                    inputMode="tel"
                     value={form.phone}
                     onChange={(e) =>
                       setForm({ ...form, phone: e.target.value })
                     }
                     placeholder="03XX-XXXXXXX"
+                    autoComplete="tel"
                   />
                 </label>
               </div>
               <div className="form-row">
-                <label>
-                  Recipient’s name
-                  <input
-                    required
-                    value={form.recipient}
-                    onChange={(e) =>
-                      setForm({ ...form, recipient: e.target.value })
-                    }
-                    placeholder="Who are we surprising?"
-                  />
-                </label>
                 <label>
                   Delivery area
                   <input
@@ -612,10 +639,9 @@ export default function LandingPage() {
                       setForm({ ...form, area: e.target.value })
                     }
                     placeholder="DHA, Gulberg, Johar Town..."
+                    autoComplete="address-level2"
                   />
                 </label>
-              </div>
-              <div className="form-row">
                 <label>
                   Occasion
                   <select
@@ -626,41 +652,24 @@ export default function LandingPage() {
                   >
                     <option>Birthday</option>
                     <option>Anniversary</option>
-                    <option>Midnight Surprise</option>
-                    <option>Get Well Soon</option>
+                    <option>Proposal</option>
+                    <option>Apology</option>
+                    <option>Congratulations</option>
+                    <option>Just because</option>
+                    <option>Wedding</option>
                   </select>
                 </label>
-                <label>
-                  Preferred time
-                  <input
-                    type="text"
-                    value={form.time}
-                    onChange={(e) =>
-                      setForm({ ...form, time: e.target.value })
-                    }
-                    placeholder="Today, evening, midnight..."
-                  />
-                </label>
               </div>
-              <div className="form-row">
+              <div className="form-row form-row-full">
                 <label>
-                  Bouquet or gift idea
+                  Bouquet, budget or delivery details{" "}
+                  <span className="optional-label">(optional)</span>
                   <input
-                    value={form.request}
+                    value={form.details}
                     onChange={(e) =>
-                      setForm({ ...form, request: e.target.value })
+                      setForm({ ...form, details: e.target.value })
                     }
-                    placeholder="Red roses, cake with flowers..."
-                  />
-                </label>
-                <label>
-                  Approx. budget
-                  <input
-                    value={form.budget}
-                    onChange={(e) =>
-                      setForm({ ...form, budget: e.target.value })
-                    }
-                    placeholder="e.g. Rs. 3,000"
+                    placeholder="e.g. Red roses, Rs. 3,000 budget, evening delivery"
                   />
                 </label>
               </div>
@@ -715,8 +724,8 @@ export default function LandingPage() {
                 <i>saying too much.</i>
               </h2>
               <p>
-                From a birthday to a midnight celebration, choose the feeling
-                and we’ll help you send it beautifully.
+                From a quiet apology to a midnight celebration, choose the
+                feeling and we’ll help you send it beautifully.
               </p>
               <WhatsAppButton
                 href={whatsappLink(
@@ -769,10 +778,12 @@ export default function LandingPage() {
             </div>
             <div className="delivery-copy">
               <p className="kicker">
-                <span /> Made in Lahore, sent with heart
+                <span /> Local flower delivery
               </p>
               <h2>
-                We Deliver Across <i>Lahore</i>
+                Flower delivery areas
+                <br />
+                <i>across Lahore.</i>
               </h2>
               <p>
                 We deliver across DHA Phases 1–9, Gulberg I–III, Bahria Town,
@@ -808,10 +819,10 @@ export default function LandingPage() {
           <div className="lb-container">
             <div className="center-heading">
               <p className="kicker">
-                <span /> From your thought to their door
+                <span /> Order flowers online in Lahore
               </p>
               <h2>
-                Simple, personal, <i>reliable.</i>
+                How to order flowers <i>online.</i>
               </h2>
             </div>
             <div className="process-grid">
@@ -839,11 +850,6 @@ export default function LandingPage() {
                   with care.
                 </p>
               </div>
-              <div>
-                <span className="process-number">04</span>
-                <h3>Delivered in 2–5 hours</h3>
-                <p>Free delivery anywhere in Lahore.</p>
-              </div>
             </div>
           </div>
         </section>
@@ -852,12 +858,12 @@ export default function LandingPage() {
           <div className="lb-container faq-layout">
             <div className="faq-intro">
               <p className="kicker">
-                <span /> Questions, answered
+                <span /> Flower delivery FAQs
               </p>
               <h2>
-                Everything you need
+                Questions about
                 <br />
-                <i>to know.</i>
+                <i>ordering flowers.</i>
               </h2>
               <p>
                 Still unsure? Message us directly and our team will guide you.
@@ -880,6 +886,8 @@ export default function LandingPage() {
                   key={faq.question}
                 >
                   <button
+                    id={`faq-question-${index}`}
+                    aria-controls={`faq-answer-${index}`}
                     onClick={() =>
                       setOpenFaq(openFaq === index ? -1 : index)
                     }
@@ -888,7 +896,15 @@ export default function LandingPage() {
                     <span>{faq.question}</span>
                     <ChevronDown size={18} />
                   </button>
-                  {openFaq === index && <p>{faq.answer}</p>}
+                  {/* Answers stay in the DOM when collapsed (hidden) so
+                   * search/AI crawlers can read them — AEO update. */}
+                  <p
+                    id={`faq-answer-${index}`}
+                    aria-labelledby={`faq-question-${index}`}
+                    hidden={openFaq !== index}
+                  >
+                    {faq.answer}
+                  </p>
                 </div>
               ))}
             </div>
@@ -947,7 +963,11 @@ export default function LandingPage() {
                 <em>Bouquet</em>
               </span>
             </a>
-            <p>Fresh flowers, cakes and gifts delivered across Lahore.</p>
+            <p>
+              Online flower shop serving Lahore, Punjab, Pakistan. Order rose
+              bouquets, birthday flowers and gifts for delivery in listed
+              Lahore areas.
+            </p>
           </div>
           <div>
             <p className="footer-label">Talk to us</p>

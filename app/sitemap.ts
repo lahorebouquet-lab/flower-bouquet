@@ -38,6 +38,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/send-flowers-to-lahore-from-abroad", file: "app/send-flowers-to-lahore-from-abroad/page.tsx" },
     { path: "/birthday-decoration-lahore", file: "app/birthday-decoration-lahore/page.tsx" },
     { path: "/lily-bouquet-lahore", file: "app/lily-bouquet-lahore/page.tsx" },
+    { path: "/order-flowers-lahore", file: "app/order-flowers-lahore/page.tsx" },
     { path: "/bouquets", file: "app/bouquets/page.tsx" },
     { path: "/bestsellers", file: "app/bestsellers/page.tsx" },
     { path: "/roses", file: "app/roses/page.tsx" },
