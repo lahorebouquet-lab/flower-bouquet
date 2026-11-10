@@ -1,7 +1,13 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { SITE_URL } from "@/lib/business";
 import LandingPage from "./LandingPage";
+
+export const viewport: Viewport = {
+  // Theme color from the owner-supplied page (client/index.html); overrides
+  // the site-wide #8B1E2D on this route only.
+  themeColor: "#741f3b",
+};
 
 export const metadata: Metadata = {
   title: {
@@ -10,7 +16,6 @@ export const metadata: Metadata = {
   description:
     "Fresh bouquets, cakes and gifts delivered across Lahore in 2–5 hours. Order on WhatsApp today.",
   robots: { index: false, follow: false },
-  themeColor: "#741f3b",
   alternates: {
     canonical: `${SITE_URL}/order-flowers-lahore`,
   },
