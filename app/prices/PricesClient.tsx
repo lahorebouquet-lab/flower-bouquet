@@ -71,6 +71,14 @@ export const LAHORE_DELIVERY_ZONES = [
   { name: "Lake City, Khayaban-e-Amin & Pine Avenue", href: "/delivery-areas/lake-city" },
   { name: "Shadman, Jail Road & Mall Road", href: "/delivery-areas" },
   { name: "Allama Iqbal Town & Sabzazar", href: "/delivery-areas/iqbal-town" },
+  { name: "Askari (1 to 11)", href: "/delivery-areas/askari" },
+  { name: "DHA Rahbar", href: "/delivery-areas/dha-rahbar" },
+  { name: "EME Society", href: "/delivery-areas/eme-society" },
+  { name: "Faisal Town", href: "/delivery-areas/faisal-town" },
+  { name: "Al-Kabir Town", href: "/delivery-areas/al-kabir-town" },
+  { name: "Bahria Orchard", href: "/delivery-areas/bahria-orchard" },
+  { name: "NFC Society", href: "/delivery-areas/nfc" },
+  { name: "Thokar Niaz Baig", href: "/delivery-areas/thokar-niaz-baig" },
 ];
 
 export default function PricesClient() {
@@ -680,6 +688,9 @@ export default function PricesClient() {
           </p>
           <p>
             When checking the flower bouquet price in Pakistan overall, remember that Lahore Bouquet includes free same-day delivery in every quote — no hidden charges at checkout. The flower bouquet price in Lahore you see on this page is the price you pay. For a custom design, just send us your budget on WhatsApp and we'll craft the most beautiful bouquet possible within it.
+          </p>
+          <p>
+            Want a deeper breakdown? Read our <Link href="/blog/money-bouquet-price-lahore-2026" className="text-[#8B1E2D] underline font-semibold">money bouquet price guide</Link>, <Link href="/blog/money-bouquet-designs-and-pricing-lahore" className="text-[#8B1E2D] underline font-semibold">money bouquet designs and pricing</Link>, <Link href="/blog/wedding-car-decoration-price-lahore" className="text-[#8B1E2D] underline font-semibold">wedding car decoration prices in Lahore</Link>, and <Link href="/blog/rose-color-meanings-pakistan" className="text-[#8B1E2D] underline font-semibold">rose colour meanings with prices</Link>.
           </p>
         </div>
       </section>

@@ -373,6 +373,9 @@ export default function SendFlowersToLahoreFromUkPage() {
             <Link href="/bouquets" className="px-4 py-2 rounded-full border border-[#E5DED2] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">All Bouquets</Link>
             <Link href="/prices" className="px-4 py-2 rounded-full border border-[#E5DED2] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Price Guide</Link>
             <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="px-4 py-2 rounded-full border border-[#E5DED2] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">How to Order Flowers Online</Link>
+            <Link href="/blog/send-flowers-to-lahore-from-uk" className="px-4 py-2 rounded-full border border-[#E5DED2] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Send Flowers from the UK — Full Guide</Link>
+            <Link href="/blog/send-flowers-to-lahore-from-usa" className="px-4 py-2 rounded-full border border-[#E5DED2] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Send Flowers from the USA</Link>
+            <Link href="/blog/send-flowers-to-lahore-from-uae" className="px-4 py-2 rounded-full border border-[#E5DED2] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Send Flowers from the UAE</Link>
             <Link href="/send-flowers-to-lahore-from-abroad" className="px-4 py-2 rounded-full border border-[#E5DED2] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Send Flowers from Abroad</Link>
             <Link href="/flower-delivery-islamabad" className="px-4 py-2 rounded-full border border-[#E5DED2] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Flower Delivery in Islamabad</Link>
             <Link href="/midnight-flower-delivery-lahore" className="px-4 py-2 rounded-full border border-[#E5DED2] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Midnight Delivery</Link>

@@ -250,6 +250,10 @@ export default function GajrayLahorePage() {
             <span className="text-sm font-semibold text-[#0B0B0B]">Gajra Prices in Lahore 2026</span>
             <span className="text-[#8B1E2D] ml-2">→</span>
           </Link>
+          <Link href="/blog/eid-flowers-gifts-lahore" className="block p-4 rounded-xl bg-white border border-[#E5DED2] hover:border-[#8B1E2D] transition-colors">
+            <span className="text-sm font-semibold text-[#0B0B0B]">Eid Flowers & Gifts in Lahore</span>
+            <span className="text-[#8B1E2D] ml-2">→</span>
+          </Link>
         </div>
       </section>
 

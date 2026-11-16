@@ -325,7 +325,26 @@ export default async function ModelTownDeliveryPage() {
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">DHA Lahore →</p>
             <p className="text-xs text-[#2A2A2A]">FREE • 2–3 hours. Phases 1–9, Defence Raya and Sector Y.</p>
           </Link>
+          <Link href="/delivery-areas/faisal-town" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
+            <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Faisal Town →</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 2–3 hours. Faisal Town, next to Model Town and Johar Town — same-day delivery with WhatsApp photo proof.</p>
+          </Link>
+          <Link href="/delivery-areas/thokar-niaz-baig" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
+            <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Thokar Niaz Baig →</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 2–3 hours. Thokar Niaz Baig, near Canal Road — same-day delivery with WhatsApp photo proof.</p>
+          </Link>
         </div>
+      </section>
+
+      {/* Birthday decoration nearby */}
+      <section className="bg-white p-6 sm:p-8 rounded-2xl border border-[rgba(198,161,91,0.25)] space-y-3 shadow-sm">
+        <div className="flex items-center gap-2 text-[#0B0B0B]">
+          <Gift className="w-5 h-5 text-[#8B1E2D]" />
+          <h2 className="font-playfair text-xl font-bold">Birthday decoration near Model Town</h2>
+        </div>
+        <p className="text-xs text-[#2A2A2A] leading-relaxed">
+          Planning a birthday at home in Model Town? We set up balloon arches and fresh flower centerpieces for birthday parties — see <Link href="/birthday-decoration-model-town-lahore" className="text-[#8B1E2D] underline font-semibold">birthday decoration in Model Town</Link>, <Link href="/birthday-decoration-iqbal-town-lahore" className="text-[#8B1E2D] underline font-semibold">birthday decoration in Iqbal Town</Link> and <Link href="/birthday-decoration-johar-town-lahore" className="text-[#8B1E2D] underline font-semibold">birthday decoration in Johar Town</Link>.
+        </p>
       </section>
     </main>
   );

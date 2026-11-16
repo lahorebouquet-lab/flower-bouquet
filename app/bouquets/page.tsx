@@ -446,6 +446,18 @@ export default async function BouquetsPage({
             <p className="text-[#666666] leading-relaxed">Go for a large statement arrangement, acrylic flower box, or a combined cake and fairy-lights hamper.</p>
           </div>
         </div>
+
+        <div className="pt-2">
+          <p className="text-xs sm:text-sm text-[#555555] mb-3">More bouquet guides:</p>
+          <div className="flex flex-wrap gap-2 text-xs">
+            <Link href="/blog/birthday-bouquet-ideas-lahore" className="px-4 py-2 rounded-full bg-white border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Birthday Bouquet Ideas</Link>
+            <Link href="/blog/custom-bouquet-guide-lahore" className="px-4 py-2 rounded-full bg-white border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Custom Bouquet Guide</Link>
+            <Link href="/blog/anniversary-flower-guide-pakistan" className="px-4 py-2 rounded-full bg-white border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Anniversary Flower Guide</Link>
+            <Link href="/blog/rose-color-meanings-pakistan" className="px-4 py-2 rounded-full bg-white border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Rose Colour Meanings</Link>
+            <Link href="/blog/best-flowers-birthday-anniversary-get-well-pakistan" className="px-4 py-2 rounded-full bg-white border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Birthday, Anniversary & Get-Well Flowers</Link>
+            <Link href="/blog/birthday-flower-delivery-lahore" className="px-4 py-2 rounded-full bg-white border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Birthday Flower Delivery</Link>
+          </div>
+        </div>
       </section>
 
       {/* Bouquet Sizes Table */}

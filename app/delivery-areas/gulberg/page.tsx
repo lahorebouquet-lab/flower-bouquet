@@ -313,7 +313,22 @@ export default async function GulbergDeliveryPage() {
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Lahore Cantt →</p>
             <p className="text-xs text-[#2A2A2A]">FREE • 2–2.5 hours. Saddar, Cavalry Ground, PAF Colony and CMH with gate clearance.</p>
           </Link>
+          <Link href="/delivery-areas/faisal-town" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
+            <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Faisal Town →</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 2–3 hours. Faisal Town, next to Gulberg and Model Town — same-day delivery with WhatsApp photo proof.</p>
+          </Link>
         </div>
+      </section>
+
+      {/* Birthday decoration nearby */}
+      <section className="bg-white p-6 sm:p-8 rounded-2xl border border-[rgba(198,161,91,0.25)] space-y-3 shadow-sm">
+        <div className="flex items-center gap-2 text-[#0B0B0B]">
+          <Gift className="w-5 h-5 text-[#8B1E2D]" />
+          <h2 className="font-playfair text-xl font-bold">Birthday decoration near Gulberg</h2>
+        </div>
+        <p className="text-xs text-[#2A2A2A] leading-relaxed">
+          Planning a birthday at home in Gulberg? We set up balloon arches and fresh flower centerpieces for birthday parties — see <Link href="/birthday-decoration-gulberg-lahore" className="text-[#8B1E2D] underline font-semibold">birthday decoration in Gulberg</Link> and <Link href="/birthday-decoration-model-town-lahore" className="text-[#8B1E2D] underline font-semibold">birthday decoration in Model Town</Link>.
+        </p>
       </section>
     </main>
   );

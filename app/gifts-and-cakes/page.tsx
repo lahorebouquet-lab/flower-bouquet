@@ -265,6 +265,15 @@ export default async function GiftsAndCakesPage({
               </p>
             </div>
           </div>
+          <div className="pt-2">
+            <p className="text-xs sm:text-sm text-[#555555] mb-3">More gift & cake guides:</p>
+            <div className="flex flex-wrap gap-2 text-xs">
+              <Link href="/blog/custom-cake-order-guide-lahore" className="px-4 py-2 rounded-full bg-white border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">How to Order a Custom Cake</Link>
+              <Link href="/blog/birthday-gift-ideas-for-her-lahore" className="px-4 py-2 rounded-full bg-white border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Birthday Gift Ideas for Her</Link>
+              <Link href="/blog/eid-flowers-gifts-lahore" className="px-4 py-2 rounded-full bg-white border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Eid Flowers & Gifts</Link>
+              <Link href="/blog/graduation-flowers-lahore" className="px-4 py-2 rounded-full bg-white border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] hover:text-[#8B1E2D] transition-colors">Graduation Flowers</Link>
+            </div>
+          </div>
         </div>
       </section>
 

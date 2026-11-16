@@ -303,6 +303,9 @@ export default async function RosesPage() {
             <p>Imported Dutch roses are larger, longer-lasting and cost PKR 450–650 per stem; fresh local roses cost PKR 40–70 per stem.</p>
           </div>
         </div>
+        <p className="text-xs text-[#2A2A2A] leading-relaxed">
+          Read the full guide: <Link href="/blog/rose-color-meanings-pakistan" className="text-[#8B1E2D] underline font-semibold">rose colour meanings</Link>, <Link href="/blog/rose-color-meanings-pakistan-2026" className="text-[#8B1E2D] underline font-semibold">rose colour meanings in Roman Urdu</Link>, and our <Link href="/blog/anniversary-flower-guide-pakistan" className="text-[#8B1E2D] underline font-semibold">anniversary flower guide</Link>.
+        </p>
       </section>
 
       {/* Black Roses */}

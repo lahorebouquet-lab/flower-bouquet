@@ -107,6 +107,7 @@ export default function Footer() {
               <li><Link href="/prices" className="hover:text-[#C6A15B] text-white font-medium transition-colors">★ Lahore Prices 2026</Link></li>
               <li><Link href="/best-bouquet-in-lahore" className="hover:text-[#C6A15B] transition-colors">Best Bouquet in Lahore</Link></li>
               <li><Link href="/flower-delivery-in-lahore" className="hover:text-[#C6A15B] transition-colors">Express Same-Day Delivery</Link></li>
+              <li><Link href="/order-flowers-lahore" className="hover:text-[#C6A15B] transition-colors">Order on WhatsApp</Link></li>
               <li><Link href="/birthday-decoration-lahore" className="hover:text-[#C6A15B] transition-colors">Birthday Decoration</Link></li>
               <li><Link href="/wedding-decor" className="hover:text-[#C6A15B] transition-colors">Wedding Décor</Link></li>
               <li><Link href="/gifts-and-cakes" className="hover:text-[#C6A15B] transition-colors">Gifts & Cakes</Link></li>
@@ -121,6 +122,8 @@ export default function Footer() {
               <li><Link href="/birthday-surprises" className="hover:text-[#C6A15B] transition-colors">Birthday</Link></li>
               <li><Link href="/occasions/anniversary" className="hover:text-[#C6A15B] transition-colors">Anniversary</Link></li>
               <li><Link href="/occasions/love-and-romance" className="hover:text-[#C6A15B] transition-colors">Love & Romance</Link></li>
+              <li><Link href="/occasions/barat-and-walima" className="hover:text-[#C6A15B] transition-colors">Barat & Walima</Link></li>
+              <li><Link href="/occasions/congratulations" className="hover:text-[#C6A15B] transition-colors">Congratulations</Link></li>
               <li><Link href="/occasions/eid-gifts" className="hover:text-[#C6A15B] transition-colors">Eid Gifts</Link></li>
               <li><Link href="/valentine-day-flowers-lahore" className="hover:text-[#C6A15B] transition-colors">Valentine&apos;s Day</Link></li>
             </ul>

@@ -331,7 +331,26 @@ export default async function DHADeliveryPage() {
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Model Town →</p>
             <p className="text-xs text-[#2A2A2A]">FREE delivery • 1.5–2.5 hours. Blocks A–M, Link Road and Garden Town.</p>
           </Link>
+          <Link href="/delivery-areas/dha-rahbar" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
+            <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">DHA Rahbar →</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 3–4 hours. DHA Rahbar sector with same-day delivery and WhatsApp photo proof.</p>
+          </Link>
+          <Link href="/delivery-areas/askari" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
+            <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Askari →</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 2–3 hours. Askari 1–11, Bedian Road and Cantt — gated-community delivery with photo proof.</p>
+          </Link>
         </div>
+      </section>
+
+      {/* Birthday decoration nearby */}
+      <section className="bg-white p-6 sm:p-8 rounded-2xl border border-[rgba(198,161,91,0.25)] space-y-3 shadow-sm">
+        <div className="flex items-center gap-2 text-[#0B0B0B]">
+          <Gift className="w-5 h-5 text-[#8B1E2D]" />
+          <h2 className="font-playfair text-xl font-bold">Birthday decoration near DHA</h2>
+        </div>
+        <p className="text-xs text-[#2A2A2A] leading-relaxed">
+          Planning a birthday at home near DHA? We set up balloon arches and fresh flower centerpieces for birthday parties — see <Link href="/birthday-decoration-cantt-lahore" className="text-[#8B1E2D] underline font-semibold">birthday decoration in Cantt</Link> and <Link href="/birthday-decoration-askari-lahore" className="text-[#8B1E2D] underline font-semibold">birthday decoration in Askari</Link>.
+        </p>
       </section>
     </main>
   );

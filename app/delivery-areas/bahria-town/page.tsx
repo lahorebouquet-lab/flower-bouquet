@@ -313,7 +313,30 @@ export default async function BahriaTownDeliveryPage() {
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">DHA Lahore →</p>
             <p className="text-xs text-[#2A2A2A]">FREE • 2–3 hours. Phases 1–9, Defence Raya and Sector Y.</p>
           </Link>
+          <Link href="/delivery-areas/bahria-orchard" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
+            <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Bahria Orchard →</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 3–4 hours. Bahria Orchard, next to Bahria Town on Raiwind Road — same-day delivery with WhatsApp photo proof.</p>
+          </Link>
+          <Link href="/delivery-areas/al-kabir-town" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
+            <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Al-Kabir Town →</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 3–4 hours. Al-Kabir Town on Raiwind Road, near Bahria Town — same-day delivery with WhatsApp photo proof.</p>
+          </Link>
+          <Link href="/delivery-areas/eme-society" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
+            <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">EME Society →</p>
+            <p className="text-xs text-[#2A2A2A]">FREE • 2.5–3.5 hours. EME Society, next to Bahria Town — same-day delivery with WhatsApp photo proof.</p>
+          </Link>
         </div>
+      </section>
+
+      {/* Birthday decoration nearby */}
+      <section className="bg-white p-6 sm:p-8 rounded-2xl border border-[rgba(198,161,91,0.25)] space-y-3 shadow-sm">
+        <div className="flex items-center gap-2 text-[#0B0B0B]">
+          <Gift className="w-5 h-5 text-[#8B1E2D]" />
+          <h2 className="font-playfair text-xl font-bold">Birthday decoration near Bahria Town</h2>
+        </div>
+        <p className="text-xs text-[#2A2A2A] leading-relaxed">
+          Planning a birthday at home in Bahria Town? We set up balloon arches and fresh flower centerpieces for birthday parties — see <Link href="/birthday-decoration-bahria-town-lahore" className="text-[#8B1E2D] underline font-semibold">birthday decoration in Bahria Town</Link>, <Link href="/birthday-decoration-valencia-town-lahore" className="text-[#8B1E2D] underline font-semibold">birthday decoration in Valencia Town</Link> and <Link href="/birthday-decoration-eme-society-lahore" className="text-[#8B1E2D] underline font-semibold">birthday decoration in EME Society</Link>.
+        </p>
       </section>
     </main>
   );
