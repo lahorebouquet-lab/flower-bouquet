@@ -172,6 +172,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/flowers-for-father-in-lahore", file: "app/flowers-for-father-in-lahore/page.tsx" },
     // Budget listing
     { path: "/bouquets-under-2000", file: "app/bouquets-under-2000/page.tsx" },
+    { path: "/bouquets-under-3000", file: "app/bouquets-under-3000/page.tsx" },
+    { path: "/occasions/new-baby", file: "app/occasions/new-baby/page.tsx" },
+    { path: "/occasions/thank-you", file: "app/occasions/thank-you/page.tsx" },
+    { path: "/faq", file: "app/faq/page.tsx" },
+    { path: "/payment-methods", file: "app/payment-methods/page.tsx" },
+    { path: "/send-flowers-to-islamabad-from-abroad", file: "app/send-flowers-to-islamabad-from-abroad/page.tsx" },
   ];
 
   const routes: MetadataRoute.Sitemap = staticRoutes

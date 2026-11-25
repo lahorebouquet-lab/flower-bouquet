@@ -48,6 +48,8 @@ const NAV_ITEMS: NavItem[] = [
       { name: "Eid Mubarak Gifts", href: "/occasions/eid-gifts", desc: "Chaand Raat hampers & Eidi bouquets", badge: "Special" },
       { name: "Congratulations & Graduations", href: "/occasions/congratulations", desc: "Festive congratulations bouquets" },
       { name: "Get Well Soon & Apologies", href: "/occasions/get-well-and-sorry", desc: "Gentle hospital & apology flowers" },
+      { name: "New Baby", href: "/occasions/new-baby", desc: "Soft bouquets to welcome the newborn" },
+      { name: "Thank You", href: "/occasions/thank-you", desc: "Warm bouquets to say thanks" },
     ],
   },
   {

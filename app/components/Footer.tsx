@@ -188,6 +188,8 @@ export default function Footer() {
             <Link href="/track-order" className="hover:text-[#C6A15B] transition-colors underline">Track Order</Link>
             <Link href="/gift-reminders" className="hover:text-[#C6A15B] transition-colors underline">Gift Reminders</Link>
             <Link href="/policies" className="hover:text-[#C6A15B] transition-colors underline">Store Policies</Link>
+            <Link href="/faq" className="hover:text-[#C6A15B] transition-colors underline">FAQ</Link>
+            <Link href="/payment-methods" className="hover:text-[#C6A15B] transition-colors underline">Payment Methods</Link>
             <Link href="/prices" className="hover:text-[#C6A15B] transition-colors underline">Prices</Link>
             <Link href="/privacy-policy" className="hover:text-[#C6A15B] transition-colors underline">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-[#C6A15B] transition-colors underline">Terms of Service</Link>
