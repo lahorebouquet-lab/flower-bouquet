@@ -40,7 +40,7 @@ const GUIDE: [string, string][] = [
   ["Order early, even if it feels too soon", "Valentine's week is our busiest period and delivery slots fill up. Booking early is the single best thing you can do to get the bouquet you want at the time you want it. Our Valentine's deals range from Rs. 5,000 to Rs. 100,000, so there is a choice for every budget."],
   ["Midnight surprises", "A midnight delivery from 11:30 PM to 12:15 AM is the classic way to start 14 February. Slots are limited and must be confirmed early on WhatsApp, with the full address and a second contact number so the delivery partner can reach the recipient."],
   ["Choosing between the deals", "Smaller deals suit a simple, thoughtful gesture. Mid-range bouquets suit most couples. The larger luxury arrangements are for proposals and big anniversaries. Send us your budget and the person's taste, and we will suggest the right one. All the deals are listed with details on our Valentine's page."],
-  ["Delivery in Islamabad", "Same-day delivery in Islamabad takes 2 to 5 hours in covered areas through our local delivery partner, with free delivery in our listed sectors. Confirm availability for your sector on WhatsApp when you order, since Valentine's demand is high. See our Islamabad flower delivery page for the sector list."],
+  ["Delivery in Islamabad", "Same-day delivery in Islamabad takes 2 to 5 hours in covered areas through our local delivery partner, with Rs. 800 delivery in our listed sectors. Confirm availability for your sector on WhatsApp when you order, since Valentine's demand is high. See our Islamabad flower delivery page for the sector list."],
 ];
 
 export default function Page() {

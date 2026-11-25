@@ -1,7 +1,7 @@
 {
  "/": {
-  "title": "Flower Delivery in Lahore | Same-Day & Free | Lahore Bouquet",
-  "description": "Lahore Bouquet, a flower shop in Lahore, offers online flower delivery and same-day bouquet delivery. Hand-tied bouquets from Rs. 1,239, free delivery."
+  "title": "Flower Delivery in Lahore | Same-Day Delivery | Lahore Bouquet",
+  "description": "Lahore Bouquet, a flower shop in Lahore, offers online flower delivery and same-day bouquet delivery. Hand-tied bouquets from Rs. 1,239, Rs. 800 delivery."
  },
  "/flower-delivery-in-lahore": {
   "title": "Same-Day Flower Delivery Lahore | Charges & Timings by Area",
@@ -25,7 +25,7 @@
  },
  "/bouquets": {
   "title": "Fresh Flowers in Lahore | Bouquets from Rs. 1,239",
-  "description": "Fresh flowers in Lahore, hand-tied into bouquets: roses, sunflowers, chocolate & money bouquets from Rs. 1,239. FREE same-day delivery in 2–5 hours."
+  "description": "Fresh flowers in Lahore, hand-tied into bouquets: roses, sunflowers, chocolate & money bouquets from Rs. 1,239. Same-day delivery (Rs. 800) in 2–5 hours."
  },
  "/send-flowers-to-lahore-from-uk": {
   "title": "Send Flowers to Lahore from UK | Same-Day Delivery",
@@ -57,7 +57,7 @@
  },
  "/bouquets-under-2000": {
   "title": "Bouquets Under Rs. 2,000 in Lahore | Same-Day",
-  "description": "Bouquets under Rs. 2,000 in Lahore: roses, sunflowers and mixed bouquets from Rs. 1,239. FREE same-day delivery in 2–5 hours, photo before dispatch."
+  "description": "Bouquets under Rs. 2,000 in Lahore: roses, sunflowers and mixed bouquets from Rs. 1,239. Same-day delivery (Rs. 800) in 2–5 hours, photo before dispatch."
  },
  "/bestsellers": {
   "title": "Best-Selling Flowers in Lahore | Most Ordered Bouquets",
@@ -117,7 +117,7 @@
  },
  "/prices": {
   "title": "Bouquets in Lahore | Flower Bouquet Price List 2026",
-  "description": "Bouquets in Lahore — complete flower bouquet price list: hand-tied from Rs. 1,239, medium rose Rs. 2,600–3,800, large Rs. 7,499. FREE same-day delivery."
+  "description": "Bouquets in Lahore — complete flower bouquet price list: hand-tied from Rs. 1,239, medium rose Rs. 2,600–3,800, large Rs. 7,499. Same-day delivery (Rs. 800)."
  },
  "/birthday-surprises": {
   "title": "Birthday Surprise Delivery in Lahore | Flowers & Cakes",
@@ -153,23 +153,23 @@
  },
  "/delivery-areas/dha": {
   "title": "Flower Shop in DHA Lahore | Same-Day Delivery",
-  "description": "Same-day flower delivery in DHA, Lahore: Phases 1–9, Raya and Rahbar. Free delivery, bouquets from Rs. 1,239, photo before dispatch."
+  "description": "Same-day flower delivery in DHA, Lahore: Phases 1–9, Raya and Rahbar. Rs. 800 delivery, bouquets from Rs. 1,239, photo before dispatch."
  },
  "/delivery-areas/gulberg": {
   "title": "Flower Shop in Gulberg Lahore | Same-Day Delivery",
-  "description": "Flower delivery in Gulberg, Lahore: Gulberg I–V, MM Alam Road, Main Boulevard. Free delivery, bouquets from Rs. 1,239, photo before dispatch."
+  "description": "Flower delivery in Gulberg, Lahore: Gulberg I–V, MM Alam Road, Main Boulevard. Rs. 800 delivery, bouquets from Rs. 1,239, photo before dispatch."
  },
  "/delivery-areas/bahria-town": {
   "title": "Flower Shop in Bahria Town Lahore | Same-Day Delivery",
-  "description": "Same-day flower delivery in Bahria Town, Lahore: all sectors, Safari Villas, Golf View. Free delivery, bouquets from Rs. 1,239, photo before dispatch."
+  "description": "Same-day flower delivery in Bahria Town, Lahore: all sectors, Safari Villas, Golf View. Rs. 800 delivery, bouquets from Rs. 1,239, photo before dispatch."
  },
  "/delivery-areas/model-town": {
   "title": "Flower Shop in Model Town Lahore | Same-Day Delivery",
-  "description": "Same-day flower delivery in Model Town, Lahore: Blocks A–R, Model Town Extension, Link Road. Free delivery, bouquets from Rs. 1,239, photo before dispatch."
+  "description": "Same-day flower delivery in Model Town, Lahore: Blocks A–R, Model Town Extension, Link Road. Rs. 800 delivery, bouquets from Rs. 1,239, photo before dispatch."
  },
  "/delivery-areas/johar-town": {
   "title": "Flower Shop in Johar Town Lahore | Same-Day Delivery",
-  "description": "Same-day flower delivery in Johar Town, Lahore: Phases 1 and 2, Expo Centre, Emporium Mall. Free delivery, bouquets from Rs. 1,239, photo before dispatch."
+  "description": "Same-day flower delivery in Johar Town, Lahore: Phases 1 and 2, Expo Centre, Emporium Mall. Rs. 800 delivery, bouquets from Rs. 1,239, photo before dispatch."
  },
  "/delivery-areas/cantt": {
   "title": "Flower Shop in Cantt Lahore | Same-Day Delivery",
@@ -181,7 +181,7 @@
  },
  "/delivery-areas/wapda-town": {
   "title": "Flower Shop in Wapda Town Lahore | Same-Day Delivery",
-  "description": "Same-day flower delivery in Wapda Town, Lahore: Phase 1 and 2, Wapda Town roundabout. Free delivery, bouquets from Rs. 1,239, photo before dispatch."
+  "description": "Same-day flower delivery in Wapda Town, Lahore: Phase 1 and 2, Wapda Town roundabout. Rs. 800 delivery, bouquets from Rs. 1,239, photo before dispatch."
  },
  "/delivery-areas/lake-city": {
   "title": "Flower Shop in Lake City Lahore | Same-Day Delivery",

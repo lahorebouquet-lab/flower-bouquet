@@ -35,7 +35,7 @@ const FAQS = [
   },
   {
     q: "How much do bouquets cost in Islamabad?",
-    a: "Bouquets start from Rs. 1,239 for hand-tied small bouquets. Medium rose bouquets are Rs. 2,600–3,800, and large signature arrangements are Rs. 7,499. Delivery is free in listed Islamabad sectors."
+    a: "Bouquets start from Rs. 1,239 for hand-tied small bouquets. Medium rose bouquets are Rs. 2,600–3,800, and large signature arrangements are Rs. 7,499. Delivery is Rs. 800 in listed Islamabad sectors."
   },
   {
     q: "Can I get same-day bouquet delivery in Islamabad?",
@@ -88,7 +88,7 @@ export default function IslamabadBouquetsPage() {
             Flower Bouquets in Islamabad
           </h1>
           <p className="text-sm sm:text-base leading-relaxed">
-            <strong>Order fresh flower bouquets online in Islamabad</strong> — hand-tied roses, sunflowers and mixed bouquets delivered same-day in 2 to 5 hours. <strong>Starting from Rs. 1,239</strong> with free delivery in listed sectors. Order on WhatsApp: <strong>0310-4225974</strong>.
+            <strong>Order fresh flower bouquets online in Islamabad</strong> — hand-tied roses, sunflowers and mixed bouquets delivered same-day in 2 to 5 hours. <strong>Starting from Rs. 1,239</strong> with Rs. 800 delivery in listed sectors. Order on WhatsApp: <strong>0310-4225974</strong>.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2">
             <a href={whatsappLink("Hi Lahore Bouquet! I want to order a flower bouquet for delivery in Islamabad.")} target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-full bg-[#128C7E] text-white text-sm font-bold hover:opacity-90 transition-opacity">
@@ -134,7 +134,7 @@ export default function IslamabadBouquetsPage() {
             </div>
             <div className="p-5 rounded-2xl bg-white border border-[#E5DED2] text-center">
               <Truck size={20} className="text-[#8B1E2D] mx-auto" />
-              <p className="text-sm font-bold mt-2">Free Delivery</p>
+              <p className="text-sm font-bold mt-2">Rs. 800 delivery</p>
               <p className="text-xs text-[#636363] mt-1">In all listed Islamabad sectors</p>
             </div>
             <div className="p-5 rounded-2xl bg-white border border-[#E5DED2] text-center">

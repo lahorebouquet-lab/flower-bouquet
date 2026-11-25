@@ -41,7 +41,7 @@ const GUIDE: [string, string][] = [
   ["What a chocolate bouquet is", "A chocolate bouquet arranges chocolates on stems and wraps them like flowers. It is a gift that is eaten rather than watered, so it suits people who do not want flowers to wilt, or anyone who would rather receive something they can share at home. Our chocolate bouquets start from Rs. 3,800."],
   ["Who it works best for", "It is a safe choice for birthdays, Eid and Ramadan gifts, corporate thank-yous, new-baby visits and anniversaries. For a romantic occasion many people choose a flower and chocolate combination so there is something to look at and something to enjoy."],
   ["Things worth asking before you order", "Tell us if you want a particular brand or type of chocolate, if there is a nut allergy in the family, or if the gift is for a child. We will tell you what is available that day and confirm the price before you pay. Chocolate is sensitive to heat, so in summer ask for delivery at a cooler time of day."],
-  ["Delivery in Islamabad", "Delivery is the same day, in 2 to 5 hours, through our local delivery partner in covered areas of Islamabad, and delivery is free in our listed sectors. For the full sector list see our Islamabad flower delivery page. If you want to pair the bouquet with fresh roses, look at our Islamabad rose bouquets."],
+  ["Delivery in Islamabad", "Delivery is the same day, in 2 to 5 hours, through our local delivery partner in covered areas of Islamabad, and delivery is Rs. 800 in our listed sectors. For the full sector list see our Islamabad flower delivery page. If you want to pair the bouquet with fresh roses, look at our Islamabad rose bouquets."],
 ];
 
 export default function Page() {

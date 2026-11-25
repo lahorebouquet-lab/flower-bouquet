@@ -55,11 +55,11 @@ const FAQS = [
   },
   {
     q: "How much will 12 roses cost?",
-    a: "At Lahore Bouquet, bouquets with exactly 12 roses include the Native Red bouquet (12 red roses with baby's breath) for Rs. 7,249, the Queen's Aura bouquet (12 imported roses with 10 Ferrero Rocher) for Rs. 10,599, and Blushing Midnight Roses (12 fresh pink and white-edged roses) for Rs. 17,499. All three include FREE delivery in Lahore, with same-day delivery in 2–5 hours on orders placed before 4 PM."
+    a: "At Lahore Bouquet, bouquets with exactly 12 roses include the Native Red bouquet (12 red roses with baby's breath) for Rs. 7,249, the Queen's Aura bouquet (12 imported roses with 10 Ferrero Rocher) for Rs. 10,599, and Blushing Midnight Roses (12 fresh pink and white-edged roses) for Rs. 17,499. All three include Rs. 800 delivery in Lahore, with same-day delivery in 2–5 hours on orders placed before 4 PM."
   },
   {
     q: "How much does a 500 roses bouquet cost in Pakistan?",
-    a: "At Lahore Bouquet, the 500 Roses Bouquet — 500 fresh roses arranged as one grand statement piece — costs Rs. 34,999, with FREE delivery in Lahore. For a slightly smaller grand gesture, the 100 Roses Bouquet costs Rs. 12,999. Because of their size, it is best to order grand bouquets a little early so we can prepare them fresh for you."
+    a: "At Lahore Bouquet, the 500 Roses Bouquet — 500 fresh roses arranged as one grand statement piece — costs Rs. 34,999, with Rs. 800 delivery in Lahore. For a slightly smaller grand gesture, the 100 Roses Bouquet costs Rs. 12,999. Because of their size, it is best to order grand bouquets a little early so we can prepare them fresh for you."
   }
 ];
 
@@ -175,7 +175,7 @@ export default function RoseBouquetPriceBlogPage() {
           <li><strong>Valentine's Day:</strong> Red rose prices spike 30–50% in early February — order by Feb 10 to save.</li>
           <li><strong>Stem count:</strong> More roses = higher price, but per-stem cost drops in larger bouquets.</li>
           <li><strong>Add-ons:</strong> Wrapping, ribbons, cards and boxes add Rs. 200–1,000 to the base price.</li>
-          <li><strong>Delivery:</strong> At Lahore Bouquet, delivery is free across Lahore — many competitors charge Rs. 300–500 extra.</li>
+          <li><strong>Delivery:</strong> At Lahore Bouquet, delivery is a flat Rs. 800 across all listed Lahore areas, confirmed before you pay.</li>
         </ul>
 
         <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B] pt-4">Tips for Buying Roses Online</h2>
@@ -184,12 +184,12 @@ export default function RoseBouquetPriceBlogPage() {
           <li>Always ask for a <strong>real photo</strong> before dispatch — we send one on WhatsApp for every order.</li>
           <li>Check that roses are <strong>fresh-cut the same day</strong>, not cold-stored for days.</li>
           <li>For events, order <strong>1–2 days ahead</strong> to guarantee the colour and quantity you want.</li>
-          <li>Compare <strong>total cost including delivery</strong> — free delivery saves Rs. 300–500 per order.</li>
+          <li>Compare <strong>total cost including delivery</strong> — our flat Rs. 800 delivery is stated up front, so there are no surprises.</li>
         </ul>
 
         <div className="p-6 rounded-2xl bg-[#0B0B0B] text-white space-y-3 mt-8">
           <h3 className="font-playfair text-xl font-bold">Order Fresh Rose Bouquets in Lahore</h3>
-          <p className="text-sm text-[#E5DED2]">Same-day delivery in 2–5 hours • Free delivery • Photo approval on WhatsApp</p>
+          <p className="text-sm text-[#E5DED2]">Same-day delivery in 2–5 hours • Rs. 800 delivery • Photo approval on WhatsApp</p>
           <Link href="/roses" className="inline-block px-6 py-3 rounded-full bg-[#8B1E2D] text-white text-sm font-bold hover:bg-[#C6A15B] hover:text-[#0B0B0B] transition-colors">
             Browse Rose Bouquets →
           </Link>

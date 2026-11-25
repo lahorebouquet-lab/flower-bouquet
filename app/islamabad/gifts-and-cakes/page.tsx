@@ -40,7 +40,7 @@ const GUIDE: [string, string][] = [
   ["Why combos work", "A bouquet on its own is lovely, but a flower and cake combo makes a birthday or anniversary feel complete with one order and one delivery. The most requested combinations are flowers with cake, flowers with chocolates and flowers with a teddy bear."],
   ["How to decide", "Start with the budget and the person. For a birthday at the office, a cake and a small bouquet is usually enough. For an anniversary, add chocolates. For a new baby or a child's birthday, a teddy bear and flowers is a friendly choice. Tell us the budget on WhatsApp and we will suggest what fits."],
   ["Timing and cake availability", "Cakes depend on availability, so order as early in the day as you can and tell us the exact time you need the delivery. If you want a surprise at midnight, the midnight slot runs from 11:30 PM to 12:15 AM and needs to be booked early. We confirm the cake, the price and the time before the order is final."],
-  ["Delivery in Islamabad", "Same-day delivery takes 2 to 5 hours in the areas we cover through our local delivery partner, with free delivery in our listed sectors. Check our Islamabad flower delivery page for the sectors, or see Islamabad birthday flowers for ideas that go with a cake."],
+  ["Delivery in Islamabad", "Same-day delivery takes 2 to 5 hours in the areas we cover through our local delivery partner, with Rs. 800 delivery in our listed sectors. Check our Islamabad flower delivery page for the sectors, or see Islamabad birthday flowers for ideas that go with a cake."],
 ];
 
 export default function Page() {

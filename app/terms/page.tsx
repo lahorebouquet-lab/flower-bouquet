@@ -61,7 +61,7 @@ export default function TermsPage() {
       <section className="space-y-3">
         <h2 className="font-playfair text-xl font-bold text-[#0B0B0B]">1. Orders</h2>
         <p className="text-sm leading-relaxed">
-          Orders are placed through our website checkout or WhatsApp (0310-4225974). Your order is confirmed once we acknowledge it and payment is verified. Product prices on product pages are the final prices; delivery across Lahore is free.
+          Orders are placed through our website checkout or WhatsApp (0310-4225974). Your order is confirmed once we acknowledge it and payment is verified. Product prices on product pages are the final prices; delivery across listed Lahore areas is Rs. 800.
         </p>
       </section>
 

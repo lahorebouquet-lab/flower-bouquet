@@ -48,7 +48,7 @@ const FAQS = [
   },
   {
     q: "How much does flower delivery cost in Islamabad?",
-    a: "Delivery is FREE in all listed Islamabad sectors — same as Lahore. Bouquet prices: hand-tied small Rs. 1,239–1,900, medium rose Rs. 2,600–3,800, large signature Dutch rose Rs. 7,499, sunflower from Rs. 1,699, chocolate from Rs. 3,800."
+    a: "Delivery is Rs. 800 in all listed Islamabad sectors — same as Lahore. Bouquet prices: hand-tied small Rs. 1,239–1,900, medium rose Rs. 2,600–3,800, large signature Dutch rose Rs. 7,499, sunflower from Rs. 1,699, chocolate from Rs. 3,800."
   },
   {
     q: "Can I send flowers to Islamabad from abroad?",
@@ -72,7 +72,7 @@ const FAQS = [
   },
   {
     q: "What is the cheapest flower delivery option in Islamabad?",
-    a: "Hand-tied small bouquets start from Rs. 1,239 with free delivery in listed Islamabad sectors. Message us on WhatsApp (0310-4225974) with your budget and we'll suggest the best options."
+    a: "Hand-tied small bouquets start from Rs. 1,239 with Rs. 800 delivery in listed Islamabad sectors. Message us on WhatsApp (0310-4225974) with your budget and we'll suggest the best options."
   },
   {
     q: "Can I order birthday flowers for same-day delivery in Islamabad?",
@@ -80,7 +80,7 @@ const FAQS = [
   },
   {
     q: "Do you deliver flowers to DHA Islamabad and Bahria Town?",
-    a: "Yes. We deliver to DHA Islamabad (Phase 1-5) and Bahria Town with same-day 2-5 hour delivery and free delivery in listed sectors. Share the complete address on WhatsApp (0310-4225974) to confirm."
+    a: "Yes. We deliver to DHA Islamabad (Phase 1-5) and Bahria Town with same-day 2-5 hour delivery and Rs. 800 delivery in listed sectors. Share the complete address on WhatsApp (0310-4225974) to confirm."
   },
 ];
 
@@ -186,7 +186,7 @@ export default function FlowerDeliveryIslamabadPage() {
             Prices for Islamabad
           </h2>
           <p className="text-sm text-[#2A2A2A] text-center">
-            Same prices as Lahore — no hidden charges. Free delivery in all listed sectors.
+            Same prices as Lahore — no hidden charges. Rs. 800 delivery in all listed sectors.
           </p>
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse">
@@ -334,7 +334,7 @@ export default function FlowerDeliveryIslamabadPage() {
           <div className="grid sm:grid-cols-3 gap-4">
             <div className="p-5 rounded-2xl bg-[#F8F3EA] border border-[#E5DED2]">
               <h3 className="font-bold text-[#0B0B0B] text-sm flex items-center gap-2"><Truck size={16} className="text-[#8B1E2D]" /> Delivery Charges</h3>
-              <p className="text-xs text-[#2A2A2A] mt-2 leading-relaxed"><strong>FREE</strong> delivery in all listed Islamabad sectors. Confirm your area on WhatsApp (0310-4225974).</p>
+              <p className="text-xs text-[#2A2A2A] mt-2 leading-relaxed"><strong>Rs. 800</strong> delivery in all listed Islamabad sectors. Confirm your area on WhatsApp (0310-4225974).</p>
             </div>
             <div className="p-5 rounded-2xl bg-[#F8F3EA] border border-[#E5DED2]">
               <h3 className="font-bold text-[#0B0B0B] text-sm flex items-center gap-2"><Clock size={16} className="text-[#8B1E2D]" /> Delivery Time</h3>

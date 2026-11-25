@@ -119,7 +119,7 @@ export default async function CrochetBouquetsPage() {
         name: "Do you deliver crochet bouquets across Lahore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Popular in-stock styles are delivered same-day within 2 to 5 hours across Lahore with free delivery. Custom colour requests take 24 to 48 hours to handmake."
+          text: "Yes. Popular in-stock styles are delivered same-day within 2 to 5 hours across Lahore with Rs. 800 delivery. Custom colour requests take 24 to 48 hours to handmake."
         }
       }
     ]
@@ -191,7 +191,7 @@ export default async function CrochetBouquetsPage() {
             In Lahore, crochet bouquets have become a favourite for anniversaries, graduations and new homes — occasions where people want the gift to be remembered. They are also popular as bridal bouquets for nikkah ceremonies, since the bride can keep hers forever. Custom colours are possible: tell us your palette on WhatsApp and we will confirm what can be handmade, usually within 24 to 48 hours.
           </p>
           <p>
-            Popular ready-made styles are in stock for same-day delivery across Lahore, usually within 2 to 5 hours, with free delivery and a WhatsApp photo approval before dispatch. They need no water and no sunlight — just an occasional gentle dusting.
+            Popular ready-made styles are in stock for same-day delivery across Lahore, usually within 2 to 5 hours, with Rs. 800 delivery and a WhatsApp photo approval before dispatch. They need no water and no sunlight — just an occasional gentle dusting.
           </p>
         </div>
       </section>
@@ -248,7 +248,7 @@ export default async function CrochetBouquetsPage() {
           </div>
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Do you deliver crochet bouquets across Lahore?</h3>
-            <p>Yes. Popular in-stock styles are delivered same-day within 2 to 5 hours across Lahore with free delivery. Custom colour requests take 24 to 48 hours to handmake.</p>
+            <p>Yes. Popular in-stock styles are delivered same-day within 2 to 5 hours across Lahore with Rs. 800 delivery. Custom colour requests take 24 to 48 hours to handmake.</p>
           </div>
         </div>
       </section>

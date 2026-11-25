@@ -86,7 +86,7 @@ export default function IslamabadBirthdayPage() {
             Birthday Flower Delivery in Islamabad
           </h1>
           <p className="text-sm sm:text-base leading-relaxed">
-            <strong>Surprise them on their birthday with fresh flowers in Islamabad</strong> — birthday bouquets delivered same-day in 2 to 5 hours. <strong>Starting from Rs. 1,239</strong> with free delivery in listed sectors. Midnight surprise delivery available. Order on WhatsApp: <strong>0310-4225974</strong>.
+            <strong>Surprise them on their birthday with fresh flowers in Islamabad</strong> — birthday bouquets delivered same-day in 2 to 5 hours. <strong>Starting from Rs. 1,239</strong> with Rs. 800 delivery in listed sectors. Midnight surprise delivery available. Order on WhatsApp: <strong>0310-4225974</strong>.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2">
             <a href={whatsappLink("Hi Lahore Bouquet! I want to order birthday flowers for delivery in Islamabad.")} target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-full bg-[#128C7E] text-white text-sm font-bold hover:opacity-90 transition-opacity">

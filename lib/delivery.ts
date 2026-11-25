@@ -4,8 +4,9 @@
  * Used everywhere: product page, Bag, checkout steps, FAQ text + JSON-LD,
  * /delivery-areas and /prices pages.
  *
- * Current policy (owner-confirmed 2026-10-06): FREE express delivery across
- * all listed Lahore areas. "Other Lahore Area" = fee confirmed on WhatsApp.
+ * Current policy (owner-confirmed 2026-11-25): flat Rs. 800 delivery charge
+ * across all listed areas (Lahore and Islamabad). Delivery is NOT free.
+ * "Other ... Area" = fee confirmed on WhatsApp.
  */
 
 export interface DeliveryAreaFee {
@@ -15,51 +16,51 @@ export interface DeliveryAreaFee {
 }
 
 export const DELIVERY_AREA_FEES: DeliveryAreaFee[] = [
-  { area: "DHA Phase 1-4, Lahore", fee: 0 },
-  { area: "DHA Phase 5-6, Lahore", fee: 0 },
-  { area: "DHA Phase 7-9, Lahore", fee: 0 },
-  { area: "Gulberg (I, II, III), Lahore", fee: 0 },
-  { area: "Bahria Town, Lahore", fee: 0 },
-  { area: "Model Town, Lahore", fee: 0 },
-  { area: "Johar Town, Lahore", fee: 0 },
-  { area: "Cantt & Cavalry Ground, Lahore", fee: 0 },
-  { area: "Askari (1-11), Lahore", fee: 0 },
-  { area: "Wapda Town, Lahore", fee: 0 },
-  { area: "Township, Lahore", fee: 0 },
-  { area: "Faisal Town, Lahore", fee: 0 },
-  { area: "Garden Town, Lahore", fee: 0 },
-  { area: "Valencia Town, Lahore", fee: 0 },
-  { area: "Allama Iqbal Town, Lahore", fee: 0 },
-  { area: "Shadman, Lahore", fee: 0 },
-  { area: "Lake City, Lahore", fee: 0 },
+  { area: "DHA Phase 1-4, Lahore", fee: 800 },
+  { area: "DHA Phase 5-6, Lahore", fee: 800 },
+  { area: "DHA Phase 7-9, Lahore", fee: 800 },
+  { area: "Gulberg (I, II, III), Lahore", fee: 800 },
+  { area: "Bahria Town, Lahore", fee: 800 },
+  { area: "Model Town, Lahore", fee: 800 },
+  { area: "Johar Town, Lahore", fee: 800 },
+  { area: "Cantt & Cavalry Ground, Lahore", fee: 800 },
+  { area: "Askari (1-11), Lahore", fee: 800 },
+  { area: "Wapda Town, Lahore", fee: 800 },
+  { area: "Township, Lahore", fee: 800 },
+  { area: "Faisal Town, Lahore", fee: 800 },
+  { area: "Garden Town, Lahore", fee: 800 },
+  { area: "Valencia Town, Lahore", fee: 800 },
+  { area: "Allama Iqbal Town, Lahore", fee: 800 },
+  { area: "Shadman, Lahore", fee: 800 },
+  { area: "Lake City, Lahore", fee: 800 },
   { area: "Other Lahore Area", fee: null },
 ];
 
 /** Islamabad delivery areas — vendor-confirmed same-day 2–5 hr delivery. */
 export const ISLAMABAD_AREA_FEES: DeliveryAreaFee[] = [
-  { area: "F-6, Islamabad", fee: 0 },
-  { area: "F-7, Islamabad", fee: 0 },
-  { area: "F-8, Islamabad", fee: 0 },
-  { area: "F-10, Islamabad", fee: 0 },
-  { area: "F-11, Islamabad", fee: 0 },
-  { area: "G-6, Islamabad", fee: 0 },
-  { area: "G-7, Islamabad", fee: 0 },
-  { area: "G-9, Islamabad", fee: 0 },
-  { area: "G-10, Islamabad", fee: 0 },
-  { area: "G-11, Islamabad", fee: 0 },
-  { area: "G-13, Islamabad", fee: 0 },
-  { area: "I-8, Islamabad", fee: 0 },
-  { area: "I-9, Islamabad", fee: 0 },
-  { area: "I-10, Islamabad", fee: 0 },
-  { area: "E-7, Islamabad", fee: 0 },
-  { area: "E-11, Islamabad", fee: 0 },
-  { area: "D-12, Islamabad", fee: 0 },
-  { area: "B-17, Islamabad", fee: 0 },
-  { area: "Blue Area, Islamabad", fee: 0 },
-  { area: "DHA, Islamabad", fee: 0 },
-  { area: "Bahria Town, Islamabad", fee: 0 },
-  { area: "Gulberg Greens, Islamabad", fee: 0 },
-  { area: "Bahria Enclave, Islamabad", fee: 0 },
+  { area: "F-6, Islamabad", fee: 800 },
+  { area: "F-7, Islamabad", fee: 800 },
+  { area: "F-8, Islamabad", fee: 800 },
+  { area: "F-10, Islamabad", fee: 800 },
+  { area: "F-11, Islamabad", fee: 800 },
+  { area: "G-6, Islamabad", fee: 800 },
+  { area: "G-7, Islamabad", fee: 800 },
+  { area: "G-9, Islamabad", fee: 800 },
+  { area: "G-10, Islamabad", fee: 800 },
+  { area: "G-11, Islamabad", fee: 800 },
+  { area: "G-13, Islamabad", fee: 800 },
+  { area: "I-8, Islamabad", fee: 800 },
+  { area: "I-9, Islamabad", fee: 800 },
+  { area: "I-10, Islamabad", fee: 800 },
+  { area: "E-7, Islamabad", fee: 800 },
+  { area: "E-11, Islamabad", fee: 800 },
+  { area: "D-12, Islamabad", fee: 800 },
+  { area: "B-17, Islamabad", fee: 800 },
+  { area: "Blue Area, Islamabad", fee: 800 },
+  { area: "DHA, Islamabad", fee: 800 },
+  { area: "Bahria Town, Islamabad", fee: 800 },
+  { area: "Gulberg Greens, Islamabad", fee: 800 },
+  { area: "Bahria Enclave, Islamabad", fee: 800 },
   { area: "Other Islamabad Area", fee: null },
 ];
 
@@ -69,7 +70,7 @@ export const ALL_DELIVERY_AREA_FEES: DeliveryAreaFee[] = [
   ...ISLAMABAD_AREA_FEES,
 ];
 
-/** Optional order-value threshold for free delivery. null = no threshold. */
+/** Optional order-value threshold for Rs. 800 delivery. null = no threshold. */
 export const FREE_DELIVERY_THRESHOLD: number | null = null;
 
 export function getDeliveryFee(area: string): { fee: number | null; label: string } {
@@ -84,7 +85,7 @@ export function getDeliveryFee(area: string): { fee: number | null; label: strin
 }
 
 /** Short policy line for UI. */
-export const DELIVERY_POLICY_LINE = "Free express delivery across all listed Lahore areas";
+export const DELIVERY_POLICY_LINE = "Express delivery (Rs. 800) across all listed Lahore areas";
 
 /* ------------------------------------------------------------------ */
 /* Delivery slots with cutoff logic                                     */

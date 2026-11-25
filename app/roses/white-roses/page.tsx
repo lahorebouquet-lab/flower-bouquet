@@ -116,7 +116,7 @@ export default async function WhiteRosesPage() {
         name: "Do you deliver white rose bouquets across Lahore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. We deliver fresh white rose bouquets across Lahore the same day, usually within 2 to 5 hours, with free delivery and a WhatsApp photo before dispatch."
+          text: "Yes. We deliver fresh white rose bouquets across Lahore the same day, usually within 2 to 5 hours, with Rs. 800 delivery and a WhatsApp photo before dispatch."
         }
       }
     ]
@@ -188,7 +188,7 @@ export default async function WhiteRosesPage() {
             Our white rose bouquets in Lahore come in single stems, classic dozens and grand 50-rose arrangements, styled with soft green fillers or baby&apos;s breath and wrapped in pink, cream or black paper to match the mood. For a striking contrast, the Duo Royale pairs white and red roses in a single bouquet — a popular pick for engagements.
           </p>
           <p>
-            Every bouquet is cut fresh and delivered across Lahore the same day, usually within 2 to 5 hours, with free delivery. You approve a photo on WhatsApp before it leaves our studio, so the roses that arrive are exactly the ones you chose. With fresh water and a cool spot, white roses stay beautiful for 5 to 7 days.
+            Every bouquet is cut fresh and delivered across Lahore the same day, usually within 2 to 5 hours, with Rs. 800 delivery. You approve a photo on WhatsApp before it leaves our studio, so the roses that arrive are exactly the ones you chose. With fresh water and a cool spot, white roses stay beautiful for 5 to 7 days.
           </p>
         </div>
       </section>
@@ -241,7 +241,7 @@ export default async function WhiteRosesPage() {
           </div>
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Do you deliver white rose bouquets across Lahore?</h3>
-            <p>Yes. We deliver fresh white rose bouquets across Lahore the same day, usually within 2 to 5 hours, with free delivery and a WhatsApp photo before dispatch.</p>
+            <p>Yes. We deliver fresh white rose bouquets across Lahore the same day, usually within 2 to 5 hours, with Rs. 800 delivery and a WhatsApp photo before dispatch.</p>
           </div>
         </div>
       </section>

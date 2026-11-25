@@ -47,7 +47,7 @@ const benefits = [
     icon: Truck,
     eyebrow: "Same-day service",
     title: "At your door in 2–5 hours",
-    copy: "Fast delivery across listed Lahore areas, with free delivery where we serve.",
+    copy: "Fast delivery across listed Lahore areas, with Rs. 800 delivery where we serve.",
   },
   {
     icon: Camera,
@@ -185,9 +185,9 @@ const faqs = [
       "Same-day delivery is available, usually within 2–5 hours, depending on the area and order time.",
   },
   {
-    question: "Do you offer free delivery?",
+    question: "Do you offer Rs. 800 delivery?",
     answer:
-      "Yes. Free delivery is available across the listed Lahore delivery areas. If you are outside them, message us and we will confirm availability.",
+      "Yes. Rs. 800 delivery is available across the listed Lahore delivery areas. If you are outside them, message us and we will confirm availability.",
   },
   {
     question: "Can I see the bouquet before delivery?",
@@ -320,7 +320,7 @@ export default function LandingPage() {
           <span className="announcement-dot" />
           <span>Same-day flower, cake &amp; gift delivery across Lahore</span>
           <span className="announcement-divider" />
-          <strong>Free delivery in listed areas</strong>
+          <strong>Rs. 800 delivery in listed areas</strong>
         </div>
       </div>
 
@@ -393,7 +393,7 @@ export default function LandingPage() {
               </p>
               <div className="hero-trust">
                 <span>
-                  <Check size={14} /> Free delivery in listed areas
+                  <Check size={14} /> Rs. 800 delivery in listed areas
                 </span>
                 <span>
                   <Check size={14} /> Photo before dispatch
@@ -443,7 +443,7 @@ export default function LandingPage() {
             <div>
               <Truck size={22} />
               <span>
-                <b>Free 2–5 hour delivery</b>
+                <b>2–5 hour delivery (Rs. 800)</b>
                 <small>across listed Lahore areas</small>
               </span>
             </div>
@@ -771,7 +771,7 @@ export default function LandingPage() {
                 </span>
               </div>
               <div className="delivery-sticker">
-                free delivery
+                Rs. 800 delivery
                 <br />
                 <b>across listed areas</b>
               </div>
@@ -792,7 +792,7 @@ export default function LandingPage() {
               </p>
               <div className="delivery-points">
                 <span>
-                  <Check size={15} /> Free delivery across listed areas
+                  <Check size={15} /> Rs. 800 delivery across listed areas
                 </span>
                 <span>
                   <Check size={15} /> Outside the list? Ask us on WhatsApp

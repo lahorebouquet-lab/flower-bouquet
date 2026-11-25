@@ -269,7 +269,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
         "@type": "OfferShippingDetails",
         "shippingRate": {
           "@type": "MonetaryAmount",
-          "value": 0,
+          "value": 800,
           "currency": "PKR"
         },
         "shippingDestination": {
@@ -477,7 +477,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               </div>
               <div className="p-3.5 rounded-2xl bg-white border border-[#E5DED2] shadow-xs">
                 <span className="font-semibold text-[#0B0B0B] block">Delivery</span>
-                <span className="text-[#2A2A2A]">FREE same-day delivery in Lahore (2–5 hours) · Midnight slot 11:30 PM–12:15 AM</span>
+                <span className="text-[#2A2A2A]">Same-day delivery (Rs. 800) in Lahore (2–5 hours) · Midnight slot 11:30 PM–12:15 AM</span>
               </div>
               <div className="p-3.5 rounded-2xl bg-white border border-[#E5DED2] shadow-xs">
                 <span className="font-semibold text-[#0B0B0B] block">Freshness &amp; Photo Proof</span>

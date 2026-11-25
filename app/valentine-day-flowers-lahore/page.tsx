@@ -158,7 +158,7 @@ export default function ValentineDayFlowersLahorePage() {
         "@type": "Product",
         name: p.name,
         url: `${SITE_URL}/products/${p.slug}`,
-        description: p.desc || `${p.name} — fresh flowers with free same-day delivery across Lahore. Order online at Lahore Bouquet.`,
+        description: p.desc || `${p.name} — fresh flowers with same-day delivery (Rs. 800) across Lahore. Order online at Lahore Bouquet.`,
         brand: { "@type": "Brand", name: "Lahore Bouquet" },
         image: `${SITE_URL}/og-image.jpg`,
         offers: {
@@ -171,7 +171,7 @@ export default function ValentineDayFlowersLahorePage() {
           url: `${SITE_URL}/products/${p.slug}`,
           shippingDetails: {
             "@type": "OfferShippingDetails",
-            shippingRate: { "@type": "MonetaryAmount", value: 0, currency: "PKR" },
+            shippingRate: { "@type": "MonetaryAmount", value: 800, currency: "PKR" },
             shippingDestination: { "@type": "DefinedRegion", addressCountry: "PK", addressRegion: "Lahore" },
             deliveryTime: {
               "@type": "ShippingDeliveryTime",
@@ -312,7 +312,7 @@ export default function ValentineDayFlowersLahorePage() {
         </p>
         <p className="text-xs text-[#BDBDBD] leading-relaxed flex items-start gap-2">
           <MapPin className="w-4 h-4 shrink-0 mt-0.5 text-[#C6A15B]" />
-          Same-day and midnight delivery across all of Lahore — FREE delivery on Valentine&apos;s orders.
+          Same-day and midnight delivery across all of Lahore — Rs. 800 delivery on Valentine&apos;s orders.
         </p>
       </section>
 

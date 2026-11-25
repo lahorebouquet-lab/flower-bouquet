@@ -9,22 +9,22 @@ import { withSeo } from "@/lib/seo";
 
 export const metadata: Metadata = withSeo("/delivery-areas/askari", {
   title: {
-    absolute: "Flower Delivery in Askari Lahore | FREE delivery, 2–3 hrs",
+    absolute: "Flower Delivery in Askari Lahore | Rs. 800 delivery, 2–3 hrs",
   },
-  description: "Same-day flower delivery to Askari 1, 5, 9, 10 & 11 (Bedian Road) Lahore in 2–3 hours. FREE delivery. Gated-community protocol, WhatsApp photo proof",
+  description: "Same-day flower delivery to Askari 1, 5, 9, 10 & 11 (Bedian Road) Lahore in 2–3 hours. Rs. 800 delivery. Gated-community protocol, WhatsApp photo proof",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/askari`,
   },
   openGraph: {
-    title: "Flower Delivery in Askari Lahore | FREE delivery, 2–3 hrs",
-    description: "Same-day flower delivery to Askari 1, 5, 9, 10 & 11 (Bedian Road) Lahore in 2–3 hours. FREE delivery. Gated-community protocol, WhatsApp photo proof",
+    title: "Flower Delivery in Askari Lahore | Rs. 800 delivery, 2–3 hrs",
+    description: "Same-day flower delivery to Askari 1, 5, 9, 10 & 11 (Bedian Road) Lahore in 2–3 hours. Rs. 800 delivery. Gated-community protocol, WhatsApp photo proof",
     url: `${SITE_URL}/delivery-areas/askari`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in Askari Lahore | FREE delivery, 2–3 hrs",
+        alt: "Flower Delivery in Askari Lahore | Rs. 800 delivery, 2–3 hrs",
       },
     ],
   }
@@ -68,7 +68,7 @@ export default async function AskariDeliveryPage() {
         name: "Which Askari sectors in Lahore do you deliver to?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "We service all Askari communities across Lahore — Askari 1 and 2 (Sarwar Road, Cantt), Askari 3 and 4, Askari 5 and 6, Askari 9 and 10 (Zarrar Shaheed Road, Airport Road), and Askari 11 (Bedian Road). Delivery takes 2 to 3 hours with free delivery.",
+          text: "We service all Askari communities across Lahore — Askari 1 and 2 (Sarwar Road, Cantt), Askari 3 and 4, Askari 5 and 6, Askari 9 and 10 (Zarrar Shaheed Road, Airport Road), and Askari 11 (Bedian Road). Delivery takes 2 to 3 hours with Rs. 800 delivery.",
         },
       },
       {
@@ -154,11 +154,11 @@ export default async function AskariDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          We service all Askari communities across Lahore, including Askari 1 (Sarwar Road), Askari 5, Askari 9, Askari 10 (Airport Road), and Askari 11 (Bedian Road) — delivered in 2 to 3 hours with free delivery. Our couriers carry valid identification for gated security clearance, and every hand-tied bouquet is photographed on WhatsApp before dispatch so you approve exactly what arrives. To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your Askari sector and street — approve the bouquet photo we send, then pay by JazzCash, EasyPaisa, bank transfer or international card.
+          We service all Askari communities across Lahore, including Askari 1 (Sarwar Road), Askari 5, Askari 9, Askari 10 (Airport Road), and Askari 11 (Bedian Road) — delivered in 2 to 3 hours with Rs. 800 delivery. Our couriers carry valid identification for gated security clearance, and every hand-tied bouquet is photographed on WhatsApp before dispatch so you approve exactly what arrives. To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your Askari sector and street — approve the bouquet photo we send, then pay by JazzCash, EasyPaisa, bank transfer or international card.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
-          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 2 to 3 hours • FREE delivery</span>
+          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 2 to 3 hours • Rs. 800 delivery</span>
           <span className="flex items-center gap-1.5"><Camera className="w-4 h-4 text-[#C6A15B]" /> Photo on WhatsApp before dispatch</span>
           <a 
             href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20flowers%20to%20Askari%20Lahore."
@@ -189,7 +189,7 @@ export default async function AskariDeliveryPage() {
           <h2 className="font-playfair text-xl font-bold">Delivery time & fee — Askari Housing Lahore</h2>
         </div>
         <ul className="space-y-2 text-xs text-[#2A2A2A] list-disc list-inside leading-relaxed">
-          <li><strong>Delivery fee: FREE</strong> — across Askari 1 to 11, including Bedian Road sectors. No hidden charges.</li>
+          <li><strong>Delivery fee: Rs. 800</strong> — across Askari 1 to 11, including Bedian Road sectors. No hidden charges.</li>
           <li><strong>Delivery time: 2 to 3 hours</strong>, 7 days a week, from 9 AM to 1 AM, via the Ring Road and Bedian Road corridor.</li>
           <li><strong>Midnight slot:</strong> available every night — message us on WhatsApp by the evening to reserve it.</li>
           <li><strong>Payments:</strong> JazzCash, EasyPaisa, bank transfer and international cards.</li>
@@ -233,7 +233,7 @@ export default async function AskariDeliveryPage() {
         <div className="divide-y divide-[rgba(198,161,91,0.25)]">
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Which Askari sectors in Lahore do you deliver to?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">We service all Askari communities across Lahore — Askari 1 and 2 (Sarwar Road, Cantt), Askari 3 and 4, Askari 5 and 6, Askari 9 and 10 (Zarrar Shaheed Road, Airport Road), and Askari 11 (Bedian Road). Delivery takes 2 to 3 hours with free delivery.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">We service all Askari communities across Lahore — Askari 1 and 2 (Sarwar Road, Cantt), Askari 3 and 4, Askari 5 and 6, Askari 9 and 10 (Zarrar Shaheed Road, Airport Road), and Askari 11 (Bedian Road). Delivery takes 2 to 3 hours with Rs. 800 delivery.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How do your riders clear Askari security gates?</h3>
@@ -274,7 +274,7 @@ export default async function AskariDeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your Askari sector, street and a guard contact number, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,239 — including which roses and seasonal flowers arrived today.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh and send you a photo on WhatsApp before the rider leaves — along with the rider&apos;s name and number so your sector gate clears entry in minutes.</li>
-          <li><strong>Pay your way and receive.</strong> Pay by JazzCash, EasyPaisa, bank transfer or an international card. The rider clears your sector gate and reaches your doorstep within 2–3 hours with free delivery — midnight slot available.</li>
+          <li><strong>Pay your way and receive.</strong> Pay by JazzCash, EasyPaisa, bank transfer or an international card. The rider clears your sector gate and reaches your doorstep within 2–3 hours with Rs. 800 delivery — midnight slot available.</li>
         </ol>
       </section>
 
@@ -303,15 +303,15 @@ export default async function AskariDeliveryPage() {
         <div className="grid sm:grid-cols-3 gap-3">
           <Link href="/delivery-areas/cantt" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Lahore Cantt →</p>
-            <p className="text-xs text-[#2A2A2A]">FREE • 2–2.5 hours. Saddar, Cavalry Ground, PAF Colony and CMH.</p>
+            <p className="text-xs text-[#2A2A2A]">Rs. 800 • 2–2.5 hours. Saddar, Cavalry Ground, PAF Colony and CMH.</p>
           </Link>
           <Link href="/delivery-areas/dha" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">DHA Lahore →</p>
-            <p className="text-xs text-[#2A2A2A]">FREE • 2–3 hours. Phases 1–9, Defence Raya and Sector Y.</p>
+            <p className="text-xs text-[#2A2A2A]">Rs. 800 • 2–3 hours. Phases 1–9, Defence Raya and Sector Y.</p>
           </Link>
           <Link href="/delivery-areas/wapda-town" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Wapda Town →</p>
-            <p className="text-xs text-[#2A2A2A]">FREE • 2.5–3.5 hours. Wapda Town, PIA Society, Valencia and Township.</p>
+            <p className="text-xs text-[#2A2A2A]">Rs. 800 • 2.5–3.5 hours. Wapda Town, PIA Society, Valencia and Township.</p>
           </Link>
         </div>
       </section>

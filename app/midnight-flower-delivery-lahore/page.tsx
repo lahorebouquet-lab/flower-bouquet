@@ -71,7 +71,7 @@ const FAQS = [
   },
   {
     q: "How much does midnight flower delivery cost in Lahore?",
-    a: "Midnight delivery is free in listed Lahore areas. Hand-tied bouquets start at Rs. 1,239–1,900, medium rose bouquets at Rs. 2,600–3,800 — all prices are confirmed on WhatsApp before dispatch.",
+    a: "Midnight delivery is Rs. 800 in listed Lahore areas. Hand-tied bouquets start at Rs. 1,239–1,900, medium rose bouquets at Rs. 2,600–3,800 — all prices are confirmed on WhatsApp before dispatch.",
   },
   {
     q: "What payment methods do you accept for midnight delivery?",

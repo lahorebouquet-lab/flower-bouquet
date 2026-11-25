@@ -76,7 +76,7 @@ const FAQS = [
   },
   {
     q: "Can I get gajray delivered in Lahore on Gajra Day 2026?",
-    a: "Yes. Order on WhatsApp (0310-4225974) — for Gajra Day, booking a day ahead is best, and orders placed before 4:00 PM are still delivered the same day within 2–5 hours with FREE delivery. We photograph your actual gajray for WhatsApp approval before dispatch, and you can pay by bank transfer, JazzCash, EasyPaisa or card."
+    a: "Yes. Order on WhatsApp (0310-4225974) — for Gajra Day, booking a day ahead is best, and orders placed before 4:00 PM are still delivered the same day within 2–5 hours with Rs. 800 delivery. We photograph your actual gajray for WhatsApp approval before dispatch, and you can pay by bank transfer, JazzCash, EasyPaisa or card."
   }
 ];
 
@@ -171,7 +171,7 @@ export default function GajrayLahorePage() {
           <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Gajray Styles & Prices in Lahore</h2>
         </div>
         <p className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed max-w-3xl">
-          Transparent pricing — no hidden charges. Delivery is free across all listed Lahore areas — see our <Link href="/delivery-areas" className="text-[#8B1E2D] underline">delivery areas</Link> page.
+          Transparent pricing — no hidden charges. Delivery is Rs. 800 across all listed Lahore areas — see our <Link href="/delivery-areas" className="text-[#8B1E2D] underline">delivery areas</Link> page.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {OPTIONS.map((s) => (
@@ -213,7 +213,7 @@ export default function GajrayLahorePage() {
       <section className="p-6 sm:p-8 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] shadow-sm space-y-4">
         <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Fresh Gajray Delivery Across Lahore</h2>
         <p className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed">
-          Gajray are at their best when they're fresh — that's why we make them the same morning and deliver within 2–5 hours across <strong>DHA</strong> (all phases), <strong>Gulberg</strong>, <strong>Model Town</strong>, <strong>Johar Town</strong>, <strong>Bahria Town</strong>, <strong>Cantt</strong>, <strong>Wapda Town</strong> and <strong>Askari</strong>. For early-morning mehndi functions, order the night before and pick a morning slot — your gajray arrive cool, fragrant and photo-ready. Delivery is <strong>free</strong> across all listed areas.
+          Gajray are at their best when they're fresh — that's why we make them the same morning and deliver within 2–5 hours across <strong>DHA</strong> (all phases), <strong>Gulberg</strong>, <strong>Model Town</strong>, <strong>Johar Town</strong>, <strong>Bahria Town</strong>, <strong>Cantt</strong>, <strong>Wapda Town</strong> and <strong>Askari</strong>. For early-morning mehndi functions, order the night before and pick a morning slot — your gajray arrive cool, fragrant and photo-ready. Delivery is <strong>Rs. 800</strong> across all listed areas.
         </p>
         <p className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed">
           Ordering from abroad for a family wedding? We deliver gajray for overseas Pakistanis every week — pay by international card from the <strong>UK, USA or UAE</strong>, approve the photo on WhatsApp, and we'll handle the Lahore delivery.

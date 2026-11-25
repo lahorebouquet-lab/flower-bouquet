@@ -43,7 +43,7 @@ const FAQS = [
   },
   {
     q: "How much do anniversary bouquets cost in Islamabad?",
-    a: "Anniversary rose bouquets start from Rs. 1,499. Premium and luxury options go up to Rs. 7,499. Delivery is free in listed sectors."
+    a: "Anniversary rose bouquets start from Rs. 1,499. Premium and luxury options go up to Rs. 7,499. Delivery is Rs. 800 in listed sectors."
   },
 ];
 
@@ -86,7 +86,7 @@ export default function IslamabadAnniversaryPage() {
             Anniversary Flowers in Islamabad
           </h1>
           <p className="text-sm sm:text-base leading-relaxed">
-            <strong>Celebrate your anniversary with romantic rose bouquets in Islamabad</strong> — delivered same-day in 2 to 5 hours. <strong>From Rs. 1,499</strong> with free delivery in listed sectors. Midnight surprise delivery available. Order on WhatsApp: <strong>0310-4225974</strong>.
+            <strong>Celebrate your anniversary with romantic rose bouquets in Islamabad</strong> — delivered same-day in 2 to 5 hours. <strong>From Rs. 1,499</strong> with Rs. 800 delivery in listed sectors. Midnight surprise delivery available. Order on WhatsApp: <strong>0310-4225974</strong>.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2">
             <a href={whatsappLink("Hi Lahore Bouquet! I want to order anniversary flowers for delivery in Islamabad.")} target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-full bg-[#128C7E] text-white text-sm font-bold hover:opacity-90 transition-opacity">

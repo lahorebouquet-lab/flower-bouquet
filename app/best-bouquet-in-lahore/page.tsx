@@ -133,7 +133,7 @@ const FAQS = [
   },
   {
     q: "When should I order for same-day or midnight delivery in Lahore?",
-    a: "For same-day delivery, order before 4:00 PM and your bouquet arrives within 2 to 5 hours. For a midnight birthday surprise, the slot is 11:30 PM–12:15 AM and must be booked before 8:00 PM. Delivery is free across listed Lahore areas, including DHA, Gulberg, Model Town, Johar Town and Bahria Town.",
+    a: "For same-day delivery, order before 4:00 PM and your bouquet arrives within 2 to 5 hours. For a midnight birthday surprise, the slot is 11:30 PM–12:15 AM and must be booked before 8:00 PM. Delivery is Rs. 800 across listed Lahore areas, including DHA, Gulberg, Model Town, Johar Town and Bahria Town.",
   },
 ];
 
@@ -304,7 +304,7 @@ export default async function BestBouquetInLahorePage() {
               What Each Budget Honestly Buys
             </h2>
             <p className="text-center text-sm text-[#2A2A2A] mb-8 max-w-2xl mx-auto leading-relaxed">
-              No inflated promises — these are the real bands across our catalogue. Every order includes free delivery in listed Lahore areas and a WhatsApp photo before dispatch.
+              No inflated promises — these are the real bands across our catalogue. Every order includes Rs. 800 delivery in listed Lahore areas and a WhatsApp photo before dispatch.
             </p>
             <div className="grid sm:grid-cols-2 gap-4">
               {BUDGET_BANDS.map((b) => (
@@ -345,8 +345,8 @@ export default async function BestBouquetInLahorePage() {
                   a: "Order before 4:00 PM for same-day delivery in 2 to 5 hours. Midnight surprises (11:30 PM–12:15 AM) are booked before 8:00 PM.",
                 },
                 {
-                  q: "Is delivery free in my area?",
-                  a: "Free across all listed Lahore areas — DHA, Gulberg, Model Town, Johar Town, Bahria Town, Cantt and more. For unlisted areas, the fee is confirmed on WhatsApp before you order.",
+                  q: "Is delivery (Rs. 800) in my area?",
+                  a: "Rs. 800 across all listed Lahore areas — DHA, Gulberg, Model Town, Johar Town, Bahria Town, Cantt and more. For unlisted areas, the fee is confirmed on WhatsApp before you order.",
                 },
                 {
                   q: "How can I pay?",

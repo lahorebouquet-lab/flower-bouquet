@@ -222,7 +222,7 @@ export default async function MoneyBouquetsPage() {
             Every bouquet is made to your budget. Choose the total cash amount and the denominations — Rs. 100, 500, 1,000 or 5,000 — and we arrange fresh, uncreased notes in a design that matches the occasion. The craftsmanship charge for the design, roses and wrap starts from Rs. 4,500, and the cash amount you choose is added on top at face value.
           </p>
           <p>
-            Money bouquets are our most requested premium gift for weddings and salami in Lahore, and they are equally popular for Eid, birthdays and graduations. We deliver across Lahore the same day, usually within 2 to 5 hours, with free delivery — and you approve a photo on WhatsApp before the bouquet leaves our studio.
+            Money bouquets are our most requested premium gift for weddings and salami in Lahore, and they are equally popular for Eid, birthdays and graduations. We deliver across Lahore the same day, usually within 2 to 5 hours, with Rs. 800 delivery — and you approve a photo on WhatsApp before the bouquet leaves our studio.
           </p>
         </div>
       </section>
