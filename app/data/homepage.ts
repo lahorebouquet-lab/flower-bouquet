@@ -10,7 +10,7 @@ export const HOMEPAGE_FAQS: FAQItem[] = [
   },
   {
     q: "Where can I find a flower shop near me in Lahore?",
-    a: "Lahore Bouquet delivers fresh flowers across Lahore the same day — DHA, Gulberg, Model Town, Johar Town, Bahria Town, Cantt and more, with free delivery. Just order online and we'll bring beautiful fresh bouquets right to your door, the very same day."
+    a: "Lahore Bouquet delivers fresh flowers across Lahore the same day — DHA, Gulberg, Model Town, Johar Town, Bahria Town, Cantt and more, with Rs. 800 delivery. Just order online and we'll bring beautiful fresh bouquets right to your door, the very same day."
   },
   {
     q: "Which flower shops in Lahore deliver the same day?",
@@ -30,11 +30,11 @@ export const HOMEPAGE_FAQS: FAQItem[] = [
   },
   {
     q: "Which areas of Lahore do you deliver flowers to?",
-    a: "We deliver across Lahore: DHA (all phases), Gulberg, Model Town, Johar Town, Bahria Town, Cantt, Wapda Town, Askari, Valencia, EME, Fazaia, Lake City and surrounding areas. Delivery is free across all listed areas — see our delivery areas page for the full list."
+    a: "We deliver across Lahore: DHA (all phases), Gulberg, Model Town, Johar Town, Bahria Town, Cantt, Wapda Town, Askari, Valencia, EME, Fazaia, Lake City and surrounding areas. Delivery is Rs. 800 across all listed areas — see our delivery areas page for the full list."
   },
   {
     q: "How much is the delivery fee in Lahore?",
-    a: "Delivery is free across all listed Lahore areas — no hidden charges. If your area isn't listed, the fee is confirmed on WhatsApp before you order."
+    a: "Delivery is Rs. 800 across all listed Lahore areas — no hidden charges. If your area isn't listed, the fee is confirmed on WhatsApp before you order."
   },
   {
     q: "Can I get midnight flower delivery in Lahore?",

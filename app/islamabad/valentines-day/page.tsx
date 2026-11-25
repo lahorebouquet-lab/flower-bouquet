@@ -30,6 +30,17 @@ const FAQS = [
   { q: "Can I order Valentine's Day flowers for Islamabad?", a: "Yes. Our Valentine's Day 2027 collection (Rs. 5,000–100,000) is available for Islamabad delivery. Message us on WhatsApp (0310-4225974) to confirm availability for your area." },
   { q: "When should I order for Valentine's Day 2027?", a: "Order as early as possible — Valentine's week is our busiest period. Early booking ensures availability and your preferred delivery slot." },
   { q: "Is midnight Valentine's delivery available in Islamabad?", a: "Midnight surprise delivery (11:30 PM–12:15 AM) may be available — confirm early on WhatsApp as slots are limited." },
+  { q: "Can I schedule a delivery for 14 February?", a: "Yes. Share the date, the time window and the address when you order, and we will confirm." },
+  { q: "Can I send a surprise to an office?", a: "Yes. Give us the office address, the floor or reception details and the recipient's name. Keep a second contact number ready." },
+  { q: "What if I order on 13 or 14 February?", a: "Late orders are possible only if stock and slots remain. Message us as early in the day as you can." },
+];
+
+const GUIDE_TITLE = "Planning Valentine's Day Flowers in Islamabad";
+const GUIDE: [string, string][] = [
+  ["Order early, even if it feels too soon", "Valentine's week is our busiest period and delivery slots fill up. Booking early is the single best thing you can do to get the bouquet you want at the time you want it. Our Valentine's deals range from Rs. 5,000 to Rs. 100,000, so there is a choice for every budget."],
+  ["Midnight surprises", "A midnight delivery from 11:30 PM to 12:15 AM is the classic way to start 14 February. Slots are limited and must be confirmed early on WhatsApp, with the full address and a second contact number so the delivery partner can reach the recipient."],
+  ["Choosing between the deals", "Smaller deals suit a simple, thoughtful gesture. Mid-range bouquets suit most couples. The larger luxury arrangements are for proposals and big anniversaries. Send us your budget and the person's taste, and we will suggest the right one. All the deals are listed with details on our Valentine's page."],
+  ["Delivery in Islamabad", "Same-day delivery in Islamabad takes 2 to 5 hours in covered areas through our local delivery partner, with Rs. 800 delivery in our listed sectors. Confirm availability for your sector on WhatsApp when you order, since Valentine's demand is high. See our Islamabad flower delivery page for the sector list."],
 ];
 
 export default function Page() {
@@ -66,6 +77,22 @@ export default function Page() {
             ))}
           </div>
           <p className="text-center text-sm"><Link href="/valentine-day-flowers-lahore" className="text-[#C6A15B] underline font-semibold">See all 7 deals with details →</Link></p>
+        </div>
+      </section>
+      <section className="w-full py-16 px-4 sm:px-6 border-b border-[#E5DED2] bg-[#F8F3EA]">
+        <div className="max-w-3xl mx-auto space-y-8">
+          <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012] text-center">{GUIDE_TITLE}</h2>
+          {GUIDE.map(([heading, body], i) => (
+            <div key={i} className="space-y-2">
+              <h3 className="font-playfair text-lg sm:text-xl font-bold text-[#101012]">{heading}</h3>
+              <p className="text-sm sm:text-base leading-relaxed">{body}</p>
+            </div>
+          ))}
+          <p className="text-sm text-center text-[#636363]">
+            More: <Link href="/flower-delivery-islamabad" className="underline text-[#8B1E2D]">Flower delivery in Islamabad</Link>
+            {" · "}<Link href="/islamabad/bouquets" className="underline text-[#8B1E2D]">Bouquets</Link>
+            {" · "}<Link href="/islamabad/flower-prices" className="underline text-[#8B1E2D]">Prices</Link>
+          </p>
         </div>
       </section>
       <section className="w-full py-16 px-4 sm:px-6 border-t border-[#2A2A2A]">

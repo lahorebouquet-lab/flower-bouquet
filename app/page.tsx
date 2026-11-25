@@ -5,15 +5,15 @@ import { HOMEPAGE_FAQS } from "./data/homepage";
 
 export const metadata: Metadata = withSeo("/", {
   title: {
-    absolute: "Flower Delivery in Lahore | Free Same-Day Delivery — Lahore Bouquet",
+    absolute: "Flower Delivery in Lahore | Same-day delivery (Rs. 800) — Lahore Bouquet",
   },
-  description: "Fresh flower delivery in Lahore with FREE same-day delivery. Hand-tied bouquets from Rs. 1,239 — roses, sunflowers & chocolate bouquets. Order online or WhatsApp.",
+  description: "Fresh flower delivery in Lahore with same-day delivery (Rs. 800). Hand-tied bouquets from Rs. 1,239 — roses, sunflowers & chocolate bouquets. Order online or WhatsApp.",
   alternates: {
     canonical: `${SITE_URL}`,
   },
   openGraph: {
-    title: "Flower Delivery in Lahore | Free Same-Day Delivery — Lahore Bouquet",
-    description: "Fresh flower delivery in Lahore with FREE same-day delivery. Hand-tied bouquets from Rs. 1,239 — roses, sunflowers & chocolate bouquets. Order online or WhatsApp.",
+    title: "Flower Delivery in Lahore | Same-day delivery (Rs. 800) — Lahore Bouquet",
+    description: "Fresh flower delivery in Lahore with same-day delivery (Rs. 800). Hand-tied bouquets from Rs. 1,239 — roses, sunflowers & chocolate bouquets. Order online or WhatsApp.",
     url: `${SITE_URL}`,
       type: "website",
       locale: "en_PK",
@@ -22,7 +22,7 @@ export const metadata: Metadata = withSeo("/", {
           url: `${SITE_URL}/og-image.jpg`,
           width: 1200,
           height: 630,
-          alt: "Flower Delivery in Lahore | Fresh Bouquets & Free Same-Day Delivery | Lahore Bouquet",
+          alt: "Flower Delivery in Lahore | Fresh Bouquets & same-day delivery (Rs. 800) | Lahore Bouquet",
         },
     ],
   }
@@ -83,7 +83,7 @@ export default async function HomePage() {
         "@type": "HowToStep",
         position: 3,
         name: "We deliver in 2 to 5 hours",
-        text: "Bouquets travel in careful, climate-protected delivery so stems remain crisp in Lahore's weather. Free same-day delivery across DHA, Gulberg, Model Town, Bahria Town, Johar Town and all major Lahore areas.",
+        text: "Bouquets travel in careful, climate-protected delivery so stems remain crisp in Lahore's weather. Same-day delivery (Rs. 800) across DHA, Gulberg, Model Town, Bahria Town, Johar Town and all major Lahore areas.",
       },
     ],
   };

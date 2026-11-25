@@ -143,7 +143,7 @@ export default function TeddyBearsLahorePage() {
           <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Teddy Bear Sizes & Prices in Lahore</h2>
         </div>
         <p className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed max-w-3xl">
-          Transparent pricing — no hidden charges. Delivery is free across all listed Lahore areas — see our <Link href="/delivery-areas" className="text-[#8B1E2D] underline">delivery areas</Link> page.
+          Transparent pricing — no hidden charges. Delivery is Rs. 800 across all listed Lahore areas — see our <Link href="/delivery-areas" className="text-[#8B1E2D] underline">delivery areas</Link> page.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {SIZES.map((s) => (
@@ -207,7 +207,7 @@ export default function TeddyBearsLahorePage() {
       <section className="p-6 sm:p-8 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] shadow-sm space-y-4">
         <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Teddy Bear Delivery Across Lahore</h2>
         <p className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed">
-          We deliver teddy bears to every corner of Lahore. Standard sizes (small to large) go out the same day in 2–5 hours across <strong>DHA</strong> (all phases), <strong>Gulberg</strong>, <strong>Model Town</strong>, <strong>Johar Town</strong>, <strong>Bahria Town</strong>, <strong>Cantt</strong>, <strong>Wapda Town</strong> and <strong>Askari</strong>. Giant 6-feet bears need a day's notice and travel in protective covering with a dedicated rider so they arrive spotless. Delivery is <strong>free</strong> in Gulberg and Model Town; other areas carry a small transparent fee (Rs. 250–400) shown before you confirm — never added silently at checkout.
+          We deliver teddy bears to every corner of Lahore. Standard sizes (small to large) go out the same day in 2–5 hours across <strong>DHA</strong> (all phases), <strong>Gulberg</strong>, <strong>Model Town</strong>, <strong>Johar Town</strong>, <strong>Bahria Town</strong>, <strong>Cantt</strong>, <strong>Wapda Town</strong> and <strong>Askari</strong>. Giant 6-feet bears need a day's notice and travel in protective covering with a dedicated rider so they arrive spotless. Delivery is a flat <strong>Rs. 800</strong> across all listed areas; for unlisted areas the fee is shown before you confirm — never added silently at checkout.
         </p>
         <p className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed">
           Ordering from abroad? We deliver teddy bear surprises for overseas Pakistanis every week — pay by international card from the <strong>UK, USA or UAE</strong>, approve the photo on WhatsApp, and we'll handle the Lahore delivery, including midnight slots. Many parents in Dubai and London order giant teddies for their kids' birthdays back home; the look on a child's face when a 6-feet bear walks through the door is worth every rupee.

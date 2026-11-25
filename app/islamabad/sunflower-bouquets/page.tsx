@@ -30,6 +30,17 @@ const FAQS = [
   { q: "Are sunflower bouquets available in Islamabad?", a: "Yes, subject to seasonal availability. Our Sunflower Bouquet starts from Rs. 1,699. Message us on WhatsApp to check today's availability." },
   { q: "How long do sunflowers last?", a: "Fresh sunflowers typically last 5–7 days with proper care — fresh water daily and keeping them away from direct sunlight." },
   { q: "Can I get sunflower delivery today in Islamabad?", a: "Yes, when in stock. Same-day delivery in 2 to 5 hours across covered Islamabad areas." },
+  { q: "Can sunflowers be combined with roses?", a: "Yes. Sunflower and rose mixes are popular for birthdays. Tell us your budget on WhatsApp and we will suggest a combination that is available that day." },
+  { q: "Are sunflower bouquets good for get-well gifts?", a: "They are one of the best choices for it. The bright colour lifts a room, and they stay fresh for several days. Check the hospital's policy on flowers before sending them to a ward." },
+  { q: "Do sunflowers have a scent?", a: "Only a very mild one. If fragrance matters to the recipient, roses or lilies are a better choice." },
+];
+
+const GUIDE_TITLE = "A Practical Guide to Sunflower Bouquets in Islamabad";
+const GUIDE: [string, string][] = [
+  ["When a sunflower bouquet is the right choice", "Sunflowers are the cheerful option. They suit birthdays, congratulations, graduations, get-well messages and any time you want a gift that does not look like the usual rose bouquet. Our Sunflower Bouquet starts from Rs. 1,699, which makes it a good middle-budget gift."],
+  ["Seasonal availability, honestly", "Sunflowers depend on supply and season, so they are not always in stock. That is why we ask you to message us on WhatsApp before ordering. If sunflowers are not available that day we will tell you straight away and suggest the closest alternative instead of substituting without asking."],
+  ["How to make them last", "Sunflowers are thirsty. Use a tall vase with plenty of clean water and top it up daily, because they drink a lot. Trim the stems at an angle, remove leaves below the waterline and keep the flowers out of direct afternoon sun. With basic care they usually last five to seven days."],
+  ["Delivery in Islamabad", "Same-day delivery takes 2 to 5 hours in the areas we cover, with Rs. 800 delivery in our listed sectors, including F-6, F-7, F-8, F-10, F-11, G-6, G-7, G-9, G-10, G-11, G-13, I-8, I-9, I-10, E-7, E-11, D-12, B-17, Blue Area, DHA Islamabad, Bahria Town, Gulberg Greens and Bahria Enclave. We send a photo and video on WhatsApp before dispatch so you can approve the bouquet. For colour combinations with roses, see our Islamabad flower bouquets page."],
 ];
 
 export default function Page() {
@@ -65,6 +76,22 @@ export default function Page() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+      <section className="w-full py-16 px-4 sm:px-6 border-b border-[#E5DED2] bg-[#F8F3EA]">
+        <div className="max-w-3xl mx-auto space-y-8">
+          <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012] text-center">{GUIDE_TITLE}</h2>
+          {GUIDE.map(([heading, body], i) => (
+            <div key={i} className="space-y-2">
+              <h3 className="font-playfair text-lg sm:text-xl font-bold text-[#101012]">{heading}</h3>
+              <p className="text-sm sm:text-base leading-relaxed">{body}</p>
+            </div>
+          ))}
+          <p className="text-sm text-center text-[#636363]">
+            More: <Link href="/flower-delivery-islamabad" className="underline text-[#8B1E2D]">Flower delivery in Islamabad</Link>
+            {" · "}<Link href="/islamabad/bouquets" className="underline text-[#8B1E2D]">Bouquets</Link>
+            {" · "}<Link href="/islamabad/flower-prices" className="underline text-[#8B1E2D]">Prices</Link>
+          </p>
         </div>
       </section>
       <section className="w-full py-16 px-4 sm:px-6 bg-white">

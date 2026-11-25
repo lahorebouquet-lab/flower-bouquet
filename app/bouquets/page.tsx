@@ -12,13 +12,13 @@ export const BASE_METADATA: Metadata = withSeo("/bouquets", {
   title: {
     absolute: "Bouquet Delivery in Lahore | Fresh Bouquets from Rs. 1,239",
   },
-  description: "Fresh bouquets in Lahore from Rs. 1,239 — roses, sunflowers, chocolate & money bouquets. FREE same-day delivery in 2–5 hours. Order online or on WhatsApp.",
+  description: "Fresh bouquets in Lahore from Rs. 1,239 — roses, sunflowers, chocolate & money bouquets. Same-day delivery (Rs. 800) in 2–5 hours. Order online or on WhatsApp.",
   alternates: {
     canonical: `${SITE_URL}/bouquets`,
   },
   openGraph: {
     title: "Bouquet Delivery in Lahore | Fresh Bouquets from Rs. 1,239",
-    description: "Fresh bouquets in Lahore from Rs. 1,239 — roses, sunflowers, chocolate & money bouquets. FREE same-day delivery in 2–5 hours. Order online or on WhatsApp.",
+    description: "Fresh bouquets in Lahore from Rs. 1,239 — roses, sunflowers, chocolate & money bouquets. Same-day delivery (Rs. 800) in 2–5 hours. Order online or on WhatsApp.",
     url: `${SITE_URL}/bouquets`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
@@ -228,7 +228,7 @@ export default async function BouquetsPage({
         name: "Can I get a bouquet delivered today in Lahore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Order before 4:00 PM and your bouquet arrives the same day within 2–5 hours, with free delivery across Lahore. A midnight slot (11:30 PM–12:15 AM) is also available for birthdays."
+          text: "Yes. Order before 4:00 PM and your bouquet arrives the same day within 2–5 hours, with Rs. 800 delivery across Lahore. A midnight slot (11:30 PM–12:15 AM) is also available for birthdays."
         }
       },
       {
@@ -544,7 +544,7 @@ export default async function BouquetsPage({
           Ordering is simple. Add your bouquet to the bag, choose your delivery area, date and time slot, and pay by bank transfer, JazzCash, EasyPaisa or card — or order directly on WhatsApp at 0310-4225974. Before your bouquet leaves, we send you a photo of the actual arrangement on WhatsApp for your approval.
         </p>
         <p className="text-xs sm:text-sm text-[#555555] leading-relaxed">
-          Delivery is free across Lahore — DHA, Gulberg, Johar Town, Bahria Town, Model Town, Cantt, Wapda Town and Township — and same-day orders placed before 4:00 PM arrive within 2 to 5 hours. Need a birthday surprise at midnight? Our 11:30 PM to 12:15 AM midnight slot has you covered. We are open every day from 9:00 AM to 1:00 AM, so a fresh bouquet is never far away. Sending flowers to someone in Lahore from another city or from abroad? Read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] underline font-semibold">how to send flowers to Lahore</Link>.
+          Delivery is Rs. 800 across Lahore — DHA, Gulberg, Johar Town, Bahria Town, Model Town, Cantt, Wapda Town and Township — and same-day orders placed before 4:00 PM arrive within 2 to 5 hours. Need a birthday surprise at midnight? Our 11:30 PM to 12:15 AM midnight slot has you covered. We are open every day from 9:00 AM to 1:00 AM, so a fresh bouquet is never far away. Sending flowers to someone in Lahore from another city or from abroad? Read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] underline font-semibold">how to send flowers to Lahore</Link>.
         </p>
       </section>
 
@@ -606,7 +606,7 @@ export default async function BouquetsPage({
           </div>
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Can I get a bouquet delivered today in Lahore?</h3>
-            <p>Yes. Order before 4:00 PM and your bouquet arrives the same day within 2–5 hours, with free delivery across Lahore. A midnight slot (11:30 PM–12:15 AM) is also available for birthdays.</p>
+            <p>Yes. Order before 4:00 PM and your bouquet arrives the same day within 2–5 hours, with Rs. 800 delivery across Lahore. A midnight slot (11:30 PM–12:15 AM) is also available for birthdays.</p>
           </div>
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Do you sell sunflower and chocolate bouquets?</h3>

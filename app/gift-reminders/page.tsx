@@ -64,7 +64,7 @@ export default function GiftRemindersPage() {
               Two days before each occasion, you&apos;ll receive a WhatsApp message from Lahore Bouquet with a friendly reminder and handpicked bouquet suggestions suited to the occasion and your budget. Just reply to the message to place your order — no need to browse the website or remember what to buy.
             </p>
             <p>
-              Your gift is then prepared fresh and delivered across Lahore the same day, usually within 2 to 5 hours, with free delivery. You&apos;ll get a photo on WhatsApp for approval before the bouquet leaves our studio, so what arrives is exactly what you approved. The service is completely free — you only pay if you choose to order.
+              Your gift is then prepared fresh and delivered across Lahore the same day, usually within 2 to 5 hours, with Rs. 800 delivery. You&apos;ll get a photo on WhatsApp for approval before the bouquet leaves our studio, so what arrives is exactly what you approved. The service is completely free — you only pay if you choose to order.
             </p>
           </div>
         </div>

@@ -152,7 +152,7 @@ export default async function CorporatePage() {
           <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Office Flower Subscription Plans</h2>
         </div>
         <p className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed max-w-3xl">
-          A subscription means you never think about flowers again — our florists design, deliver and refresh on schedule, and you approve each week's arrangement on WhatsApp. All plans include free delivery, vase rotation and a freshness guarantee.
+          A subscription means you never think about flowers again — our florists design, deliver and refresh on schedule, and you approve each week's arrangement on WhatsApp. All plans include Rs. 800 delivery, vase rotation and a freshness guarantee.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="p-6 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] shadow-sm space-y-3">

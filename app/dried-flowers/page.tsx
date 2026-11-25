@@ -113,7 +113,7 @@ export default async function DriedFlowersPage() {
         name: "Do you deliver dried flowers across Lahore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. We deliver dried flower bouquets across Lahore the same day, usually within 2 to 5 hours, with free delivery."
+          text: "Yes. We deliver dried flower bouquets across Lahore the same day, usually within 2 to 5 hours, with Rs. 800 delivery."
         }
       }
     ]
@@ -185,7 +185,7 @@ export default async function DriedFlowersPage() {
             In Lahore, dried flower bunches are a thoughtful choice for housewarmings, thank-you gifts and home décor, and they are increasingly popular for nikkah and wedding décor because they photograph beautifully and last well beyond the event. Our bamboo wildflower bunches and preserved mixes work in both modern apartments and traditional homes, pairing easily with ceramic vases, woven baskets or simple glass jars.
           </p>
           <p>
-            Every order is delivered across Lahore the same day — usually within 2 to 5 hours — with free delivery and a WhatsApp photo for your approval before the bouquet leaves our studio. Dried bunches start from Rs. 1,250, making them one of the most affordable long-lasting gifts we offer.
+            Every order is delivered across Lahore the same day — usually within 2 to 5 hours — with Rs. 800 delivery and a WhatsApp photo for your approval before the bouquet leaves our studio. Dried bunches start from Rs. 1,250, making them one of the most affordable long-lasting gifts we offer.
           </p>
         </div>
       </section>
@@ -238,7 +238,7 @@ export default async function DriedFlowersPage() {
           </div>
           <div className="space-y-1.5 p-4 rounded-xl bg-[#F8F3EA] border border-[#E5DED2]">
             <h3 className="font-semibold text-[#0B0B0B] text-sm">Do you deliver dried flowers across Lahore?</h3>
-            <p>Yes. We deliver dried flower bouquets across Lahore the same day, usually within 2 to 5 hours, with free delivery.</p>
+            <p>Yes. We deliver dried flower bouquets across Lahore the same day, usually within 2 to 5 hours, with Rs. 800 delivery.</p>
           </div>
         </div>
       </section>

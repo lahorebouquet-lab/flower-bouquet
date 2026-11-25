@@ -9,22 +9,22 @@ import { withSeo } from "@/lib/seo";
 
 export const metadata: Metadata = withSeo("/delivery-areas/cantt", {
   title: {
-    absolute: "Flower Delivery Lahore Cantt | FREE delivery, 2–2.5 hrs",
+    absolute: "Flower Delivery Lahore Cantt | Rs. 800 delivery, 2–2.5 hrs",
   },
-  description: "Same-day flower delivery to Lahore Cantt, Saddar, Cavalry Ground, PAF Colony & CMH in 2–2.5 hours. FREE delivery. Gate-clearance protocol, photo on WhatsApp",
+  description: "Same-day flower delivery to Lahore Cantt, Saddar, Cavalry Ground, PAF Colony & CMH in 2–2.5 hours. Rs. 800 delivery. Gate-clearance protocol, photo on WhatsApp",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/cantt`,
   },
   openGraph: {
-    title: "Flower Delivery Lahore Cantt | FREE delivery, 2–2.5 hrs",
-    description: "Same-day flower delivery to Lahore Cantt, Saddar, Cavalry Ground, PAF Colony & CMH in 2–2.5 hours. FREE delivery. Gate-clearance protocol, photo on WhatsApp",
+    title: "Flower Delivery Lahore Cantt | Rs. 800 delivery, 2–2.5 hrs",
+    description: "Same-day flower delivery to Lahore Cantt, Saddar, Cavalry Ground, PAF Colony & CMH in 2–2.5 hours. Rs. 800 delivery. Gate-clearance protocol, photo on WhatsApp",
     url: `${SITE_URL}/delivery-areas/cantt`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery Lahore Cantt | FREE delivery, 2–2.5 hrs",
+        alt: "Flower Delivery Lahore Cantt | Rs. 800 delivery, 2–2.5 hrs",
       },
     ],
   }
@@ -84,7 +84,7 @@ export default async function CanttDeliveryPage() {
         name: "What is the delivery fee for Lahore Cantt?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Free delivery across Lahore Cantt — Saddar, Cavalry Ground, PAF Colony, Falcon Complex, Fortress commercial and CMH. Delivery takes 2 to 2.5 hours, 7 days a week from 9 AM to 1 AM, with no hidden charges.",
+          text: "Rs. 800 delivery across Lahore Cantt — Saddar, Cavalry Ground, PAF Colony, Falcon Complex, Fortress commercial and CMH. Delivery takes 2 to 2.5 hours, 7 days a week from 9 AM to 1 AM, with no hidden charges.",
         },
       },
       {
@@ -162,11 +162,11 @@ export default async function CanttDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Lahore Cantonment and Cavalry Ground need couriers who understand gate security protocols and military checkpoint navigation. From Lahore, we cross into Cantt via Sherpao Bridge or the Cavalry Underpass within minutes, delivering handcrafted bouquets in 2 to 2.5 hours with free delivery — with live WhatsApp photo proof before the rider leaves. To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your colony and street details for gate clearance — approve the bouquet photo, then pay by JazzCash, EasyPaisa, bank transfer or international card.
+          Lahore Cantonment and Cavalry Ground need couriers who understand gate security protocols and military checkpoint navigation. From Lahore, we cross into Cantt via Sherpao Bridge or the Cavalry Underpass within minutes, delivering handcrafted bouquets in 2 to 2.5 hours with Rs. 800 delivery — with live WhatsApp photo proof before the rider leaves. To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your colony and street details for gate clearance — approve the bouquet photo, then pay by JazzCash, EasyPaisa, bank transfer or international card.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
-          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 2 to 2.5 hours • FREE delivery</span>
+          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 2 to 2.5 hours • Rs. 800 delivery</span>
           <span className="flex items-center gap-1.5"><ShieldCheck className="w-4 h-4 text-[#C6A15B]" /> Official gate checkpoint clearance</span>
           <a 
             href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20flowers%20to%20Lahore%20Cantt."
@@ -197,7 +197,7 @@ export default async function CanttDeliveryPage() {
           <h2 className="font-playfair text-xl font-bold">Delivery time & fee — Lahore Cantt</h2>
         </div>
         <ul className="space-y-2 text-xs text-[#2A2A2A] list-disc list-inside leading-relaxed">
-          <li><strong>Delivery fee: FREE</strong> — across Saddar, Cavalry Ground, PAF Colony, Falcon Complex, Fortress commercial and CMH. No hidden charges.</li>
+          <li><strong>Delivery fee: Rs. 800</strong> — across Saddar, Cavalry Ground, PAF Colony, Falcon Complex, Fortress commercial and CMH. No hidden charges.</li>
           <li><strong>Delivery time: 2 to 2.5 hours</strong>, 7 days a week, from 9 AM to 1 AM, via Sherpao Bridge or the Cavalry Underpass.</li>
           <li><strong>Midnight slot:</strong> available every night — message us on WhatsApp by the evening to reserve it.</li>
           <li><strong>Payments:</strong> JazzCash, EasyPaisa, bank transfer and international cards.</li>
@@ -249,7 +249,7 @@ export default async function CanttDeliveryPage() {
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">What is the delivery fee for Lahore Cantt?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Free delivery across Lahore Cantt — Saddar, Cavalry Ground, PAF Colony, Falcon Complex, Fortress commercial and CMH. Delivery takes 2 to 2.5 hours, 7 days a week from 9 AM to 1 AM, with no hidden charges.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Rs. 800 delivery across Lahore Cantt — Saddar, Cavalry Ground, PAF Colony, Falcon Complex, Fortress commercial and CMH. Delivery takes 2 to 2.5 hours, 7 days a week from 9 AM to 1 AM, with no hidden charges.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Can you deliver flowers to a mess dinner or officers&apos; event at night?</h3>
@@ -286,7 +286,7 @@ export default async function CanttDeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your Cantt colony, street and a guard contact number, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,239 — including which roses and seasonal flowers arrived today.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh and send you a photo on WhatsApp before the rider leaves — along with the rider&apos;s name and number so your gate clears entry in minutes.</li>
-          <li><strong>Pay your way and receive.</strong> Pay by JazzCash, EasyPaisa, bank transfer or an international card. The rider clears your colony gate and reaches your doorstep within 2–2.5 hours with free delivery — midnight slot available.</li>
+          <li><strong>Pay your way and receive.</strong> Pay by JazzCash, EasyPaisa, bank transfer or an international card. The rider clears your colony gate and reaches your doorstep within 2–2.5 hours with Rs. 800 delivery — midnight slot available.</li>
         </ol>
       </section>
 
@@ -315,15 +315,15 @@ export default async function CanttDeliveryPage() {
         <div className="grid sm:grid-cols-3 gap-3">
           <Link href="/delivery-areas/dha" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">DHA Lahore →</p>
-            <p className="text-xs text-[#2A2A2A]">FREE • 2–3 hours. Phases 1–9, Defence Raya and Sector Y.</p>
+            <p className="text-xs text-[#2A2A2A]">Rs. 800 • 2–3 hours. Phases 1–9, Defence Raya and Sector Y.</p>
           </Link>
           <Link href="/delivery-areas/askari" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Askari Housing →</p>
-            <p className="text-xs text-[#2A2A2A]">FREE • 2–3 hours. Askari 1–11 and Bedian Road with gated-community protocol.</p>
+            <p className="text-xs text-[#2A2A2A]">Rs. 800 • 2–3 hours. Askari 1–11 and Bedian Road with gated-community protocol.</p>
           </Link>
           <Link href="/delivery-areas/gulberg" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Gulberg →</p>
-            <p className="text-xs text-[#2A2A2A]">FREE delivery • 30–90 mins. Gulberg I–III, Liberty and MM Alam Road.</p>
+            <p className="text-xs text-[#2A2A2A]">Rs. 800 delivery • 30–90 mins. Gulberg I–III, Liberty and MM Alam Road.</p>
           </Link>
         </div>
       </section>

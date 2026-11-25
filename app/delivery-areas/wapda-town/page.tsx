@@ -9,22 +9,22 @@ import { withSeo } from "@/lib/seo";
 
 export const metadata: Metadata = withSeo("/delivery-areas/wapda-town", {
   title: {
-    absolute: "Flower Delivery in Wapda Town Lahore | FREE delivery, 2.5–3.5 hrs",
+    absolute: "Flower Delivery in Wapda Town Lahore | Rs. 800 delivery, 2.5–3.5 hrs",
   },
-  description: "Same-day flower bouquets, roses & cakes delivered to Wapda Town, PIA Society, Valencia & Township Lahore in 2.5–3.5 hours. FREE delivery. Photo on WhatsApp",
+  description: "Same-day flower bouquets, roses & cakes delivered to Wapda Town, PIA Society, Valencia & Township Lahore in 2.5–3.5 hours. Rs. 800 delivery. Photo on WhatsApp",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/wapda-town`,
   },
   openGraph: {
-    title: "Flower Delivery in Wapda Town Lahore | FREE delivery, 2.5–3.5 hrs",
-    description: "Same-day flower bouquets, roses & cakes delivered to Wapda Town, PIA Society, Valencia & Township Lahore in 2.5–3.5 hours. FREE delivery. Photo on WhatsApp",
+    title: "Flower Delivery in Wapda Town Lahore | Rs. 800 delivery, 2.5–3.5 hrs",
+    description: "Same-day flower bouquets, roses & cakes delivered to Wapda Town, PIA Society, Valencia & Township Lahore in 2.5–3.5 hours. Rs. 800 delivery. Photo on WhatsApp",
     url: `${SITE_URL}/delivery-areas/wapda-town`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in Wapda Town Lahore | FREE delivery, 2.5–3.5 hrs",
+        alt: "Flower Delivery in Wapda Town Lahore | Rs. 800 delivery, 2.5–3.5 hrs",
       },
     ],
   }
@@ -68,7 +68,7 @@ export default async function WapdaTownDeliveryPage() {
         name: "How long does flower delivery to Wapda Town take, and what is the fee?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Delivery to Wapda Town, PIA Society, Valencia Town and Township takes 2.5 to 3.5 hours with free delivery. Our southern route runs via College Road, and every bouquet travels in an air-conditioned van with WhatsApp photo proof before dispatch.",
+          text: "Delivery to Wapda Town, PIA Society, Valencia Town and Township takes 2.5 to 3.5 hours with Rs. 800 delivery. Our southern route runs via College Road, and every bouquet travels in an air-conditioned van with WhatsApp photo proof before dispatch.",
         },
       },
       {
@@ -76,7 +76,7 @@ export default async function WapdaTownDeliveryPage() {
         name: "Do you deliver to Valencia Town and PIA Society as well?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes — Valencia Town, PIA Housing Society, NFC Society and Township are all on the same southern delivery route with the same FREE fee and 2.5 to 3.5 hour window.",
+          text: "Yes — Valencia Town, PIA Housing Society, NFC Society and Township are all on the same southern delivery route with the same Rs. 800 fee and 2.5 to 3.5 hour window.",
         },
       },
       {
@@ -146,11 +146,11 @@ export default async function WapdaTownDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          We deliver fresh imported roses, money bouquets, celebration cakes and gift hampers to Wapda Town, PIA Housing Society, Valencia Town and Township Lahore — from Rs. 1,239, in 2.5 to 3.5 hours with free delivery. Every order is hydrated for transit and dispatched in air-conditioned courier vans, with photo proof sent on WhatsApp before our rider leaves. To order, message 0310-4225974 on WhatsApp any time between 9 AM and 1 AM with your society and street — approve the bouquet photo, then pay by JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
+          We deliver fresh imported roses, money bouquets, celebration cakes and gift hampers to Wapda Town, PIA Housing Society, Valencia Town and Township Lahore — from Rs. 1,239, in 2.5 to 3.5 hours with Rs. 800 delivery. Every order is hydrated for transit and dispatched in air-conditioned courier vans, with photo proof sent on WhatsApp before our rider leaves. To order, message 0310-4225974 on WhatsApp any time between 9 AM and 1 AM with your society and street — approve the bouquet photo, then pay by JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
-          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 2.5 to 3.5 hours • FREE delivery</span>
+          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 2.5 to 3.5 hours • Rs. 800 delivery</span>
           <span className="flex items-center gap-1.5"><Camera className="w-4 h-4 text-[#C6A15B]" /> Photo on WhatsApp before dispatch</span>
           <a 
             href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20flowers%20to%20Wapda%20Town%20Lahore."
@@ -181,7 +181,7 @@ export default async function WapdaTownDeliveryPage() {
           <h2 className="font-playfair text-xl font-bold">Delivery time & fee — Wapda Town & Township</h2>
         </div>
         <ul className="space-y-2 text-xs text-[#2A2A2A] list-disc list-inside leading-relaxed">
-          <li><strong>Delivery fee: FREE</strong> — across Wapda Town, PIA Housing Society, Valencia Town, NFC Society and Township. No hidden charges.</li>
+          <li><strong>Delivery fee: Rs. 800</strong> — across Wapda Town, PIA Housing Society, Valencia Town, NFC Society and Township. No hidden charges.</li>
           <li><strong>Delivery time: 2.5 to 3.5 hours</strong>, 7 days a week, from 9 AM to 1 AM, via the College Road southern route in AC vans.</li>
           <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM, 7 days a week — book before 8 PM on WhatsApp.</li>
           <li><strong>Payments:</strong> JazzCash, EasyPaisa, bank transfer and international cards.</li>
@@ -225,11 +225,11 @@ export default async function WapdaTownDeliveryPage() {
         <div className="divide-y divide-[rgba(198,161,91,0.25)]">
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How long does flower delivery to Wapda Town take, and what is the fee?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery to Wapda Town, PIA Society, Valencia Town and Township takes 2.5 to 3.5 hours with free delivery. Our southern route runs via College Road, and every bouquet travels in an air-conditioned van with WhatsApp photo proof before dispatch.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery to Wapda Town, PIA Society, Valencia Town and Township takes 2.5 to 3.5 hours with Rs. 800 delivery. Our southern route runs via College Road, and every bouquet travels in an air-conditioned van with WhatsApp photo proof before dispatch.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Do you deliver to Valencia Town and PIA Society as well?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes — Valencia Town, PIA Housing Society, NFC Society and Township are all on the same southern delivery route with the same FREE fee and 2.5 to 3.5 hour window.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes — Valencia Town, PIA Housing Society, NFC Society and Township are all on the same southern delivery route with the same Rs. 800 fee and 2.5 to 3.5 hour window.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Is midnight flower delivery available in Wapda Town?</h3>
@@ -262,7 +262,7 @@ export default async function WapdaTownDeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your society and street, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,239 — including which roses and seasonal flowers arrived today.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh, hydrate it for the southern run, and send you a photo on WhatsApp before the rider leaves. Nothing ships until you reply that it looks perfect.</li>
-          <li><strong>Pay your way and receive.</strong> Pay by JazzCash, EasyPaisa, bank transfer or an international card. The rider travels by AC van down College Road and reaches your society within 2.5–3.5 hours with free delivery — midnight slot available.</li>
+          <li><strong>Pay your way and receive.</strong> Pay by JazzCash, EasyPaisa, bank transfer or an international card. The rider travels by AC van down College Road and reaches your society within 2.5–3.5 hours with Rs. 800 delivery — midnight slot available.</li>
         </ol>
       </section>
 
@@ -291,15 +291,15 @@ export default async function WapdaTownDeliveryPage() {
         <div className="grid sm:grid-cols-3 gap-3">
           <Link href="/delivery-areas/johar-town" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Johar Town →</p>
-            <p className="text-xs text-[#2A2A2A]">FREE • 2–3 hours. Phases 1 & 2, Emporium Mall and Shaukat Khanum Hospital.</p>
+            <p className="text-xs text-[#2A2A2A]">Rs. 800 • 2–3 hours. Phases 1 & 2, Emporium Mall and Shaukat Khanum Hospital.</p>
           </Link>
           <Link href="/delivery-areas/model-town" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Model Town →</p>
-            <p className="text-xs text-[#2A2A2A]">FREE delivery • 1.5–2.5 hours. Blocks A–M, Link Road and Garden Town.</p>
+            <p className="text-xs text-[#2A2A2A]">Rs. 800 delivery • 1.5–2.5 hours. Blocks A–M, Link Road and Garden Town.</p>
           </Link>
           <Link href="/delivery-areas/bahria-town" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Bahria Town →</p>
-            <p className="text-xs text-[#2A2A2A]">FREE • 2.5–4 hours. Sectors A–F, Safari Villas and Lake City.</p>
+            <p className="text-xs text-[#2A2A2A]">Rs. 800 • 2.5–4 hours. Sectors A–F, Safari Villas and Lake City.</p>
           </Link>
         </div>
       </section>

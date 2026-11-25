@@ -10,14 +10,14 @@ import { withSeo } from "@/lib/seo";
 
 export const metadata: Metadata = withSeo("/delivery-areas/lake-city", {
   title: {
-    absolute: "Flower Delivery in Lake City Lahore | FREE delivery, 3–4 hrs",
+    absolute: "Flower Delivery in Lake City Lahore | Rs. 800 delivery, 3–4 hrs",
   },
   description: "Same-day flower delivery to Lake City Lahore — golf-course villas, Downtown commercial and sectors near the Ring Road interchange in 3–4 hours. Delivery",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/lake-city`,
   },
   openGraph: {
-    title: "Flower Delivery in Lake City Lahore | FREE delivery, 3–4 hrs",
+    title: "Flower Delivery in Lake City Lahore | Rs. 800 delivery, 3–4 hrs",
     description: "Same-day flower delivery to Lake City Lahore — golf-course villas, Downtown commercial and sectors near the Ring Road interchange in 3–4 hours. Delivery",
     url: `${SITE_URL}/delivery-areas/lake-city`,
     images: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = withSeo("/delivery-areas/lake-city", {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in Lake City Lahore | FREE delivery, 3–4 hrs",
+        alt: "Flower Delivery in Lake City Lahore | Rs. 800 delivery, 3–4 hrs",
       },
     ],
   }
@@ -65,7 +65,7 @@ const lakeCityFaqSchema = {
       name: "How long does flower delivery to Lake City Lahore take, and what is the fee?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Delivery to Lake City takes 3 to 4 hours with free delivery. The fee reflects the distance down the Raiwind Road corridor and the extra time for security checks at the gated entrances. Orders to the golf-course villas and sectors near the Ring Road interchange usually take the full window during evening traffic.",
+        text: "Delivery to Lake City takes 3 to 4 hours with Rs. 800 delivery. The fee reflects the distance down the Raiwind Road corridor and the extra time for security checks at the gated entrances. Orders to the golf-course villas and sectors near the Ring Road interchange usually take the full window during evening traffic.",
       },
     },
     {
@@ -178,7 +178,7 @@ export default async function LakeCityDeliveryPage() {
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
-          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 3 to 4 hours • FREE delivery</span>
+          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 3 to 4 hours • Rs. 800 delivery</span>
           <span className="flex items-center gap-1.5"><Camera className="w-4 h-4 text-[#C6A15B]" /> Photo on WhatsApp before it leaves</span>
           <a
             href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20flowers%20to%20Lake%20City%20Lahore."
@@ -209,9 +209,9 @@ export default async function LakeCityDeliveryPage() {
           <h2 className="font-playfair text-xl font-bold">Delivery time & fee — Lake City Lahore</h2>
         </div>
         <ul className="space-y-2 text-xs text-[#2A2A2A] list-disc list-inside leading-relaxed">
-          <li><strong>Delivery fee: FREE</strong> — across Lake City&apos;s golf-course villas, Downtown commercial and the sectors near the Ring Road interchange. No hidden charges.</li>
+          <li><strong>Delivery fee: Rs. 800</strong> — across Lake City&apos;s golf-course villas, Downtown commercial and the sectors near the Ring Road interchange. No hidden charges.</li>
           <li><strong>Delivery time: 3 to 4 hours</strong>, 7 days a week, from 9 AM to 1 AM. Allow the full window for golf-course villas and during evening traffic on the Raiwind Road corridor.</li>
-          <li><strong>Midnight slot:</strong> available every night from 11:30 PM to 12:15 AM with free delivery — message us on WhatsApp by the evening to reserve it.</li>
+          <li><strong>Midnight slot:</strong> available every night from 11:30 PM to 12:15 AM with Rs. 800 delivery — message us on WhatsApp by the evening to reserve it.</li>
           <li><strong>Payments:</strong> JazzCash, EasyPaisa, bank transfer and international cards.</li>
           <li><strong>Prices start at Rs. 1,239.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
         </ul>
@@ -253,7 +253,7 @@ export default async function LakeCityDeliveryPage() {
         <div className="divide-y divide-[rgba(198,161,91,0.25)]">
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How long does flower delivery to Lake City Lahore take, and what is the fee?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery to Lake City takes 3 to 4 hours with free delivery. The fee reflects the distance down the Raiwind Road corridor and the extra time for security checks at the gated entrances. Orders to the golf-course villas and sectors near the Ring Road interchange usually take the full window during evening traffic.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery to Lake City takes 3 to 4 hours with Rs. 800 delivery. The fee reflects the distance down the Raiwind Road corridor and the extra time for security checks at the gated entrances. Orders to the golf-course villas and sectors near the Ring Road interchange usually take the full window during evening traffic.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Which parts of Lake City do you deliver to?</h3>
@@ -298,7 +298,7 @@ export default async function LakeCityDeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your sector, street and house number, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,239 — including which roses and seasonal flowers arrived today. For the golf-course villas, also share your gate&apos;s guard number for smooth entry.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh and send you a photo on WhatsApp before the rider leaves. Nothing ships until you reply that it looks perfect — ask for tweaks and we redo it.</li>
-          <li><strong>Pay your way and receive.</strong> Pay by JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your Lake City address within 3–4 hours with FREE delivery — midnight slot 11:30 PM to 12:15 AM also available.</li>
+          <li><strong>Pay your way and receive.</strong> Pay by JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your Lake City address within 3–4 hours with Rs. 800 delivery — midnight slot 11:30 PM to 12:15 AM also available.</li>
         </ol>
       </section>
 
@@ -327,15 +327,15 @@ export default async function LakeCityDeliveryPage() {
         <div className="grid sm:grid-cols-3 gap-3">
           <Link href="/delivery-areas/bahria-orchard" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Bahria Orchard →</p>
-            <p className="text-xs text-[#2A2A2A]">FREE • 3–4 hours. Phases 1–4 off Raiwind Road.</p>
+            <p className="text-xs text-[#2A2A2A]">Rs. 800 • 3–4 hours. Phases 1–4 off Raiwind Road.</p>
           </Link>
           <Link href="/delivery-areas/bahria-town" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Bahria Town →</p>
-            <p className="text-xs text-[#2A2A2A]">FREE • 2.5–4 hours. Sectors A–F, Safari Villas.</p>
+            <p className="text-xs text-[#2A2A2A]">Rs. 800 • 2.5–4 hours. Sectors A–F, Safari Villas.</p>
           </Link>
           <Link href="/delivery-areas/dha-rahbar" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">DHA Rahbar →</p>
-            <p className="text-xs text-[#2A2A2A]">FREE • 3–4 hours. Sectors near Valencia Town.</p>
+            <p className="text-xs text-[#2A2A2A]">Rs. 800 • 3–4 hours. Sectors near Valencia Town.</p>
           </Link>
         </div>
       </section>

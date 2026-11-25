@@ -51,7 +51,7 @@ const FAQS = [
   },
   {
     "q": "Which areas of Lahore do you deliver to?",
-    "a": "We deliver across Lahore including DHA, Gulberg, Bahria Town, Model Town, Johar Town, Cantt, Askari, Wapda Town, Township, Faisal Town, Garden Town, Valencia and Lake City. Delivery is FREE in listed areas."
+    "a": "We deliver across Lahore including DHA, Gulberg, Bahria Town, Model Town, Johar Town, Cantt, Askari, Wapda Town, Township, Faisal Town, Garden Town, Valencia and Lake City. Delivery is Rs. 800 in listed areas."
   },
   {
     "q": "How much do flowers cost in Lahore?",
@@ -189,7 +189,7 @@ export default function SendFlowersToLahoreFromUsaPage() {
             Flower Prices for USA Orders
           </h2>
           <p className="text-sm text-[#2A2A2A] text-center">
-            Same prices as Lahore — no hidden charges. Free delivery in listed Lahore areas.
+            Same prices as Lahore — no hidden charges. Rs. 800 delivery in listed Lahore areas.
           </p>
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse">
@@ -324,7 +324,7 @@ export default function SendFlowersToLahoreFromUsaPage() {
           <div className="grid sm:grid-cols-3 gap-4">
             <div className="p-5 rounded-2xl bg-[#F8F3EA] border border-[#E5DED2]">
               <h3 className="font-bold text-[#0B0B0B] text-sm flex items-center gap-2"><Truck size={16} className="text-[#8B1E2D]" /> Delivery Charges</h3>
-              <p className="text-xs text-[#2A2A2A] mt-2 leading-relaxed"><strong>FREE</strong> delivery in listed Lahore areas — DHA, Gulberg, Bahria Town, Model Town, Johar Town, Cantt and more. Confirm your area on WhatsApp (0310-4225974).</p>
+              <p className="text-xs text-[#2A2A2A] mt-2 leading-relaxed"><strong>Rs. 800</strong> delivery in listed Lahore areas — DHA, Gulberg, Bahria Town, Model Town, Johar Town, Cantt and more. Confirm your area on WhatsApp (0310-4225974).</p>
             </div>
             <div className="p-5 rounded-2xl bg-[#F8F3EA] border border-[#E5DED2]">
               <h3 className="font-bold text-[#0B0B0B] text-sm flex items-center gap-2"><Clock size={16} className="text-[#8B1E2D]" /> Delivery Time</h3>
@@ -359,7 +359,7 @@ export default function SendFlowersToLahoreFromUsaPage() {
             </div>
             <div className="flex items-start gap-3 bg-white rounded-xl p-4 border border-[#E5DED2]">
               <span className="text-[#8B1E2D] mt-0.5"><Truck size={20} /></span>
-              <p className="text-sm">FREE delivery in listed Lahore areas — DHA, Gulberg, Bahria Town, Model Town and more</p>
+              <p className="text-sm">Rs. 800 delivery in listed Lahore areas — DHA, Gulberg, Bahria Town, Model Town and more</p>
             </div>
           </div>
         </div>

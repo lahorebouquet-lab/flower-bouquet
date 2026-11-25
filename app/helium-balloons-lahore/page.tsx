@@ -67,15 +67,15 @@ const FAQS = [
   },
   {
     q: "Can I get helium balloons near me in Lahore?",
-    a: "Yes — wherever you are in Lahore, we bring the balloons to you. We inflate helium balloons fresh and deliver across DHA, Gulberg, Model Town, Johar Town, Bahria Town, Cantt, Wapda Town and Askari with FREE delivery. Just message us on WhatsApp (0310-4225974), and we'll send a photo of your balloons for approval before dispatch."
+    a: "Yes — wherever you are in Lahore, we bring the balloons to you. We inflate helium balloons fresh and deliver across DHA, Gulberg, Model Town, Johar Town, Bahria Town, Cantt, Wapda Town and Askari with Rs. 800 delivery. Just message us on WhatsApp (0310-4225974), and we'll send a photo of your balloons for approval before dispatch."
   },
   {
     q: "Do you offer midnight delivery of helium balloons in Lahore?",
     a: "Yes. For birthday surprises, you can book our midnight delivery slot (11:30 PM–12:15 AM) — just place your order before 8:00 PM. The balloons are inflated fresh shortly before dispatch, so they arrive floating and photo-ready right at midnight."
   },
   {
-    q: "Is delivery free on helium balloons in Lahore?",
-    a: "Yes — delivery is FREE across Lahore on helium balloons and balloon bunches. Order before 4:00 PM for same-day delivery within 2–5 hours, and pay by bank transfer, JazzCash, EasyPaisa or card."
+    q: "Is delivery (Rs. 800) on helium balloons in Lahore?",
+    a: "Yes — delivery is Rs. 800 across Lahore on helium balloons and balloon bunches. Order before 4:00 PM for same-day delivery within 2–5 hours, and pay by bank transfer, JazzCash, EasyPaisa or card."
   }
 ];
 

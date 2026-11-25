@@ -122,7 +122,7 @@ export default function DeliveryAreasPage() {
               <span className="text-[#0B0B0B] font-medium">{a.area}</span>
               {a.fee === 0 ? (
                 <span className="inline-flex items-center gap-1 text-[#8B1E2D] font-bold">
-                  <CheckCircle2 className="w-3.5 h-3.5" /> FREE
+                  <CheckCircle2 className="w-3.5 h-3.5" /> Rs. 0
                 </span>
               ) : (
                 <a

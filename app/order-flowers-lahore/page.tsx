@@ -135,8 +135,8 @@ const JSON_LD = `{
         },
         {
           "@type": "Question",
-          "name": "Do you offer free delivery?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Free delivery is available across the listed Lahore delivery areas. If you are outside them, message Lahore Bouquet on WhatsApp and the team will confirm availability." }
+          "name": "Do you offer Rs. 800 delivery?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Rs. 800 delivery is available across the listed Lahore delivery areas. If you are outside them, message Lahore Bouquet on WhatsApp and the team will confirm availability." }
         },
         {
           "@type": "Question",

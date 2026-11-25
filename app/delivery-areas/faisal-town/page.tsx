@@ -10,22 +10,22 @@ import { withSeo } from "@/lib/seo";
 
 export const metadata: Metadata = withSeo("/delivery-areas/faisal-town", {
   title: {
-    absolute: "Flower Delivery in Faisal Town Lahore | FREE delivery, 2–3 hrs",
+    absolute: "Flower Delivery in Faisal Town Lahore | Rs. 800 delivery, 2–3 hrs",
   },
-  description: "Same-day flower delivery to Faisal Town Lahore — residential blocks, near Johar Town & Shaukat Khanum — in 2–3 hours. Delivery FREE delivery.",
+  description: "Same-day flower delivery to Faisal Town Lahore — residential blocks, near Johar Town & Shaukat Khanum — in 2–3 hours. Delivery Rs. 800 delivery.",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/faisal-town`,
   },
   openGraph: {
-    title: "Flower Delivery in Faisal Town Lahore | FREE delivery, 2–3 hrs",
-    description: "Same-day flower delivery to Faisal Town Lahore — residential blocks, near Johar Town & Shaukat Khanum — in 2–3 hours. Delivery FREE delivery.",
+    title: "Flower Delivery in Faisal Town Lahore | Rs. 800 delivery, 2–3 hrs",
+    description: "Same-day flower delivery to Faisal Town Lahore — residential blocks, near Johar Town & Shaukat Khanum — in 2–3 hours. Delivery Rs. 800 delivery.",
     url: `${SITE_URL}/delivery-areas/faisal-town`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in Faisal Town Lahore | FREE delivery, 2–3 hrs",
+        alt: "Flower Delivery in Faisal Town Lahore | Rs. 800 delivery, 2–3 hrs",
       },
     ],
   }
@@ -65,7 +65,7 @@ const faisalTownFaqSchema = {
       name: "How long does flower delivery to Faisal Town take, and what is the fee?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Delivery to Faisal Town takes 2 to 3 hours with free delivery. Blocks near the Johar Town side arrive at the faster end; orders deeper into the scheme take the full window during peak traffic.",
+        text: "Delivery to Faisal Town takes 2 to 3 hours with Rs. 800 delivery. Blocks near the Johar Town side arrive at the faster end; orders deeper into the scheme take the full window during peak traffic.",
       },
     },
     {
@@ -174,11 +174,11 @@ export default async function FaisalTownDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Faisal Town is a well-established residential scheme tucked between Johar Town and the Multan Road corridor, and our riders run its blocks every day. Delivery takes 2 to 3 hours with free delivery. Our florists send you a photo on WhatsApp before your bouquet leaves, and we deliver to homes, offices and to Shaukat Khanum Memorial Cancer Hospital nearby. To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your block and street details — approve the bouquet photo we send, then pay by JazzCash, EasyPaisa, bank transfer or international card.
+          Faisal Town is a well-established residential scheme tucked between Johar Town and the Multan Road corridor, and our riders run its blocks every day. Delivery takes 2 to 3 hours with Rs. 800 delivery. Our florists send you a photo on WhatsApp before your bouquet leaves, and we deliver to homes, offices and to Shaukat Khanum Memorial Cancer Hospital nearby. To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your block and street details — approve the bouquet photo we send, then pay by JazzCash, EasyPaisa, bank transfer or international card.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
-          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 2 to 3 hours • FREE delivery</span>
+          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 2 to 3 hours • Rs. 800 delivery</span>
           <span className="flex items-center gap-1.5"><Camera className="w-4 h-4 text-[#C6A15B]" /> Photo on WhatsApp before it leaves</span>
           <a
             href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20flowers%20to%20Faisal%20Town%20Lahore."
@@ -209,9 +209,9 @@ export default async function FaisalTownDeliveryPage() {
           <h2 className="font-playfair text-xl font-bold">Delivery time & fee — Faisal Town Lahore</h2>
         </div>
         <ul className="space-y-2 text-xs text-[#2A2A2A] list-disc list-inside leading-relaxed">
-          <li><strong>Delivery fee: FREE</strong> — across all residential blocks of Faisal Town and the nearby Johar Town side. No hidden charges.</li>
+          <li><strong>Delivery fee: Rs. 800</strong> — across all residential blocks of Faisal Town and the nearby Johar Town side. No hidden charges.</li>
           <li><strong>Delivery time: 2 to 3 hours</strong>, 7 days a week, from 9 AM to 1 AM. Blocks near the Johar Town side are usually fastest; deeper streets take the full window.</li>
-          <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM every night with free delivery — message us on WhatsApp by the evening to reserve it.</li>
+          <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM every night with Rs. 800 delivery — message us on WhatsApp by the evening to reserve it.</li>
           <li><strong>Payments:</strong> JazzCash, EasyPaisa, bank transfer and international cards.</li>
           <li><strong>Prices start at Rs. 1,239.</strong> Call or WhatsApp <strong>0310-4225974</strong> and our Lahore florists will confirm your slot instantly.</li>
         </ul>
@@ -225,7 +225,7 @@ export default async function FaisalTownDeliveryPage() {
         </div>
         <ul className="space-y-2 text-xs text-[#2A2A2A] list-disc list-inside leading-relaxed">
           <li><strong>Faisal Town residential blocks:</strong> all blocks across the scheme — birthday and anniversary bouquets to family homes.</li>
-          <li><strong>Johar Town side:</strong> streets bordering Johar Town — the same 2–3 hour free-delivery service for homes and offices.</li>
+          <li><strong>Johar Town side:</strong> streets bordering Johar Town — the same 2–3 hour delivery service for homes and offices.</li>
           <li><strong>Shaukat Khanum Hospital:</strong> get-well flowers and hampers to Shaukat Khanum Memorial Cancer Hospital — share the patient&apos;s ward and room number.</li>
           <li><strong>Multan Road side:</strong> businesses and housing toward Multan Road — inauguration flowers and corporate orders.</li>
           <li><strong>Near Iqbal Town:</strong> blocks on the Iqbal Town side — housewarming arrangements and occasion gifts.</li>
@@ -253,7 +253,7 @@ export default async function FaisalTownDeliveryPage() {
         <div className="divide-y divide-[rgba(198,161,91,0.25)]">
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How long does flower delivery to Faisal Town take, and what is the fee?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery to Faisal Town takes 2 to 3 hours with free delivery. Blocks near the Johar Town side arrive at the faster end; orders deeper into the scheme take the full window during peak traffic.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery to Faisal Town takes 2 to 3 hours with Rs. 800 delivery. Blocks near the Johar Town side arrive at the faster end; orders deeper into the scheme take the full window during peak traffic.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Which blocks of Faisal Town do you deliver to?</h3>
@@ -298,7 +298,7 @@ export default async function FaisalTownDeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your block, street and house number, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,239 — including which roses and seasonal flowers arrived today.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh and send you a photo on WhatsApp before the rider leaves. Nothing ships until you reply that it looks perfect — ask for tweaks and we redo it.</li>
-          <li><strong>Pay your way and receive.</strong> Pay by JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your Faisal Town address within 2–3 hours for the FREE fee — or in the midnight slot.</li>
+          <li><strong>Pay your way and receive.</strong> Pay by JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your Faisal Town address within 2–3 hours for the Rs. 800 fee — or in the midnight slot.</li>
         </ol>
       </section>
 
@@ -327,15 +327,15 @@ export default async function FaisalTownDeliveryPage() {
         <div className="grid sm:grid-cols-3 gap-3">
           <Link href="/delivery-areas/iqbal-town" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Iqbal Town →</p>
-            <p className="text-xs text-[#2A2A2A]">FREE • 2–3 hours. Moon Market, blocks.</p>
+            <p className="text-xs text-[#2A2A2A]">Rs. 800 • 2–3 hours. Moon Market, blocks.</p>
           </Link>
           <Link href="/delivery-areas/johar-town" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Johar Town →</p>
-            <p className="text-xs text-[#2A2A2A]">FREE • 2–3 hours. G1 Market, Emporium Mall.</p>
+            <p className="text-xs text-[#2A2A2A]">Rs. 800 • 2–3 hours. G1 Market, Emporium Mall.</p>
           </Link>
           <Link href="/delivery-areas/thokar-niaz-baig" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Thokar Niaz Baig →</p>
-            <p className="text-xs text-[#2A2A2A]">FREE • 2–3 hours. Interchange &amp; M-2 link.</p>
+            <p className="text-xs text-[#2A2A2A]">Rs. 800 • 2–3 hours. Interchange &amp; M-2 link.</p>
           </Link>
         </div>
       </section>

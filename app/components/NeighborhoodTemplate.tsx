@@ -17,7 +17,7 @@ export default async function NeighborhoodTemplate({ data }: Props) {
   const allProducts = await getSanityProducts();
   const popularBouquets = allProducts.slice(0, 4);
 
-  const fee = data.deliveryFee || "Rs. 300";
+  const fee = data.deliveryFee || "Rs. 800";
   const time = data.deliveryTime || "2–3 hours";
 
   const breadcrumbSchema = {

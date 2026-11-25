@@ -323,7 +323,7 @@ export default function CartDrawer() {
                       const fee = getDeliveryFee(area);
                       return (
                         <option key={aIdx} value={area} className="bg-white text-[#0B0B0B]">
-                          {area}{fee.fee === 0 ? " — FREE delivery" : fee.fee === null ? " — fee on WhatsApp" : ` — Rs. ${fee.fee}`}
+                          {area}{fee.fee === 0 ? " — Rs. 800 delivery" : fee.fee === null ? " — fee on WhatsApp" : ` — Rs. ${fee.fee}`}
                         </option>
                       );
                     })}
@@ -527,7 +527,7 @@ export default function CartDrawer() {
                 <div className="flex justify-between text-[#2A2A2A]">
                   <span>Express Delivery ({selectedArea.replace(", Lahore", "").replace(", Islamabad", "")}):</span>
                   <span className="text-[#8B1E2D] font-semibold">
-                    {deliveryFee === null ? getDeliveryFee(selectedArea).label : deliveryFee === 0 ? "FREE (Rs. 0)" : `Rs. ${deliveryFee.toLocaleString()}`}
+                    {deliveryFee === null ? getDeliveryFee(selectedArea).label : deliveryFee === 0 ? "Rs. 0" : `Rs. ${deliveryFee.toLocaleString()}`}
                   </span>
                 </div>
                 <div className="flex justify-between text-[#2A2A2A]">

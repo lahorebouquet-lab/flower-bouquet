@@ -12,7 +12,7 @@ export const metadata: Metadata = withSeo("/prices", {
     canonical: `${SITE_URL}/prices`,
   },
   openGraph: {
-    title: "Flower Bouquet Price in Lahore | Free Delivery",
+    title: "Flower Bouquet Price in Lahore | Rs. 800 delivery",
     description: "Bouquet prices in Lahore from PKR 1,239, gajray from PKR 370. Compare real starting prices for chocolate bouquets, wedding décor, car decoration & gifts.",
     url: `${SITE_URL}/prices`,
     siteName: "Lahore Bouquet",
@@ -29,7 +29,7 @@ export const metadata: Metadata = withSeo("/prices", {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Flower Bouquet Price in Lahore | Free Delivery",
+    title: "Flower Bouquet Price in Lahore | Rs. 800 delivery",
     description:
       "Bouquet prices in Lahore from PKR 1,239, gajray from PKR 370. Compare real starting prices for chocolate bouquets, wedding décor, car decoration & gifts.",
     images: ["/images/product_1_eucalyptus_rose.jpg"],

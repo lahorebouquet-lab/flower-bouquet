@@ -30,6 +30,17 @@ const FAQS = [
   { q: "Do you provide bridal bouquets in Islamabad?", a: "Yes. Bridal bouquets can be arranged for Islamabad weddings. Message us on WhatsApp (0310-4225974) with your wedding date for availability and pricing." },
   { q: "Can you decorate wedding venues in Islamabad?", a: "Event and venue decoration enquiries are welcome. Share your venue, date and requirements on WhatsApp for a custom quote." },
   { q: "How early should I book wedding flowers?", a: "Book at least 1–2 weeks in advance for weddings to ensure flower availability and proper planning." },
+  { q: "Do you do mehndi and walima flowers as well?", a: "Enquire on WhatsApp with the date and venue. We will tell you whether we can take the booking and what it would include." },
+  { q: "Can I see the bouquet before it is delivered?", a: "For ready bouquets we send a photo and video on WhatsApp before dispatch. For custom wedding pieces we share the plan and confirm the details with you in advance." },
+  { q: "Do you need an advance for wedding orders?", a: "Custom wedding bookings usually need a confirmation advance. We tell you the amount and the terms before you commit." },
+];
+
+const GUIDE_TITLE = "Planning Wedding Flowers in Islamabad";
+const GUIDE: [string, string][] = [
+  ["Start with the pieces that matter most", "For most weddings the bridal bouquet and the stage or entrance flowers carry the look, so decide those first. After that come the bride's room, the car, garlands, gajray and table pieces. Tell us the date, the venue and the colours, and we will suggest what is realistic for your budget."],
+  ["Booking early", "Wedding orders need planning. Book at least one to two weeks ahead so we can confirm flower availability and plan the delivery. In peak wedding months, and around Valentine's week and Eid, book earlier still."],
+  ["What to send us for a quote", "Send the wedding date, venue and area, the time the flowers must be ready, the colours or inspiration pictures, the list of items you need and your budget. The more detail you give, the more accurate the quote will be."],
+  ["How we work in Islamabad", "We deliver across Islamabad through our local delivery partner. Venue decoration and large wedding orders are handled as custom enquiries, so we confirm availability and the price in writing before taking an advance. For smaller gifts around the event, such as bouquets for family, see our Islamabad flower bouquets page."],
 ];
 
 export default function Page() {
@@ -65,6 +76,22 @@ export default function Page() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+      <section className="w-full py-16 px-4 sm:px-6 border-b border-[#E5DED2] bg-[#F8F3EA]">
+        <div className="max-w-3xl mx-auto space-y-8">
+          <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012] text-center">{GUIDE_TITLE}</h2>
+          {GUIDE.map(([heading, body], i) => (
+            <div key={i} className="space-y-2">
+              <h3 className="font-playfair text-lg sm:text-xl font-bold text-[#101012]">{heading}</h3>
+              <p className="text-sm sm:text-base leading-relaxed">{body}</p>
+            </div>
+          ))}
+          <p className="text-sm text-center text-[#636363]">
+            More: <Link href="/flower-delivery-islamabad" className="underline text-[#8B1E2D]">Flower delivery in Islamabad</Link>
+            {" · "}<Link href="/islamabad/bouquets" className="underline text-[#8B1E2D]">Bouquets</Link>
+            {" · "}<Link href="/islamabad/flower-prices" className="underline text-[#8B1E2D]">Prices</Link>
+          </p>
         </div>
       </section>
       <section className="w-full py-16 px-4 sm:px-6 bg-white">

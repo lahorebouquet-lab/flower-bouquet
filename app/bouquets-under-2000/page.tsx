@@ -12,13 +12,13 @@ export const metadata: Metadata = withSeo("/bouquets-under-2000", {
   title: {
     absolute: "Bouquets Under Rs. 2,000 in Lahore | Same-Day",
   },
-  description: "Bouquets under Rs. 2,000 in Lahore: roses, sunflowers and mixed bouquets from Rs. 1,239. FREE same-day delivery in 2–5 hours, photo before dispatch.",
+  description: "Bouquets under Rs. 2,000 in Lahore: roses, sunflowers and mixed bouquets from Rs. 1,239. Same-day delivery (Rs. 800) in 2–5 hours, photo before dispatch.",
   alternates: {
     canonical: `${SITE_URL}/bouquets-under-2000`,
   },
   openGraph: {
     title: "Bouquets Under Rs. 2,000 in Lahore | Same-Day",
-    description: "Bouquets under Rs. 2,000 in Lahore: roses, sunflowers and mixed bouquets from Rs. 1,239. FREE same-day delivery in 2–5 hours, photo before dispatch.",
+    description: "Bouquets under Rs. 2,000 in Lahore: roses, sunflowers and mixed bouquets from Rs. 1,239. Same-day delivery (Rs. 800) in 2–5 hours, photo before dispatch.",
     url: `${SITE_URL}/bouquets-under-2000`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",
@@ -49,15 +49,15 @@ const BOUQUET_CATEGORIES = [
 const FAQ_ITEMS = [
   {
     q: "What is the cheapest bouquet in Lahore?",
-    a: "Hand-tied small bouquets start from Rs. 1,239 with free delivery in listed Lahore areas. Every bouquet on this page costs Rs. 2,000 or less.",
+    a: "Hand-tied small bouquets start from Rs. 1,239 with Rs. 800 delivery in listed Lahore areas. Every bouquet on this page costs Rs. 2,000 or less.",
   },
   {
     q: "What kinds of bouquets cost under Rs. 2,000?",
     a: "Single and small rose bouquets, sunflower bouquets, small mixed bouquets and handmade crochet bouquets. Medium rose bouquets (Rs. 2,600–3,800) and the large signature arrangement (Rs. 7,499) are above this budget.",
   },
   {
-    q: "Is delivery free on bouquets under Rs. 2,000?",
-    a: "Yes. Delivery is FREE in listed Lahore areas — DHA, Gulberg, Bahria Town, Model Town, Johar Town, Cantt and more — whatever the bouquet costs.",
+    q: "Is delivery (Rs. 800) on bouquets under Rs. 2,000?",
+    a: "Yes. Delivery is Rs. 800 in listed Lahore areas — DHA, Gulberg, Bahria Town, Model Town, Johar Town, Cantt and more — whatever the bouquet costs.",
   },
   {
     q: "Can I get a bouquet under Rs. 2,000 delivered today?",
@@ -241,7 +241,7 @@ export default async function BouquetsUnder2000Page() {
           Pick a bouquet above, add it to the bag, choose your delivery area, date and time slot, and pay by bank transfer, JazzCash, EasyPaisa or card — or order directly on WhatsApp at 0310-4225974. Before your bouquet leaves, we send you a photo of the actual arrangement on WhatsApp for your approval.
         </p>
         <p className="text-xs sm:text-sm text-[#555555] leading-relaxed">
-          Delivery is free across Lahore — DHA, Gulberg, Johar Town, Bahria Town, Model Town, Cantt, Wapda Town and Township — and same-day orders placed before 4:00 PM arrive within 2 to 5 hours. Need a birthday surprise at midnight? Our 11:30 PM to 12:15 AM midnight slot has you covered — book before 8:00 PM. We are open every day from 9:00 AM to 1:00 AM. Sending flowers to someone in Lahore from another city or from abroad? Read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] underline font-semibold">how to send flowers to Lahore</Link>.
+          Delivery is Rs. 800 across Lahore — DHA, Gulberg, Johar Town, Bahria Town, Model Town, Cantt, Wapda Town and Township — and same-day orders placed before 4:00 PM arrive within 2 to 5 hours. Need a birthday surprise at midnight? Our 11:30 PM to 12:15 AM midnight slot has you covered — book before 8:00 PM. We are open every day from 9:00 AM to 1:00 AM. Sending flowers to someone in Lahore from another city or from abroad? Read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] underline font-semibold">how to send flowers to Lahore</Link>.
         </p>
       </section>
 

@@ -143,7 +143,7 @@ export default function FlowerJewelleryLahorePage() {
           <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Flower Jewellery Styles & Prices in Lahore</h2>
         </div>
         <p className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed max-w-3xl">
-          Transparent pricing — no hidden charges. Delivery is free across all listed Lahore areas — see our <Link href="/delivery-areas" className="text-[#8B1E2D] underline">delivery areas</Link> page.
+          Transparent pricing — no hidden charges. Delivery is Rs. 800 across all listed Lahore areas — see our <Link href="/delivery-areas" className="text-[#8B1E2D] underline">delivery areas</Link> page.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {OPTIONS.map((s) => (
@@ -207,7 +207,7 @@ export default function FlowerJewelleryLahorePage() {
       <section className="p-6 sm:p-8 rounded-2xl bg-white border border-[rgba(198,161,91,0.25)] shadow-sm space-y-4">
         <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">Flower Jewellery Delivery Across Lahore</h2>
         <p className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed">
-          Fresh flower jewellery is made the same morning and delivered within 2–5 hours across <strong>DHA</strong> (all phases), <strong>Gulberg</strong>, <strong>Model Town</strong>, <strong>Johar Town</strong>, <strong>Bahria Town</strong>, <strong>Cantt</strong>, <strong>Wapda Town</strong> and <strong>Askari</strong>. For morning functions, order the night before and pick an early slot. Delivery is <strong>free</strong> across all listed areas.
+          Fresh flower jewellery is made the same morning and delivered within 2–5 hours across <strong>DHA</strong> (all phases), <strong>Gulberg</strong>, <strong>Model Town</strong>, <strong>Johar Town</strong>, <strong>Bahria Town</strong>, <strong>Cantt</strong>, <strong>Wapda Town</strong> and <strong>Askari</strong>. For morning functions, order the night before and pick an early slot. Delivery is <strong>Rs. 800</strong> across all listed areas.
         </p>
         <p className="text-xs sm:text-sm text-[#2A2A2A] leading-relaxed">
           Ordering from abroad? Brides' families in the <strong>UK, USA and UAE</strong> order jewellery sets for Lahore weddings every week — pay by international card, approve the photo on WhatsApp, and we'll handle the delivery.

@@ -9,13 +9,13 @@ export const metadata: Metadata = withSeo("/islamabad/flower-prices", {
   title: {
     absolute: "Flower Delivery Prices in Islamabad | Price Guide | Lahore Bouquet",
   },
-  description: "Transparent flower prices in Islamabad — hand-tied bouquets from Rs. 1,239, roses Rs. 2,600–3,800, free delivery in listed sectors. Last updated October 2026.",
+  description: "Transparent flower prices in Islamabad — hand-tied bouquets from Rs. 1,239, roses Rs. 2,600–3,800, Rs. 800 delivery in listed sectors. Last updated October 2026.",
   alternates: {
     canonical: `${SITE_URL}/islamabad/flower-prices`,
   },
   openGraph: {
     title: "Flower Delivery Prices in Islamabad | Lahore Bouquet",
-    description: "Transparent Islamabad flower prices. Bouquets from Rs. 1,239, free delivery in listed sectors.",
+    description: "Transparent Islamabad flower prices. Bouquets from Rs. 1,239, Rs. 800 delivery in listed sectors.",
     url: `${SITE_URL}/islamabad/flower-prices`,
     siteName: "Lahore Bouquet",
     type: "website",
@@ -24,7 +24,7 @@ export const metadata: Metadata = withSeo("/islamabad/flower-prices", {
   twitter: {
     card: "summary_large_image",
     title: "Flower Delivery Prices in Islamabad | Lahore Bouquet",
-    description: "Islamabad flower prices from Rs. 1,239. Free delivery in listed sectors.",
+    description: "Islamabad flower prices from Rs. 1,239. Rs. 800 delivery in listed sectors.",
   },
 });
 
@@ -39,7 +39,7 @@ const PRICE_ROWS = [
 const FAQS = [
   {
     q: "How much does flower delivery cost in Islamabad?",
-    a: "Delivery is FREE in all listed Islamabad sectors. Bouquet prices start from Rs. 1,239. There are no hidden charges — the price you see is what you pay."
+    a: "Delivery is Rs. 800 in all listed Islamabad sectors. Bouquet prices start from Rs. 1,239. There are no hidden charges — the price you see is what you pay."
   },
   {
     q: "What is the cheapest flower option in Islamabad?",
@@ -47,7 +47,7 @@ const FAQS = [
   },
   {
     q: "Are Islamabad prices the same as Lahore?",
-    a: "Yes. Islamabad prices match Lahore prices — same bouquets, same rates, same free delivery policy in listed areas."
+    a: "Yes. Islamabad prices match Lahore prices — same bouquets, same rates, same Rs. 800 delivery policy in listed areas."
   },
   {
     q: "Do prices change on Valentine's Day or special occasions?",
@@ -87,7 +87,7 @@ export default function IslamabadPricesPage() {
             Flower Delivery Prices in Islamabad
           </h1>
           <p className="text-sm sm:text-base leading-relaxed">
-            <strong>Transparent, honest pricing</strong> — the same prices as Lahore, no hidden charges. <strong>Last updated: October 2026.</strong> Free delivery in all listed Islamabad sectors.
+            <strong>Transparent, honest pricing</strong> — the same prices as Lahore, no hidden charges. <strong>Last updated: October 2026.</strong> Rs. 800 delivery in all listed Islamabad sectors.
           </p>
         </div>
       </section>
@@ -118,7 +118,7 @@ export default function IslamabadPricesPage() {
             </table>
           </div>
           <div className="text-center space-y-3 pt-2">
-            <p className="text-sm"><strong>Delivery:</strong> FREE in listed sectors | <strong>Timing:</strong> Same-day 2–5 hours</p>
+            <p className="text-sm"><strong>Delivery:</strong> Rs. 800 in listed sectors | <strong>Timing:</strong> Same-day 2–5 hours</p>
             <Link href="/islamabad/bouquets" className="inline-block px-6 py-3 rounded-full bg-[#8B1E2D] text-white text-sm font-bold hover:bg-[#C6A15B] hover:text-[#0B0B0B] transition-colors">
               Shop Bouquets
             </Link>

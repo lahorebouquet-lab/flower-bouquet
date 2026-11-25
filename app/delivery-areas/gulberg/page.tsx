@@ -9,22 +9,22 @@ import { withSeo } from "@/lib/seo";
 
 export const metadata: Metadata = withSeo("/delivery-areas/gulberg", {
   title: {
-    absolute: "Flower Delivery in Gulberg Lahore | FREE, 30–90 Mins",
+    absolute: "Flower Delivery in Gulberg Lahore | Same-Day, 30–90 Mins",
   },
-  description: "Free 30–90 minute flower delivery in Gulberg I, II & III, Liberty, MM Alam Road & Main Boulevard Lahore. Bouquets from Rs. 1,239. Midnight slot, photo on",
+  description: "30–90 minute flower delivery in Gulberg I, II & III, Liberty, MM Alam Road & Main Boulevard Lahore. Bouquets from Rs. 1,239. Midnight slot, photo on",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/gulberg`,
   },
   openGraph: {
-    title: "Flower Delivery in Gulberg Lahore | FREE, 30–90 Mins",
-    description: "Free 30–90 minute flower delivery in Gulberg I, II & III, Liberty, MM Alam Road & Main Boulevard Lahore. Bouquets from Rs. 1,239. Midnight slot, photo on",
+    title: "Flower Delivery in Gulberg Lahore | Same-Day, 30–90 Mins",
+    description: "30–90 minute flower delivery in Gulberg I, II & III, Liberty, MM Alam Road & Main Boulevard Lahore. Bouquets from Rs. 1,239. Midnight slot, photo on",
     url: `${SITE_URL}/delivery-areas/gulberg`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in Gulberg Lahore | FREE, 30–90 Mins",
+        alt: "Flower Delivery in Gulberg Lahore | Same-Day, 30–90 Mins",
       },
     ],
   }
@@ -73,10 +73,10 @@ export default async function GulbergDeliveryPage() {
       },
       {
         "@type": "Question",
-        name: "Is flower delivery really free in Gulberg?",
+        name: "How much is flower delivery in Gulberg?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Delivery inside Gulberg (I, II and III), Liberty Market, MM Alam Road, Kasuri Road and the Main Boulevard corridor is completely free with no minimum order. You only pay for the bouquet itself, and prices start at Rs. 1,239.",
+          text: "Delivery inside Gulberg (I, II and III), Liberty Market, MM Alam Road, Kasuri Road and the Main Boulevard corridor is a flat Rs. 800 with no minimum order. Bouquets start at Rs. 1,239, plus the delivery fee.",
         },
       },
       {
@@ -146,7 +146,7 @@ export default async function GulbergDeliveryPage() {
       <section className="space-y-4">
         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#8B1E2D]/20 text-[#C6A15B] border border-[#8B1E2D] text-xs font-bold uppercase tracking-wider">
           <MapPin className="w-3.5 h-3.5 text-[#C6A15B]" />
-          Home Base • Free Delivery • 30–90 Mins
+          Home Base • Rs. 800 delivery • 30–90 Mins
         </span>
 
         <h1 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0B0B0B] leading-tight">
@@ -154,11 +154,11 @@ export default async function GulbergDeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Gulberg is our home turf and our fastest delivery zone — bouquets from Rs. 1,239, delivered in 30–90 minutes. Our Lahore workshop ties every bouquet fresh and dispatches riders within minutes — and delivery anywhere inside Gulberg is completely FREE, with no minimum order. Whether you are sending roses to an office on Main Boulevard, surprising someone at a café on MM Alam Road, or ordering a midnight bouquet to Gulberg II, our florists send you a live photo on WhatsApp before the rider leaves, so what arrives is exactly what you approved. Ordering is simple: WhatsApp us at 0310-4225974 any time between 9 AM and 1 AM, approve the bouquet photo we send back, and pay by JazzCash, EasyPaisa, bank transfer or card — our riders handle the rest. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
+          Gulberg is our home turf and our fastest delivery zone — bouquets from Rs. 1,239, delivered in 30–90 minutes. Our Lahore workshop ties every bouquet fresh and dispatches riders within minutes — and delivery anywhere inside Gulberg is a flat Rs. 800, with no minimum order. Whether you are sending roses to an office on Main Boulevard, surprising someone at a café on MM Alam Road, or ordering a midnight bouquet to Gulberg II, our florists send you a live photo on WhatsApp before the rider leaves, so what arrives is exactly what you approved. Ordering is simple: WhatsApp us at 0310-4225974 any time between 9 AM and 1 AM, approve the bouquet photo we send back, and pay by JazzCash, EasyPaisa, bank transfer or card — our riders handle the rest. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
-          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 30 to 90 mins • FREE delivery in Gulberg</span>
+          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 30 to 90 mins • Rs. 800 delivery in Gulberg</span>
           <span className="flex items-center gap-1.5"><Camera className="w-4 h-4 text-[#C6A15B]" /> Photo on WhatsApp before dispatch</span>
           <a 
             href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20flowers%20to%20Gulberg%20Lahore."
@@ -189,7 +189,7 @@ export default async function GulbergDeliveryPage() {
           <h2 className="font-playfair text-xl font-bold">Delivery time & fee — Gulberg Lahore</h2>
         </div>
         <ul className="space-y-2 text-xs text-[#2A2A2A] list-disc list-inside leading-relaxed">
-          <li><strong>Delivery fee: FREE (Rs. 0)</strong> — across Gulberg I, II & III, Liberty Market, MM Alam Road, Kasuri Road, Main Boulevard and the Jail Road corridor. No minimum order.</li>
+          <li><strong>Delivery fee: Rs. 800</strong> — across Gulberg I, II & III, Liberty Market, MM Alam Road, Kasuri Road, Main Boulevard and the Jail Road corridor. No minimum order.</li>
           <li><strong>Delivery time: 30 to 90 minutes</strong>, 7 days a week, from 9 AM to 1 AM.</li>
           <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM, 7 days a week — book before 8 PM on WhatsApp.</li>
           <li><strong>Payments:</strong> JazzCash, EasyPaisa, bank transfer and international cards.</li>
@@ -236,8 +236,8 @@ export default async function GulbergDeliveryPage() {
             <p className="text-xs text-[#2A2A2A] leading-relaxed">Because our florists work from Lahore, orders to Gulberg I, II and III, Liberty, MM Alam Road and Main Boulevard are delivered within 30 to 90 minutes. For the fastest arrival, order on WhatsApp at 0310-4225974 and we will dispatch the next available rider.</p>
           </div>
           <div className="py-3 space-y-1">
-            <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Is flower delivery really free in Gulberg?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Yes. Delivery inside Gulberg (I, II and III), Liberty Market, MM Alam Road, Kasuri Road and the Main Boulevard corridor is completely free with no minimum order. You only pay for the bouquet itself, and prices start at Rs. 1,239.</p>
+            <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How much is flower delivery in Gulberg?</h3>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery inside Gulberg (I, II and III), Liberty Market, MM Alam Road, Kasuri Road and the Main Boulevard corridor is a flat Rs. 800 with no minimum order. Bouquets start at Rs. 1,239, plus the delivery fee.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Can you deliver flowers to restaurants on MM Alam Road?</h3>
@@ -303,19 +303,19 @@ export default async function GulbergDeliveryPage() {
         <div className="grid sm:grid-cols-3 gap-3">
           <Link href="/delivery-areas/model-town" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Model Town →</p>
-            <p className="text-xs text-[#2A2A2A]">FREE delivery • 1.5–2.5 hours. Blocks A–M, Link Road and Garden Town, minutes via Kalma Chowk.</p>
+            <p className="text-xs text-[#2A2A2A]">Rs. 800 delivery • 1.5–2.5 hours. Blocks A–M, Link Road and Garden Town, minutes via Kalma Chowk.</p>
           </Link>
           <Link href="/delivery-areas/dha" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">DHA Lahore →</p>
-            <p className="text-xs text-[#2A2A2A]">FREE • 2–3 hours. Phases 1–9, Defence Raya and Sector Y with gated-community protocol.</p>
+            <p className="text-xs text-[#2A2A2A]">Rs. 800 • 2–3 hours. Phases 1–9, Defence Raya and Sector Y with gated-community protocol.</p>
           </Link>
           <Link href="/delivery-areas/cantt" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Lahore Cantt →</p>
-            <p className="text-xs text-[#2A2A2A]">FREE • 2–2.5 hours. Saddar, Cavalry Ground, PAF Colony and CMH with gate clearance.</p>
+            <p className="text-xs text-[#2A2A2A]">Rs. 800 • 2–2.5 hours. Saddar, Cavalry Ground, PAF Colony and CMH with gate clearance.</p>
           </Link>
           <Link href="/delivery-areas/faisal-town" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Faisal Town →</p>
-            <p className="text-xs text-[#2A2A2A]">FREE • 2–3 hours. Faisal Town, next to Gulberg and Model Town — same-day delivery with WhatsApp photo proof.</p>
+            <p className="text-xs text-[#2A2A2A]">Rs. 800 • 2–3 hours. Faisal Town, next to Gulberg and Model Town — same-day delivery with WhatsApp photo proof.</p>
           </Link>
         </div>
       </section>

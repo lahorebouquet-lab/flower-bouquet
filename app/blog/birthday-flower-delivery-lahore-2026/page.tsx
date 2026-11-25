@@ -31,7 +31,7 @@ export const metadata: Metadata = withSeo("/blog/birthday-flower-delivery-lahore
 const FAQS = [
   {
     q: "How much does birthday flower delivery cost in Lahore?",
-    a: "Birthday bouquets in Lahore start at Rs. 1,699 for a cheerful hand-tied bunch. Premium rose bouquets run Rs. 2,999 and up. Add a cake (from Rs. 1,499), helium balloons (from Rs. 199 each) or a teddy bear for the complete surprise. Delivery is free across Lahore."
+    a: "Birthday bouquets in Lahore start at Rs. 1,699 for a cheerful hand-tied bunch. Premium rose bouquets run Rs. 2,999 and up. Add a cake (from Rs. 1,499), helium balloons (from Rs. 199 each) or a teddy bear for the complete surprise. Delivery is Rs. 800 across Lahore."
   },
   {
     q: "Can I get same-day birthday flower delivery in Lahore?",
@@ -161,7 +161,7 @@ export default function BirthdayFlowerDeliveryBlogPage() {
         <ul className="space-y-2 text-sm sm:text-base list-disc list-inside leading-relaxed">
           <li><strong>Order before 4:00 PM</strong> for same-day delivery (2–5 hours) across DHA, Gulberg, Model Town, Johar Town, Bahria Town and Cantt.</li>
           <li><strong>WhatsApp photo approval</strong> — we send a photo of your bouquet before the rider leaves.</li>
-          <li><strong>Free delivery</strong> across all Lahore areas.</li>
+          <li><strong>Rs. 800 delivery</strong> across all Lahore areas.</li>
           <li><strong>From abroad?</strong> Pay by international card, approve by photo, and we deliver to any Lahore address.</li>
         </ul>
 

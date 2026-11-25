@@ -31,6 +31,17 @@ const FAQS = [
   { q: "How much do chocolate bouquets cost in Islamabad?", a: "Chocolate bouquets start from Rs. 3,800. Larger premium arrangements are available — message us for today's options." },
   { q: "Can I combine flowers with chocolates?", a: "Yes! Flower + chocolate combo bouquets are popular for birthdays and anniversaries. Ask on WhatsApp for combo options." },
   { q: "Is same-day chocolate bouquet delivery available?", a: "Yes, in covered Islamabad areas — same-day in 2 to 5 hours, subject to availability." },
+  { q: "How should I store a chocolate bouquet?", a: "Keep it in a cool room away from sunlight and the stove. Avoid the fridge unless the room is very hot, as condensation can mark the chocolate." },
+  { q: "Can I choose the chocolates inside?", a: "Yes, within what is available that day. Share your preferences on WhatsApp and we will confirm." },
+  { q: "Is a chocolate bouquet suitable as a corporate gift?", a: "Yes. Many customers send them to colleagues and clients. Share the delivery address and a message card text, and we will arrange it." },
+];
+
+const GUIDE_TITLE = "How to Pick a Chocolate Bouquet in Islamabad";
+const GUIDE: [string, string][] = [
+  ["What a chocolate bouquet is", "A chocolate bouquet arranges chocolates on stems and wraps them like flowers. It is a gift that is eaten rather than watered, so it suits people who do not want flowers to wilt, or anyone who would rather receive something they can share at home. Our chocolate bouquets start from Rs. 3,800."],
+  ["Who it works best for", "It is a safe choice for birthdays, Eid and Ramadan gifts, corporate thank-yous, new-baby visits and anniversaries. For a romantic occasion many people choose a flower and chocolate combination so there is something to look at and something to enjoy."],
+  ["Things worth asking before you order", "Tell us if you want a particular brand or type of chocolate, if there is a nut allergy in the family, or if the gift is for a child. We will tell you what is available that day and confirm the price before you pay. Chocolate is sensitive to heat, so in summer ask for delivery at a cooler time of day."],
+  ["Delivery in Islamabad", "Delivery is the same day, in 2 to 5 hours, through our local delivery partner in covered areas of Islamabad, and delivery is Rs. 800 in our listed sectors. For the full sector list see our Islamabad flower delivery page. If you want to pair the bouquet with fresh roses, look at our Islamabad rose bouquets."],
 ];
 
 export default function Page() {
@@ -66,6 +77,22 @@ export default function Page() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+      <section className="w-full py-16 px-4 sm:px-6 border-b border-[#E5DED2] bg-[#F8F3EA]">
+        <div className="max-w-3xl mx-auto space-y-8">
+          <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012] text-center">{GUIDE_TITLE}</h2>
+          {GUIDE.map(([heading, body], i) => (
+            <div key={i} className="space-y-2">
+              <h3 className="font-playfair text-lg sm:text-xl font-bold text-[#101012]">{heading}</h3>
+              <p className="text-sm sm:text-base leading-relaxed">{body}</p>
+            </div>
+          ))}
+          <p className="text-sm text-center text-[#636363]">
+            More: <Link href="/flower-delivery-islamabad" className="underline text-[#8B1E2D]">Flower delivery in Islamabad</Link>
+            {" · "}<Link href="/islamabad/bouquets" className="underline text-[#8B1E2D]">Bouquets</Link>
+            {" · "}<Link href="/islamabad/flower-prices" className="underline text-[#8B1E2D]">Prices</Link>
+          </p>
         </div>
       </section>
       <section className="w-full py-16 px-4 sm:px-6 bg-white">

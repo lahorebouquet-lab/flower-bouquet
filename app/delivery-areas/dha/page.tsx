@@ -9,22 +9,22 @@ import { withSeo } from "@/lib/seo";
 
 export const metadata: Metadata = withSeo("/delivery-areas/dha", {
   title: {
-    absolute: "Flower Delivery in DHA Lahore | FREE delivery, 2–3 hrs",
+    absolute: "Flower Delivery in DHA Lahore | Rs. 800 delivery, 2–3 hrs",
   },
-  description: "Same-day flower delivery to DHA Lahore Phases 1–9, Defence Raya & Sector Y in 2–3 hours. Delivery FREE delivery. Imported roses, money bouquets, cakes &",
+  description: "Same-day flower delivery to DHA Lahore Phases 1–9, Defence Raya & Sector Y in 2–3 hours. Delivery Rs. 800 delivery. Imported roses, money bouquets, cakes &",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/dha`,
   },
   openGraph: {
-    title: "Flower Delivery in DHA Lahore | FREE delivery, 2–3 hrs",
-    description: "Same-day flower delivery to DHA Lahore Phases 1–9, Defence Raya & Sector Y in 2–3 hours. Delivery FREE delivery. Imported roses, money bouquets, cakes &",
+    title: "Flower Delivery in DHA Lahore | Rs. 800 delivery, 2–3 hrs",
+    description: "Same-day flower delivery to DHA Lahore Phases 1–9, Defence Raya & Sector Y in 2–3 hours. Delivery Rs. 800 delivery. Imported roses, money bouquets, cakes &",
     url: `${SITE_URL}/delivery-areas/dha`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in DHA Lahore | FREE delivery, 2–3 hrs",
+        alt: "Flower Delivery in DHA Lahore | Rs. 800 delivery, 2–3 hrs",
       },
     ],
   }
@@ -64,7 +64,7 @@ const dhaFaqSchema = {
       name: "How long does flower delivery to DHA Lahore take, and what is the fee?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Delivery to DHA Lahore takes 2 to 3 hours with free delivery. Orders to Phases 1 to 5 usually arrive at the faster end of the window; Phases 6 to 9, Defence Raya and Sector Y take the full window during peak traffic. DHA Rahbar takes 3 to 4 hours.",
+        text: "Delivery to DHA Lahore takes 2 to 3 hours with Rs. 800 delivery. Orders to Phases 1 to 5 usually arrive at the faster end of the window; Phases 6 to 9, Defence Raya and Sector Y take the full window during peak traffic. DHA Rahbar takes 3 to 4 hours.",
       },
     },
     {
@@ -167,11 +167,11 @@ export default async function DHADeliveryPage() {
         </h1>
 
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
-          Flower delivery in DHA Lahore is free across Phases 1 to 9, Defence Raya, Sector Y and DHA Rahbar, with bouquets from Rs. 1,239. Most orders reach Phases 1 to 5 within about 2 to 3 hours; for Phases 6 to 9, Defence Raya and Sector Y, allow the full window, and DHA Rahbar takes 3 to 4 hours. Our florists send you a photo on WhatsApp before your bouquet leaves, and we deliver to homes, offices, and to Combined Military Hospital (CMH). To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your phase and street details — approve the bouquet photo we send, then pay by JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
+          Flower delivery in DHA Lahore is a flat Rs. 800 across Phases 1 to 9, Defence Raya, Sector Y and DHA Rahbar, with bouquets from Rs. 1,239. Most orders reach Phases 1 to 5 within about 2 to 3 hours; for Phases 6 to 9, Defence Raya and Sector Y, allow the full window, and DHA Rahbar takes 3 to 4 hours. Our florists send you a photo on WhatsApp before your bouquet leaves, and we deliver to homes, offices, and to Combined Military Hospital (CMH). To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your phase and street details — approve the bouquet photo we send, then pay by JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-2 text-xs text-[#2A2A2A]">
-          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 2 to 3 hours • FREE delivery</span>
+          <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-[#8B1E2D]" /> 2 to 3 hours • Rs. 800 delivery</span>
           <span className="flex items-center gap-1.5"><Camera className="w-4 h-4 text-[#C6A15B]" /> Photo on WhatsApp before it leaves</span>
           <a 
             href="https://wa.me/923104225974?text=Hello%20Lahore%20Bouquet!%20I%20would%20like%20to%20order%20flowers%20to%20DHA%20Lahore."
@@ -202,7 +202,7 @@ export default async function DHADeliveryPage() {
           <h2 className="font-playfair text-xl font-bold">Delivery time & fee — DHA Lahore</h2>
         </div>
         <ul className="space-y-2 text-xs text-[#2A2A2A] list-disc list-inside leading-relaxed">
-          <li><strong>Delivery fee: FREE</strong> — across DHA Phases 1 to 9, DHA Phase 9 Town, Defence Raya, Sector Y and DHA Rahbar. No hidden charges.</li>
+          <li><strong>Delivery fee: Rs. 800</strong> — across DHA Phases 1 to 9, DHA Phase 9 Town, Defence Raya, Sector Y and DHA Rahbar. No hidden charges.</li>
           <li><strong>Delivery time: 2 to 3 hours</strong>, 7 days a week, from 9 AM to 1 AM. Phases 1–5 are usually fastest; Phases 6–9 and Raya take the full window in peak traffic. DHA Rahbar takes 3 to 4 hours.</li>
           <li><strong>Midnight slot:</strong> 11:30 PM–12:15 AM, 7 days a week — book before 8 PM on WhatsApp.</li>
           <li><strong>Payments:</strong> JazzCash, EasyPaisa, bank transfer and international cards.</li>
@@ -222,7 +222,7 @@ export default async function DHADeliveryPage() {
           <li><strong>DHA Phases 6, 7 & 8:</strong> villas, farmhouses and new developments — allow the full 3-hour window during evening traffic.</li>
           <li><strong>DHA Phase 9 & Phase 9 Town:</strong> the newest sectors; share your street number exactly as many blocks are still being mapped.</li>
           <li><strong>Defence Raya & Sector Y:</strong> commercial boulevards, Raya Fairways offices and Sector Y markets — corporate gifting and shop-opening flowers.</li>
-          <li><strong>DHA Rahbar:</strong> DHA&apos;s growing extension near Valencia Town — sectors off Defence Road, delivered in 3 to 4 hours with free delivery. Share your exact sector and street, as new blocks are still being mapped.</li>
+          <li><strong>DHA Rahbar:</strong> DHA&apos;s growing extension near Valencia Town — sectors off Defence Road, delivered in 3 to 4 hours with Rs. 800 delivery. Share your exact sector and street, as new blocks are still being mapped.</li>
           <li><strong>CMH Lahore:</strong> get-well flowers and hampers delivered to Combined Military Hospital — share the patient&apos;s ward and room number.</li>
         </ul>
       </section>
@@ -247,7 +247,7 @@ export default async function DHADeliveryPage() {
         <div className="divide-y divide-[rgba(198,161,91,0.25)]">
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How long does flower delivery to DHA Lahore take, and what is the fee?</h3>
-            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery to DHA Lahore takes 2 to 3 hours with free delivery. Orders to Phases 1 to 5 usually arrive at the faster end of the window; Phases 6 to 9, Defence Raya and Sector Y take the full window during peak traffic. DHA Rahbar takes 3 to 4 hours.</p>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery to DHA Lahore takes 2 to 3 hours with Rs. 800 delivery. Orders to Phases 1 to 5 usually arrive at the faster end of the window; Phases 6 to 9, Defence Raya and Sector Y take the full window during peak traffic. DHA Rahbar takes 3 to 4 hours.</p>
           </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Which DHA phases and sectors do you deliver to?</h3>
@@ -292,7 +292,7 @@ export default async function DHADeliveryPage() {
         <ol className="space-y-3 text-xs text-[#2A2A2A] leading-relaxed list-decimal list-inside">
           <li><strong>Tell us what you need.</strong> Browse the bouquets below or message <strong>0310-4225974</strong> on WhatsApp (open 9 AM–1 AM daily) with your DHA phase, street and house number, the occasion and your budget. Our florists will suggest fresh options starting at Rs. 1,239 — including which roses and seasonal flowers arrived today.</li>
           <li><strong>Approve the photo.</strong> We tie your bouquet fresh and send you a photo on WhatsApp before the rider leaves. Nothing ships until you reply that it looks perfect — ask for tweaks and we redo it.</li>
-          <li><strong>Pay your way and receive.</strong> Pay by JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your DHA phase within 2–3 hours for the FREE fee — or in the midnight slot.</li>
+          <li><strong>Pay your way and receive.</strong> Pay by JazzCash, EasyPaisa, bank transfer or an international card. The rider reaches your DHA phase within 2–3 hours for the Rs. 800 fee — or in the midnight slot.</li>
         </ol>
       </section>
 
@@ -321,23 +321,23 @@ export default async function DHADeliveryPage() {
         <div className="grid sm:grid-cols-3 gap-3">
           <Link href="/delivery-areas/gulberg" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Gulberg →</p>
-            <p className="text-xs text-[#2A2A2A]">FREE delivery • 30–90 mins. Gulberg I–III, Liberty, MM Alam Road and Main Boulevard.</p>
+            <p className="text-xs text-[#2A2A2A]">Rs. 800 delivery • 30–90 mins. Gulberg I–III, Liberty, MM Alam Road and Main Boulevard.</p>
           </Link>
           <Link href="/delivery-areas/cantt" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Lahore Cantt →</p>
-            <p className="text-xs text-[#2A2A2A]">FREE • 2–2.5 hours. Saddar, Cavalry Ground, PAF Colony and CMH with gate clearance.</p>
+            <p className="text-xs text-[#2A2A2A]">Rs. 800 • 2–2.5 hours. Saddar, Cavalry Ground, PAF Colony and CMH with gate clearance.</p>
           </Link>
           <Link href="/delivery-areas/model-town" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Model Town →</p>
-            <p className="text-xs text-[#2A2A2A]">FREE delivery • 1.5–2.5 hours. Blocks A–M, Link Road and Garden Town.</p>
+            <p className="text-xs text-[#2A2A2A]">Rs. 800 delivery • 1.5–2.5 hours. Blocks A–M, Link Road and Garden Town.</p>
           </Link>
           <Link href="/delivery-areas/dha-rahbar" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">DHA Rahbar →</p>
-            <p className="text-xs text-[#2A2A2A]">FREE • 3–4 hours. DHA Rahbar sector with same-day delivery and WhatsApp photo proof.</p>
+            <p className="text-xs text-[#2A2A2A]">Rs. 800 • 3–4 hours. DHA Rahbar sector with same-day delivery and WhatsApp photo proof.</p>
           </Link>
           <Link href="/delivery-areas/askari" className="p-4 rounded-xl border border-[rgba(198,161,91,0.25)] hover:border-[#8B1E2D] transition-colors space-y-1">
             <p className="text-xs sm:text-sm font-bold text-[#8B1E2D]">Askari →</p>
-            <p className="text-xs text-[#2A2A2A]">FREE • 2–3 hours. Askari 1–11, Bedian Road and Cantt — gated-community delivery with photo proof.</p>
+            <p className="text-xs text-[#2A2A2A]">Rs. 800 • 2–3 hours. Askari 1–11, Bedian Road and Cantt — gated-community delivery with photo proof.</p>
           </Link>
         </div>
       </section>

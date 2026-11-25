@@ -114,7 +114,7 @@ export function floristSchema(url: string = SITE_URL) {
     image: `${url}/og-image.jpg`,
     logo: `${url}/icon.png`,
     description:
-      "Same-day flower delivery in Lahore. Fresh hand-tied bouquets from Rs. 1,239, delivered free in 2-5 hours, with a WhatsApp photo before dispatch.",
+      "Same-day flower delivery in Lahore. Fresh hand-tied bouquets from Rs. 1,239, delivered (Rs. 800) in 2-5 hours, with a WhatsApp photo before dispatch.",
     telephone: BUSINESS.phone.e164,
     email: BUSINESS.email,
     priceRange: BUSINESS.priceRange.display,
@@ -212,7 +212,7 @@ export function itemListSchema(
         url: `${SITE_URL}/products/${p.slug}`,
         ...(p.description
           ? { description: p.description }
-          : { description: `${p.title} — fresh flowers with free same-day delivery across Lahore. Order online at Lahore Bouquet.` }),
+          : { description: `${p.title} — fresh flowers with same-day delivery (Rs. 800) across Lahore. Order online at Lahore Bouquet.` }),
         brand: { "@type": "Brand", name: BUSINESS.name },
         image: p.image
           ? (p.image.startsWith("http") ? p.image : `${SITE_URL}${p.image}`)
@@ -228,7 +228,7 @@ export function itemListSchema(
                 availability: "https://schema.org/InStock",
                 shippingDetails: {
                   "@type": "OfferShippingDetails",
-                  shippingRate: { "@type": "MonetaryAmount", value: 0, currency: "PKR" },
+                  shippingRate: { "@type": "MonetaryAmount", value: 800, currency: "PKR" },
                   shippingDestination: { "@type": "DefinedRegion", addressCountry: "PK", addressRegion: "Lahore" },
                   deliveryTime: {
                     "@type": "ShippingDeliveryTime",
