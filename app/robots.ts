@@ -53,10 +53,27 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
           "/wishlist",
         ],
       },
-      // AI crawlers are explicitly allowed (answer engines / GEO).
+      // AI answer-engine crawlers are explicitly allowed (GEO).
       {
-        userAgent: ["GPTBot", "ChatGPT-User", "ClaudeBot", "PerplexityBot", "Google-Extended", "OAI-SearchBot", "Bytespider"],
+        userAgent: ["GPTBot", "ChatGPT-User", "ClaudeBot", "PerplexityBot", "Google-Extended", "OAI-SearchBot"],
         allow: "/",
+      },
+      // Aggressive scrapers / SEO-tool bots: no ranking value, they burn
+      // serverless CPU (this is what got the Vercel project paused).
+      {
+        userAgent: [
+          "Bytespider",
+          "AhrefsBot",
+          "SemrushBot",
+          "MJ12bot",
+          "DotBot",
+          "PetalBot",
+          "DataForSeoBot",
+          "BLEXBot",
+          "Amazonbot",
+          "ImagesiftBot",
+        ],
+        disallow: "/",
       },
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,
