@@ -30,6 +30,17 @@ const FAQS = [
   { q: "Can I order flowers with cake in Islamabad?", a: "Yes. Flower + cake combos are available for birthdays and celebrations. Message us on WhatsApp (0310-4225974) for today's cake options and combo prices." },
   { q: "What gift combos do you offer?", a: "Popular combos include flowers + chocolates, flowers + cake, and flowers + teddy bear. Custom combos can be arranged — just tell us your budget." },
   { q: "Is same-day gift delivery available in Islamabad?", a: "Yes, in covered areas — same-day in 2 to 5 hours, subject to cake and gift availability." },
+  { q: "Can I send a combo to someone else's home?", a: "Yes. Give us the recipient's name, full address, a contact number and your message, and we will handle the rest." },
+  { q: "Can the cake have a message written on it?", a: "Please ask on WhatsApp when you order. We will confirm whether the message can be written on the cake that day." },
+  { q: "Can I order a combo for a specific time?", a: "Yes. Tell us the time you want it to arrive and we will confirm whether it can be done." },
+];
+
+const GUIDE_TITLE = "Planning a Gift and Cake Combo in Islamabad";
+const GUIDE: [string, string][] = [
+  ["Why combos work", "A bouquet on its own is lovely, but a flower and cake combo makes a birthday or anniversary feel complete with one order and one delivery. The most requested combinations are flowers with cake, flowers with chocolates and flowers with a teddy bear."],
+  ["How to decide", "Start with the budget and the person. For a birthday at the office, a cake and a small bouquet is usually enough. For an anniversary, add chocolates. For a new baby or a child's birthday, a teddy bear and flowers is a friendly choice. Tell us the budget on WhatsApp and we will suggest what fits."],
+  ["Timing and cake availability", "Cakes depend on availability, so order as early in the day as you can and tell us the exact time you need the delivery. If you want a surprise at midnight, the midnight slot runs from 11:30 PM to 12:15 AM and needs to be booked early. We confirm the cake, the price and the time before the order is final."],
+  ["Delivery in Islamabad", "Same-day delivery takes 2 to 5 hours in the areas we cover through our local delivery partner, with free delivery in our listed sectors. Check our Islamabad flower delivery page for the sectors, or see Islamabad birthday flowers for ideas that go with a cake."],
 ];
 
 export default function Page() {
@@ -66,6 +77,22 @@ export default function Page() {
             ))}
           </div>
           <p className="text-center text-xs text-[#636363]">Prices depend on bouquet + add-on selection. Confirm on WhatsApp before ordering.</p>
+        </div>
+      </section>
+      <section className="w-full py-16 px-4 sm:px-6 border-b border-[#E5DED2] bg-[#F8F3EA]">
+        <div className="max-w-3xl mx-auto space-y-8">
+          <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012] text-center">{GUIDE_TITLE}</h2>
+          {GUIDE.map(([heading, body], i) => (
+            <div key={i} className="space-y-2">
+              <h3 className="font-playfair text-lg sm:text-xl font-bold text-[#101012]">{heading}</h3>
+              <p className="text-sm sm:text-base leading-relaxed">{body}</p>
+            </div>
+          ))}
+          <p className="text-sm text-center text-[#636363]">
+            More: <Link href="/flower-delivery-islamabad" className="underline text-[#8B1E2D]">Flower delivery in Islamabad</Link>
+            {" · "}<Link href="/islamabad/bouquets" className="underline text-[#8B1E2D]">Bouquets</Link>
+            {" · "}<Link href="/islamabad/flower-prices" className="underline text-[#8B1E2D]">Prices</Link>
+          </p>
         </div>
       </section>
       <section className="w-full py-16 px-4 sm:px-6 bg-white">
