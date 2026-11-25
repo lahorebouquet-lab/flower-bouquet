@@ -9,22 +9,22 @@ import { withSeo } from "@/lib/seo";
 
 export const metadata: Metadata = withSeo("/delivery-areas/askari", {
   title: {
-    absolute: "Flower Delivery in Askari Lahore | Rs. 800 delivery, 2–3 hrs",
+    absolute: "Flower Delivery in Askari Lahore | Same-Day, 2–3 hrs",
   },
-  description: "Same-day flower delivery to Askari 1, 5, 9, 10 & 11 (Bedian Road) Lahore in 2–3 hours. Rs. 800 delivery. Gated-community protocol, WhatsApp photo proof",
+  description: "Same-day flower delivery to Askari 1, 5, 9, 10 & 11 (Bedian Road) Lahore in 2–3 hours. Gated-community protocol, WhatsApp photo proof",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/askari`,
   },
   openGraph: {
-    title: "Flower Delivery in Askari Lahore | Rs. 800 delivery, 2–3 hrs",
-    description: "Same-day flower delivery to Askari 1, 5, 9, 10 & 11 (Bedian Road) Lahore in 2–3 hours. Rs. 800 delivery. Gated-community protocol, WhatsApp photo proof",
+    title: "Flower Delivery in Askari Lahore | Same-Day, 2–3 hrs",
+    description: "Same-day flower delivery to Askari 1, 5, 9, 10 & 11 (Bedian Road) Lahore in 2–3 hours. Gated-community protocol, WhatsApp photo proof",
     url: `${SITE_URL}/delivery-areas/askari`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in Askari Lahore | Rs. 800 delivery, 2–3 hrs",
+        alt: "Flower Delivery in Askari Lahore | Same-Day, 2–3 hrs",
       },
     ],
   }

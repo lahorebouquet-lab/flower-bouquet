@@ -10,22 +10,22 @@ import { withSeo } from "@/lib/seo";
 
 export const metadata: Metadata = withSeo("/delivery-areas/raiwind-road", {
   title: {
-    absolute: "Flower Delivery on Raiwind Road Lahore | Rs. 800 delivery, 3–4 hrs",
+    absolute: "Flower Delivery on Raiwind Road Lahore | Same-Day, 3–4 hrs",
   },
-  description: "Same-day flower delivery along Raiwind Road Lahore — Bahria Orchard, Al Kabir Town, farmhouses & marquees — in 3–4 hours. Delivery Rs. 800 delivery.",
+  description: "Same-day flower delivery along Raiwind Road Lahore — Bahria Orchard, Al Kabir Town, farmhouses & marquees — in 3–4 hours.",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/raiwind-road`,
   },
   openGraph: {
-    title: "Flower Delivery on Raiwind Road Lahore | Rs. 800 delivery, 3–4 hrs",
-    description: "Same-day flower delivery along Raiwind Road Lahore — Bahria Orchard, Al Kabir Town, farmhouses & marquees — in 3–4 hours. Delivery Rs. 800 delivery.",
+    title: "Flower Delivery on Raiwind Road Lahore | Same-Day, 3–4 hrs",
+    description: "Same-day flower delivery along Raiwind Road Lahore — Bahria Orchard, Al Kabir Town, farmhouses & marquees — in 3–4 hours.",
     url: `${SITE_URL}/delivery-areas/raiwind-road`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery on Raiwind Road Lahore | Rs. 800 delivery, 3–4 hrs",
+        alt: "Flower Delivery on Raiwind Road Lahore | Same-Day, 3–4 hrs",
       },
     ],
   }

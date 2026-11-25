@@ -10,22 +10,22 @@ import { withSeo } from "@/lib/seo";
 
 export const metadata: Metadata = withSeo("/delivery-areas/nfc", {
   title: {
-    absolute: "Flower Delivery in NFC Society Lahore | Rs. 800 delivery, 2.5–3.5 hrs",
+    absolute: "Flower Delivery in NFC Society Lahore | Same-Day, 2.5–3.5 hrs",
   },
-  description: "Same-day flower delivery to NFC Society Lahore — housing blocks and commercial market in 2.5–3.5 hours. Delivery Rs. 800 delivery flat. Bouquet photo on",
+  description: "Same-day flower delivery to NFC Society Lahore — housing blocks and commercial market in 2.5–3.5 hours. Bouquet photo on",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/nfc`,
   },
   openGraph: {
-    title: "Flower Delivery in NFC Society Lahore | Rs. 800 delivery, 2.5–3.5 hrs",
-    description: "Same-day flower delivery to NFC Society Lahore — housing blocks and commercial market in 2.5–3.5 hours. Delivery Rs. 800 delivery flat. Bouquet photo on",
+    title: "Flower Delivery in NFC Society Lahore | Same-Day, 2.5–3.5 hrs",
+    description: "Same-day flower delivery to NFC Society Lahore — housing blocks and commercial market in 2.5–3.5 hours. Bouquet photo on",
     url: `${SITE_URL}/delivery-areas/nfc`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in NFC Society Lahore | Rs. 800 delivery, 2.5–3.5 hrs",
+        alt: "Flower Delivery in NFC Society Lahore | Same-Day, 2.5–3.5 hrs",
       },
     ],
   }

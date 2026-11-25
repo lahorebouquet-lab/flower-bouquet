@@ -10,22 +10,22 @@ import { withSeo } from "@/lib/seo";
 
 export const metadata: Metadata = withSeo("/delivery-areas/bahria-orchard", {
   title: {
-    absolute: "Flower Delivery in Bahria Orchard Lahore | Rs. 800 delivery, 3–4 hrs",
+    absolute: "Flower Delivery in Bahria Orchard Lahore | Same-Day, 3–4 hrs",
   },
-  description: "Same-day flower delivery to Bahria Orchard Lahore — Phases 1–4 near Raiwind Road in 3–4 hours. Delivery Rs. 800 delivery. Fresh roses, money bouquets, cakes &",
+  description: "Same-day flower delivery to Bahria Orchard Lahore — Phases 1–4 near Raiwind Road in 3–4 hours. Fresh roses, money bouquets, cakes &",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/bahria-orchard`,
   },
   openGraph: {
-    title: "Flower Delivery in Bahria Orchard Lahore | Rs. 800 delivery, 3–4 hrs",
-    description: "Same-day flower delivery to Bahria Orchard Lahore — Phases 1–4 near Raiwind Road in 3–4 hours. Delivery Rs. 800 delivery. Fresh roses, money bouquets, cakes &",
+    title: "Flower Delivery in Bahria Orchard Lahore | Same-Day, 3–4 hrs",
+    description: "Same-day flower delivery to Bahria Orchard Lahore — Phases 1–4 near Raiwind Road in 3–4 hours. Fresh roses, money bouquets, cakes &",
     url: `${SITE_URL}/delivery-areas/bahria-orchard`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in Bahria Orchard Lahore | Rs. 800 delivery, 3–4 hrs",
+        alt: "Flower Delivery in Bahria Orchard Lahore | Same-Day, 3–4 hrs",
       },
     ],
   }

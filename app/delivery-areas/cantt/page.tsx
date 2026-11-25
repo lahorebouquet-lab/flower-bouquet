@@ -9,22 +9,22 @@ import { withSeo } from "@/lib/seo";
 
 export const metadata: Metadata = withSeo("/delivery-areas/cantt", {
   title: {
-    absolute: "Flower Delivery Lahore Cantt | Rs. 800 delivery, 2–2.5 hrs",
+    absolute: "Flower Delivery Lahore Cantt | Same-Day, 2–2.5 hrs",
   },
-  description: "Same-day flower delivery to Lahore Cantt, Saddar, Cavalry Ground, PAF Colony & CMH in 2–2.5 hours. Rs. 800 delivery. Gate-clearance protocol, photo on WhatsApp",
+  description: "Same-day flower delivery to Lahore Cantt, Saddar, Cavalry Ground, PAF Colony & CMH in 2–2.5 hours. Gate-clearance protocol, photo on WhatsApp",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/cantt`,
   },
   openGraph: {
-    title: "Flower Delivery Lahore Cantt | Rs. 800 delivery, 2–2.5 hrs",
-    description: "Same-day flower delivery to Lahore Cantt, Saddar, Cavalry Ground, PAF Colony & CMH in 2–2.5 hours. Rs. 800 delivery. Gate-clearance protocol, photo on WhatsApp",
+    title: "Flower Delivery Lahore Cantt | Same-Day, 2–2.5 hrs",
+    description: "Same-day flower delivery to Lahore Cantt, Saddar, Cavalry Ground, PAF Colony & CMH in 2–2.5 hours. Gate-clearance protocol, photo on WhatsApp",
     url: `${SITE_URL}/delivery-areas/cantt`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery Lahore Cantt | Rs. 800 delivery, 2–2.5 hrs",
+        alt: "Flower Delivery Lahore Cantt | Same-Day, 2–2.5 hrs",
       },
     ],
   }

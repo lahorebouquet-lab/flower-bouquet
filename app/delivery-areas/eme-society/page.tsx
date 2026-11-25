@@ -10,22 +10,22 @@ import { withSeo } from "@/lib/seo";
 
 export const metadata: Metadata = withSeo("/delivery-areas/eme-society", {
   title: {
-    absolute: "Flower Delivery in EME Society Lahore | Rs. 800 delivery, 2.5–3.5 hrs",
+    absolute: "Flower Delivery in EME Society Lahore | Same-Day, 2.5–3.5 hrs",
   },
-  description: "Same-day flower delivery to EME Society Lahore — commercial area and residential blocks off Multan Road in 2.5–3.5 hours. Delivery Rs. 800 delivery flat.",
+  description: "Same-day flower delivery to EME Society Lahore — commercial area and residential blocks off Multan Road in 2.5–3.5 hours.",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/eme-society`,
   },
   openGraph: {
-    title: "Flower Delivery in EME Society Lahore | Rs. 800 delivery, 2.5–3.5 hrs",
-    description: "Same-day flower delivery to EME Society Lahore — commercial area and residential blocks off Multan Road in 2.5–3.5 hours. Delivery Rs. 800 delivery flat.",
+    title: "Flower Delivery in EME Society Lahore | Same-Day, 2.5–3.5 hrs",
+    description: "Same-day flower delivery to EME Society Lahore — commercial area and residential blocks off Multan Road in 2.5–3.5 hours.",
     url: `${SITE_URL}/delivery-areas/eme-society`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in EME Society Lahore | Rs. 800 delivery, 2.5–3.5 hrs",
+        alt: "Flower Delivery in EME Society Lahore | Same-Day, 2.5–3.5 hrs",
       },
     ],
   }

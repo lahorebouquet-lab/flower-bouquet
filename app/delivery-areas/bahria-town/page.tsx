@@ -9,22 +9,22 @@ import { withSeo } from "@/lib/seo";
 
 export const metadata: Metadata = withSeo("/delivery-areas/bahria-town", {
   title: {
-    absolute: "Flower Delivery in Bahria Town Lahore | Rs. 800 delivery, 2.5–4 hrs",
+    absolute: "Flower Delivery in Bahria Town Lahore | Same-Day, 2.5–4 hrs",
   },
-  description: "Same-day flower delivery to Bahria Town Sectors A–F, Safari Villas & Lake City in 2.5–4 hours. Rs. 800 delivery. AC-van transit, WhatsApp photo proof",
+  description: "Same-day flower delivery to Bahria Town Sectors A–F, Safari Villas & Lake City in 2.5–4 hours. AC-van transit, WhatsApp photo proof",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/bahria-town`,
   },
   openGraph: {
-    title: "Flower Delivery in Bahria Town Lahore | Rs. 800 delivery, 2.5–4 hrs",
-    description: "Same-day flower delivery to Bahria Town Sectors A–F, Safari Villas & Lake City in 2.5–4 hours. Rs. 800 delivery. AC-van transit, WhatsApp photo proof",
+    title: "Flower Delivery in Bahria Town Lahore | Same-Day, 2.5–4 hrs",
+    description: "Same-day flower delivery to Bahria Town Sectors A–F, Safari Villas & Lake City in 2.5–4 hours. AC-van transit, WhatsApp photo proof",
     url: `${SITE_URL}/delivery-areas/bahria-town`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in Bahria Town Lahore | Rs. 800 delivery, 2.5–4 hrs",
+        alt: "Flower Delivery in Bahria Town Lahore | Same-Day, 2.5–4 hrs",
       },
     ],
   }

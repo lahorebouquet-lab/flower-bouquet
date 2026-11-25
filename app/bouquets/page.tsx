@@ -12,13 +12,13 @@ export const BASE_METADATA: Metadata = withSeo("/bouquets", {
   title: {
     absolute: "Bouquet Delivery in Lahore | Fresh Bouquets from Rs. 1,239",
   },
-  description: "Fresh bouquets in Lahore from Rs. 1,239 — roses, sunflowers, chocolate & money bouquets. Same-day delivery (Rs. 800) in 2–5 hours. Order online or on WhatsApp.",
+  description: "Fresh bouquets in Lahore from Rs. 1,239 — roses, sunflowers, chocolate & money bouquets. Same-day delivery in 2–5 hours. Order online or on WhatsApp.",
   alternates: {
     canonical: `${SITE_URL}/bouquets`,
   },
   openGraph: {
     title: "Bouquet Delivery in Lahore | Fresh Bouquets from Rs. 1,239",
-    description: "Fresh bouquets in Lahore from Rs. 1,239 — roses, sunflowers, chocolate & money bouquets. Same-day delivery (Rs. 800) in 2–5 hours. Order online or on WhatsApp.",
+    description: "Fresh bouquets in Lahore from Rs. 1,239 — roses, sunflowers, chocolate & money bouquets. Same-day delivery in 2–5 hours. Order online or on WhatsApp.",
     url: `${SITE_URL}/bouquets`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",

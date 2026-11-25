@@ -10,14 +10,14 @@ import { withSeo } from "@/lib/seo";
 
 export const metadata: Metadata = withSeo("/delivery-areas/lake-city", {
   title: {
-    absolute: "Flower Delivery in Lake City Lahore | Rs. 800 delivery, 3–4 hrs",
+    absolute: "Flower Delivery in Lake City Lahore | Same-Day, 3–4 hrs",
   },
   description: "Same-day flower delivery to Lake City Lahore — golf-course villas, Downtown commercial and sectors near the Ring Road interchange in 3–4 hours. Delivery",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/lake-city`,
   },
   openGraph: {
-    title: "Flower Delivery in Lake City Lahore | Rs. 800 delivery, 3–4 hrs",
+    title: "Flower Delivery in Lake City Lahore | Same-Day, 3–4 hrs",
     description: "Same-day flower delivery to Lake City Lahore — golf-course villas, Downtown commercial and sectors near the Ring Road interchange in 3–4 hours. Delivery",
     url: `${SITE_URL}/delivery-areas/lake-city`,
     images: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = withSeo("/delivery-areas/lake-city", {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in Lake City Lahore | Rs. 800 delivery, 3–4 hrs",
+        alt: "Flower Delivery in Lake City Lahore | Same-Day, 3–4 hrs",
       },
     ],
   }

@@ -158,7 +158,7 @@ export default function ValentineDayFlowersLahorePage() {
         "@type": "Product",
         name: p.name,
         url: `${SITE_URL}/products/${p.slug}`,
-        description: p.desc || `${p.name} — fresh flowers with same-day delivery (Rs. 800) across Lahore. Order online at Lahore Bouquet.`,
+        description: p.desc || `${p.name} — fresh flowers with same-day delivery across Lahore. Order online at Lahore Bouquet.`,
         brand: { "@type": "Brand", name: "Lahore Bouquet" },
         image: `${SITE_URL}/og-image.jpg`,
         offers: {

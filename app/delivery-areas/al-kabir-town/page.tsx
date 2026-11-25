@@ -10,22 +10,22 @@ import { withSeo } from "@/lib/seo";
 
 export const metadata: Metadata = withSeo("/delivery-areas/al-kabir-town", {
   title: {
-    absolute: "Flower Delivery in Al Kabir Town Lahore | Rs. 800 delivery, 3–4 hrs",
+    absolute: "Flower Delivery in Al Kabir Town Lahore | Same-Day, 3–4 hrs",
   },
-  description: "Same-day flower delivery to Al Kabir Town Lahore — Phase 1 & 2 near Raiwind Road in 3–4 hours. Delivery Rs. 800 delivery. Fresh roses, money bouquets, cakes &",
+  description: "Same-day flower delivery to Al Kabir Town Lahore — Phase 1 & 2 near Raiwind Road in 3–4 hours. Fresh roses, money bouquets, cakes &",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/al-kabir-town`,
   },
   openGraph: {
-    title: "Flower Delivery in Al Kabir Town Lahore | Rs. 800 delivery, 3–4 hrs",
-    description: "Same-day flower delivery to Al Kabir Town Lahore — Phase 1 & 2 near Raiwind Road in 3–4 hours. Delivery Rs. 800 delivery. Fresh roses, money bouquets, cakes &",
+    title: "Flower Delivery in Al Kabir Town Lahore | Same-Day, 3–4 hrs",
+    description: "Same-day flower delivery to Al Kabir Town Lahore — Phase 1 & 2 near Raiwind Road in 3–4 hours. Fresh roses, money bouquets, cakes &",
     url: `${SITE_URL}/delivery-areas/al-kabir-town`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in Al Kabir Town Lahore | Rs. 800 delivery, 3–4 hrs",
+        alt: "Flower Delivery in Al Kabir Town Lahore | Same-Day, 3–4 hrs",
       },
     ],
   }
