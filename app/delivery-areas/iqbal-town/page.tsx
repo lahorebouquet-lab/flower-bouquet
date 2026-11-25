@@ -10,22 +10,22 @@ import { withSeo } from "@/lib/seo";
 
 export const metadata: Metadata = withSeo("/delivery-areas/iqbal-town", {
   title: {
-    absolute: "Flower Delivery in Iqbal Town Lahore | Rs. 800 delivery, 2–3 hrs",
+    absolute: "Flower Delivery in Iqbal Town Lahore | Same-Day, 2–3 hrs",
   },
-  description: "Same-day flower delivery to Allama Iqbal Town Lahore — Moon Market, residential blocks & Multan Road side — in 2–3 hours. Delivery Rs. 800 delivery.",
+  description: "Same-day flower delivery to Allama Iqbal Town Lahore — Moon Market, residential blocks & Multan Road side — in 2–3 hours.",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/iqbal-town`,
   },
   openGraph: {
-    title: "Flower Delivery in Iqbal Town Lahore | Rs. 800 delivery, 2–3 hrs",
-    description: "Same-day flower delivery to Allama Iqbal Town Lahore — Moon Market, residential blocks & Multan Road side — in 2–3 hours. Delivery Rs. 800 delivery.",
+    title: "Flower Delivery in Iqbal Town Lahore | Same-Day, 2–3 hrs",
+    description: "Same-day flower delivery to Allama Iqbal Town Lahore — Moon Market, residential blocks & Multan Road side — in 2–3 hours.",
     url: `${SITE_URL}/delivery-areas/iqbal-town`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in Iqbal Town Lahore | Rs. 800 delivery, 2–3 hrs",
+        alt: "Flower Delivery in Iqbal Town Lahore | Same-Day, 2–3 hrs",
       },
     ],
   }

@@ -10,22 +10,22 @@ import { withSeo } from "@/lib/seo";
 
 export const metadata: Metadata = withSeo("/delivery-areas/faisal-town", {
   title: {
-    absolute: "Flower Delivery in Faisal Town Lahore | Rs. 800 delivery, 2–3 hrs",
+    absolute: "Flower Delivery in Faisal Town Lahore | Same-Day, 2–3 hrs",
   },
-  description: "Same-day flower delivery to Faisal Town Lahore — residential blocks, near Johar Town & Shaukat Khanum — in 2–3 hours. Delivery Rs. 800 delivery.",
+  description: "Same-day flower delivery to Faisal Town Lahore — residential blocks, near Johar Town & Shaukat Khanum — in 2–3 hours.",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/faisal-town`,
   },
   openGraph: {
-    title: "Flower Delivery in Faisal Town Lahore | Rs. 800 delivery, 2–3 hrs",
-    description: "Same-day flower delivery to Faisal Town Lahore — residential blocks, near Johar Town & Shaukat Khanum — in 2–3 hours. Delivery Rs. 800 delivery.",
+    title: "Flower Delivery in Faisal Town Lahore | Same-Day, 2–3 hrs",
+    description: "Same-day flower delivery to Faisal Town Lahore — residential blocks, near Johar Town & Shaukat Khanum — in 2–3 hours.",
     url: `${SITE_URL}/delivery-areas/faisal-town`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in Faisal Town Lahore | Rs. 800 delivery, 2–3 hrs",
+        alt: "Flower Delivery in Faisal Town Lahore | Same-Day, 2–3 hrs",
       },
     ],
   }

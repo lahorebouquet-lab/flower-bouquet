@@ -9,22 +9,22 @@ import { withSeo } from "@/lib/seo";
 
 export const metadata: Metadata = withSeo("/delivery-areas/wapda-town", {
   title: {
-    absolute: "Flower Delivery in Wapda Town Lahore | Rs. 800 delivery, 2.5–3.5 hrs",
+    absolute: "Flower Delivery in Wapda Town Lahore | Same-Day, 2.5–3.5 hrs",
   },
-  description: "Same-day flower bouquets, roses & cakes delivered to Wapda Town, PIA Society, Valencia & Township Lahore in 2.5–3.5 hours. Rs. 800 delivery. Photo on WhatsApp",
+  description: "Same-day flower bouquets, roses & cakes delivered to Wapda Town, PIA Society, Valencia & Township Lahore in 2.5–3.5 hours. Photo on WhatsApp",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/wapda-town`,
   },
   openGraph: {
-    title: "Flower Delivery in Wapda Town Lahore | Rs. 800 delivery, 2.5–3.5 hrs",
-    description: "Same-day flower bouquets, roses & cakes delivered to Wapda Town, PIA Society, Valencia & Township Lahore in 2.5–3.5 hours. Rs. 800 delivery. Photo on WhatsApp",
+    title: "Flower Delivery in Wapda Town Lahore | Same-Day, 2.5–3.5 hrs",
+    description: "Same-day flower bouquets, roses & cakes delivered to Wapda Town, PIA Society, Valencia & Township Lahore in 2.5–3.5 hours. Photo on WhatsApp",
     url: `${SITE_URL}/delivery-areas/wapda-town`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in Wapda Town Lahore | Rs. 800 delivery, 2.5–3.5 hrs",
+        alt: "Flower Delivery in Wapda Town Lahore | Same-Day, 2.5–3.5 hrs",
       },
     ],
   }

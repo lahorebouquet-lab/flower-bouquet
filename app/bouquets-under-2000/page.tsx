@@ -12,13 +12,13 @@ export const metadata: Metadata = withSeo("/bouquets-under-2000", {
   title: {
     absolute: "Bouquets Under Rs. 2,000 in Lahore | Same-Day",
   },
-  description: "Bouquets under Rs. 2,000 in Lahore: roses, sunflowers and mixed bouquets from Rs. 1,239. Same-day delivery (Rs. 800) in 2–5 hours, photo before dispatch.",
+  description: "Bouquets under Rs. 2,000 in Lahore: roses, sunflowers and mixed bouquets from Rs. 1,239. Same-day delivery in 2–5 hours, photo before dispatch.",
   alternates: {
     canonical: `${SITE_URL}/bouquets-under-2000`,
   },
   openGraph: {
     title: "Bouquets Under Rs. 2,000 in Lahore | Same-Day",
-    description: "Bouquets under Rs. 2,000 in Lahore: roses, sunflowers and mixed bouquets from Rs. 1,239. Same-day delivery (Rs. 800) in 2–5 hours, photo before dispatch.",
+    description: "Bouquets under Rs. 2,000 in Lahore: roses, sunflowers and mixed bouquets from Rs. 1,239. Same-day delivery in 2–5 hours, photo before dispatch.",
     url: `${SITE_URL}/bouquets-under-2000`,
     siteName: "Lahore Bouquet",
     locale: "en_PK",

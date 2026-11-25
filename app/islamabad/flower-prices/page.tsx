@@ -9,13 +9,13 @@ export const metadata: Metadata = withSeo("/islamabad/flower-prices", {
   title: {
     absolute: "Flower Delivery Prices in Islamabad | Price Guide | Lahore Bouquet",
   },
-  description: "Transparent flower prices in Islamabad — hand-tied bouquets from Rs. 1,239, roses Rs. 2,600–3,800, Rs. 800 delivery in listed sectors. Last updated October 2026.",
+  description: "Transparent flower prices in Islamabad — hand-tied bouquets from Rs. 1,239, roses Rs. 2,600–3,800. Last updated October 2026.",
   alternates: {
     canonical: `${SITE_URL}/islamabad/flower-prices`,
   },
   openGraph: {
     title: "Flower Delivery Prices in Islamabad | Lahore Bouquet",
-    description: "Transparent Islamabad flower prices. Bouquets from Rs. 1,239, Rs. 800 delivery in listed sectors.",
+    description: "Transparent Islamabad flower prices. Bouquets from Rs. 1,239,",
     url: `${SITE_URL}/islamabad/flower-prices`,
     siteName: "Lahore Bouquet",
     type: "website",
@@ -24,7 +24,7 @@ export const metadata: Metadata = withSeo("/islamabad/flower-prices", {
   twitter: {
     card: "summary_large_image",
     title: "Flower Delivery Prices in Islamabad | Lahore Bouquet",
-    description: "Islamabad flower prices from Rs. 1,239. Rs. 800 delivery in listed sectors.",
+    description: "Islamabad flower prices from Rs. 1,239.",
   },
 });
 

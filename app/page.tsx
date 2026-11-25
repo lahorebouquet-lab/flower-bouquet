@@ -5,15 +5,15 @@ import { HOMEPAGE_FAQS } from "./data/homepage";
 
 export const metadata: Metadata = withSeo("/", {
   title: {
-    absolute: "Flower Delivery in Lahore | Same-day delivery (Rs. 800) — Lahore Bouquet",
+    absolute: "Lahore Bouquet | Same-Day Flower Delivery in Lahore",
   },
-  description: "Fresh flower delivery in Lahore with same-day delivery (Rs. 800). Hand-tied bouquets from Rs. 1,239 — roses, sunflowers & chocolate bouquets. Order online or WhatsApp.",
+  description: "Lahore Bouquet delivers fresh hand-tied roses, sunflower and chocolate bouquets across Lahore the same day, 9 AM–1 AM. Bouquets from Rs. 1,239. Order now.",
   alternates: {
     canonical: `${SITE_URL}`,
   },
   openGraph: {
-    title: "Flower Delivery in Lahore | Same-day delivery (Rs. 800) — Lahore Bouquet",
-    description: "Fresh flower delivery in Lahore with same-day delivery (Rs. 800). Hand-tied bouquets from Rs. 1,239 — roses, sunflowers & chocolate bouquets. Order online or WhatsApp.",
+    title: "Lahore Bouquet | Same-Day Flower Delivery in Lahore",
+    description: "Lahore Bouquet delivers fresh hand-tied roses, sunflower and chocolate bouquets across Lahore the same day, 9 AM–1 AM. Bouquets from Rs. 1,239. Order now.",
     url: `${SITE_URL}`,
       type: "website",
       locale: "en_PK",
@@ -22,7 +22,7 @@ export const metadata: Metadata = withSeo("/", {
           url: `${SITE_URL}/og-image.jpg`,
           width: 1200,
           height: 630,
-          alt: "Flower Delivery in Lahore | Fresh Bouquets & same-day delivery (Rs. 800) | Lahore Bouquet",
+          alt: "Lahore Bouquet — same-day flower delivery in Lahore",
         },
     ],
   }

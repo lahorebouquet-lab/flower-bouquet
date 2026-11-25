@@ -10,22 +10,22 @@ import { withSeo } from "@/lib/seo";
 
 export const metadata: Metadata = withSeo("/delivery-areas/tariq-gardens", {
   title: {
-    absolute: "Flower Delivery Tariq Gardens Lahore | Rs. 800 delivery, 2.5–3.5 hrs",
+    absolute: "Flower Delivery Tariq Gardens Lahore | Same-Day, 2.5–3.5 hrs",
   },
-  description: "Same-day flower delivery to Tariq Gardens Lahore — housing blocks off the Multan Road corridor in 2.5–3.5 hours. Delivery Rs. 800 delivery. Fresh roses, money",
+  description: "Same-day flower delivery to Tariq Gardens Lahore — housing blocks off the Multan Road corridor in 2.5–3.5 hours. Fresh roses, money",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/tariq-gardens`,
   },
   openGraph: {
-    title: "Flower Delivery Tariq Gardens Lahore | Rs. 800 delivery, 2.5–3.5 hrs",
-    description: "Same-day flower delivery to Tariq Gardens Lahore — housing blocks off the Multan Road corridor in 2.5–3.5 hours. Delivery Rs. 800 delivery. Fresh roses, money",
+    title: "Flower Delivery Tariq Gardens Lahore | Same-Day, 2.5–3.5 hrs",
+    description: "Same-day flower delivery to Tariq Gardens Lahore — housing blocks off the Multan Road corridor in 2.5–3.5 hours. Fresh roses, money",
     url: `${SITE_URL}/delivery-areas/tariq-gardens`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery Tariq Gardens Lahore | Rs. 800 delivery, 2.5–3.5 hrs",
+        alt: "Flower Delivery Tariq Gardens Lahore | Same-Day, 2.5–3.5 hrs",
       },
     ],
   }

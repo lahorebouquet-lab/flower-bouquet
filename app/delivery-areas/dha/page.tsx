@@ -9,22 +9,22 @@ import { withSeo } from "@/lib/seo";
 
 export const metadata: Metadata = withSeo("/delivery-areas/dha", {
   title: {
-    absolute: "Flower Delivery in DHA Lahore | Rs. 800 delivery, 2–3 hrs",
+    absolute: "Flower Delivery in DHA Lahore | Same-Day, 2–3 hrs",
   },
-  description: "Same-day flower delivery to DHA Lahore Phases 1–9, Defence Raya & Sector Y in 2–3 hours. Delivery Rs. 800 delivery. Imported roses, money bouquets, cakes &",
+  description: "Same-day flower delivery to DHA Lahore Phases 1–9, Defence Raya & Sector Y in 2–3 hours. Imported roses, money bouquets, cakes &",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/dha`,
   },
   openGraph: {
-    title: "Flower Delivery in DHA Lahore | Rs. 800 delivery, 2–3 hrs",
-    description: "Same-day flower delivery to DHA Lahore Phases 1–9, Defence Raya & Sector Y in 2–3 hours. Delivery Rs. 800 delivery. Imported roses, money bouquets, cakes &",
+    title: "Flower Delivery in DHA Lahore | Same-Day, 2–3 hrs",
+    description: "Same-day flower delivery to DHA Lahore Phases 1–9, Defence Raya & Sector Y in 2–3 hours. Imported roses, money bouquets, cakes &",
     url: `${SITE_URL}/delivery-areas/dha`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in DHA Lahore | Rs. 800 delivery, 2–3 hrs",
+        alt: "Flower Delivery in DHA Lahore | Same-Day, 2–3 hrs",
       },
     ],
   }

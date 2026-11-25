@@ -10,22 +10,22 @@ import { withSeo } from "@/lib/seo";
 
 export const metadata: Metadata = withSeo("/delivery-areas/dha-rahbar", {
   title: {
-    absolute: "Flower Delivery in DHA Rahbar Lahore | Rs. 800 delivery, 3–4 hrs",
+    absolute: "Flower Delivery in DHA Rahbar Lahore | Same-Day, 3–4 hrs",
   },
-  description: "Same-day flower delivery to DHA Rahbar Lahore — sectors & commercial area near Valencia Town in 3–4 hours. Delivery Rs. 800 delivery. Fresh roses, money",
+  description: "Same-day flower delivery to DHA Rahbar Lahore — sectors & commercial area near Valencia Town in 3–4 hours. Fresh roses, money",
   alternates: {
     canonical: `${SITE_URL}/delivery-areas/dha-rahbar`,
   },
   openGraph: {
-    title: "Flower Delivery in DHA Rahbar Lahore | Rs. 800 delivery, 3–4 hrs",
-    description: "Same-day flower delivery to DHA Rahbar Lahore — sectors & commercial area near Valencia Town in 3–4 hours. Delivery Rs. 800 delivery. Fresh roses, money",
+    title: "Flower Delivery in DHA Rahbar Lahore | Same-Day, 3–4 hrs",
+    description: "Same-day flower delivery to DHA Rahbar Lahore — sectors & commercial area near Valencia Town in 3–4 hours. Fresh roses, money",
     url: `${SITE_URL}/delivery-areas/dha-rahbar`,
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Flower Delivery in DHA Rahbar Lahore | Rs. 800 delivery, 3–4 hrs",
+        alt: "Flower Delivery in DHA Rahbar Lahore | Same-Day, 3–4 hrs",
       },
     ],
   }
