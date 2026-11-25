@@ -30,6 +30,14 @@ export const metadata: Metadata = withSeo("/occasions/eid-gifts", {
   }
 });
 
+const GUIDE_TITLE = "Eid Gift Ideas and Ordering Tips in Lahore";
+const GUIDE: [string, string][] = [
+  ["Gift ideas that travel well", "Hand-tied bouquets, chocolate bouquets, cakes and gift hampers are the most popular choices for family and friends. A bouquet from Rs. 1,239 works for a neighbour or colleague, while larger arrangements and combos suit parents and in-laws."],
+  ["Order ahead around Eid", "Eid dates depend on the moon sighting and delivery slots fill up in the last days. Order a few days early where you can, and message us on WhatsApp to reserve a time. Orders placed before 4 PM Pakistan time are delivered the same day on regular days."],
+  ["Gifts for people in another city", "If you are abroad or in another city and your family is in Lahore, give us the full address, a phone number for the recipient and your message. We send a photo before dispatch so you can see what will arrive."],
+  ["Payment", "We accept bank transfer, JazzCash, EasyPaisa and international cards. Cash on Delivery is not available."],
+];
+
 export default async function EidGiftsPage() {
   const allProducts = await getSanityProducts();
   const eidProducts = allProducts.filter(p => p.category === "Gifts & Cakes" || p.category === "Bouquets" || p.category === "Money Bouquets").slice(0, 8);
@@ -119,6 +127,18 @@ export default async function EidGiftsPage() {
           ))}
         </div>
       </section>
+      <section className="bg-white p-6 sm:p-8 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-4">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">{GUIDE_TITLE}</h2>
+        <div className="space-y-4 text-sm text-[#2A2A2A] leading-relaxed">
+          {GUIDE.map(([heading, body], i) => (
+            <div key={i} className="space-y-1">
+              <h3 className="font-semibold text-[#0B0B0B]">{heading}</h3>
+              <p>{body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
     </main>
   );
 }

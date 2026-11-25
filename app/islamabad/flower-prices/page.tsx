@@ -53,6 +53,16 @@ const FAQS = [
     q: "Do prices change on Valentine's Day or special occasions?",
     a: "Seasonal demand may affect availability. Special occasion packages (like Valentine's Day 2027 deals) are published separately with fixed prices. Regular bouquet prices stay as listed."
   },
+  { q: "Do prices change around Valentine's Day or Eid?", a: "Flower availability and prices can change around busy dates. We confirm the exact price on WhatsApp before you pay, so there are no surprises." },
+  { q: "Is there a minimum order in Islamabad?", a: "There is no minimum order beyond the bouquet price. Delivery is Rs. 800 in the listed sectors." },
+];
+
+const GUIDE_TITLE = "How Flower Prices Work in Islamabad";
+const GUIDE: [string, string][] = [
+  ["What changes the price", "The number of stems, the type of flower, the wrap and any extras such as chocolates or a cake change the price. Small hand-tied bouquets start from Rs. 1,239, medium rose bouquets are Rs. 2,600 to 3,800 and large signature arrangements are Rs. 7,499."],
+  ["What delivery adds", "Delivery in the listed Islamabad sectors is a flat Rs. 800 per order. If your area is not listed, we confirm the fee on WhatsApp before you pay."],
+  ["Getting an exact quote", "Message us on WhatsApp with the bouquet name or a reference photo, the delivery address and the date. We reply with the final total before you pay."],
+  ["Payment", "We accept bank transfer, JazzCash, EasyPaisa and international cards. Cash on Delivery is not available."],
 ];
 
 export default function IslamabadPricesPage() {
@@ -126,6 +136,17 @@ export default function IslamabadPricesPage() {
         </div>
       </section>
 
+      <section className="w-full py-16 px-4 sm:px-6 border-b border-[#E5DED2] bg-[#F8F3EA]">
+        <div className="max-w-3xl mx-auto space-y-8">
+          <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012] text-center">{GUIDE_TITLE}</h2>
+          {GUIDE.map(([heading, body], i) => (
+            <div key={i} className="space-y-2">
+              <h3 className="font-playfair text-lg sm:text-xl font-bold text-[#101012]">{heading}</h3>
+              <p className="text-sm sm:text-base leading-relaxed">{body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
       <section className="w-full py-16 px-4 sm:px-6 bg-white">
         <div className="max-w-3xl mx-auto space-y-6">
           <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012] text-center">

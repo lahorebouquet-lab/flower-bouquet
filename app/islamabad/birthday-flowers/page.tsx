@@ -45,6 +45,8 @@ const FAQS = [
     q: "Do you offer midnight birthday surprise delivery in Islamabad?",
     a: "Yes. Midnight surprise delivery slot is 11:30 PM–12:15 AM. Book early on WhatsApp to reserve your slot."
   },
+  { q: "Can I add a cake to a birthday bouquet in Islamabad?", a: "Yes. Tell us on WhatsApp which cake and bouquet you want and the delivery address. We confirm availability and the total before you pay." },
+  { q: "Can I send a message with the flowers?", a: "Yes. Share the message and the recipient's name as it should appear, and we include it on a card with the bouquet." },
 ];
 
 const PRODUCTS = [
@@ -52,6 +54,14 @@ const PRODUCTS = [
   { name: "Romantic Rose Bouquet", price: "Rs. 1,499", slug: "romantic-rose-bouquet" },
   { name: "Sunflower Bouquet", price: "Rs. 1,699", slug: "sunflower-bouquet" },
   { name: "Red Rose Bouquet – Black Wrap", price: "Rs. 1,999", slug: "red-rose-bouquet-black-wrap" },
+];
+
+const GUIDE_TITLE = "Choosing Birthday Flowers for Islamabad";
+const GUIDE: [string, string][] = [
+  ["Pick by who it is for", "A hand-tied bouquet from Rs. 1,239 suits a friend or colleague. Roses and larger arrangements suit a partner or parent, and sunflowers are a bright choice for younger recipients. Add a cake from our gifts range to make it a complete birthday gift."],
+  ["Timing the delivery", "Orders are delivered the same day in 2 to 5 hours through our local delivery partner. Order earlier in the day for an afternoon delivery, and ask on WhatsApp if you want a late-evening or midnight slot for your sector."],
+  ["Areas we cover", "We deliver in F-6, F-7, F-8, F-10, F-11, G-6, G-7, G-9, G-10, G-11, G-13, I-8, I-9, I-10, E-7, E-11, D-12, B-17, Blue Area, DHA Islamabad, Bahria Town, Gulberg Greens and Bahria Enclave. If your area is not listed, message us on WhatsApp and we will confirm the fee and time before you pay."],
+  ["Payment", "We accept bank transfer, JazzCash, EasyPaisa and international cards. Cash on Delivery is not available."],
 ];
 
 export default function IslamabadBirthdayPage() {
@@ -133,6 +143,17 @@ export default function IslamabadBirthdayPage() {
         </div>
       </section>
 
+      <section className="w-full py-16 px-4 sm:px-6 border-b border-[#E5DED2] bg-[#F8F3EA]">
+        <div className="max-w-3xl mx-auto space-y-8">
+          <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012] text-center">{GUIDE_TITLE}</h2>
+          {GUIDE.map(([heading, body], i) => (
+            <div key={i} className="space-y-2">
+              <h3 className="font-playfair text-lg sm:text-xl font-bold text-[#101012]">{heading}</h3>
+              <p className="text-sm sm:text-base leading-relaxed">{body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
       <section className="w-full py-16 px-4 sm:px-6 bg-white">
         <div className="max-w-3xl mx-auto space-y-6">
           <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012] text-center">

@@ -40,6 +40,13 @@ export const PRICE_TABLE_ITEMS = [
   { item: "Bridal room canopy décor", price: "Rs. 14,500", link: "/wedding-decor" },
 ];
 
+const GUIDE_TITLE = "How Our Bouquet Prices Work";
+const GUIDE: [string, string][] = [
+  ["What the price includes", "Each bouquet price covers the flowers, wrap and hand-tying by our florist. A photo of the finished bouquet is sent on WhatsApp before dispatch, and a card message is included when you send one with your order."],
+  ["Choosing a budget", "Hand-tied bouquets start from Rs. 1,239. Medium rose bouquets are Rs. 2,600 to 3,800, and large signature arrangements are Rs. 7,499. Wedding and event decor is quoted separately because it depends on size, venue and flower selection."],
+  ["Delivery and payment", "Delivery is a flat Rs. 800 across listed Lahore areas. We accept bank transfer, JazzCash, EasyPaisa and international cards. Cash on Delivery is not available."],
+];
+
 export default function PriceGuidePage() {
   const tableSchema = {
     "@context": "https://schema.org",
@@ -144,6 +151,18 @@ export default function PriceGuidePage() {
       </section>
 
       {/* WhatsApp Immediate Quote Strip (Section 10 Promo / Luxury Black Banner) */}
+      <section className="bg-white p-6 sm:p-8 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-4">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">{GUIDE_TITLE}</h2>
+        <div className="space-y-4 text-sm text-[#2A2A2A] leading-relaxed">
+          {GUIDE.map(([heading, body], i) => (
+            <div key={i} className="space-y-1">
+              <h3 className="font-semibold text-[#0B0B0B]">{heading}</h3>
+              <p>{body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section className="p-6 sm:p-8 rounded-2xl bg-[#0B0B0B] border border-[rgba(198,161,91,0.30)] flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xl">
         <div className="space-y-1 text-center sm:text-left">
           <div className="text-sm font-bold text-white">Need a custom quote or have a specific budget in mind?</div>

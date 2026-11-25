@@ -30,6 +30,14 @@ export const metadata: Metadata = withSeo("/occasions/get-well-and-sorry", {
   }
 });
 
+const GUIDE_TITLE = "Choosing Get-Well and Sorry Flowers in Lahore";
+const GUIDE: [string, string][] = [
+  ["Get-well flowers", "Pick light, cheerful flowers such as sunflowers or soft mixed bouquets. Keep fragrance light for hospital rooms, and check with the hospital about flower rules before you send. We deliver to hospitals including CMH and Shaukat Khanum in listed areas."],
+  ["Saying sorry", "A hand-tied bouquet with a short, sincere note usually works better than a very large arrangement. Write the message the way you would say it, and we will include it on the card with your order."],
+  ["Timing and delivery", "Orders placed before 4 PM Pakistan time are delivered the same day, usually in 2 to 5 hours, between 9 AM and 1 AM. Give the ward or room number and a phone number so the rider can reach the patient's family."],
+  ["Payment", "We accept bank transfer, JazzCash, EasyPaisa and international cards. Cash on Delivery is not available."],
+];
+
 export default async function GetWellAndSorryPage() {
   const allProducts = await getSanityProducts();
   const gentleProducts = allProducts.filter(p => 
@@ -127,6 +135,18 @@ export default async function GetWellAndSorryPage() {
           ))}
         </div>
       </section>
+      <section className="bg-white p-6 sm:p-8 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-4">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">{GUIDE_TITLE}</h2>
+        <div className="space-y-4 text-sm text-[#2A2A2A] leading-relaxed">
+          {GUIDE.map(([heading, body], i) => (
+            <div key={i} className="space-y-1">
+              <h3 className="font-semibold text-[#0B0B0B]">{heading}</h3>
+              <p>{body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
     </main>
   );
 }

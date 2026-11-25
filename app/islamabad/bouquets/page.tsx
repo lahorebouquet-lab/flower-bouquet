@@ -45,6 +45,8 @@ const FAQS = [
     q: "How do I order a bouquet for Islamabad?",
     a: "Message us on WhatsApp at 0310-4225974 with the bouquet name and delivery address. We'll confirm availability, price and delivery time."
   },
+  { q: "Will the bouquet match the photo?", a: "We send a photo of your finished bouquet on WhatsApp before dispatch, so you can approve it or ask for a change." },
+  { q: "Can I choose the wrap colour?", a: "Yes. Tell us the colour you prefer when you order and we will confirm what is available for that day." },
 ];
 
 const PRODUCTS = [
@@ -54,6 +56,14 @@ const PRODUCTS = [
   { name: "Sunflower Bouquet", price: "Rs. 1,699", slug: "sunflower-bouquet" },
   { name: "Red Rose Bouquet – Black Wrap", price: "Rs. 1,999", slug: "red-rose-bouquet-black-wrap" },
   { name: "Heartfelt Single Rose Birthday Bouquet", price: "Rs. 1,239", slug: "heartfelt-single-rose-birthday-bouquet" },
+];
+
+const GUIDE_TITLE = "How to Choose a Bouquet for Islamabad";
+const GUIDE: [string, string][] = [
+  ["Rose, sunflower or mixed", "Roses are the classic choice for love and apologies. Sunflowers are cheerful for birthdays, congratulations and get-well messages. Mixed bouquets suit most occasions when you are not sure of the recipient's favourite flower."],
+  ["Choosing a size and budget", "Small hand-tied bouquets start from Rs. 1,239. Medium rose bouquets are Rs. 2,600 to 3,800 and large signature arrangements are Rs. 7,499. Tell us your budget on WhatsApp and we will suggest what fits."],
+  ["Delivery in Islamabad", "Bouquets are delivered the same day in 2 to 5 hours through our local delivery partner in F-6, F-7, F-8, F-10, F-11, G-6, G-7, G-9, G-10, G-11, G-13, I-8, I-9, I-10, E-7, E-11, D-12, B-17, Blue Area, DHA Islamabad, Bahria Town, Gulberg Greens and Bahria Enclave. Delivery is Rs. 800 in the listed sectors."],
+  ["Payment", "We accept bank transfer, JazzCash, EasyPaisa and international cards. Cash on Delivery is not available."],
 ];
 
 export default function IslamabadBouquetsPage() {
@@ -146,6 +156,17 @@ export default function IslamabadBouquetsPage() {
         </div>
       </section>
 
+      <section className="w-full py-16 px-4 sm:px-6 border-b border-[#E5DED2] bg-[#F8F3EA]">
+        <div className="max-w-3xl mx-auto space-y-8">
+          <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012] text-center">{GUIDE_TITLE}</h2>
+          {GUIDE.map(([heading, body], i) => (
+            <div key={i} className="space-y-2">
+              <h3 className="font-playfair text-lg sm:text-xl font-bold text-[#101012]">{heading}</h3>
+              <p className="text-sm sm:text-base leading-relaxed">{body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
       <section className="w-full py-16 px-4 sm:px-6 bg-white">
         <div className="max-w-3xl mx-auto space-y-6">
           <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012] text-center">

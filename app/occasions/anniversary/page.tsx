@@ -30,6 +30,14 @@ export const metadata: Metadata = withSeo("/occasions/anniversary", {
   }
 });
 
+const GUIDE_TITLE = "Choosing Anniversary Flowers in Lahore";
+const GUIDE: [string, string][] = [
+  ["Match the flowers to the milestone", "For an early anniversary, a hand-tied red rose bouquet from around Rs. 1,499 says it simply. For a bigger year, a large arrangement (our signature bouquets go up to Rs. 7,499) or a 50-rose bouquet makes more of a statement. Many couples send one rose for every year they have been together."],
+  ["Plan the surprise timing", "Orders placed before 4 PM Pakistan time are delivered the same day, usually in 2 to 5 hours. For a midnight surprise, message us on WhatsApp before 8 PM to reserve the slot and we will confirm the time with you."],
+  ["Add a cake and a message", "Roses pair well with a cake from our gifts range. Send the card message with your order and we will include it with the bouquet. A photo of the finished arrangement is sent on WhatsApp before dispatch so you can approve it."],
+  ["Delivery and payment", "We deliver across listed Lahore areas from 9 AM to 1 AM. We accept bank transfer, JazzCash, EasyPaisa and international cards. Cash on Delivery is not available."],
+];
+
 export default async function AnniversaryOccasionPage() {
   const allProducts = await getSanityProducts();
   const anniversaryProducts = allProducts.filter(p => 
@@ -132,6 +140,18 @@ export default async function AnniversaryOccasionPage() {
       </section>
 
       {/* Category FAQ */}
+      <section className="bg-white p-6 sm:p-8 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-4">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">{GUIDE_TITLE}</h2>
+        <div className="space-y-4 text-sm text-[#2A2A2A] leading-relaxed">
+          {GUIDE.map(([heading, body], i) => (
+            <div key={i} className="space-y-1">
+              <h3 className="font-semibold text-[#0B0B0B]">{heading}</h3>
+              <p>{body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section className="bg-white p-8 sm:p-10 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-6">
         <div className="flex items-center gap-2 text-[#0B0B0B]">
           <HelpCircle className="w-5 h-5 text-[#8B1E2D]" />
