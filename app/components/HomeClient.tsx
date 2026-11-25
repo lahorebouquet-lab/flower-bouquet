@@ -175,7 +175,7 @@ export default function HomeClient({
 
             {/* Main Heading: dark with burgundy accent */}
             <h1 className="font-playfair text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-[#0B0B0B] leading-tight">
-              Fresh Flowers Delivered in Lahore — <span className="text-[#8B1E2D]">Same Day, Rs. 800 delivery</span>
+              Fresh Flowers Delivered in Lahore — <span className="text-[#8B1E2D]">Same Day</span>
             </h1>
 
             {/* Quick answer (AEO) */}
@@ -230,7 +230,7 @@ export default function HomeClient({
             </div>
             <div>
               <p className="font-bold text-[#101012] text-xs sm:text-sm">Delivery in 2 to 5 hours</p>
-              <p className="text-xs text-[#2A2A2A]">Rs. 800 delivery across Lahore</p>
+              <p className="text-xs text-[#2A2A2A]">Same-day across Lahore, 9 AM to 1 AM</p>
             </div>
           </div>
 
