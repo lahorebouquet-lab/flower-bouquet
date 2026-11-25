@@ -45,6 +45,8 @@ const FAQS = [
     q: "How much do anniversary bouquets cost in Islamabad?",
     a: "Anniversary rose bouquets start from Rs. 1,499. Premium and luxury options go up to Rs. 7,499. Delivery is Rs. 800 in listed sectors."
   },
+  { q: "Can I send flowers to my spouse's office in Islamabad?", a: "Yes. Give us the company name, floor or reception details and a phone number so the delivery partner can reach the right person." },
+  { q: "Can I see the bouquet before it is delivered?", a: "Yes. A photo of the arrangement is sent on WhatsApp before dispatch so you can approve it." },
 ];
 
 const PRODUCTS = [
@@ -52,6 +54,14 @@ const PRODUCTS = [
   { name: "Single Red Rose Bouquet", price: "Rs. 1,499", slug: "single-red-rose-bouquet" },
   { name: "Elegant Autumn Red Rose Bouquet", price: "Rs. 1,599", slug: "elegant-autumn-red-rose-bouquet" },
   { name: "Red Rose Bouquet – Black Wrap", price: "Rs. 1,999", slug: "red-rose-bouquet-black-wrap" },
+];
+
+const GUIDE_TITLE = "Choosing Anniversary Flowers for Islamabad";
+const GUIDE: [string, string][] = [
+  ["Sizes for different years", "A single hand-tied rose bouquet starts from about Rs. 1,499 and suits a quiet anniversary message. Medium rose bouquets are Rs. 2,600 to 3,800, and large signature arrangements are Rs. 7,499 for bigger milestones."],
+  ["Plan the surprise", "Same-day delivery usually takes 2 to 5 hours through our local delivery partner. For an evening surprise, order earlier in the day and share the recipient's phone number so the rider can coordinate."],
+  ["Areas we cover", "We deliver in F-6, F-7, F-8, F-10, F-11, G-6, G-7, G-9, G-10, G-11, G-13, I-8, I-9, I-10, E-7, E-11, D-12, B-17, Blue Area, DHA Islamabad, Bahria Town, Gulberg Greens and Bahria Enclave. If your area is not listed, message us on WhatsApp and we will confirm the fee and time before you pay."],
+  ["Payment", "We accept bank transfer, JazzCash, EasyPaisa and international cards. Cash on Delivery is not available."],
 ];
 
 export default function IslamabadAnniversaryPage() {
@@ -119,6 +129,17 @@ export default function IslamabadAnniversaryPage() {
         </div>
       </section>
 
+      <section className="w-full py-16 px-4 sm:px-6 border-b border-[#E5DED2] bg-[#F8F3EA]">
+        <div className="max-w-3xl mx-auto space-y-8">
+          <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012] text-center">{GUIDE_TITLE}</h2>
+          {GUIDE.map(([heading, body], i) => (
+            <div key={i} className="space-y-2">
+              <h3 className="font-playfair text-lg sm:text-xl font-bold text-[#101012]">{heading}</h3>
+              <p className="text-sm sm:text-base leading-relaxed">{body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
       <section className="w-full py-16 px-4 sm:px-6 bg-white">
         <div className="max-w-3xl mx-auto space-y-6">
           <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#101012] text-center">

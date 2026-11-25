@@ -30,6 +30,14 @@ export const metadata: Metadata = withSeo("/occasions/barat-and-walima", {
   }
 });
 
+const GUIDE_TITLE = "Planning Flowers for Barat and Walima in Lahore";
+const GUIDE: [string, string][] = [
+  ["What families usually order", "Common choices are the bridal bouquet, gajray for the bride, haar for the groom and stage or entrance flowers for the venue. If you are unsure what a function needs, tell us the event, the number of guests and the colour theme and we will suggest a combination."],
+  ["Book early and confirm details", "Wedding dates fill up quickly. Message us on WhatsApp with the date, venue and the pieces you need so we can confirm availability. For decor work we send a quote before you pay, and final pricing depends on the venue, size and flower selection."],
+  ["Deliveries to homes and venues", "We deliver to homes, marquees and banquet halls across listed Lahore areas between 9 AM and 1 AM. Share the hall name and the hour you need the flowers, not only the address, so the rider can plan around your programme."],
+  ["Payment", "We accept bank transfer, JazzCash, EasyPaisa and international cards. Cash on Delivery is not available."],
+];
+
 export default async function BaratAndWalimaPage() {
   const allProducts = await getSanityProducts();
   const weddingProducts = allProducts.filter(p => 
@@ -136,6 +144,18 @@ export default async function BaratAndWalimaPage() {
       </section>
 
       {/* Category FAQ */}
+      <section className="bg-white p-6 sm:p-8 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-4">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">{GUIDE_TITLE}</h2>
+        <div className="space-y-4 text-sm text-[#2A2A2A] leading-relaxed">
+          {GUIDE.map(([heading, body], i) => (
+            <div key={i} className="space-y-1">
+              <h3 className="font-semibold text-[#0B0B0B]">{heading}</h3>
+              <p>{body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section className="bg-white p-8 sm:p-10 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-6">
         <div className="flex items-center gap-2 text-[#0B0B0B]">
           <HelpCircle className="w-5 h-5 text-[#8B1E2D]" />

@@ -30,6 +30,14 @@ export const metadata: Metadata = withSeo("/occasions/congratulations", {
   }
 });
 
+const GUIDE_TITLE = "Sending Congratulations Flowers in Lahore";
+const GUIDE: [string, string][] = [
+  ["Bright flowers for good news", "Sunflowers, mixed bouquets and cheerful colours suit a new job, a graduation, a promotion or a business opening. Hand-tied bouquets start from Rs. 1,239, and larger arrangements are available when the occasion is bigger."],
+  ["Sending to an office", "We deliver to offices as well as homes. Add the recipient's name, the company, the floor or reception details and a phone number so the rider can reach the right person. Orders placed before 4 PM Pakistan time are delivered the same day, usually in 2 to 5 hours."],
+  ["Make it personal", "Send a short message with your order and we include it on a card. A photo of the bouquet is shared on WhatsApp before dispatch, and you can add a cake or chocolates from our gifts range."],
+  ["Payment", "We accept bank transfer, JazzCash, EasyPaisa and international cards. Cash on Delivery is not available."],
+];
+
 export default async function CongratulationsPage() {
   const allProducts = await getSanityProducts();
   const congratsProducts = allProducts.filter(p => 
@@ -114,6 +122,18 @@ export default async function CongratulationsPage() {
           ))}
         </div>
       </section>
+      <section className="bg-white p-6 sm:p-8 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-4">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">{GUIDE_TITLE}</h2>
+        <div className="space-y-4 text-sm text-[#2A2A2A] leading-relaxed">
+          {GUIDE.map(([heading, body], i) => (
+            <div key={i} className="space-y-1">
+              <h3 className="font-semibold text-[#0B0B0B]">{heading}</h3>
+              <p>{body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
     </main>
   );
 }

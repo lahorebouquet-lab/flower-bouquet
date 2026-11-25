@@ -30,6 +30,14 @@ export const metadata: Metadata = withSeo("/occasions/love-and-romance", {
   }
 });
 
+const GUIDE_TITLE = "Romantic Flowers in Lahore: What to Send and When";
+const GUIDE: [string, string][] = [
+  ["Red roses and beyond", "Red roses remain the classic choice for love. A single rose bouquet from around Rs. 1,499 is a quiet gesture, while 12 to 50 roses make a bigger statement. If your partner prefers something softer, ask about white or pink roses and mixed bouquets."],
+  ["Surprise at the right moment", "Message us on WhatsApp before 8 PM to reserve a midnight slot, or order before 4 PM Pakistan time for same-day delivery in 2 to 5 hours. Put the recipient's phone number in the order so the rider can coordinate the surprise."],
+  ["Add something personal", "A handwritten-style card message, chocolates or a cake turn flowers into a full gift. A photo of the arrangement is sent on WhatsApp before dispatch."],
+  ["Payment", "We accept bank transfer, JazzCash, EasyPaisa and international cards. Cash on Delivery is not available."],
+];
+
 export default async function LoveAndRomancePage() {
   const allProducts = await getSanityProducts();
   const romanticProducts = allProducts.filter(p => 
@@ -121,6 +129,18 @@ export default async function LoveAndRomancePage() {
       </section>
 
       {/* Category FAQ */}
+      <section className="bg-white p-6 sm:p-8 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-4">
+        <h2 className="font-playfair text-2xl font-bold text-[#0B0B0B]">{GUIDE_TITLE}</h2>
+        <div className="space-y-4 text-sm text-[#2A2A2A] leading-relaxed">
+          {GUIDE.map(([heading, body], i) => (
+            <div key={i} className="space-y-1">
+              <h3 className="font-semibold text-[#0B0B0B]">{heading}</h3>
+              <p>{body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section className="bg-white p-8 sm:p-10 rounded-2xl border border-[rgba(198,161,91,0.25)] shadow-sm space-y-6">
         <div className="flex items-center gap-2 text-[#0B0B0B]">
           <HelpCircle className="w-5 h-5 text-[#8B1E2D]" />
