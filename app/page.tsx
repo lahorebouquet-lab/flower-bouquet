@@ -70,7 +70,7 @@ export default async function HomePage() {
         "@type": "HowToStep",
         position: 1,
         name: "Pick your flowers",
-        text: "Choose a bouquet from our catalog starting at Rs. 349, or tell us your budget on WhatsApp at 0310-4225974. Add a complimentary handwritten wax-sealed card with your message.",
+        text: "Choose a bouquet from our catalog starting at Rs. 1,239, or tell us your budget on WhatsApp at 0310-4225974. Add a complimentary handwritten wax-sealed card with your message.",
         url: `${SITE_URL}/bouquets`,
       },
       {
