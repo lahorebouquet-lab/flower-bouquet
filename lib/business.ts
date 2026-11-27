@@ -155,7 +155,17 @@ export function floristSchema(url: string = SITE_URL) {
     sameAs: [
       BUSINESS.social.instagram,
       "https://lahorebouquet-flowers.blogspot.com",
+      "https://share.google/jOPPf45h8swqAlifC",
     ],
+    // Verified from the Google Business Profile on 2026-11-27 (4.7, 13 reviews).
+    // Update both numbers when the profile changes; never inflate them.
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.7",
+      reviewCount: "13",
+      bestRating: "5",
+      worstRating: "1",
+    },
   };
 }
 
