@@ -147,6 +147,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/send-flowers-to-lahore-from-uk", file: "app/send-flowers-to-lahore-from-uk/page.tsx" },
     { path: "/send-flowers-to-lahore-from-usa", file: "app/send-flowers-to-lahore-from-usa/page.tsx" },
     { path: "/send-flowers-to-lahore-from-uae", file: "app/send-flowers-to-lahore-from-uae/page.tsx" },
+    { path: "/send-flowers-to-lahore-from-canada", file: "app/send-flowers-to-lahore-from-canada/page.tsx" },
+    { path: "/send-flowers-to-lahore-from-saudi-arabia", file: "app/send-flowers-to-lahore-from-saudi-arabia/page.tsx" },
+    { path: "/send-flowers-to-lahore-from-australia", file: "app/send-flowers-to-lahore-from-australia/page.tsx" },
     // Flowers by recipient
     { path: "/flowers-for-mother-in-lahore", file: "app/flowers-for-mother-in-lahore/page.tsx" },
     { path: "/flowers-for-wife-in-lahore", file: "app/flowers-for-wife-in-lahore/page.tsx" },
@@ -158,6 +161,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/occasions/new-baby", file: "app/occasions/new-baby/page.tsx" },
     { path: "/occasions/thank-you", file: "app/occasions/thank-you/page.tsx" },
     { path: "/faq", file: "app/faq/page.tsx" },
+    { path: "/flower-questions", file: "app/flower-questions/page.tsx" },
     { path: "/payment-methods", file: "app/payment-methods/page.tsx" },
     { path: "/send-flowers-to-islamabad-from-abroad", file: "app/send-flowers-to-islamabad-from-abroad/page.tsx" },
   ];

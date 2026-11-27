@@ -99,7 +99,7 @@ const FAQS: { q: string; a: string }[] = [
     "a": "Use our order tracking page, or message us on WhatsApp with your order details."
   }
 ];
-const RELATED: [string, string][] = [["/payment-methods", "Payment methods"], ["/delivery-areas", "Delivery areas"], ["/policies", "Policies"], ["/track-order", "Track your order"], ["/flower-delivery-islamabad", "Islamabad delivery"]];
+const RELATED: [string, string][] = [["/payment-methods", "Payment methods"], ["/delivery-areas", "Delivery areas"], ["/policies", "Policies"], ["/track-order", "Track your order"], ["/flower-delivery-islamabad", "Islamabad delivery"], ["/flower-questions", "Flower care and gifting questions"]];
 const WA_TEXT = "Hello Lahore Bouquet! I have a question about ordering flowers.";
 
 export default async function Page() {
