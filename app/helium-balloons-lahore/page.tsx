@@ -55,7 +55,7 @@ const FAQS = [
   },
   {
     q: "Where can I buy helium balloons in Lahore?",
-    a: "Right here! If you're looking for helium balloons in Lahore, we inflate them fresh on the day of your event — latex from Rs. 199, metallic numbers and letters from Rs. 349, confetti from Rs. 299. Order on WhatsApp (0310-4225974) and we'll deliver them floating and fabulous."
+    a: "From us. If you're looking for helium balloons in Lahore, we inflate them fresh on the day of your event — latex from Rs. 199, metallic numbers and letters from Rs. 349, confetti from Rs. 299. Order on WhatsApp (0310-4225974) and we'll deliver them floating and fabulous."
   },
   {
     q: "How much do helium balloons in Lahore cost?",
