@@ -159,6 +159,7 @@ export function floristSchema(url: string = SITE_URL) {
     ],
     // Verified from the Google Business Profile on 2026-11-27 (4.7, 13 reviews).
     // Update both numbers when the profile changes; never inflate them.
+    founder: { "@type": "Person", name: "Nadeem Pasha" },
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.7",

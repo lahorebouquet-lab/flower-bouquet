@@ -89,6 +89,11 @@ export default function AboutPage() {
           bouquet by hand, send you a photo before it leaves, and deliver it across Lahore so it
           arrives looking pristine.
         </p>
+
+        <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
+          Lahore Bouquet is founded and run by <strong>Nadeem Pasha</strong>. For any question about an
+          order, message us directly on WhatsApp at 0310-4225974.
+        </p>
       </section>
 
       {/* Story & Image Section */}
