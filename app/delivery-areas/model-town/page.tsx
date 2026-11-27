@@ -343,7 +343,7 @@ export default async function ModelTownDeliveryPage() {
           <h2 className="font-playfair text-xl font-bold">Birthday decoration near Model Town</h2>
         </div>
         <p className="text-xs text-[#2A2A2A] leading-relaxed">
-          Planning a birthday at home in Model Town? We set up balloon arches and fresh flower centerpieces for birthday parties — see <Link href="/birthday-decoration-model-town-lahore" className="text-[#8B1E2D] underline font-semibold">birthday decoration in Model Town</Link>, <Link href="/birthday-decoration-iqbal-town-lahore" className="text-[#8B1E2D] underline font-semibold">birthday decoration in Iqbal Town</Link> and <Link href="/birthday-decoration-johar-town-lahore" className="text-[#8B1E2D] underline font-semibold">birthday decoration in Johar Town</Link>.
+          Planning a birthday at home in Model Town? We set up balloon arches and fresh flower centerpieces for birthday parties — see our <Link href="/birthday-decoration-lahore" className="text-[#8B1E2D] underline font-semibold">birthday decoration in Lahore</Link> page, or <Link href="/birthday-decoration-johar-town-lahore" className="text-[#8B1E2D] underline font-semibold">birthday decoration in Johar Town</Link> nearby.
         </p>
       </section>
     </main>

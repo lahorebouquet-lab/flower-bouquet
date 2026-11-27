@@ -348,7 +348,7 @@ export default async function BahriaTownDeliveryPage() {
           <h2 className="font-playfair text-xl font-bold">Birthday decoration near Bahria Town</h2>
         </div>
         <p className="text-xs text-[#2A2A2A] leading-relaxed">
-          Planning a birthday at home in Bahria Town? We set up balloon arches and fresh flower centerpieces for birthday parties — see <Link href="/birthday-decoration-bahria-town-lahore" className="text-[#8B1E2D] underline font-semibold">birthday decoration in Bahria Town</Link>, <Link href="/birthday-decoration-valencia-town-lahore" className="text-[#8B1E2D] underline font-semibold">birthday decoration in Valencia Town</Link> and <Link href="/birthday-decoration-eme-society-lahore" className="text-[#8B1E2D] underline font-semibold">birthday decoration in EME Society</Link>.
+          Planning a birthday at home in Bahria Town? We set up balloon arches and fresh flower centerpieces for birthday parties — see <Link href="/birthday-decoration-bahria-town-lahore" className="text-[#8B1E2D] underline font-semibold">birthday decoration in Bahria Town</Link> or the main <Link href="/birthday-decoration-lahore" className="text-[#8B1E2D] underline font-semibold">birthday decoration in Lahore</Link> page.
         </p>
       </section>
     </main>

@@ -16,6 +16,96 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/birthday-decoration-askari-lahore",
+        destination: "/birthday-decoration-lahore",
+        permanent: true,
+      },
+      {
+        source: "/wedding-decoration-askari-lahore",
+        destination: "/wedding-decor",
+        permanent: true,
+      },
+      {
+        source: "/birthday-decoration-cantt-lahore",
+        destination: "/birthday-decoration-lahore",
+        permanent: true,
+      },
+      {
+        source: "/wedding-decoration-cantt-lahore",
+        destination: "/wedding-decor",
+        permanent: true,
+      },
+      {
+        source: "/birthday-decoration-eme-society-lahore",
+        destination: "/birthday-decoration-lahore",
+        permanent: true,
+      },
+      {
+        source: "/wedding-decoration-eme-society-lahore",
+        destination: "/wedding-decor",
+        permanent: true,
+      },
+      {
+        source: "/birthday-decoration-faisal-town-lahore",
+        destination: "/birthday-decoration-lahore",
+        permanent: true,
+      },
+      {
+        source: "/wedding-decoration-faisal-town-lahore",
+        destination: "/wedding-decor",
+        permanent: true,
+      },
+      {
+        source: "/birthday-decoration-iqbal-town-lahore",
+        destination: "/birthday-decoration-lahore",
+        permanent: true,
+      },
+      {
+        source: "/wedding-decoration-iqbal-town-lahore",
+        destination: "/wedding-decor",
+        permanent: true,
+      },
+      {
+        source: "/birthday-decoration-lake-city-lahore",
+        destination: "/birthday-decoration-lahore",
+        permanent: true,
+      },
+      {
+        source: "/wedding-decoration-lake-city-lahore",
+        destination: "/wedding-decor",
+        permanent: true,
+      },
+      {
+        source: "/birthday-decoration-model-town-lahore",
+        destination: "/birthday-decoration-lahore",
+        permanent: true,
+      },
+      {
+        source: "/wedding-decoration-model-town-lahore",
+        destination: "/wedding-decor",
+        permanent: true,
+      },
+      {
+        source: "/birthday-decoration-valencia-town-lahore",
+        destination: "/birthday-decoration-lahore",
+        permanent: true,
+      },
+      {
+        source: "/wedding-decoration-valencia-town-lahore",
+        destination: "/wedding-decor",
+        permanent: true,
+      },
+      {
+        source: "/birthday-decoration-wapda-town-lahore",
+        destination: "/birthday-decoration-lahore",
+        permanent: true,
+      },
+      {
+        source: "/wedding-decoration-wapda-town-lahore",
+        destination: "/wedding-decor",
+        permanent: true,
+      },
+      {
         source: "/flower-delivery-islamabad/f-10-islamabad",
         destination: "/flower-delivery-islamabad",
         permanent: true,
