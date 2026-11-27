@@ -65,6 +65,11 @@ export default async function BahriaTownDeliveryPage() {
     mainEntity: [
       {
         "@type": "Question",
+        name: "Is there a Lahore Bouquet flower shop in Bahria Town?",
+        acceptedAnswer: { "@type": "Answer", text: "We are a delivery-only florist, so there is no shop to visit. Our florists hand-tie bouquets in Lahore and deliver to every Bahria Town sector, Safari Villas and Lake City. Order on WhatsApp, approve a photo of your bouquet, and it arrives in about 2.5 to 4 hours." },
+      },
+      {
+        "@type": "Question",
         name: "How long does flower delivery to Bahria Town Lahore take?",
         acceptedAnswer: {
           "@type": "Answer",
@@ -153,6 +158,10 @@ export default async function BahriaTownDeliveryPage() {
           Flower Delivery in Bahria Town Lahore
         </h1>
 
+        <p className="text-[#0B0B0B] text-xs sm:text-sm leading-relaxed max-w-3xl font-medium">
+          Looking for a flower shop in Bahria Town, Lahore? Lahore Bouquet is a delivery-only florist: choose a bouquet on WhatsApp, approve a photo, and we deliver to all Bahria Town sectors, Safari Villas and Lake City, 9 AM to 1 AM.
+        </p>
+
         <p className="text-[#2A2A2A] text-xs sm:text-sm leading-relaxed max-w-3xl">
           Sending flowers to Bahria Town — bouquets from Rs. 1,239 — requires careful temperature control during transit. From Lahore, our climate-controlled courier vans navigate via the Lahore Ring Road to reach Sectors A through F, Safari Villas, and Lake City within 2.5 to 4 hours with Rs. 800 delivery. You receive a photo of your hand-tied bouquet on WhatsApp before our rider departs. To order, WhatsApp 0310-4225974 any time between 9 AM and 1 AM with your sector, street and house number — approve the bouquet photo we send, then pay by JazzCash, EasyPaisa, bank transfer or international card. See our <Link href="/prices" className="text-[#8B1E2D] font-semibold hover:underline">flower bouquet prices in Lahore</Link> or read our guide on <Link href="/blog/how-to-order-flowers-online-lahore-2026" className="text-[#8B1E2D] font-semibold hover:underline">how to send flowers to Lahore</Link>.
         </p>
@@ -231,6 +240,10 @@ export default async function BahriaTownDeliveryPage() {
           <h2 className="font-playfair text-xl font-bold">Bahria Town delivery — frequently asked questions</h2>
         </div>
         <div className="divide-y divide-[rgba(198,161,91,0.25)]">
+          <div className="py-3 space-y-1">
+            <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">Is there a Lahore Bouquet flower shop in Bahria Town?</h3>
+            <p className="text-xs text-[#2A2A2A] leading-relaxed">We are a delivery-only florist, so there is no shop to visit. Our florists hand-tie bouquets in Lahore and deliver to every Bahria Town sector, Safari Villas and Lake City. Order on WhatsApp, approve a photo of your bouquet, and it arrives in about 2.5 to 4 hours.</p>
+          </div>
           <div className="py-3 space-y-1">
             <h3 className="text-xs sm:text-sm font-bold text-[#0B0B0B]">How long does flower delivery to Bahria Town Lahore take?</h3>
             <p className="text-xs text-[#2A2A2A] leading-relaxed">Delivery to Bahria Town Lahore typically takes 2.5 to 4 hours with Rs. 800 delivery. We transport all bouquets via the Lahore Ring Road in careful, climate-protected delivery to prevent petals from wilting on the long southern run.</p>
